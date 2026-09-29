@@ -67,6 +67,15 @@ def test_diff_new_vs_catch_up(monkeypatch=None):
     sent.clear()
     check.main()
     assert sent == []
+    # a known deck that was out of stock and is now listed in stock -> "back in stock" push
+    data = json.loads(check.DECKS_FILE.read_text())
+    next(d for d in data if d["id"] == "time4magic-766")["status"] = "out_of_stock"
+    check.DECKS_FILE.write_text(json.dumps(data))
+    check.main()
+    assert len(sent) == 1 and "back in stock" in sent[0][0] and "766" not in sent[0][0]
+    sent.clear()
+    check.main()
+    assert sent == []
 
 
 if __name__ == "__main__":

@@ -253,6 +253,13 @@ def save(path: Path, data) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
 
+def deck_line(d: dict) -> str:
+    shop = SHOPS[d["shop"]][0]
+    if d["price"] is None:
+        return f"{d['name']} — {shop}"
+    return f"{d['name']} — {shop} — {d['price']:.2f} zł ({d['status'].replace('_', ' ')})"
+
+
 def main() -> int:
     now = datetime.now(timezone.utc).replace(microsecond=0)
     decks = load(DECKS_FILE, [])
@@ -262,7 +269,7 @@ def main() -> int:
     by_url = {norm_url(d["url"]): d for d in decks}
 
     session = requests.Session()
-    new_decks, alerts = [], []
+    new_decks, restocked, alerts = [], [], []
 
     for shop, (label, scan) in SHOPS.items():
         shop_first = shop not in state["shops"]  # a newly added shop: its first scan is silent
@@ -284,11 +291,14 @@ def main() -> int:
             doc_id = f"{shop}-{p['pid']}" if p["pid"] else f"{shop}-{norm_url(p['url']).rsplit('/', 1)[-1][:120]}"
             known = by_id.get(doc_id) or by_url.get(norm_url(p["url"]))
             if known:
+                was_in_stock = known.get("status") == "in_stock"
                 for k in ("price", "status", "name", "url"):
                     if p[k] is not None and known.get(k) != p[k]:
                         known[k] = p[k]
                 if p["pid"] and not known.get("pid"):
                     known["pid"] = p["pid"]
+                if known["status"] == "in_stock" and not was_in_stock:
+                    restocked.append(known)  # back in stock (or preorder became available)
                 continue
             # Unknown product. Shop ids only grow, so an id at or below the
             # highest one we've seen is an old listing we simply missed before.
@@ -314,14 +324,17 @@ def main() -> int:
     save(STATE_FILE, state)
 
     if new_decks:
-        lines = [f"{d['name']} — {SHOPS[d['shop']][0]} — "
-                 f"{d['price']:.2f} zł ({d['status'].replace('_', ' ')})" if d["price"] is not None
-                 else f"{d['name']} — {SHOPS[d['shop']][0]}" for d in new_decks]
+        lines = [deck_line(d) for d in new_decks]
         title = "New Commander deck" if len(new_decks) == 1 else f"{len(new_decks)} new Commander decks"
-        print(title + ":\n  " + "\n  ".join(lines))
+        print(f"{title}:", *lines, sep="\n  ")
         notify(title, lines)
     else:
         print("No new Commander decks.")
+    if restocked:
+        lines = [deck_line(d) for d in restocked]
+        title = "Commander deck back in stock" if len(restocked) == 1 else f"{len(restocked)} Commander decks back in stock"
+        print(f"{title}:", *lines, sep="\n  ")
+        notify(title, lines, tags="package")
     if alerts:
         notify("Commander Watch: shop check failing", alerts, tags="warning")
     return 0
