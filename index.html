@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Commander Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+body { margin: 0; }
+/* Layout: one reading column — status strip, "new" shelf, then a filterable catalog list. */
+:root {
+  --bg: #eef1f4;
+  --surface: #ffffff;
+  --fg: #16202b;
+  --muted: #5b6878;
+  --line: #d5dce4;
+  --accent: #1f5f8b;
+  --accent-soft: #dcebf6;
+  --new: #b4531a;
+  --new-soft: #fbe9dc;
+  --ok: #2f7a4b;
+  --ok-soft: #dff1e5;
+  --warn: #8a6a12;
+  --warn-soft: #f6eecf;
+  --off: #7a8491;
+  --off-soft: #e9ecf0;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f151c; --surface: #17202a; --fg: #e5ebf1; --muted: #93a1b1; --line: #2a3643;
+    --accent: #7fb8e0; --accent-soft: #1b3346; --new: #f0a06a; --new-soft: #3a2517;
+    --ok: #7fd09c; --ok-soft: #173424; --warn: #e4c66a; --warn-soft: #362d12; --off: #8e99a6; --off-soft: #222c37;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f151c; --surface: #17202a; --fg: #e5ebf1; --muted: #93a1b1; --line: #2a3643;
+  --accent: #7fb8e0; --accent-soft: #1b3346; --new: #f0a06a; --new-soft: #3a2517;
+  --ok: #7fd09c; --ok-soft: #173424; --warn: #e4c66a; --warn-soft: #362d12; --off: #8e99a6; --off-soft: #222c37;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--font-body); }
+.wrap { max-width: 980px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 56px; display: grid; gap: 28px; }
+header { display: grid; gap: 6px; }
+h1 { font: 800 clamp(28px, 5vw, 40px)/1.05 var(--font-display); letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0; max-width: 62ch; }
+h2 { font: 600 20px/1.2 var(--font-display); margin: 0; }
+.label { font: 500 11px/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+
+.shops { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
+.shop { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 4px; min-width: 0; }
+.shop-top { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+.shop-name { font-weight: 600; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--off); flex: none; }
+.dot.ok { background: var(--ok); } .dot.err { background: var(--new); }
+.shop-meta { font: 12px/1.4 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.lastcheck { font: 13px/1.4 var(--font-mono); color: var(--muted); }
+
+section { display: grid; gap: 12px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+.newshelf { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.newcard { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--new); border-radius: 8px; padding: 12px 14px; display: grid; gap: 6px; min-width: 0; }
+.newcard a { color: var(--fg); font-weight: 600; text-decoration: none; }
+.newcard a:hover { text-decoration: underline; }
+.newcard .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; padding: 18px; color: var(--muted); }
+
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.chip { font: 500 13px/1 var(--font-body); padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.chip:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+input[type="search"], select { font: 14px var(--font-body); padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); }
+input[type="search"] { flex: 1 1 200px; min-width: 0; }
+
+.list { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.item { display: grid; grid-template-columns: minmax(0, 1fr) 110px 96px 118px; gap: 12px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--line); }
+.item:first-child { border-top: 0; }
+.item.head { font: 500 11px/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); padding-block: 10px; }
+.deck { min-width: 0; display: grid; gap: 2px; }
+.deck a { color: var(--fg); text-decoration: none; overflow-wrap: anywhere; }
+.deck a:hover { color: var(--accent); text-decoration: underline; }
+.deck .shoptag { font-size: 12px; color: var(--muted); }
+.price { font: 500 14px var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; }
+.seen { font: 12px var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.pill { display: inline-block; font: 500 12px/1 var(--font-body); padding: 5px 8px; border-radius: 4px; white-space: nowrap; }
+.pill.in_stock { background: var(--ok-soft); color: var(--ok); }
+.pill.preorder { background: var(--warn-soft); color: var(--warn); }
+.pill.out_of_stock { background: var(--off-soft); color: var(--off); }
+.pill.new { background: var(--new-soft); color: var(--new); }
+.count { font: 13px var(--font-mono); color: var(--muted); }
+
+@media (max-width: 640px) {
+  .item { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "deck price" "status seen"; row-gap: 6px; }
+  .item.head { display: none; }
+  .deck { grid-area: deck; } .price { grid-area: price; } .st { grid-area: status; } .seen { grid-area: seen; text-align: right; }
+}
+@media (prefers-reduced-motion: no-preference) { .chip { transition: background .15s, color .15s; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="label">Magic: The Gathering · Polish shops</span>
+    <h1>Commander Watch</h1>
+    <p class="sub">Precon Commander decks listed by Time4Magic, Cardstore, Mr. Puggy and TCG Zielona. A check runs every hour; any deck a shop lists for the first time lands in “New listings” and sends a notification to your phone through ntfy.</p>
+  </header>
+
+  <section aria-labelledby="st-h">
+    <div class="sec-head"><h2 id="st-h">Shops</h2><span class="lastcheck" id="lastcheck">Checked hourly</span></div>
+    <div class="shops" id="shops"></div>
+  </section>
+
+  <section aria-labelledby="new-h">
+    <div class="sec-head"><h2 id="new-h">New listings</h2><span class="count" id="newcount"></span></div>
+    <div id="newshelf" class="newshelf"></div>
+  </section>
+
+  <section aria-labelledby="cat-h">
+    <div class="sec-head"><h2 id="cat-h">All tracked decks</h2><span class="count" id="catcount"></span></div>
+    <div class="controls" id="shopchips" role="group" aria-label="Filter by shop"></div>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Search a deck, e.g. Multiverse Reforged" aria-label="Search decks">
+      <select id="status" aria-label="Filter by availability">
+        <option value="">Any availability</option>
+        <option value="in_stock" selected>In stock</option>
+        <option value="preorder">Pre-order</option>
+        <option value="out_of_stock">Out of stock</option>
+      </select>
+      <select id="sort" aria-label="Sort">
+        <option value="seen">Newest first</option>
+        <option value="price">Cheapest first</option>
+        <option value="name">Name A–Z</option>
+      </select>
+    </div>
+    <div class="list" id="list" role="table" aria-label="Tracked decks"></div>
+  </section>
+</div>
+
+<script>
+const SHOPS = {
+  time4magic: { name: "Time4Magic", home: "https://time4magic.pl/commander-decki-magic-the-gathering" },
+  cardstore: { name: "Cardstore", home: "https://cardstore.pl/157-commander" },
+  mrpuggy: { name: "Mr. Puggy", home: "https://mrpuggy.pl/pl/c/Magic-The-Gathering/23" },
+  tcgzielona: { name: "TCG Zielona", home: "https://tcg-zielona.pl/product-category/magic-the-gathering/" }
+};
+const STATUS_LABEL = { in_stock: "In stock", preorder: "Pre-order", out_of_stock: "Out of stock" };
+const state = { decks: [], meta: null, shop: "", q: "", status: "in_stock", sort: "seen" };
+const $ = (id) => document.getElementById(id);
+const pln = new Intl.NumberFormat("pl-PL", { style: "currency", currency: "PLN" });
+const dfmt = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric" });
+const tfmt = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v; else if (k === "text") e.textContent = v; else e.setAttribute(k, v);
+  }
+  for (const k of kids) if (k) e.append(k);
+  return e;
+}
+function safeUrl(u) { try { const x = new URL(u); return x.protocol === "https:" ? x.href : "#"; } catch { return "#"; } }
+function pill(s) { return el("span", { class: "pill " + (STATUS_LABEL[s] ? s : "out_of_stock"), text: STATUS_LABEL[s] || "Unknown" }); }
+function fmtDate(iso) { const d = new Date(iso); return isNaN(d) ? "—" : dfmt.format(d); }
+
+function renderShops() {
+  const box = $("shops"); box.replaceChildren();
+  const m = state.meta?.shops || {};
+  for (const [key, s] of Object.entries(SHOPS)) {
+    const info = m[key] || {};
+    const n = state.decks.filter(d => d.shop === key).length;
+    const failing = (info.failStreak || 0) > 0;
+    const dot = el("span", { class: "dot " + (state.meta ? (failing ? "err" : "ok") : ""), "aria-hidden": "true" });
+    const status = !state.meta ? "Not checked yet" : failing ? `Unreachable for the last ${info.failStreak} check${info.failStreak > 1 ? "s" : ""}` : "Reachable";
+    box.append(el("div", { class: "shop" },
+      el("div", { class: "shop-top" }, el("a", { class: "shop-name", href: s.home, target: "_blank", rel: "noopener", text: s.name, style: "color:inherit" }), dot),
+      el("span", { class: "shop-meta", text: n + (n === 1 ? " deck · " : " decks · ") + status })
+    ));
+  }
+}
+
+function renderNew() {
+  const items = state.decks.filter(d => !d.baseline).sort((a, b) => String(b.firstSeen).localeCompare(String(a.firstSeen)));
+  const shelf = $("newshelf"); shelf.replaceChildren();
+  $("newcount").textContent = items.length ? items.length + " since tracking started" : "";
+  if (!items.length) {
+    shelf.append(el("div", { class: "empty", text: "Nothing new yet. When a shop adds a Commander deck it hasn't listed before, it shows up here within the hour." }));
+    return;
+  }
+  for (const d of items.slice(0, 24)) {
+    shelf.append(el("div", { class: "newcard" },
+      el("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", text: d.name }),
+      el("div", { class: "row" }, pill(d.status), el("span", { class: "price", text: typeof d.price === "number" ? pln.format(d.price) : "—" }), el("span", { text: (SHOPS[d.shop]?.name || d.shop) + " · " + fmtDate(d.firstSeen) }))
+    ));
+  }
+}
+
+function renderChips() {
+  const box = $("shopchips"); box.replaceChildren();
+  const opts = [["", "All shops"], ...Object.entries(SHOPS).map(([k, s]) => [k, s.name])];
+  for (const [k, label] of opts) {
+    const b = el("button", { class: "chip", type: "button", "aria-pressed": String(state.shop === k), text: label });
+    b.addEventListener("click", () => { state.shop = k; renderChips(); renderList(); });
+    box.append(b);
+  }
+}
+
+function renderList() {
+  const q = state.q.trim().toLowerCase();
+  let rows = state.decks.filter(d =>
+    (!state.shop || d.shop === state.shop) &&
+    (!state.status || d.status === state.status) &&
+    (!q || String(d.name).toLowerCase().includes(q)));
+  if (state.sort === "price") rows.sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9));
+  else if (state.sort === "name") rows.sort((a, b) => String(a.name).localeCompare(String(b.name)));
+  else rows.sort((a, b) => String(b.firstSeen).localeCompare(String(a.firstSeen)) || String(a.name).localeCompare(String(b.name)));
+  const list = $("list"); list.replaceChildren();
+  list.append(el("div", { class: "item head", role: "row" },
+    el("span", { text: "Deck" }), el("span", { text: "Availability" }), el("span", { text: "Price", style: "text-align:right" }), el("span", { text: "First seen" })));
+  if (!state.decks.length) {
+    list.append(el("div", { class: "item" }, el("span", { class: "deck", text: "Loading tracked decks…" })));
+  } else if (!rows.length) {
+    list.append(el("div", { class: "item" }, el("span", { class: "deck", text: state.status === "in_stock" ? "No decks in stock match these filters. Set availability to “Any availability” to see all." : "No decks match these filters." })));
+  }
+  for (const d of rows) {
+    const st = el("span", { class: "st" }, pill(d.status));
+    if (!d.baseline) st.append(" ", el("span", { class: "pill new", text: "New" }));
+    list.append(el("div", { class: "item", role: "row" },
+      el("div", { class: "deck" }, el("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", text: d.name }), el("span", { class: "shoptag", text: SHOPS[d.shop]?.name || d.shop })),
+      st,
+      el("span", { class: "price", text: typeof d.price === "number" ? pln.format(d.price) : "—" }),
+      el("span", { class: "seen", text: d.baseline ? "Before tracking" : fmtDate(d.firstSeen) })));
+  }
+  $("catcount").textContent = rows.length + " of " + state.decks.length;
+}
+
+function renderAll() { renderShops(); renderNew(); renderList(); }
+
+$("q").addEventListener("input", (e) => { state.q = e.target.value; renderList(); });
+$("status").addEventListener("change", (e) => { state.status = e.target.value; renderList(); });
+$("sort").addEventListener("change", (e) => { state.sort = e.target.value; renderList(); });
+state.status = $("status").value; // the browser may restore an earlier choice on reload
+renderChips(); renderAll();
+
+(async () => {
+  const bust = "?t=" + Math.floor(Date.now() / 60000);
+  try {
+    const [decks, meta] = await Promise.all([
+      fetch("data/decks.json" + bust).then(r => r.json()),
+      fetch("data/state.json" + bust).then(r => r.json()).catch(() => null)
+    ]);
+    state.decks = decks;
+    state.meta = meta;
+    renderAll();
+  } catch (e) {
+    $("list").replaceChildren(el("div", { class: "item" }, el("span", { class: "deck", text: "Couldn't load data/decks.json. Check that the repository has the data folder." })));
+  }
+  // Last run time comes from the GitHub API (works for public repos).
+  const owner = location.hostname.split(".")[0];
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  if (location.hostname.endsWith("github.io") && repo) {
+    try {
+      const r = await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/workflows/check.yml/runs?per_page=1`);
+      const run = (await r.json()).workflow_runs?.[0];
+      if (run) {
+        const when = tfmt.format(new Date(run.updated_at || run.created_at));
+        const how = run.status !== "completed" ? "running now" : run.conclusion === "success" ? "OK" : run.conclusion;
+        $("lastcheck").textContent = `Last check ${when} · ${how}`;
+      }
+    } catch {}
+  }
+})();
+</script>
+</body>
+</html>

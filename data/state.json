@@ -1,0 +1,21 @@
+{
+ "heartbeat": "2026-09-29",
+ "shops": {
+  "cardstore": {
+   "failStreak": 0,
+   "maxId": 31684
+  },
+  "mrpuggy": {
+   "failStreak": 0,
+   "maxId": 15662
+  },
+  "tcgzielona": {
+   "failStreak": 0,
+   "maxId": 3414
+  },
+  "time4magic": {
+   "failStreak": 0,
+   "maxId": 998
+  }
+ }
+}
