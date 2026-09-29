@@ -261,6 +261,12 @@ def deck_line(d: dict) -> str:
 
 
 def main() -> int:
+    if "--test-push" in sys.argv:  # only send a test notification; no scan, nothing saved
+        if not os.environ.get("NTFY_TOPIC", "").strip():
+            print("NTFY_TOPIC is not set.")
+            return 1
+        notify("Commander Watch test", ["Test push. Notifications are working."], tags="white_check_mark")
+        return 0
     now = datetime.now(timezone.utc).replace(microsecond=0)
     decks = load(DECKS_FILE, [])
     state = load(STATE_FILE, {"shops": {}})

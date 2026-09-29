@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 * * * *"   # every hour at :17 (UTC); GitHub may start it a few minutes late
   workflow_dispatch:        # "Run workflow" button for a manual check
+    inputs:
+      test_push:
+        description: "Only send a test push notification (no scan)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write           # lets the job commit data/decks.json
@@ -30,7 +35,7 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           PAGE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-        run: python check.py
+        run: python check.py ${{ inputs.test_push && '--test-push' || '' }}
 
       - name: Save changes
         run: |
