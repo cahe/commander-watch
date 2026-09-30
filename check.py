@@ -31,7 +31,7 @@ HEADERS = {
     "Accept-Language": "pl-PL,pl;q=0.9,en;q=0.8",
 }
 MAX_PAGES = 12
-FAIL_ALERT_AFTER = 6  # consecutive failed runs before a "shop is failing" alert
+FAIL_ALERT_AFTER = 16  # consecutive failed runs (~4 h at 15-min checks) before a "shop is failing" alert
 
 # Words that mark accessories rather than sealed decks.
 NOT_A_DECK = re.compile(
@@ -52,7 +52,7 @@ def fetch(url: str, session: requests.Session) -> str:
                 r.encoding = r.encoding or "utf-8"
                 return r.text
             last = f"HTTP {r.status_code}"
-            if r.status_code < 500 and r.status_code != 429:
+            if r.status_code < 500 and r.status_code not in (403, 429):  # 403: bot protection, often transient
                 break
         except requests.RequestException as e:  # timeouts, resets
             last = type(e).__name__
