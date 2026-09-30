@@ -110,7 +110,7 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
   <header>
     <span class="label">Magic: The Gathering · Polish shops</span>
     <h1>Commander Watch</h1>
-    <p class="sub">Precon Commander decks listed by Time4Magic, Cardstore and Mr. Puggy. A check runs every hour; any deck a shop lists for the first time lands in “New listings” and sends a notification to your phone through ntfy.</p>
+    <p class="sub">Precon Commander decks listed by Time4Magic, Cardstore, Mr. Puggy, Wargamer and XJoy. A check runs every hour; any deck a shop lists for the first time lands in “New listings” and sends a notification to your phone through ntfy.</p>
   </header>
 
   <section aria-labelledby="st-h">
@@ -148,7 +148,9 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 const SHOPS = {
   time4magic: { name: "Time4Magic", home: "https://time4magic.pl/commander-decki-magic-the-gathering" },
   cardstore: { name: "Cardstore", home: "https://cardstore.pl/157-commander" },
-  mrpuggy: { name: "Mr. Puggy", home: "https://mrpuggy.pl/pl/c/Magic-The-Gathering/23" }
+  mrpuggy: { name: "Mr. Puggy", home: "https://mrpuggy.pl/pl/c/Magic-The-Gathering/23" },
+  wargamer: { name: "Wargamer", home: "https://sklep.wargamer.pl/pl/43-magic-the-gathering" },
+  xjoy: { name: "XJoy", home: "https://www.xjoy.pl/371-mtg-commander" }
 };
 const STATUS_LABEL = { in_stock: "In stock", preorder: "Pre-order", out_of_stock: "Out of stock" };
 const state = { decks: [], meta: null, shop: "", q: "", status: "in_stock", sort: "seen" };

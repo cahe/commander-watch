@@ -34,6 +34,30 @@ def test_presta_parser():
     assert by[29972]["status"] == "in_stock"
 
 
+def test_presta_xjoy():
+    items, soup = check.parse_presta((FIX / "xjoy.html").read_text(encoding="utf-8"), "https://www.xjoy.pl")
+    by = {i["pid"]: i for i in items}
+    assert by[26763]["status"] == "in_stock" and by[26763]["price"] == 249.99  # schema.org InStock
+    assert by[21149]["status"] == "out_of_stock"
+    assert by[25942]["status"] == "preorder"  # "Przedsprzedaż" label, though schema says InStock
+    assert check.page_numbers(soup, re.compile(r"371-mtg-commander\?(?:.*&)?p=(\d+)")) == 2
+    items, _ = check.parse_presta((FIX / "xjoy.html").read_text(encoding="utf-8"), "https://www.xjoy.pl",
+                                  match=check.COMMANDER_DECK)
+    assert 25942 not in {i["pid"] for i in items}  # board game in the preorder category
+
+
+def test_presta17_wargamer():
+    html = (FIX / "wargamer.html").read_text(encoding="utf-8")
+    items, soup = check.parse_presta17(html, "https://sklep.wargamer.pl")
+    by = {i["pid"]: i for i in items}
+    assert by[17060]["status"] == "in_stock" and by[17060]["price"] == 287
+    assert by[17058]["status"] == "out_of_stock"  # disabled cart button
+    assert by[18103]["status"] == "preorder"      # "Przedsprzedaż" flag
+    assert check.page_numbers(soup, re.compile(r"43-magic-the-gathering\?(?:.*&)?page=(\d+)")) == 4
+    items, _ = check.parse_presta17(html, "https://sklep.wargamer.pl", match=re.compile("commander", re.I))
+    assert {i["pid"] for i in items} == {17060, 17058}  # theme deck and preorder wargame filtered out
+
+
 def test_diff_new_vs_catch_up(monkeypatch=None):
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()

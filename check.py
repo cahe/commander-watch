@@ -31,13 +31,15 @@ HEADERS = {
     "Accept-Language": "pl-PL,pl;q=0.9,en;q=0.8",
 }
 MAX_PAGES = 12
-FAIL_ALERT_AFTER = 16  # consecutive failed runs (~4 h at 15-min checks) before a "shop is failing" alert
+FAIL_ALERT_AFTER = 6  # consecutive failed runs (~6 h at hourly checks) before a "shop is failing" alert
 
 # Words that mark accessories rather than sealed decks.
 NOT_A_DECK = re.compile(
     r"sleeve|koszulk|deck ?box|pudełk|playmat|mata|dragon shield|ultra pro|booster|binder|album",
     re.I,
 )
+# Name filter for mixed preorder categories, where other games sell "Commander" products too.
+COMMANDER_DECK = re.compile(r"commander deck", re.I)
 
 
 # --------------------------------------------------------------------------- HTTP
@@ -117,8 +119,8 @@ def parse_shoper(html: str, base: str, *, category: str | None = None, name_filt
     return out, soup
 
 
-def parse_presta(html: str, base: str):
-    """PrestaShop 1.6 (Cardstore)."""
+def parse_presta(html: str, base: str, *, match: re.Pattern | None = None):
+    """PrestaShop 1.6 (Cardstore, XJoy). XJoy marks preorders only in the availability label."""
     soup = BeautifulSoup(html, "html.parser")
     out = []
     for li in soup.select("ul.product_list li.ajax_block_product"):
@@ -126,17 +128,45 @@ def parse_presta(html: str, base: str):
         if not a:
             continue
         name = " ".join((a.get("title") or a.get_text()).split())
-        if NOT_A_DECK.search(name):
+        if NOT_A_DECK.search(name) or (match and not match.search(name)):
             continue
         m = re.search(r"/(\d+)-", a["href"])
         desc = li.select_one(".product-desc")
+        avail = li.select_one(".availability")
+        schema = li.select_one("link[itemprop=availability]")
+        in_stock = (li.select_one(".availability .available-now") is not None
+                    or bool(schema and schema.get("href", "").endswith("/InStock")))
         out.append({
             "pid": int(m.group(1)) if m else None,
             "name": name,
             "price": parse_price(li.select_one(".price").get_text() if li.select_one(".price") else None),
             "url": urljoin(base, a["href"]),
-            "status": status_from(li.select_one(".availability .available-now") is not None,
-                                  name, desc.get_text() if desc else ""),
+            "status": status_from(in_stock, name, desc.get_text() if desc else "",
+                                  avail.get_text() if avail else ""),
+        })
+    return out, soup
+
+
+def parse_presta17(html: str, base: str, *, match: re.Pattern | None = None):
+    """PrestaShop 1.7 (Wargamer): a disabled cart button means out of stock; flags carry "Przedsprzedaż"."""
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for art in soup.select("article.product-miniature"):
+        a = art.select_one(".product-title a")
+        if not a or not art.get("data-id-product"):
+            continue
+        name = " ".join(a.get_text().split())
+        if NOT_A_DECK.search(name) or (match and not match.search(name)):
+            continue
+        button = art.select_one("button.add-to-cart")
+        flags = " ".join(f.get_text() for f in art.select(".product-flag"))
+        price = art.select_one(".price")
+        out.append({
+            "pid": int(art["data-id-product"]),
+            "name": name,
+            "price": parse_price(price.get_text() if price else None),
+            "url": urljoin(base, a["href"]),
+            "status": status_from(button is not None and not button.has_attr("disabled"), name, flags),
         })
     return out, soup
 
@@ -163,11 +193,43 @@ def scan_cardstore(s):
     return scan_paged(s, url, lambda h: parse_presta(h, base), re.compile(r"157-commander\?(?:.*&)?p=(\d+)"))
 
 
-def scan_paged(s, url_for, parse, page_re):
+def scan_wargamer(s):
+    base = "https://sklep.wargamer.pl"
+    mtg = scan_paged(s, lambda n: f"{base}/pl/43-magic-the-gathering" + (f"?page={n}" if n > 1 else ""),
+                     lambda h: parse_presta17(h, base, match=re.compile("commander", re.I)),
+                     re.compile(r"43-magic-the-gathering\?(?:.*&)?page=(\d+)"))
+    # All games' preorders, newest first; a new deck would be near the top.
+    pre = scan_paged(s, lambda n: f"{base}/pl/130-przedsprzedaz" + (f"?page={n}" if n > 1 else ""),
+                     lambda h: parse_presta17(h, base, match=COMMANDER_DECK),
+                     re.compile(r"130-przedsprzedaz\?(?:.*&)?page=(\d+)"), max_pages=3)
+    return merge_scans(mtg, pre)
+
+
+def scan_xjoy(s):
+    base = "https://www.xjoy.pl"
+    decks = scan_paged(s, lambda n: f"{base}/371-mtg-commander" + (f"?p={n}" if n > 1 else ""),
+                       lambda h: parse_presta(h, base), re.compile(r"371-mtg-commander\?(?:.*&)?p=(\d+)"))
+    pre = scan_paged(s, lambda n: f"{base}/66-przedsprzedaz" + (f"?p={n}" if n > 1 else ""),
+                     lambda h: parse_presta(h, base, match=COMMANDER_DECK),
+                     re.compile(r"66-przedsprzedaz\?(?:.*&)?p=(\d+)"))
+    return merge_scans(decks, pre)
+
+
+def merge_scans(*scans):
+    """Combine (products, errors) from several categories; a deck in both appears once."""
+    products, errors = {}, []
+    for items, errs in scans:
+        for it in items:
+            products.setdefault(norm_url(it["url"]), it)
+        errors += errs
+    return list(products.values()), errors
+
+
+def scan_paged(s, url_for, parse, page_re, max_pages=MAX_PAGES):
     """Fetch page 1, read how many pages exist, fetch the rest. Returns (products, errors)."""
     products, errors = {}, []
     last_page, n = 1, 1
-    while n <= min(last_page, MAX_PAGES):
+    while n <= min(last_page, max_pages):
         try:
             items, soup = parse(fetch(url_for(n), s))
             last_page = max(last_page, page_numbers(soup, page_re))
@@ -185,6 +247,8 @@ SHOPS = {
     "time4magic": ("Time4Magic", scan_time4magic),
     "cardstore": ("Cardstore", scan_cardstore),
     "mrpuggy": ("Mr. Puggy", scan_mrpuggy),
+    "wargamer": ("Wargamer", scan_wargamer),
+    "xjoy": ("XJoy", scan_xjoy),
 }
 
 
