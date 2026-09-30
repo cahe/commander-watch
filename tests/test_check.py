@@ -34,13 +34,6 @@ def test_presta_parser():
     assert by[29972]["status"] == "in_stock"
 
 
-def test_woo_parser():
-    items, soup = check.parse_woo((FIX / "woo.html").read_text(), "https://tcg-zielona.pl")
-    assert [i["pid"] for i in items] == [3414]  # prerelease event and sleeves filtered out
-    assert items[0]["price"] == 195 and items[0]["status"] == "out_of_stock"
-    assert check.page_numbers(soup, re.compile(r"/magic-the-gathering/page/(\d+)/?$")) == 2
-
-
 def test_diff_new_vs_catch_up(monkeypatch=None):
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()

@@ -2,7 +2,7 @@ name: Check for new Commander decks
 
 on:
   schedule:
-    - cron: "7,22,37,52 * * * *"   # every 15 min (UTC); GitHub delays and drops scheduled runs, so ask often
+    - cron: "41 * * * *"   # hourly backup; the main hourly check is started externally via workflow_dispatch
   workflow_dispatch:        # "Run workflow" button for a manual check
     inputs:
       test_push:
