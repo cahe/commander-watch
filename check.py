@@ -57,7 +57,7 @@ def fetch(url: str, session: requests.Session) -> str:
         except requests.RequestException as e:  # timeouts, resets
             last = type(e).__name__
         time.sleep(3 * (attempt + 1))
-    raise RuntimeError(f"{url}: {last}")
+    raise RuntimeError(f"{last} for {url}")  # URL last: log viewers would link a trailing ":" too
 
 
 # ------------------------------------------------------------------------ helpers
