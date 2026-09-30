@@ -12,6 +12,14 @@
   "time4magic": {
    "failStreak": 0,
    "maxId": 998
+  },
+  "wargamer": {
+   "failStreak": 0,
+   "maxId": 17426
+  },
+  "xjoy": {
+   "failStreak": 0,
+   "maxId": 26817
   }
  }
 }
