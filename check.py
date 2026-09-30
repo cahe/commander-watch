@@ -141,33 +141,6 @@ def parse_presta(html: str, base: str):
     return out, soup
 
 
-def parse_woo(html: str, base: str):
-    """WooCommerce (TCG Zielona). Category holds all MTG products, so filter by name."""
-    soup = BeautifulSoup(html, "html.parser")
-    out = []
-    for li in soup.select("li.product"):
-        title = li.select_one(".woocommerce-loop-product__title")
-        a = li.select_one("a.woocommerce-LoopProduct-link") or li.find("a", href=True)
-        if not title or not a:
-            continue
-        name = " ".join(title.get_text().split())
-        if "commander" not in name.lower() or NOT_A_DECK.search(name):
-            continue
-        classes = li.get("class", [])
-        pid = next((int(c[5:]) for c in classes if re.fullmatch(r"post-\d+", c)), None)
-        bdi = li.select_one(".price ins bdi") or li.select_one(".price bdi")
-        in_stock = "instock" in classes
-        backorder = "onbackorder" in classes
-        out.append({
-            "pid": pid,
-            "name": name,
-            "price": parse_price(bdi.get_text() if bdi else None),
-            "url": urljoin(base, a["href"]),
-            "status": "preorder" if backorder else status_from(in_stock, name),
-        })
-    return out, soup
-
-
 # -------------------------------------------------------------------------- shops
 
 def scan_time4magic(s):
@@ -188,13 +161,6 @@ def scan_cardstore(s):
     base = "https://cardstore.pl"
     url = lambda n: f"{base}/157-commander" + (f"?p={n}" if n > 1 else "")
     return scan_paged(s, url, lambda h: parse_presta(h, base), re.compile(r"157-commander\?(?:.*&)?p=(\d+)"))
-
-
-def scan_tcgzielona(s):
-    base = "https://tcg-zielona.pl"
-    url = lambda n: f"{base}/product-category/magic-the-gathering/" + (f"page/{n}/" if n > 1 else "")
-    return scan_paged(s, url, lambda h: parse_woo(h, base),
-                      re.compile(r"/product-category/magic-the-gathering/page/(\d+)/?$"))
 
 
 def scan_paged(s, url_for, parse, page_re):
@@ -219,7 +185,6 @@ SHOPS = {
     "time4magic": ("Time4Magic", scan_time4magic),
     "cardstore": ("Cardstore", scan_cardstore),
     "mrpuggy": ("Mr. Puggy", scan_mrpuggy),
-    "tcgzielona": ("TCG Zielona", scan_tcgzielona),
 }
 
 
