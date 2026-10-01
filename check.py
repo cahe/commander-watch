@@ -557,6 +557,25 @@ def assign_groups(decks: list[dict]) -> None:
             parent[rj] = ri
             shops[ri] |= shops[rj]
 
+    # Listings named only by their set ("Reality Fracture Commander Deck") join that set's deck,
+    # but only when exactly one deck group of the same kind holds all their words; a vague
+    # "Doctor Who Commander Deck" stays apart because Doctor Who has several decks.
+    def words(root: int) -> frozenset:
+        return frozenset().union(*(toks[i] for i in range(len(decks)) if find(i) == root))
+
+    roots = {find(i) for i in range(len(decks))}
+    rwords = {r: words(r) for r in roots}
+    for r in sorted(roots, key=lambda r: len(rwords[r])):
+        small = rwords[r]
+        if find(r) != r or len(small) > 2 or not small:
+            continue
+        kind = kinds[r]
+        hosts = [h for h in roots if h != r and find(h) == h and kinds[h] == kind and len(rwords[h]) > len(small)
+                 and all(any(same_word(x, y) for y in rwords[h]) for x in small)]
+        if len(hosts) == 1 and not shops[r] & shops[hosts[0]]:
+            parent[r] = hosts[0]
+            shops[hosts[0]] |= shops[r]
+
     members: dict[int, list[int]] = {}
     for i in range(len(decks)):
         members.setdefault(find(i), []).append(i)
