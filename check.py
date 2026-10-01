@@ -13,9 +13,11 @@ import math
 import os
 import re
 import sys
+import threading
 import time
 import unicodedata
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timezone, timedelta
 from functools import lru_cache
 from pathlib import Path
@@ -272,7 +274,7 @@ def scan_wargamer(s):
     # All games' preorders, newest first; a new deck would be near the top.
     pre = scan_paged(s, lambda n: f"{base}/pl/130-przedsprzedaz" + (f"?page={n}" if n > 1 else ""),
                      lambda h: parse_presta17(h, base, match=COMMANDER_DECK),
-                     re.compile(r"130-przedsprzedaz\?(?:.*&)?page=(\d+)"), max_pages=3)
+                     re.compile(r"130-przedsprzedaz\?(?:.*&)?page=(\d+)"), max_pages=3, may_be_empty=True)
     return merge_scans(mtg, pre)
 
 
@@ -282,7 +284,7 @@ def scan_xjoy(s):
                        lambda h: parse_presta(h, base), re.compile(r"371-mtg-commander\?(?:.*&)?p=(\d+)"))
     pre = scan_paged(s, lambda n: f"{base}/66-przedsprzedaz" + (f"?p={n}" if n > 1 else ""),
                      lambda h: parse_presta(h, base, match=COMMANDER_DECK),
-                     re.compile(r"66-przedsprzedaz\?(?:.*&)?p=(\d+)"))
+                     re.compile(r"66-przedsprzedaz\?(?:.*&)?p=(\d+)"), may_be_empty=True)
     return merge_scans(decks, pre)
 
 
@@ -293,7 +295,7 @@ def scan_dragoneye(s):
     # All games' preorders; sort=4d lists the newest additions first.
     pre = scan_paged(s, lambda n: f"{base}/przedsprzedaz-c-75.html?sort=4d&page={n}",
                      lambda h: parse_sstore(h, base, preorder_category=True),
-                     re.compile(r"c-75\.html\?(?:.*&)?page=(\d+)"), max_pages=3)
+                     re.compile(r"c-75\.html\?(?:.*&)?page=(\d+)"), max_pages=3, may_be_empty=True)
     return merge_scans(mtg, pre)
 
 
@@ -307,13 +309,20 @@ def merge_scans(*scans):
     return list(products.values()), errors
 
 
-def scan_paged(s, url_for, parse, page_re, max_pages=MAX_PAGES):
-    """Fetch page 1, read how many pages exist, fetch the rest. Returns (products, errors)."""
+def scan_paged(s, url_for, parse, page_re, max_pages=MAX_PAGES, may_be_empty=False):
+    """Fetch page 1, read how many pages exist, fetch the rest. Returns (products, errors).
+
+    A category that should always hold decks but yields none is reported as an error, with the
+    page's title and size, so a block page (HTTP 200 with no products) counts as a failed check.
+    Mixed preorder categories pass may_be_empty=True: no Commander deck there is normal.
+    """
     products, errors = {}, []
-    last_page, n = 1, 1
+    last_page, n, first = 1, 1, None
     while n <= min(last_page, max_pages):
         try:
-            items, soup = parse(fetch(url_for(n), s))
+            html = fetch(url_for(n), s)
+            first = first or html
+            items, soup = parse(html)
             last_page = max(last_page, page_numbers(soup, page_re))
             for it in items:
                 products.setdefault(norm_url(it["url"]), it)
@@ -322,6 +331,10 @@ def scan_paged(s, url_for, parse, page_re, max_pages=MAX_PAGES):
             if n == 1:
                 break
         n += 1
+    if not products and not errors and not may_be_empty:
+        title = re.search(r"<title[^>]*>([^<]*)", first or "", re.I)
+        errors.append(f"no products found on {url_for(1)} "
+                      f"(page title {' '.join(title.group(1).split())[:60] if title else None!r}, {len(first or '')} bytes)")
     return list(products.values()), errors
 
 
@@ -331,30 +344,44 @@ def scan_cardtrader(s):
     Prices only: listings from QUIET_SHOPS never trigger pushes. Without CARDTRADER_TOKEN it's skipped.
     """
     if not os.environ.get("CARDTRADER_TOKEN", "").strip():
-        print("    CARDTRADER_TOKEN not set; skipping CardTrader.")
-        return [], []
+        return None  # skipped, not failed
     try:
         rates = pln_rates(s)
         blueprints = cardtrader_blueprints()
     except Exception as e:
         return [], [str(e)]
     out, errors = [], []
-    for bp in blueprints:
-        try:
-            offers = cardtrader_get("/marketplace/products", blueprint_id=bp["id"]).get(str(bp["id"]), [])
-        except Exception as e:
-            errors.append(str(e))
-            continue
+    limit = RateLimit(8)  # the marketplace endpoint allows 10 requests per second
+
+    def one(bp):
+        limit.wait()
+        offers = cardtrader_get("/marketplace/products", blueprint_id=bp["id"]).get(str(bp["id"]), [])
         best = cheapest_zero_offer(offers, rates)
-        out.append({
-            "pid": bp["id"],
-            "name": bp["name"],
-            "price": best,
-            "url": f"https://www.cardtrader.com/en/cards/{bp['id']}",
-            "status": "in_stock" if best is not None else "out_of_stock",
-        })
-        time.sleep(0.12)  # marketplace endpoint allows 10 requests per second
+        return {"pid": bp["id"], "name": bp["name"], "price": best,
+                "url": f"https://www.cardtrader.com/en/cards/{bp['id']}",
+                "status": "in_stock" if best is not None else "out_of_stock"}
+
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        for fut in [pool.submit(one, bp) for bp in blueprints]:
+            try:
+                out.append(fut.result())
+            except Exception as e:
+                errors.append(str(e))
     return out, errors
+
+
+class RateLimit:
+    """Spaces calls from several threads at least 1/per_second apart."""
+
+    def __init__(self, per_second: float):
+        self.gap, self.next, self.lock = 1 / per_second, 0.0, threading.Lock()
+
+    def wait(self) -> None:
+        with self.lock:
+            now = time.monotonic()
+            at = max(now, self.next)
+            self.next = at + self.gap
+        time.sleep(max(0.0, at - now))
 
 
 def cheapest_zero_offer(offers: list[dict], rates: dict[str, float]) -> float | None:
@@ -670,17 +697,32 @@ def main() -> int:
     by_id = {d["id"]: d for d in decks}
     by_url = {norm_url(d["url"]): d for d in decks}
 
-    session = requests.Session()
     new_decks, restocked, alerts = [], [], []
 
-    for shop, (label, scan) in SHOPS.items():
+    def run(item):
+        _, (_, scan) = item
+        started = time.monotonic()
+        try:
+            result = scan(requests.Session())
+        except Exception as e:  # one broken scanner shouldn't stop the other shops
+            result = [], [f"{type(e).__name__}: {e}"]
+        return result, time.monotonic() - started
+
+    # Shops are scanned in parallel; each still fetches its own pages one at a time.
+    with ThreadPoolExecutor(max_workers=len(SHOPS)) as pool:
+        results = dict(zip(SHOPS, pool.map(run, SHOPS.items())))
+
+    for shop, (label, _) in SHOPS.items():
+        result, took = results[shop]
+        if result is None:  # e.g. CardTrader without a token
+            print(f"{label}: skipped")
+            continue
+        found, errors = result
+        if not found and not errors:
+            errors = ["no products found"]
         shop_first = shop not in state["shops"]  # a newly added shop: its first scan is silent
         st = state["shops"].setdefault(shop, {"maxId": 0, "failStreak": 0})
-        try:
-            found, errors = scan(session)
-        except Exception as e:  # one broken scanner shouldn't stop the other shops
-            found, errors = [], [f"{type(e).__name__}: {e}"]
-        print(f"{label}: {len(found)} commander products, {len(errors)} page errors")
+        print(f"{label}: {len(found)} commander products, {len(errors)} page errors ({took:.0f} s)")
         for e in errors:
             print("   ", e)
 
