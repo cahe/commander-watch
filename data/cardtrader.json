@@ -1,0 +1,1187 @@
+{
+ "blueprints": [
+  {
+   "expansion": "c18",
+   "id": 44503,
+   "name": "Commander 2018: \"Adaptive Enchantment \" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c18",
+   "id": 44504,
+   "name": "Commander 2018: \"Exquisite Invention\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c18",
+   "id": 44505,
+   "name": "Commander 2018: \"Nature's Vengeance\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c18",
+   "id": 44506,
+   "name": "Commander 2018: \"Subjective Reality\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "cm2",
+   "id": 48684,
+   "name": "Commander Anthology II: \"Built from Scratch\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "cm2",
+   "id": 48685,
+   "name": "Commander Anthology II: \"Breed Lethality\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "cm2",
+   "id": 48686,
+   "name": "Commander Anthology II: \"Devour for Power\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "cm2",
+   "id": 48687,
+   "name": "Commander Anthology II: \"Wade into Battle\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c17",
+   "id": 44561,
+   "name": "Commander 2017: \"Arcane Wizardry\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c17",
+   "id": 44562,
+   "name": "Commander 2017: \"Vampiric Bloodlust\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c17",
+   "id": 44563,
+   "name": "Commander 2017: \"Draconic Domination\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c17",
+   "id": 44564,
+   "name": "Commander 2017: \"Feline Ferocity\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "cma",
+   "id": 48538,
+   "name": "Commander Anthology: \"Guided by Nature\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "cma",
+   "id": 48539,
+   "name": "Commander Anthology: \"Heavenly Inferno\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "cma",
+   "id": 48540,
+   "name": "Commander Anthology: \"Plunder the Graves\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "cma",
+   "id": 48541,
+   "name": "Commander Anthology: \"Evasive Maneuvers\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c16",
+   "id": 44746,
+   "name": "Commander 2016: \"Invent Superiority\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c16",
+   "id": 44747,
+   "name": "Commander 2016: \"Stalwart Unity\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c16",
+   "id": 44748,
+   "name": "Commander 2016: \"Breed Lethality\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c16",
+   "id": 44749,
+   "name": "Commander 2016: \"Open Hostility\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c16",
+   "id": 44750,
+   "name": "Commander 2016: \"Entropic Uprising\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c15",
+   "id": 44752,
+   "name": "Commander 2015: \"Swell the Host\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c15",
+   "id": 44753,
+   "name": "Commander 2015: \"Call the Spirits\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c15",
+   "id": 44754,
+   "name": "Commander 2015: \"Plunder the Graves\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c15",
+   "id": 44755,
+   "name": "Commander 2015: \"Seize Control\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c15",
+   "id": 44756,
+   "name": "Commander 2015: \"Wade into Battle\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c14",
+   "id": 44758,
+   "name": "Commander 2014: \"Forged in Stone\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c14",
+   "id": 44759,
+   "name": "Commander 2014: \"Sworn to Darkness\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c14",
+   "id": 44760,
+   "name": "Commander 2014: \"Built from Scratch\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c14",
+   "id": 44761,
+   "name": "Commander 2014: \"Guided by Nature\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c14",
+   "id": 44762,
+   "name": "Commander 2014: \"Peer Through Time\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "c13",
+   "id": 44764,
+   "name": "Commander 2013: \"Power Hungry\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c13",
+   "id": 44765,
+   "name": "Commander 2013: \"Mind Seize\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c13",
+   "id": 44766,
+   "name": "Commander 2013: \"Nature of the Beast\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c13",
+   "id": 44767,
+   "name": "Commander 2013: \"Evasive Maneuvers\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c13",
+   "id": 44769,
+   "name": "Commander 2013: \"Eternal Bargain\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "cmd",
+   "id": 44776,
+   "name": "Commander: Counterpunch Deck",
+   "version": null
+  },
+  {
+   "expansion": "cmd",
+   "id": 44777,
+   "name": "Commander: Devour for Power Deck",
+   "version": null
+  },
+  {
+   "expansion": "cmd",
+   "id": 44778,
+   "name": "Commander: Heavenly Inferno Deck",
+   "version": null
+  },
+  {
+   "expansion": "cmd",
+   "id": 44779,
+   "name": "Commander: Mirror Mastery Deck",
+   "version": null
+  },
+  {
+   "expansion": "cmd",
+   "id": 44780,
+   "name": "Commander: Political Puppets Deck",
+   "version": null
+  },
+  {
+   "expansion": "c19",
+   "id": 59154,
+   "name": "Commander 2019: \"Merciless Rage\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c19",
+   "id": 59155,
+   "name": "Commander 2019: \"Primal Genesis\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c19",
+   "id": 59161,
+   "name": "Commander 2019: \"Faceless Menace\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c19",
+   "id": 59162,
+   "name": "Commander 2019: \"Mystic Intellect\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c20",
+   "id": 107979,
+   "name": "Commander: Ikoria: \"Arcane Maelstrom\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c20",
+   "id": 107980,
+   "name": "Commander: Ikoria: \"Timeless Wisdom\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c20",
+   "id": 107981,
+   "name": "Commander: Ikoria: \"Enhanced Evolution\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c20",
+   "id": 107982,
+   "name": "Commander: Ikoria: \"Ruthless Regiment\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c20",
+   "id": 107983,
+   "name": "Commander: Ikoria: \"Symbiotic Swarm\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "dcmr",
+   "id": 149857,
+   "name": "Commander Legends: \"Reap the Tides\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "dcmr",
+   "id": 149858,
+   "name": "Commander Legends: \"Arm for Battle\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "znc",
+   "id": 146527,
+   "name": "Commander: Zendikar Rising: \"Land's Wrath\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "znc",
+   "id": 146528,
+   "name": "Commander: Zendikar Rising: \"Sneak Attack\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "khc",
+   "id": 151469,
+   "name": "Commander: Kaldheim: \"Elven Empire\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "khc",
+   "id": 151470,
+   "name": "Commander: Kaldheim: Phantom Premonition\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c21",
+   "id": 154975,
+   "name": "Commander: Strixhaven: \"Lorehold Legacies\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c21",
+   "id": 154976,
+   "name": "Commander: Strixhaven: \"Quantum Quandrix\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c21",
+   "id": 154977,
+   "name": "Commander: Strixhaven: \"Witherbloom Witchcraft\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c21",
+   "id": 154978,
+   "name": "Commander: Strixhaven: \"Prismari Performance\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "c21",
+   "id": 154979,
+   "name": "Commander: Strixhaven: \"Silverquill Statement\" Deck",
+   "version": null
+  },
+  {
+   "expansion": "afc",
+   "id": 160506,
+   "name": "Commander: Adventures in the Forgotten Realms | \"Aura of Courage\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "afc",
+   "id": 160507,
+   "name": "Commander: Adventures in the Forgotten Realms | \"Draconic Rage\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "afc",
+   "id": 160508,
+   "name": "Commander: Adventures in the Forgotten Realms | \"Planar Portal\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "afc",
+   "id": 160509,
+   "name": "Commander: Adventures in the Forgotten Realms | \"Dungeons of Death\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "mic",
+   "id": 164137,
+   "name": "Commander: Innistrad Midnight Hunt | \"Undead Unleashed\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "mic",
+   "id": 164138,
+   "name": "Commander: Innistrad Midnight Hunt | \"Coven Counters\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "voc",
+   "id": 164140,
+   "name": "Commander: Innistrad Crimson Vow | \"Vampiric Bloodline\"",
+   "version": ""
+  },
+  {
+   "expansion": "voc",
+   "id": 164141,
+   "name": "Commander: Innistrad Crimson Vow | \"Spirit Squadron\"",
+   "version": ""
+  },
+  {
+   "expansion": "nec",
+   "id": 202622,
+   "name": "Commander: Kamigawa Neon Dynasty | \"Buckle Up\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "nec",
+   "id": 202623,
+   "name": "Commander: Kamigawa Neon Dynasty | \"Upgrades Unleashed\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ncc",
+   "id": 208725,
+   "name": "Commander: Streets of New Capenna | \"Maestros Massacre\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ncc",
+   "id": 208726,
+   "name": "Commander: Streets of New Capenna | \"Obscura Operation\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ncc",
+   "id": 208727,
+   "name": "Commander: Streets of New Capenna | \"Riveteers Rampage\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ncc",
+   "id": 208728,
+   "name": "Commander: Streets of New Capenna | \"Cabaretti Cacophony\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ncc",
+   "id": 208729,
+   "name": "Commander: Streets of New Capenna | \"Bedecked Brokers\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "40k",
+   "id": 211574,
+   "name": "Universes Beyond: Warhammer 40,000 | \"The Ruinous Powers\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "40k",
+   "id": 211575,
+   "name": "Universes Beyond: Warhammer 40,000 | \"The Ruinous Powers\" Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "40k",
+   "id": 211576,
+   "name": "Universes Beyond: Warhammer 40,000 | \"Tyranid Swarm\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "40k",
+   "id": 211577,
+   "name": "Universes Beyond: Warhammer 40,000 | \"Tyranid Swarm\" Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "40k",
+   "id": 211578,
+   "name": "Universes Beyond: Warhammer 40,000 | \"Forces of the Imperium\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "40k",
+   "id": 211579,
+   "name": "Universes Beyond: Warhammer 40,000 | \"Forces of the Imperium\" Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "40k",
+   "id": 211580,
+   "name": "Universes Beyond: Warhammer 40,000 | \"Necron Dynasties\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "40k",
+   "id": 211581,
+   "name": "Universes Beyond: Warhammer 40,000 | \"Necron Dynasties\" Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "dclb",
+   "id": 208730,
+   "name": "Commander Legends: Battle for Baldur's Gate | \"Exit from Exile\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "dclb",
+   "id": 208731,
+   "name": "Commander Legends: Battle for Baldur's Gate | \"Draconic Dissent\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "dclb",
+   "id": 208732,
+   "name": "Commander Legends: Battle for Baldur's Gate | \"Mind Flayarrrs\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "dclb",
+   "id": 208733,
+   "name": "Commander Legends: Battle for Baldur's Gate | \"Party Time\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "dmc",
+   "id": 219610,
+   "name": "Commander: Dominaria United | \"Legends' Legacy\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "dmc",
+   "id": 219611,
+   "name": "Commander: Dominaria United | \"Painbow\" Deck",
+   "version": ""
+  },
+  {
+   "expansion": "brc",
+   "id": 224491,
+   "name": "Commander: The Brothers' War | \"Urza's Iron Alliance\" Commander Deck",
+   "version": null
+  },
+  {
+   "expansion": "brc",
+   "id": 224492,
+   "name": "Commander: The Brothers' War | \"Mishra's Burnished Banner\" Commander Deck",
+   "version": null
+  },
+  {
+   "expansion": "scd",
+   "id": 224262,
+   "name": "Starter Commander Decks | \"First Flight\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "scd",
+   "id": 224263,
+   "name": "Starter Commander Decks | \"Grave Danger\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "scd",
+   "id": 224264,
+   "name": "Starter Commander Decks | \"Chaos Incarnate\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "scd",
+   "id": 224265,
+   "name": "Starter Commander Decks | \"Draconic Destruction\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "scd",
+   "id": 224266,
+   "name": "Starter Commander Decks | \"Token Triumph\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "onc",
+   "id": 231930,
+   "name": "Commander: Phyrexia All Will Be One | \"Corrupting Influence\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "onc",
+   "id": 231931,
+   "name": "Commander: Phyrexia All Will Be One | \"Rebellion Rising\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "cmoc",
+   "id": 238102,
+   "name": "Commander: March of the Machine | \"Growing Threat\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "cmoc",
+   "id": 238103,
+   "name": "Commander: March of the Machine | \"Cavalry Charge\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "cmoc",
+   "id": 238104,
+   "name": "Commander: March of the Machine | \"Divine Convocation\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "cmoc",
+   "id": 238105,
+   "name": "Commander: March of the Machine | \"Call for Backup\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "cmoc",
+   "id": 238106,
+   "name": "Commander: March of the Machine | \"Tinker Time\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "cmm",
+   "id": 238387,
+   "name": "Commander Masters | \"Eldrazi Unbound\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "cmm",
+   "id": 238391,
+   "name": "Commander Masters | \"Enduring Enchantments\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "cmm",
+   "id": 238393,
+   "name": "Commander Masters | \"Planeswalker Party\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "cmm",
+   "id": 238394,
+   "name": "Commander Masters | \"Sliver Swarm\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ltc",
+   "id": 246478,
+   "name": "Commander: The Lord of the Rings | \"Food And Fellowship\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ltc",
+   "id": 246480,
+   "name": "Commander: The Lord of the Rings | \"Elven Council\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ltc",
+   "id": 246482,
+   "name": "Commander: The Lord of the Rings | \"The Hosts Of Mordor\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ltc",
+   "id": 246483,
+   "name": "Commander: The Lord of the Rings | \"Riders Of Rohan\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "who",
+   "id": 246950,
+   "name": "Universes Beyond: Doctor Who | \"Masters of Evil\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "who",
+   "id": 246951,
+   "name": "Universes Beyond: Doctor Who | \"Blast from the Past\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "who",
+   "id": 246952,
+   "name": "Universes Beyond: Doctor Who | \"Timey-Wimey\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "who",
+   "id": 246953,
+   "name": "Universes Beyond: Doctor Who | \"Paradox Power\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "woc",
+   "id": 246960,
+   "name": "Wilds of Eldraine \"Virtue and Valor\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "woc",
+   "id": 246961,
+   "name": "Wilds of Eldraine \"Fae Dominion\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "lcc",
+   "id": 261730,
+   "name": "Commander: The Lost Caverns of Ixalan | \"Ahoy Mateys\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "lcc",
+   "id": 261731,
+   "name": "Commander: The Lost Caverns of Ixalan | \"Veloci-Ramp-Tor\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "lcc",
+   "id": 261732,
+   "name": "Commander: The Lost Caverns of Ixalan | \"Blood Rites\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "lcc",
+   "id": 261733,
+   "name": "Commander: The Lost Caverns of Ixalan | \"Explorers of the Deep\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "pip",
+   "id": 265026,
+   "name": "Fallout | \"Scrappy Survivors\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "pip",
+   "id": 265027,
+   "name": "Fallout | \"Hail Caesar\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "pip",
+   "id": 265028,
+   "name": "Fallout | \"Science!\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "pip",
+   "id": 265029,
+   "name": "Fallout | \"Mutant Menace\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "mkc",
+   "id": 270487,
+   "name": "Commander: Murders at Karlov Manor | \"Deadly Disguise\" Commander Deck",
+   "version": null
+  },
+  {
+   "expansion": "mkc",
+   "id": 270489,
+   "name": "Commander: Murders at Karlov Manor | \"Revenant Recon\" Commander Deck",
+   "version": null
+  },
+  {
+   "expansion": "mkc",
+   "id": 270490,
+   "name": "Commander: Murders at Karlov Manor | \"Blame Game\" Commander Deck",
+   "version": null
+  },
+  {
+   "expansion": "mkc",
+   "id": 270492,
+   "name": "Commander: Murders at Karlov Manor | \"Deep Clue Sea\" Commander Deck",
+   "version": null
+  },
+  {
+   "expansion": "m3c",
+   "id": 279375,
+   "name": "Commander: Modern Horizons 3 |\"Eldrazi Incursion\" Collector's Edition Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "m3c",
+   "id": 279376,
+   "name": "Commander: Modern Horizons 3 |\"Creative Energy\" Collector's Edition Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "m3c",
+   "id": 279377,
+   "name": "Commander: Modern Horizons 3 |\"Tricky Terrain\" Collector's Edition Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "m3c",
+   "id": 279378,
+   "name": "Commander: Modern Horizons 3 |\"Graveyard Overdrive\" Collector's Edition Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "m3c",
+   "id": 279379,
+   "name": "Commander: Modern Horizons 3 |\"Eldrazi Incursion\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "m3c",
+   "id": 279380,
+   "name": "Commander: Modern Horizons 3 |\"Creative Energy\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "m3c",
+   "id": 279381,
+   "name": "Commander: Modern Horizons 3 |\"Tricky Terrain\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "m3c",
+   "id": 279382,
+   "name": "Commander: Modern Horizons 3 | \"Graveyard Overdrive\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "otc",
+   "id": 279473,
+   "name": "Commander: Outlaws of Thunder Junction | \"Most Wanted\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "otc",
+   "id": 279476,
+   "name": "Commander: Outlaws of Thunder Junction | \"Desert Bloom\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "otc",
+   "id": 279477,
+   "name": "Commander: Outlaws of Thunder Junction | \"Grand Larceny\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "otc",
+   "id": 279478,
+   "name": "Commander: Outlaws of Thunder Junction | \"Quick Draw\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "blc",
+   "id": 280701,
+   "name": "Commander: Bloomburrow | \"Squirreled Away\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "blc",
+   "id": 280702,
+   "name": "Commander: Bloomburrow | \"Family Matters\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "blc",
+   "id": 280703,
+   "name": "Commander: Bloomburrow | \"Animated Army\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "blc",
+   "id": 280704,
+   "name": "Commander: Bloomburrow | \"Peace Offering\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "dsc",
+   "id": 299806,
+   "name": "Commander: Duskmourn: House of Horror | \"Endless Punishment\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "dsc",
+   "id": 299807,
+   "name": "Commander: Duskmourn: House of Horror | \"Miracle Worker\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "dsc",
+   "id": 299808,
+   "name": "Commander: Duskmourn: House of Horror | \"Death Toll\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "dsc",
+   "id": 299809,
+   "name": "Commander: Duskmourn: House of Horror | \"Jump Scare!\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "drc",
+   "id": 314238,
+   "name": "Commander: Aetherdrift | \"Living Energy\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "drc",
+   "id": 314239,
+   "name": "Commander: Aetherdrift | \"Eternal Might\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "fic",
+   "id": 322095,
+   "name": "FINAL FANTASY: \"Limit Break\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "fic",
+   "id": 322098,
+   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "fic",
+   "id": 322100,
+   "name": "FINAL FANTASY: \"Scions & Spellcraft\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "fic",
+   "id": 322101,
+   "name": "FINAL FANTASY: \"Revival Trance\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "fic",
+   "id": 322103,
+   "name": "FINAL FANTASY: \"Limit Break\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "fic",
+   "id": 322104,
+   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "fic",
+   "id": 322106,
+   "name": "FINAL FANTASY: \"Scions & Spellcraft\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "fic",
+   "id": 322107,
+   "name": "FINAL FANTASY: \"Revival Trance\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "tdc",
+   "id": 322529,
+   "name": "Commander: Tarkir Dragonstorm | \"Temur Roar\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "tdc",
+   "id": 322530,
+   "name": "Commander: Tarkir Dragonstorm | \"Mardu Surge\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "tdc",
+   "id": 322531,
+   "name": "Commander: Tarkir Dragonstorm | \"Abzan Armor\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "tdc",
+   "id": 322532,
+   "name": "Commander: Tarkir Dragonstorm | \"Jeskai Striker\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "tdc",
+   "id": 322533,
+   "name": "Commander: Tarkir Dragonstorm | \"Sultai Arisen\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "eoc",
+   "id": 322693,
+   "name": "Edge of Eternities: \"Counter Intelligence\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "eoc",
+   "id": 322694,
+   "name": "Edge of Eternities: \"World Shaper\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ecc",
+   "id": 352407,
+   "name": "Lorwyn Eclipsed: \"Dance of the Elements\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "ecc",
+   "id": 352408,
+   "name": "Lorwyn Eclipsed: \"Blight Curse\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "tmc",
+   "id": 354096,
+   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "msc",
+   "id": 370630,
+   "name": "Marvel Super Heroes | \"Wakanda Forever\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "msc",
+   "id": 370631,
+   "name": "Marvel Super Heroes | \"Avengers Assemble\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "msc",
+   "id": 370632,
+   "name": "Marvel Super Heroes | \"The Fantastic Four\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "msc",
+   "id": 370633,
+   "name": "Marvel Super Heroes | \"Doom Prevails\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "msc",
+   "id": 370634,
+   "name": "Marvel Super Heroes | \"Wakanda Forever\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "msc",
+   "id": 370635,
+   "name": "Marvel Super Heroes | \"Avengers Assemble\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "msc",
+   "id": 370636,
+   "name": "Marvel Super Heroes | \"Doom Prevails\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "msc",
+   "id": 370637,
+   "name": "Marvel Super Heroes | \"The Fantastic Four\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "soc",
+   "id": 370595,
+   "name": "Commander: Secrets of Strixhaven | \"Silverquill Influence\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "soc",
+   "id": 370596,
+   "name": "Commander: Secrets of Strixhaven | \"Prismari Artistry\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "soc",
+   "id": 370597,
+   "name": "Commander: Secrets of Strixhaven | \"Witherbloom Pestilence\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "soc",
+   "id": 370598,
+   "name": "Commander: Secrets of Strixhaven | \"Lorehold Spirit\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "soc",
+   "id": 370599,
+   "name": "Commander: Secrets of Strixhaven | \"Quandrix Unlimited\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "frc",
+   "id": 389403,
+   "name": "Reality Fracture Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "trc",
+   "id": 400888,
+   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "trc",
+   "id": 400889,
+   "name": "Star Trek | \"Landing Party\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "trc",
+   "id": 400890,
+   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "trc",
+   "id": 400891,
+   "name": "Star Trek | \"We Are the Borg\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "trc",
+   "id": 400892,
+   "name": "Star Trek | \"Federation Fleet\" Collector's Edition Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "trc",
+   "id": 400893,
+   "name": "Star Trek | \"Landing Party\" Collector's Edition Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "trc",
+   "id": 400894,
+   "name": "Star Trek | \"Klingon Fury\" Collector's Edition Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "trc",
+   "id": 400895,
+   "name": "Star Trek | \"We Are the Borg\" Collector's Edition Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "fdc",
+   "id": 389398,
+   "name": "Foundations: \"Calling All Angels\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "fdc",
+   "id": 389399,
+   "name": "Foundations: \"Keen Engineering\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "fdc",
+   "id": 389400,
+   "name": "Foundations: \"Wretched Ranks\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "fdc",
+   "id": 389401,
+   "name": "Foundations: \"Reign of Dragons\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "fdc",
+   "id": 389402,
+   "name": "Foundations: \"Tramplesaurus Rex\" Commander Deck",
+   "version": ""
+  }
+ ],
+ "refreshed": "2026-10-01"
+}
