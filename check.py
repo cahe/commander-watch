@@ -40,6 +40,11 @@ NOT_A_DECK = re.compile(
 )
 # Name filter for mixed preorder categories, where other games sell "Commander" products too.
 COMMANDER_DECK = re.compile(r"commander deck", re.I)
+# Other sealed MTG products. Dragoneye names some Commander decks without the word
+# ("Secrets of Strixhaven - Lorehold Spirit"), so there anything that isn't one of these counts.
+OTHER_MTG = re.compile(
+    r"bundle|beginner box|starter kit|scene box|theme ?deck|display|jumpstart|prerelease|gift|draft night|secret lair|team-up",
+    re.I)
 
 
 # --------------------------------------------------------------------------- HTTP
@@ -171,6 +176,35 @@ def parse_presta17(html: str, base: str, *, match: re.Pattern | None = None):
     return out, soup
 
 
+def parse_sstore(html: str, base: str, *, preorder_category: bool = False):
+    """sStore (Dragoneye). Only a Magic filter here; the preorder category lists every game."""
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for box in soup.select("div.boxProdSmall"):
+        a = box.select_one("p.nazwa a")
+        m = a and re.search(r"-p-(\d+)\.html", a["href"])
+        if not m:
+            continue
+        name = " ".join(a.get_text().split())
+        if NOT_A_DECK.search(name) or ("commander" not in name.lower() and OTHER_MTG.search(name)):
+            continue
+        if preorder_category and not re.search(r"magic the gathering|\bmtg\b", name, re.I):
+            continue
+        price = box.select_one(".productSpecialPrice") or box.select_one(".cenaBrutto")
+        in_stock = box.select_one("p.produktDostepny") is not None
+        status = status_from(in_stock, name)
+        if preorder_category and in_stock:
+            status = "preorder"  # listed as "produkt na zamówienie", with no preorder badge
+        out.append({
+            "pid": int(m.group(1)),
+            "name": name,
+            "price": parse_price(price.get_text() if price else None),
+            "url": urljoin(base, a["href"]),
+            "status": status,
+        })
+    return out, soup
+
+
 # -------------------------------------------------------------------------- shops
 
 def scan_time4magic(s):
@@ -215,6 +249,17 @@ def scan_xjoy(s):
     return merge_scans(decks, pre)
 
 
+def scan_dragoneye(s):
+    base = "https://dragoneye.pl"
+    mtg = scan_paged(s, lambda n: f"{base}/magic-the-gathering-c-16_211.html" + (f"?page={n}" if n > 1 else ""),
+                     lambda h: parse_sstore(h, base), re.compile(r"c-16_211\.html\?(?:.*&)?page=(\d+)"))
+    # All games' preorders; sort=4d lists the newest additions first.
+    pre = scan_paged(s, lambda n: f"{base}/przedsprzedaz-c-75.html?sort=4d&page={n}",
+                     lambda h: parse_sstore(h, base, preorder_category=True),
+                     re.compile(r"c-75\.html\?(?:.*&)?page=(\d+)"), max_pages=3)
+    return merge_scans(mtg, pre)
+
+
 def merge_scans(*scans):
     """Combine (products, errors) from several categories; a deck in both appears once."""
     products, errors = {}, []
@@ -249,6 +294,7 @@ SHOPS = {
     "mrpuggy": ("Mr. Puggy", scan_mrpuggy),
     "wargamer": ("Wargamer", scan_wargamer),
     "xjoy": ("XJoy", scan_xjoy),
+    "dragoneye": ("Dragoneye", scan_dragoneye),
 }
 
 

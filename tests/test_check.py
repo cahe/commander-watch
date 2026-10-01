@@ -58,6 +58,22 @@ def test_presta17_wargamer():
     assert {i["pid"] for i in items} == {17060, 17058}  # theme deck and preorder wargame filtered out
 
 
+def test_sstore_dragoneye():
+    html = (FIX / "sstore.html").read_text(encoding="utf-8")
+    items, soup = check.parse_sstore(html, "https://dragoneye.pl")
+    by = {i["pid"]: i for i in items}
+    assert by[9549]["status"] == "in_stock" and by[9549]["price"] == 199.9
+    assert by[9946]["status"] == "out_of_stock"
+    assert by[9944]["price"] == 189.9             # sale price, not the struck-through one
+    assert 12368 in by                            # "Secrets of Strixhaven - Lorehold Spirit": no "commander" in the name
+    assert 11510 not in by                        # bundle
+    assert 12526 in by                            # no Magic filter outside the preorder category
+    assert check.page_numbers(soup, re.compile(r"c-16_211\.html\?(?:.*&)?page=(\d+)")) == 2
+    items, _ = check.parse_sstore(html, "https://dragoneye.pl", preorder_category=True)
+    assert 12526 not in {i["pid"] for i in items}  # board game in the preorder category
+    assert {i["status"] for i in items if i["pid"] in (9549, 9944)} == {"preorder"}
+
+
 def test_diff_new_vs_catch_up(monkeypatch=None):
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()
