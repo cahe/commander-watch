@@ -111,8 +111,32 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .offer.best { border-color: currentColor; }
 .offer:hover { text-decoration: underline; }
 .avail { font-size: 13px; color: var(--muted); }
-.seen.change { display: grid; gap: 3px; }
-.seen.change .what { font: 12px/1.3 var(--font-body); color: var(--fg); }
+details.changes { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+details.changes > summary { list-style: none; cursor: pointer; padding: 12px 14px; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+details.changes > summary::-webkit-details-marker { display: none; }
+details.changes > summary::before { content: "▸"; color: var(--muted); transition: transform .15s; display: inline-block; }
+details.changes[open] > summary::before { transform: rotate(90deg); }
+details.changes > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+details.changes .sum { font-size: 13px; color: var(--muted); min-width: 0; }
+.changes-body { padding: 0 14px 14px; display: grid; gap: 4px; }
+.changes .day { font: 500 11px/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 14px 0 4px; }
+.change { display: grid; grid-template-columns: 44px 150px minmax(0, 1fr); gap: 12px; align-items: start; padding: 8px 0; border-top: 1px solid var(--line); }
+.change .when { font: 12px/1.6 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.change .what { font-size: 14px; line-height: 1.45; min-width: 0; overflow-wrap: anywhere; }
+.change .what a { color: var(--fg); font-weight: 600; text-decoration: none; }
+.change .what a:hover { color: var(--accent); text-decoration: underline; }
+.change .num { font: 500 13px var(--font-mono); font-variant-numeric: tabular-nums; }
+.change .num.gone { color: var(--muted); text-decoration: line-through; }
+.change .num.down { color: var(--ok); } .change .num.upc { color: var(--new); }
+.change .ctx { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.change .ctx.good { color: var(--ok); }
+.tag { display: inline-block; font: 500 12px/1 var(--font-body); padding: 5px 8px; border-radius: 4px; white-space: nowrap; background: var(--off-soft); color: var(--off); }
+.tag.ok { background: var(--ok-soft); color: var(--ok); } .tag.warn { background: var(--warn-soft); color: var(--warn); }
+.tag.new, .tag.up { background: var(--new-soft); color: var(--new); } .tag.accent { background: var(--accent-soft); color: var(--accent); }
+@media (max-width: 640px) {
+  .change { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "tag when" "what what"; row-gap: 4px; }
+  .change > span:nth-child(2) { grid-area: tag; } .change .when { grid-area: when; text-align: right; } .change .what { grid-area: what; }
+}
 
 @media (max-width: 640px) {
   .item { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "deck deck" "status price" "seen seen"; row-gap: 6px; }
@@ -136,6 +160,14 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
     <div class="shops" id="shops"></div>
   </section>
 
+  <details class="changes" id="changes">
+    <summary><h2 style="display:inline">Changes</h2><span class="sum" id="changes-sum">Loading…</span></summary>
+    <div class="changes-body">
+      <div class="controls" id="changes-filters" role="group" aria-label="Filter changes"></div>
+      <div id="changes-list"></div>
+    </div>
+  </details>
+
   <section aria-labelledby="new-h">
     <div class="sec-head"><h2 id="new-h">New listings</h2><span class="count" id="newcount"></span></div>
     <div id="newshelf" class="newshelf"></div>
@@ -154,7 +186,6 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
       </select>
       <select id="sort" aria-label="Sort">
         <option value="seen">Newest first</option>
-        <option value="updated">Recently updated</option>
         <option value="price">Cheapest first</option>
         <option value="name">Name A–Z</option>
       </select>
@@ -177,7 +208,7 @@ const SHOPS = {
 };
 const STATUS_LABEL = { in_stock: "In stock", preorder: "Pre-order", out_of_stock: "Out of stock" };
 const OFFER_WORD = { in_stock: "in stock", preorder: "pre-order", out_of_stock: "sold out" };
-const state = { decks: [], meta: null, shop: "", q: "", status: "in_stock", sort: "seen" };
+const state = { decks: [], meta: null, changes: null, changeFilter: "", shop: "", q: "", status: "in_stock", sort: "seen" };
 const $ = (id) => document.getElementById(id);
 const pln = new Intl.NumberFormat("pl-PL", { style: "currency", currency: "PLN" });
 const dfmt = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric" });
@@ -262,21 +293,11 @@ function groupDecks() {
     // Average over shops: one shop listing an older deck late shouldn't make it look new.
     const ranks = g.offers.map(o => rank.get(o)).filter(r => r !== undefined);
     g.recency = ranks.length ? ranks.reduce((s, r) => s + r, 0) / ranks.length : 0;
-    // Latest price/stock change or new listing at any shop (check.py records changedAt + change).
-    g.lastChange = g.offers.filter(o => o.changedAt).sort((a, b) => String(b.changedAt).localeCompare(String(a.changedAt)))[0] || null;
     const n = g.offers.map(o => o.name.toLowerCase()).join(" ");
     g.kind = /collector/.test(n) ? (/display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Collector's set" : "Collector's edition")
            : /display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Deck set" : "";
   }
   return [...groups.values()];
-}
-
-function lastChangeCell(o) {
-  if (!o) return el("span", { class: "seen", text: "No change yet" });
-  const d = new Date(o.changedAt);
-  return el("span", { class: "seen change" },
-    el("span", { text: isNaN(d) ? "—" : tfmt.format(d) }),
-    el("span", { class: "what", text: `${SHOPS[o.shop]?.name || o.shop}: ${o.change}` }));
 }
 
 function renderList() {
@@ -289,16 +310,11 @@ function renderList() {
   for (const g of rows) g.best = g.offers.find(o => matches(o) && typeof o.price === "number") || null;
   if (state.sort === "price") rows.sort((a, b) => (a.best?.price ?? 1e9) - (b.best?.price ?? 1e9));
   else if (state.sort === "name") rows.sort((a, b) => a.name.localeCompare(b.name));
-  else {
-    // Decks found since tracking began first, then by how recently the shops added them.
-    const newest = (a, b) => b.newest.localeCompare(a.newest) || b.recency - a.recency || a.name.localeCompare(b.name);
-    const changed = (g) => String(g.lastChange?.changedAt || "");
-    rows.sort(state.sort === "updated" ? (a, b) => changed(b).localeCompare(changed(a)) || newest(a, b) : newest);
-  }
-  const updated = state.sort === "updated";
+  // Decks found since tracking began first, then by how recently the shops added them.
+  else rows.sort((a, b) => b.newest.localeCompare(a.newest) || b.recency - a.recency || a.name.localeCompare(b.name));
   const list = $("list"); list.replaceChildren();
   list.append(el("div", { class: "item head", role: "row" },
-    el("span", { text: "Deck · price per shop" }), el("span", { text: "Availability" }), el("span", { text: "Best price", style: "text-align:right" }), el("span", { text: updated ? "Last change" : "First seen" })));
+    el("span", { text: "Deck · price per shop" }), el("span", { text: "Availability" }), el("span", { text: "Best price", style: "text-align:right" }), el("span", { text: "First seen" })));
   if (!state.decks.length) {
     list.append(el("div", { class: "item" }, el("span", { class: "deck", text: "Loading tracked decks…" })));
   } else if (!rows.length) {
@@ -322,29 +338,145 @@ function renderList() {
       el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null), offers),
       st,
       el("span", { class: "price", text: g.best ? pln.format(g.best.price) : "—" }),
-      updated ? lastChangeCell(g.lastChange)
-              : el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
+      el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
   }
   $("catcount").textContent = `${rows.length} of ${listed.length} decks`;
 }
 
-function renderAll() { renderShops(); renderNew(); renderList(); }
+// "Changes" panel: events from data/changes.json (written by check.py), last 7 days, newest first.
+const CHANGE_DAYS = 7;
+const CHANGE_KIND = {
+  restock: { label: "Back in stock", cls: "ok", filter: "restock" },
+  preorder: { label: "Pre-order opened", cls: "warn", filter: "restock" },
+  new: { label: "New listing", cls: "new", filter: "new" },
+  soldout: { label: "Sold out", cls: "off", filter: "soldout" },
+  price: { label: "Price", cls: "", filter: "price" },
+  cheapest: { label: "Cheapest online", cls: "accent", filter: "price" },
+  notcheapest: { label: "No longer cheapest", cls: "off", filter: "price" }
+};
+const CHANGE_FILTERS = [["", "All"], ["restock", "Back in stock"], ["new", "New listings"], ["price", "Price changes"], ["soldout", "Sold out"]];
+const dayfmt = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short" });
+const hm = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit" });
+const shopName = (k) => SHOPS[k]?.name || k;
+const money = (shop, p) => typeof p === "number" ? (SHOPS[shop]?.approx ? "≈ " : "") + pln.format(p) : "—";
+
+function dayLabel(d) {
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const that = new Date(d); that.setHours(0, 0, 0, 0);
+  const diff = Math.round((today - that) / 86400000);
+  return diff === 0 ? "Today" : diff === 1 ? "Yesterday · " + dayfmt.format(d) : dayfmt.format(d);
+}
+
+function changeContext(e) {
+  const best = e.best ? `${shopName(e.best.shop)} ${money(e.best.shop, e.best.price)}` : null;
+  switch (e.kind) {
+    case "soldout":
+      return best ? `Still in stock at ${e.inStock} ${e.inStock === 1 ? "shop" : "shops"} · from ${best}` : "Not in stock at any shop now";
+    case "cheapest":
+      return best ? `Below every shop · next ${best}` : "No shop has it in stock";
+    case "notcheapest":
+      return best ? `Now cheaper at ${best}` : "";
+    default:
+      if (e.cheapest && best) return { good: true, text: `Now the cheapest · next ${best}` };
+      if (e.cheapest) return { good: true, text: "The only shop with it in stock" };
+      return best ? `In stock at ${e.inStock} shops · cheapest ${best}` : "";
+  }
+}
+
+function changeRows(events) {
+  // One row per event, except several new listings from one shop in one check, which share a row.
+  // "No longer cheapest" is dropped when a shop event for that deck in the same check explains it.
+  const shopEvent = new Set(events.filter(e => e.shop !== "cardtrader").map(e => e.at + "|" + e.group));
+  const rows = [];
+  for (const e of events) {
+    if (e.kind === "notcheapest" && shopEvent.has(e.at + "|" + e.group)) continue;
+    const prev = rows[rows.length - 1];
+    if (e.kind === "new" && prev && prev.kind === "new" && prev.at === e.at && prev.shop === e.shop) prev.items.push(e);
+    else rows.push({ kind: e.kind, at: e.at, shop: e.shop, items: [e] });
+  }
+  return rows;
+}
+
+function renderChangeRow(r) {
+  const e = r.items[0], k = CHANGE_KIND[e.kind] || { label: e.kind, cls: "off" };
+  let label = k.label, cls = k.cls, main, sub = "";
+  const deck = (x) => el("a", { href: safeUrl(x.url), target: "_blank", rel: "noopener", text: x.deck });
+  if (r.items.length > 1) {
+    // "Foundations Starter – Keen Engineering" ×5 → "5 Foundations Starter decks: Keen Engineering 130,00 zł · …"
+    const sets = new Set(r.items.map(x => x.deck.split(" – ")[0]));
+    const set = sets.size === 1 && r.items.every(x => x.deck.includes(" – ")) ? [...sets][0] : "";
+    label = `${r.items.length} new listings`;
+    main = el("span", {}, `${shopName(e.shop)} listed ${r.items.length} ${set ? set + " " : ""}decks`);
+    sub = r.items.map(x => `${set ? x.deck.slice(set.length + 3) : x.deck} ${money(x.shop, x.price)}`).join(" · ");
+  } else if (e.kind === "price") {
+    const down = e.price < e.old, pct = Math.round((e.price - e.old) / e.old * 100);
+    label = down ? "Price down" : "Price up"; cls = down ? "ok" : "up";
+    main = el("span", {}, deck(e), ` at ${shopName(e.shop)} `,
+      el("span", { class: "num", text: `${money(e.shop, e.old)} → ${money(e.shop, e.price)}` }), " ",
+      el("span", { class: "num " + (down ? "down" : "upc"), text: `${pct > 0 ? "+" : ""}${pct}%` }));
+    sub = changeContext(e);
+  } else {
+    const gone = e.kind === "soldout";
+    main = el("span", {}, deck(e), ` ${e.shop === "cardtrader" ? "on" : "at"} ${shopName(e.shop)} `,
+      el("span", { class: "num" + (gone ? " gone" : ""), text: money(e.shop, e.price) }));
+    sub = changeContext(e);
+  }
+  const good = typeof sub === "object" && sub?.good;
+  const subText = typeof sub === "object" ? sub?.text : sub;
+  return el("div", { class: "change", "data-filter": k.filter },
+    el("span", { class: "when", text: hm.format(new Date(e.at)) }),
+    el("span", {}, el("span", { class: "tag " + cls, text: label })),
+    el("div", { class: "what" }, el("div", {}, main), subText ? el("div", { class: "ctx" + (good ? " good" : ""), text: subText }) : null));
+}
+
+function renderChanges() {
+  const box = $("changes-list"); box.replaceChildren();
+  const since = Date.now() - CHANGE_DAYS * 86400000;
+  const recent = (state.changes || []).filter(e => Date.parse(e.at) >= since).sort((a, b) => b.at.localeCompare(a.at));
+  const rows = changeRows(recent);
+  const latest = rows[0];
+  $("changes-sum").textContent = !state.changes ? "" : rows.length
+    ? `${rows.length} in the last ${CHANGE_DAYS} days · latest: ${(CHANGE_KIND[latest.kind] || {}).label || latest.kind}, ${latest.items[0].deck} at ${shopName(latest.shop)}, ${hm.format(new Date(latest.at))}`
+    : `No changes in the last ${CHANGE_DAYS} days`;
+  const chips = $("changes-filters"); chips.replaceChildren();
+  for (const [f, label] of CHANGE_FILTERS) {
+    const n = f ? rows.filter(r => (CHANGE_KIND[r.kind] || {}).filter === f).length : rows.length;
+    const b = el("button", { class: "chip", type: "button", "aria-pressed": String(state.changeFilter === f), text: `${label} ${n}` });
+    b.addEventListener("click", () => { state.changeFilter = f; renderChanges(); });
+    chips.append(b);
+  }
+  const shown = rows.filter(r => !state.changeFilter || (CHANGE_KIND[r.kind] || {}).filter === state.changeFilter);
+  if (!shown.length) { box.append(el("div", { class: "empty", text: "Nothing like that in the last 7 days." })); return; }
+  let day = "";
+  for (const r of shown) {
+    const label = dayLabel(new Date(r.at));
+    if (label !== day) { day = label; box.append(el("div", { class: "day", text: label })); }
+    box.append(renderChangeRow(r));
+  }
+}
+
+function renderAll() { renderShops(); renderChanges(); renderNew(); renderList(); }
 
 $("q").addEventListener("input", (e) => { state.q = e.target.value; renderList(); });
 $("status").addEventListener("change", (e) => { state.status = e.target.value; renderList(); });
 $("sort").addEventListener("change", (e) => { state.sort = e.target.value; renderList(); });
 state.status = $("status").value; // the browser may restore an earlier choice on reload
+// Remember whether the Changes panel was open (per browser; storage may be unavailable).
+try { if (localStorage.getItem("changesOpen") === "1") $("changes").open = true; } catch {}
+$("changes").addEventListener("toggle", () => { try { localStorage.setItem("changesOpen", $("changes").open ? "1" : "0"); } catch {} });
 renderChips(); renderAll();
 
 (async () => {
   const bust = "?t=" + Math.floor(Date.now() / 60000);
   try {
-    const [decks, meta] = await Promise.all([
+    const [decks, meta, changes] = await Promise.all([
       fetch("data/decks.json" + bust).then(r => r.json()),
-      fetch("data/state.json" + bust).then(r => r.json()).catch(() => null)
+      fetch("data/state.json" + bust).then(r => r.json()).catch(() => null),
+      fetch("data/changes.json" + bust).then(r => r.json()).catch(() => [])
     ]);
     state.decks = decks;
     state.meta = meta;
+    state.changes = changes;
     renderAll();
   } catch (e) {
     $("list").replaceChildren(el("div", { class: "item" }, el("span", { class: "deck", text: "Couldn't load data/decks.json. Check that the repository has the data folder." })));

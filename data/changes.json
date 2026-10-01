@@ -1,0 +1,335 @@
+[
+ {
+  "at": "2026-09-30T15:13:03Z",
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "time4magic-978",
+  "inStock": 0,
+  "kind": "price",
+  "old": 229.0,
+  "price": 239.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/mtg-reality-fracture-multiverse-reforged-commander-deck"
+ },
+ {
+  "at": "2026-09-30T16:17:45Z",
+  "best": {
+   "price": 249.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "time4magic-978",
+  "inStock": 2,
+  "kind": "restock",
+  "price": 239.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-reality-fracture-multiverse-reforged-commander-deck"
+ },
+ {
+  "at": "2026-09-30T18:17:43Z",
+  "deck": "Foundations Starter – Tramplesaurus Rex",
+  "group": "cardstore-31684",
+  "id": "xjoy-26817",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 179.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/26817-mtg-foundations-starter-commander-deck-tramplesaurus-rex.html"
+ },
+ {
+  "at": "2026-10-01T10:09:37Z",
+  "best": {
+   "price": 566.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31277",
+  "id": "cardtrader-370634",
+  "inStock": 3,
+  "kind": "cheapest",
+  "price": 304.81,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370634"
+ },
+ {
+  "at": "2026-10-01T10:09:37Z",
+  "best": {
+   "price": 560.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31276",
+  "id": "cardtrader-370635",
+  "inStock": 3,
+  "kind": "cheapest",
+  "price": 348.58,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370635"
+ },
+ {
+  "at": "2026-10-01T10:09:37Z",
+  "best": {
+   "price": 566.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31279",
+  "id": "cardtrader-370636",
+  "inStock": 3,
+  "kind": "cheapest",
+  "price": 418.53,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370636"
+ },
+ {
+  "at": "2026-10-01T10:09:37Z",
+  "best": {
+   "price": 560.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31278",
+  "id": "cardtrader-370637",
+  "inStock": 3,
+  "kind": "cheapest",
+  "price": 335.41,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370637"
+ },
+ {
+  "at": "2026-10-01T10:09:37Z",
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "xjoy-26815",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 154.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/26815-mtg-foundations-starter-commander-deck-wretched-ranks.html"
+ },
+ {
+  "at": "2026-10-01T13:17:40Z",
+  "best": {
+   "price": 239.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "dragoneye-12585",
+  "inStock": 4,
+  "kind": "restock",
+  "price": 234.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-reality-fracture-commander-deck-multiverse-reforged-p-12585.html"
+ },
+ {
+  "at": "2026-10-01T14:17:30Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "cardtrader-389400",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 151.05,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389400"
+ },
+ {
+  "at": "2026-10-01T14:17:30Z",
+  "best": {
+   "price": 170.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Foundations Starter – Tramplesaurus Rex",
+  "group": "cardstore-31684",
+  "id": "cardtrader-389402",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 199.59,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389402"
+ },
+ {
+  "at": "2026-10-01T14:17:30Z",
+  "best": {
+   "price": 179.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "panmysza-12567",
+  "inStock": 2,
+  "kind": "new",
+  "price": 170.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Calling-All-Angels/12567"
+ },
+ {
+  "at": "2026-10-01T14:17:30Z",
+  "best": {
+   "price": 129.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "panmysza-12568",
+  "inStock": 3,
+  "kind": "new",
+  "price": 130.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Keen-Enginering/12568"
+ },
+ {
+  "at": "2026-10-01T14:17:30Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "panmysza-12569",
+  "inStock": 1,
+  "kind": "new",
+  "price": 150.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Wretched-Ranks/12569"
+ },
+ {
+  "at": "2026-10-01T14:17:30Z",
+  "best": {
+   "price": 179.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Reign of Dragons",
+  "group": "cardstore-31683",
+  "id": "panmysza-12570",
+  "inStock": 2,
+  "kind": "new",
+  "price": 170.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Reign-of-Dragons/12570"
+ },
+ {
+  "at": "2026-10-01T14:17:30Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Tramplesaurus Rex",
+  "group": "cardstore-31684",
+  "id": "panmysza-12571",
+  "inStock": 1,
+  "kind": "new",
+  "price": 170.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Tramplesaurus-Rex/12571"
+ },
+ {
+  "at": "2026-10-01T17:17:29Z",
+  "best": {
+   "price": 229.99,
+   "shop": "mrpuggy"
+  },
+  "cheapest": true,
+  "deck": "Lorwyn Eclipsed – Dance of the Elements",
+  "group": "cardtrader-352407",
+  "id": "cardtrader-352407",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 199.72,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/352407"
+ },
+ {
+  "at": "2026-10-01T17:17:29Z",
+  "best": {
+   "price": 229.99,
+   "shop": "mrpuggy"
+  },
+  "deck": "Lorwyn Eclipsed – Dance of the Elements",
+  "group": "cardtrader-352407",
+  "id": "wargamer-16370",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 199.0,
+  "shop": "wargamer",
+  "status": "out_of_stock",
+  "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16370-mtg-le-cd-dote.html"
+ },
+ {
+  "at": "2026-10-01T19:17:25Z",
+  "best": {
+   "price": 199.99,
+   "shop": "mrpuggy"
+  },
+  "cheapest": false,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "cardtrader-389403",
+  "inStock": 5,
+  "kind": "notcheapest",
+  "price": 234.74,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389403"
+ },
+ {
+  "at": "2026-10-01T19:17:25Z",
+  "best": {
+   "price": 234.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": true,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "mrpuggy-14242",
+  "inStock": 5,
+  "kind": "restock",
+  "price": 199.99,
+  "shop": "mrpuggy",
+  "status": "in_stock",
+  "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Reality-Fracture-Commander-Deck/14242"
+ },
+ {
+  "at": "2026-10-01T21:17:30Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "deck": "Final Fantasy – Limit Break",
+  "group": "cardstore-29973",
+  "id": "time4magic-465",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 249.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Limit-Break/465"
+ }
+]
