@@ -347,7 +347,7 @@ def scan_cardtrader(s):
         return None  # skipped, not failed
     try:
         rates = pln_rates(s)
-        blueprints = cardtrader_blueprints()
+        blueprints = sold_by_shops(cardtrader_blueprints())
     except Exception as e:
         return [], [str(e)]
     out, errors = [], []
@@ -409,27 +409,60 @@ def pln_rates(s) -> dict[str, float]:
 
 
 CARDTRADER_CACHE = ROOT / "data" / "cardtrader.json"
-CARDTRADER_EXPANSIONS = 40  # newest "Commander: …" expansions to read decks from
+# Commander precons sit in "Commander: …" expansions, but Universes Beyond decks live in the set
+# itself ("Universes Beyond: Doctor Who"), so both kinds of expansion are read.
+CARDTRADER_EXPANSION = re.compile(r"commander|^universes beyond", re.I)
 CARDTRADER_PRECON_CATEGORY = 17  # "Magic Preconstructed Decks"
 
 
 def cardtrader_blueprints() -> list[dict]:
-    """Commander precons on CardTrader, cached in data/cardtrader.json and refreshed daily."""
+    """Commander precons on CardTrader, cached in data/cardtrader.json and refreshed daily.
+
+    If the refresh fails, the previous list is used rather than none.
+    """
     cache = load(CARDTRADER_CACHE, {})
     today = date.today().isoformat()
     if cache.get("refreshed") == today and cache.get("blueprints"):
         return cache["blueprints"]
-    exps = [e for e in cardtrader_get("/expansions")
-            if e.get("game_id") == 1 and str(e.get("name", "")).startswith("Commander:")
-            and "promo" not in str(e.get("name", "")).lower()]
-    exps.sort(key=lambda e: e["id"], reverse=True)
-    blueprints = []
-    for e in exps[:CARDTRADER_EXPANSIONS]:
-        for b in cardtrader_get("/blueprints/export", expansion_id=e["id"]):
-            if b.get("category_id") == CARDTRADER_PRECON_CATEGORY:
-                blueprints.append({"id": b["id"], "name": " ".join(str(b["name"]).split()), "expansion": e.get("code")})
+    try:
+        exps = [e for e in cardtrader_get("/expansions")
+                if e.get("game_id") == 1 and CARDTRADER_EXPANSION.search(str(e.get("name", "")))
+                and "promo" not in str(e.get("name", "")).lower()]
+        limit = RateLimit(10)  # well inside the 200 requests per 10 seconds global limit
+
+        def precons(e):
+            limit.wait()
+            # The version tells otherwise identically named entries apart (e.g. a Collector's Edition).
+            return [{"id": b["id"], "name": " ".join(f"{b['name']} {b.get('version') or ''}".split()),
+                     "version": b.get("version"), "expansion": e.get("code")}
+                    for b in cardtrader_get("/blueprints/export", expansion_id=e["id"])
+                    if b.get("category_id") == CARDTRADER_PRECON_CATEGORY]
+
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            blueprints = [b for found in pool.map(precons, exps) for b in found]
+    except Exception:
+        if cache.get("blueprints"):
+            return cache["blueprints"]
+        raise
+    dupes = [n for n, c in Counter(b["name"] for b in blueprints).items() if c > 1]
+    print(f"    CardTrader: {len(blueprints)} precons in {len(exps)} expansions"
+          + (f"; same name twice: {dupes}" if dupes else ""))
     save(CARDTRADER_CACHE, {"refreshed": today, "blueprints": blueprints})
     return blueprints
+
+
+def sold_by_shops(blueprints: list[dict]) -> list[dict]:
+    """Only the CardTrader decks that match a shop listing: the page hides the rest anyway,
+    so this keeps the hourly offer requests to the decks the shops sell."""
+    shops = [{"id": d["id"], "shop": d["shop"], "name": d["name"]}
+             for d in load(DECKS_FILE, []) if d["shop"] not in QUIET_SHOPS]
+    if not shops:
+        return blueprints
+    probes = [{"id": f"ct-{b['id']}", "shop": "cardtrader", "name": b["name"]} for b in blueprints]
+    assign_groups(shops + probes)
+    shop_groups = {d["group"] for d in shops}
+    keep = {p["id"] for p in probes if p["group"] in shop_groups}
+    return [b for b in blueprints if f"ct-{b['id']}" in keep]
 
 
 SHOPS = {
@@ -495,13 +528,20 @@ def assign_groups(decks: list[dict]) -> None:
         total = sum(idf[t] for t in a) + sum(idf[t] for t in b) - matched
         return matched / total if total else 0.0
 
+    def contained(a: frozenset, b: frozenset) -> bool:
+        # Every word of the shorter name is in the longer one ("The Lord of the Rings | Food And
+        # Fellowship" vs "... Tales of Middle-earth - Food and Fellowship"). Needs 3+ words, so a
+        # vague "Reality Fracture - Commander Deck" doesn't join some deck of that set.
+        small, big = (a, b) if len(a) <= len(b) else (b, a)
+        return len(small) >= 3 and all(any(same_word(x, y) for y in big) for x in small)
+
     pairs = []
     for i in range(len(decks)):
         for j in range(i + 1, len(decks)):
             if decks[i]["shop"] != decks[j]["shop"] and kinds[i] == kinds[j] and toks[i] and toks[j]:
                 s = score(toks[i], toks[j])
-                if s >= GROUP_THRESHOLD:
-                    pairs.append((s, i, j))
+                if s >= GROUP_THRESHOLD or contained(toks[i], toks[j]):
+                    pairs.append((s, i, j))  # best matches are merged first
     parent = list(range(len(decks)))
     shops = [{d["shop"]} for d in decks]
 
@@ -734,9 +774,11 @@ def main() -> int:
             st["failStreak"] = 0
 
         max_seen = st.get("maxId", 0)
+        seen = set()
         for p in found:
             doc_id = f"{shop}-{p['pid']}" if p["pid"] else f"{shop}-{norm_url(p['url']).rsplit('/', 1)[-1][:120]}"
             known = by_id.get(doc_id) or by_url.get(norm_url(p["url"]))
+            seen.add(known["id"] if known else doc_id)
             if known:
                 was_in_stock = known.get("status") == "in_stock"
                 old_price, old_status = known.get("price"), known.get("status")
@@ -765,6 +807,10 @@ def main() -> int:
             if p["pid"]:
                 max_seen = max(max_seen, p["pid"])
         st["maxId"] = max(st.get("maxId", 0), max_seen)
+        if shop in QUIET_SHOPS and found and not errors:
+            # CardTrader is only priced for decks shops sell; drop listings it no longer prices,
+            # so a stale one can't keep a deck's CardTrader slot. Shop listings are never dropped.
+            decks[:] = [d for d in decks if d["shop"] != shop or d["id"] in seen]
 
     # Weekly heartbeat keeps the repo "active" so GitHub doesn't pause the schedule.
     hb = state.get("heartbeat")

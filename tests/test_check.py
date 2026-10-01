@@ -147,6 +147,14 @@ def test_cardtrader_is_quiet():
     assert sent == []
     d = json.loads(check.DECKS_FILE.read_text(encoding="utf-8"))[0]
     assert d["baseline"] is True and d["status"] == "in_stock" and d["change"] == "back in stock"
+    # a CardTrader listing it no longer prices is dropped (shop listings never are)
+    other = dict(listing, pid=389399, name='Foundations: "Keen Engineering" Commander Deck',
+                 url="https://www.cardtrader.com/en/cards/389399")
+    check.SHOPS = {"cardtrader": ("CardTrader", lambda s: ([dict(listing), dict(other)], []))}
+    check.main()
+    check.SHOPS = {"cardtrader": ("CardTrader", lambda s: ([dict(other)], []))}
+    check.main()
+    assert [d["id"] for d in json.loads(check.DECKS_FILE.read_text(encoding="utf-8"))] == ["cardtrader-389399"]
 
 
 def test_cardtrader_cheapest_push():
@@ -167,6 +175,25 @@ def test_cardtrader_cheapest_push():
     assert fresh["cheapest"] is True
     alone = {"id": "cardtrader-3", "shop": "cardtrader", "group": "k", "status": "in_stock", "price": 1.0}
     assert check.cardtrader_newly_cheapest([alone]) == [] and "cheapest" not in alone  # no shop sells it
+
+
+def test_cardtrader_only_decks_shops_sell():
+    tmp = Path(tempfile.mkdtemp())
+    check.DECKS_FILE = tmp / "decks.json"
+    check.DECKS_FILE.write_text(json.dumps([
+        {"id": "time4magic-1", "shop": "time4magic", "name": "Doctor Who Commander Deck: Blast from the Past"},
+        {"id": "panmysza-1", "shop": "panmysza",
+         "name": "The Lord of the Rings: Tales of Middle-earth Commander Deck Food and Fellowship"},
+        {"id": "xjoy-1", "shop": "xjoy", "name": "MTG: Marvel Super Heroes - Commander Deck - Avengers Assemble"},
+    ]))
+    bps = [
+        {"id": 1, "name": 'Universes Beyond: Doctor Who "Blast from the Past" Commander Deck'},
+        {"id": 2, "name": 'Commander: The Lord of the Rings | "Food And Fellowship" Commander Deck'},  # 3+ words contained
+        {"id": 3, "name": 'Marvel Super Heroes | "Avengers Assemble" Commander Deck'},
+        {"id": 4, "name": "Marvel Super Heroes | \"Avengers Assemble\" Commander Deck Collector's Edition"},  # version
+        {"id": 5, "name": 'Commander Legends: "Arm for Battle" Commander Deck'},  # no shop sells it
+    ]
+    assert [b["id"] for b in check.sold_by_shops(bps)] == [1, 2, 3]
 
 
 def test_empty_category_is_a_failure():
