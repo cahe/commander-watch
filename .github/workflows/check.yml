@@ -53,5 +53,13 @@ jobs:
             echo "Nothing changed."
           else
             git commit -m "Update decks $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            # GitHub occasionally answers a push with a 500. Retry a few times, rebasing in case
+            # main moved, so one hiccup doesn't lose the run (and repeat its pushes next time).
+            for attempt in 1 2 3; do
+              if git push; then exit 0; fi
+              echo "Push failed (attempt $attempt); retrying."
+              sleep $((attempt * 10))
+              git pull --rebase --quiet origin main
+            done
+            exit 1
           fi
