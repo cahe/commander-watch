@@ -29,7 +29,8 @@ def test_shoper_parser():
 def test_presta_parser():
     items, _ = check.parse_presta((FIX / "presta.html").read_text(), "https://cardstore.pl")
     by = {i["pid"]: i for i in items}
-    assert by[31606]["status"] == "preorder" and by[31606]["price"] == 179
+    # "[PRZEDSPRZEDAŻ]" in the name, but schema.org OutOfStock: Cardstore won't take the order.
+    assert by[31606]["status"] == "out_of_stock" and by[31606]["price"] == 179
     assert by[31606]["name"].startswith("Commander Reality Fracture: Multiverse Reforged")
     assert by[29972]["status"] == "in_stock"
 
