@@ -325,6 +325,86 @@ def scan_paged(s, url_for, parse, page_re, max_pages=MAX_PAGES):
     return list(products.values()), errors
 
 
+def scan_cardtrader(s):
+    """CardTrader marketplace: cheapest CardTrader Zero offer per Commander precon, converted to PLN.
+
+    Prices only: listings from QUIET_SHOPS never trigger pushes. Without CARDTRADER_TOKEN it's skipped.
+    """
+    if not os.environ.get("CARDTRADER_TOKEN", "").strip():
+        print("    CARDTRADER_TOKEN not set; skipping CardTrader.")
+        return [], []
+    try:
+        rates = pln_rates(s)
+        blueprints = cardtrader_blueprints()
+    except Exception as e:
+        return [], [str(e)]
+    out, errors = [], []
+    for bp in blueprints:
+        try:
+            offers = cardtrader_get("/marketplace/products", blueprint_id=bp["id"]).get(str(bp["id"]), [])
+        except Exception as e:
+            errors.append(str(e))
+            continue
+        best = cheapest_zero_offer(offers, rates)
+        out.append({
+            "pid": bp["id"],
+            "name": bp["name"],
+            "price": best,
+            "url": f"https://www.cardtrader.com/en/cards/{bp['id']}",
+            "status": "in_stock" if best is not None else "out_of_stock",
+        })
+        time.sleep(0.12)  # marketplace endpoint allows 10 requests per second
+    return out, errors
+
+
+def cheapest_zero_offer(offers: list[dict], rates: dict[str, float]) -> float | None:
+    """Lowest PLN price among sealed, English, single-copy offers shipped via CardTrader Zero."""
+    best = None
+    for o in offers:
+        user = o.get("user") or {}
+        lang = (o.get("properties_hash") or {}).get("mtg_language")
+        price = o.get("price") or {}
+        rate = rates.get(price.get("currency"))
+        if (not user.get("can_sell_via_hub") or o.get("on_vacation") or o.get("graded")
+                or (o.get("bundle_size") or 1) > 1 or not o.get("quantity")
+                or (lang and lang != "en") or price.get("cents") is None or rate is None):
+            continue
+        pln = round(price["cents"] / 100 * rate, 2)
+        best = pln if best is None else min(best, pln)
+    return best
+
+
+def pln_rates(s) -> dict[str, float]:
+    """PLN per unit of each currency: National Bank of Poland mid rates (table A)."""
+    r = s.get("https://api.nbp.pl/api/exchangerates/tables/A/?format=json", timeout=30)
+    r.raise_for_status()
+    return {"PLN": 1.0, **{x["code"]: x["mid"] for x in r.json()[0]["rates"]}}
+
+
+CARDTRADER_CACHE = ROOT / "data" / "cardtrader.json"
+CARDTRADER_EXPANSIONS = 40  # newest "Commander: …" expansions to read decks from
+CARDTRADER_PRECON_CATEGORY = 17  # "Magic Preconstructed Decks"
+
+
+def cardtrader_blueprints() -> list[dict]:
+    """Commander precons on CardTrader, cached in data/cardtrader.json and refreshed daily."""
+    cache = load(CARDTRADER_CACHE, {})
+    today = date.today().isoformat()
+    if cache.get("refreshed") == today and cache.get("blueprints"):
+        return cache["blueprints"]
+    exps = [e for e in cardtrader_get("/expansions")
+            if e.get("game_id") == 1 and str(e.get("name", "")).startswith("Commander:")
+            and "promo" not in str(e.get("name", "")).lower()]
+    exps.sort(key=lambda e: e["id"], reverse=True)
+    blueprints = []
+    for e in exps[:CARDTRADER_EXPANSIONS]:
+        for b in cardtrader_get("/blueprints/export", expansion_id=e["id"]):
+            if b.get("category_id") == CARDTRADER_PRECON_CATEGORY:
+                blueprints.append({"id": b["id"], "name": " ".join(str(b["name"]).split()), "expansion": e.get("code")})
+    save(CARDTRADER_CACHE, {"refreshed": today, "blueprints": blueprints})
+    return blueprints
+
+
 SHOPS = {
     "time4magic": ("Time4Magic", scan_time4magic),
     "cardstore": ("Cardstore", scan_cardstore),
@@ -333,7 +413,9 @@ SHOPS = {
     "xjoy": ("XJoy", scan_xjoy),
     "dragoneye": ("Dragoneye", scan_dragoneye),
     "panmysza": ("Pan Mysza", scan_panmysza),
+    "cardtrader": ("CardTrader", scan_cardtrader),
 }
+QUIET_SHOPS = {"cardtrader"}  # prices only: never announce new decks or restocks
 
 
 # ---------------------------------------------------------------------- grouping
@@ -523,6 +605,36 @@ def cardtrader_discover() -> int:
         return 1
 
 
+ORDERABLE = {"in_stock", "preorder"}
+
+
+def cardtrader_newly_cheapest(decks: list[dict]) -> list[tuple[dict, dict | None]]:
+    """CardTrader listings that just became the cheapest way to order their deck.
+
+    Only decks a shop also lists count. Each CardTrader listing keeps a "cheapest" flag, so a push
+    goes out when it turns true, not every hour it stays true; the first time a listing is
+    evaluated the flag is just recorded. Returns (CardTrader listing, cheapest shop offer or None).
+    """
+    groups: dict[str, list[dict]] = {}
+    for d in decks:
+        groups.setdefault(d.get("group", d["id"]), []).append(d)
+    news = []
+    for members in groups.values():
+        shops = [d for d in members if d["shop"] not in QUIET_SHOPS]
+        for ct in (d for d in members if d["shop"] in QUIET_SHOPS):
+            if not shops:
+                ct.pop("cheapest", None)
+                continue
+            rivals = [d for d in shops if d["status"] in ORDERABLE and d.get("price") is not None]
+            nxt = min(rivals, key=lambda d: d["price"], default=None)
+            now_cheapest = (ct["status"] in ORDERABLE and ct.get("price") is not None
+                            and (nxt is None or ct["price"] < nxt["price"]))
+            if now_cheapest and ct.get("cheapest") is False:
+                news.append((ct, nxt))
+            ct["cheapest"] = now_cheapest
+    return news
+
+
 def describe_change(old_price: float | None, old_status: str | None, d: dict) -> str:
     """Short note for the page, e.g. "back in stock, price 239.00 → 219.00 zł"; "" if nothing changed."""
     parts = []
@@ -564,7 +676,10 @@ def main() -> int:
     for shop, (label, scan) in SHOPS.items():
         shop_first = shop not in state["shops"]  # a newly added shop: its first scan is silent
         st = state["shops"].setdefault(shop, {"maxId": 0, "failStreak": 0})
-        found, errors = scan(session)
+        try:
+            found, errors = scan(session)
+        except Exception as e:  # one broken scanner shouldn't stop the other shops
+            found, errors = [], [f"{type(e).__name__}: {e}"]
         print(f"{label}: {len(found)} commander products, {len(errors)} page errors")
         for e in errors:
             print("   ", e)
@@ -591,12 +706,13 @@ def main() -> int:
                 change = describe_change(old_price, old_status, known)
                 if change:  # for the page's "Recently updated" sort
                     known["changedAt"], known["change"] = stamp, change
-                if known["status"] == "in_stock" and not was_in_stock:
+                if known["status"] == "in_stock" and not was_in_stock and shop not in QUIET_SHOPS:
                     restocked.append(known)  # back in stock (or preorder became available)
                 continue
             # Unknown product. Shop ids only grow, so an id at or below the
             # highest one we've seen is an old listing we simply missed before.
-            catch_up = first_run or shop_first or (p["pid"] is not None and p["pid"] <= st.get("maxId", 0))
+            catch_up = (first_run or shop_first or shop in QUIET_SHOPS
+                        or (p["pid"] is not None and p["pid"] <= st.get("maxId", 0)))
             deck = {"id": doc_id, "shop": shop, **p, "firstSeen": stamp, "baseline": catch_up,
                     "changedAt": stamp, "change": "listed"}
             decks.append(deck)
@@ -614,6 +730,7 @@ def main() -> int:
         state["heartbeat"] = now.date().isoformat()
 
     assign_groups(decks)
+    cheapest = cardtrader_newly_cheapest(decks)
     decks.sort(key=lambda d: (d["shop"], d["id"]))
     save(DECKS_FILE, decks)
     save(STATE_FILE, state)
@@ -630,6 +747,13 @@ def main() -> int:
         title = "Commander deck back in stock" if len(restocked) == 1 else f"{len(restocked)} Commander decks back in stock"
         print(f"{title}:", *lines, sep="\n  ")
         notify(title, lines, tags="package")
+    if cheapest:
+        lines = [f"{ct['groupName']} — {ct['price']:.2f} zł"
+                 + (f" (next: {SHOPS[nxt['shop']][0]} {nxt['price']:.2f} zł)" if nxt else " (no shop has it now)")
+                 for ct, nxt in cheapest]
+        title = "Cheapest on CardTrader" if len(cheapest) == 1 else f"{len(cheapest)} decks cheapest on CardTrader"
+        print(f"{title}:", *lines, sep="\n  ")
+        notify(title, lines, tags="moneybag")
     if alerts:
         notify("Commander Watch: shop check failing", alerts, tags="warning")
     return 0

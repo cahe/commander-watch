@@ -110,6 +110,65 @@ def test_grouping():
     assert decks[3]["groupName"] in ("Final Fantasy – Scions & Spellcraft", "Final Fantasy – Scions and Spellcraft")
 
 
+def test_cardtrader_offers():
+    zero = {"can_sell_via_hub": True}
+    offer = lambda cents, cur="EUR", **kw: {"price": {"cents": cents, "currency": cur}, "quantity": 1,
+                                            "user": kw.pop("user", zero), **kw}
+    rates = {"EUR": 4.0, "PLN": 1.0}
+    offers = [
+        offer(3000, user={"can_sell_via_hub": False}),          # not CardTrader Zero
+        offer(3100, properties_hash={"mtg_language": "de"}),     # German
+        offer(3200, on_vacation=True),
+        offer(3300, bundle_size=2),
+        offer(3400, quantity=0),
+        offer(3500, cur="XYZ"),                                  # no exchange rate
+        offer(5000),
+        offer(4500, properties_hash={"mtg_language": "en"}),
+    ]
+    assert check.cheapest_zero_offer(offers, rates) == 180.0     # 45.00 EUR * 4.0
+    assert check.cheapest_zero_offer(offers[:6], rates) is None
+
+
+def test_cardtrader_is_quiet():
+    """CardTrader listings never announce new decks or restocks."""
+    tmp = Path(tempfile.mkdtemp())
+    (tmp / "data").mkdir()
+    check.DECKS_FILE, check.STATE_FILE = tmp / "data" / "decks.json", tmp / "data" / "state.json"
+    check.STATE_FILE.write_text(json.dumps({"shops": {"cardtrader": {"maxId": 0, "failStreak": 0}}}))
+    check.DECKS_FILE.write_text("[]")
+    sent = []
+    check.notify = lambda title, lines, tags="": sent.append(title)
+    listing = {"pid": 389398, "name": 'Foundations: "Calling All Angels" Commander Deck', "price": None,
+               "url": "https://www.cardtrader.com/en/cards/389398", "status": "out_of_stock"}
+    check.SHOPS = {"cardtrader": ("CardTrader", lambda s: ([dict(listing)], []))}
+    check.main()                                   # new deck: would normally push (maxId 0)
+    listing.update(price=180.0, status="in_stock")
+    check.main()                                   # back in stock: would normally push
+    assert sent == []
+    d = json.loads(check.DECKS_FILE.read_text(encoding="utf-8"))[0]
+    assert d["baseline"] is True and d["status"] == "in_stock" and d["change"] == "back in stock"
+
+
+def test_cardtrader_cheapest_push():
+    ct = {"id": "cardtrader-1", "shop": "cardtrader", "group": "g", "status": "in_stock", "price": 200.0}
+    shop = {"id": "xjoy-1", "shop": "xjoy", "group": "g", "status": "in_stock", "price": 190.0}
+    sold = {"id": "time4magic-1", "shop": "time4magic", "group": "g", "status": "out_of_stock", "price": 150.0}
+    decks = [ct, shop, sold]
+    assert check.cardtrader_newly_cheapest(decks) == [] and ct["cheapest"] is False  # dearer than XJoy
+    ct["price"] = 185.0
+    assert check.cardtrader_newly_cheapest(decks) == [(ct, shop)]     # now cheapest -> push
+    assert check.cardtrader_newly_cheapest(decks) == []               # still cheapest -> no repeat
+    shop["status"] = "out_of_stock"                                   # sold-out shops don't count...
+    ct["cheapest"] = False
+    assert check.cardtrader_newly_cheapest(decks) == [(ct, None)]     # ...so CardTrader is the only option
+    fresh = {"id": "cardtrader-2", "shop": "cardtrader", "group": "h", "status": "in_stock", "price": 1.0}
+    other = {"id": "xjoy-2", "shop": "xjoy", "group": "h", "status": "in_stock", "price": 99.0}
+    assert check.cardtrader_newly_cheapest([fresh, other]) == []      # first evaluation is silent
+    assert fresh["cheapest"] is True
+    alone = {"id": "cardtrader-3", "shop": "cardtrader", "group": "k", "status": "in_stock", "price": 1.0}
+    assert check.cardtrader_newly_cheapest([alone]) == [] and "cheapest" not in alone  # no shop sells it
+
+
 def test_diff_new_vs_catch_up(monkeypatch=None):
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()
