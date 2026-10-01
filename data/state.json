@@ -5,6 +5,10 @@
    "failStreak": 0,
    "maxId": 31684
   },
+  "dragoneye": {
+   "failStreak": 0,
+   "maxId": 0
+  },
   "mrpuggy": {
    "failStreak": 0,
    "maxId": 15662
