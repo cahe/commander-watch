@@ -169,6 +169,31 @@ def test_cardtrader_cheapest_push():
     assert check.cardtrader_newly_cheapest([alone]) == [] and "cheapest" not in alone  # no shop sells it
 
 
+def test_empty_category_is_a_failure():
+    block_page = "<html><head><title>Just a moment...</title></head><body></body></html>"
+    real_fetch = check.fetch
+    check.fetch = lambda url, s: block_page
+    try:
+        parse = lambda h: check.parse_presta(h, "https://www.xjoy.pl")
+        page_re = re.compile(r"p=(\d+)")
+        items, errors = check.scan_paged(None, lambda n: "https://www.xjoy.pl/371-mtg-commander", parse, page_re)
+        assert items == [] and len(errors) == 1 and "'Just a moment...'" in errors[0]
+        items, errors = check.scan_paged(None, lambda n: "https://www.xjoy.pl/66-przedsprzedaz", parse, page_re,
+                                         may_be_empty=True)
+        assert items == [] and errors == []  # preorder categories may hold no Commander deck
+    finally:
+        check.fetch = real_fetch
+
+
+def test_rate_limit_spacing():
+    limit = check.RateLimit(50)
+    from concurrent.futures import ThreadPoolExecutor
+    started = check.time.monotonic()
+    with ThreadPoolExecutor(4) as pool:
+        list(pool.map(lambda _: limit.wait(), range(8)))
+    assert check.time.monotonic() - started >= 7 * 0.02 - 0.005  # 8 calls, 4 threads, still 20 ms apart
+
+
 def test_diff_new_vs_catch_up(monkeypatch=None):
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()
