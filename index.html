@@ -230,6 +230,14 @@ function renderChips() {
 
 // One row per deck: check.py gives listings of the same deck a shared "group" and "groupName".
 function groupDecks() {
+  // Shops number products in the order they add them. IDs can't be compared across shops,
+  // so each listing gets its rank within its own shop: 1 = that shop's newest listing.
+  const rank = new Map(), byShop = new Map();
+  for (const d of state.decks) if (typeof d.pid === "number") (byShop.get(d.shop) || byShop.set(d.shop, []).get(d.shop)).push(d);
+  for (const list of byShop.values()) {
+    list.sort((a, b) => a.pid - b.pid);
+    list.forEach((d, i) => rank.set(d, list.length > 1 ? i / (list.length - 1) : 1));
+  }
   const groups = new Map();
   for (const d of state.decks) {
     const key = d.group || d.id;
@@ -242,6 +250,7 @@ function groupDecks() {
     const known = g.offers.some(o => o.baseline);
     g.firstSeen = known ? null : g.offers.map(o => String(o.firstSeen)).sort()[0];
     g.newest = g.offers.filter(o => !o.baseline).map(o => String(o.firstSeen)).sort().pop() || "";
+    g.recency = Math.max(0, ...g.offers.map(o => rank.get(o) ?? 0));  // newest at any shop counts
     const n = g.offers.map(o => o.name.toLowerCase()).join(" ");
     g.kind = /collector/.test(n) ? (/display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Collector's set" : "Collector's edition")
            : /display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Deck set" : "";
@@ -258,7 +267,8 @@ function renderList() {
   for (const g of rows) g.best = g.offers.find(o => matches(o) && typeof o.price === "number") || null;
   if (state.sort === "price") rows.sort((a, b) => (a.best?.price ?? 1e9) - (b.best?.price ?? 1e9));
   else if (state.sort === "name") rows.sort((a, b) => a.name.localeCompare(b.name));
-  else rows.sort((a, b) => b.newest.localeCompare(a.newest) || a.name.localeCompare(b.name));  // latest new listing first
+  // Decks found since tracking began first, then by how recently the shops added them.
+  else rows.sort((a, b) => b.newest.localeCompare(a.newest) || b.recency - a.recency || a.name.localeCompare(b.name));
   const list = $("list"); list.replaceChildren();
   list.append(el("div", { class: "item head", role: "row" },
     el("span", { text: "Deck · price per shop" }), el("span", { text: "Availability" }), el("span", { text: "Best price", style: "text-align:right" }), el("span", { text: "First seen" })));
