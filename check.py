@@ -35,7 +35,7 @@ FAIL_ALERT_AFTER = 6  # consecutive failed runs (~6 h at hourly checks) before a
 
 # Words that mark accessories rather than sealed decks.
 NOT_A_DECK = re.compile(
-    r"sleeve|koszulk|deck ?box|pudełk|playmat|mata|dragon shield|ultra pro|booster|binder|album",
+    r"sleeve|koszulk|deck ?box|pudełk|playmat|mata|dragon shield|ultra pro|booster|binder|album|bundle",
     re.I,
 )
 # Name filter for mixed preorder categories, where other games sell "Commander" products too.
@@ -120,6 +120,28 @@ def parse_shoper(html: str, base: str, *, category: str | None = None, name_filt
             "price": price,
             "url": urljoin(base, link["href"]),
             "status": status_from(buyable, name),
+        })
+    return out, soup
+
+
+def parse_shoper_classic(html: str, base: str):
+    """Older Shoper template (Pan Mysza): no <product-tile>; a basket button means it can be bought."""
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for prod in soup.select("div.product[data-product-id]"):
+        a = prod.select_one("a.prodname")
+        if not a:
+            continue
+        name = " ".join(a.get_text().split())
+        if "commander" not in name.lower() or NOT_A_DECK.search(name):
+            continue
+        price = prod.select_one(".price em")
+        out.append({
+            "pid": int(prod["data-product-id"]),
+            "name": name,
+            "price": parse_price(price.get_text() if price else None),
+            "url": urljoin(base, a["href"]),
+            "status": status_from(prod.select_one("button.addtobasket") is not None, name),
         })
     return out, soup
 
@@ -221,6 +243,13 @@ def scan_mrpuggy(s):
                       re.compile(r"/pl/c/Magic-The-Gathering/23/(\d+)$"))
 
 
+def scan_panmysza(s):
+    base = "https://panmysza.pl"
+    url = lambda n: f"{base}/pl/c/Magic-The-Gathering/53" + (f"/{n}" if n > 1 else "")
+    return scan_paged(s, url, lambda h: parse_shoper_classic(h, base),
+                      re.compile(r"/pl/c/Magic-The-Gathering/53/(\d+)$"))
+
+
 def scan_cardstore(s):
     base = "https://cardstore.pl"
     url = lambda n: f"{base}/157-commander" + (f"?p={n}" if n > 1 else "")
@@ -295,6 +324,7 @@ SHOPS = {
     "wargamer": ("Wargamer", scan_wargamer),
     "xjoy": ("XJoy", scan_xjoy),
     "dragoneye": ("Dragoneye", scan_dragoneye),
+    "panmysza": ("Pan Mysza", scan_panmysza),
 }
 
 

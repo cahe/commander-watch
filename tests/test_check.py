@@ -74,6 +74,17 @@ def test_sstore_dragoneye():
     assert {i["status"] for i in items if i["pid"] in (9549, 9944)} == {"preorder"}
 
 
+def test_shoper_classic_panmysza():
+    items, soup = check.parse_shoper_classic((FIX / "shoper_classic.html").read_text(encoding="utf-8"),
+                                             "https://panmysza.pl")
+    by = {i["pid"]: i for i in items}
+    assert set(by) == {8236, 10754}  # Commander's Bundle and a booster filtered out
+    assert by[8236]["status"] == "in_stock" and by[8236]["price"] == 168
+    assert by[10754]["status"] == "out_of_stock"  # "notify me" instead of a basket button
+    assert by[8236]["url"] == "https://panmysza.pl/pl/p/MtG-Final-Fantasy-Commander-Deck-Revival-Trance/8236"
+    assert check.page_numbers(soup, re.compile(r"/pl/c/Magic-The-Gathering/53/(\d+)$")) == 4
+
+
 def test_diff_new_vs_catch_up(monkeypatch=None):
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()
