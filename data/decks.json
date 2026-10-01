@@ -370,8 +370,8 @@
  },
  {
   "baseline": true,
-  "change": "price 212.85 → 217.27 zł",
-  "changedAt": "2026-10-01T17:17:15Z",
+  "change": "price 217.27 → 212.85 zł",
+  "changedAt": "2026-10-01T18:17:18Z",
   "cheapest": true,
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardtrader-224264",
@@ -379,7 +379,7 @@
   "id": "cardtrader-224264",
   "name": "Starter Commander Decks | \"Chaos Incarnate\" Commander Deck",
   "pid": 224264,
-  "price": 217.27,
+  "price": 212.85,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/224264"
@@ -1218,8 +1218,8 @@
  },
  {
   "baseline": true,
-  "change": "price 153.37 → 155.47 zł",
-  "changedAt": "2026-10-01T17:17:15Z",
+  "change": "price 155.47 → 153.37 zł",
+  "changedAt": "2026-10-01T18:17:18Z",
   "cheapest": true,
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardtrader-370598",
@@ -1227,7 +1227,7 @@
   "id": "cardtrader-370598",
   "name": "Commander: Secrets of Strixhaven | \"Lorehold Spirit\" Commander Deck",
   "pid": 370598,
-  "price": 155.47,
+  "price": 153.37,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370598"
@@ -1410,8 +1410,8 @@
  },
  {
   "baseline": true,
-  "change": "price 151.05 → 153.94 zł",
-  "changedAt": "2026-10-01T17:17:15Z",
+  "change": "price 153.94 → 151.05 zł",
+  "changedAt": "2026-10-01T18:17:18Z",
   "cheapest": false,
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31682",
@@ -1419,7 +1419,7 @@
   "id": "cardtrader-389400",
   "name": "Foundations: \"Wretched Ranks\" Commander Deck",
   "pid": 389400,
-  "price": 153.94,
+  "price": 151.05,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389400"
