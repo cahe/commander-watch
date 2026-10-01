@@ -95,9 +95,20 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .pill.out_of_stock { background: var(--off-soft); color: var(--off); }
 .pill.new { background: var(--new-soft); color: var(--new); }
 .count { font: 13px var(--font-mono); color: var(--muted); }
+.kind { font: 500 11px/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-left: 6px; white-space: nowrap; }
+.offers { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.offer { display: inline-flex; gap: 6px; align-items: baseline; font: 12px/1 var(--font-body); padding: 5px 8px; border-radius: 4px; text-decoration: none; border: 1px solid transparent; }
+.offer b { font: 500 12px var(--font-mono); font-variant-numeric: tabular-nums; }
+.offer.in_stock { background: var(--ok-soft); color: var(--ok); }
+.offer.preorder { background: var(--warn-soft); color: var(--warn); }
+.offer.out_of_stock { background: var(--off-soft); color: var(--off); }
+.offer.dim { opacity: .45; }
+.offer.best { border-color: currentColor; }
+.offer:hover { text-decoration: underline; }
+.avail { font-size: 13px; color: var(--muted); }
 
 @media (max-width: 640px) {
-  .item { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "deck price" "status seen"; row-gap: 6px; }
+  .item { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "deck deck" "status price" "seen seen"; row-gap: 6px; }
   .item.head { display: none; }
   .deck { grid-area: deck; } .price { grid-area: price; } .st { grid-area: status; } .seen { grid-area: seen; text-align: right; }
 }
@@ -215,33 +226,64 @@ function renderChips() {
   }
 }
 
+// One row per deck: check.py gives listings of the same deck a shared "group" and "groupName".
+function groupDecks() {
+  const groups = new Map();
+  for (const d of state.decks) {
+    const key = d.group || d.id;
+    if (!groups.has(key)) groups.set(key, { name: d.groupName || d.name, offers: [] });
+    groups.get(key).offers.push(d);
+  }
+  for (const g of groups.values()) {
+    g.offers.sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9));
+    // A deck is new only if no shop already had it when tracking (or a shop's tracking) began.
+    const known = g.offers.some(o => o.baseline);
+    g.firstSeen = known ? null : g.offers.map(o => String(o.firstSeen)).sort()[0];
+    g.newest = g.offers.filter(o => !o.baseline).map(o => String(o.firstSeen)).sort().pop() || "";
+    const n = g.offers.map(o => o.name.toLowerCase()).join(" ");
+    g.kind = /collector/.test(n) ? (/display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Collector's set" : "Collector's edition")
+           : /display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Deck set" : "";
+  }
+  return [...groups.values()];
+}
+
 function renderList() {
   const q = state.q.trim().toLowerCase();
-  let rows = state.decks.filter(d =>
-    (!state.shop || d.shop === state.shop) &&
-    (!state.status || d.status === state.status) &&
-    (!q || String(d.name).toLowerCase().includes(q)));
-  if (state.sort === "price") rows.sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9));
-  else if (state.sort === "name") rows.sort((a, b) => String(a.name).localeCompare(String(b.name)));
-  else rows.sort((a, b) => String(b.firstSeen).localeCompare(String(a.firstSeen)) || String(a.name).localeCompare(String(b.name)));
+  const matches = (o) => (!state.shop || o.shop === state.shop) && (!state.status || o.status === state.status);
+  const all = groupDecks();
+  let rows = all.filter(g => g.offers.some(matches) &&
+    (!q || g.name.toLowerCase().includes(q) || g.offers.some(o => String(o.name).toLowerCase().includes(q))));
+  for (const g of rows) g.best = g.offers.find(o => matches(o) && typeof o.price === "number") || null;
+  if (state.sort === "price") rows.sort((a, b) => (a.best?.price ?? 1e9) - (b.best?.price ?? 1e9));
+  else if (state.sort === "name") rows.sort((a, b) => a.name.localeCompare(b.name));
+  else rows.sort((a, b) => b.newest.localeCompare(a.newest) || a.name.localeCompare(b.name));  // latest new listing first
   const list = $("list"); list.replaceChildren();
   list.append(el("div", { class: "item head", role: "row" },
-    el("span", { text: "Deck" }), el("span", { text: "Availability" }), el("span", { text: "Price", style: "text-align:right" }), el("span", { text: "First seen" })));
+    el("span", { text: "Deck · price per shop" }), el("span", { text: "Availability" }), el("span", { text: "Best price", style: "text-align:right" }), el("span", { text: "First seen" })));
   if (!state.decks.length) {
     list.append(el("div", { class: "item" }, el("span", { class: "deck", text: "Loading tracked decks…" })));
   } else if (!rows.length) {
     list.append(el("div", { class: "item" }, el("span", { class: "deck", text: state.status === "in_stock" ? "No decks in stock match these filters. Set availability to “Any availability” to see all." : "No decks match these filters." })));
   }
-  for (const d of rows) {
-    const st = el("span", { class: "st" }, pill(d.status));
-    if (!d.baseline) st.append(" ", el("span", { class: "pill new", text: "New" }));
+  for (const g of rows) {
+    const offers = el("div", { class: "offers" });
+    for (const o of g.offers) {
+      const cls = "offer " + (STATUS_LABEL[o.status] ? o.status : "out_of_stock") + (matches(o) ? "" : " dim") + (o === g.best ? " best" : "");
+      offers.append(el("a", { class: cls, href: safeUrl(o.url), target: "_blank", rel: "noopener",
+          title: `${o.name} · ${STATUS_LABEL[o.status] || "Unknown"}` },
+        el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: typeof o.price === "number" ? pln.format(o.price) : "—" })));
+    }
+    const inStock = g.offers.filter(o => o.status === "in_stock").length;
+    const pre = g.offers.filter(o => o.status === "preorder").length;
+    const st = el("span", { class: "st avail", text: inStock ? `In stock at ${inStock} of ${g.offers.length}` : pre ? `Pre-order at ${pre} of ${g.offers.length}` : `Out of stock (${g.offers.length})` });
+    if (g.firstSeen) st.append(" ", el("span", { class: "pill new", text: "New" }));
     list.append(el("div", { class: "item", role: "row" },
-      el("div", { class: "deck" }, el("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", text: d.name }), el("span", { class: "shoptag", text: SHOPS[d.shop]?.name || d.shop })),
+      el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null), offers),
       st,
-      el("span", { class: "price", text: typeof d.price === "number" ? pln.format(d.price) : "—" }),
-      el("span", { class: "seen", text: d.baseline ? "Before tracking" : fmtDate(d.firstSeen) })));
+      el("span", { class: "price", text: g.best ? pln.format(g.best.price) : "—" }),
+      el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
   }
-  $("catcount").textContent = rows.length + " of " + state.decks.length;
+  $("catcount").textContent = `${rows.length} of ${all.length} decks · ${state.decks.length} listings`;
 }
 
 function renderAll() { renderShops(); renderNew(); renderList(); }

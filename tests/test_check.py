@@ -85,6 +85,30 @@ def test_shoper_classic_panmysza():
     assert check.page_numbers(soup, re.compile(r"/pl/c/Magic-The-Gathering/53/(\d+)$")) == 4
 
 
+def test_grouping():
+    names = [
+        ("time4magic", "Lorwyn Eclipsed: \"Dance of the Elements\" Commander Deck"),
+        ("dragoneye", "Magic the Gathering: Lorwyn Eclipsed - Commander Deck - Dace of The Elements"),  # shop typo
+        ("mrpuggy", "Lorwyn Eclipsed Commander Deck: Blight Curse"),
+        ("panmysza", "MtG Final Fantasy Commander Deck - Scions and Spellcraft"),
+        ("cardstore", "Commander MtG Final Fantasy - Scions & Spellcraft"),
+        ("xjoy", "MTG: Final Fantasy Collector's Commander Deck - Scions & Spellcraft"),
+        ("mrpuggy", "Magic: The Gathering - Final Fantasy - Commander Deck Display (4)"),
+        ("time4magic", "Commander Deck Lord of the Rings: Tales of Middle-earth - Elven Council"),
+        ("cardstore", "Final Fantasy Commander Deck: Scions & Spellcraft"),  # same shop twice: only one joins
+        ("wargamer", "Lorwyn Eclipsed Commander Deck: Dance of the Elements"),
+    ]
+    decks = [{"id": f"d{i}", "shop": s, "name": n} for i, (s, n) in enumerate(names)]
+    check.assign_groups(decks)
+    g = [d["group"] for d in decks]
+    assert g[0] == g[1] == g[9] != g[2]          # typo tolerated, different deck kept apart
+    assert (g[3] == g[4]) != (g[3] == g[8])      # "and" vs "&"; only one Cardstore listing per group
+    assert g[5] not in (g[3], g[6])              # collector's edition and display stay separate
+    assert decks[0]["groupName"] == "Lorwyn Eclipsed – Dance of the Elements"  # the spelling shops agree on
+    assert decks[7]["groupName"] == "Lord of the Rings – Tales of Middle-earth – Elven Council"
+    assert decks[3]["groupName"] in ("Final Fantasy – Scions & Spellcraft", "Final Fantasy – Scions and Spellcraft")
+
+
 def test_diff_new_vs_catch_up(monkeypatch=None):
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()

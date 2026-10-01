@@ -7,12 +7,17 @@ Run by .github/workflows/check.yml; also runnable locally: `python check.py`.
 
 from __future__ import annotations
 
+import difflib
 import json
+import math
 import os
 import re
 import sys
 import time
+import unicodedata
+from collections import Counter
 from datetime import date, datetime, timezone, timedelta
+from functools import lru_cache
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, unquote
 
@@ -328,6 +333,102 @@ SHOPS = {
 }
 
 
+# ---------------------------------------------------------------------- grouping
+# Shops name the same deck differently ("Secrets of Strixhaven Lorehold Spirit Commander Deck" vs
+# "Magic the Gathering: Secrets of Strixhaven - Lorehold Spirit"), so listings are matched on the
+# words that are left once shop noise is stripped, weighted so rare words (the deck's own name)
+# count far more than the set name every deck of that set shares.
+
+NAME_NOISE = re.compile(
+    r"magic\s*:?\s*the\s+gathering|universes beyond|\bmtg\b|commander('s)?|\bdecks?\b|"
+    r"wersja angielska|edycja angielska|angielski|english|\beng?\b|\(.*?\)|\[.*?\]", re.I)
+SET_LIKE = re.compile(r"display|\bset\b|zestaw|case|\(\s*[45]\s*\)|x\s*[45]\b|\b[45]\s*decks?\b", re.I)
+NAME_STOP = {"the", "of", "a", "an", "and", "to", "z", "i", "w", "na", "do", "vs", "edition", "editions", "edycja", "full",
+             "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv", "xvi"}
+GROUP_THRESHOLD = 0.6
+
+
+def deck_kind(name: str) -> str:
+    """Regular decks, collector's editions and multi-deck sets/displays never share a group."""
+    n = name.lower()
+    return ("collector " if "collector" in n else "") + ("set" if SET_LIKE.search(n) else "deck")
+
+
+def name_tokens(name: str) -> frozenset[str]:
+    n = unicodedata.normalize("NFKD", name.lower()).encode("ascii", "ignore").decode()
+    n = n.replace("&", " and ").replace("collector's", " ").replace("collector", " ")
+    n = SET_LIKE.sub(" ", NAME_NOISE.sub(" ", n))
+    return frozenset(t for t in re.findall(r"[a-z0-9]+", n) if len(t) > 1 and t not in NAME_STOP)
+
+
+@lru_cache(maxsize=None)
+def same_word(a: str, b: str) -> bool:
+    # Tolerates shop typos ("Dace of the Elements") and plurals ("Turtles").
+    return a == b or (len(a) > 3 and len(b) > 3 and difflib.SequenceMatcher(None, a, b).ratio() >= 0.85)
+
+
+def assign_groups(decks: list[dict]) -> None:
+    """Give listings of the same deck the same "group" id and a shared "groupName"."""
+    toks = [name_tokens(d["name"]) for d in decks]
+    kinds = [deck_kind(d["name"]) for d in decks]
+    df = Counter(t for ts in toks for t in ts)
+    idf = {t: math.log(1 + len(decks) / c) for t, c in df.items()}
+
+    def score(a: frozenset, b: frozenset) -> float:
+        matched = 0.0
+        for x in a:
+            ws = [(idf[x] + idf[y]) / 2 for y in b if same_word(x, y)]
+            if ws:
+                matched += max(ws)
+        total = sum(idf[t] for t in a) + sum(idf[t] for t in b) - matched
+        return matched / total if total else 0.0
+
+    pairs = []
+    for i in range(len(decks)):
+        for j in range(i + 1, len(decks)):
+            if decks[i]["shop"] != decks[j]["shop"] and kinds[i] == kinds[j] and toks[i] and toks[j]:
+                s = score(toks[i], toks[j])
+                if s >= GROUP_THRESHOLD:
+                    pairs.append((s, i, j))
+    parent = list(range(len(decks)))
+    shops = [{d["shop"]} for d in decks]
+
+    def find(x: int) -> int:
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    for _, i, j in sorted(pairs, reverse=True):  # best matches first
+        ri, rj = find(i), find(j)
+        if ri != rj and not shops[ri] & shops[rj]:  # at most one listing per shop in a group
+            parent[rj] = ri
+            shops[ri] |= shops[rj]
+
+    members: dict[int, list[int]] = {}
+    for i in range(len(decks)):
+        members.setdefault(find(i), []).append(i)
+    for idx in members.values():
+        names = [clean_name(decks[i]["name"]) for i in idx]
+        # The name whose words most shops agree on (so one shop's typo or missing deck name loses), then the shortest.
+        agree = Counter(t for i in idx for t in toks[i])
+        best = max(range(len(idx)), key=lambda k: (sum(agree[t] for t in toks[idx[k]]), -len(names[k])))
+        gid = min(decks[i]["id"] for i in idx)
+        for i in idx:
+            decks[i]["group"] = gid
+            decks[i]["groupName"] = names[best]
+
+
+def clean_name(name: str) -> str:
+    """Shop name without brand, language tags and product-type words: "Marvel Super Heroes – Avengers Assemble"."""
+    n = re.sub(r"\[.*?\]|\(.*?\)|\bwersja angielska\b|\bangielski\b|\bmagic\s*:?\s*the\s+gathering\b|\bmtg\b|"
+               r"\buniverses beyond\b|\bcollector'?s?\b|\bedition\b|\bcommander('s)?\b|\bdecks?\b|"
+               r"\bdisplay\b|\bfull set\b|\bset\b|\bzestaw\b|\bx\s*[45]\b|\ben\b|\beditions?\b", " ", name, flags=re.I)
+    # One separator style; hyphens inside a word ("Middle-earth") stay.
+    n = re.sub(r"(?:\s*:\s*|\s+[-–]+\s*|\s*[-–]+\s+)+", " – ", " ".join(n.split()))
+    return n.strip(" –\"'")
+
+
 # ---------------------------------------------------------------------- notifying
 
 def notify(title: str, lines: list[str], tags: str = "black_joker"):
@@ -430,6 +531,7 @@ def main() -> int:
     if not hb or date.fromisoformat(hb) < (now - timedelta(days=7)).date():
         state["heartbeat"] = now.date().isoformat()
 
+    assign_groups(decks)
     decks.sort(key=lambda d: (d["shop"], d["id"]))
     save(DECKS_FILE, decks)
     save(STATE_FILE, state)
