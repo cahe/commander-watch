@@ -462,6 +462,67 @@ def save(path: Path, data) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
 
+# --------------------------------------------------------------------- CardTrader
+
+CARDTRADER_API = "https://api.cardtrader.com/api/v2"
+
+
+def cardtrader_get(path: str, **params):
+    token = os.environ.get("CARDTRADER_TOKEN", "").strip()
+    if not token:
+        raise RuntimeError("CARDTRADER_TOKEN is not set")
+    r = requests.get(f"{CARDTRADER_API}{path}", params=params, timeout=60,
+                     headers={"Authorization": f"Bearer {token}", "Accept": "application/json"})
+    if r.status_code != 200:
+        raise RuntimeError(f"HTTP {r.status_code} for {path}")  # never echo the request headers
+    return r.json()
+
+
+def cardtrader_discover() -> int:
+    """One-off: show where Commander decks live in CardTrader's catalogue, to design the scanner."""
+    try:
+        games = cardtrader_get("/games")
+        games = games.get("array", games) if isinstance(games, dict) else games
+        magic = next(g for g in games if "magic" in str(g.get("name", "")).lower())
+        print("Magic game:", {k: magic.get(k) for k in ("id", "name", "display_name")})
+        cats = cardtrader_get("/categories", game_id=magic["id"])
+        print("\nCategories:")
+        for c in cats:
+            print(f"  {c.get('id'):>5}  {c.get('name')}")
+        exps = [e for e in cardtrader_get("/expansions") if e.get("game_id") == magic["id"]]
+        cmd = [e for e in exps if re.search(r"commander|precon|deck", str(e.get("name")), re.I)]
+        cmd.sort(key=lambda e: e.get("id", 0), reverse=True)
+        print(f"\nMagic expansions: {len(exps)}; with commander/precon/deck in the name: {len(cmd)}. Newest 30:")
+        for e in cmd[:30]:
+            print(f"  {e.get('id'):>6}  {e.get('code')!s:8} {e.get('name')}")
+        cat_name = {c.get("id"): c.get("name") for c in cats}
+        sample = None
+        for e in cmd[:4]:
+            bps = cardtrader_get("/blueprints/export", expansion_id=e["id"])
+            by_cat = Counter(cat_name.get(b.get("category_id"), b.get("category_id")) for b in bps)
+            print(f"\nBlueprints in {e.get('name')} ({len(bps)}): {dict(by_cat)}")
+            if bps:
+                print("  fields:", sorted(bps[0].keys()))
+            for b in bps:
+                if not re.search(r"card|single|token", str(cat_name.get(b.get("category_id"))), re.I):
+                    print(f"  {b.get('id'):>8}  [{cat_name.get(b.get('category_id'))}]  {b.get('name')}  {b.get('version') or ''}")
+                    sample = sample or b
+        if sample:
+            prods = cardtrader_get("/marketplace/products", blueprint_id=sample["id"])
+            offers = prods.get(str(sample["id"]), []) if isinstance(prods, dict) else prods
+            print(f"\nOffers for {sample.get('name')}: {len(offers)}")
+            if offers:
+                print("  fields:", sorted(offers[0].keys()))
+            for o in offers[:5]:
+                user = o.get("user") or {}
+                print("  ", {"price": o.get("price"), "qty": o.get("quantity"), "zero": user.get("can_sell_via_hub"),
+                             "country": user.get("country_code"), "props": o.get("properties_hash")})
+        return 0
+    except Exception as e:
+        print("CardTrader discovery failed:", e)
+        return 1
+
+
 def describe_change(old_price: float | None, old_status: str | None, d: dict) -> str:
     """Short note for the page, e.g. "back in stock, price 239.00 → 219.00 zł"; "" if nothing changed."""
     parts = []
@@ -487,6 +548,8 @@ def main() -> int:
             return 1
         notify("Commander Watch test", ["Test push. Notifications are working."], tags="white_check_mark")
         return 0
+    if "--cardtrader-discover" in sys.argv:  # print CardTrader's catalogue structure; no scan, nothing saved
+        return cardtrader_discover()
     now = datetime.now(timezone.utc).replace(microsecond=0)
     stamp = now.isoformat().replace("+00:00", "Z")
     decks = load(DECKS_FILE, [])
