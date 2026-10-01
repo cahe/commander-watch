@@ -82,11 +82,14 @@ def parse_price(text: str | None) -> float | None:
     return float(m.group()) if m else None
 
 
-def status_from(in_stock: bool, *texts: str) -> str:
+def status_from(orderable: bool, *texts: str) -> str:
+    """A preorder only counts while it can be ordered; Cardstore keeps "[PRZEDSPRZEDAŻ]" on sold-out listings."""
+    if not orderable:
+        return "out_of_stock"
     blob = " ".join(t or "" for t in texts).lower()
     if "przedsprzeda" in blob or "pre-order" in blob or "preorder" in blob:
         return "preorder"
-    return "in_stock" if in_stock else "out_of_stock"
+    return "in_stock"
 
 
 def norm_url(url: str) -> str:
