@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Commander Watch</title>
+  <rect x="12" y="4" width="40" height="56" rx="7" fill="#1f5f8b"/>
+  <path d="M17 32 Q32 16 47 32 Q32 48 17 32 Z" fill="#ffffff"/>
+  <circle cx="32" cy="32" r="7" fill="#b4531a"/>
+  <circle cx="32" cy="32" r="3" fill="#16202b"/>
+</svg>
