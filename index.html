@@ -69,11 +69,14 @@ h2 { font: 600 20px/1.2 var(--font-display); margin: 0; }
 section { display: grid; gap: 12px; }
 .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 
-.newshelf { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
-.newcard { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--new); border-radius: 8px; padding: 12px 14px; display: grid; gap: 6px; min-width: 0; }
-.newcard a { color: var(--fg); font-weight: 600; text-decoration: none; }
-.newcard a:hover { text-decoration: underline; }
-.newcard .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.newshelf { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--new); border-radius: 8px; overflow: hidden; }
+.newgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1px; background: var(--line); }
+.newrow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: baseline; align-content: start; padding: 9px 14px; background: var(--surface); }
+.newrow strong { font-weight: 600; overflow-wrap: anywhere; }
+.newrow .offers { grid-column: 1 / -1; margin-top: 0; }
+.newmore { display: block; width: 100%; padding: 9px 14px; border: 0; border-top: 1px solid var(--line); background: none; color: var(--accent); font: 500 13px var(--font-body); text-align: left; cursor: pointer; }
+.newmore:hover { text-decoration: underline; }
+.newmore:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 .empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; padding: 18px; color: var(--muted); }
 
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
@@ -242,19 +245,40 @@ function renderShops() {
   }
 }
 
+// New listings: one compact row per deck (a deck several shops added counts once), latest first.
+const NEW_SHOWN = () => matchMedia("(max-width: 640px)").matches ? 3 : 6;  // one column on phones, two of three on wide screens
 function renderNew() {
-  const items = state.decks.filter(d => !d.baseline).sort((a, b) => String(b.firstSeen).localeCompare(String(a.firstSeen)));
+  const decks = new Map();
+  for (const d of state.decks.filter(d => !d.baseline)) {
+    const key = d.group || d.id;
+    if (!decks.has(key)) decks.set(key, { name: d.groupName || d.name, items: [] });
+    decks.get(key).items.push(d);
+  }
+  const rows = [...decks.values()].map(g => ({ ...g, at: g.items.map(d => String(d.firstSeen)).sort().pop() }))
+    .sort((a, b) => b.at.localeCompare(a.at) || a.name.localeCompare(b.name));
   const shelf = $("newshelf"); shelf.replaceChildren();
-  $("newcount").textContent = items.length ? items.length + " since tracking started" : "";
-  if (!items.length) {
-    shelf.append(el("div", { class: "empty", text: "Nothing new yet. When a shop adds a Commander deck it hasn't listed before, it shows up here within the hour." }));
+  $("newcount").textContent = rows.length ? `${rows.length} ${rows.length === 1 ? "deck" : "decks"} since tracking started` : "";
+  if (!rows.length) {
+    shelf.append(el("div", { class: "newrow" }, el("span", { class: "avail", text: "Nothing new yet. When a shop adds a Commander deck it hasn't listed before, it shows up here within the hour." })));
     return;
   }
-  for (const d of items.slice(0, 24)) {
-    shelf.append(el("div", { class: "newcard" },
-      el("a", { href: safeUrl(d.url), target: "_blank", rel: "noopener", text: d.name }),
-      el("div", { class: "row" }, pill(d.status), el("span", { class: "price", text: typeof d.price === "number" ? pln.format(d.price) : "—" }), el("span", { text: (SHOPS[d.shop]?.name || d.shop) + " · " + fmtDate(d.firstSeen) }))
-    ));
+  const grid = el("div", { class: "newgrid" });
+  shelf.append(grid);
+  const limit = NEW_SHOWN();
+  for (const g of state.newAll ? rows : rows.slice(0, limit)) {
+    const offers = el("div", { class: "offers" });
+    for (const o of g.items.sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9))) {
+      const status = STATUS_LABEL[o.status] ? o.status : "out_of_stock";
+      offers.append(el("a", { class: "offer " + status, href: safeUrl(o.url), target: "_blank", rel: "noopener", title: `${o.name} · ${STATUS_LABEL[o.status] || "Unknown"}` },
+        el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: money(o.shop, o.price) }), el("i", { text: OFFER_WORD[status] })));
+    }
+    grid.append(el("div", { class: "newrow" }, el("strong", { text: g.name }), el("span", { class: "seen", text: fmtDate(g.at) }), offers));
+  }
+  if (rows.length > limit) {
+    const more = el("button", { class: "newmore", type: "button", "aria-expanded": String(!!state.newAll),
+      text: state.newAll ? "Show fewer" : `Show all ${rows.length} decks` });
+    more.addEventListener("click", () => { state.newAll = !state.newAll; renderNew(); });
+    shelf.append(more);
   }
 }
 
