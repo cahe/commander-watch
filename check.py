@@ -43,7 +43,8 @@ COMMANDER_DECK = re.compile(r"commander deck", re.I)
 # Other sealed MTG products. Dragoneye names some Commander decks without the word
 # ("Secrets of Strixhaven - Lorehold Spirit"), so there anything that isn't one of these counts.
 OTHER_MTG = re.compile(
-    r"bundle|beginner box|starter kit|scene box|theme deck|display|jumpstart|prerelease|gift", re.I)
+    r"bundle|beginner box|starter kit|scene box|theme ?deck|display|jumpstart|prerelease|gift|draft night|secret lair",
+    re.I)
 
 
 # --------------------------------------------------------------------------- HTTP
