@@ -124,7 +124,7 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
   <header>
     <span class="label">Magic: The Gathering · Polish shops</span>
     <h1>Commander Watch</h1>
-    <p class="sub">Precon Commander decks listed by Time4Magic, Cardstore, Mr. Puggy, Wargamer, XJoy, Dragoneye and Pan Mysza. A check runs every hour; any deck a shop lists for the first time lands in “New listings” and sends a notification to your phone through ntfy.</p>
+    <p class="sub">Precon Commander decks listed by Time4Magic, Cardstore, Mr. Puggy, Wargamer, XJoy, Dragoneye and Pan Mysza, with CardTrader marketplace prices for comparison (cheapest CardTrader Zero offer, converted from euros). A check runs every hour; any deck a shop lists for the first time lands in “New listings” and sends a notification to your phone through ntfy.</p>
   </header>
 
   <section aria-labelledby="st-h">
@@ -167,7 +167,9 @@ const SHOPS = {
   wargamer: { name: "Wargamer", home: "https://sklep.wargamer.pl/pl/43-magic-the-gathering" },
   xjoy: { name: "XJoy", home: "https://www.xjoy.pl/371-mtg-commander" },
   dragoneye: { name: "Dragoneye", home: "https://dragoneye.pl/magic-the-gathering-c-16_211.html" },
-  panmysza: { name: "Pan Mysza", home: "https://panmysza.pl/pl/c/Magic-The-Gathering/53" }
+  panmysza: { name: "Pan Mysza", home: "https://panmysza.pl/pl/c/Magic-The-Gathering/53" },
+  // Marketplace: prices only (no pushes), converted to PLN, shown only next to decks a shop sells.
+  cardtrader: { name: "CardTrader", home: "https://www.cardtrader.com/en/magic", approx: true, extra: true }
 };
 const STATUS_LABEL = { in_stock: "In stock", preorder: "Pre-order", out_of_stock: "Out of stock" };
 const OFFER_WORD = { in_stock: "in stock", preorder: "pre-order", out_of_stock: "sold out" };
@@ -277,7 +279,8 @@ function renderList() {
   const q = state.q.trim().toLowerCase();
   const matches = (o) => (!state.shop || o.shop === state.shop) && (!state.status || o.status === state.status);
   const all = groupDecks();
-  let rows = all.filter(g => g.offers.some(matches) &&
+  const listed = all.filter(g => g.offers.some(o => !SHOPS[o.shop]?.extra));  // hide CardTrader-only decks
+  let rows = listed.filter(g => g.offers.some(matches) &&
     (!q || g.name.toLowerCase().includes(q) || g.offers.some(o => String(o.name).toLowerCase().includes(q))));
   for (const g of rows) g.best = g.offers.find(o => matches(o) && typeof o.price === "number") || null;
   if (state.sort === "price") rows.sort((a, b) => (a.best?.price ?? 1e9) - (b.best?.price ?? 1e9));
@@ -304,7 +307,7 @@ function renderList() {
       const status = STATUS_LABEL[o.status] ? o.status : "out_of_stock";
       offers.append(el("a", { class: "offer " + status + (o === g.best ? " best" : ""), href: safeUrl(o.url), target: "_blank", rel: "noopener",
           title: `${o.name} · ${STATUS_LABEL[o.status] || "Unknown"}${o === g.best ? " · best price for these filters" : ""}` },
-        el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: typeof o.price === "number" ? pln.format(o.price) : "—" }),
+        el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: typeof o.price === "number" ? (SHOPS[o.shop]?.approx ? "≈ " : "") + pln.format(o.price) : "—" }),
         el("i", { text: OFFER_WORD[status] })));
     }
     const inStock = g.offers.filter(o => o.status === "in_stock").length;
@@ -318,7 +321,7 @@ function renderList() {
       updated ? lastChangeCell(g.lastChange)
               : el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
   }
-  $("catcount").textContent = `${rows.length} of ${all.length} decks · ${state.decks.length} listings`;
+  $("catcount").textContent = `${rows.length} of ${listed.length} decks`;
 }
 
 function renderAll() { renderShops(); renderNew(); renderList(); }
