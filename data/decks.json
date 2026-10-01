@@ -3125,6 +3125,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-10-01T21:17:15Z",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-29973",
   "groupName": "Final Fantasy – Limit Break",
@@ -3133,7 +3135,7 @@
   "pid": 465,
   "price": 249.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Limit-Break/465"
  },
  {
