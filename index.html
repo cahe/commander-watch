@@ -102,7 +102,8 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .offer.in_stock { background: var(--ok-soft); color: var(--ok); }
 .offer.preorder { background: var(--warn-soft); color: var(--warn); }
 .offer.out_of_stock { background: var(--off-soft); color: var(--off); }
-.offer.dim { opacity: .45; }
+.offer i { font: 500 11px/1 var(--font-body); font-style: normal; text-transform: lowercase; opacity: .85; }
+.offer.out_of_stock b { text-decoration: line-through; text-decoration-thickness: 1px; }
 .offer.best { border-color: currentColor; }
 .offer:hover { text-decoration: underline; }
 .avail { font-size: 13px; color: var(--muted); }
@@ -166,6 +167,7 @@ const SHOPS = {
   panmysza: { name: "Pan Mysza", home: "https://panmysza.pl/pl/c/Magic-The-Gathering/53" }
 };
 const STATUS_LABEL = { in_stock: "In stock", preorder: "Pre-order", out_of_stock: "Out of stock" };
+const OFFER_WORD = { in_stock: "in stock", preorder: "pre-order", out_of_stock: "sold out" };
 const state = { decks: [], meta: null, shop: "", q: "", status: "in_stock", sort: "seen" };
 const $ = (id) => document.getElementById(id);
 const pln = new Intl.NumberFormat("pl-PL", { style: "currency", currency: "PLN" });
@@ -268,10 +270,12 @@ function renderList() {
   for (const g of rows) {
     const offers = el("div", { class: "offers" });
     for (const o of g.offers) {
-      const cls = "offer " + (STATUS_LABEL[o.status] ? o.status : "out_of_stock") + (matches(o) ? "" : " dim") + (o === g.best ? " best" : "");
-      offers.append(el("a", { class: cls, href: safeUrl(o.url), target: "_blank", rel: "noopener",
-          title: `${o.name} · ${STATUS_LABEL[o.status] || "Unknown"}` },
-        el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: typeof o.price === "number" ? pln.format(o.price) : "—" })));
+      // Colour and word both give the shop's stock status; the filters only pick rows and the outlined best price.
+      const status = STATUS_LABEL[o.status] ? o.status : "out_of_stock";
+      offers.append(el("a", { class: "offer " + status + (o === g.best ? " best" : ""), href: safeUrl(o.url), target: "_blank", rel: "noopener",
+          title: `${o.name} · ${STATUS_LABEL[o.status] || "Unknown"}${o === g.best ? " · best price for these filters" : ""}` },
+        el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: typeof o.price === "number" ? pln.format(o.price) : "—" }),
+        el("i", { text: OFFER_WORD[status] })));
     }
     const inStock = g.offers.filter(o => o.status === "in_stock").length;
     const pre = g.offers.filter(o => o.status === "preorder").length;
