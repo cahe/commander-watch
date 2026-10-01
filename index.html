@@ -250,7 +250,9 @@ function groupDecks() {
     const known = g.offers.some(o => o.baseline);
     g.firstSeen = known ? null : g.offers.map(o => String(o.firstSeen)).sort()[0];
     g.newest = g.offers.filter(o => !o.baseline).map(o => String(o.firstSeen)).sort().pop() || "";
-    g.recency = Math.max(0, ...g.offers.map(o => rank.get(o) ?? 0));  // newest at any shop counts
+    // Average over shops: one shop listing an older deck late shouldn't make it look new.
+    const ranks = g.offers.map(o => rank.get(o)).filter(r => r !== undefined);
+    g.recency = ranks.length ? ranks.reduce((s, r) => s + r, 0) / ranks.length : 0;
     const n = g.offers.map(o => o.name.toLowerCase()).join(" ");
     g.kind = /collector/.test(n) ? (/display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Collector's set" : "Collector's edition")
            : /display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Deck set" : "";
