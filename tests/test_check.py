@@ -110,6 +110,21 @@ def test_grouping():
     assert decks[3]["groupName"] in ("Final Fantasy – Scions & Spellcraft", "Final Fantasy – Scions and Spellcraft")
 
 
+def test_set_only_names():
+    decks = [{"id": f"d{i}", "shop": s, "name": n} for i, (s, n) in enumerate([
+        ("time4magic", "Reality Fracture - Multiverse Reforged Commander Deck"),
+        ("xjoy", "MTG: Reality Fracture - Commander Deck: Multiverse Reforged"),
+        ("cardtrader", "Reality Fracture Commander Deck"),            # the set's only deck: joins it
+        ("time4magic", "Doctor Who Commander Deck: Blast from the Past"),
+        ("time4magic", "Doctor Who Commander Deck: Paradox Power"),
+        ("mrpuggy", "Doctor Who Commander Deck"),                    # several decks: stays apart
+    ])]
+    check.assign_groups(decks)
+    g = [d["group"] for d in decks]
+    assert g[0] == g[1] == g[2] and decks[2]["groupName"] == "Reality Fracture – Multiverse Reforged"
+    assert g[5] not in (g[3], g[4])
+
+
 def test_cardtrader_offers():
     zero = {"can_sell_via_hub": True}
     offer = lambda cents, cur="EUR", **kw: {"price": {"cents": cents, "currency": cur}, "quantity": 1,
