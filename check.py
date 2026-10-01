@@ -694,12 +694,13 @@ def cardtrader_discover() -> int:
 ORDERABLE = {"in_stock", "preorder"}
 
 
-def cardtrader_newly_cheapest(decks: list[dict]) -> list[tuple[dict, dict | None]]:
+def cardtrader_newly_cheapest(decks: list[dict], lost: list | None = None) -> list[tuple[dict, dict | None]]:
     """CardTrader listings that just became the cheapest way to order their deck.
 
     Only decks a shop also lists count. Each CardTrader listing keeps a "cheapest" flag, so a push
     goes out when it turns true, not every hour it stays true; the first time a listing is
     evaluated the flag is just recorded. Returns (CardTrader listing, cheapest shop offer or None).
+    Listings that stopped being cheapest are appended to `lost`, for the changelog.
     """
     groups: dict[str, list[dict]] = {}
     for d in decks:
@@ -717,8 +718,70 @@ def cardtrader_newly_cheapest(decks: list[dict]) -> list[tuple[dict, dict | None
                             and (nxt is None or ct["price"] < nxt["price"]))
             if now_cheapest and ct.get("cheapest") is False:
                 news.append((ct, nxt))
+            elif not now_cheapest and ct.get("cheapest") is True and lost is not None:
+                lost.append(ct)
             ct["cheapest"] = now_cheapest
     return news
+
+
+# ---------------------------------------------------------------------- changelog
+# data/changes.json is an append-only list of events for the page's "Changes" panel. Each event
+# carries the deck, shop, prices and some context from that moment (where else it's in stock,
+# whether it's now the cheapest). CardTrader only logs "cheapest" / "notcheapest": its raw prices
+# move every hour and would drown the shops' changes.
+
+CHANGES_DAYS = 30
+PRICE_STEP = 1.0  # zł; smaller shop price moves aren't logged
+
+
+def changes_file() -> Path:
+    return DECKS_FILE.with_name("changes.json")
+
+
+def status_event(old: str | None, new: str) -> str | None:
+    if old == new or old is None:
+        return None
+    if new == "in_stock":
+        return "restock"
+    if new == "preorder":
+        return "preorder"
+    if new == "out_of_stock" and old in ORDERABLE:
+        return "soldout"
+    return None
+
+
+def finish_events(pending: list[tuple[str, dict, float | None]], decks: list[dict], stamp: str) -> list[dict]:
+    """Turn (kind, listing, old price) into changelog events, once listings have their groups."""
+    groups: dict[str, list[dict]] = {}
+    for d in decks:
+        groups.setdefault(d.get("group", d["id"]), []).append(d)
+    events = []
+    for kind, d, old in pending:
+        members = groups.get(d.get("group", d["id"]), [d])
+        others = [m for m in members if m is not d and m["shop"] not in QUIET_SHOPS
+                  and m["status"] in ORDERABLE and m.get("price") is not None]
+        best = min(others, key=lambda m: m["price"], default=None)
+        orderable = d["status"] in ORDERABLE and d.get("price") is not None
+        e = {"at": stamp, "kind": kind, "shop": d["shop"], "id": d["id"], "group": d.get("group", d["id"]),
+             "deck": d.get("groupName") or d["name"], "url": d["url"], "price": d.get("price"),
+             "status": d["status"], "inStock": len(others) + (orderable and d["shop"] not in QUIET_SHOPS)}
+        if old is not None:
+            e["old"] = old
+        if best:
+            e["best"] = {"shop": best["shop"], "price": best["price"]}
+        if orderable:
+            e["cheapest"] = best is None or d["price"] < best["price"]
+        events.append(e)
+    return events
+
+
+def append_changes(events: list[dict], now: datetime) -> None:
+    path = changes_file()
+    log = load(path, [])
+    cutoff = (now - timedelta(days=CHANGES_DAYS)).isoformat().replace("+00:00", "Z")
+    kept = [e for e in log if e.get("at", "") >= cutoff]
+    if events or len(kept) != len(log) or not path.exists():
+        save(path, kept + events)
 
 
 def describe_change(old_price: float | None, old_status: str | None, d: dict) -> str:
@@ -757,6 +820,7 @@ def main() -> int:
     by_url = {norm_url(d["url"]): d for d in decks}
 
     new_decks, restocked, alerts = [], [], []
+    pending: list[tuple[str, dict, float | None]] = []  # changelog events, finished after grouping
 
     def run(item):
         _, (_, scan) = item
@@ -811,6 +875,12 @@ def main() -> int:
                     known["changedAt"], known["change"] = stamp, change
                 if known["status"] == "in_stock" and not was_in_stock and shop not in QUIET_SHOPS:
                     restocked.append(known)  # back in stock (or preorder became available)
+                if shop not in QUIET_SHOPS:
+                    if kind := status_event(old_status, known["status"]):
+                        pending.append((kind, known, None))
+                    if (old_price is not None and known.get("price") is not None
+                            and abs(old_price - known["price"]) >= PRICE_STEP):
+                        pending.append(("price", known, old_price))
                 continue
             # Unknown product. Shop ids only grow, so an id at or below the
             # highest one we've seen is an old listing we simply missed before.
@@ -823,6 +893,7 @@ def main() -> int:
             by_url[norm_url(p["url"])] = deck
             if not catch_up:
                 new_decks.append(deck)
+                pending.append(("new", deck, None))
             if p["pid"]:
                 max_seen = max(max_seen, p["pid"])
         st["maxId"] = max(st.get("maxId", 0), max_seen)
@@ -837,10 +908,13 @@ def main() -> int:
         state["heartbeat"] = now.date().isoformat()
 
     assign_groups(decks)
-    cheapest = cardtrader_newly_cheapest(decks)
+    lost: list[dict] = []
+    cheapest = cardtrader_newly_cheapest(decks, lost)
+    pending += [("cheapest", ct, None) for ct, _ in cheapest] + [("notcheapest", ct, None) for ct in lost]
     decks.sort(key=lambda d: (d["shop"], d["id"]))
     save(DECKS_FILE, decks)
     save(STATE_FILE, state)
+    append_changes(finish_events(pending, decks, stamp), now)
 
     if new_decks:
         lines = [deck_line(d) for d in new_decks]

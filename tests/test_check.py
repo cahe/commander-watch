@@ -211,6 +211,42 @@ def test_cardtrader_only_decks_shops_sell():
     assert [b["id"] for b in check.sold_by_shops(bps)] == [1, 2, 3]
 
 
+def test_changelog_events():
+    tmp = Path(tempfile.mkdtemp())
+    check.DECKS_FILE, check.STATE_FILE = tmp / "decks.json", tmp / "state.json"
+    check.notify = lambda title, lines, tags="": None
+    deck = lambda pid, name, price, status, url: {"pid": pid, "name": name, "price": price, "status": status, "url": url}
+    shops = {
+        "time4magic": [deck(1, "Foundations Commander Deck: Keen Engineering", 129.0, "out_of_stock", "https://t/1"),
+                       deck(2, "Final Fantasy Commander Deck: Limit Break", 249.0, "in_stock", "https://t/2")],
+        "xjoy": [deck(5, "MTG: Foundations Starter Commander Deck - Keen Engineering", 139.99, "in_stock", "https://x/5")],
+        "cardtrader": [deck(9, 'Foundations: "Keen Engineering" Commander Deck', 150.0, "in_stock", "https://c/9")],
+    }
+    check.SHOPS = {k: (k, (lambda k: lambda s: ([dict(x) for x in shops[k]], []))(k)) for k in shops}
+    old = {"at": "2020-01-01T00:00:00Z", "kind": "restock"}                     # older than 30 days
+    check.changes_file().write_text(json.dumps([old]))
+    check.main()                                                               # first run: baseline only
+    assert json.loads(check.changes_file().read_text()) == []                  # and the old event is pruned
+    shops["time4magic"][0].update(status="in_stock", price=125.0)              # restock, cheaper than XJoy
+    shops["time4magic"][1].update(status="out_of_stock")                       # sold out
+    shops["time4magic"].append(deck(3, "Final Fantasy Commander Deck: Revival Trance", 199.0, "in_stock", "https://t/3"))
+    shops["xjoy"][0].update(price=145.0)                                       # price change
+    shops["cardtrader"][0].update(price=120.0)                                 # CardTrader now cheapest
+    check.main()
+    events = {(e["kind"], e["shop"]): e for e in json.loads(check.changes_file().read_text(encoding="utf-8"))}
+    assert set(events) == {("restock", "time4magic"), ("price", "time4magic"), ("soldout", "time4magic"),
+                           ("new", "time4magic"), ("price", "xjoy"), ("cheapest", "cardtrader")}
+    r = events[("restock", "time4magic")]
+    assert r["deck"].endswith("Keen Engineering") and r["cheapest"] is True and r["best"]["shop"] == "xjoy"
+    assert events[("price", "xjoy")]["old"] == 139.99 and events[("price", "xjoy")]["price"] == 145.0
+    assert events[("soldout", "time4magic")]["inStock"] == 0
+    assert events[("cheapest", "cardtrader")]["best"] == {"shop": "time4magic", "price": 125.0}
+    shops["cardtrader"][0].update(price=130.0)                                 # small CardTrader move: one "notcheapest"
+    check.main()
+    last = json.loads(check.changes_file().read_text(encoding="utf-8"))[-1]
+    assert last["kind"] == "notcheapest" and len(json.loads(check.changes_file().read_text())) == 7
+
+
 def test_empty_category_is_a_failure():
     block_page = "<html><head><title>Just a moment...</title></head><body></body></html>"
     real_fetch = check.fetch
