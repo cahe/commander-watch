@@ -80,7 +80,7 @@ input[type="search"], select { font: 14px var(--font-body); padding: 8px 10px; b
 input[type="search"] { flex: 1 1 200px; min-width: 0; }
 
 .list { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-.item { display: grid; grid-template-columns: minmax(0, 1fr) 110px 96px 118px; gap: 12px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--line); }
+.item { display: grid; grid-template-columns: minmax(0, 1fr) 110px 96px 150px; gap: 12px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--line); }
 .item:first-child { border-top: 0; }
 .item.head { font: 500 11px/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); padding-block: 10px; }
 .deck { min-width: 0; display: grid; gap: 2px; }
@@ -107,6 +107,8 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .offer.best { border-color: currentColor; }
 .offer:hover { text-decoration: underline; }
 .avail { font-size: 13px; color: var(--muted); }
+.seen.change { display: grid; gap: 3px; }
+.seen.change .what { font: 12px/1.3 var(--font-body); color: var(--fg); }
 
 @media (max-width: 640px) {
   .item { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "deck deck" "status price" "seen seen"; row-gap: 6px; }
@@ -148,6 +150,7 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
       </select>
       <select id="sort" aria-label="Sort">
         <option value="seen">Newest first</option>
+        <option value="updated">Recently updated</option>
         <option value="price">Cheapest first</option>
         <option value="name">Name A–Z</option>
       </select>
@@ -253,11 +256,21 @@ function groupDecks() {
     // Average over shops: one shop listing an older deck late shouldn't make it look new.
     const ranks = g.offers.map(o => rank.get(o)).filter(r => r !== undefined);
     g.recency = ranks.length ? ranks.reduce((s, r) => s + r, 0) / ranks.length : 0;
+    // Latest price/stock change or new listing at any shop (check.py records changedAt + change).
+    g.lastChange = g.offers.filter(o => o.changedAt).sort((a, b) => String(b.changedAt).localeCompare(String(a.changedAt)))[0] || null;
     const n = g.offers.map(o => o.name.toLowerCase()).join(" ");
     g.kind = /collector/.test(n) ? (/display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Collector's set" : "Collector's edition")
            : /display|\bset\b|zestaw|\(4|\(5/.test(n) ? "Deck set" : "";
   }
   return [...groups.values()];
+}
+
+function lastChangeCell(o) {
+  if (!o) return el("span", { class: "seen", text: "No change yet" });
+  const d = new Date(o.changedAt);
+  return el("span", { class: "seen change" },
+    el("span", { text: isNaN(d) ? "—" : tfmt.format(d) }),
+    el("span", { class: "what", text: `${SHOPS[o.shop]?.name || o.shop}: ${o.change}` }));
 }
 
 function renderList() {
@@ -269,11 +282,16 @@ function renderList() {
   for (const g of rows) g.best = g.offers.find(o => matches(o) && typeof o.price === "number") || null;
   if (state.sort === "price") rows.sort((a, b) => (a.best?.price ?? 1e9) - (b.best?.price ?? 1e9));
   else if (state.sort === "name") rows.sort((a, b) => a.name.localeCompare(b.name));
-  // Decks found since tracking began first, then by how recently the shops added them.
-  else rows.sort((a, b) => b.newest.localeCompare(a.newest) || b.recency - a.recency || a.name.localeCompare(b.name));
+  else {
+    // Decks found since tracking began first, then by how recently the shops added them.
+    const newest = (a, b) => b.newest.localeCompare(a.newest) || b.recency - a.recency || a.name.localeCompare(b.name);
+    const changed = (g) => String(g.lastChange?.changedAt || "");
+    rows.sort(state.sort === "updated" ? (a, b) => changed(b).localeCompare(changed(a)) || newest(a, b) : newest);
+  }
+  const updated = state.sort === "updated";
   const list = $("list"); list.replaceChildren();
   list.append(el("div", { class: "item head", role: "row" },
-    el("span", { text: "Deck · price per shop" }), el("span", { text: "Availability" }), el("span", { text: "Best price", style: "text-align:right" }), el("span", { text: "First seen" })));
+    el("span", { text: "Deck · price per shop" }), el("span", { text: "Availability" }), el("span", { text: "Best price", style: "text-align:right" }), el("span", { text: updated ? "Last change" : "First seen" })));
   if (!state.decks.length) {
     list.append(el("div", { class: "item" }, el("span", { class: "deck", text: "Loading tracked decks…" })));
   } else if (!rows.length) {
@@ -297,7 +315,8 @@ function renderList() {
       el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null), offers),
       st,
       el("span", { class: "price", text: g.best ? pln.format(g.best.price) : "—" }),
-      el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
+      updated ? lastChangeCell(g.lastChange)
+              : el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
   }
   $("catcount").textContent = `${rows.length} of ${all.length} decks · ${state.decks.length} listings`;
 }

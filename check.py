@@ -462,6 +462,17 @@ def save(path: Path, data) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
 
+def describe_change(old_price: float | None, old_status: str | None, d: dict) -> str:
+    """Short note for the page, e.g. "back in stock, price 239.00 → 219.00 zł"; "" if nothing changed."""
+    parts = []
+    if old_status != d["status"]:
+        parts.append({"in_stock": "back in stock" if old_status == "out_of_stock" else "now in stock",
+                      "preorder": "pre-order opened", "out_of_stock": "sold out"}.get(d["status"], d["status"]))
+    if old_price is not None and d["price"] is not None and abs(old_price - d["price"]) >= 0.01:
+        parts.append(f"price {old_price:.2f} → {d['price']:.2f} zł")
+    return ", ".join(parts)
+
+
 def deck_line(d: dict) -> str:
     shop = SHOPS[d["shop"]][0]
     if d["price"] is None:
@@ -477,6 +488,7 @@ def main() -> int:
         notify("Commander Watch test", ["Test push. Notifications are working."], tags="white_check_mark")
         return 0
     now = datetime.now(timezone.utc).replace(microsecond=0)
+    stamp = now.isoformat().replace("+00:00", "Z")
     decks = load(DECKS_FILE, [])
     state = load(STATE_FILE, {"shops": {}})
     first_run = not decks
@@ -507,19 +519,23 @@ def main() -> int:
             known = by_id.get(doc_id) or by_url.get(norm_url(p["url"]))
             if known:
                 was_in_stock = known.get("status") == "in_stock"
+                old_price, old_status = known.get("price"), known.get("status")
                 for k in ("price", "status", "name", "url"):
                     if p[k] is not None and known.get(k) != p[k]:
                         known[k] = p[k]
                 if p["pid"] and not known.get("pid"):
                     known["pid"] = p["pid"]
+                change = describe_change(old_price, old_status, known)
+                if change:  # for the page's "Recently updated" sort
+                    known["changedAt"], known["change"] = stamp, change
                 if known["status"] == "in_stock" and not was_in_stock:
                     restocked.append(known)  # back in stock (or preorder became available)
                 continue
             # Unknown product. Shop ids only grow, so an id at or below the
             # highest one we've seen is an old listing we simply missed before.
             catch_up = first_run or shop_first or (p["pid"] is not None and p["pid"] <= st.get("maxId", 0))
-            deck = {"id": doc_id, "shop": shop, **p, "firstSeen": now.isoformat().replace("+00:00", "Z"),
-                    "baseline": catch_up}
+            deck = {"id": doc_id, "shop": shop, **p, "firstSeen": stamp, "baseline": catch_up,
+                    "changedAt": stamp, "change": "listed"}
             decks.append(deck)
             by_id[doc_id] = deck
             by_url[norm_url(p["url"])] = deck

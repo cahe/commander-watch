@@ -138,13 +138,20 @@ def test_diff_new_vs_catch_up(monkeypatch=None):
     assert sent == []
     # a known deck that was out of stock and is now listed in stock -> "back in stock" push
     data = json.loads(check.DECKS_FILE.read_text())
-    next(d for d in data if d["id"] == "time4magic-766")["status"] = "out_of_stock"
+    d766 = next(d for d in data if d["id"] == "time4magic-766")
+    d766["status"], d766["price"] = "out_of_stock", 250.0
     check.DECKS_FILE.write_text(json.dumps(data))
     check.main()
     assert len(sent) == 1 and "back in stock" in sent[0][0] and "766" not in sent[0][0]
+    after = {d["id"]: d for d in json.loads(check.DECKS_FILE.read_text(encoding="utf-8"))}
+    assert after["time4magic-766"]["change"].startswith("back in stock, price 250.00 → ")  # for "Recently updated"
+    assert after["time4magic-1012"]["change"] == "listed"
+    unchanged_at = after["time4magic-766"]["changedAt"]
     sent.clear()
     check.main()
     assert sent == []
+    # nothing changed on that run, so the change time stays put
+    assert {d["id"]: d for d in json.loads(check.DECKS_FILE.read_text(encoding="utf-8"))}["time4magic-766"]["changedAt"] == unchanged_at
 
 
 if __name__ == "__main__":
