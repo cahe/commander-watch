@@ -9,6 +9,10 @@ on:
         description: "Only send a test push notification (no scan)"
         type: boolean
         default: false
+      cardtrader_discover:
+        description: "Only print CardTrader's catalogue structure (no scan)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write           # lets the job commit data/decks.json
@@ -36,8 +40,9 @@ jobs:
       - name: Check shops
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          CARDTRADER_TOKEN: ${{ secrets.CARDTRADER_TOKEN }}
           PAGE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-        run: python check.py ${{ inputs.test_push && '--test-push' || '' }}
+        run: python check.py ${{ inputs.test_push && '--test-push' || '' }} ${{ inputs.cardtrader_discover && '--cardtrader-discover' || '' }}
 
       - name: Save changes
         run: |
