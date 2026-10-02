@@ -352,7 +352,9 @@ def test_diff_new_vs_catch_up(monkeypatch=None):
     d766["status"], d766["price"] = "out_of_stock", 250.0
     check.DECKS_FILE.write_text(json.dumps(data))
     check.main()
-    assert len(sent) == 1 and "back in stock" in sent[0][0] and "766" not in sent[0][0]
+    # (the live data can make other pushes due on the same run, e.g. a CardTrader price; only the restock matters here)
+    restock = [t for t in sent if "back in stock" in t[0]]
+    assert len(restock) == 1 and "766" not in restock[0][0]
     after = {d["id"]: d for d in json.loads(check.DECKS_FILE.read_text(encoding="utf-8"))}
     assert after["time4magic-766"]["change"].startswith("back in stock, price 250.00 → ")  # for "Recently updated"
     assert after["time4magic-1012"]["change"] == "listed"
@@ -362,6 +364,30 @@ def test_diff_new_vs_catch_up(monkeypatch=None):
     assert sent == []
     # nothing changed on that run, so the change time stays put
     assert {d["id"]: d for d in json.loads(check.DECKS_FILE.read_text(encoding="utf-8"))}["time4magic-766"]["changedAt"] == unchanged_at
+
+
+def test_price_history():
+    h = {}
+    deck = {"id": "xjoy-1", "price": 250.0, "status": "in_stock"}
+    check.record_history(h, [deck], "2026-10-01")
+    deck["price"] = 240.0
+    check.record_history(h, [deck], "2026-10-01")   # same day: keeps the day's low
+    deck["price"] = 260.0
+    check.record_history(h, [deck], "2026-10-01")
+    check.record_history(h, [deck], "2026-10-02")   # next day at 260: a change
+    check.record_history(h, [deck], "2026-10-03")   # unchanged: no new point
+    deck["status"] = "out_of_stock"
+    check.record_history(h, [deck], "2026-10-04")   # can't be ordered: None
+    deck["status"], deck["price"] = "preorder", 260.0
+    check.record_history(h, [deck], "2026-10-04")   # orderable again later that day: the day's low is 260
+    check.record_history(h, [deck], "2026-10-05")
+    deck["price"] = 260.4
+    check.record_history(h, [deck], "2026-10-06")   # under 1 zł: not a change
+    assert h["listings"]["xjoy-1"] == [["2026-10-01", 240.0], ["2026-10-02", 260.0]]  # the 4th's 260 merged away
+    tmp = Path(tempfile.mkdtemp())
+    check.DECKS_FILE = tmp / "decks.json"
+    check.save_history(h)
+    assert json.loads(check.history_file().read_text(encoding="utf-8")) == h
 
 
 def test_vanished_listing_is_sold_out():

@@ -94,7 +94,28 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .deck a { color: var(--fg); text-decoration: none; overflow-wrap: anywhere; }
 .deck a:hover { color: var(--accent); text-decoration: underline; }
 .deck .shoptag { font-size: 12px; color: var(--muted); }
-.price { font: 500 14px var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; }
+.price { font: 500 14px var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; display: grid; justify-items: end; gap: 3px; }
+.spark { display: block; color: var(--accent); overflow: visible; }
+.spark .spark-low, .hchart .dot-low { fill: var(--ok); }
+.hbtn { padding: 2px 0; border: 0; background: none; color: var(--accent); font: 500 12px var(--font-body); cursor: pointer; }
+.hbtn:hover .spark { color: var(--fg); }
+.hbtn[aria-expanded="true"] .spark { color: var(--fg); }
+.hbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.item.hrow { display: block; border-top: 0; padding-top: 0; }
+.hpanel { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px 6px; }
+.hlegend { display: flex; flex-wrap: wrap; gap: 14px; font: 12px var(--font-body); color: var(--muted); }
+.hlegend .k { display: inline-flex; align-items: center; white-space: nowrap; }
+.hlegend .k::before { content: ""; display: inline-block; flex: none; width: 14px; height: 0; margin-right: 6px; vertical-align: middle; border-top: 2px solid var(--accent); }
+.hlegend .k.ct::before { border-top: 2px dashed var(--muted); }
+.hlegend .k.low::before { width: 7px; height: 7px; border: 0; border-radius: 50%; background: var(--ok); }
+.hwrap { position: relative; }
+.hchart { display: block; width: 100%; height: auto; margin-top: 4px; }
+.hchart .grid { stroke: var(--line); }
+.hchart .axis { font: 11px var(--font-mono); fill: var(--muted); }
+.hchart .line-shops { fill: none; stroke: var(--accent); stroke-width: 2; }
+.hchart .line-ct { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.hchart .guide { stroke: var(--muted); stroke-width: 1; }
+.htip { position: absolute; top: 4px; padding: 4px 8px; border-radius: 4px; background: var(--surface); border: 1px solid var(--line); font: 12px var(--font-mono); white-space: nowrap; pointer-events: none; }
 .seen { font: 12px var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
 .pill { display: inline-block; font: 500 12px/1 var(--font-body); padding: 5px 8px; border-radius: 4px; white-space: nowrap; }
 .pill.in_stock { background: var(--ok-soft); color: var(--ok); }
@@ -382,10 +403,146 @@ function renderList() {
     list.append(el("div", { class: "item", role: "row" },
       el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null), offers),
       st,
-      el("span", { class: "price", text: g.best ? pln.format(g.best.price) : "—" }),
+      priceCell(g),
       el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
+    if (state.openHistory === g.name) {
+      const h = deckHistory(g);
+      if (h) list.append(el("div", { class: "item hrow" }, historyChart(h, g.name)));
+    }
   }
   $("catcount").textContent = `${rows.length} of ${listed.length} decks`;
+}
+
+// Price history: data/history.json keeps [day, price or null] points per listing (written by check.py) wherever
+// the price or availability changed. A deck's cheapest price on a day is the lowest of its shops' listings.
+const HISTORY_DAYS = 90, HISTORY_MIN_DAYS = 14;
+const isoDay = (d) => d.toISOString().slice(0, 10);
+const shortDay = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short" });
+// From the first recorded day (at least 14 days, at most 90), so a short history isn't squeezed against one edge.
+function historyDays() {
+  const first = Object.values(state.history?.listings || {}).reduce((m, pts) => (pts.length && pts[0][0] < m ? pts[0][0] : m), isoDay(new Date()));
+  const since = Math.round((Date.parse(isoDay(new Date())) - Date.parse(first)) / 86400000) + 1;
+  const n = Math.min(HISTORY_DAYS, Math.max(HISTORY_MIN_DAYS, since));
+  const out = [], d = new Date();
+  d.setUTCHours(0, 0, 0, 0); d.setUTCDate(d.getUTCDate() - n + 1);
+  for (let i = 0; i < n; i++) { out.push(isoDay(d)); d.setUTCDate(d.getUTCDate() + 1); }
+  return out;
+}
+// Each listing's price on each day (undefined before tracking, null while it can't be ordered).
+function listingSeries(points, days) {
+  const out = []; let i = 0, v;
+  for (const day of days) { while (i < points.length && points[i][0] <= day) v = points[i++][1]; out.push(v); }
+  return out;
+}
+function deckHistory(g) {
+  const listings = state.history?.listings;
+  if (!listings) return null;
+  const days = historyDays();
+  const lowest = (offers) => {
+    const series = offers.map(o => listingSeries(listings[o.id] || [], days));
+    return days.map((_, i) => {
+      const prices = series.map(s => s[i]).filter(p => typeof p === "number");
+      return prices.length ? Math.min(...prices) : null;
+    });
+  };
+  const shops = lowest(g.offers.filter(o => !SHOPS[o.shop]?.extra));
+  const ct = lowest(g.offers.filter(o => SHOPS[o.shop]?.extra));
+  const known = shops.map((p, i) => ({ day: days[i], price: p })).filter(x => x.price !== null);
+  if (!known.length) return null;
+  const low = known.reduce((a, b) => (b.price < a.price ? b : a));
+  const high = known.reduce((a, b) => (b.price > a.price ? b : a));
+  return { days, shops, ct, low, high, from: known[0].day };
+}
+
+// A path through the prices as steps (a price holds until it changes), broken where nothing could be ordered.
+function stepPath(prices, x, y) {
+  let d = "", prev = null;
+  prices.forEach((p, i) => {
+    if (p === null) { prev = null; return; }
+    if (prev === null) d += `M${x(i)},${y(p)}`;
+    else if (p !== prev) d += `H${x(i)}V${y(p)}`;
+    prev = p;
+    if (i === prices.length - 1 || prices[i + 1] === null) d += `H${x(i + 1)}`;
+  });
+  return d;
+}
+const svgEl = (tag, attrs = {}) => {
+  const e = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  return e;
+};
+
+function sparkline(h) {
+  const w = 96, ht = 24, n = h.days.length;
+  const prices = h.shops.filter(p => p !== null);
+  const lo = Math.min(...prices), hi = Math.max(...prices), pad = (hi - lo) * 0.1 || 1;
+  const x = (i) => (i / n) * w, y = (p) => ht - 2 - ((p - lo + pad) / (hi - lo + 2 * pad)) * (ht - 4);
+  const svg = svgEl("svg", { class: "spark", viewBox: `0 0 ${w} ${ht}`, width: w, height: ht, "aria-hidden": "true" });
+  svg.append(svgEl("path", { d: stepPath(h.shops, x, y), fill: "none", stroke: "currentColor", "stroke-width": 1.5 }));
+  const li = h.days.indexOf(h.low.day);
+  svg.append(svgEl("circle", { cx: x(li) + 1, cy: y(h.low.price), r: 2.5, class: "spark-low" }));
+  return svg;
+}
+function historySummary(h) {
+  const span = h.from > h.days[0] ? `since ${shortDay.format(new Date(h.from))}` : `over ${h.days.length} days`;
+  return `Cheapest ${span}: low ${pln.format(h.low.price)} (${shortDay.format(new Date(h.low.day))}), high ${pln.format(h.high.price)}`;
+}
+function historyChart(h, name) {
+  const w = 640, ht = 170, m = { l: 56, r: 12, t: 12, b: 26 }, n = h.days.length;
+  const all = [...h.shops, ...h.ct].filter(p => p !== null);
+  const lo = Math.min(...all), hi = Math.max(...all), pad = (hi - lo) * 0.12 || 5;
+  const x = (i) => m.l + (i / n) * (w - m.l - m.r);
+  const y = (p) => m.t + (1 - (p - lo + pad) / (hi - lo + 2 * pad)) * (ht - m.t - m.b);
+  const svg = svgEl("svg", { class: "hchart", viewBox: `0 0 ${w} ${ht}`, role: "img", "aria-label": `${name}: ${historySummary(h)}` });
+  for (const p of [lo, (lo + hi) / 2, hi]) {
+    svg.append(svgEl("line", { x1: m.l, x2: w - m.r, y1: y(p), y2: y(p), class: "grid" }));
+    const t = svgEl("text", { x: m.l - 6, y: y(p) + 4, "text-anchor": "end", class: "axis" });
+    t.textContent = Math.round(p) + " zł";
+    svg.append(t);
+  }
+  for (const i of [0, Math.floor(n / 2), n - 1]) {
+    const t = svgEl("text", { x: x(i), y: ht - 8, "text-anchor": i === 0 ? "start" : i === n - 1 ? "end" : "middle", class: "axis" });
+    t.textContent = i === n - 1 ? "Today" : shortDay.format(new Date(h.days[i]));
+    svg.append(t);
+  }
+  if (h.ct.some(p => p !== null)) svg.append(svgEl("path", { d: stepPath(h.ct, x, y), class: "line-ct" }));
+  svg.append(svgEl("path", { d: stepPath(h.shops, x, y), class: "line-shops" }));
+  const li = h.days.indexOf(h.low.day);
+  svg.append(svgEl("circle", { cx: x(li), cy: y(h.low.price), r: 3.5, class: "dot-low" }));
+  // Hover: a guide line and the day's prices.
+  const guide = svgEl("line", { y1: m.t, y2: ht - m.b, class: "guide", visibility: "hidden" });
+  svg.append(guide);
+  const tip = el("div", { class: "htip", hidden: "" });
+  const wrap = el("div", { class: "hwrap" }, svg, tip);
+  svg.addEventListener("pointermove", (e) => {
+    const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) / r.width * w;
+    const i = Math.max(0, Math.min(n - 1, Math.floor((px - m.l) / (w - m.l - m.r) * n)));
+    guide.setAttribute("x1", x(i) + 2); guide.setAttribute("x2", x(i) + 2); guide.setAttribute("visibility", "visible");
+    const s = h.shops[i], c = h.ct[i];
+    tip.textContent = `${shortDay.format(new Date(h.days[i]))}: ${typeof s === "number" ? pln.format(s) : "not in stock"}`
+      + (typeof c === "number" ? ` · CardTrader ≈ ${pln.format(c)}` : "");
+    tip.hidden = false;
+    tip.style.left = `${Math.min(r.width - 230, Math.max(0, (x(i) / w) * r.width - 60))}px`;
+  });
+  svg.addEventListener("pointerleave", () => { guide.setAttribute("visibility", "hidden"); tip.hidden = true; });
+  const legend = el("div", { class: "hlegend" },
+    el("span", { class: "k shops", text: "Cheapest shop" }),
+    h.ct.some(p => p !== null) ? el("span", { class: "k ct", text: "CardTrader" }) : null,
+    el("span", { class: "k low", text: `Lowest: ${pln.format(h.low.price)}, ${shortDay.format(new Date(h.low.day))}` }));
+  return el("div", { class: "hpanel" }, legend, wrap);
+}
+
+// Best price, with the deck's sparkline under it; the sparkline opens the full chart below the row.
+function priceCell(g) {
+  const cell = el("div", { class: "price" }, el("span", { text: g.best ? pln.format(g.best.price) : "—" }));
+  const h = deckHistory(g);
+  if (!h) return cell;
+  const open = state.openHistory === g.name;
+  const btn = el("button", { class: "hbtn", type: "button", "aria-expanded": String(open), title: historySummary(h),
+    "aria-label": `Price history for ${g.name}. ${historySummary(h)}` }, sparkline(h));
+  btn.addEventListener("click", () => { state.openHistory = open ? null : g.name; renderList(); });
+  cell.append(btn);
+  return cell;
 }
 
 // "Changes" panel: events from data/changes.json (written by check.py), last 7 days, newest first.
@@ -631,15 +788,17 @@ async function load() {
   const bust = "?t=" + Math.floor(Date.now() / 60000);
   const get = (f) => fetch("data/" + f + bust).then(r => r.ok ? r.text() : Promise.reject(new Error(f + " " + r.status)));
   try {
-    const [decks, meta, changes] = await Promise.all([
-      get("decks.json"), get("state.json").catch(() => "null"), get("changes.json").catch(() => "[]")
+    const [decks, meta, changes, history] = await Promise.all([
+      get("decks.json"), get("state.json").catch(() => "null"), get("changes.json").catch(() => "[]"),
+      get("history.json").catch(() => "null")
     ]);
     // Re-render only when the data changed, so a background refresh doesn't disturb the page.
-    const key = decks + "\n" + meta + "\n" + changes;
+    const key = decks + "\n" + meta + "\n" + changes + "\n" + history;
     if (key !== dataKey) {
       state.decks = JSON.parse(decks);
       state.meta = JSON.parse(meta);
       state.changes = JSON.parse(changes);
+      state.history = JSON.parse(history);
       dataKey = key;
       renderAll();
     }
