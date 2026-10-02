@@ -457,5 +457,175 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389400"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 179.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "cardtrader-389398",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 172.01,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389398"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 195.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Evergreen – Starter Commadner – Chaos Incarnate",
+  "group": "cardtrader-224264",
+  "id": "cardtrader-224264",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 217.15,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/224264"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 151.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Evergreen – Starter Commadner – Token Triumph",
+  "group": "cardtrader-224266",
+  "id": "cardtrader-224266",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 153.02,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/224266"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 329.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Lord of the Rings – Tales of Middle-earth – Riders of Rohan",
+  "group": "cardtrader-246483",
+  "id": "cardtrader-246483",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 330.8,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 295.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Doctor Who – Masters of Evil",
+  "group": "cardtrader-246950",
+  "id": "cardtrader-246950",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 374.59,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246950"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 219.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "The Lost Caverns of Ixalan Ahoy Mateys",
+  "group": "cardtrader-261730",
+  "id": "cardtrader-261730",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 389.29,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/261730"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 224.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Fallout Science",
+  "group": "cardtrader-265028",
+  "id": "cardtrader-265028",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 234.65,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 215.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Modern Horizons 3 – Graveyard Overdrive",
+  "group": "cardtrader-279382",
+  "id": "cardtrader-279382",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 216.93,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279382"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 130,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Aetherdrift Living Energy",
+  "group": "cardtrader-314238",
+  "id": "cardtrader-314238",
+  "inStock": 5,
+  "kind": "notcheapest",
+  "price": 132.55,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/314238"
+ },
+ {
+  "at": "2026-10-02T14:29:54Z",
+  "best": {
+   "price": 180,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Lorwyn Eclipsed – Dance of the Elements",
+  "group": "cardtrader-352407",
+  "id": "cardtrader-352407",
+  "inStock": 4,
+  "kind": "notcheapest",
+  "price": 199.61,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/352407"
  }
 ]
