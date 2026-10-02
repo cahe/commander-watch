@@ -97,6 +97,18 @@ def test_woo_magiccafe():
     assert not any("commander" not in i["name"].lower() for i in items)  # other ready-made decks dropped
 
 
+def test_sote_wilczek():
+    items, soup = check.parse_sote((FIX / "sote.html").read_text(encoding="utf-8"), "https://wilczek.poznan.pl")
+    by = {i["pid"]: i for i in items}
+    assert set(by) == {15239, 15023, 14019, 15232}  # Dragon Shield sleeves dropped
+    assert by[15239]["status"] == "preorder" and by[15239]["price"] == 349.99  # "Przedsprzedaż" label
+    assert by[15239]["name"] == "Magic: the Gathering - Star Trek - Commander Deck - Klingon Fury"  # full name, not cut
+    assert by[15023]["status"] == "in_stock"
+    assert by[14019]["status"] == "out_of_stock"  # "Brak", though it still has a basket button
+    assert by[15232]["url"] == "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-set.html"
+    assert check.page_numbers(soup, re.compile(r"/product/search/(\d+)/long/")) == 4
+
+
 def test_frostmagic():
     fx = json.loads((FIX / "frostmagic.json").read_text(encoding="utf-8"))
     pages = {

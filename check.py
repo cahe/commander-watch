@@ -259,36 +259,34 @@ def parse_woo(text: str, base: str):
     return out
 
 
-def parse_jsonld_list(html: str, base: str):
-    """SOTE (Wilczek): search results carry a schema.org ItemList with name, price and availability.
+def parse_sote(html: str, base: str):
+    """SOTE (Wilczek) search results. Each tile has an availability label ("Brak" = none,
+    "Przedsprzedaż" = preorder); the page's schema.org data says InStock for all of them, so it's not used.
     The search finds decks named without "Commander" too ("Modern Horizons 3 - Creative Energy"),
     so any Magic product that isn't another kind of sealed product counts."""
     soup = BeautifulSoup(html, "html.parser")
     out = []
-    for script in soup.find_all("script", type="application/ld+json"):
-        try:
-            data = json.loads(script.string or "")
-        except ValueError:
+    for tile in soup.select("div.product.thumbnail"):
+        a = tile.select_one("a.product_name")
+        hint = tile.select_one("span.hint")
+        basket = tile.select_one("a.basket_add_link")
+        m = basket and re.search(r"/basket/add/(\d+)", basket.get("href", ""))
+        if not a or not m:
             continue
-        for node in data.get("@graph", [data]) if isinstance(data, dict) else []:
-            if node.get("@type") != "ItemList":
-                continue
-            for el in node.get("itemListElement", []):
-                item = el.get("item") or {}
-                name = " ".join((item.get("name") or "").split())
-                if (not re.search(r"magic", name, re.I) or NOT_A_DECK.search(name) or WILCZEK_NOT_A_DECK.search(name)
-                        or ("commander" not in name.lower() and OTHER_MTG.search(name))):
-                    continue
-                offer = item.get("offers") or {}
-                available = (offer.get("availability") or "").rsplit("/", 1)[-1]
-                out.append({
-                    "pid": None,
-                    "name": name,
-                    "price": parse_price(str(offer.get("price") or "")),
-                    "url": urljoin(base, item.get("url") or ""),
-                    "status": status_from(available in ("InStock", "PreOrder", "LimitedAvailability"), name,
-                                          "preorder" if available == "PreOrder" else ""),
-                })
+        name = " ".join(((hint.get("title") if hint else None) or a.get_text()).split())
+        if (not re.search(r"magic", name, re.I) or NOT_A_DECK.search(name) or WILCZEK_NOT_A_DECK.search(name)
+                or ("commander" not in name.lower() and OTHER_MTG.search(name))):
+            continue
+        label = tile.select_one(".product-availability-label")
+        label = label.get_text(strip=True) if label else ""
+        price = tile.select_one(".price")
+        out.append({
+            "pid": int(m.group(1)),
+            "name": name,
+            "price": parse_price(price.get_text() if price else None),
+            "url": urljoin(base, a["href"]),
+            "status": status_from(label.lower() != "brak", name, label),
+        })
     return out, soup
 
 
@@ -396,9 +394,16 @@ def scan_magiccafe(s):
 
 def scan_wilczek(s):
     base = "https://wilczek.poznan.pl"
-    # No Commander category; the site search finds the decks. Newest first; it only lists what's in stock.
-    return scan_paged(s, lambda n: f"{base}/product/search/{n}/long/created_at/desc/0?query=commander",
-                      lambda h: parse_jsonld_list(h, base), re.compile(r"/product/search/(\d+)/long/"))
+    # No Commander category; the site search finds the decks, newest first. Its Cloudflare blocks bursts
+    # (a quick run of requests got HTTP 429 for half an hour), so pages are fetched a few seconds apart.
+    limit = RateLimit(0.25)
+
+    def url(n):
+        limit.wait()
+        return f"{base}/product/search/{n}/long/created_at/desc/0?query=commander"
+
+    return scan_paged(s, url,
+                      lambda h: parse_sote(h, base), re.compile(r"/product/search/(\d+)/long/"))
 
 
 def scan_frostmagic(s):
@@ -607,7 +612,7 @@ SHOPS = {
 QUIET_SHOPS = {"cardtrader"}  # prices only: never announce new decks or restocks
 # Shops whose listings leave out sold-out decks instead of marking them: after a complete scan,
 # a known deck that isn't listed any more has sold out.
-VANISHING_SHOPS = {"frostmagic", "wilczek"}
+VANISHING_SHOPS = {"frostmagic"}
 
 
 # ---------------------------------------------------------------------- grouping
