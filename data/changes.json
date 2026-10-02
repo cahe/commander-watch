@@ -399,5 +399,22 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389400"
+ },
+ {
+  "at": "2026-10-02T12:17:13Z",
+  "best": {
+   "price": 170.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "cardtrader-389398",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 199.21,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389398"
  }
 ]
