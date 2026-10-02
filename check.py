@@ -871,6 +871,42 @@ CHANGES_DAYS = 30
 PRICE_STEP = 1.0  # zł; smaller shop price moves aren't logged
 
 
+def history_file() -> Path:
+    return DECKS_FILE.with_name("history.json")
+
+
+def record_history(history: dict, decks: list[dict], day: str) -> None:
+    """Price history per listing (listing ids are stable; group ids aren't), as the day's lowest orderable price.
+
+    Each listing keeps [day, price] points only where its price changes by PRICE_STEP or more (CardTrader
+    drifts by grosze daily with the exchange rate), with None while it can't be ordered; the page combines
+    a deck's listings into its cheapest price over time.
+    """
+    def changed(a, b):
+        return (a is None) != (b is None) or (a is not None and abs(a - b) >= PRICE_STEP)
+
+    series = history.setdefault("listings", {})
+    for d in decks:
+        price = d.get("price") if d.get("status") in ORDERABLE else None
+        price = round(price, 2) if price is not None else None
+        points = series.setdefault(d["id"], [])
+        if points and points[-1][0] == day:
+            old = points[-1][1]
+            points[-1][1] = price if old is None else old if price is None else min(old, price)
+            # A same-day low that matches the day before is no change.
+            if len(points) > 1 and not changed(points[-2][1], points[-1][1]):
+                points.pop()
+        elif not points or changed(points[-1][1], price):
+            points.append([day, price])
+
+
+def save_history(history: dict) -> None:
+    """One listing per line: small, and each hourly commit's diff shows just the listings that changed."""
+    rows = [f" {json.dumps(k, ensure_ascii=False)}: {json.dumps(v, separators=(',', ':'))}"
+            for k, v in sorted(history.get("listings", {}).items())]
+    history_file().write_text('{"listings": {\n' + ",\n".join(rows) + "\n}}\n", encoding="utf-8")
+
+
 def changes_file() -> Path:
     return DECKS_FILE.with_name("changes.json")
 
@@ -1059,6 +1095,9 @@ def main() -> int:
     save(DECKS_FILE, decks)
     save(STATE_FILE, state)
     append_changes(finish_events(pending, decks, stamp), now)
+    history = load(history_file(), {})
+    record_history(history, decks, now.date().isoformat())
+    save_history(history)
 
     if new_decks:
         lines = [deck_line(d) for d in new_decks]
