@@ -964,7 +964,7 @@ def describe_change(old_price: float | None, old_status: str | None, d: dict) ->
     parts = []
     if old_status != d["status"]:
         parts.append({"in_stock": "back in stock" if old_status == "out_of_stock" else "now in stock",
-                      "preorder": "pre-order opened", "out_of_stock": "sold out"}.get(d["status"], d["status"]))
+                      "preorder": "back in stock" if old_status == "out_of_stock" else "now in stock", "out_of_stock": "sold out"}.get(d["status"], d["status"]))
     if old_price is not None and d["price"] is not None and abs(old_price - d["price"]) >= 0.01:
         parts.append(f"price {old_price:.2f} → {d['price']:.2f} zł")
     return ", ".join(parts)
@@ -974,7 +974,8 @@ def deck_line(d: dict) -> str:
     shop = SHOPS[d["shop"]][0]
     if d["price"] is None:
         return f"{d['name']} — {shop}"
-    return f"{d['name']} — {shop} — {d['price']:.2f} zł ({d['status'].replace('_', ' ')})"
+    status = "in stock" if d["status"] == "preorder" else d["status"].replace("_", " ")  # preorders count as in stock
+    return f"{d['name']} — {shop} — {d['price']:.2f} zł ({status})"
 
 
 def main() -> int:
