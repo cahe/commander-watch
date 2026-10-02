@@ -379,6 +379,9 @@ const CHANGE_KIND = {
 const CHANGE_FILTERS = [["", "All"], ["restock", "Back in stock"], ["new", "New listings"], ["price", "Price changes"], ["soldout", "Sold out"]];
 const dayfmt = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short" });
 const hm = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit" });
+// Checks run at :17, and a change happened sometime in the hour before, so show the nearest full hour.
+const roughly = (iso) => { const d = new Date(iso); d.setMinutes(d.getMinutes() + 30, 0, 0); d.setMinutes(0); return d; };
+const roughTime = (iso) => "~" + hm.format(roughly(iso));
 const shopName = (k) => SHOPS[k]?.name || k;
 const money = (shop, p) => typeof p === "number" ? (SHOPS[shop]?.approx ? "≈ " : "") + pln.format(p) : "—";
 
@@ -446,7 +449,7 @@ function renderChangeRow(r) {
   const good = typeof sub === "object" && sub?.good;
   const subText = typeof sub === "object" ? sub?.text : sub;
   return el("div", { class: "change", "data-filter": k.filter },
-    el("span", { class: "when", text: hm.format(new Date(e.at)) }),
+    el("span", { class: "when", text: roughTime(e.at), title: hm.format(new Date(e.at)) }),
     el("span", {}, el("span", { class: "tag " + cls, text: label })),
     el("div", { class: "what" }, el("div", {}, main), subText ? el("div", { class: "ctx" + (good ? " good" : ""), text: subText }) : null));
 }
@@ -458,7 +461,7 @@ function renderChanges() {
   const rows = changeRows(recent);
   const latest = rows[0];
   $("changes-sum").textContent = !state.changes ? "" : rows.length
-    ? `${rows.length} in the last ${CHANGE_DAYS} days · latest: ${(CHANGE_KIND[latest.kind] || {}).label || latest.kind}, ${latest.items[0].deck} at ${shopName(latest.shop)}, ${hm.format(new Date(latest.at))}`
+    ? `${rows.length} in the last ${CHANGE_DAYS} days · latest: ${(CHANGE_KIND[latest.kind] || {}).label || latest.kind}, ${latest.items[0].deck} at ${shopName(latest.shop)}, ${roughTime(latest.at)}`
     : `No changes in the last ${CHANGE_DAYS} days`;
   const chips = $("changes-filters"); chips.replaceChildren();
   for (const [f, label] of CHANGE_FILTERS) {
@@ -471,7 +474,7 @@ function renderChanges() {
   if (!shown.length) { box.append(el("div", { class: "empty", text: "Nothing like that in the last 7 days." })); return; }
   let day = "";
   for (const r of shown) {
-    const label = dayLabel(new Date(r.at));
+    const label = dayLabel(roughly(r.at));
     if (label !== day) { day = label; box.append(el("div", { class: "day", text: label })); }
     box.append(renderChangeRow(r));
   }
