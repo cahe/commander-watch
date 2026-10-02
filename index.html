@@ -114,18 +114,31 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .offer.best { border-color: currentColor; }
 .offer:hover { text-decoration: underline; }
 .avail { font-size: 13px; color: var(--muted); }
-details.changes { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
-details.changes > summary { list-style: none; cursor: pointer; padding: 12px 14px; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
-details.changes > summary::-webkit-details-marker { display: none; }
-details.changes > summary::before { content: "▸"; color: var(--muted); transition: transform .15s; display: inline-block; }
-details.changes[open] > summary::before { transform: rotate(90deg); }
-details.changes > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
-details.changes .sum { font-size: 13px; color: var(--muted); min-width: 0; }
-.changes-body { padding: 0 14px 14px; display: grid; gap: 4px; }
+section.changes { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.changes-head { padding: 12px 14px 0; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.changes-head .sum { font-size: 13px; color: var(--muted); min-width: 0; }
+.changes-head .sum b { color: var(--fg); font-weight: 600; }
+.changes-body { padding: 0 14px 10px; display: grid; gap: 4px; }
+.changes-body > .day:first-child { margin-top: 10px; }
+#changes-filters { padding: 12px 14px 0; gap: 6px; }
+#changes-filters .chip { font-size: 12px; padding: 6px 10px; }
+#changes-filters:not(:empty) + #changes-list > .day:first-child { margin-top: 24px; }
+/* Folded: a button on the faded edge where the hidden rows continue. Expanded: a "Show less" bar that sticks
+   to the bottom of the screen while the list is in view. */
+.changes-edge { position: relative; display: flex; justify-content: center; margin-top: -26px; padding: 0 14px 12px; }
+.changes-less { position: sticky; bottom: 0; z-index: 1; display: flex; justify-content: center; padding: 8px 14px; background: var(--surface); border-top: 1px solid var(--line); border-radius: 0 0 8px 8px; }
+.changes-edge[hidden], .changes-less[hidden] { display: none; }
+.pillbtn { padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--accent); font: 500 13px var(--font-body); cursor: pointer; }
+.pillbtn:hover, #changes-fold:has(.peek:hover) .pillbtn { background: var(--accent-soft); border-color: var(--accent); }
+.pillbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+#changes-filters:empty { display: none; }
+/* Folded, the next earlier change peeks out under the latest ones and fades away; clicking it expands. */
+.peek { max-height: 52px; overflow: hidden; cursor: pointer; -webkit-mask-image: linear-gradient(#000, transparent); mask-image: linear-gradient(#000, transparent); }
+.peek > * { pointer-events: none; user-select: none; }
+.peek:hover { -webkit-mask-image: linear-gradient(#000 30%, transparent); mask-image: linear-gradient(#000 30%, transparent); }
 .change.unseen { position: relative; }
 .change.unseen::before { content: ""; position: absolute; left: -9px; top: 15px; width: 6px; height: 6px; border-radius: 50%; background: var(--dot); }
 .change.unseen .when { color: var(--fg); font-weight: 600; }
-details.changes .sum b { color: var(--fg); font-weight: 600; }
 .changes .day { font: 500 11px/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 14px 0 4px; }
 .change { display: grid; grid-template-columns: 44px 150px minmax(0, 1fr); gap: 12px; align-items: start; padding: 8px 0; border-top: 1px solid var(--line); }
 .change .when { font: 12px/1.6 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -161,13 +174,15 @@ details.changes .sum b { color: var(--fg); font-weight: 600; }
     <h1>Commander Watch</h1>
   </header>
 
-  <details class="changes" id="changes">
-    <summary><h2 style="display:inline">Changes</h2><span class="sum" id="changes-sum">Loading…</span></summary>
-    <div class="changes-body">
+  <section class="changes" aria-labelledby="changes-h">
+    <div class="changes-head"><h2 id="changes-h">Changes</h2><span class="sum" id="changes-sum">Loading…</span></div>
+    <div id="changes-fold">
       <div class="controls" id="changes-filters" role="group" aria-label="Filter changes"></div>
-      <div id="changes-list"></div>
+      <div class="changes-body" id="changes-list"></div>
+      <div class="changes-edge" id="changes-edge" hidden><button class="pillbtn" id="changes-more" type="button" aria-controls="changes-list" aria-expanded="false"></button></div>
+      <div class="changes-less" id="changes-less" hidden><button class="pillbtn" id="changes-fewer" type="button" aria-controls="changes-list" aria-expanded="true">Show less ▴</button></div>
     </div>
-  </details>
+  </section>
 
   <section aria-labelledby="new-h">
     <div class="sec-head"><h2 id="new-h">New listings</h2><span class="count" id="newcount"></span></div>
@@ -464,30 +479,50 @@ function recentRows() {
   return changeRows((state.changes || []).filter(e => Date.parse(e.at) >= since).sort((a, b) => b.at.localeCompare(a.at)));
 }
 
+// One list, newest first. Folded, it shows the last 2 changes (more if the newest check or your unseen changes have more)
+// with the next one fading out under them;
+// the button on its faded edge extends it downwards with the rest of the last 7 days, and brings up the filters.
+const foldedCount = (list) => Math.min(list.length,
+  Math.max(2, list.filter(r => r.at === list[0].at || (state.markFrom && r.at > state.markFrom)).length));
+
 function renderChanges() {
-  const box = $("changes-list"); box.replaceChildren();
   const rows = recentRows();
-  const latest = rows[0];
   const fresh = state.markFrom ? rows.filter(r => r.at > state.markFrom).length : 0;
-  $("changes-sum").replaceChildren(...(fresh ? [el("b", { text: `${fresh} new since your last visit` }), " · "] : []),
-    !state.changes ? "" : rows.length
-    ? `${rows.length} in the last ${CHANGE_DAYS} days · latest: ${(CHANGE_KIND[latest.kind] || {}).label || latest.kind}, ${latest.items[0].deck} at ${shopName(latest.shop)}, ${roughTime(latest.at)}`
-    : `No changes in the last ${CHANGE_DAYS} days`);
+  $("changes-sum").replaceChildren(fresh ? el("b", { text: `${fresh} new since your last visit` })
+    : state.changes && !rows.length ? `No changes in the last ${CHANGE_DAYS} days` : "");
   const chips = $("changes-filters"); chips.replaceChildren();
-  for (const [f, label] of CHANGE_FILTERS) {
+  if (rows.length && state.changesAll) for (const [f, label] of CHANGE_FILTERS) {
     const n = f ? rows.filter(r => (CHANGE_KIND[r.kind] || {}).filter === f).length : rows.length;
     const b = el("button", { class: "chip", type: "button", "aria-pressed": String(state.changeFilter === f), text: `${label} ${n}` });
     b.addEventListener("click", () => { state.changeFilter = f; renderChanges(); });
     chips.append(b);
   }
   const shown = rows.filter(r => !state.changeFilter || (CHANGE_KIND[r.kind] || {}).filter === state.changeFilter);
-  if (!shown.length) { box.append(el("div", { class: "empty", text: "Nothing like that in the last 7 days." })); return; }
+  const top = shown.slice(0, foldedCount(shown));
+  const box = $("changes-list"); box.replaceChildren();
+  if (rows.length && !shown.length) box.append(el("div", { class: "empty", text: "Nothing like that in the last 7 days." }));
+  const peek = state.changesAll ? [] : shown.slice(top.length, top.length + 1);
+  // Folded, the next earlier changes go in a short box that fades out; clicking it expands.
+  const peekBox = el("div", { class: "peek", "aria-hidden": "true" });
+  peekBox.addEventListener("click", () => toggleChanges());
   let day = "";
-  for (const r of shown) {
+  (state.changesAll ? shown : top.concat(peek)).forEach((r, i) => {
+    const into = state.changesAll || i < top.length ? box : peekBox;
+    // "extra" marks what only the expanded list has, so the fold animation can fade it in and out.
+    const extra = i >= top.length ? " extra" : "";
     const label = dayLabel(roughly(r.at));
-    if (label !== day) { day = label; box.append(el("div", { class: "day", text: label })); }
-    box.append(renderChangeRow(r));
-  }
+    if (label !== day) { day = label; into.append(el("div", { class: "day" + extra, text: label })); }
+    const row = renderChangeRow(r);
+    if (extra) row.classList.add("extra");
+    if (into === peekBox) row.querySelectorAll("a").forEach(a => a.tabIndex = -1);
+    into.append(row);
+  });
+  if (peek.length) box.append(peekBox);
+  // Folded is never filtered (folding clears the filter), so count the unfiltered rows.
+  const rest = rows.length - foldedCount(rows);
+  $("changes-edge").hidden = state.changesAll || !rest;
+  $("changes-less").hidden = !state.changesAll || !rest;
+  $("changes-more").textContent = `${rest} earlier ${rest === 1 ? "change" : "changes"} ▾`;
 }
 
 function renderAll() { renderShops(); renderChanges(); renderNew(); renderList(); }
@@ -496,9 +531,46 @@ $("q").addEventListener("input", (e) => { state.q = e.target.value; renderList()
 $("status").addEventListener("change", (e) => { state.status = e.target.value; renderList(); });
 $("sort").addEventListener("change", (e) => { state.sort = e.target.value; renderList(); });
 state.status = $("status").value; // the browser may restore an earlier choice on reload
-// Remember whether the Changes panel was open (per browser; storage may be unavailable).
-try { if (localStorage.getItem("changesOpen") === "1") $("changes").open = true; } catch {}
-$("changes").addEventListener("toggle", () => { try { localStorage.setItem("changesOpen", $("changes").open ? "1" : "0"); } catch {} });
+// Remember whether the Changes list was expanded (per browser; storage may be unavailable).
+try { state.changesAll = localStorage.getItem("changesOpen") === "1"; } catch {}
+// Expanding grows the panel and fades the earlier changes in; folding fades them out first, then closes the gap.
+let folding = false;
+async function toggleChanges() {
+  if (folding) return;
+  folding = true;
+  const fold = $("changes-fold"), list = $("changes-list");
+  const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const ease = "cubic-bezier(.2, .7, .3, 1)";
+  const extras = () => [...fold.querySelectorAll(".extra"), $("changes-filters"), $("changes-less")]
+    .filter(x => x.classList.contains("extra") || (x.id === "changes-filters" ? x.childElementCount : !x.hidden));
+  if (state.changesAll && !calm) {
+    await Promise.all(extras().map(x => x.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 140, easing: "ease-in", fill: "forwards" }).finished));
+  }
+  // Folding from far down the list: bring the panel's top back into view, or it would end up above the screen.
+  const top = fold.closest("section").getBoundingClientRect().top;
+  if (state.changesAll && top < 0) window.scrollTo({ top: scrollY + top - 16, behavior: calm ? "auto" : "smooth" });
+  const h0 = fold.offsetHeight, y0 = list.getBoundingClientRect().top;
+  state.changesAll = !state.changesAll;
+  if (!state.changesAll) state.changeFilter = "";
+  try { localStorage.setItem("changesOpen", state.changesAll ? "1" : "0"); } catch {}
+  renderChanges();
+  [$("changes-filters"), $("changes-less")].forEach(x => x.getAnimations().forEach(a => a.cancel())); // drop the fade-outs they kept
+  if (!calm) {
+    const h1 = fold.offsetHeight, dy = y0 - list.getBoundingClientRect().top;
+    fold.style.overflow = "hidden";
+    const grow = fold.animate([{ height: h0 + "px" }, { height: h1 + "px" }], { duration: 280, easing: ease });
+    // The filters appear (or go) above the rows, so slide the rows from where they were instead of jumping.
+    if (dy) list.animate([{ transform: `translateY(${dy}px)` }, { transform: "none" }], { duration: 280, easing: ease });
+    if (state.changesAll) extras().forEach((x, i) => x.animate(
+      [{ opacity: 0, transform: "translateY(-6px)" }, { opacity: 1, transform: "none" }],
+      { duration: 240, delay: 60 + Math.min(i, 12) * 18, easing: ease, fill: "backwards" }));
+    await grow.finished.catch(() => {});
+    fold.style.overflow = "";
+  }
+  folding = false;
+}
+$("changes-more").addEventListener("click", toggleChanges);
+$("changes-fewer").addEventListener("click", toggleChanges);
 renderChips(); renderAll();
 
 // Unseen changes: the tab icon's eye is open and the title says "(N)" while there's something you haven't seen;
