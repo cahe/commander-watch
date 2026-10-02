@@ -501,41 +501,41 @@ try { if (localStorage.getItem("changesOpen") === "1") $("changes").open = true;
 $("changes").addEventListener("toggle", () => { try { localStorage.setItem("changesOpen", $("changes").open ? "1" : "0"); } catch {} });
 renderChips(); renderAll();
 
-// Unseen changes: a red dot on the tab icon and "(N)" in the title while the page sits in the background.
-// seenAt is the newest change this browser has had in front of it; rows after markFrom get a dot in the list.
+// Unseen changes: the tab icon's eye is open and the title says "(N)" while there's something you haven't seen;
+// once you've looked, the eye closes. seenAt is the newest change this browser has had in front of it;
+// rows after markFrom get a dot in the list.
 let seenAt = null;
 try { seenAt = localStorage.getItem("seenChanges"); } catch {}
 state.markFrom = seenAt;
 const TITLE = document.title;
 const ICONS = [...document.querySelectorAll('link[rel="icon"]')].map(l => l.cloneNode());
-let dotIcon = null, dotShown = false;
+let closedIcon = null, eyeClosed = false;
 
 function setIcons(links) {
   document.querySelectorAll('link[rel="icon"]').forEach(l => l.remove());
   document.head.append(...links);
 }
-function showDot(on) {
-  if (on === dotShown) return;
-  dotShown = on;
+function closeEye(on) {
+  if (on === eyeClosed) return;
+  eyeClosed = on;
   if (!on) { setIcons(ICONS.map(l => l.cloneNode())); return; }
-  const apply = () => dotShown && setIcons([el("link", { rel: "icon", type: "image/png", href: dotIcon })]);
-  if (dotIcon) { apply(); return; }
+  const apply = () => eyeClosed && setIcons([el("link", { rel: "icon", type: "image/png", href: closedIcon })]);
+  if (closedIcon) { apply(); return; }
+  // Drawn to a PNG so browsers without SVG favicons get it too.
   const img = new Image();
   img.onload = () => {
     const c = document.createElement("canvas"); c.width = c.height = 64;
-    const g = c.getContext("2d");
-    g.drawImage(img, 0, 0, 64, 64);
-    g.beginPath(); g.arc(47, 17, 15, 0, 2 * Math.PI);
-    g.fillStyle = "#d93025"; g.fill(); g.lineWidth = 4; g.strokeStyle = "#ffffff"; g.stroke();
-    dotIcon = c.toDataURL("image/png");
+    c.getContext("2d").drawImage(img, 0, 0, 64, 64);
+    closedIcon = c.toDataURL("image/png");
     apply();
   };
-  img.src = "favicon.svg";
+  img.src = "favicon-seen.svg";
 }
 function updateBadge() {
+  if (!state.changes) return;
   const n = seenAt ? recentRows().filter(r => r.at > seenAt).length : 0;
   document.title = n ? `(${n}) ${TITLE}` : TITLE;
-  showDot(n > 0);
+  closeEye(n === 0);
 }
 // Counts as seen once the tab is in front and focused; what arrived since the last look stays marked in the list.
 function lookedAt() {
