@@ -23,6 +23,7 @@ body { margin: 0; }
   --accent: #1f5f8b;
   --accent-soft: #dcebf6;
   --new: #b4531a;
+  --dot: #d93025;
   --new-soft: #fbe9dc;
   --ok: #2f7a4b;
   --ok-soft: #dff1e5;
@@ -121,6 +122,10 @@ details.changes[open] > summary::before { transform: rotate(90deg); }
 details.changes > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
 details.changes .sum { font-size: 13px; color: var(--muted); min-width: 0; }
 .changes-body { padding: 0 14px 14px; display: grid; gap: 4px; }
+.change.unseen { position: relative; }
+.change.unseen::before { content: ""; position: absolute; left: -9px; top: 15px; width: 6px; height: 6px; border-radius: 50%; background: var(--dot); }
+.change.unseen .when { color: var(--fg); font-weight: 600; }
+details.changes .sum b { color: var(--fg); font-weight: 600; }
 .changes .day { font: 500 11px/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 14px 0 4px; }
 .change { display: grid; grid-template-columns: 44px 150px minmax(0, 1fr); gap: 12px; align-items: start; padding: 8px 0; border-top: 1px solid var(--line); }
 .change .when { font: 12px/1.6 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -448,21 +453,26 @@ function renderChangeRow(r) {
   }
   const good = typeof sub === "object" && sub?.good;
   const subText = typeof sub === "object" ? sub?.text : sub;
-  return el("div", { class: "change", "data-filter": k.filter },
+  return el("div", { class: "change" + (state.markFrom && r.at > state.markFrom ? " unseen" : ""), "data-filter": k.filter },
     el("span", { class: "when", text: roughTime(e.at), title: hm.format(new Date(e.at)) }),
     el("span", {}, el("span", { class: "tag " + cls, text: label })),
     el("div", { class: "what" }, el("div", {}, main), subText ? el("div", { class: "ctx" + (good ? " good" : ""), text: subText }) : null));
 }
 
+function recentRows() {
+  const since = Date.now() - CHANGE_DAYS * 86400000;
+  return changeRows((state.changes || []).filter(e => Date.parse(e.at) >= since).sort((a, b) => b.at.localeCompare(a.at)));
+}
+
 function renderChanges() {
   const box = $("changes-list"); box.replaceChildren();
-  const since = Date.now() - CHANGE_DAYS * 86400000;
-  const recent = (state.changes || []).filter(e => Date.parse(e.at) >= since).sort((a, b) => b.at.localeCompare(a.at));
-  const rows = changeRows(recent);
+  const rows = recentRows();
   const latest = rows[0];
-  $("changes-sum").textContent = !state.changes ? "" : rows.length
+  const fresh = state.markFrom ? rows.filter(r => r.at > state.markFrom).length : 0;
+  $("changes-sum").replaceChildren(...(fresh ? [el("b", { text: `${fresh} new since your last visit` }), " · "] : []),
+    !state.changes ? "" : rows.length
     ? `${rows.length} in the last ${CHANGE_DAYS} days · latest: ${(CHANGE_KIND[latest.kind] || {}).label || latest.kind}, ${latest.items[0].deck} at ${shopName(latest.shop)}, ${roughTime(latest.at)}`
-    : `No changes in the last ${CHANGE_DAYS} days`;
+    : `No changes in the last ${CHANGE_DAYS} days`);
   const chips = $("changes-filters"); chips.replaceChildren();
   for (const [f, label] of CHANGE_FILTERS) {
     const n = f ? rows.filter(r => (CHANGE_KIND[r.kind] || {}).filter === f).length : rows.length;
@@ -491,20 +501,77 @@ try { if (localStorage.getItem("changesOpen") === "1") $("changes").open = true;
 $("changes").addEventListener("toggle", () => { try { localStorage.setItem("changesOpen", $("changes").open ? "1" : "0"); } catch {} });
 renderChips(); renderAll();
 
-(async () => {
+// Unseen changes: a red dot on the tab icon and "(N)" in the title while the page sits in the background.
+// seenAt is the newest change this browser has had in front of it; rows after markFrom get a dot in the list.
+let seenAt = null;
+try { seenAt = localStorage.getItem("seenChanges"); } catch {}
+state.markFrom = seenAt;
+const TITLE = document.title;
+const ICONS = [...document.querySelectorAll('link[rel="icon"]')].map(l => l.cloneNode());
+let dotIcon = null, dotShown = false;
+
+function setIcons(links) {
+  document.querySelectorAll('link[rel="icon"]').forEach(l => l.remove());
+  document.head.append(...links);
+}
+function showDot(on) {
+  if (on === dotShown) return;
+  dotShown = on;
+  if (!on) { setIcons(ICONS.map(l => l.cloneNode())); return; }
+  const apply = () => dotShown && setIcons([el("link", { rel: "icon", type: "image/png", href: dotIcon })]);
+  if (dotIcon) { apply(); return; }
+  const img = new Image();
+  img.onload = () => {
+    const c = document.createElement("canvas"); c.width = c.height = 64;
+    const g = c.getContext("2d");
+    g.drawImage(img, 0, 0, 64, 64);
+    g.beginPath(); g.arc(47, 17, 15, 0, 2 * Math.PI);
+    g.fillStyle = "#d93025"; g.fill(); g.lineWidth = 4; g.strokeStyle = "#ffffff"; g.stroke();
+    dotIcon = c.toDataURL("image/png");
+    apply();
+  };
+  img.src = "favicon.svg";
+}
+function updateBadge() {
+  const n = seenAt ? recentRows().filter(r => r.at > seenAt).length : 0;
+  document.title = n ? `(${n}) ${TITLE}` : TITLE;
+  showDot(n > 0);
+}
+// Counts as seen once the tab is in front and focused; what arrived since the last look stays marked in the list.
+function lookedAt() {
+  if (!state.changes || document.visibilityState !== "visible" || !document.hasFocus()) return;
+  const latest = state.changes.reduce((m, e) => e.at > m ? e.at : m, "");
+  if (latest && latest !== seenAt) {
+    state.markFrom = seenAt || latest;
+    seenAt = latest;
+    try { localStorage.setItem("seenChanges", seenAt); } catch {}
+    renderChanges();
+  }
+  updateBadge();
+}
+
+let loadedAt = 0, dataKey = "";
+async function load() {
+  loadedAt = Date.now();
   const bust = "?t=" + Math.floor(Date.now() / 60000);
+  const get = (f) => fetch("data/" + f + bust).then(r => r.ok ? r.text() : Promise.reject(new Error(f + " " + r.status)));
   try {
     const [decks, meta, changes] = await Promise.all([
-      fetch("data/decks.json" + bust).then(r => r.json()),
-      fetch("data/state.json" + bust).then(r => r.json()).catch(() => null),
-      fetch("data/changes.json" + bust).then(r => r.json()).catch(() => [])
+      get("decks.json"), get("state.json").catch(() => "null"), get("changes.json").catch(() => "[]")
     ]);
-    state.decks = decks;
-    state.meta = meta;
-    state.changes = changes;
-    renderAll();
+    // Re-render only when the data changed, so a background refresh doesn't disturb the page.
+    const key = decks + "\n" + meta + "\n" + changes;
+    if (key !== dataKey) {
+      state.decks = JSON.parse(decks);
+      state.meta = JSON.parse(meta);
+      state.changes = JSON.parse(changes);
+      dataKey = key;
+      renderAll();
+    }
+    updateBadge();
+    lookedAt();
   } catch (e) {
-    $("list").replaceChildren(el("div", { class: "item" }, el("span", { class: "deck", text: "Couldn't load data/decks.json. Check that the repository has the data folder." })));
+    if (!dataKey) $("list").replaceChildren(el("div", { class: "item" }, el("span", { class: "deck", text: "Couldn't load data/decks.json. Check that the repository has the data folder." })));
   }
   // Last run time comes from the GitHub API (works for public repos).
   const owner = location.hostname.split(".")[0];
@@ -520,7 +587,19 @@ renderChips(); renderAll();
       }
     } catch {}
   }
-})();
+}
+
+// An open tab checks for new data every 10 minutes, and right away when it comes back after longer.
+const REFRESH_MS = 10 * 60000;
+load();
+setInterval(load, REFRESH_MS);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" && Date.now() - loadedAt > REFRESH_MS) load();
+  else lookedAt();
+});
+window.addEventListener("focus", lookedAt);
+// Another tab marked the changes seen.
+window.addEventListener("storage", (e) => { if (e.key === "seenChanges" && e.newValue) { seenAt = e.newValue; updateBadge(); } });
 </script>
 </body>
 </html>
