@@ -1,0 +1,331 @@
+[
+ {
+  "id": 29308,
+  "name": "Foundations: &#8220;Tramplesaurus Rex&#8221; Commander Deck",
+  "permalink": "https://magiccafe.eu/product/foundations-tramplesaurus-rex-commander-deck/",
+  "prices": {
+   "price": "20999",
+   "regular_price": "20999",
+   "sale_price": "20999",
+   "price_range": null,
+   "currency_code": "PLN",
+   "currency_symbol": "zł",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": "",
+   "currency_prefix": "",
+   "currency_suffix": " zł"
+  },
+  "is_in_stock": true,
+  "is_purchasable": true,
+  "is_on_backorder": false,
+  "tags": [
+   {
+    "id": 394,
+    "name": "Przedsprzedaż",
+    "slug": "przedsprzedaz",
+    "link": "https://magiccafe.eu/product-tag/przedsprzedaz/"
+   }
+  ],
+  "categories": [
+   {
+    "id": 245,
+    "name": "Gotowe Talie",
+    "slug": "mtg-gotowe-talie",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/mtg-gotowe-talie/"
+   },
+   {
+    "id": 107,
+    "name": "Gry karciane",
+    "slug": "gry-karciane",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/"
+   },
+   {
+    "id": 146,
+    "name": "Magic the gathering",
+    "slug": "magic-the-gathering-pl",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/"
+   }
+  ],
+  "stock_availability": {
+   "text": "3 in stock",
+   "class": "in-stock wd-style-default"
+  }
+ },
+ {
+  "id": 28540,
+  "name": "Magic: The Gathering Marvel Super Heroes &#8220;Wakanda Forever&#8221; Commander Deck",
+  "permalink": "https://magiccafe.eu/product/magic-the-gathering-marvel-super-heroes-wakanda-forever-commander-deck/",
+  "prices": {
+   "price": "26999",
+   "regular_price": "26999",
+   "sale_price": "26999",
+   "price_range": null,
+   "currency_code": "PLN",
+   "currency_symbol": "zł",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": "",
+   "currency_prefix": "",
+   "currency_suffix": " zł"
+  },
+  "is_in_stock": true,
+  "is_purchasable": true,
+  "is_on_backorder": false,
+  "tags": [],
+  "categories": [
+   {
+    "id": 245,
+    "name": "Gotowe Talie",
+    "slug": "mtg-gotowe-talie",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/mtg-gotowe-talie/"
+   },
+   {
+    "id": 107,
+    "name": "Gry karciane",
+    "slug": "gry-karciane",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/"
+   },
+   {
+    "id": 146,
+    "name": "Magic the gathering",
+    "slug": "magic-the-gathering-pl",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/"
+   }
+  ],
+  "stock_availability": {
+   "text": "1 in stock",
+   "class": "in-stock wd-style-default"
+  }
+ },
+ {
+  "id": 28221,
+  "name": "Secrets of Strixhaven Commander Decks Set (5)",
+  "permalink": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-decks-set-5/",
+  "prices": {
+   "price": "99999",
+   "regular_price": "99999",
+   "sale_price": "99999",
+   "price_range": null,
+   "currency_code": "PLN",
+   "currency_symbol": "zł",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": "",
+   "currency_prefix": "",
+   "currency_suffix": " zł"
+  },
+  "is_in_stock": true,
+  "is_purchasable": true,
+  "is_on_backorder": false,
+  "tags": [],
+  "categories": [
+   {
+    "id": 245,
+    "name": "Gotowe Talie",
+    "slug": "mtg-gotowe-talie",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/mtg-gotowe-talie/"
+   },
+   {
+    "id": 107,
+    "name": "Gry karciane",
+    "slug": "gry-karciane",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/"
+   },
+   {
+    "id": 146,
+    "name": "Magic the gathering",
+    "slug": "magic-the-gathering-pl",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/"
+   }
+  ],
+  "stock_availability": {
+   "text": "1 in stock",
+   "class": "in-stock wd-style-default"
+  }
+ },
+ {
+  "id": 27079,
+  "name": "Magic: The Gathering Dominaria United Painbow Commander Deck",
+  "permalink": "https://magiccafe.eu/product/magic-the-gathering-dominaria-united-painbow-commander-deck/",
+  "prices": {
+   "price": "32999",
+   "regular_price": "32999",
+   "sale_price": "32999",
+   "price_range": null,
+   "currency_code": "PLN",
+   "currency_symbol": "zł",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": "",
+   "currency_prefix": "",
+   "currency_suffix": " zł"
+  },
+  "is_in_stock": false,
+  "is_purchasable": true,
+  "is_on_backorder": false,
+  "tags": [],
+  "categories": [
+   {
+    "id": 245,
+    "name": "Gotowe Talie",
+    "slug": "mtg-gotowe-talie",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/mtg-gotowe-talie/"
+   },
+   {
+    "id": 107,
+    "name": "Gry karciane",
+    "slug": "gry-karciane",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/"
+   },
+   {
+    "id": 146,
+    "name": "Magic the gathering",
+    "slug": "magic-the-gathering-pl",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/"
+   }
+  ],
+  "stock_availability": {
+   "text": "Out of stock",
+   "class": "out-of-stock wd-style-default"
+  }
+ },
+ {
+  "id": 22780,
+  "name": "Magic The Gathering: Duskmourn House of Horror Commander Deck Jump Scare!",
+  "permalink": "https://magiccafe.eu/product/magic-the-gathering-duskmourn-house-of-horror-commander-deck-jump-scare/",
+  "prices": {
+   "price": "30199",
+   "regular_price": "30199",
+   "sale_price": "30199",
+   "price_range": null,
+   "currency_code": "PLN",
+   "currency_symbol": "zł",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": "",
+   "currency_prefix": "",
+   "currency_suffix": " zł"
+  },
+  "is_in_stock": false,
+  "is_purchasable": true,
+  "is_on_backorder": false,
+  "tags": [],
+  "categories": [
+   {
+    "id": 245,
+    "name": "Gotowe Talie",
+    "slug": "mtg-gotowe-talie",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/mtg-gotowe-talie/"
+   },
+   {
+    "id": 107,
+    "name": "Gry karciane",
+    "slug": "gry-karciane",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/"
+   },
+   {
+    "id": 146,
+    "name": "Magic the gathering",
+    "slug": "magic-the-gathering-pl",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/"
+   }
+  ],
+  "stock_availability": {
+   "text": "Out of stock",
+   "class": "out-of-stock wd-style-default"
+  }
+ },
+ {
+  "id": 27742,
+  "name": "Magic The Gathering Lorwyn Eclipsed &#8221; Angels &#8221; 60-Card Theme Deck",
+  "permalink": "https://magiccafe.eu/product/magic-the-gathering-lorwyn-eclipsed-angels-60-card-theme-deck/",
+  "prices": {
+   "price": "10299",
+   "regular_price": "10299",
+   "sale_price": "10299",
+   "price_range": null,
+   "currency_code": "PLN",
+   "currency_symbol": "zł",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": "",
+   "currency_prefix": "",
+   "currency_suffix": " zł"
+  },
+  "is_in_stock": true,
+  "is_purchasable": true,
+  "is_on_backorder": false,
+  "tags": [],
+  "categories": [
+   {
+    "id": 245,
+    "name": "Gotowe Talie",
+    "slug": "mtg-gotowe-talie",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/mtg-gotowe-talie/"
+   },
+   {
+    "id": 107,
+    "name": "Gry karciane",
+    "slug": "gry-karciane",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/"
+   },
+   {
+    "id": 146,
+    "name": "Magic the gathering",
+    "slug": "magic-the-gathering-pl",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/"
+   }
+  ],
+  "stock_availability": {
+   "text": "4 in stock",
+   "class": "in-stock wd-style-default"
+  }
+ },
+ {
+  "id": 27740,
+  "name": "Magic The Gathering Lorwyn Eclipsed &#8221; Pirates &#8221; 60-Card Theme Deck",
+  "permalink": "https://magiccafe.eu/product/magic-the-gathering-lorwyn-eclipsed-pirates-60-card-theme-deck/",
+  "prices": {
+   "price": "10299",
+   "regular_price": "10299",
+   "sale_price": "10299",
+   "price_range": null,
+   "currency_code": "PLN",
+   "currency_symbol": "zł",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": "",
+   "currency_prefix": "",
+   "currency_suffix": " zł"
+  },
+  "is_in_stock": true,
+  "is_purchasable": true,
+  "is_on_backorder": false,
+  "tags": [],
+  "categories": [
+   {
+    "id": 245,
+    "name": "Gotowe Talie",
+    "slug": "mtg-gotowe-talie",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/mtg-gotowe-talie/"
+   },
+   {
+    "id": 107,
+    "name": "Gry karciane",
+    "slug": "gry-karciane",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/"
+   },
+   {
+    "id": 146,
+    "name": "Magic the gathering",
+    "slug": "magic-the-gathering-pl",
+    "link": "https://magiccafe.eu/product-category/gry-karciane/magic-the-gathering-pl/"
+   }
+  ],
+  "stock_availability": {
+   "text": "4 in stock",
+   "class": "in-stock wd-style-default"
+  }
+ }
+]

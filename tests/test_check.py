@@ -86,6 +86,42 @@ def test_shoper_classic_panmysza():
     assert check.page_numbers(soup, re.compile(r"/pl/c/Magic-The-Gathering/53/(\d+)$")) == 4
 
 
+def test_woo_magiccafe():
+    items = check.parse_woo((FIX / "woo.json").read_text(encoding="utf-8"), "https://magiccafe.eu")
+    by = {i["pid"]: i for i in items}
+    assert by[29308]["status"] == "preorder" and by[29308]["price"] == 209.99  # "Przedsprzedaż" tag, orderable
+    assert by[29308]["name"] == "Foundations: “Tramplesaurus Rex” Commander Deck"  # entities decoded
+    assert by[28540]["status"] == "in_stock"
+    assert by[27079]["status"] == "out_of_stock"
+    assert 28221 in by  # the five-deck set is kept; grouping files it apart from single decks
+    assert not any("commander" not in i["name"].lower() for i in items)  # other ready-made decks dropped
+
+
+def test_frostmagic():
+    fx = json.loads((FIX / "frostmagic.json").read_text(encoding="utf-8"))
+    pages = {
+        "https://frostmagic.pl/api/presales": fx["presales"],
+        "https://frostmagic.pl/api/presales/magic-the-gathering-star-trek/products?pageSize=100": fx["presale:magic-the-gathering-star-trek"],
+        "https://frostmagic.pl/api/products?category=commander-decks&pageSize=100&page=1": fx["products"],
+    }
+    real_fetch = check.fetch
+    asked = []
+    check.fetch = lambda url, s: asked.append(url) or json.dumps(pages[url])
+    try:
+        items, errors = check.scan_frostmagic(None)
+    finally:
+        check.fetch = real_fetch
+    assert errors == []
+    assert not any("riftbound" in u or "naruto" in u for u in asked)  # other games' presales aren't fetched
+    by = {i["url"].rsplit("/", 1)[-1]: i for i in items}
+    display = by["magic-the-gathering-star-trek-commander-deck-display"]
+    assert display["status"] == "preorder" and display["price"] == 1029  # in both lists; the presale wins
+    assert by["magic-the-gathering-star-trek-commander-display-collector-s-edition"]["status"] == "out_of_stock"
+    assert by["mtg-secrets-of-strixhaven-prismari-artistry-commander-deck"]["status"] == "in_stock"
+    assert not any("Bundle" in i["name"] or "Booster" in i["name"] for i in items)  # presale's other products
+    assert display["url"] == "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
+
+
 def test_grouping():
     names = [
         ("time4magic", "Lorwyn Eclipsed: \"Dance of the Elements\" Commander Deck"),
@@ -314,6 +350,28 @@ def test_diff_new_vs_catch_up(monkeypatch=None):
     assert sent == []
     # nothing changed on that run, so the change time stays put
     assert {d["id"]: d for d in json.loads(check.DECKS_FILE.read_text(encoding="utf-8"))}["time4magic-766"]["changedAt"] == unchanged_at
+
+
+def test_vanished_listing_is_sold_out():
+    tmp = Path(tempfile.mkdtemp())
+    (tmp / "data").mkdir()
+    check.DECKS_FILE, check.STATE_FILE = tmp / "data" / "decks.json", tmp / "data" / "state.json"
+    check.notify = lambda title, lines, tags="": None
+    listing = lambda slug, status="in_stock": {"pid": None, "name": f"Deck {slug} Commander Deck", "price": 200.0,
+                                               "url": f"https://frostmagic.pl/pl/products/{slug}", "status": status}
+    scans = [([listing("a"), listing("b")], []),
+             ([listing("a")], []),                       # "b" sold out and dropped off the list
+             ([], ["HTTP 503 for https://frostmagic.pl/api/products"]),  # failed scan: nothing changes
+             ([listing("a"), listing("b")], [])]         # "b" is back
+    statuses = []
+    for scan in scans:
+        check.SHOPS = {"frostmagic": ("Frost Magic", lambda s, scan=scan: scan)}
+        check.main()
+        statuses.append({d["url"][-1]: d["status"] for d in json.loads(check.DECKS_FILE.read_text())})
+    assert statuses == [{"a": "in_stock", "b": "in_stock"}, {"a": "in_stock", "b": "out_of_stock"},
+                        {"a": "in_stock", "b": "out_of_stock"}, {"a": "in_stock", "b": "in_stock"}]
+    kinds = [e["kind"] for e in json.loads(check.changes_file().read_text(encoding="utf-8"))]
+    assert kinds == ["soldout", "restock"]
 
 
 if __name__ == "__main__":
