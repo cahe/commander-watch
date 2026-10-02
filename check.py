@@ -8,6 +8,7 @@ Run by .github/workflows/check.yml; also runnable locally: `python check.py`.
 from __future__ import annotations
 
 import difflib
+import html as htmllib
 import json
 import math
 import os
@@ -40,9 +41,10 @@ HEADERS = {
 MAX_PAGES = 12
 FAIL_ALERT_AFTER = 6  # consecutive failed runs (~6 h at hourly checks) before a "shop is failing" alert
 
-# Words that mark accessories rather than sealed decks.
+# Words that mark accessories rather than sealed decks, and non-English editions (Magic Cafe sells Russian ones).
 NOT_A_DECK = re.compile(
-    r"sleeve|koszulk|deck ?box|pudełk|playmat|mata|dragon shield|ultra pro|booster|binder|album|bundle",
+    r"sleeve|koszulk|deck ?box|pudełk|playmat|mata|dragon shield|ultra pro|booster|binder|album|bundle|"
+    r"rosyjsk|niemieck|francusk|hiszpańsk|włosk|japońsk|chińsk|koreańsk",
     re.I,
 )
 # Name filter for mixed preorder categories, where other games sell "Commander" products too.
@@ -237,6 +239,80 @@ def parse_sstore(html: str, base: str, *, preorder_category: bool = False):
     return out, soup
 
 
+def parse_woo(text: str, base: str):
+    """WooCommerce Store API (Magic Cafe): JSON product list. Preorders carry the "Przedsprzedaż" tag."""
+    out = []
+    for p in json.loads(text):
+        name = " ".join(htmllib.unescape(p["name"]).split())
+        if "commander" not in name.lower() or NOT_A_DECK.search(name):
+            continue
+        prices = p.get("prices") or {}
+        price = int(prices["price"]) / 10 ** prices.get("currency_minor_unit", 2) if prices.get("price") else None
+        tags = " ".join(t["name"] for t in p.get("tags", []))
+        out.append({
+            "pid": p["id"],
+            "name": name,
+            "price": price,
+            "url": urljoin(base, p["permalink"]),
+            "status": status_from(p["is_in_stock"] and p["is_purchasable"], name, tags),
+        })
+    return out
+
+
+def parse_sote(html: str, base: str):
+    """SOTE (Wilczek) search results. Each tile has an availability label ("Brak" = none,
+    "Przedsprzedaż" = preorder); the page's schema.org data says InStock for all of them, so it's not used.
+    The search finds decks named without "Commander" too ("Modern Horizons 3 - Creative Energy"),
+    so any Magic product that isn't another kind of sealed product counts."""
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for tile in soup.select("div.product.thumbnail"):
+        a = tile.select_one("a.product_name")
+        hint = tile.select_one("span.hint")
+        basket = tile.select_one("a.basket_add_link")
+        m = basket and re.search(r"/basket/add/(\d+)", basket.get("href", ""))
+        if not a or not m:
+            continue
+        name = " ".join(((hint.get("title") if hint else None) or a.get_text()).split())
+        if (not re.search(r"magic", name, re.I) or NOT_A_DECK.search(name) or WILCZEK_NOT_A_DECK.search(name)
+                or ("commander" not in name.lower() and OTHER_MTG.search(name))):
+            continue
+        label = tile.select_one(".product-availability-label")
+        label = label.get_text(strip=True) if label else ""
+        price = tile.select_one(".price")
+        out.append({
+            "pid": int(m.group(1)),
+            "name": name,
+            "price": parse_price(price.get_text() if price else None),
+            "url": urljoin(base, a["href"]),
+            "status": status_from(label.lower() != "brak", name, label),
+        })
+    return out, soup
+
+
+# Wilczek's "commander" search also finds prerelease packs and pin sets.
+WILCZEK_NOT_A_DECK = re.compile(r"prerelease|\bpins?\b", re.I)
+
+
+def parse_frostmagic(text: str, base: str, *, presale: bool = False):
+    """Frost Magic's own JSON API. Its product list holds only what's in stock; presale campaigns hold preorders."""
+    out = []
+    for p in json.loads(text)["products"]:
+        name = " ".join((p.get("name") or "").split())
+        cats = {c["category"]["slug"] for c in p.get("categories", [])}
+        if "commander-decks" not in cats or NOT_A_DECK.search(name):
+            continue
+        orderable = bool(p.get("canPurchase")) and (p.get("stock") or 0) > 0
+        out.append({
+            "pid": None,  # ids are UUIDs, so they can't tell new listings from missed ones
+            "name": name,
+            "price": p.get("effectivePrice", p.get("price")),
+            "url": f"{base}/pl/products/{p['slug']}",
+            "status": ("preorder" if presale else "in_stock") if orderable else "out_of_stock",
+        })
+    return out
+
+
 # -------------------------------------------------------------------------- shops
 
 def scan_time4magic(s):
@@ -297,6 +373,61 @@ def scan_dragoneye(s):
                      lambda h: parse_sstore(h, base, preorder_category=True),
                      re.compile(r"c-75\.html\?(?:.*&)?page=(\d+)"), max_pages=3, may_be_empty=True)
     return merge_scans(mtg, pre)
+
+
+def scan_magiccafe(s):
+    base = "https://magiccafe.eu"
+    products, errors, n = {}, [], 1
+    while n <= MAX_PAGES:  # category 245 is "Gotowe Talie" (ready-made decks), 100 products per page
+        try:
+            text = fetch(f"{base}/wp-json/wc/store/v1/products?category=245&per_page=100&page={n}", s)
+            for it in parse_woo(text, base):
+                products.setdefault(norm_url(it["url"]), it)
+            if len(json.loads(text)) < 100:
+                break
+        except Exception as e:
+            errors.append(str(e))
+            break
+        n += 1
+    return list(products.values()), errors
+
+
+def scan_wilczek(s):
+    base = "https://wilczek.poznan.pl"
+    # No Commander category; the site search finds the decks, newest first. Its Cloudflare blocks bursts
+    # (a quick run of requests got HTTP 429 for half an hour), so pages are fetched a few seconds apart.
+    limit = RateLimit(0.25)
+
+    def url(n):
+        limit.wait()
+        return f"{base}/product/search/{n}/long/created_at/desc/0?query=commander"
+
+    return scan_paged(s, url,
+                      lambda h: parse_sote(h, base), re.compile(r"/product/search/(\d+)/long/"))
+
+
+def scan_frostmagic(s):
+    base = "https://frostmagic.pl"
+    presales, regular, errors = [], [], []
+    try:
+        for c in json.loads(fetch(f"{base}/api/presales", s))["presales"]:
+            if re.search(r"magic|mtg", c["name"], re.I):
+                presales += parse_frostmagic(fetch(f"{base}/api/presales/{c['slug']}/products?pageSize=100", s),
+                                             base, presale=True)
+    except Exception as e:
+        errors.append(str(e))
+    try:
+        n = 1
+        while n <= MAX_PAGES:
+            text = fetch(f"{base}/api/products?category=commander-decks&pageSize=100&page={n}", s)
+            regular += parse_frostmagic(text, base)
+            if not json.loads(text)["pagination"]["hasMore"]:
+                break
+            n += 1
+    except Exception as e:
+        errors.append(str(e))
+    # A preorder is also in the regular list while it has stock; its presale entry says what it is.
+    return merge_scans((presales, []), (regular, errors))
 
 
 def merge_scans(*scans):
@@ -473,9 +604,15 @@ SHOPS = {
     "xjoy": ("XJoy", scan_xjoy),
     "dragoneye": ("Dragoneye", scan_dragoneye),
     "panmysza": ("Pan Mysza", scan_panmysza),
+    "frostmagic": ("Frost Magic", scan_frostmagic),
+    "magiccafe": ("Magic Cafe", scan_magiccafe),
+    "wilczek": ("Wilczek", scan_wilczek),
     "cardtrader": ("CardTrader", scan_cardtrader),
 }
 QUIET_SHOPS = {"cardtrader"}  # prices only: never announce new decks or restocks
+# Shops whose listings leave out sold-out decks instead of marking them: after a complete scan,
+# a known deck that isn't listed any more has sold out.
+VANISHING_SHOPS = {"frostmagic"}
 
 
 # ---------------------------------------------------------------------- grouping
@@ -897,6 +1034,13 @@ def main() -> int:
             if p["pid"]:
                 max_seen = max(max_seen, p["pid"])
         st["maxId"] = max(st.get("maxId", 0), max_seen)
+        if shop in VANISHING_SHOPS and found and not errors:
+            for d in decks:
+                if d["shop"] == shop and d["id"] not in seen and d.get("status") in ORDERABLE:
+                    old_status = d["status"]
+                    d["status"] = "out_of_stock"
+                    d["changedAt"], d["change"] = stamp, describe_change(d.get("price"), old_status, d)
+                    pending.append((status_event(old_status, d["status"]), d, None))
         if shop in QUIET_SHOPS and found and not errors:
             # CardTrader is only priced for decks shops sell; drop listings it no longer prices,
             # so a stale one can't keep a deck's CardTrader slot. Shop listings are never dropped.

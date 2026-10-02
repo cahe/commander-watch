@@ -1,0 +1,556 @@
+{
+ "products": {
+  "products": [
+   {
+    "id": "b7db913f-70b2-4d9d-bf44-61221ec5cccf",
+    "name": "Magic the Gathering: Star Trek - Commander Deck Display",
+    "slug": "magic-the-gathering-star-trek-commander-deck-display",
+    "price": 1029,
+    "stock": 2,
+    "effectivePrice": 1029,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-08-12T18:34:40.581Z"
+   },
+   {
+    "id": "82e23a21-16cc-4ef5-a23f-9e22cb1dffda",
+    "name": "MtG - Marvel Super Heroes - The Fantastic Four Commander Deck",
+    "slug": "mtg-marvel-super-heroes-the-fantastic-four-commander-deck",
+    "price": 220,
+    "stock": 2,
+    "effectivePrice": 220,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-05-31T22:11:57.647Z"
+   },
+   {
+    "id": "747023ca-26c0-4480-a7ba-f63ea27d1788",
+    "name": "MtG - Marvel Super Heroes - Wakanda Forever Commander Deck",
+    "slug": "mtg-marvel-super-heroes-wakanda-forever-commander-deck",
+    "price": 230,
+    "stock": 2,
+    "effectivePrice": 230,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-05-31T22:08:57.941Z"
+   },
+   {
+    "id": "d1291fdf-3bc2-4e4c-b51c-e6cae168b070",
+    "name": "MtG - Marvel Super Heroes - Avengers Assemble Commander Deck",
+    "slug": "mtg-marvel-super-heroes-avengers-assemble-commander-deck",
+    "price": 240,
+    "stock": 1,
+    "effectivePrice": 240,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-05-31T22:06:24.298Z"
+   },
+   {
+    "id": "a3dc1a21-03ef-4779-b007-a64331ad383c",
+    "name": "MtG - Marvel Super Heroes - Doom Prevails Commander Deck",
+    "slug": "mtg-marvel-super-heroes-doom-prevails-commander-deck",
+    "price": 290,
+    "stock": 1,
+    "effectivePrice": 290,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-05-31T22:03:45.806Z"
+   },
+   {
+    "id": "925ed8bd-664d-482f-9d35-aceb01d25065",
+    "name": "MtG - Marvel Super Heroes: Commander Deck Collector's Edition Set",
+    "slug": "mtg-marvel-super-heroes-commander-deck-collector-s-edition-set",
+    "price": 1850,
+    "stock": 1,
+    "effectivePrice": 1850,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-05-05T20:21:10.479Z"
+   },
+   {
+    "id": "def8a88d-4a48-4219-8ecc-a0a51e69f461",
+    "name": "MtG - Secrets of Strixhaven - \"Prismari Artistry\" Commander Deck",
+    "slug": "mtg-secrets-of-strixhaven-prismari-artistry-commander-deck",
+    "price": 180,
+    "stock": 4,
+    "effectivePrice": 180,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-04-02T15:56:16.092Z"
+   },
+   {
+    "id": "5b061620-204e-4feb-97fe-8cb0738cf903",
+    "name": "MtG - Secrets of Strixhaven - \"Quandrix Unlimited\" Commander Deck",
+    "slug": "mtg-secrets-of-strixhaven-quandrix-unlimited-commander-deck",
+    "price": 180,
+    "stock": 4,
+    "effectivePrice": 180,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-04-02T15:54:14.829Z"
+   },
+   {
+    "id": "fb6b0e75-b774-4327-b0d3-1c03ac97612c",
+    "name": "MtG - Secrets of Strixhaven - \"Silverquill Influence\" Commander Deck",
+    "slug": "mtg-secrets-of-strixhaven-silverquill-influence-commander-deck",
+    "price": 240,
+    "stock": 1,
+    "effectivePrice": 240,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-04-02T15:50:29.416Z"
+   },
+   {
+    "id": "c00a0696-e1d6-4e34-9673-1e972bccd464",
+    "name": "Lorwyn Eclipsed: Dance of the Elements - Commander Deck",
+    "slug": "lorwyn-eclipsed-dance-of-the-elements-commander-deck",
+    "price": 180,
+    "stock": 3,
+    "effectivePrice": 180,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2025-12-31T13:53:56.633Z"
+   },
+   {
+    "id": "b527fdd3-b030-4957-b7b7-e16a41714ac2",
+    "name": "Aetherdrift Commander Deck - Living Energy",
+    "slug": "aetherdrift-commander-deck-living-energy",
+    "price": 130,
+    "stock": 5,
+    "effectivePrice": 130,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2025-12-30T18:20:27.608Z"
+   },
+   {
+    "id": "87231deb-8187-4bc0-a55f-65c840977f94",
+    "name": "Aetherdrift Commander Deck - Eternal Might",
+    "slug": "aetherdrift-commander-deck-eternal-might",
+    "price": 230,
+    "stock": 5,
+    "effectivePrice": 230,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2025-12-30T18:20:26.297Z"
+   },
+   {
+    "id": "456f8d4c-8cc4-4989-b52a-064d573f494a",
+    "name": "Final Fantasy - Counter Blitz Commander Deck",
+    "slug": "final-fantasy-counter-blitz-commander-deck",
+    "price": 230,
+    "stock": 4,
+    "effectivePrice": 230,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     },
+     {
+      "category": {
+       "slug": "produkty-zapakowane-1",
+       "name": "Produkty zapakowane"
+      }
+     }
+    ],
+    "createdAt": "2025-12-30T18:16:08.846Z"
+   }
+  ],
+  "pagination": {
+   "page": 1,
+   "pageSize": 100,
+   "total": 13,
+   "totalPages": 1,
+   "hasMore": false
+  }
+ },
+ "presales": {
+  "presales": [
+   {
+    "id": "c831b063-e848-4e30-a9b2-e6f117124a57",
+    "name": "Naruto Mythos TCG - Shinobi Shiren 1st Wave",
+    "slug": "naruto-mythos-tcg-shinobi-shiren-1st-wave",
+    "releaseDate": "2026-10-22T22:00:00.000Z",
+    "productCount": 1
+   },
+   {
+    "id": "e4d334ee-77a3-45b6-a45d-b87fdb1466a9",
+    "name": "Riftbound: Radiance",
+    "slug": "riftbound-radiance",
+    "releaseDate": "2026-10-22T22:00:00.000Z",
+    "productCount": 4
+   },
+   {
+    "id": "a223533c-16cd-49e6-97ba-4910ebb184a9",
+    "name": "Cyberpunk TCG - Welcome to Night City",
+    "slug": "cyberpunk-tcg-welcome-to-night-city",
+    "releaseDate": "2026-10-30T18:17:00.000Z",
+    "productCount": 3
+   },
+   {
+    "id": "a88784bd-c969-4026-aa43-d4a0728e2078",
+    "name": "Magic the Gathering: Star Trek",
+    "slug": "magic-the-gathering-star-trek",
+    "releaseDate": "2026-11-05T23:00:00.000Z",
+    "productCount": 12
+   },
+   {
+    "id": "979161f4-cf15-4e29-a8bb-bda226e041c5",
+    "name": "Naruto Mythos TCG - Shinobi Shiren 2nd Wave",
+    "slug": "naruto-mythos-tcg-shinobi-shiren-2nd-wave",
+    "releaseDate": "2026-11-12T23:00:00.000Z",
+    "productCount": 1
+   },
+   {
+    "id": "43a8b3f7-bd5e-4547-8767-e7ba2f9dbae4",
+    "name": "Sorcery TCG: Frost Mage vs Lavamancer",
+    "slug": "sorcery-tcg-frost-mage-vs-lavamancer",
+    "releaseDate": "2026-11-12T23:00:00.000Z",
+    "productCount": 1
+   }
+  ]
+ },
+ "presale:magic-the-gathering-star-trek": {
+  "presale": {
+   "id": "a88784bd-c969-4026-aa43-d4a0728e2078",
+   "name": "Magic the Gathering: Star Trek",
+   "slug": "magic-the-gathering-star-trek"
+  },
+  "products": [
+   {
+    "id": "fba860c3-03ac-4eb4-9570-b2ee902fa4cd",
+    "name": "Magic the Gathering: Star Trek - Beam Me Up Bundle",
+    "slug": "magic-the-gathering-star-trek-beam-me-up-bundle",
+    "price": 399,
+    "stock": 0,
+    "effectivePrice": 399,
+    "canPurchase": false,
+    "purchaseBlockReason": "login",
+    "categories": [
+     {
+      "category": {
+       "slug": "bundle",
+       "name": "Bundle"
+      }
+     }
+    ],
+    "createdAt": "2026-08-13T18:06:56.773Z"
+   },
+   {
+    "id": "0c164ade-de80-4db7-b443-0139f9b3d38d",
+    "name": "Magic the Gathering: Star Trek - Enterprise-Q Scene Box",
+    "slug": "magic-the-gathering-star-trek-enterprise-q-scene-box",
+    "price": 150,
+    "stock": 5,
+    "effectivePrice": 150,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "pozostale",
+       "name": "Pozostałe"
+      }
+     }
+    ],
+    "createdAt": "2026-08-13T15:52:58.875Z"
+   },
+   {
+    "id": "a0eeb936-98c8-4631-a696-41648740c5be",
+    "name": "Magic the Gathering: Star Trek - Divirgent Timeline Scene Box",
+    "slug": "magic-the-gathering-star-trek-divirgent-timeline-scene-box",
+    "price": 150,
+    "stock": 6,
+    "effectivePrice": 150,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "pozostale",
+       "name": "Pozostałe"
+      }
+     }
+    ],
+    "createdAt": "2026-08-13T15:51:15.354Z"
+   },
+   {
+    "id": "f933d1a1-0521-4024-a242-5c3ca3865418",
+    "name": "Magic the Gathering: Star Trek - Draft Night",
+    "slug": "magic-the-gathering-star-trek-draft-night",
+    "price": 470,
+    "stock": 0,
+    "effectivePrice": 470,
+    "canPurchase": false,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "pozostale",
+       "name": "Pozostałe"
+      }
+     }
+    ],
+    "createdAt": "2026-08-13T15:48:02.536Z"
+   },
+   {
+    "id": "5feda9e6-f714-4525-b013-ee58c2c51d5d",
+    "name": "Magic the Gathering: Star Trek - Commander Display Collector's Edition",
+    "slug": "magic-the-gathering-star-trek-commander-display-collector-s-edition",
+    "price": 2299,
+    "stock": 0,
+    "effectivePrice": 2299,
+    "canPurchase": false,
+    "purchaseBlockReason": "login",
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-08-13T15:42:55.129Z"
+   },
+   {
+    "id": "0f546298-25d6-440f-a976-b65ecb95144b",
+    "name": "Magic the Gathering: Star Trek - Beginner Box",
+    "slug": "magic-the-gathering-star-trek-beginner-box",
+    "price": 120,
+    "stock": 0,
+    "effectivePrice": 120,
+    "canPurchase": false,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "pozostale",
+       "name": "Pozostałe"
+      }
+     }
+    ],
+    "createdAt": "2026-08-13T15:38:56.523Z"
+   },
+   {
+    "id": "b7db913f-70b2-4d9d-bf44-61221ec5cccf",
+    "name": "Magic the Gathering: Star Trek - Commander Deck Display",
+    "slug": "magic-the-gathering-star-trek-commander-deck-display",
+    "price": 1029,
+    "stock": 2,
+    "effectivePrice": 1029,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "commander-decks",
+       "name": "Commander Decks"
+      }
+     }
+    ],
+    "createdAt": "2026-08-12T18:34:40.581Z"
+   },
+   {
+    "id": "7b8d3b48-74b2-4dfe-85fe-1061ed7ff543",
+    "name": "Magic the Gathering: Star Trek - Bundle",
+    "slug": "magic-the-gathering-star-trek-bundle",
+    "price": 260,
+    "stock": 6,
+    "effectivePrice": 260,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "bundle",
+       "name": "Bundle"
+      }
+     }
+    ],
+    "createdAt": "2026-08-12T18:26:19.001Z"
+   },
+   {
+    "id": "42fef418-06e5-4fb5-a87b-3796fb5dc4f4",
+    "name": "Magic the Gathering: Star Trek - Collector Booster Box",
+    "slug": "magic-the-gathering-star-trek-collector-booster-box",
+    "price": 1749,
+    "stock": 0,
+    "effectivePrice": 1749,
+    "canPurchase": false,
+    "purchaseBlockReason": "login",
+    "categories": [
+     {
+      "category": {
+       "slug": "booster-box",
+       "name": "Booster Box"
+      }
+     }
+    ],
+    "createdAt": "2026-08-12T18:19:43.806Z"
+   },
+   {
+    "id": "3059def8-d6e5-42f7-b207-78adcdffacec",
+    "name": "Magic the Gathering: Star Trek - Collector Booster",
+    "slug": "magic-the-gathering-star-trek-collector-booster",
+    "price": 159,
+    "stock": 0,
+    "effectivePrice": 159,
+    "canPurchase": false,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "booster-box",
+       "name": "Booster Box"
+      }
+     }
+    ],
+    "createdAt": "2026-08-12T17:49:23.401Z"
+   },
+   {
+    "id": "b508e842-43af-4257-b716-71f7817f4894",
+    "name": "Magic the Gathering: Star Trek - Play Booster Box",
+    "slug": "magic-the-gathering-star-trek-play-booster-box",
+    "price": 649,
+    "stock": 8,
+    "effectivePrice": 649,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "booster-box",
+       "name": "Booster Box"
+      }
+     }
+    ],
+    "createdAt": "2026-08-12T17:22:03.227Z"
+   },
+   {
+    "id": "1e77882f-5d7a-4ae5-9069-17318c46ccac",
+    "name": "Magic the Gathering: Star Trek - Play Booster",
+    "slug": "magic-the-gathering-star-trek-play-booster",
+    "price": 25,
+    "stock": 60,
+    "effectivePrice": 25,
+    "canPurchase": true,
+    "purchaseBlockReason": null,
+    "categories": [
+     {
+      "category": {
+       "slug": "booster",
+       "name": "Booster"
+      }
+     }
+    ],
+    "createdAt": "2026-08-12T17:18:45.083Z"
+   }
+  ],
+  "pagination": {
+   "page": 1,
+   "pageSize": 100,
+   "total": 12,
+   "totalPages": 1,
+   "hasMore": false
+  }
+ }
+}
