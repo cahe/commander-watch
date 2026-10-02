@@ -138,6 +138,11 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
 .changes-head { padding: 12px 14px 0; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
 .changes-head .sum { font-size: 13px; color: var(--muted); min-width: 0; }
 .changes-head .sum b { color: var(--fg); font-weight: 600; }
+.soundbtn { margin-left: auto; align-self: center; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: none; color: var(--muted); font: 500 12px var(--font-body); cursor: pointer; white-space: nowrap; }
+.soundbtn:hover { color: var(--fg); border-color: var(--muted); }
+.soundbtn[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+.soundbtn .wave { display: none; } .soundbtn[aria-pressed="true"] .wave { display: inline; } .soundbtn[aria-pressed="true"] .mute { display: none; }
+.soundbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .changes-body { padding: 0 14px 10px; display: grid; gap: 4px; }
 .changes-body > .day:first-child { margin-top: 10px; }
 #changes-filters { padding: 12px 14px 0; gap: 6px; }
@@ -195,7 +200,11 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
   </header>
 
   <section class="changes" aria-labelledby="changes-h">
-    <div class="changes-head"><h2 id="changes-h">Changes</h2><span class="sum" id="changes-sum">Loading…</span></div>
+    <div class="changes-head"><h2 id="changes-h">Changes</h2><span class="sum" id="changes-sum">Loading…</span>
+      <button class="soundbtn" id="sound" type="button" aria-pressed="false" title="Play a sound when new changes come in">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 6h2.5L9 3v10L5.5 10H3z"/><path class="wave" d="M11.5 5.5a3.5 3.5 0 0 1 0 5M13.5 3.5a6.5 6.5 0 0 1 0 9"/><path class="mute" d="M11.5 6l4 4M15.5 6l-4 4"/>
+        </svg><span>Sound off</span></button></div>
     <div id="changes-fold">
       <div class="controls" id="changes-filters" role="group" aria-label="Filter changes"></div>
       <div class="changes-body" id="changes-list"></div>
@@ -783,6 +792,47 @@ function lookedAt() {
   updateBadge();
 }
 
+// A sound when a background refresh brings new changes (off by default, remembered per browser).
+// It's generated, so there's no audio file. Browsers allow sound only after a click or key press on the page,
+// so the first one (switching it on, or any click after a reload) unlocks it.
+let soundOn = false, audio = null;
+try { soundOn = localStorage.getItem("sound") === "1"; } catch {}
+// Two quick bright notes, like picking up a coin: [frequency Hz, start s, length s, waveform].
+const SOUND = [[987.77, 0, 0.12, "triangle"], [1318.5, 0.09, 0.45, "triangle"]];
+function unlockAudio() {
+  if (!audio) { try { audio = new (window.AudioContext || window.webkitAudioContext)(); } catch { return null; } }
+  if (audio.state === "suspended") audio.resume().catch(() => {});
+  return audio;
+}
+function playSound() {
+  const ctx = unlockAudio();
+  if (!ctx) return;
+  const t = ctx.currentTime + 0.02;
+  for (const [freq, at, length, type] of SOUND) {
+    const osc = ctx.createOscillator(), gain = ctx.createGain();
+    osc.type = type; osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0.0001, t + at);
+    gain.gain.exponentialRampToValueAtTime(0.18, t + at + 0.015);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t + at + length);
+    osc.connect(gain).connect(ctx.destination);
+    osc.start(t + at); osc.stop(t + at + length + 0.05);
+  }
+}
+function renderSound() {
+  $("sound").setAttribute("aria-pressed", String(soundOn));
+  $("sound").querySelector("span").textContent = soundOn ? "Sound on" : "Sound off";
+}
+$("sound").addEventListener("click", () => {
+  soundOn = !soundOn;
+  try { localStorage.setItem("sound", soundOn ? "1" : "0"); } catch {}
+  renderSound();
+  if (soundOn) playSound();
+});
+// After a reload the browser has muted the page again; the first click or key press anywhere lifts that.
+for (const ev of ["pointerdown", "keydown"]) document.addEventListener(ev, () => { if (soundOn) unlockAudio(); }, { once: true, capture: true });
+renderSound();
+const newestChange = () => (state.changes || []).reduce((m, e) => (e.at > m ? e.at : m), "");
+
 let loadedAt = 0, dataKey = "";
 async function load() {
   loadedAt = Date.now();
@@ -796,12 +846,14 @@ async function load() {
     // Re-render only when the data changed, so a background refresh doesn't disturb the page.
     const key = decks + "\n" + meta + "\n" + changes + "\n" + history;
     if (key !== dataKey) {
+      const before = dataKey ? newestChange() : null;  // null on the first load: no sound for what's already there
       state.decks = JSON.parse(decks);
       state.meta = JSON.parse(meta);
       state.changes = JSON.parse(changes);
       state.history = JSON.parse(history);
       dataKey = key;
       renderAll();
+      if (soundOn && before !== null && newestChange() > before) playSound();
     }
     updateBadge();
     lookedAt();
