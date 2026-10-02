@@ -1412,7 +1412,7 @@
   "baseline": true,
   "change": "price 146.41 → 153.85 zł",
   "changedAt": "2026-10-02T11:17:14Z",
-  "cheapest": false,
+  "cheapest": true,
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31682",
   "groupName": "Foundations Starter – Wretched Ranks",
@@ -2335,8 +2335,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-01T14:17:16Z",
+  "change": "sold out",
+  "changedAt": "2026-10-02T14:17:16Z",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31679",
   "groupName": "Foundations Starter – Calling All Angels",
@@ -2345,7 +2345,7 @@
   "pid": 12567,
   "price": 170.0,
   "shop": "panmysza",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Calling-All-Angels/12567"
  },
  {
@@ -2365,8 +2365,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-01T14:17:16Z",
+  "change": "sold out",
+  "changedAt": "2026-10-02T14:17:16Z",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31682",
   "groupName": "Foundations Starter – Wretched Ranks",
@@ -2375,7 +2375,7 @@
   "pid": 12569,
   "price": 150.0,
   "shop": "panmysza",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Wretched-Ranks/12569"
  },
  {

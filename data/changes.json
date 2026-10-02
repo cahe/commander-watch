@@ -416,5 +416,46 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389398"
+ },
+ {
+  "at": "2026-10-02T14:17:16Z",
+  "best": {
+   "price": 179.99,
+   "shop": "xjoy"
+  },
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "panmysza-12567",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 170.0,
+  "shop": "panmysza",
+  "status": "out_of_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Calling-All-Angels/12567"
+ },
+ {
+  "at": "2026-10-02T14:17:16Z",
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "panmysza-12569",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 150.0,
+  "shop": "panmysza",
+  "status": "out_of_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Wretched-Ranks/12569"
+ },
+ {
+  "at": "2026-10-02T14:17:16Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "cardtrader-389400",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 153.85,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389400"
  }
 ]
