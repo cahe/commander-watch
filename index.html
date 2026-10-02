@@ -122,8 +122,6 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
 .changes-body > .day:first-child { margin-top: 10px; }
 #changes-filters { padding: 12px 14px 0; gap: 6px; }
 #changes-filters .chip { font-size: 12px; padding: 6px 10px; }
-#changes-filters .chip.fold { color: var(--accent); }
-#changes-filters .chip.fold svg { display: block; }
 #changes-filters:not(:empty) + #changes-list > .day:first-child { margin-top: 24px; }
 /* Folded: a button on the faded edge where the hidden rows continue. Expanded: a "Show less" bar that sticks
    to the bottom of the screen while the list is in view. */
@@ -498,12 +496,6 @@ function renderChanges() {
     const b = el("button", { class: "chip", type: "button", "aria-pressed": String(state.changeFilter === f), text: `${label} ${n}` });
     b.addEventListener("click", () => { state.changeFilter = f; renderChanges(); });
     chips.append(b);
-  }
-  if (chips.childElementCount) {
-    const fold = el("button", { class: "chip fold", type: "button", title: "Show less", "aria-label": "Show less", "aria-controls": "changes-list" });
-    fold.innerHTML = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.5 6 3.5 9 6.5M3 9.5 6 6.5 9 9.5"/></svg>';
-    fold.addEventListener("click", toggleChanges);
-    chips.append(fold);
   }
   const shown = rows.filter(r => !state.changeFilter || (CHANGE_KIND[r.kind] || {}).filter === state.changeFilter);
   const top = shown.slice(0, foldedCount(shown));
