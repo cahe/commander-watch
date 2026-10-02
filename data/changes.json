@@ -331,5 +331,39 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Limit-Break/465"
+ },
+ {
+  "at": "2026-10-02T10:17:12Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "cardtrader-389400",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 146.41,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389400"
+ },
+ {
+  "at": "2026-10-02T10:17:12Z",
+  "best": {
+   "price": 170.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "cardtrader-389398",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 172.01,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389398"
  }
 ]
