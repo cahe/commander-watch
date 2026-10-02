@@ -390,6 +390,29 @@ def test_price_history():
     assert json.loads(check.history_file().read_text(encoding="utf-8")) == h
 
 
+def test_preorder_counts_as_in_stock():
+    assert check.status_event("preorder", "in_stock") is None    # released: still orderable
+    assert check.status_event("in_stock", "preorder") is None
+    assert check.status_event("out_of_stock", "preorder") == "preorder"
+    assert check.status_event("out_of_stock", "in_stock") == "restock"
+    assert check.status_event("preorder", "out_of_stock") == "soldout"
+    tmp = Path(tempfile.mkdtemp())
+    (tmp / "data").mkdir()
+    check.DECKS_FILE, check.STATE_FILE = tmp / "data" / "decks.json", tmp / "data" / "state.json"
+    sent = []
+    check.notify = lambda title, lines, tags="": sent.append(title)
+    deck = lambda status: {"pid": 5, "name": "Star Trek Klingon Fury Commander Deck", "price": 349.99,
+                           "url": "https://wilczek.poznan.pl/klingon-fury.html", "status": status}
+    pushes = []
+    for status in ("out_of_stock", "preorder", "in_stock", "out_of_stock", "in_stock"):
+        check.SHOPS = {"wilczek": ("Wilczek", lambda s, status=status: ([deck(status)], []))}
+        sent.clear()
+        check.main()
+        pushes.append(len(sent))
+    # first scan silent; preorder opening pushes; release doesn't; sold out doesn't; back in stock pushes
+    assert pushes == [0, 1, 0, 0, 1]
+
+
 def test_vanished_listing_is_sold_out():
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()

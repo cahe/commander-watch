@@ -128,7 +128,6 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .offer { display: inline-flex; gap: 6px; align-items: baseline; font: 12px/1 var(--font-body); padding: 5px 8px; border-radius: 4px; text-decoration: none; border: 1px solid transparent; }
 .offer b { font: 500 12px var(--font-mono); font-variant-numeric: tabular-nums; }
 .offer.in_stock { background: var(--ok-soft); color: var(--ok); }
-.offer.preorder { background: var(--warn-soft); color: var(--warn); }
 .offer.out_of_stock { background: var(--off-soft); color: var(--off); }
 .offer i { font: 500 11px/1 var(--font-body); font-style: normal; text-transform: lowercase; opacity: .85; }
 .offer.out_of_stock b { text-decoration: line-through; text-decoration-thickness: 1px; }
@@ -218,7 +217,6 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
       <select id="status" aria-label="Filter by availability">
         <option value="">Any availability</option>
         <option value="in_stock" selected>In stock</option>
-        <option value="preorder">Pre-order</option>
         <option value="out_of_stock">Out of stock</option>
       </select>
       <select id="sort" aria-label="Sort">
@@ -253,6 +251,8 @@ const SHOPS = {
 };
 const STATUS_LABEL = { in_stock: "In stock", preorder: "Pre-order", out_of_stock: "Out of stock" };
 const OFFER_WORD = { in_stock: "in stock", preorder: "pre-order", out_of_stock: "sold out" };
+// A preorder is shown as in stock: shops label the same release differently, and it ships when the others do.
+const shownStatus = (s) => (s === "preorder" ? "in_stock" : STATUS_LABEL[s] ? s : "out_of_stock");
 const state = { decks: [], meta: null, changes: null, changeFilter: "", shop: "", q: "", status: "in_stock", sort: "seen" };
 const $ = (id) => document.getElementById(id);
 const pln = new Intl.NumberFormat("pl-PL", { style: "currency", currency: "PLN" });
@@ -310,8 +310,8 @@ function renderNew() {
   for (const g of state.newAll ? rows : rows.slice(0, limit)) {
     const offers = el("div", { class: "offers" });
     for (const o of g.items.sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9))) {
-      const status = STATUS_LABEL[o.status] ? o.status : "out_of_stock";
-      offers.append(el("a", { class: "offer " + status, href: safeUrl(o.url), target: "_blank", rel: "noopener", title: `${o.name} · ${STATUS_LABEL[o.status] || "Unknown"}` },
+      const status = shownStatus(o.status);
+      offers.append(el("a", { class: "offer " + status, href: safeUrl(o.url), target: "_blank", rel: "noopener", title: `${o.name} · ${STATUS_LABEL[status]}` },
         el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: money(o.shop, o.price) }), el("i", { text: OFFER_WORD[status] })));
     }
     grid.append(el("div", { class: "newrow" }, el("strong", { text: g.name }), el("span", { class: "seen", text: fmtDate(g.at) }), offers));
@@ -368,7 +368,9 @@ function groupDecks() {
 
 function renderList() {
   const q = state.q.trim().toLowerCase();
-  const matches = (o) => (!state.shop || o.shop === state.shop) && (!state.status || o.status === state.status);
+  // A preorder counts as in stock: shops label the same release differently (one "available", another "pre-order").
+  const statusMatches = (o) => !state.status || o.status === state.status || (state.status === "in_stock" && o.status === "preorder");
+  const matches = (o) => (!state.shop || o.shop === state.shop) && statusMatches(o);
   const all = groupDecks();
   const listed = all.filter(g => g.offers.some(o => !SHOPS[o.shop]?.extra));  // hide CardTrader-only decks
   let rows = listed.filter(g => g.offers.some(matches) &&
@@ -390,15 +392,14 @@ function renderList() {
     const offers = el("div", { class: "offers" });
     for (const o of g.offers) {
       // Colour and word both give the shop's stock status; the filters only pick rows and the outlined best price.
-      const status = STATUS_LABEL[o.status] ? o.status : "out_of_stock";
+      const status = shownStatus(o.status);
       offers.append(el("a", { class: "offer " + status + (o === g.best ? " best" : ""), href: safeUrl(o.url), target: "_blank", rel: "noopener",
-          title: `${o.name} · ${STATUS_LABEL[o.status] || "Unknown"}${o === g.best ? " · best price for these filters" : ""}` },
+          title: `${o.name} · ${STATUS_LABEL[status]}${o === g.best ? " · best price for these filters" : ""}` },
         el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: typeof o.price === "number" ? (SHOPS[o.shop]?.approx ? "≈ " : "") + pln.format(o.price) : "—" }),
         el("i", { text: OFFER_WORD[status] })));
     }
-    const inStock = g.offers.filter(o => o.status === "in_stock").length;
-    const pre = g.offers.filter(o => o.status === "preorder").length;
-    const st = el("span", { class: "st avail", text: inStock ? `In stock at ${inStock} of ${g.offers.length}` : pre ? `Pre-order at ${pre} of ${g.offers.length}` : `Out of stock (${g.offers.length})` });
+    const inStock = g.offers.filter(o => o.status === "in_stock" || o.status === "preorder").length;
+    const st = el("span", { class: "st avail", text: inStock ? `In stock at ${inStock} of ${g.offers.length}` : `Out of stock (${g.offers.length})` });
     if (g.firstSeen) st.append(" ", el("span", { class: "pill new", text: "New" }));
     list.append(el("div", { class: "item", role: "row" },
       el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null), offers),
@@ -549,7 +550,7 @@ function priceCell(g) {
 const CHANGE_DAYS = 7;
 const CHANGE_KIND = {
   restock: { label: "Back in stock", cls: "ok", filter: "restock" },
-  preorder: { label: "Pre-order opened", cls: "warn", filter: "restock" },
+  preorder: { label: "Back in stock", cls: "ok", filter: "restock" },  // shown as in stock, like everywhere else
   new: { label: "New listing", cls: "new", filter: "new" },
   soldout: { label: "Sold out", cls: "off", filter: "soldout" },
   price: { label: "Price", cls: "", filter: "price" },
