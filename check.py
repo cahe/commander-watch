@@ -912,7 +912,9 @@ def changes_file() -> Path:
 
 
 def status_event(old: str | None, new: str) -> str | None:
-    if old == new or old is None:
+    # A preorder counts as in stock: shops label the same release differently, so a preorder that's
+    # released (or one shop calling it in stock, another a preorder) isn't a change.
+    if old == new or old is None or (old in ORDERABLE and new in ORDERABLE):
         return None
     if new == "in_stock":
         return "restock"
@@ -1036,7 +1038,7 @@ def main() -> int:
             known = by_id.get(doc_id) or by_url.get(norm_url(p["url"]))
             seen.add(known["id"] if known else doc_id)
             if known:
-                was_in_stock = known.get("status") == "in_stock"
+                was_orderable = known.get("status") in ORDERABLE
                 old_price, old_status = known.get("price"), known.get("status")
                 for k in ("price", "status", "name", "url"):
                     if p[k] is not None and known.get(k) != p[k]:
@@ -1046,8 +1048,8 @@ def main() -> int:
                 change = describe_change(old_price, old_status, known)
                 if change:  # for the page's "Recently updated" sort
                     known["changedAt"], known["change"] = stamp, change
-                if known["status"] == "in_stock" and not was_in_stock and shop not in QUIET_SHOPS:
-                    restocked.append(known)  # back in stock (or preorder became available)
+                if known["status"] in ORDERABLE and not was_orderable and shop not in QUIET_SHOPS:
+                    restocked.append(known)  # back in stock, or its preorder opened (a release isn't a restock)
                 if shop not in QUIET_SHOPS:
                     if kind := status_event(old_status, known["status"]):
                         pending.append((kind, known, None))

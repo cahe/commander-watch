@@ -217,7 +217,7 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
       <input type="search" id="q" placeholder="Search a deck, e.g. Multiverse Reforged" aria-label="Search decks">
       <select id="status" aria-label="Filter by availability">
         <option value="">Any availability</option>
-        <option value="in_stock" selected>In stock</option>
+        <option value="in_stock" selected>In stock (incl. pre-order)</option>
         <option value="preorder">Pre-order</option>
         <option value="out_of_stock">Out of stock</option>
       </select>
@@ -368,7 +368,9 @@ function groupDecks() {
 
 function renderList() {
   const q = state.q.trim().toLowerCase();
-  const matches = (o) => (!state.shop || o.shop === state.shop) && (!state.status || o.status === state.status);
+  // A preorder counts as in stock: shops label the same release differently (one "available", another "pre-order").
+  const statusMatches = (o) => !state.status || o.status === state.status || (state.status === "in_stock" && o.status === "preorder");
+  const matches = (o) => (!state.shop || o.shop === state.shop) && statusMatches(o);
   const all = groupDecks();
   const listed = all.filter(g => g.offers.some(o => !SHOPS[o.shop]?.extra));  // hide CardTrader-only decks
   let rows = listed.filter(g => g.offers.some(matches) &&
@@ -396,9 +398,8 @@ function renderList() {
         el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: typeof o.price === "number" ? (SHOPS[o.shop]?.approx ? "≈ " : "") + pln.format(o.price) : "—" }),
         el("i", { text: OFFER_WORD[status] })));
     }
-    const inStock = g.offers.filter(o => o.status === "in_stock").length;
-    const pre = g.offers.filter(o => o.status === "preorder").length;
-    const st = el("span", { class: "st avail", text: inStock ? `In stock at ${inStock} of ${g.offers.length}` : pre ? `Pre-order at ${pre} of ${g.offers.length}` : `Out of stock (${g.offers.length})` });
+    const inStock = g.offers.filter(o => o.status === "in_stock" || o.status === "preorder").length;
+    const st = el("span", { class: "st avail", text: inStock ? `In stock at ${inStock} of ${g.offers.length}` : `Out of stock (${g.offers.length})` });
     if (g.firstSeen) st.append(" ", el("span", { class: "pill new", text: "New" }));
     list.append(el("div", { class: "item", role: "row" },
       el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null), offers),
