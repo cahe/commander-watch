@@ -426,69 +426,40 @@ def test_deck_keys_are_stable():
     assert decks[0]["deck"] == "star-trek-we-are-the-borg" and decks[0]["group"] == "0-1"
 
 
-def test_telegram_bot():
+def test_telegram_alerts():
     import telegram_bot as tb
-    tmp = Path(tempfile.mkdtemp()) / "subscribers.enc"
-    bot = tb.Bot("123:secret", tmp, "https://example.github.io/commander-watch/")
-    sent, updates = [], []
-
-    def fake(method, **p):
-        if method == "getUpdates":
-            out, updates[:] = list(updates), []
-            return out
-        if method == "sendMessage" and p["chat_id"] == 666:
-            raise tb.TelegramError(403, "Forbidden: bot was blocked by the user")
-        sent.append((method, p))
-        return {}
-    bot.call = fake
-    # As check.deck_prices builds it: cheapest shop, CardTrader, and the cheaper of the two.
-    borg = {"name": "Star Trek – We Are The Borg", "shopPrice": 299.0, "shopName": "Time4Magic", "shopUrl": "https://x/borg",
-            "ctPrice": 289.5, "ctUrl": "https://ct/borg", "price": 289.5, "shop": "CardTrader", "url": "https://ct/borg", "approx": True}
-    decks = {"borg": borg}
-    msg = lambda uid, chat, text: {"update_id": uid, "message": {"chat": {"id": chat, "type": "private"}, "text": text}}
-    updates += [msg(1, 42, "/start borg"), msg(2, 43, "/start gone-deck"), msg(3, 666, "/start borg")]
-    bot.ensure_profile()
-    bot.handle_updates(decks)
-    assert [m for m, _ in sent[:3]] == ["setMyDescription", "setMyShortDescription", "setMyCommands"]
-    sent[:3] = []
-    assert bot.watching("42") == ["borg"] and bot.watching("43") == [] and bot.watching("666") == []  # 666 blocked us
-    reply = sent[0][1]
-    assert "Now: 299,00 zł at Time4Magic · CardTrader ≈ 289,50 zł" in reply["text"]
-    assert [b["text"] for b in reply["reply_markup"]["inline_keyboard"][0]] == ["Open at Time4Magic", "CardTrader"]
-    assert reply["reply_markup"]["inline_keyboard"][1][0]["url"] == "https://example.github.io/commander-watch/"
-    assert "don't know that deck" in sent[1][1]["text"]
-    assert bot.data["offset"] == 4
-    sent.clear()
-    updates.append(msg(4, 42, "/list"))
-    bot.handle_updates(decks)
-    assert sent[0][1]["reply_markup"]["inline_keyboard"][0][0]["callback_data"] == "stop:borg"
-    # Alerts: a 2%+ drop of the cheapest (CardTrader included) and a restock message the deck's subscribers.
+    # Alerts: a 2%+ drop of the cheapest (CardTrader included) and a restock; a small drop isn't one.
     shop_only = lambda price, shop="Wilczek": {"name": "Star Trek – We Are The Borg", "price": price, "shop": shop,
                                                "url": f"https://x/{shop}", "approx": False}
     before = {"borg": shop_only(299.0), "other": {"name": "Other", "price": None}}
-    after = {"borg": {**borg, "price": 279.0, "url": "https://ct/borg"},
+    after = {"borg": {"name": "Star Trek – We Are The Borg", "price": 279.0, "shop": "CardTrader", "url": "https://ct/borg", "approx": True},
              "other": {"name": "Other", "price": 150.0, "shop": "XJoy", "url": "https://x/o", "approx": False}}
     alerts = tb.deck_alerts(before, after)
     assert alerts["borg"]["text"] == "📉 Star Trek – We Are The Borg: ≈ 279,00 zł on CardTrader (was 299,00 zł)"
     assert alerts["borg"]["label"] == "Open on CardTrader" and alerts["borg"]["url"] == "https://ct/borg"
     assert alerts["other"]["text"] == "📦 Other can be ordered again: 150,00 zł at XJoy"
-    assert tb.deck_alerts(before, {"borg": shop_only(294.0)}) == {}  # 5 zł on 299 is under 2%: CardTrader-style drift
-    sent.clear()
-    assert bot.send_alerts(alerts) == 1 and sent[0][1]["chat_id"] == 42
-    assert sent[0][1]["reply_markup"]["inline_keyboard"][0][0] == {"text": "Open on CardTrader", "url": "https://ct/borg"}
-    # Stop button, then the list is stored encrypted: the chat id isn't readable in the file.
-    updates.append({"update_id": 5, "callback_query": {"id": "q", "data": "stop:borg",
-                                                       "message": {"chat": {"id": 42}, "message_id": 9}}})
-    bot.handle_updates(decks)
-    assert bot.watching("42") == []
-    bot.subscribe("42", "borg")
-    assert bot.save() is True
-    assert b"42" not in tmp.read_bytes() and b"borg" not in tmp.read_bytes()
-    again = tb.Bot("123:secret", tmp)
-    assert again.watching("42") == ["borg"] and again.data["offset"] == 6
-    assert again.save() is False  # nothing changed: no rewrite (a new ciphertext would be a commit every run)
-    again.ensure_profile()          # already set up: no calls (the real call would fail without a fake)
-    assert tb.Bot("999:other-token", tmp).data["chats"] == {}  # a new token can't read it; starts over
+    assert tb.deck_alerts(before, {"borg": shop_only(294.0)}) == {}  # 5 zł on 299 is under 2%
+    assert tb.deck_alerts({}, {"borg": shop_only(1.0)}) == {}         # a deck seen for the first time
+    # Sending: the Worker says who watches what; a subscriber who blocked the bot is reported back.
+    a = tb.Alerts("123:secret", "https://bot.example.workers.dev/", "key", "https://example.github.io/commander-watch/")
+    calls, sent = [], []
+    a.worker = lambda method, path, **kw: calls.append((method, path, kw)) or ({"borg": ["42", "666"], "other": ["7"]}
+                                                                              if path == "/subscribers" else {"ok": True})
+
+    def fake(method, **p):
+        if p["chat_id"] == 666:
+            raise tb.TelegramError(403, "Forbidden: bot was blocked by the user")
+        sent.append(p)
+        return {}
+    a.call = fake
+    assert a.send(alerts) == 2
+    assert {p["chat_id"] for p in sent} == {42, 7}
+    borg = next(p for p in sent if p["chat_id"] == 42)
+    assert borg["reply_markup"]["inline_keyboard"] == [[{"text": "Open on CardTrader", "url": "https://ct/borg"}],
+                                                       [{"text": "Commander Watch", "url": "https://example.github.io/commander-watch/"}]]
+    assert ("POST", "/unsubscribe", {"json": {"chat": "666"}}) in calls
+    calls.clear()
+    assert a.send({}) == 0 and calls == []  # nothing to alert: the Worker isn't even asked
 
 
 def test_vanished_listing_is_sold_out():
