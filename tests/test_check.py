@@ -441,38 +441,53 @@ def test_telegram_bot():
         sent.append((method, p))
         return {}
     bot.call = fake
-    decks = {"borg": {"name": "Star Trek – We Are The Borg", "price": 299.0, "shop": "Time4Magic", "url": "https://x/borg"}}
+    # As check.deck_prices builds it: cheapest shop, CardTrader, and the cheaper of the two.
+    borg = {"name": "Star Trek – We Are The Borg", "shopPrice": 299.0, "shopName": "Time4Magic", "shopUrl": "https://x/borg",
+            "ctPrice": 289.5, "ctUrl": "https://ct/borg", "price": 289.5, "shop": "CardTrader", "url": "https://ct/borg", "approx": True}
+    decks = {"borg": borg}
     msg = lambda uid, chat, text: {"update_id": uid, "message": {"chat": {"id": chat, "type": "private"}, "text": text}}
     updates += [msg(1, 42, "/start borg"), msg(2, 43, "/start gone-deck"), msg(3, 666, "/start borg")]
+    bot.ensure_profile()
     bot.handle_updates(decks)
+    assert [m for m, _ in sent[:3]] == ["setMyDescription", "setMyShortDescription", "setMyCommands"]
+    sent[:3] = []
     assert bot.watching("42") == ["borg"] and bot.watching("43") == [] and bot.watching("666") == []  # 666 blocked us
-    assert "Watching Star Trek – We Are The Borg" in sent[0][1]["text"] and "299,00 zł at Time4Magic" in sent[0][1]["text"]
+    reply = sent[0][1]
+    assert "Now: 299,00 zł at Time4Magic · CardTrader ≈ 289,50 zł" in reply["text"]
+    assert [b["text"] for b in reply["reply_markup"]["inline_keyboard"][0]] == ["Open at Time4Magic", "CardTrader"]
+    assert reply["reply_markup"]["inline_keyboard"][1][0]["url"] == "https://example.github.io/commander-watch/"
     assert "don't know that deck" in sent[1][1]["text"]
     assert bot.data["offset"] == 4
     sent.clear()
     updates.append(msg(4, 42, "/list"))
     bot.handle_updates(decks)
     assert sent[0][1]["reply_markup"]["inline_keyboard"][0][0]["callback_data"] == "stop:borg"
-    # Alerts: a price drop and a restock message the deck's subscribers; a small drop doesn't.
-    before = {"borg": {**decks["borg"]}, "other": {"name": "Other", "price": None, "shop": None, "url": None}}
-    after = {"borg": {**decks["borg"], "price": 279.0, "shop": "Wilczek"},
-             "other": {"name": "Other", "price": 150.0, "shop": "XJoy", "url": "https://x/o"}}
+    # Alerts: a 2%+ drop of the cheapest (CardTrader included) and a restock message the deck's subscribers.
+    shop_only = lambda price, shop="Wilczek": {"name": "Star Trek – We Are The Borg", "price": price, "shop": shop,
+                                               "url": f"https://x/{shop}", "approx": False}
+    before = {"borg": shop_only(299.0), "other": {"name": "Other", "price": None}}
+    after = {"borg": {**borg, "price": 279.0, "url": "https://ct/borg"},
+             "other": {"name": "Other", "price": 150.0, "shop": "XJoy", "url": "https://x/o", "approx": False}}
     alerts = tb.deck_alerts(before, after)
-    assert alerts["borg"].startswith("📉 Star Trek – We Are The Borg: 279,00 zł at Wilczek (was 299,00 zł)")
-    assert alerts["other"].startswith("📦 Other can be ordered again: 150,00 zł at XJoy")
-    assert tb.deck_alerts(before, {"borg": {**decks["borg"], "price": 298.5}}) == {}
+    assert alerts["borg"]["text"] == "📉 Star Trek – We Are The Borg: ≈ 279,00 zł on CardTrader (was 299,00 zł)"
+    assert alerts["borg"]["label"] == "Open on CardTrader" and alerts["borg"]["url"] == "https://ct/borg"
+    assert alerts["other"]["text"] == "📦 Other can be ordered again: 150,00 zł at XJoy"
+    assert tb.deck_alerts(before, {"borg": shop_only(294.0)}) == {}  # 5 zł on 299 is under 2%: CardTrader-style drift
     sent.clear()
     assert bot.send_alerts(alerts) == 1 and sent[0][1]["chat_id"] == 42
+    assert sent[0][1]["reply_markup"]["inline_keyboard"][0][0] == {"text": "Open on CardTrader", "url": "https://ct/borg"}
     # Stop button, then the list is stored encrypted: the chat id isn't readable in the file.
     updates.append({"update_id": 5, "callback_query": {"id": "q", "data": "stop:borg",
                                                        "message": {"chat": {"id": 42}, "message_id": 9}}})
     bot.handle_updates(decks)
     assert bot.watching("42") == []
     bot.subscribe("42", "borg")
-    bot.save()
+    assert bot.save() is True
     assert b"42" not in tmp.read_bytes() and b"borg" not in tmp.read_bytes()
     again = tb.Bot("123:secret", tmp)
     assert again.watching("42") == ["borg"] and again.data["offset"] == 6
+    assert again.save() is False  # nothing changed: no rewrite (a new ciphertext would be a commit every run)
+    again.ensure_profile()          # already set up: no calls (the real call would fail without a fake)
     assert tb.Bot("999:other-token", tmp).data["chats"] == {}  # a new token can't read it; starts over
 
 

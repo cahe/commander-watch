@@ -900,29 +900,44 @@ PRICE_STEP = 1.0  # zł; smaller shop price moves aren't logged
 
 
 def deck_prices(decks: list[dict]) -> dict[str, dict]:
-    """Each deck's cheapest orderable shop listing (CardTrader left out), by its permanent key, for Telegram alerts."""
+    """Each deck's cheapest way to order it, by its permanent key, for Telegram: the cheapest shop and CardTrader
+    separately (shopPrice/shopName/shopUrl, ctPrice/ctUrl), and the cheaper of the two (price/shop/url/approx)."""
     out: dict[str, dict] = {}
     for d in decks:
-        if not d.get("deck") or d["shop"] in QUIET_SHOPS:
+        if not d.get("deck"):
             continue
-        cur = out.setdefault(d["deck"], {"name": d.get("groupName") or d["name"], "price": None, "shop": None, "url": None})
-        if d.get("status") in ORDERABLE and d.get("price") is not None and (cur["price"] is None or d["price"] < cur["price"]):
-            cur.update(price=d["price"], shop=SHOPS[d["shop"]][0] if d["shop"] in SHOPS else d["shop"], url=d["url"])
+        cur = out.setdefault(d["deck"], {"name": d.get("groupName") or d["name"], "shopPrice": None, "shopName": None,
+                                         "shopUrl": None, "ctPrice": None, "ctUrl": None})
+        if d.get("status") not in ORDERABLE or d.get("price") is None:
+            continue
+        if d["shop"] in QUIET_SHOPS:
+            if cur["ctPrice"] is None or d["price"] < cur["ctPrice"]:
+                cur.update(ctPrice=d["price"], ctUrl=d["url"])
+        elif cur["shopPrice"] is None or d["price"] < cur["shopPrice"]:
+            cur.update(shopPrice=d["price"], shopName=SHOPS[d["shop"]][0] if d["shop"] in SHOPS else d["shop"], shopUrl=d["url"])
+    for cur in out.values():
+        ct_cheaper = cur["ctPrice"] is not None and (cur["shopPrice"] is None or cur["ctPrice"] < cur["shopPrice"])
+        cur.update(price=cur["ctPrice"] if ct_cheaper else cur["shopPrice"],
+                   shop="CardTrader" if ct_cheaper else cur["shopName"],
+                   url=cur["ctUrl"] if ct_cheaper else cur["shopUrl"], approx=ct_cheaper)
     return out
 
 
-def run_telegram(before: dict[str, dict], after: dict[str, dict]) -> None:
-    """Handle the bot's new messages, then alert each deck's subscribers. Never fails the check."""
+def run_telegram(before: dict[str, dict] | None, after: dict[str, dict]) -> None:
+    """Handle the bot's new messages, then (given `before`) alert each deck's subscribers. Never fails the check."""
     bot = telegram_bot.Bot.from_env(DECKS_FILE.with_name("subscribers.enc"))
     if not bot:
+        if before is None:
+            print("TELEGRAM_TOKEN is not set.")
         return
     try:
+        bot.ensure_profile()
         bot.handle_updates(after)
-        sent = bot.send_alerts(telegram_bot.deck_alerts(before, after))
+        sent = bot.send_alerts(telegram_bot.deck_alerts(before, after)) if before is not None else 0
         print(f"Telegram: {len(bot.data['chats'])} subscribers, {sent} alerts sent")
     except Exception as e:  # a Telegram outage shouldn't stop the shop data being saved
         print(f"Telegram: {type(e).__name__}: {e}")
-    bot.save()
+    print("Telegram: subscribers saved" if bot.save() else "Telegram: no subscriber changes")
 
 
 def history_file() -> Path:
@@ -1038,6 +1053,9 @@ def main() -> int:
             print("NTFY_TOPIC is not set.")
             return 1
         notify("Commander Watch test", ["Test push. Notifications are working."], tags="white_check_mark")
+        return 0
+    if "--bot" in sys.argv:  # only answer the Telegram bot's messages (the frequent "Bot replies" workflow); no scan
+        run_telegram(None, deck_prices(load(DECKS_FILE, [])))
         return 0
     if "--cardtrader-discover" in sys.argv:  # print CardTrader's catalogue structure; no scan, nothing saved
         return cardtrader_discover()

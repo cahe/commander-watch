@@ -5,8 +5,8 @@ which opens the bot in Telegram. Each check (check.py) then reads the bot's new 
 watches which deck, and messages them when that deck's cheapest shop price drops or it can be ordered
 again. Only the bot can message its users, so nobody can fake an alert.
 
-There's no server: Telegram keeps new messages until the next check fetches them (so a "subscribed"
-reply can take up to an hour). Subscribers' chat ids are personal data and the repo is public, so the
+There's no server: Telegram keeps new messages until they're fetched, by the hourly check or by the
+"Bot replies" workflow that cron-job.org starts every 2 minutes (`check.py --bot`). Subscribers' chat ids are personal data and the repo is public, so the
 list is stored encrypted (data/subscribers.enc), with a key derived from the bot token.
 """
 
@@ -22,6 +22,15 @@ import requests
 from cryptography.fernet import Fernet, InvalidToken
 
 PRICE_STEP = 1.0  # zł; smaller drops aren't worth a message
+
+# What people see before pressing Start, and the command menu. Bump PROFILE_VERSION to send changes.
+PROFILE_VERSION = 1
+DESCRIPTION = ("Price alerts for MTG Commander decks in Polish shops and on CardTrader.\n\n"
+               "Tap the bell next to a deck on Commander Watch, then Start here. I'll message you when that deck "
+               "gets cheaper or can be ordered again. Replies take a minute or two.")
+SHORT_DESCRIPTION = "Commander deck price alerts from Commander Watch"
+COMMANDS = [{"command": "list", "description": "Decks you watch, with buttons to stop each"},
+            {"command": "stop", "description": "Stop all alerts"}]
 
 
 class TelegramError(Exception):
@@ -46,14 +55,30 @@ class Bot:
             except InvalidToken:
                 # A new bot token can't read the old list; start over rather than fail every check.
                 print("Telegram: subscribers file can't be decrypted with this token; starting a new list.")
+        self.loaded = json.dumps(self.data, sort_keys=True) if path.exists() else None
 
     @classmethod
     def from_env(cls, path: Path) -> Bot | None:
         token = os.environ.get("TELEGRAM_TOKEN", "").strip()
         return cls(token, path, os.environ.get("PAGE_URL", "")) if token else None
 
-    def save(self) -> None:
-        self.path.write_bytes(self.fernet.encrypt(json.dumps(self.data, sort_keys=True).encode()) + b"\n")
+    def save(self) -> bool:
+        """Write the list only if it changed: encryption gives new bytes every time, which would be a commit per run."""
+        plain = json.dumps(self.data, sort_keys=True)
+        if plain == self.loaded:
+            return False
+        self.path.write_bytes(self.fernet.encrypt(plain.encode()) + b"\n")
+        self.loaded = plain
+        return True
+
+    def ensure_profile(self) -> None:
+        """Set the bot's description and command menu once (and again when PROFILE_VERSION changes)."""
+        if self.data.get("profile", 0) >= PROFILE_VERSION:
+            return
+        self.call("setMyDescription", description=DESCRIPTION)
+        self.call("setMyShortDescription", short_description=SHORT_DESCRIPTION)
+        self.call("setMyCommands", commands=COMMANDS)
+        self.data["profile"] = PROFILE_VERSION
 
     def call(self, method: str, **params):
         r = requests.post(f"https://api.telegram.org/bot{self.token}/{method}", json=params, timeout=30)
@@ -86,6 +111,7 @@ class Bot:
 
     def send(self, chat: str, text: str, buttons: list[list[dict]] | None = None) -> None:
         params = {"chat_id": int(chat), "text": text, "disable_web_page_preview": True}
+        buttons = [row for row in buttons or [] if row]  # Telegram rejects empty rows
         if buttons:
             params["reply_markup"] = {"inline_keyboard": buttons}
         try:
@@ -96,11 +122,22 @@ class Bot:
             else:
                 print(f"Telegram: couldn't message a subscriber ({e})")
 
+    def page_button(self) -> list[dict]:
+        return [{"text": "Commander Watch", "url": self.page_url}] if self.page_url else []
+
+    def deck_buttons(self, deck: dict) -> list[list[dict]]:
+        """Link buttons under a message: the cheapest shop, CardTrader, and the page."""
+        row = []
+        if deck.get("shopUrl"):
+            row.append({"text": f"Open at {deck['shopName']}", "url": deck["shopUrl"]})
+        if deck.get("ctUrl"):
+            row.append({"text": "CardTrader", "url": deck["ctUrl"]})
+        return [r for r in (row, self.page_button()) if r]
+
     def help_text(self) -> str:
-        page = f"\n{self.page_url}" if self.page_url else ""
-        return ("I send alerts for single Commander decks: when the cheapest shop price drops, "
+        return ("I send alerts for single Commander decks: when one gets cheaper (in a shop or on CardTrader), "
                 "or a sold-out deck can be ordered again.\n\n"
-                f"To watch a deck, open Commander Watch and tap “Get alerts” next to it.{page}\n\n"
+                "To watch a deck, open Commander Watch and tap the bell next to it, then Start.\n\n"
                 "/list shows the decks you watch, with buttons to stop each one. /stop stops all alerts.")
 
     def list_message(self, chat: str, decks: dict[str, dict]) -> tuple[str, list[list[dict]]]:
@@ -145,52 +182,66 @@ class Bot:
                 if key in decks:
                     self.subscribe(chat, key)
                     self.send(chat, f"Watching {decks[key]['name']}.\nNow: {status_line(decks[key])}.\n\n"
-                                    "I'll message you when its cheapest shop price drops, or when it can be ordered "
-                                    "again after selling out. /list shows what you watch.")
+                                    "I'll message you when it gets cheaper, or when it can be ordered again after "
+                                    "selling out. /list shows what you watch.", self.deck_buttons(decks[key]))
                 else:
                     self.send(chat, "I don't know that deck any more (shops may have renamed it). "
-                                    "Open Commander Watch and tap its “Get alerts” link again."
-                                    + (f"\n{self.page_url}" if self.page_url else ""))
+                                    "Open Commander Watch and tap its bell again.", [self.page_button()])
             elif command == "/list":
                 text, buttons = self.list_message(chat, decks)
                 self.send(chat, text, buttons)
             elif command == "/stop":
                 self.unsubscribe(chat)
-                self.send(chat, "Stopped all alerts. Tap “Get alerts” on the page to watch a deck again.")
+                self.send(chat, "Stopped all alerts. Tap a deck's bell on the page to watch it again.", [self.page_button()])
             else:
-                self.send(chat, self.help_text())
+                self.send(chat, self.help_text(), [self.page_button()])
 
     # ------------------------------------------------------------------ alerts
 
-    def send_alerts(self, alerts: dict[str, str]) -> int:
+    def send_alerts(self, alerts: dict[str, dict]) -> int:
+        """alerts: deck key -> {"text", "url", "label"} from deck_alerts; the offer's link goes in a button."""
         sent = 0
         for chat, keys in list(self.data["chats"].items()):
             for key in keys:
                 if key in alerts:
-                    self.send(chat, alerts[key])
+                    a = alerts[key]
+                    buttons = [[{"text": a["label"], "url": a["url"]}]] + ([self.page_button()] if self.page_url else [])
+                    self.send(chat, a["text"], buttons)
                     sent += 1
         return sent
 
 
+def offer_text(price: float, shop: str, approx: bool) -> str:
+    return f"≈ {zl(price)} on CardTrader" if approx else f"{zl(price)} at {shop}"
+
+
 def status_line(deck: dict) -> str:
-    if deck.get("price") is None:
-        return "not in stock anywhere"
-    return f"{zl(deck['price'])} at {deck['shop']}"
+    """The cheapest shop and CardTrader side by side: "209,99 zł at Magic Cafe · CardTrader ≈ 190,68 zł"."""
+    parts = []
+    if deck.get("shopPrice") is not None:
+        parts.append(f"{zl(deck['shopPrice'])} at {deck['shopName']}")
+    if deck.get("ctPrice") is not None:
+        parts.append(f"CardTrader ≈ {zl(deck['ctPrice'])}")
+    return " · ".join(parts) or "not in stock anywhere"
 
 
 def deck_alerts(before: dict[str, dict], after: dict[str, dict]) -> dict[str, str]:
-    """Alert texts for decks whose cheapest shop price dropped, or that can be ordered again.
+    """Alert texts for decks that got cheaper, or that can be ordered again.
 
-    before/after map deck key -> {"name", "price" (None if no shop can take an order), "shop", "url"}.
+    before/after map deck key -> {"name", "price" (the cheapest way to order it, CardTrader included; None if
+    there's none), "shop", "url", "approx" (True when that's CardTrader), plus "shopPrice"/"shopName"/"ctPrice"}.
+    A drop has to be 2% (and 1 zł) or more: CardTrader's prices, converted from euros, drift a little every day.
     """
     alerts = {}
     for key, now in after.items():
         was = before.get(key)
         if was is None or now["price"] is None:
             continue  # a deck seen for the first time, or not orderable now
+        approx = now.get("approx", False)
+        offer = offer_text(now["price"], now["shop"], approx)
+        link = {"url": now["url"], "label": "Open on CardTrader" if approx else f"Open at {now['shop']}"}
         if was["price"] is None:
-            alerts[key] = f"📦 {now['name']} can be ordered again: {zl(now['price'])} at {now['shop']}\n{now['url']}"
-        elif now["price"] <= was["price"] - PRICE_STEP:
-            alerts[key] = (f"📉 {now['name']}: {zl(now['price'])} at {now['shop']} (was {zl(was['price'])})\n"
-                           f"{now['url']}")
+            alerts[key] = {"text": f"📦 {now['name']} can be ordered again: {offer}", **link}
+        elif now["price"] <= was["price"] - max(PRICE_STEP, was["price"] * 0.02):
+            alerts[key] = {"text": f"📉 {now['name']}: {offer} (was {zl(was['price'])})", **link}
     return alerts
