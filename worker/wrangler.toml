@@ -1,7 +1,9 @@
-# Cloudflare Worker for the Telegram bot; see src/index.js. Deploy from this folder: npx wrangler deploy
+# Cloudflare Worker for the Telegram bot; see src/index.js. Deployed by .github/workflows/deploy-worker.yml
+# when worker/ changes on main (or by hand from this folder: npx wrangler deploy).
 name = "commander-watch-bot"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
+account_id = "dc06a3ed90727cc1e35f49615a9bf6f4"  # not a secret; lets the deploy workflow find the account
 
 [vars]
 PAGE_URL = "https://cahe.github.io/commander-watch/"
