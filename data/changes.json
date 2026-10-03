@@ -829,5 +829,76 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389398"
+ },
+ {
+  "at": "2026-10-03T04:17:33Z",
+  "best": {
+   "price": 179.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "cardtrader-389398",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 172.01,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389398"
+ },
+ {
+  "at": "2026-10-03T04:17:33Z",
+  "best": {
+   "price": 129.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "cardtrader-389399",
+  "inStock": 4,
+  "kind": "price",
+  "old": 128.52,
+  "price": 110.67,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389399"
+ },
+ {
+  "at": "2026-10-03T04:17:33Z",
+  "best": {
+   "price": 179.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "cardtrader-389400",
+  "inStock": 1,
+  "kind": "price",
+  "old": 153.85,
+  "price": 146.41,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389400"
+ },
+ {
+  "at": "2026-10-03T04:17:33Z",
+  "best": {
+   "price": 209.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Tramplesaurus Rex",
+  "group": "cardstore-31684",
+  "id": "cardtrader-389402",
+  "inStock": 1,
+  "kind": "price",
+  "old": 199.43,
+  "price": 190.68,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389402"
  }
 ]
