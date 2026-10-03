@@ -1,0 +1,1572 @@
+{
+ "decks": {
+  "adventures-in-the-forgotten-realms-4-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Adventures in the Forgotten Realms 4",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "adventures-in-the-forgotten-realms-aura-of-courage": {
+   "ctPrice": 437.41,
+   "ctUrl": "https://www.cardtrader.com/en/cards/160506",
+   "name": "Adventures in the Forgotten Realms Aura of Courage",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "adventures-in-the-forgotten-realms-draconic-rage": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Adventures in the Forgotten Realms Draconic Rage",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "adventures-in-the-forgotten-realms-dungeons-of-death": {
+   "ctPrice": 439.81,
+   "ctUrl": "https://www.cardtrader.com/en/cards/160509",
+   "name": "Adventures in the Forgotten Realms Dungeons of Death",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "adventures-in-the-forgotten-realms-planar-portal": {
+   "ctPrice": 549.61,
+   "ctUrl": "https://www.cardtrader.com/en/cards/160508",
+   "name": "Adventures in the Forgotten Realms – Planar Portal",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "aetherdrift-eternal-might": {
+   "ctPrice": 171.35,
+   "ctUrl": "https://www.cardtrader.com/en/cards/314239",
+   "name": "Aetherdrift – Eternal Might",
+   "shopName": "Frost Magic",
+   "shopPrice": 230,
+   "shopUrl": "https://frostmagic.pl/pl/products/aetherdrift-commander-deck-eternal-might"
+  },
+  "aetherdrift-living-energy": {
+   "ctPrice": 132.55,
+   "ctUrl": "https://www.cardtrader.com/en/cards/314238",
+   "name": "Aetherdrift Living Energy",
+   "shopName": "Frost Magic",
+   "shopPrice": 130,
+   "shopUrl": "https://frostmagic.pl/pl/products/aetherdrift-commander-deck-living-energy"
+  },
+  "aetherdrift-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Aetherdrift",
+   "shopName": "XJoy",
+   "shopPrice": 369.99,
+   "shopUrl": "https://www.xjoy.pl/aetherdrift/22833-mtg-aetherdrift-commander-deck-set.html"
+  },
+  "anthology-2-breed-lethality": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Anthology 2 – Breed Lethality",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "anthology-2-built-from-scratch": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Anthology 2 – Built from Scratch",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "anthology-2-devour-for-power": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Anthology 2 – Devour for Power",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "anthology-2-wade-into-battle": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Anthology 2 – Wade into Battle",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "anthology-guided-by-nature": {
+   "ctPrice": 431.46,
+   "ctUrl": "https://www.cardtrader.com/en/cards/48538",
+   "name": "Anthology – Guided by Nature",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "anthology-heavenly-inferno": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Anthology – Heavenly Inferno",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "anthology-plunder-the-graves": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Anthology – Plunder the Graves",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "bloomburrow-animated-army": {
+   "ctPrice": 392.04,
+   "ctUrl": "https://www.cardtrader.com/en/cards/280703",
+   "name": "Bloomburrow Animated Army",
+   "shopName": "Magic Cafe",
+   "shopPrice": 449.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-deck-bloomburrow-animated-army/"
+  },
+  "bloomburrow-family-matters": {
+   "ctPrice": 191.91,
+   "ctUrl": "https://www.cardtrader.com/en/cards/280702",
+   "name": "Bloomburrow Family Matters",
+   "shopName": "Magic Cafe",
+   "shopPrice": 249.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-deck-bloomburrow-family-matters/"
+  },
+  "bloomburrow-peace-offering": {
+   "ctPrice": 435.79,
+   "ctUrl": "https://www.cardtrader.com/en/cards/280704",
+   "name": "Bloomburrow Peace Offering",
+   "shopName": "Magic Cafe",
+   "shopPrice": 499.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-deck-bloomburrow-peace-offering/"
+  },
+  "bloomburrow-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Bloomburrow",
+   "shopName": "Magic Cafe",
+   "shopPrice": 1399.99,
+   "shopUrl": "https://magiccafe.eu/product/bloomburrow-commander-deck-set-4/"
+  },
+  "bloomburrow-squirreled-away": {
+   "ctPrice": 396.42,
+   "ctUrl": "https://www.cardtrader.com/en/cards/280701",
+   "name": "Bloomburrow Squirreled Away",
+   "shopName": "Magic Cafe",
+   "shopPrice": 499.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-deck-bloomburrow-squirreled-away/"
+  },
+  "collection-black": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Collection Black",
+   "shopName": "Magic Cafe",
+   "shopPrice": 153.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-collection-black/"
+  },
+  "collection-black-premium": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Collection – Black Premium",
+   "shopName": "Magic Cafe",
+   "shopPrice": 301.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-collection-black-premium/"
+  },
+  "collection-green": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Collection – Green",
+   "shopName": "Magic Cafe",
+   "shopPrice": 289.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-collection-green/"
+  },
+  "doctor-who-blast-from-the-past": {
+   "ctPrice": 156.34,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246951",
+   "name": "Doctor Who Blast From The Past",
+   "shopName": "Magic Cafe",
+   "shopPrice": 174.99,
+   "shopUrl": "https://magiccafe.eu/product/universes-beyond-doctor-who-blast-from-the-past-commander-deck/"
+  },
+  "doctor-who-masters-of-evil": {
+   "ctPrice": 374.59,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246950",
+   "name": "Doctor Who – Masters of Evil",
+   "shopName": "Magic Cafe",
+   "shopPrice": 295.99,
+   "shopUrl": "https://magiccafe.eu/product/universes-beyond-doctor-who-masters-of-evil-commander-deck/"
+  },
+  "doctor-who-paradox-power": {
+   "ctPrice": 186.44,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246953",
+   "name": "Doctor Who Paradox Power",
+   "shopName": "Magic Cafe",
+   "shopPrice": 174.99,
+   "shopUrl": "https://magiccafe.eu/product/universes-beyond-doctor-who-paradox-power-commander-deck/"
+  },
+  "doctor-who-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Doctor Who",
+   "shopName": "Magic Cafe",
+   "shopPrice": 1075.99,
+   "shopUrl": "https://magiccafe.eu/product/universes-beyond-doctor-who-commander-deck-set-4/"
+  },
+  "doctor-who-timey-wimey": {
+   "ctPrice": 483.91,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246952",
+   "name": "Doctor Who – Timey-Wimey",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "dominaria-united-legends-legacy": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Dominaria United Legend’s Legacy",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "dominaria-united-painbow": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Dominaria United Painbow",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "dominaria-united-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Dominaria United – -",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "duskmourn-house-of-horror-death-toll": {
+   "ctPrice": 308.88,
+   "ctUrl": "https://www.cardtrader.com/en/cards/299808",
+   "name": "Duskmourn House of Horror Death Toll",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "duskmourn-house-of-horror-endless-punishment": {
+   "ctPrice": 1227.66,
+   "ctUrl": "https://www.cardtrader.com/en/cards/299806",
+   "name": "Duskmourn House of Horror Endless Punishment",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "duskmourn-house-of-horror-jump-scare": {
+   "ctPrice": 410.02,
+   "ctUrl": "https://www.cardtrader.com/en/cards/299809",
+   "name": "Duskmourn House of Horror Jump Scare!",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "duskmourn-house-of-horror-miracle-worker": {
+   "ctPrice": 435.88,
+   "ctUrl": "https://www.cardtrader.com/en/cards/299807",
+   "name": "Duskmourn House of Horror Miracle Worker",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "duskmourn-house-of-horror-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Duskmourn House of Horror",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "edge-of-eternities-counter-intelligence": {
+   "ctPrice": 174.63,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322693",
+   "name": "Edge of Eternities – Counter Intelligence",
+   "shopName": "Cardstore",
+   "shopPrice": 159.0,
+   "shopUrl": "https://cardstore.pl/commander/30218-commander-edge-of-eternitie-counter-intelligence-0019516628640.html"
+  },
+  "edge-of-eternities-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Edge of Eternities",
+   "shopName": "Magic Cafe",
+   "shopPrice": 431.99,
+   "shopUrl": "https://magiccafe.eu/product/magic-the-gathering-edge-of-eternities-commander-decks-set-2/"
+  },
+  "edge-of-eternities-world-shaper": {
+   "ctPrice": 243.18,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322694",
+   "name": "Edge of Eternities “World Shaper”",
+   "shopName": "Magic Cafe",
+   "shopPrice": 279.99,
+   "shopUrl": "https://magiccafe.eu/product/magic-the-gathering-edge-of-eternities-world-shaper-commander-deck/"
+  },
+  "evergreen-starter-commadner-chaos-incarnate": {
+   "ctPrice": 217.15,
+   "ctUrl": "https://www.cardtrader.com/en/cards/224264",
+   "name": "Evergreen – Starter Commadner – Chaos Incarnate",
+   "shopName": "Magic Cafe",
+   "shopPrice": 195.99,
+   "shopUrl": "https://magiccafe.eu/product/starter-commander-deck-chaos-incarnate/"
+  },
+  "evergreen-starter-commadner-draconic-destruction": {
+   "ctPrice": 177.21,
+   "ctUrl": "https://www.cardtrader.com/en/cards/224265",
+   "name": "Evergreen – Starter Commadner – Draconic Destruction",
+   "shopName": "Magic Cafe",
+   "shopPrice": 249.99,
+   "shopUrl": "https://magiccafe.eu/product/starter-commander-deck-draconic-destruction/"
+  },
+  "evergreen-starter-commadner-first-flight": {
+   "ctPrice": 115.49,
+   "ctUrl": "https://www.cardtrader.com/en/cards/224262",
+   "name": "Evergreen – Starter Commadner – First Flight",
+   "shopName": "Time4Magic",
+   "shopPrice": 169.0,
+   "shopUrl": "https://time4magic.pl/pl/p/Starter-Commander-Deck-First-Flight/455"
+  },
+  "evergreen-starter-commadner-grave-danger": {
+   "ctPrice": 165.62,
+   "ctUrl": "https://www.cardtrader.com/en/cards/224263",
+   "name": "Evergreen – Starter Commadner – Grave Danger",
+   "shopName": "Time4Magic",
+   "shopPrice": 199.0,
+   "shopUrl": "https://time4magic.pl/pl/p/Starter-Commander-Deck-Grave-Danger/381"
+  },
+  "evergreen-starter-commadner-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Evergreen – Starter Commadner",
+   "shopName": "Magic Cafe",
+   "shopPrice": 789.99,
+   "shopUrl": "https://magiccafe.eu/product/starter-commander-deck-5-set/"
+  },
+  "evergreen-starter-commadner-token-triumph": {
+   "ctPrice": 153.02,
+   "ctUrl": "https://www.cardtrader.com/en/cards/224266",
+   "name": "Evergreen – Starter Commadner – Token Triumph",
+   "shopName": "Magic Cafe",
+   "shopPrice": 151.99,
+   "shopUrl": "https://magiccafe.eu/product/starter-commander-deck-token-triumph/"
+  },
+  "fallout-hail-caesar": {
+   "ctPrice": 571.48,
+   "ctUrl": "https://www.cardtrader.com/en/cards/265027",
+   "name": "Fallout Hail Caesar",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "fallout-mutant-menace": {
+   "ctPrice": 698.35,
+   "ctUrl": "https://www.cardtrader.com/en/cards/265029",
+   "name": "Fallout Mutant Menace",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "fallout-science": {
+   "ctPrice": 234.65,
+   "ctUrl": "https://www.cardtrader.com/en/cards/265028",
+   "name": "Fallout Science",
+   "shopName": "Magic Cafe",
+   "shopPrice": 224.99,
+   "shopUrl": "https://magiccafe.eu/product/magic-the-gathering-fallout-commander-deck-science/"
+  },
+  "fallout-scrappy-survivors": {
+   "ctPrice": 483.99,
+   "ctUrl": "https://www.cardtrader.com/en/cards/265026",
+   "name": "Fallout Scrappy Survivors",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "fallout-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Fallout",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "final-fantasy-collector-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Final Fantasy",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "final-fantasy-counter-blitz": {
+   "ctPrice": 219.34,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322098",
+   "name": "Final Fantasy Counter Blitz",
+   "shopName": "Frost Magic",
+   "shopPrice": 230,
+   "shopUrl": "https://frostmagic.pl/pl/products/final-fantasy-counter-blitz-commander-deck"
+  },
+  "final-fantasy-counter-blitz-collector-deck": {
+   "ctPrice": 526.16,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322104",
+   "name": "FINAL FANTASY – \"Counter Blitz",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "final-fantasy-limit-break": {
+   "ctPrice": 223.06,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322095",
+   "name": "Final Fantasy Limit Break",
+   "shopName": "Pan Mysza",
+   "shopPrice": 235.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Final-Fantasy-Commander-Deck-Limit-Break/8237"
+  },
+  "final-fantasy-limit-break-collector-deck": {
+   "ctPrice": 634.3,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322103",
+   "name": "FINAL FANTASY – \"Limit Break",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "final-fantasy-revival-trance": {
+   "ctPrice": 152.76,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322101",
+   "name": "Final Fantasy Revival Trance",
+   "shopName": "Pan Mysza",
+   "shopPrice": 168.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Final-Fantasy-Commander-Deck-Revival-Trance/8236"
+  },
+  "final-fantasy-revival-trance-collector-deck": {
+   "ctPrice": 368.64,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322107",
+   "name": "FINAL FANTASY – \"Revival Trance",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "final-fantasy-scions-spellcraft": {
+   "ctPrice": 243.18,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322100",
+   "name": "Final Fantasy Scions & Spellcraft",
+   "shopName": "Pan Mysza",
+   "shopPrice": 235.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Final-Fantasy-Commander-Deck-Scions-and-Spellcraft/8238"
+  },
+  "final-fantasy-scions-spellcraft-collector-deck": {
+   "ctPrice": 613.39,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322106",
+   "name": "FINAL FANTASY – \"Scions & Spellcraft",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "final-fantasy-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Final Fantasy",
+   "shopName": "XJoy",
+   "shopPrice": 949.99,
+   "shopUrl": "https://www.xjoy.pl/final-fantasy/23122-mtg-final-fantasy-commander-deck-display-4-decks.html"
+  },
+  "foundations-starter-calling-all-angels": {
+   "ctPrice": 172.01,
+   "ctUrl": "https://www.cardtrader.com/en/cards/389398",
+   "name": "Foundations Starter – Calling All Angels",
+   "shopName": "XJoy",
+   "shopPrice": 179.99,
+   "shopUrl": "https://www.xjoy.pl/mtg-commander/26813-mtg-foundations-starter-commander-deck-calling-all-angels.html"
+  },
+  "foundations-starter-keen-engineering": {
+   "ctPrice": 110.67,
+   "ctUrl": "https://www.cardtrader.com/en/cards/389399",
+   "name": "Foundations Starter – Keen Engineering",
+   "shopName": "Time4Magic",
+   "shopPrice": 129.0,
+   "shopUrl": "https://time4magic.pl/pl/p/Foundations-Commander-Deck-Keen-Engineering/990"
+  },
+  "foundations-starter-reign-of-dragons": {
+   "ctPrice": 190.68,
+   "ctUrl": "https://www.cardtrader.com/en/cards/389401",
+   "name": "Foundations Starter – Reign of Dragons",
+   "shopName": "XJoy",
+   "shopPrice": 179.99,
+   "shopUrl": "https://www.xjoy.pl/mtg-commander/26816-mtg-foundations-starter-commander-deck-reign-of-dragons.html"
+  },
+  "foundations-starter-tramplesaurus-rex": {
+   "ctPrice": 190.68,
+   "ctUrl": "https://www.cardtrader.com/en/cards/389402",
+   "name": "Foundations Starter – Tramplesaurus Rex",
+   "shopName": "Magic Cafe",
+   "shopPrice": 209.99,
+   "shopUrl": "https://magiccafe.eu/product/foundations-tramplesaurus-rex-commander-deck/"
+  },
+  "foundations-starter-wretched-ranks": {
+   "ctPrice": 146.41,
+   "ctUrl": "https://www.cardtrader.com/en/cards/389400",
+   "name": "Foundations Starter – Wretched Ranks",
+   "shopName": "Magic Cafe",
+   "shopPrice": 179.99,
+   "shopUrl": "https://magiccafe.eu/product/foundations-wretched-ranks-commander-deck/"
+  },
+  "ikoria-lair-of-behemoths-arcane-maelstrom": {
+   "ctPrice": 656.13,
+   "ctUrl": "https://www.cardtrader.com/en/cards/107979",
+   "name": "Ikoria Lair of Behemoths – Arcane Maelstrom",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "ikoria-lair-of-behemoths-enchanced-evolution": {
+   "ctPrice": 393.66,
+   "ctUrl": "https://www.cardtrader.com/en/cards/107981",
+   "name": "Ikoria Lair of Behemoths – Enchanced Evolution",
+   "shopName": "Magic Cafe",
+   "shopPrice": 379.99,
+   "shopUrl": "https://magiccafe.eu/product/ikoria-lair-of-behemoths-commander-enchanced-evolution/"
+  },
+  "ikoria-lair-of-behemoths-ruthless-regiment": {
+   "ctPrice": 323.67,
+   "ctUrl": "https://www.cardtrader.com/en/cards/107982",
+   "name": "Ikoria Lair of Behemoths – Ruthless Regiment",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "ikoria-lair-of-behemoths-symbiotic-swarm": {
+   "ctPrice": 352.67,
+   "ctUrl": "https://www.cardtrader.com/en/cards/107983",
+   "name": "Ikoria Lair of Behemoths – Symbiotic Swarm",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "ikoria-lair-of-behemoths-timeless-wisdom": {
+   "ctPrice": 524.9,
+   "ctUrl": "https://www.cardtrader.com/en/cards/107980",
+   "name": "Ikoria Lair of Behemoths – Timeless Wisdom",
+   "shopName": "Magic Cafe",
+   "shopPrice": 389.99,
+   "shopUrl": "https://magiccafe.eu/product/ikoria-lair-of-behemoths-commander-timeless-wisdom/"
+  },
+  "innistrad-crimson-vow-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Innistrad – Crimson Vow – -",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "innistrad-crimson-vow-spirit-squadron": {
+   "ctPrice": 352.67,
+   "ctUrl": "https://www.cardtrader.com/en/cards/164141",
+   "name": "Innistrad Crimson Vow Spirit Squadron",
+   "shopName": "Magic Cafe",
+   "shopPrice": 359.99,
+   "shopUrl": "https://magiccafe.eu/product/innistrad-crimson-vow-commander-deck-spirit-squadron/"
+  },
+  "innistrad-crimson-vow-vampiric-bloodline": {
+   "ctPrice": 462.03,
+   "ctUrl": "https://www.cardtrader.com/en/cards/164140",
+   "name": "Innistrad Crimson Vow | \"Vampiric Bloodline",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "innistrad-midnight-hunt-coven-counters": {
+   "ctPrice": 334.82,
+   "ctUrl": "https://www.cardtrader.com/en/cards/164138",
+   "name": "Innistrad Midnight Hunt | \"Coven Counters",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "innistrad-midnight-hunt-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Innistrad – Midnight Hunt – -",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "innistrad-midnight-hunt-undead-unleashed": {
+   "ctPrice": 705.43,
+   "ctUrl": "https://www.cardtrader.com/en/cards/164137",
+   "name": "Innistrad Midnight Hunt | \"Undead Unleashed",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "kaldheim-elven-empire": {
+   "ctPrice": 702.72,
+   "ctUrl": "https://www.cardtrader.com/en/cards/151469",
+   "name": "Kaldheim Elven Empire",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "kaldheim-elven-empire-phantom-premonition": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Kaldheim – Elven Empire + Phantom Premonition",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "kaldheim-phantom-premonition": {
+   "ctPrice": 243.35,
+   "ctUrl": "https://www.cardtrader.com/en/cards/151470",
+   "name": "Kaldheim Phantom Premonition",
+   "shopName": "Magic Cafe",
+   "shopPrice": 219.99,
+   "shopUrl": "https://magiccafe.eu/product/kaldheim-commander-deck-phantom-premonition/"
+  },
+  "kamigawa-neon-dynasty-buckle-up": {
+   "ctPrice": 265.23,
+   "ctUrl": "https://www.cardtrader.com/en/cards/202622",
+   "name": "Kamigawa Neon Dynasty | \"Buckle Up",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "kamigawa-neon-dynasty-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Kamigawa – Neon Dynasty – -",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "kamigawa-neon-dynasty-upgrades-unleashed": {
+   "ctPrice": 221.48,
+   "ctUrl": "https://www.cardtrader.com/en/cards/202623",
+   "name": "Kamigawa Neon Dynasty | \"Upgrades Unleashed",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "legends-battle-for-baldur-s-gate-draconic-dissent": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Legends – Battle for Baldur's Gate – Draconic Dissent",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "legends-battle-for-baldur-s-gate-exit-from-exile": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Legends – Battle for Baldur's Gate – Exit From Exile",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "legends-battle-for-baldur-s-gate-mind-flayarrrs": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Legends – Battle for Baldur's Gate – Mind Flayarrrs",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "legends-battle-for-baldur-s-gate-party-time": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Legends – Battle for Baldur's Gate – Party Time",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "legends-battle-for-baldur-s-gate-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Legends – Battle for Baldur's Gate – -",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "lorwyn-eclipsed": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Lorwyn Eclipsed",
+   "shopName": "Magic Cafe",
+   "shopPrice": 434.99,
+   "shopUrl": "https://magiccafe.eu/product/lorwyn-eclipsed-commander-decks/"
+  },
+  "lorwyn-eclipsed-blight-curse": {
+   "ctPrice": 172.53,
+   "ctUrl": "https://www.cardtrader.com/en/cards/352408",
+   "name": "Lorwyn Eclipsed – Blight Curse",
+   "shopName": "Magic Cafe",
+   "shopPrice": 219.99,
+   "shopUrl": "https://magiccafe.eu/product/lorwyn-eclipsed-commander-decks-blight-curse/"
+  },
+  "lorwyn-eclipsed-dance-of-the-elements": {
+   "ctPrice": 199.61,
+   "ctUrl": "https://www.cardtrader.com/en/cards/352407",
+   "name": "Lorwyn Eclipsed – Dance of the Elements",
+   "shopName": "Frost Magic",
+   "shopPrice": 180,
+   "shopUrl": "https://frostmagic.pl/pl/products/lorwyn-eclipsed-dance-of-the-elements-commander-deck"
+  },
+  "lorwyn-eclipsed-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Lorwyn Eclipsed",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "march-of-the-machine-call-for-backup": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "March of the Machine Call for Backup",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "march-of-the-machine-cavalry-charge": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "March of the Machine Cavalry Charge",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "march-of-the-machine-divine-convocation": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "March of the Machine Divine Convocation",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "march-of-the-machine-growing-threat": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "March of the Machine Growing Threat",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "march-of-the-machine-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "March of the Machine – -",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "march-of-the-machine-tinker-time": {
+   "ctPrice": 193.0,
+   "ctUrl": "https://www.cardtrader.com/en/cards/238106",
+   "name": "March of the Machine Tinker Time",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "marvel-super-heroes-avengers-assemble": {
+   "ctPrice": 177.25,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370631",
+   "name": "Marvel Super Heroes – Avengers Assemble",
+   "shopName": "Frost Magic",
+   "shopPrice": 240,
+   "shopUrl": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-avengers-assemble-commander-deck"
+  },
+  "marvel-super-heroes-avengers-assemble-collector-deck": {
+   "ctPrice": 348.39,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370635",
+   "name": "Marvel Super Heroes – Avengers Assemble",
+   "shopName": "Pan Mysza",
+   "shopPrice": 560.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Collectors-Edition-Avengers-Assemble/11767"
+  },
+  "marvel-super-heroes-collector-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Marvel Super Heroes",
+   "shopName": "Wilczek",
+   "shopPrice": 1849.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-commander-deck-set.html"
+  },
+  "marvel-super-heroes-doom-prevails": {
+   "ctPrice": 239.42,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370633",
+   "name": "Marvel Super Heroes – Doom Prevails",
+   "shopName": "Cardstore",
+   "shopPrice": 260.0,
+   "shopUrl": "https://cardstore.pl/commander/31275-commander-marvel-super-heroes-doom-prevails.html"
+  },
+  "marvel-super-heroes-doom-prevails-collector-deck": {
+   "ctPrice": 418.29,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370636",
+   "name": "Marvel Super Heroes – Doom Prevails",
+   "shopName": "Cardstore",
+   "shopPrice": 566.0,
+   "shopUrl": "https://cardstore.pl/commander/31279-collector-s-commander-marvel-super-heroes-doom-prevails-195166313085.html"
+  },
+  "marvel-super-heroes-fantastic-four": {
+   "ctPrice": 137.88,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370632",
+   "name": "Marvel Super Heroes – Fantastic Four",
+   "shopName": "Frost Magic",
+   "shopPrice": 220,
+   "shopUrl": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-the-fantastic-four-commander-deck"
+  },
+  "marvel-super-heroes-fantastic-four-collector-deck": {
+   "ctPrice": 335.22,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370637",
+   "name": "Marvel Super Heroes – Fantastic Four",
+   "shopName": "Pan Mysza",
+   "shopPrice": 560.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Collectors-Edition-Fantastic-Four/11764"
+  },
+  "marvel-super-heroes-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Marvel Super Heroes",
+   "shopName": "Time4Magic",
+   "shopPrice": 1049.0,
+   "shopUrl": "https://time4magic.pl/marvel-super-heroes-commander-deck-set"
+  },
+  "marvel-super-heroes-wakanda-forever": {
+   "ctPrice": 151.01,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370630",
+   "name": "Marvel Super Heroes – Wakanda Forever",
+   "shopName": "Frost Magic",
+   "shopPrice": 230,
+   "shopUrl": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-wakanda-forever-commander-deck"
+  },
+  "marvel-super-heroes-wakanda-forever-collector-deck": {
+   "ctPrice": 304.64,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370634",
+   "name": "Marvel Super Heroes – Wakanda Forever",
+   "shopName": "Cardstore",
+   "shopPrice": 566.0,
+   "shopUrl": "https://cardstore.pl/commander/31277-collector-s-commander-marvel-super-heroes-wakanda-forever-195166313085.html"
+  },
+  "masters-eldrazi-unbound": {
+   "ctPrice": 1358.89,
+   "ctUrl": "https://www.cardtrader.com/en/cards/238387",
+   "name": "Masters – Eldrazi Unbound",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "masters-enduring-enchantments": {
+   "ctPrice": 418.38,
+   "ctUrl": "https://www.cardtrader.com/en/cards/238391",
+   "name": "Masters – Enduring Enchantments",
+   "shopName": "Magic Cafe",
+   "shopPrice": 525.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-masters-commander-deck-enduring-enchantments/"
+  },
+  "masters-planeswalker-party": {
+   "ctPrice": 1107.54,
+   "ctUrl": "https://www.cardtrader.com/en/cards/238393",
+   "name": "Masters – Planeswalker Party",
+   "shopName": "Magic Cafe",
+   "shopPrice": 349.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-masters-commander-deck-planeswalker-party/"
+  },
+  "masters-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Masters",
+   "shopName": "Magic Cafe",
+   "shopPrice": 3009.99,
+   "shopUrl": "https://magiccafe.eu/product/commander-masters-commander-deck-display-4/"
+  },
+  "masters-sliver-swarm": {
+   "ctPrice": 921.44,
+   "ctUrl": "https://www.cardtrader.com/en/cards/238394",
+   "name": "Masters – Sliver Swarm",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "modern-horizons-3-collector-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Modern Horizons 3",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "modern-horizons-3-creative-energy": {
+   "ctPrice": 177.04,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279380",
+   "name": "Modern Horizons 3 – Creative Energy",
+   "shopName": "Wilczek",
+   "shopPrice": 199.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-modern-horizons-3-creative-energy.html"
+  },
+  "modern-horizons-3-creative-energy-collector-deck": {
+   "ctPrice": 326.08,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279376",
+   "name": "Modern Horizons 3 |\"Creative Energy",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "modern-horizons-3-eldrazi-incursion": {
+   "ctPrice": 654.16,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279379",
+   "name": "Modern Horizons 3 |\"Eldrazi Incursion",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "modern-horizons-3-eldrazi-incursion-collector-deck": {
+   "ctPrice": 1315.15,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279375",
+   "name": "Modern Horizons 3 |\"Eldrazi Incursion",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "modern-horizons-3-graveyard-overdrive": {
+   "ctPrice": 216.93,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279382",
+   "name": "Modern Horizons 3 – Graveyard Overdrive",
+   "shopName": "Magic Cafe",
+   "shopPrice": 215.99,
+   "shopUrl": "https://magiccafe.eu/product/modern-horizons-3-commander-deck-graveyard-overdrive/"
+  },
+  "modern-horizons-3-graveyard-overdrive-collector-deck": {
+   "ctPrice": 614.97,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279378",
+   "name": "Modern Horizons 3 |\"Graveyard Overdrive",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "modern-horizons-3-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Modern Horizons 3",
+   "shopName": "Mr. Puggy",
+   "shopPrice": 999.99,
+   "shopUrl": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Modern-Horizons-III-Commander-Decks-Display-4-decks/13862"
+  },
+  "modern-horizons-3-tricky-terrain": {
+   "ctPrice": 282.77,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279381",
+   "name": "Modern Horizons 3 |\"Tricky Terrain",
+   "shopName": "XJoy",
+   "shopPrice": 269.99,
+   "shopUrl": "https://www.xjoy.pl/mtg-commander/21144-mtg-modern-horizons-3-commander-deck-tricky-terrain.html"
+  },
+  "modern-horizons-3-tricky-terrain-collector-deck": {
+   "ctPrice": 746.42,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279377",
+   "name": "Modern Horizons 3 |\"Tricky Terrain",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "murders-at-karlov-manor-blame-game": {
+   "ctPrice": 387.76,
+   "ctUrl": "https://www.cardtrader.com/en/cards/270490",
+   "name": "Murders at Karlov Manor Blame Game",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "murders-at-karlov-manor-deadly-disguise": {
+   "ctPrice": 393.66,
+   "ctUrl": "https://www.cardtrader.com/en/cards/270487",
+   "name": "Murders at Karlov Manor Deadly Disguise",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "murders-at-karlov-manor-deep-clue-sea": {
+   "ctPrice": 201.84,
+   "ctUrl": "https://www.cardtrader.com/en/cards/270492",
+   "name": "Murders at Karlov Manor Deep Clue Sea",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "murders-at-karlov-manor-revenant-recon": {
+   "ctPrice": 352.67,
+   "ctUrl": "https://www.cardtrader.com/en/cards/270489",
+   "name": "Murders at Karlov Manor Revenant Recon",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "murders-at-karlov-manor-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Murders at Karlov Manor",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "outlaws-of-thunder-junction-desert-bloom": {
+   "ctPrice": 445.5,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279476",
+   "name": "Outlaws of Thunder Junction – Desert Bloom",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "outlaws-of-thunder-junction-grand-larceny": {
+   "ctPrice": 658.71,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279477",
+   "name": "Outlaws of Thunder Junction Grand Larceny",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "outlaws-of-thunder-junction-most-wanted": {
+   "ctPrice": 546.77,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279473",
+   "name": "Outlaws of Thunder Junction Most Wanted",
+   "shopName": "Magic Cafe",
+   "shopPrice": 429.99,
+   "shopUrl": "https://magiccafe.eu/product/outlaws-of-thunder-junction-commander-deck-most-wanted/"
+  },
+  "outlaws-of-thunder-junction-quick-draw": {
+   "ctPrice": 615.1,
+   "ctUrl": "https://www.cardtrader.com/en/cards/279478",
+   "name": "Outlaws of Thunder Junction Quick Draw",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "outlaws-of-thunder-junction-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Outlaws of Thunder Junction",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "phyrexia-all-will-be-one-corrupting-influence": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Phyrexia – All Will Be One Corrupting Influence",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "phyrexia-all-will-be-one-rebellion-rising": {
+   "ctPrice": 265.23,
+   "ctUrl": "https://www.cardtrader.com/en/cards/231931",
+   "name": "Phyrexia All Will Be One | \"Rebellion Rising",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "phyrexia-all-will-be-one-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Phyrexia – All Will Be One",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "reality-fracture-multiverse-reforged": {
+   "ctPrice": 225.9,
+   "ctUrl": "https://www.cardtrader.com/en/cards/389403",
+   "name": "Reality Fracture – Multiverse Reforged",
+   "shopName": "Mr. Puggy",
+   "shopPrice": 199.99,
+   "shopUrl": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Reality-Fracture-Commander-Deck/14242"
+  },
+  "secrets-of-strixhaven-lorehold-spirit": {
+   "ctPrice": 155.38,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370598",
+   "name": "Secrets of Strixhaven Lorehold Spirit",
+   "shopName": "Dragoneye",
+   "shopPrice": 184.9,
+   "shopUrl": "https://dragoneye.pl/magic-the-gathering-secrets-of-strixhaven-lorehold-spirit-p-12368.html"
+  },
+  "secrets-of-strixhaven-prismari-artistry": {
+   "ctPrice": 163.69,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370596",
+   "name": "Secrets of Strixhaven Prismari Artistry",
+   "shopName": "Frost Magic",
+   "shopPrice": 180,
+   "shopUrl": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-prismari-artistry-commander-deck"
+  },
+  "secrets-of-strixhaven-quandrix-unlimited": {
+   "ctPrice": 153.24,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370599",
+   "name": "Secrets of Strixhaven Quandrix Unlimited",
+   "shopName": "Frost Magic",
+   "shopPrice": 180,
+   "shopUrl": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-quandrix-unlimited-commander-deck"
+  },
+  "secrets-of-strixhaven-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Secrets of Strixhaven",
+   "shopName": "Magic Cafe",
+   "shopPrice": 999.99,
+   "shopUrl": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-decks-set-5/"
+  },
+  "secrets-of-strixhaven-silverquill-influence": {
+   "ctPrice": 218.38,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370595",
+   "name": "Secrets of Strixhaven Silverquill Influence",
+   "shopName": "Frost Magic",
+   "shopPrice": 240,
+   "shopUrl": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-silverquill-influence-commander-deck"
+  },
+  "secrets-of-strixhaven-witherbloom-pestilence": {
+   "ctPrice": 219.47,
+   "ctUrl": "https://www.cardtrader.com/en/cards/370597",
+   "name": "Secrets of Strixhaven Witherbloom Pestilence",
+   "shopName": "Magic Cafe",
+   "shopPrice": 254.5,
+   "shopUrl": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-witherbloom-pestilence/"
+  },
+  "star-trek-collector-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Star Trek",
+   "shopName": "Wilczek",
+   "shopPrice": 2299.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-set.html"
+  },
+  "star-trek-federation-fleet": {
+   "ctPrice": 316.41,
+   "ctUrl": "https://www.cardtrader.com/en/cards/400888",
+   "name": "Star Trek – Federation Fleet",
+   "shopName": "Time4Magic",
+   "shopPrice": 299.0,
+   "shopUrl": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
+  },
+  "star-trek-federation-fleet-collector-deck": {
+   "ctPrice": 702.46,
+   "ctUrl": "https://www.cardtrader.com/en/cards/400892",
+   "name": "Star Trek – Federation Fleet",
+   "shopName": "Wilczek",
+   "shopPrice": 699.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
+  },
+  "star-trek-klingon-fury": {
+   "ctPrice": 316.41,
+   "ctUrl": "https://www.cardtrader.com/en/cards/400890",
+   "name": "Star Trek – Klingon Fury",
+   "shopName": "Time4Magic",
+   "shopPrice": 299.0,
+   "shopUrl": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
+  },
+  "star-trek-klingon-fury-collector-deck": {
+   "ctPrice": 702.41,
+   "ctUrl": "https://www.cardtrader.com/en/cards/400894",
+   "name": "Star Trek – Klingon Fury",
+   "shopName": "Wilczek",
+   "shopPrice": 699.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-klingon-fury.html"
+  },
+  "star-trek-landing-party": {
+   "ctPrice": 316.41,
+   "ctUrl": "https://www.cardtrader.com/en/cards/400889",
+   "name": "Star Trek – Landing Party",
+   "shopName": "Time4Magic",
+   "shopPrice": 299.0,
+   "shopUrl": "https://time4magic.pl/mtg-star-trek-landing-party-commander-deck"
+  },
+  "star-trek-landing-party-collector-deck": {
+   "ctPrice": 702.46,
+   "ctUrl": "https://www.cardtrader.com/en/cards/400893",
+   "name": "Star Trek – Landing Party",
+   "shopName": "Wilczek",
+   "shopPrice": 699.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-landing-party.html"
+  },
+  "star-trek-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Star Trek",
+   "shopName": "Frost Magic",
+   "shopPrice": 1029,
+   "shopUrl": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
+  },
+  "star-trek-we-are-the-borg": {
+   "ctPrice": 316.41,
+   "ctUrl": "https://www.cardtrader.com/en/cards/400891",
+   "name": "Star Trek – We Are the Borg",
+   "shopName": "Time4Magic",
+   "shopPrice": 299.0,
+   "shopUrl": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
+  },
+  "star-trek-we-are-the-borg-collector-deck": {
+   "ctPrice": 702.46,
+   "ctUrl": "https://www.cardtrader.com/en/cards/400895",
+   "name": "Star Trek – We Are The Borg",
+   "shopName": "Wilczek",
+   "shopPrice": 699.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-we-are-the-borg.html"
+  },
+  "streets-of-new-capenna-bedecked-brokers": {
+   "ctPrice": 326.51,
+   "ctUrl": "https://www.cardtrader.com/en/cards/208729",
+   "name": "Streets of New Capenna Bedecked Brokers",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "streets-of-new-capenna-cabaretti-cacophony": {
+   "ctPrice": 445.5,
+   "ctUrl": "https://www.cardtrader.com/en/cards/208728",
+   "name": "Streets of New Capenna Cabaretti Cacophony",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "streets-of-new-capenna-maestros-massacre": {
+   "ctPrice": 440.25,
+   "ctUrl": "https://www.cardtrader.com/en/cards/208725",
+   "name": "Streets of New Capenna Maestros Massacre",
+   "shopName": "Magic Cafe",
+   "shopPrice": 301.99,
+   "shopUrl": "https://magiccafe.eu/product/streets-of-new-capenna-commander-deck-maestros-massacre/"
+  },
+  "streets-of-new-capenna-obscura-operation": {
+   "ctPrice": 247.73,
+   "ctUrl": "https://www.cardtrader.com/en/cards/208726",
+   "name": "Streets of New Capenna Obscura Operation",
+   "shopName": "Magic Cafe",
+   "shopPrice": 248.99,
+   "shopUrl": "https://magiccafe.eu/product/streets-of-new-capenna-commander-deck-obscura-operation/"
+  },
+  "streets-of-new-capenna-riveteers-rampage": {
+   "ctPrice": 658.97,
+   "ctUrl": "https://www.cardtrader.com/en/cards/208727",
+   "name": "Streets of New Capenna Riveteers Rampage",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "streets-of-new-capenna-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Streets of New Capenna",
+   "shopName": "Wilczek",
+   "shopPrice": 949.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-streets-of-new-capenna-deck-set.html"
+  },
+  "strixhaven-school-of-mages-lorehold-legacies": {
+   "ctPrice": 437.41,
+   "ctUrl": "https://www.cardtrader.com/en/cards/154975",
+   "name": "Strixhaven – School of Mages – Lorehold Legacies",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "strixhaven-school-of-mages-prismari-performance": {
+   "ctPrice": 221.52,
+   "ctUrl": "https://www.cardtrader.com/en/cards/154978",
+   "name": "Strixhaven – School of Mages – Prismari Performance",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "strixhaven-school-of-mages-quantum-quandrix": {
+   "ctPrice": 437.41,
+   "ctUrl": "https://www.cardtrader.com/en/cards/154976",
+   "name": "Strixhaven – School of Mages – Quantum Quandrix",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "strixhaven-school-of-mages-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Strixhaven – School of Mages – -",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "strixhaven-school-of-mages-silverquill-statement": {
+   "ctPrice": 568.64,
+   "ctUrl": "https://www.cardtrader.com/en/cards/154979",
+   "name": "Strixhaven – School of Mages – Silverquill Statement",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "strixhaven-school-of-mages-whiterbloom-witchcraft": {
+   "ctPrice": 524.9,
+   "ctUrl": "https://www.cardtrader.com/en/cards/154977",
+   "name": "Strixhaven – School of Mages – Whiterbloom Witchcraft",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "tarkir-dragonstorm-abzan-armor": {
+   "ctPrice": 282.77,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322531",
+   "name": "Tarkir – Dragonstorm Abzan Armor",
+   "shopName": "Magic Cafe",
+   "shopPrice": 399.99,
+   "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-abzan-armor/"
+  },
+  "tarkir-dragonstorm-jeskai-striker": {
+   "ctPrice": 190.86,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322532",
+   "name": "Tarkir – Dragonstorm Jeskai Striker",
+   "shopName": "Magic Cafe",
+   "shopPrice": 249.99,
+   "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-jeskai-striker/"
+  },
+  "tarkir-dragonstorm-mardu-surge": {
+   "ctPrice": 222.09,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322530",
+   "name": "Tarkir – Dragonstorm Mardu Surge",
+   "shopName": "Magic Cafe",
+   "shopPrice": 399.99,
+   "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-mardu-surge/"
+  },
+  "tarkir-dragonstorm-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Tarkir – Dragonstorm",
+   "shopName": "Magic Cafe",
+   "shopPrice": 1699.99,
+   "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-decks-set-5/"
+  },
+  "tarkir-dragonstorm-sultai-arisen": {
+   "ctPrice": 435.79,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322533",
+   "name": "Tarkir – Dragonstorm Sultai Arisen",
+   "shopName": "Magic Cafe",
+   "shopPrice": 599.99,
+   "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-sultai-arisen/"
+  },
+  "tarkir-dragonstorm-temur-roar": {
+   "ctPrice": 427.08,
+   "ctUrl": "https://www.cardtrader.com/en/cards/322529",
+   "name": "Tarkir – Dragonstorm Temur Roar",
+   "shopName": "Magic Cafe",
+   "shopPrice": 539.99,
+   "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-temur-roar/"
+  },
+  "teenage-mutant-ninja-turtles-turtle-power": {
+   "ctPrice": 168.29,
+   "ctUrl": "https://www.cardtrader.com/en/cards/354096",
+   "name": "Teenage Mutant Ninja Turtles – Turtle Power!",
+   "shopName": "Wargamer",
+   "shopPrice": 190.0,
+   "shopUrl": "https://sklep.wargamer.pl/pl/teenage-mutant-ninja-turtles/16426-mtg-tmnt-cd-tp.html"
+  },
+  "the-brother-s-war-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "The Brother's War – -",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "the-brothers-war-mishra-s-burnished-banner": {
+   "ctPrice": 348.39,
+   "ctUrl": "https://www.cardtrader.com/en/cards/224492",
+   "name": "The Brothers' War | \"Mishra's Burnished Banner",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "the-brothers-war-urza-s-iron-alliance": {
+   "ctPrice": 832.9,
+   "ctUrl": "https://www.cardtrader.com/en/cards/224491",
+   "name": "The Brothers' War | \"Urza's Iron Alliance",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "the-lord-of-the-rings-tales-of-middle-earth-elven-counci": {
+   "ctPrice": 255.56,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246480",
+   "name": "The Lord of the Rings Tales of Middle-earth Elven Council",
+   "shopName": "Magic Cafe",
+   "shopPrice": 361.99,
+   "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-elven-council/"
+  },
+  "the-lord-of-the-rings-tales-of-middle-earth-food-and-fel": {
+   "ctPrice": 372.27,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246478",
+   "name": "The Lord of the Rings Tales of Middle-earth Food and Fellowship",
+   "shopName": "Magic Cafe",
+   "shopPrice": 578.5,
+   "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-food-and-fellowship/"
+  },
+  "the-lord-of-the-rings-tales-of-middle-earth-riders-of-ro": {
+   "ctPrice": 330.8,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246483",
+   "name": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
+   "shopName": "Magic Cafe",
+   "shopPrice": 329.99,
+   "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-riders-of-rohan/"
+  },
+  "the-lord-of-the-rings-tales-of-middle-earth-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "The Lord of the Rings – Tales of Middle-earth",
+   "shopName": "Magic Cafe",
+   "shopPrice": 1599.99,
+   "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-set-4/"
+  },
+  "the-lord-of-the-rings-tales-of-middle-earth-the-hosts-of": {
+   "ctPrice": 416.19,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246482",
+   "name": "The Lord of the Rings Tales of Middle-earth The Hosts of Mordor",
+   "shopName": "Magic Cafe",
+   "shopPrice": 613.99,
+   "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-the-hosts-of-mordor/"
+  },
+  "the-lost-caverns-of-ixalan-ahoy-mateys": {
+   "ctPrice": 389.29,
+   "ctUrl": "https://www.cardtrader.com/en/cards/261730",
+   "name": "The Lost Caverns of Ixalan Ahoy Mateys",
+   "shopName": "Magic Cafe",
+   "shopPrice": 219.99,
+   "shopUrl": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
+  },
+  "the-lost-caverns-of-ixalan-blood-rites": {
+   "ctPrice": 656.13,
+   "ctUrl": "https://www.cardtrader.com/en/cards/261732",
+   "name": "The Lost Caverns of Ixalan Blood Rites",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "the-lost-caverns-of-ixalan-explorers-of-the-deep": {
+   "ctPrice": 746.42,
+   "ctUrl": "https://www.cardtrader.com/en/cards/261733",
+   "name": "The Lost Caverns of Ixalan Explorers of the Deep",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "the-lost-caverns-of-ixalan-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "The Lost Caverns of Ixalan",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "the-lost-caverns-of-ixalan-veloci-ramp-tor": {
+   "ctPrice": 864.58,
+   "ctUrl": "https://www.cardtrader.com/en/cards/261731",
+   "name": "The Lost Caverns of Ixalan Veloci-ramp-tor",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "warhammer-40k-collector-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Warhammer 40K – -",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "warhammer-40k-forces-of-the-imperium": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Warhammer 40K Forces of the Imperium",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "warhammer-40k-necron-dynasties": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Warhammer 40K Necron Dynasties",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "warhammer-40k-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Warhammer 40K",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "warhammer-40k-the-ruinous-powers": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Warhammer 40K The Ruinous Powers",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "warhammer-40k-tyranid-swarm": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Warhammer 40K Tyranid Swarm",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "wilds-of-eldraine": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Wilds of Eldraine",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "wilds-of-eldraine-fae-dominion": {
+   "ctPrice": 965.1,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246961",
+   "name": "Wilds of Eldraine \"Fae Dominion",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "wilds-of-eldraine-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Wilds of Eldraine",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "wilds-of-eldraine-virtue-and-valor": {
+   "ctPrice": 265.18,
+   "ctUrl": "https://www.cardtrader.com/en/cards/246960",
+   "name": "Wilds of Eldraine \"Virtue and Valor",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "zendikar-rising-land-s-wrath": {
+   "ctPrice": 221.48,
+   "ctUrl": "https://www.cardtrader.com/en/cards/146527",
+   "name": "Zendikar Rising – Land's Wrath",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  },
+  "zendikar-rising-sneak-attack": {
+   "ctPrice": 256.78,
+   "ctUrl": "https://www.cardtrader.com/en/cards/146528",
+   "name": "Zendikar Rising – Sneak Attack",
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
+  }
+ }
+}

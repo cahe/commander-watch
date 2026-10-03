@@ -795,5 +795,22 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389398"
+ },
+ {
+  "at": "2026-10-03T01:07:08Z",
+  "best": {
+   "price": 179.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "cardtrader-389398",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 172.01,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389398"
  }
 ]
