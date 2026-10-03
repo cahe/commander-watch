@@ -462,6 +462,26 @@ def test_telegram_alerts():
     assert a.send({}) == 0 and calls == []  # nothing to alert: the Worker isn't even asked
 
 
+def test_cardtrader_new_lows():
+    ct = {"id": "cardtrader-1", "shop": "cardtrader", "price": 200.0, "cheapest": True}
+    logged = []
+
+    def hour(price, cheapest=True, newly=False):
+        ct["price"], ct["cheapest"] = price, cheapest
+        logged.extend((c["price"], low) for c, low in check.cardtrader_new_lows([ct], [ct] if newly else []))
+
+    hour(200.0, newly=True)   # just became the cheapest: that's the "cheapest" event; the low starts here
+    hour(197.0)               # 1.5% down: drift, not news
+    hour(195.0)               # 2.5% below the logged low
+    hour(205.0)               # an offer sold out: up again
+    hour(195.0)               # back down to an earlier price: not a new low
+    hour(190.0)               # a new low
+    hour(180.0, cheapest=False)
+    assert "lowLogged" not in ct  # no longer the cheapest: the low is forgotten
+    hour(170.0, newly=True)   # cheapest again: starts over, no "price" event
+    assert logged == [(195.0, 200.0), (190.0, 195.0)]
+
+
 def test_vanished_listing_is_sold_out():
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()

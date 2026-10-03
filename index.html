@@ -209,7 +209,7 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
 
   <section class="changes" aria-labelledby="changes-h">
     <div class="changes-head"><h2 id="changes-h">Changes</h2><span class="sum" id="changes-sum">Loading…</span>
-      <button class="soundbtn" id="sound" type="button" aria-pressed="false" title="Play a sound when new changes come in">
+      <button class="soundbtn" id="sound" type="button" aria-pressed="false" title="Play a sound when a deck is back in stock, new, or the new cheapest option">
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M3 6h2.5L9 3v10L5.5 10H3z"/><path class="wave" d="M11.5 5.5a3.5 3.5 0 0 1 0 5M13.5 3.5a6.5 6.5 0 0 1 0 9"/><path class="mute" d="M11.5 6l4 4M15.5 6l-4 4"/>
         </svg><span>Sound off</span></button></div>
@@ -661,7 +661,7 @@ function renderChangeRow(r) {
   } else if (e.kind === "price") {
     const down = e.price < e.old, pct = Math.round((e.price - e.old) / e.old * 100);
     label = down ? "Price down" : "Price up"; cls = down ? "ok" : "up";
-    main = el("span", {}, deck(e), ` at ${shopName(e.shop)} `,
+    main = el("span", {}, deck(e), ` ${e.shop === "cardtrader" ? "on" : "at"} ${shopName(e.shop)} `,
       el("span", { class: "num", text: `${money(e.shop, e.old)} → ${money(e.shop, e.price)}` }), " ",
       el("span", { class: "num " + (down ? "down" : "upc"), text: `${pct > 0 ? "+" : ""}${pct}%` }));
     sub = changeContext(e);
@@ -867,6 +867,11 @@ $("sound").addEventListener("click", () => {
 for (const ev of ["pointerdown", "keydown"]) document.addEventListener(ev, () => { if (soundOn) unlockAudio(); }, { once: true, capture: true });
 renderSound();
 const newestChange = () => (state.changes || []).reduce((m, e) => (e.at > m ? e.at : m), "");
+// The sound is for good news only: a deck back in stock, a new deck, or a new cheapest option
+// (CardTrader becoming the cheapest, or a shop's price drop that makes it the cheapest).
+// "No longer cheapest", sold out and other price moves stay quiet.
+const chimes = (e) => e.kind === "restock" || e.kind === "preorder" || e.kind === "new" || e.kind === "cheapest"
+  || (e.kind === "price" && e.price < e.old && e.cheapest === true);
 
 let loadedAt = 0, dataKey = "";
 async function load() {
@@ -888,7 +893,7 @@ async function load() {
       state.history = JSON.parse(history);
       dataKey = key;
       renderAll();
-      if (soundOn && before !== null && newestChange() > before) playSound();
+      if (soundOn && before !== null && state.changes.some(e => e.at > before && chimes(e))) playSound();
     }
     updateBadge();
     lookedAt();
