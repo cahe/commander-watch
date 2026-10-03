@@ -413,6 +413,69 @@ def test_preorder_counts_as_in_stock():
     assert pushes == [0, 1, 0, 0, 1]
 
 
+def test_deck_keys_are_stable():
+    decks = [{"id": "a-1", "shop": "a", "name": "Star Trek - We Are The Borg Commander Deck"},
+             {"id": "b-1", "shop": "b", "name": "MTG Star Trek: We Are the Borg"},
+             {"id": "b-2", "shop": "b", "name": "Star Trek Collector's Edition Commander Deck - We Are The Borg"}]
+    check.assign_groups(decks)
+    assert decks[0]["deck"] == decks[1]["deck"] == "star-trek-we-are-the-borg"
+    assert decks[2]["deck"].endswith("-collector-deck")
+    # A shop joining later, with a name that sorts first, renames the group id but keeps the key.
+    decks.insert(0, {"id": "0-1", "shop": "0", "name": "Commander: Star Trek We Are The Borg"})
+    check.assign_groups(decks)
+    assert decks[0]["deck"] == "star-trek-we-are-the-borg" and decks[0]["group"] == "0-1"
+
+
+def test_telegram_bot():
+    import telegram_bot as tb
+    tmp = Path(tempfile.mkdtemp()) / "subscribers.enc"
+    bot = tb.Bot("123:secret", tmp, "https://example.github.io/commander-watch/")
+    sent, updates = [], []
+
+    def fake(method, **p):
+        if method == "getUpdates":
+            out, updates[:] = list(updates), []
+            return out
+        if method == "sendMessage" and p["chat_id"] == 666:
+            raise tb.TelegramError(403, "Forbidden: bot was blocked by the user")
+        sent.append((method, p))
+        return {}
+    bot.call = fake
+    decks = {"borg": {"name": "Star Trek – We Are The Borg", "price": 299.0, "shop": "Time4Magic", "url": "https://x/borg"}}
+    msg = lambda uid, chat, text: {"update_id": uid, "message": {"chat": {"id": chat, "type": "private"}, "text": text}}
+    updates += [msg(1, 42, "/start borg"), msg(2, 43, "/start gone-deck"), msg(3, 666, "/start borg")]
+    bot.handle_updates(decks)
+    assert bot.watching("42") == ["borg"] and bot.watching("43") == [] and bot.watching("666") == []  # 666 blocked us
+    assert "Watching Star Trek – We Are The Borg" in sent[0][1]["text"] and "299,00 zł at Time4Magic" in sent[0][1]["text"]
+    assert "don't know that deck" in sent[1][1]["text"]
+    assert bot.data["offset"] == 4
+    sent.clear()
+    updates.append(msg(4, 42, "/list"))
+    bot.handle_updates(decks)
+    assert sent[0][1]["reply_markup"]["inline_keyboard"][0][0]["callback_data"] == "stop:borg"
+    # Alerts: a price drop and a restock message the deck's subscribers; a small drop doesn't.
+    before = {"borg": {**decks["borg"]}, "other": {"name": "Other", "price": None, "shop": None, "url": None}}
+    after = {"borg": {**decks["borg"], "price": 279.0, "shop": "Wilczek"},
+             "other": {"name": "Other", "price": 150.0, "shop": "XJoy", "url": "https://x/o"}}
+    alerts = tb.deck_alerts(before, after)
+    assert alerts["borg"].startswith("📉 Star Trek – We Are The Borg: 279,00 zł at Wilczek (was 299,00 zł)")
+    assert alerts["other"].startswith("📦 Other can be ordered again: 150,00 zł at XJoy")
+    assert tb.deck_alerts(before, {"borg": {**decks["borg"], "price": 298.5}}) == {}
+    sent.clear()
+    assert bot.send_alerts(alerts) == 1 and sent[0][1]["chat_id"] == 42
+    # Stop button, then the list is stored encrypted: the chat id isn't readable in the file.
+    updates.append({"update_id": 5, "callback_query": {"id": "q", "data": "stop:borg",
+                                                       "message": {"chat": {"id": 42}, "message_id": 9}}})
+    bot.handle_updates(decks)
+    assert bot.watching("42") == []
+    bot.subscribe("42", "borg")
+    bot.save()
+    assert b"42" not in tmp.read_bytes() and b"borg" not in tmp.read_bytes()
+    again = tb.Bot("123:secret", tmp)
+    assert again.watching("42") == ["borg"] and again.data["offset"] == 6
+    assert tb.Bot("999:other-token", tmp).data["chats"] == {}  # a new token can't read it; starts over
+
+
 def test_vanished_listing_is_sold_out():
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()
