@@ -2,7 +2,7 @@ name: Check for new Commander decks
 
 on:
   schedule:
-    - cron: "41 * * * *"   # hourly backup; the main hourly check is started by the bot's Cloudflare Worker (worker/) at :17
+    - cron: "41 * * * *"   # backup: skipped when a check ran in the last 40 min (the Worker in worker/ starts it at :17)
   workflow_dispatch:        # "Run workflow" button for a manual check
     inputs:
       test_push:
@@ -16,13 +16,38 @@ on:
 
 permissions:
   contents: write           # lets the job commit data/decks.json
+  actions: read             # lets the backup run see whether a check ran recently
 
 concurrency:
   group: commander-watch
   cancel-in-progress: false
 
 jobs:
+  # GitHub's schedule is only a backup for the Worker's :17 start, and often runs late. It goes ahead only
+  # if no check succeeded (or is running) in the last 40 minutes, i.e. when the :17 start didn't happen.
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      skip: ${{ steps.recent.outputs.skip }}
+    steps:
+      - id: recent
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          since=$(date -u -d '40 minutes ago' +%Y-%m-%dT%H:%M:%SZ)
+          filter="[.[] | select(.databaseId != $GITHUB_RUN_ID and .createdAt >= \"$since\" and (.conclusion == \"success\" or .status != \"completed\"))] | length"
+          recent=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow check.yml --limit 10 \
+            --json databaseId,createdAt,status,conclusion --jq "$filter")
+          if [ "$recent" -gt 0 ]; then
+            echo "A check ran in the last 40 minutes; skipping this backup run."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
   check:
+    needs: gate
+    if: needs.gate.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
