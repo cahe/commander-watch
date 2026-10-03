@@ -27,6 +27,8 @@ from urllib.parse import urljoin, urlsplit, unquote
 import requests
 from bs4 import BeautifulSoup
 
+import telegram_bot
+
 ROOT = Path(__file__).parent
 DECKS_FILE = ROOT / "data" / "decks.json"
 STATE_FILE = ROOT / "data" / "state.json"
@@ -716,15 +718,41 @@ def assign_groups(decks: list[dict]) -> None:
     members: dict[int, list[int]] = {}
     for i in range(len(decks)):
         members.setdefault(find(i), []).append(i)
-    for idx in members.values():
+    # Biggest groups first, so when a group splits the larger part keeps the deck key.
+    taken: set[str] = set()
+    for idx in sorted(members.values(), key=len, reverse=True):
         names = [clean_name(decks[i]["name"]) for i in idx]
         # The name whose words most shops agree on (so one shop's typo or missing deck name loses), then the shortest.
         agree = Counter(t for i in idx for t in toks[i])
         best = max(range(len(idx)), key=lambda k: (sum(agree[t] for t in toks[idx[k]]), -len(names[k])))
         gid = min(decks[i]["id"] for i in idx)
+        key = deck_key(idx, decks, names[best], kinds[idx[0]], taken)
         for i in idx:
             decks[i]["group"] = gid
             decks[i]["groupName"] = names[best]
+            decks[i]["deck"] = key
+
+
+def deck_key(idx: list[int], decks: list[dict], name: str, kind: str, taken: set[str]) -> str:
+    """A deck's permanent key, for Telegram subscriptions: group ids change as shops join a group, this doesn't.
+
+    The group keeps the key most of its listings already carry; a new deck gets one made from its name
+    and kind ("star-trek-we-are-the-borg", "...-collector", "...-set"), made unique. Telegram start links
+    allow 64 characters of [A-Za-z0-9_-].
+    """
+    keys = Counter(decks[i]["deck"] for i in idx if decks[i].get("deck"))
+    for key, _ in keys.most_common():
+        if key not in taken:
+            taken.add(key)
+            return key
+    slug = re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFKD", name.lower()).encode("ascii", "ignore").decode()).strip("-")
+    suffix = "" if kind == "deck" else "-" + kind.replace(" ", "-")
+    base = (slug[:56 - len(suffix)].rstrip("-") or "deck") + suffix
+    key, n = base, 2
+    while key in taken:
+        key, n = f"{base}-{n}", n + 1
+    taken.add(key)
+    return key
 
 
 def clean_name(name: str) -> str:
@@ -871,6 +899,32 @@ CHANGES_DAYS = 30
 PRICE_STEP = 1.0  # zł; smaller shop price moves aren't logged
 
 
+def deck_prices(decks: list[dict]) -> dict[str, dict]:
+    """Each deck's cheapest orderable shop listing (CardTrader left out), by its permanent key, for Telegram alerts."""
+    out: dict[str, dict] = {}
+    for d in decks:
+        if not d.get("deck") or d["shop"] in QUIET_SHOPS:
+            continue
+        cur = out.setdefault(d["deck"], {"name": d.get("groupName") or d["name"], "price": None, "shop": None, "url": None})
+        if d.get("status") in ORDERABLE and d.get("price") is not None and (cur["price"] is None or d["price"] < cur["price"]):
+            cur.update(price=d["price"], shop=SHOPS[d["shop"]][0] if d["shop"] in SHOPS else d["shop"], url=d["url"])
+    return out
+
+
+def run_telegram(before: dict[str, dict], after: dict[str, dict]) -> None:
+    """Handle the bot's new messages, then alert each deck's subscribers. Never fails the check."""
+    bot = telegram_bot.Bot.from_env(DECKS_FILE.with_name("subscribers.enc"))
+    if not bot:
+        return
+    try:
+        bot.handle_updates(after)
+        sent = bot.send_alerts(telegram_bot.deck_alerts(before, after))
+        print(f"Telegram: {len(bot.data['chats'])} subscribers, {sent} alerts sent")
+    except Exception as e:  # a Telegram outage shouldn't stop the shop data being saved
+        print(f"Telegram: {type(e).__name__}: {e}")
+    bot.save()
+
+
 def history_file() -> Path:
     return DECKS_FILE.with_name("history.json")
 
@@ -994,6 +1048,7 @@ def main() -> int:
     first_run = not decks
     by_id = {d["id"]: d for d in decks}
     by_url = {norm_url(d["url"]): d for d in decks}
+    prices_before = deck_prices(decks)  # for Telegram alerts
 
     new_decks, restocked, alerts = [], [], []
     pending: list[tuple[str, dict, float | None]] = []  # changelog events, finished after grouping
@@ -1101,6 +1156,7 @@ def main() -> int:
     history = load(history_file(), {})
     record_history(history, decks, now.date().isoformat())
     save_history(history)
+    run_telegram(prices_before, deck_prices(decks))
 
     if new_decks:
         lines = [deck_line(d) for d in new_decks]

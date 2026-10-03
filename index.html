@@ -97,6 +97,12 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .price { font: 500 14px var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; display: grid; justify-items: end; gap: 3px; }
 .spark { display: block; color: var(--accent); overflow: visible; }
 .spark .spark-low, .hchart .dot-low { fill: var(--ok); }
+.alertbell { display: inline-flex; vertical-align: -3px; margin-left: 6px; padding: 3px; border-radius: 50%; color: var(--accent); }
+.alertbell svg { width: 17px; height: 17px; stroke-width: 1.7; }
+.alertbell:hover { background: var(--accent-soft); }
+.alertbtn { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font: 500 12px var(--font-body); text-decoration: none; }
+.alertbtn:hover { border-color: var(--accent); background: var(--accent-soft); }
+.alertbell:focus-visible, .alertbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .hbtn { padding: 2px 0; border: 0; background: none; color: var(--accent); font: 500 12px var(--font-body); cursor: pointer; }
 .hbtn:hover .spark { color: var(--fg); }
 .hbtn[aria-expanded="true"] .spark { color: var(--fg); }
@@ -258,6 +264,18 @@ const SHOPS = {
   // Marketplace: prices only (no pushes), converted to PLN, shown only next to decks a shop sells.
   cardtrader: { name: "CardTrader", home: "https://www.cardtrader.com/en/magic", approx: true, extra: true }
 };
+// Telegram bot for single-deck alerts (telegram_bot.py); its "start" link carries the deck's permanent key.
+const TELEGRAM_BOT = "commanderwatchbot";
+const BELL = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11V7a4 4 0 0 1 8 0v4l1.5 1.5h-11z"/><path d="M6.5 14a1.5 1.5 0 0 0 3 0"/></svg>';
+function alertLink(g, cls, label) {
+  const key = g.offers.find(o => o.deck)?.deck;
+  if (!TELEGRAM_BOT || !key) return null;
+  const a = el("a", { class: cls, href: `https://t.me/${TELEGRAM_BOT}?start=${encodeURIComponent(key)}`, target: "_blank", rel: "noopener",
+    title: `Get a Telegram message when ${g.name} gets cheaper or is back in stock`, "aria-label": `Get alerts for ${g.name} on Telegram` });
+  a.innerHTML = BELL;
+  if (label) a.append(el("span", { text: label }));
+  return a;
+}
 const STATUS_LABEL = { in_stock: "In stock", preorder: "Pre-order", out_of_stock: "Out of stock" };
 const OFFER_WORD = { in_stock: "in stock", preorder: "pre-order", out_of_stock: "sold out" };
 // A preorder is shown as in stock: shops label the same release differently, and it ships when the others do.
@@ -411,13 +429,20 @@ function renderList() {
     const st = el("span", { class: "st avail", text: inStock ? `In stock at ${inStock} of ${g.offers.length}` : `Out of stock (${g.offers.length})` });
     if (g.firstSeen) st.append(" ", el("span", { class: "pill new", text: "New" }));
     list.append(el("div", { class: "item", role: "row" },
-      el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null), offers),
+      el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null,
+        alertLink(g, "alertbell")), offers),
       st,
       priceCell(g),
       el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
     if (state.openHistory === g.name) {
       const h = deckHistory(g);
-      if (h) list.append(el("div", { class: "item hrow" }, historyChart(h, g.name)));
+      if (h) {
+        const panel = historyChart(h, g.name);
+        // People looking at a deck's prices are the likeliest to want alerts for it.
+        const a = alertLink(g, "alertbtn", "Message me on Telegram when it gets cheaper or is back in stock");
+        if (a) panel.append(a);
+        list.append(el("div", { class: "item hrow" }, panel));
+      }
     }
   }
   $("catcount").textContent = `${rows.length} of ${listed.length} decks`;
