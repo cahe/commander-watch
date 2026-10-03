@@ -1,0 +1,29 @@
+name: Deploy bot worker
+
+# Deploys the Telegram bot's Cloudflare Worker (worker/) whenever it changes on main, so what runs on
+# Cloudflare always matches the repo. Secrets set in Cloudflare (bot token etc.) are left as they are.
+on:
+  push:
+    branches: [main]
+    paths: ["worker/**"]
+  workflow_dispatch:        # "Run workflow" button for a manual redeploy
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-worker
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: worker
+          wranglerVersion: "4"
