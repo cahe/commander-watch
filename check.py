@@ -923,21 +923,23 @@ def deck_prices(decks: list[dict]) -> dict[str, dict]:
     return out
 
 
-def run_telegram(before: dict[str, dict] | None, after: dict[str, dict]) -> None:
-    """Handle the bot's new messages, then (given `before`) alert each deck's subscribers. Never fails the check."""
-    bot = telegram_bot.Bot.from_env(DECKS_FILE.with_name("subscribers.enc"))
-    if not bot:
-        if before is None:
-            print("TELEGRAM_TOKEN is not set.")
+def bot_file() -> Path:
+    return DECKS_FILE.with_name("bot.json")
+
+
+def run_telegram(before: dict[str, dict], after: dict[str, dict]) -> None:
+    """Publish deck prices for the Telegram bot (the Cloudflare Worker reads data/bot.json), then message the
+    watchers of decks that got cheaper or can be ordered again. Never fails the check."""
+    save(bot_file(), {"decks": {k: {f: v[f] for f in ("name", "shopPrice", "shopName", "shopUrl", "ctPrice", "ctUrl")}
+                                for k, v in after.items()}})
+    alerts = telegram_bot.Alerts.from_env()
+    if not alerts:
         return
     try:
-        bot.ensure_profile()
-        bot.handle_updates(after)
-        sent = bot.send_alerts(telegram_bot.deck_alerts(before, after)) if before is not None else 0
-        print(f"Telegram: {len(bot.data['chats'])} subscribers, {sent} alerts sent")
-    except Exception as e:  # a Telegram outage shouldn't stop the shop data being saved
+        found = telegram_bot.deck_alerts(before, after)
+        print(f"Telegram: {len(found)} decks to alert, {alerts.send(found)} messages sent")
+    except Exception as e:  # the bot being down shouldn't stop the shop data being saved
         print(f"Telegram: {type(e).__name__}: {e}")
-    print("Telegram: subscribers saved" if bot.save() else "Telegram: no subscriber changes")
 
 
 def history_file() -> Path:
@@ -1053,9 +1055,6 @@ def main() -> int:
             print("NTFY_TOPIC is not set.")
             return 1
         notify("Commander Watch test", ["Test push. Notifications are working."], tags="white_check_mark")
-        return 0
-    if "--bot" in sys.argv:  # only answer the Telegram bot's messages (the frequent "Bot replies" workflow); no scan
-        run_telegram(None, deck_prices(load(DECKS_FILE, [])))
         return 0
     if "--cardtrader-discover" in sys.argv:  # print CardTrader's catalogue structure; no scan, nothing saved
         return cardtrader_discover()

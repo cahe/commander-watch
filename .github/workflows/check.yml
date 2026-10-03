@@ -2,7 +2,7 @@ name: Check for new Commander decks
 
 on:
   schedule:
-    - cron: "41 * * * *"   # hourly backup; the main hourly check is started externally via workflow_dispatch
+    - cron: "41 * * * *"   # hourly backup; the main hourly check is started by the bot's Cloudflare Worker (worker/) at :17
   workflow_dispatch:        # "Run workflow" button for a manual check
     inputs:
       test_push:
@@ -42,6 +42,8 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           CARDTRADER_TOKEN: ${{ secrets.CARDTRADER_TOKEN }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          BOT_ALERTS_KEY: ${{ secrets.BOT_ALERTS_KEY }}
+          BOT_API_URL: https://commander-watch-bot.maciej-janowski.workers.dev
           PAGE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: python check.py ${{ inputs.test_push && '--test-push' || '' }} ${{ inputs.cardtrader_discover && '--cardtrader-discover' || '' }}
 

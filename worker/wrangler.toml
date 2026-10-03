@@ -1,0 +1,18 @@
+# Cloudflare Worker for the Telegram bot; see src/index.js. Deploy from this folder: npx wrangler deploy
+name = "commander-watch-bot"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+PAGE_URL = "https://cahe.github.io/commander-watch/"
+DATA_URL = "https://cahe.github.io/commander-watch/data/bot.json"
+GITHUB_REPO = "cahe/commander-watch"
+
+# Starts the hourly check (check.yml) at :17, as cron-job.org did. Times are UTC; :17 is the same in Poland.
+[triggers]
+crons = ["17 * * * *"]
+
+# Who watches which deck. Created with: npx wrangler kv namespace create SUBS
+[[kv_namespaces]]
+binding = "SUBS"
+id = "0609d03db49b44619a236f814bd9d87a"
