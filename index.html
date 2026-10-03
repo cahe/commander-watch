@@ -661,7 +661,7 @@ function renderChangeRow(r) {
   } else if (e.kind === "price") {
     const down = e.price < e.old, pct = Math.round((e.price - e.old) / e.old * 100);
     label = down ? "Price down" : "Price up"; cls = down ? "ok" : "up";
-    main = el("span", {}, deck(e), ` at ${shopName(e.shop)} `,
+    main = el("span", {}, deck(e), ` ${e.shop === "cardtrader" ? "on" : "at"} ${shopName(e.shop)} `,
       el("span", { class: "num", text: `${money(e.shop, e.old)} → ${money(e.shop, e.price)}` }), " ",
       el("span", { class: "num " + (down ? "down" : "upc"), text: `${pct > 0 ? "+" : ""}${pct}%` }));
     sub = changeContext(e);

@@ -889,11 +889,35 @@ def cardtrader_newly_cheapest(decks: list[dict], lost: list | None = None) -> li
     return news
 
 
+def cardtrader_new_lows(decks: list[dict], newly: list[dict]) -> list[tuple[dict, float]]:
+    """CardTrader listings that are the cheapest option and just hit a new low: (listing, previous logged price).
+
+    Its cheapest offer bounces up and down as offers sell and new ones come in, so a drop only counts when it
+    is 2% (and 1 zł) below the lowest price already logged while it's been the cheapest; going back down to an
+    earlier price isn't news. The low starts when it becomes the cheapest and is forgotten when it stops being.
+    """
+    newly_ids = {ct["id"] for ct in newly}
+    out = []
+    for ct in decks:
+        if ct["shop"] not in QUIET_SHOPS:
+            continue
+        if not ct.get("cheapest"):
+            ct.pop("lowLogged", None)
+            continue
+        low = ct.get("lowLogged")
+        if low is None or ct["id"] in newly_ids:
+            ct["lowLogged"] = ct["price"]
+        elif ct["price"] <= low - max(PRICE_STEP, low * 0.02):
+            out.append((ct, low))
+            ct["lowLogged"] = ct["price"]
+    return out
+
+
 # ---------------------------------------------------------------------- changelog
 # data/changes.json is an append-only list of events for the page's "Changes" panel. Each event
 # carries the deck, shop, prices and some context from that moment (where else it's in stock,
-# whether it's now the cheapest). CardTrader only logs "cheapest" / "notcheapest": its raw prices
-# move every hour and would drown the shops' changes.
+# whether it's now the cheapest). CardTrader only logs "cheapest" / "notcheapest", and "price" for a new low
+# while it's the cheapest (see cardtrader_new_lows): its raw prices move every hour and would drown the shops'.
 
 CHANGES_DAYS = 30
 PRICE_STEP = 1.0  # zł; smaller shop price moves aren't logged
@@ -1166,6 +1190,7 @@ def main() -> int:
     lost: list[dict] = []
     cheapest = cardtrader_newly_cheapest(decks, lost)
     pending += [("cheapest", ct, None) for ct, _ in cheapest] + [("notcheapest", ct, None) for ct in lost]
+    pending += [("price", ct, low) for ct, low in cardtrader_new_lows(decks, [ct for ct, _ in cheapest])]
     decks.sort(key=lambda d: (d["shop"], d["id"]))
     save(DECKS_FILE, decks)
     save(STATE_FILE, state)
