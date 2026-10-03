@@ -86,7 +86,7 @@ async function startCheck(env) {
     },
     body: JSON.stringify({ ref: "main" }),
   });
-  const result = { status: r.status, ok: r.status === 204 };
+  const result = { status: r.status, ok: r.ok };  // 204, or 200 with the new run's id (API 2026-03-10)
   if (!result.ok) {
     result.error = (await r.text()).slice(0, 300);
     console.log("starting the check failed:", result.status, result.error);
