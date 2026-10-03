@@ -1027,5 +1027,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-10-03T16:17:26Z",
+  "best": {
+   "price": 190,
+   "shop": "frostmagic"
+  },
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "mrpuggy-14242",
+  "inStock": 6,
+  "kind": "soldout",
+  "price": 199.99,
+  "shop": "mrpuggy",
+  "status": "out_of_stock",
+  "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Reality-Fracture-Commander-Deck/14242"
  }
 ]

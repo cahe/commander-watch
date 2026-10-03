@@ -5768,8 +5768,8 @@
  },
  {
   "baseline": true,
-  "change": "back in stock",
-  "changedAt": "2026-10-01T19:17:12Z",
+  "change": "sold out",
+  "changedAt": "2026-10-03T16:17:26Z",
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31606",
@@ -5779,7 +5779,7 @@
   "pid": 14242,
   "price": 199.99,
   "shop": "mrpuggy",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Reality-Fracture-Commander-Deck/14242"
  },
  {
