@@ -1176,8 +1176,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T15:17:14Z",
+  "change": "price 418.38 → 417.94 zł",
+  "changedAt": "2026-10-04T17:17:31Z",
   "cheapest": true,
   "deck": "masters-enduring-enchantments",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -1187,15 +1187,15 @@
   "lowLogged": 418.38,
   "name": "Commander Masters | \"Enduring Enchantments\" Commander Deck",
   "pid": 238391,
-  "price": 418.38,
+  "price": 417.94,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238391"
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T15:17:14Z",
+  "change": "price 1107.54 → 1114.75 zł",
+  "changedAt": "2026-10-04T17:17:31Z",
   "cheapest": false,
   "deck": "masters-planeswalker-party",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -1204,7 +1204,7 @@
   "id": "cardtrader-238393",
   "name": "Commander Masters | \"Planeswalker Party\" Commander Deck",
   "pid": 238393,
-  "price": 1107.54,
+  "price": 1114.75,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238393"
@@ -2263,8 +2263,8 @@
  },
  {
   "baseline": true,
-  "change": "price 243.18 → 243.35 zł",
-  "changedAt": "2026-10-04T15:17:25Z",
+  "change": "price 243.35 → 243.18 zł",
+  "changedAt": "2026-10-04T17:17:31Z",
   "cheapest": true,
   "deck": "edge-of-eternities-world-shaper",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2274,7 +2274,7 @@
   "lowLogged": 243.18,
   "name": "Edge of Eternities: \"World Shaper\" Commander Deck",
   "pid": 322694,
-  "price": 243.35,
+  "price": 243.18,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322694"
