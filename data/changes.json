@@ -1145,5 +1145,46 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/208726"
+ },
+ {
+  "at": "2026-10-04T10:04:23Z",
+  "deck": "Foundations Starter – Tramplesaurus Rex",
+  "group": "cardstore-31684",
+  "id": "magiccafe-29308",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 209.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/foundations-tramplesaurus-rex-commander-deck/"
+ },
+ {
+  "at": "2026-10-04T10:04:23Z",
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "magiccafe-29304",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 179.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/foundations-wretched-ranks-commander-deck/"
+ },
+ {
+  "at": "2026-10-04T10:04:23Z",
+  "best": {
+   "price": 248.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Streets of New Capenna Obscura Operation",
+  "group": "cardtrader-208726",
+  "id": "cardtrader-208726",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 306.17,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/208726"
  }
 ]
