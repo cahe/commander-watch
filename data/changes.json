@@ -1237,5 +1237,22 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/208726"
+ },
+ {
+  "at": "2026-10-04T14:17:28Z",
+  "best": {
+   "price": 248.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Streets of New Capenna Obscura Operation",
+  "group": "cardtrader-208726",
+  "id": "cardtrader-208726",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 247.73,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/208726"
  }
 ]
