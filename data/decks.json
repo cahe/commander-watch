@@ -2263,8 +2263,8 @@
  },
  {
   "baseline": true,
-  "change": "price 243.18 → 243.35 zł",
-  "changedAt": "2026-10-05T06:17:27Z",
+  "change": "price 243.35 → 243.18 zł",
+  "changedAt": "2026-10-05T07:17:29Z",
   "cheapest": true,
   "deck": "edge-of-eternities-world-shaper",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2274,7 +2274,7 @@
   "lowLogged": 243.18,
   "name": "Edge of Eternities: \"World Shaper\" Commander Deck",
   "pid": 322694,
-  "price": 243.35,
+  "price": 243.18,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322694"
