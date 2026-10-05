@@ -1411,5 +1411,49 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389400"
+ },
+ {
+  "at": "2026-10-05T13:17:38Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Scions & Spellcraft",
+  "group": "cardstore-29975",
+  "id": "time4magic-464",
+  "inStock": 4,
+  "kind": "price",
+  "old": 249.0,
+  "price": 299.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Scions-Spellcraft/464"
+ },
+ {
+  "at": "2026-10-05T13:17:38Z",
+  "deck": "Doctor Who – Timey-Wimey",
+  "group": "cardtrader-246952",
+  "id": "cardtrader-246952",
+  "inStock": 0,
+  "kind": "notcheapest",
+  "price": 668.57,
+  "shop": "cardtrader",
+  "status": "out_of_stock",
+  "url": "https://www.cardtrader.com/en/cards/246952"
+ },
+ {
+  "at": "2026-10-05T13:17:38Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "cardtrader-389400",
+  "inStock": 0,
+  "kind": "price",
+  "old": 173.14,
+  "price": 146.74,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389400"
  }
 ]
