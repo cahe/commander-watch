@@ -500,9 +500,9 @@
    "ctPrice": 190.73,
    "ctUrl": "https://www.cardtrader.com/en/cards/389401",
    "name": "Foundations Starter – Reign of Dragons",
-   "shopName": "Pan Mysza",
-   "shopPrice": 170.0,
-   "shopUrl": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Reign-of-Dragons/12570"
+   "shopName": "XJoy",
+   "shopPrice": 179.99,
+   "shopUrl": "https://www.xjoy.pl/mtg-commander/26816-mtg-foundations-starter-commander-deck-reign-of-dragons.html"
   },
   "foundations-starter-tramplesaurus-rex": {
    "ctPrice": 195.46,
@@ -585,8 +585,8 @@
    "shopUrl": null
   },
   "innistrad-midnight-hunt-coven-counters": {
-   "ctPrice": 335.67,
-   "ctUrl": "https://www.cardtrader.com/en/cards/164138",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "Innistrad Midnight Hunt | \"Coven Counters",
    "shopName": null,
    "shopPrice": null,
@@ -993,7 +993,7 @@
    "shopUrl": null
   },
   "murders-at-karlov-manor-deep-clue-sea": {
-   "ctPrice": 202.35,
+   "ctPrice": 222.04,
    "ctUrl": "https://www.cardtrader.com/en/cards/270492",
    "name": "Murders at Karlov Manor Deep Clue Sea",
    "shopName": null,
@@ -1209,7 +1209,7 @@
    "shopUrl": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
   },
   "star-trek-we-are-the-borg-collector-deck": {
-   "ctPrice": 704.22,
+   "ctPrice": 714.75,
    "ctUrl": "https://www.cardtrader.com/en/cards/400895",
    "name": "Star Trek – We Are The Borg",
    "shopName": "Wilczek",
@@ -1225,7 +1225,7 @@
    "shopUrl": null
   },
   "streets-of-new-capenna-cabaretti-cacophony": {
-   "ctPrice": 446.62,
+   "ctPrice": 646.95,
    "ctUrl": "https://www.cardtrader.com/en/cards/208728",
    "name": "Streets of New Capenna Cabaretti Cacophony",
    "shopName": null,
@@ -1385,8 +1385,8 @@
    "shopUrl": null
   },
   "the-brothers-war-urza-s-iron-alliance": {
-   "ctPrice": 835.0,
-   "ctUrl": "https://www.cardtrader.com/en/cards/224491",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "The Brothers' War | \"Urza's Iron Alliance",
    "shopName": null,
    "shopPrice": null,
@@ -1561,8 +1561,8 @@
    "shopUrl": null
   },
   "zendikar-rising-sneak-attack": {
-   "ctPrice": 257.43,
-   "ctUrl": "https://www.cardtrader.com/en/cards/146528",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "Zendikar Rising – Sneak Attack",
    "shopName": null,
    "shopPrice": null,
