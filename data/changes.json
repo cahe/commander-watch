@@ -1507,5 +1507,40 @@
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/224491"
+ },
+ {
+  "at": "2026-10-05T19:23:10Z",
+  "best": {
+   "price": 329.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
+  "group": "cardtrader-246483",
+  "id": "cardtrader-246483",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 309.57,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-10-05T19:23:10Z",
+  "best": {
+   "price": 174.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Doctor Who Blast From The Past",
+  "group": "cardtrader-246951",
+  "id": "cardtrader-246951",
+  "inStock": 4,
+  "kind": "price",
+  "old": 156.34,
+  "price": 150.25,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246951"
  }
 ]
