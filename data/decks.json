@@ -2263,8 +2263,8 @@
  },
  {
   "baseline": true,
-  "change": "price 243.35 → 243.79 zł",
-  "changedAt": "2026-10-05T10:17:31Z",
+  "change": "price 243.79 → 243.97 zł",
+  "changedAt": "2026-10-05T12:18:03Z",
   "cheapest": true,
   "deck": "edge-of-eternities-world-shaper",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2274,7 +2274,7 @@
   "lowLogged": 243.18,
   "name": "Edge of Eternities: \"World Shaper\" Commander Deck",
   "pid": 322694,
-  "price": 243.79,
+  "price": 243.97,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322694"
@@ -2605,12 +2605,13 @@
   "baseline": true,
   "change": "price 172.71 → 173.14 zł",
   "changedAt": "2026-10-05T10:17:31Z",
-  "cheapest": false,
+  "cheapest": true,
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31682",
   "groupName": "Foundations Starter – Wretched Ranks",
   "id": "cardtrader-389400",
+  "lowLogged": 173.14,
   "name": "Foundations: \"Wretched Ranks\" Commander Deck",
   "pid": 389400,
   "price": 173.14,
@@ -6346,8 +6347,8 @@
  },
  {
   "baseline": false,
-  "change": "back in stock",
-  "changedAt": "2026-10-05T09:17:26Z",
+  "change": "sold out",
+  "changedAt": "2026-10-05T12:18:03Z",
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31682",
@@ -6357,7 +6358,7 @@
   "pid": 12569,
   "price": 150.0,
   "shop": "panmysza",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Wretched-Ranks/12569"
  },
  {
@@ -7150,6 +7151,8 @@
  },
  {
   "baseline": true,
+  "change": "back in stock",
+  "changedAt": "2026-10-05T12:18:03Z",
   "deck": "final-fantasy-scions-spellcraft",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-29975",
@@ -7159,13 +7162,13 @@
   "pid": 464,
   "price": 249.0,
   "shop": "time4magic",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Scions-Spellcraft/464"
  },
  {
   "baseline": true,
-  "change": "sold out",
-  "changedAt": "2026-10-01T21:17:15Z",
+  "change": "back in stock",
+  "changedAt": "2026-10-05T12:18:03Z",
   "deck": "final-fantasy-limit-break",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-29973",
@@ -7175,7 +7178,7 @@
   "pid": 465,
   "price": 249.0,
   "shop": "time4magic",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Limit-Break/465"
  },
  {

@@ -1352,5 +1352,64 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389400"
+ },
+ {
+  "at": "2026-10-05T12:18:03Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Limit Break",
+  "group": "cardstore-29973",
+  "id": "time4magic-465",
+  "inStock": 5,
+  "kind": "restock",
+  "price": 249.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Limit-Break/465"
+ },
+ {
+  "at": "2026-10-05T12:18:03Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Scions & Spellcraft",
+  "group": "cardstore-29975",
+  "id": "time4magic-464",
+  "inStock": 4,
+  "kind": "restock",
+  "price": 249.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Scions-Spellcraft/464"
+ },
+ {
+  "at": "2026-10-05T12:18:03Z",
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "panmysza-12569",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 150.0,
+  "shop": "panmysza",
+  "status": "out_of_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Wretched-Ranks/12569"
+ },
+ {
+  "at": "2026-10-05T12:18:03Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "cardtrader-389400",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 173.14,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389400"
  }
 ]

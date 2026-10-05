@@ -305,7 +305,7 @@
    "shopUrl": "https://magiccafe.eu/product/magic-the-gathering-edge-of-eternities-commander-decks-set-2/"
   },
   "edge-of-eternities-world-shaper": {
-   "ctPrice": 243.79,
+   "ctPrice": 243.97,
    "ctUrl": "https://www.cardtrader.com/en/cards/322694",
    "name": "Edge of Eternities “World Shaper”",
    "shopName": "Magic Cafe",
@@ -516,9 +516,9 @@
    "ctPrice": 173.14,
    "ctUrl": "https://www.cardtrader.com/en/cards/389400",
    "name": "Foundations Starter – Wretched Ranks",
-   "shopName": "Pan Mysza",
-   "shopPrice": 150.0,
-   "shopUrl": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Wretched-Ranks/12569"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "ikoria-lair-of-behemoths-arcane-maelstrom": {
    "ctPrice": 657.78,
