@@ -437,8 +437,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T15:17:14Z",
+  "change": "price 243.35 → 243.97 zł",
+  "changedAt": "2026-10-05T11:18:00Z",
   "cheapest": false,
   "deck": "kaldheim-phantom-premonition",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -447,7 +447,7 @@
   "id": "cardtrader-151470",
   "name": "Commander: Kaldheim: Phantom Premonition\" Deck",
   "pid": 151470,
-  "price": 243.35,
+  "price": 243.97,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/151470"
