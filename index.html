@@ -684,11 +684,12 @@ function recentRows() {
   return changeRows((state.changes || []).filter(e => Date.parse(e.at) >= since).sort((a, b) => b.at.localeCompare(a.at)));
 }
 
-// One list, newest first. Folded, it shows the last 2 changes with the next one fading out under them, even when
-// one check brought more (adding a shop can flip a dozen CardTrader prices at once); the header counts what's new.
-// The button on its faded edge extends it downwards with the rest of the last 7 days, and brings up the filters.
+// One list, newest first. Folded, it shows the last 2 changes, or every change since your last visit if there are
+// more, with the next one fading out under them. The button on its faded edge extends it downwards with the rest
+// of the last 7 days, and brings up the filters.
 const FOLDED_ROWS = 2;
-const foldedCount = (list) => Math.min(list.length, FOLDED_ROWS);
+const foldedCount = (list) => Math.min(list.length,
+  Math.max(FOLDED_ROWS, state.markFrom ? list.filter(r => r.at > state.markFrom).length : 0));
 
 function renderChanges() {
   const rows = recentRows();
