@@ -6312,8 +6312,8 @@
  },
  {
   "baseline": false,
-  "change": "back in stock",
-  "changedAt": "2026-10-05T09:17:26Z",
+  "change": "sold out",
+  "changedAt": "2026-10-05T21:17:39Z",
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31679",
@@ -6323,7 +6323,7 @@
   "pid": 12567,
   "price": 170.0,
   "shop": "panmysza",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Calling-All-Angels/12567"
  },
  {
