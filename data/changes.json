@@ -1795,5 +1795,77 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-10-06T15:17:36Z",
+  "best": {
+   "price": 259.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31274",
+  "id": "frostmagic-mtg-marvel-super-heroes-the-fantastic-four-commander-deck",
+  "inStock": 8,
+  "kind": "price",
+  "old": 220,
+  "price": 149,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-the-fantastic-four-commander-deck"
+ },
+ {
+  "at": "2026-10-06T15:17:36Z",
+  "best": {
+   "price": 239.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31273",
+  "id": "frostmagic-mtg-marvel-super-heroes-wakanda-forever-commander-deck",
+  "inStock": 8,
+  "kind": "price",
+  "old": 230,
+  "price": 169,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-wakanda-forever-commander-deck"
+ },
+ {
+  "at": "2026-10-06T15:17:36Z",
+  "best": {
+   "price": 260.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31272",
+  "id": "frostmagic-mtg-marvel-super-heroes-avengers-assemble-commander-deck",
+  "inStock": 9,
+  "kind": "price",
+  "old": 240,
+  "price": 199,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-avengers-assemble-commander-deck"
+ },
+ {
+  "at": "2026-10-06T15:17:36Z",
+  "best": {
+   "price": 260.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31275",
+  "id": "frostmagic-mtg-marvel-super-heroes-doom-prevails-commander-deck",
+  "inStock": 7,
+  "kind": "price",
+  "old": 290,
+  "price": 249,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-doom-prevails-commander-deck"
  }
 ]
