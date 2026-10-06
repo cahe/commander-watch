@@ -230,12 +230,12 @@
   "group": "cardstore-31679",
   "groupName": "Foundations Starter – Calling All Angels",
   "id": "cardstore-31679",
-  "name": "Foundations Commander Deck: Calling All Angels [PRZEDSPRZEDAŻ]",
+  "name": "Foundations Commander Deck: Calling All Angels",
   "pid": 31679,
   "price": 119.0,
   "shop": "cardstore",
   "status": "out_of_stock",
-  "url": "https://cardstore.pl/commander/31679-foundations-commander-deck-calling-all-angels-przedsprzedaz-.html"
+  "url": "https://cardstore.pl/commander/31679-foundations-commander-deck-calling-all-angels.html"
  },
  {
   "baseline": true,
@@ -244,12 +244,12 @@
   "group": "cardstore-31681",
   "groupName": "Foundations Starter – Keen Engineering",
   "id": "cardstore-31681",
-  "name": "Foundations Commander Deck: Keen Engineering [PRZEDSPRZEDAŻ]",
+  "name": "Foundations Commander Deck: Keen Engineering",
   "pid": 31681,
   "price": 119.0,
   "shop": "cardstore",
   "status": "out_of_stock",
-  "url": "https://cardstore.pl/commander/31681-foundations-commander-deck-keen-engineering-przedsprzedaz-.html"
+  "url": "https://cardstore.pl/commander/31681-foundations-commander-deck-keen-engineering.html"
  },
  {
   "baseline": true,
@@ -258,12 +258,12 @@
   "group": "cardstore-31682",
   "groupName": "Foundations Starter – Wretched Ranks",
   "id": "cardstore-31682",
-  "name": "Foundations Commander Deck: Wretched Ranks [PRZEDSPRZEDAŻ]",
+  "name": "Foundations Commander Deck: Wretched Ranks",
   "pid": 31682,
   "price": 119.0,
   "shop": "cardstore",
   "status": "out_of_stock",
-  "url": "https://cardstore.pl/commander/31682-foundations-commander-deck-wretched-ranks-przedsprzedaz-.html"
+  "url": "https://cardstore.pl/commander/31682-foundations-commander-deck-wretched-ranks.html"
  },
  {
   "baseline": true,
@@ -272,12 +272,12 @@
   "group": "cardstore-31683",
   "groupName": "Foundations Starter – Reign of Dragons",
   "id": "cardstore-31683",
-  "name": "Foundations Commander Deck: Reign of Dragons [PRZEDSPRZEDAŻ]",
+  "name": "Foundations Commander Deck: Reign of Dragons",
   "pid": 31683,
   "price": 119.0,
   "shop": "cardstore",
   "status": "out_of_stock",
-  "url": "https://cardstore.pl/commander/31683-foundations-commander-deck-reign-of-dragons-przedsprzedaz-.html"
+  "url": "https://cardstore.pl/commander/31683-foundations-commander-deck-reign-of-dragons.html"
  },
  {
   "baseline": true,
@@ -1226,8 +1226,8 @@
  },
  {
   "baseline": true,
-  "change": "price 371.88 → 370.22 zł",
-  "changedAt": "2026-10-06T12:17:32Z",
+  "change": "price 370.22 → 371.88 zł",
+  "changedAt": "2026-10-06T13:17:28Z",
   "cheapest": true,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-food-and-fel",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -1237,15 +1237,15 @@
   "lowLogged": 372.27,
   "name": "Commander: The Lord of the Rings | \"Food And Fellowship\" Commander Deck",
   "pid": 246478,
-  "price": 370.22,
+  "price": 371.88,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246478"
  },
  {
   "baseline": true,
-  "change": "price 255.29 → 253.59 zł",
-  "changedAt": "2026-10-06T12:17:32Z",
+  "change": "price 253.59 → 255.29 zł",
+  "changedAt": "2026-10-06T13:17:28Z",
   "cheapest": true,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-elven-counci",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -1255,7 +1255,7 @@
   "lowLogged": 255.56,
   "name": "Commander: The Lord of the Rings | \"Elven Council\" Commander Deck",
   "pid": 246480,
-  "price": 253.59,
+  "price": 255.29,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246480"
@@ -1280,18 +1280,17 @@
  },
  {
   "baseline": true,
-  "change": "price 330.45 → 308.47 zł",
-  "changedAt": "2026-10-06T12:17:32Z",
-  "cheapest": true,
+  "change": "price 308.47 → 330.45 zł",
+  "changedAt": "2026-10-06T13:17:28Z",
+  "cheapest": false,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-riders-of-ro",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardtrader-246483",
   "groupName": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
   "id": "cardtrader-246483",
-  "lowLogged": 308.47,
   "name": "Commander: The Lord of the Rings | \"Riders Of Rohan\" Commander Deck",
   "pid": 246483,
-  "price": 308.47,
+  "price": 330.45,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246483"
@@ -1315,8 +1314,8 @@
  },
  {
   "baseline": true,
-  "change": "price 156.18 → 149.71 zł",
-  "changedAt": "2026-10-06T12:17:32Z",
+  "change": "price 149.71 → 156.18 zł",
+  "changedAt": "2026-10-06T13:17:28Z",
   "cheapest": true,
   "deck": "doctor-who-blast-from-the-past",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -1326,7 +1325,7 @@
   "lowLogged": 150.25,
   "name": "Universes Beyond: Doctor Who | \"Blast from the Past\" Commander Deck",
   "pid": 246951,
-  "price": 149.71,
+  "price": 156.18,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246951"
@@ -1690,8 +1689,8 @@
  },
  {
   "baseline": true,
-  "change": "price 653.47 → 658.02 zł",
-  "changedAt": "2026-10-06T12:17:32Z",
+  "change": "price 658.02 → 653.47 zł",
+  "changedAt": "2026-10-06T13:17:28Z",
   "cheapest": true,
   "deck": "modern-horizons-3-eldrazi-incursion",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -1701,7 +1700,7 @@
   "lowLogged": 654.16,
   "name": "Commander: Modern Horizons 3 |\"Eldrazi Incursion\" Commander Deck",
   "pid": 279379,
-  "price": 658.02,
+  "price": 653.47,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279379"
@@ -2313,8 +2312,8 @@
  },
  {
   "baseline": true,
-  "change": "price 168.11 → 172.70 zł",
-  "changedAt": "2026-10-06T12:17:32Z",
+  "change": "price 172.70 → 168.11 zł",
+  "changedAt": "2026-10-06T13:17:28Z",
   "cheapest": true,
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2324,7 +2323,7 @@
   "lowLogged": 168.29,
   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
   "pid": 354096,
-  "price": 172.7,
+  "price": 168.11,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/354096"
@@ -2654,8 +2653,8 @@
  },
  {
   "baseline": true,
-  "change": "price 225.01 → 224.92 zł",
-  "changedAt": "2026-10-06T12:17:32Z",
+  "change": "price 224.92 → 225.01 zł",
+  "changedAt": "2026-10-06T13:17:28Z",
   "cheapest": false,
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2664,7 +2663,7 @@
   "id": "cardtrader-389403",
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
-  "price": 224.92,
+  "price": 225.01,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389403"
