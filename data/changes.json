@@ -1643,5 +1643,55 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-10-06T08:17:29Z",
+  "best": {
+   "price": 199.99,
+   "shop": "magiccafe"
+  },
+  "deck": "Foundations Starter – Reign of Dragons",
+  "group": "cardstore-31683",
+  "id": "xjoy-26816",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 179.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/26816-mtg-foundations-starter-commander-deck-reign-of-dragons.html"
+ },
+ {
+  "at": "2026-10-06T08:17:29Z",
+  "best": {
+   "price": 199.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Reign of Dragons",
+  "group": "cardstore-31683",
+  "id": "cardtrader-389401",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 190.73,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389401"
+ },
+ {
+  "at": "2026-10-06T08:17:29Z",
+  "best": {
+   "price": 329.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
+  "group": "cardtrader-246483",
+  "id": "cardtrader-246483",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 309.57,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246483"
  }
 ]
