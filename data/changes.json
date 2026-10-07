@@ -2105,5 +2105,74 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-07T17:17:45Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Final Fantasy Limit Break",
+  "group": "cardstore-29973",
+  "id": "cardtrader-322095",
+  "inStock": 5,
+  "kind": "cheapest",
+  "price": 223.32,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322095"
+ },
+ {
+  "at": "2026-10-07T17:17:45Z",
+  "best": {
+   "price": 179.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "cardtrader-389398",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 172.21,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389398"
+ },
+ {
+  "at": "2026-10-07T17:17:45Z",
+  "best": {
+   "price": 224.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardtrader-265028",
+  "id": "cardtrader-265028",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 197.48,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-07T17:17:45Z",
+  "best": {
+   "price": 254.5,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Secrets of Strixhaven Witherbloom Pestilence",
+  "group": "cardtrader-370597",
+  "id": "cardtrader-370597",
+  "inStock": 2,
+  "kind": "price",
+  "old": 219.47,
+  "price": 207.07,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370597"
  }
 ]
