@@ -2174,5 +2174,56 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370597"
+ },
+ {
+  "at": "2026-10-07T19:17:28Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Limit Break",
+  "group": "cardstore-29973",
+  "id": "cardtrader-322095",
+  "inStock": 5,
+  "kind": "notcheapest",
+  "price": 243.25,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322095"
+ },
+ {
+  "at": "2026-10-07T19:17:28Z",
+  "best": {
+   "price": 179.99,
+   "shop": "xjoy"
+  },
+  "cheapest": false,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "cardtrader-389398",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 198.97,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389398"
+ },
+ {
+  "at": "2026-10-07T19:17:28Z",
+  "best": {
+   "price": 224.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Fallout Science",
+  "group": "cardtrader-265028",
+  "id": "cardtrader-265028",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 226.17,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
  }
 ]
