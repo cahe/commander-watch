@@ -2276,5 +2276,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-07T21:17:30Z",
+  "best": {
+   "price": 209.99,
+   "shop": "magiccafe"
+  },
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "xjoy-26813",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 179.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/26813-mtg-foundations-starter-commander-deck-calling-all-angels.html"
  }
 ]

@@ -11024,6 +11024,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-10-07T21:17:30Z",
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-09-30T16:17:16Z",
   "group": "cardstore-31679",
@@ -11033,7 +11035,7 @@
   "pid": 26813,
   "price": 179.99,
   "shop": "xjoy",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://www.xjoy.pl/mtg-commander/26813-mtg-foundations-starter-commander-deck-calling-all-angels.html"
  },
  {
