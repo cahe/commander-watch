@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notification Preview</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+/* Temporary page (not linked from the site): shows sample deck alerts on this device, to pick a style. */
+:root { --bg: #eef1f4; --surface: #fff; --fg: #16202b; --muted: #5b6878; --line: #d5dce4; --accent: #1f5f8b; --accent-soft: #dcebf6; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #0f151c; --surface: #17202a; --fg: #e5ebf1; --muted: #93a1b1; --line: #2a3643; --accent: #7fb8e0; --accent-soft: #1b3346; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #0f151c; --surface: #17202a; --fg: #e5ebf1; --muted: #93a1b1; --line: #2a3643; --accent: #7fb8e0; --accent-soft: #1b3346; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 560px; margin: 0 auto; padding: 24px 16px 48px; display: grid; gap: 22px; }
+h1 { font-size: 24px; margin: 0; }
+h2 { font-size: 17px; margin: 0 0 8px; }
+p { margin: 0; color: var(--muted); }
+#status { padding: 10px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--fg); }
+#status:empty { display: none; }
+.group { display: grid; gap: 8px; }
+button { display: grid; gap: 2px; width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--fg); font: inherit; text-align: left; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button b { font-weight: 600; }
+button span { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <h1>Notification preview</h1>
+    <p>Tap a style to show that notification on this device right away. Nothing is sent to anyone, and the buttons inside the notifications don't change anything.</p>
+  </div>
+  <div id="status" role="status"></div>
+  <div id="groups"></div>
+</main>
+<script>
+const DECK = "Foundations Starter – Tramplesaurus Rex", SET = "Foundations Starter", SHORT = "Tramplesaurus Rex";
+const PAGE = new URL("./", location.href).href;
+const now = Date.now(), checkedAt = now - 9 * 60000;  // as if the hourly check found it 9 minutes ago
+const buzz = [60, 40, 60];
+const stop = { action: "stop", title: "Stop alerts" };
+
+const SAMPLES = [
+  ["Price down", [
+    ["A · today", "What a price drop looks like now", DECK, {
+      body: "Cheaper: ≈ 179,99 zł on CardTrader (was 194,99 zł)", icon: "icons/icon-192.png",
+      actions: [{ action: "shop", title: "Open on CardTrader" }] }],
+    ["B · short title, two lines, arrow icon", "Deck name only; the drop, then the next cheapest", SHORT, {
+      body: "≈ 179,99 zł on CardTrader · −8% (was 194,99 zł)\n" + SET + " · next cheapest 199,00 zł at Wilczek",
+      icon: "icons/alert-down.png", timestamp: checkedAt, vibrate: buzz,
+      actions: [{ action: "shop", title: "Open on CardTrader" }, stop] }],
+    ["C · price in the title, no icon", "Full width for the text; the price is the headline", `↓ 179,99 zł · ${SHORT}`, {
+      body: "On CardTrader, was 194,99 zł (−8%)\n" + SET + " · next cheapest 199,00 zł at Wilczek",
+      timestamp: checkedAt, vibrate: buzz,
+      actions: [{ action: "shop", title: "Open on CardTrader" }, stop] }],
+  ]],
+  ["Back in stock", [
+    ["A · today", "What a restock looks like now", DECK, {
+      body: "Can be ordered again: 209,99 zł at Magic Cafe", icon: "icons/icon-192.png",
+      actions: [{ action: "shop", title: "Open at Magic Cafe" }] }],
+    ["B · short title, two lines, box icon", "Deck name only; where, and how many shops", SHORT, {
+      body: "Back in stock: 209,99 zł at Magic Cafe\n" + SET + " · the only shop with it now",
+      icon: "icons/alert-stock.png", timestamp: checkedAt, vibrate: buzz,
+      actions: [{ action: "shop", title: "Open at Magic Cafe" }, stop] }],
+    ["C · news in the title, no icon", "Full width for the text", `Back in stock · ${SHORT}`, {
+      body: "209,99 zł at Magic Cafe, the only shop with it now\n" + SET,
+      timestamp: checkedAt, vibrate: buzz,
+      actions: [{ action: "shop", title: "Open at Magic Cafe" }, stop] }],
+  ]],
+  ["Confirmation (when you tap Notify me)", [
+    ["A · today", "What you got after subscribing", `Alerts on: ${DECK}`, {
+      body: "Now CardTrader ≈ 194,99 zł. You'll get a notification here when it gets cheaper or can be ordered again.",
+      icon: "icons/icon-192.png" }],
+    ["B · short title, no icon", "Deck name as the title; what happens next in the body", SHORT, {
+      body: "Alerts on · now ≈ 194,99 zł on CardTrader\nYou'll get a notification when it gets cheaper or can be ordered again.",
+      timestamp: now }],
+  ]],
+];
+
+const status = (t) => { document.getElementById("status").textContent = t; };
+let reg = null;
+async function show(title, options) {
+  if (!("serviceWorker" in navigator) || !("Notification" in window)) return status("This browser can't show notifications from websites.");
+  if ((await Notification.requestPermission()) !== "granted") return status("Notifications are blocked for this site. Allow them in the browser's site settings, then try again.");
+  reg ||= await navigator.serviceWorker.register("sw.js").then(() => navigator.serviceWorker.ready);
+  // Each sample gets its own tag so they stay side by side in the tray.
+  await reg.showNotification(title, { badge: "icons/badge-96.png", data: { url: PAGE }, tag: "preview-" + Math.random(), ...options });
+  status(`Shown: ${title}. Pull down the notification tray, and expand it to see the second line and the buttons.`);
+}
+
+const box = document.getElementById("groups");
+for (const [heading, samples] of SAMPLES) {
+  const group = document.createElement("section");
+  group.className = "group";
+  group.innerHTML = `<h2></h2>`;
+  group.querySelector("h2").textContent = heading;
+  for (const [label, note, title, options] of samples) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.append(Object.assign(document.createElement("b"), { textContent: label }), Object.assign(document.createElement("span"), { textContent: note }));
+    b.addEventListener("click", () => show(title, options).catch(e => status(`Couldn't show it: ${e.message}`)));
+    group.append(b);
+  }
+  box.append(group);
+}
+</script>
+</body>
+</html>
