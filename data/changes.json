@@ -2415,5 +2415,71 @@
   "shop": "wargamer",
   "status": "out_of_stock",
   "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16371-mtg-le-cd-bc.html"
+ },
+ {
+  "at": "2026-10-08T19:17:34Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Secrets of Strixhaven Silverquill Influence",
+  "group": "cardtrader-370595",
+  "id": "time4magic-770",
+  "inStock": 6,
+  "kind": "price",
+  "old": 299.0,
+  "price": 279.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/secrets-of-strixhaven-silverquill-influence-commander-deck"
+ },
+ {
+  "at": "2026-10-08T19:17:34Z",
+  "best": {
+   "price": 234.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": true,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "frostmagic-magic-the-gathering-reality-fracture-multiverse-reforged-commander-deck",
+  "inStock": 6,
+  "kind": "restock",
+  "price": 190,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/magic-the-gathering-reality-fracture-multiverse-reforged-commander-deck"
+ },
+ {
+  "at": "2026-10-08T19:17:34Z",
+  "best": {
+   "price": 190,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "cardtrader-389403",
+  "inStock": 6,
+  "kind": "notcheapest",
+  "price": 221.66,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389403"
+ },
+ {
+  "at": "2026-10-08T19:17:34Z",
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardtrader-265027",
+  "id": "cardtrader-265027",
+  "inStock": 0,
+  "kind": "price",
+  "old": 418.33,
+  "price": 387.75,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265027"
  }
 ]
