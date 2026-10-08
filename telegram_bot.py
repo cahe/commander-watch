@@ -14,6 +14,7 @@ Needs BOT_API_URL (the Worker's address) and BOT_ALERTS_KEY (shared with the Wor
 from __future__ import annotations
 
 import os
+from datetime import datetime, timezone
 
 import requests
 
@@ -34,12 +35,25 @@ def offer_text(price: float, shop: str, approx: bool) -> str:
     return f"≈ {zl(price)} on CardTrader" if approx else f"{zl(price)} at {shop}"
 
 
+KIND_LABEL = (("-collector-set", "Collector's set"), ("-collector-deck", "Collector's edition"), ("-set", "Deck set"))
+
+
+def short_name(name: str, key: str) -> tuple[str, list[str]]:
+    """A notification's title and what it leaves out: "Foundations Starter – Tramplesaurus Rex" is titled
+    "Tramplesaurus Rex", with "Foundations Starter" (and e.g. "Collector's edition", from the key) for the body."""
+    title, _, deck = name.rpartition(" – ")
+    context = [title] if deck and title else []
+    context += [label for suffix, label in KIND_LABEL if key.endswith(suffix)][:1]
+    return (deck or name), context
+
+
 def deck_alerts(before: dict[str, dict], after: dict[str, dict]) -> dict[str, dict]:
     """Alerts for decks that got cheaper, or that can be ordered again: deck key -> {"text", "url", "label"} for
-    Telegram, plus "title" and "body" for a device notification.
+    Telegram, plus "title", "body" and "kind" ("down" or "stock") for a device notification.
 
     before/after map deck key -> check.deck_prices' entry: "price" is the cheapest way to order the deck
-    (CardTrader included; None if there's none), with its "shop", "url" and "approx" (True for CardTrader).
+    (CardTrader included; None if there's none), with its "shop", "url" and "approx" (True for CardTrader),
+    the runner-up ("next") and how many shops have it ("inStock").
     """
     alerts = {}
     for key, now in after.items():
@@ -48,12 +62,20 @@ def deck_alerts(before: dict[str, dict], after: dict[str, dict]) -> dict[str, di
             continue  # a deck seen for the first time, or not orderable now
         approx = now.get("approx", False)
         offer = offer_text(now["price"], now["shop"], approx)
-        link = {"url": now["url"], "label": "Open on CardTrader" if approx else f"Open at {now['shop']}", "title": now["name"]}
+        title, context = short_name(now["name"], key)
+        link = {"url": now["url"], "label": "Open on CardTrader" if approx else f"Open at {now['shop']}", "title": title}
+        nxt = now.get("next")
         if was["price"] is None:
-            alerts[key] = {"text": f"📦 {now['name']} can be ordered again: {offer}", "body": f"Can be ordered again: {offer}", **link}
+            shops = now.get("inStock", 0)
+            where = ("only on CardTrader now" if not shops else "the only shop with it now" if shops == 1 and not approx
+                     else f"in stock at {shops} {'shop' if shops == 1 else 'shops'}")
+            alerts[key] = {"text": f"📦 {now['name']} can be ordered again: {offer}", "kind": "stock",
+                           "body": f"Back in stock: {offer}\n" + " · ".join(context + [where]), **link}
         elif now["price"] <= was["price"] - max(PRICE_STEP, was["price"] * 0.02):
-            alerts[key] = {"text": f"📉 {now['name']}: {offer} (was {zl(was['price'])})",
-                           "body": f"Cheaper: {offer} (was {zl(was['price'])})", **link}
+            pct = round((now["price"] - was["price"]) / was["price"] * 100)
+            runner = f"next cheapest {offer_text(nxt['price'], nxt['shop'], nxt['approx'])}" if nxt else "the only offer now"
+            alerts[key] = {"text": f"📉 {now['name']}: {offer} (was {zl(was['price'])})", "kind": "down",
+                           "body": f"{offer} · −{abs(pct)}% (was {zl(was['price'])})\n" + " · ".join(context + [runner]), **link}
     return alerts
 
 
@@ -109,9 +131,10 @@ class Alerts:
     def push(self, alerts: dict[str, dict]) -> dict[str, int]:
         """Device notifications: the Worker sends each alert to the devices watching that deck."""
         total = {"sent": 0, "removed": 0, "failed": 0}
+        at = datetime.now(timezone.utc).isoformat(timespec="seconds")  # shown as the notification's time
         for key, a in alerts.items():
-            r = self.worker("POST", "/push/send", json={"deck": key, "title": a["title"], "body": a["body"],
-                                                       "shopUrl": a["url"], "shopLabel": a["label"]})
+            r = self.worker("POST", "/push/send", json={"deck": key, "title": a["title"], "body": a["body"], "kind": a["kind"],
+                                                       "at": at, "shopUrl": a["url"], "shopLabel": a["label"]})
             for k in total:
                 total[k] += r.get(k, 0)
         return total

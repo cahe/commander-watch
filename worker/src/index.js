@@ -189,6 +189,13 @@ function pushOptions(env) {
 async function handlePushSubscription(body, env) {
   const sub = checkSubscription(body.subscription);
   const id = await pushId(sub.endpoint);
+  if (typeof body.remove === "string") {  // "Stop alerts" on a notification: just that deck
+    const saved = await env.SUBS.get(id, "json");
+    const keys = (saved?.decks || []).filter(k => k !== body.remove);
+    if (keys.length) await env.SUBS.put(id, JSON.stringify({ ...saved, decks: keys }));
+    else await env.SUBS.delete(id);
+    return { body: { decks: keys } };
+  }
   if (!Array.isArray(body.decks)) {
     const saved = await env.SUBS.get(id, "json");
     return { body: { decks: saved?.decks || [] } };
@@ -203,9 +210,9 @@ async function handlePushSubscription(body, env) {
   const added = keys.includes(body.added) ? decks[body.added] : null;
   if (added) {
     const r = await sendPush(sub, {
-      title: `Alerts on: ${added.name}`,
-      body: `Now ${statusLine(added)}. You'll get a notification here when it gets cheaper or can be ordered again.`,
-      url: deckPageUrl(env, body.added), tag: body.added,
+      title: shortName(added.name), body: `Alerts on · now ${cheapestOffer(added)}\n` +
+        "You'll get a notification when it gets cheaper or can be ordered again.",
+      url: deckPageUrl(env, body.added), tag: body.added, at: new Date().toISOString(),
     }, pushOptions(env));
     if (r.status === 404 || r.status === 410) {
       await env.SUBS.delete(id);
@@ -218,13 +225,21 @@ async function handlePushSubscription(body, env) {
 
 const deckPageUrl = (env, key) => `${env.PAGE_URL}#deck=${encodeURIComponent(key)}`;
 
-// POST /push/send {deck, title, body, shopUrl?, shopLabel?} from the hourly check: one alert to every device
-// watching that deck. Subscriptions the push service no longer knows are dropped.
+// "Foundations Starter – Tramplesaurus Rex" → "Tramplesaurus Rex": notification titles are short on phones.
+const shortName = (name) => name.split(" – ").pop();
+
+function cheapestOffer(deck) {
+  const ct = deck.ctPrice != null && (deck.shopPrice == null || deck.ctPrice < deck.shopPrice);
+  return ct ? `≈ ${zl(deck.ctPrice)} on CardTrader` : deck.shopPrice != null ? `${zl(deck.shopPrice)} at ${deck.shopName}` : "not in stock anywhere";
+}
+
+// POST /push/send {deck, title, body, kind, at, shopUrl?, shopLabel?} from the hourly check: one alert to every
+// device watching that deck. Subscriptions the push service no longer knows are dropped.
 async function sendDeckAlert(alert, env) {
   const out = { sent: 0, removed: 0, failed: 0 };
   if (!DECK_KEY.test(alert.deck || "")) return { ...out, error: "bad deck" };
-  const message = { title: alert.title, body: alert.body, url: deckPageUrl(env, alert.deck), tag: alert.deck,
-                    shopUrl: alert.shopUrl, shopLabel: alert.shopLabel };
+  const message = { title: alert.title, body: alert.body, kind: alert.kind, at: alert.at, url: deckPageUrl(env, alert.deck),
+                    tag: alert.deck, shopUrl: alert.shopUrl, shopLabel: alert.shopLabel };
   let cursor;
   do {
     const page = await env.SUBS.list({ prefix: "push:", cursor });

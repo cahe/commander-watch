@@ -435,8 +435,9 @@ def test_telegram_alerts():
     shop_only = lambda price, shop="Wilczek": {"name": "Star Trek – We Are The Borg", "price": price, "shop": shop,
                                                "url": f"https://x/{shop}", "approx": False}
     before = {"borg": shop_only(299.0), "other": {"name": "Other", "price": None}}
-    after = {"borg": {"name": "Star Trek – We Are The Borg", "price": 279.0, "shop": "CardTrader", "url": "https://ct/borg", "approx": True},
-             "other": {"name": "Other", "price": 150.0, "shop": "XJoy", "url": "https://x/o", "approx": False}}
+    after = {"borg": {"name": "Star Trek – We Are The Borg", "price": 279.0, "shop": "CardTrader", "url": "https://ct/borg", "approx": True,
+                      "next": {"price": 299.0, "shop": "Wilczek", "approx": False}, "inStock": 1},
+             "other": {"name": "Other", "price": 150.0, "shop": "XJoy", "url": "https://x/o", "approx": False, "next": None, "inStock": 1}}
     alerts = tb.deck_alerts(before, after)
     assert alerts["borg"]["text"] == "📉 Star Trek – We Are The Borg: ≈ 279,00 zł on CardTrader (was 299,00 zł)"
     assert alerts["borg"]["label"] == "Open on CardTrader" and alerts["borg"]["url"] == "https://ct/borg"
@@ -463,16 +464,32 @@ def test_telegram_alerts():
     assert ("POST", "/unsubscribe", {"json": {"chat": "666"}}) in calls
     calls.clear()
     assert a.send({}) == 0 and calls == []  # nothing to alert: the Worker isn't even asked
-    # Device notifications: one post per deck, with a notification's title and body; the Worker does the rest.
-    assert alerts["borg"]["title"] == "Star Trek – We Are The Borg"
-    assert alerts["borg"]["body"] == "Cheaper: ≈ 279,00 zł on CardTrader (was 299,00 zł)"
-    assert alerts["other"]["body"] == "Can be ordered again: 150,00 zł at XJoy"
+    # Device notifications: the deck's own name as the title; the news, then its set and the runner-up.
+    assert alerts["borg"]["title"] == "We Are The Borg" and alerts["borg"]["kind"] == "down"
+    assert alerts["borg"]["body"] == "≈ 279,00 zł on CardTrader · −7% (was 299,00 zł)\nStar Trek · next cheapest 299,00 zł at Wilczek"
+    assert alerts["other"]["title"] == "Other" and alerts["other"]["kind"] == "stock"
+    assert alerts["other"]["body"] == "Back in stock: 150,00 zł at XJoy\nthe only shop with it now"
+    assert tb.short_name("Star Trek – We Are The Borg", "star-trek-we-are-the-borg-collector-deck") == ("We Are The Borg", ["Star Trek", "Collector's edition"])
+    # One post per deck; the Worker sends it to the devices watching it.
     a.worker = lambda method, path, **kw: calls.append((method, path, kw)) or {"sent": 2, "removed": 1}
     assert a.push(alerts) == {"sent": 4, "removed": 2, "failed": 0}
-    assert ("POST", "/push/send", {"json": {"deck": "borg", "title": "Star Trek – We Are The Borg", "body": alerts["borg"]["body"],
-                                             "shopUrl": "https://ct/borg", "shopLabel": "Open on CardTrader"}}) in calls
+    posted = next(kw["json"] for m, path, kw in calls if path == "/push/send" and kw["json"]["deck"] == "borg")
+    assert {k: posted[k] for k in ("title", "body", "kind", "shopUrl", "shopLabel")} == {
+        "title": "We Are The Borg", "body": alerts["borg"]["body"], "kind": "down", "shopUrl": "https://ct/borg", "shopLabel": "Open on CardTrader"}
+    assert posted["at"].endswith("+00:00")
     # Without a Telegram token, device notifications still go out.
     assert tb.Alerts("", "https://bot.example.workers.dev/", "key").send(alerts) == 0
+
+
+def test_deck_prices_runner_up(monkeypatch):
+    monkeypatch.setattr(check, "SHOPS", {"wilczek": ("Wilczek", None), "xjoy": ("XJoy", None), "cardtrader": ("CardTrader", None)})
+    decks = [{"deck": "borg", "name": "Borg", "shop": "wilczek", "status": "in_stock", "price": 299.0, "url": "w"},
+             {"deck": "borg", "name": "Borg", "shop": "xjoy", "status": "preorder", "price": 289.0, "url": "x"},
+             {"deck": "borg", "name": "Borg", "shop": "cardtrader", "status": "in_stock", "price": 279.0, "url": "c"},
+             {"deck": "borg", "name": "Borg", "shop": "magiccafe", "status": "out_of_stock", "price": 199.0, "url": "m"}]
+    p = check.deck_prices(decks)["borg"]
+    assert (p["price"], p["shop"], p["approx"], p["inStock"]) == (279.0, "CardTrader", True, 2)
+    assert p["next"] == {"price": 289.0, "shop": "XJoy", "approx": False}
 
 
 def test_cardtrader_new_lows():

@@ -925,17 +925,23 @@ PRICE_STEP = 1.0  # zł; smaller shop price moves aren't logged
 
 
 def deck_prices(decks: list[dict]) -> dict[str, dict]:
-    """Each deck's cheapest way to order it, by its permanent key, for Telegram: the cheapest shop and CardTrader
-    separately (shopPrice/shopName/shopUrl, ctPrice/ctUrl), and the cheaper of the two (price/shop/url/approx)."""
+    """Each deck's cheapest way to order it, by its permanent key, for alerts: the cheapest shop and CardTrader
+    separately (shopPrice/shopName/shopUrl, ctPrice/ctUrl), the cheaper of the two (price/shop/url/approx),
+    the runner-up (next: {price, shop, approx} or None) and how many shops have it in stock (inStock)."""
     out: dict[str, dict] = {}
+    offers: dict[str, list] = {}
     for d in decks:
         if not d.get("deck"):
             continue
         cur = out.setdefault(d["deck"], {"name": d.get("groupName") or d["name"], "shopPrice": None, "shopName": None,
-                                         "shopUrl": None, "ctPrice": None, "ctUrl": None})
+                                         "shopUrl": None, "ctPrice": None, "ctUrl": None, "inStock": 0})
         if d.get("status") not in ORDERABLE or d.get("price") is None:
             continue
-        if d["shop"] in QUIET_SHOPS:
+        ct = d["shop"] in QUIET_SHOPS
+        offers.setdefault(d["deck"], []).append((d["price"], "CardTrader" if ct else SHOPS[d["shop"]][0] if d["shop"] in SHOPS else d["shop"], ct))
+        if not ct:
+            cur["inStock"] += 1
+        if ct:
             if cur["ctPrice"] is None or d["price"] < cur["ctPrice"]:
                 cur.update(ctPrice=d["price"], ctUrl=d["url"])
         elif cur["shopPrice"] is None or d["price"] < cur["shopPrice"]:
@@ -945,6 +951,9 @@ def deck_prices(decks: list[dict]) -> dict[str, dict]:
         cur.update(price=cur["ctPrice"] if ct_cheaper else cur["shopPrice"],
                    shop="CardTrader" if ct_cheaper else cur["shopName"],
                    url=cur["ctUrl"] if ct_cheaper else cur["shopUrl"], approx=ct_cheaper)
+    for key, cur in out.items():
+        ranked = sorted(offers.get(key, []), key=lambda o: o[0])
+        cur["next"] = {"price": ranked[1][0], "shop": ranked[1][1], "approx": ranked[1][2]} if len(ranked) > 1 else None
     return out
 
 
