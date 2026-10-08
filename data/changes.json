@@ -2326,5 +2326,45 @@
   "shop": "wargamer",
   "status": "in_stock",
   "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16370-mtg-le-cd-dote.html"
+ },
+ {
+  "at": "2026-10-08T06:17:36Z",
+  "deck": "Foundations Starter – Reign of Dragons",
+  "group": "cardstore-31683",
+  "id": "magiccafe-29306",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 199.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/foundations-reign-of-dragons-commander-deck/"
+ },
+ {
+  "at": "2026-10-08T06:17:36Z",
+  "best": {
+   "price": 129.0,
+   "shop": "time4magic"
+  },
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "magiccafe-29302",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 139.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/foundations-keen-engineering-commander-deck/"
+ },
+ {
+  "at": "2026-10-08T06:17:36Z",
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "magiccafe-29300",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 209.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/foundations-calling-all-angels-commander-deck/"
  }
 ]

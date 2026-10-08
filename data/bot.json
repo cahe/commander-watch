@@ -484,9 +484,9 @@
    "ctPrice": 172.21,
    "ctUrl": "https://www.cardtrader.com/en/cards/389398",
    "name": "Foundations Starter – Calling All Angels",
-   "shopName": "Magic Cafe",
-   "shopPrice": 209.99,
-   "shopUrl": "https://magiccafe.eu/product/foundations-calling-all-angels-commander-deck/"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "foundations-starter-keen-engineering": {
    "ctPrice": 110.81,
@@ -500,9 +500,9 @@
    "ctPrice": 190.39,
    "ctUrl": "https://www.cardtrader.com/en/cards/389401",
    "name": "Foundations Starter – Reign of Dragons",
-   "shopName": "Magic Cafe",
-   "shopPrice": 199.99,
-   "shopUrl": "https://magiccafe.eu/product/foundations-reign-of-dragons-commander-deck/"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "foundations-starter-tramplesaurus-rex": {
    "ctPrice": 195.03,

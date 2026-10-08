@@ -5630,8 +5630,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-08T06:17:36Z",
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31679",
@@ -5641,13 +5641,13 @@
   "pid": 29300,
   "price": 209.99,
   "shop": "magiccafe",
-  "status": "preorder",
+  "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/foundations-calling-all-angels-commander-deck/"
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-08T06:17:36Z",
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31681",
@@ -5657,7 +5657,7 @@
   "pid": 29302,
   "price": 139.99,
   "shop": "magiccafe",
-  "status": "preorder",
+  "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/foundations-keen-engineering-commander-deck/"
  },
  {
@@ -5678,8 +5678,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-08T06:17:36Z",
   "deck": "foundations-starter-reign-of-dragons",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31683",
@@ -5689,7 +5689,7 @@
   "pid": 29306,
   "price": 199.99,
   "shop": "magiccafe",
-  "status": "preorder",
+  "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/foundations-reign-of-dragons-commander-deck/"
  },
  {
