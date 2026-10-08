@@ -11,9 +11,15 @@
 // It also starts the hourly check: a Cron Trigger (wrangler.toml) runs check.yml through GitHub's
 // workflow_dispatch API, which GitHub's own schedule does too unreliably.
 //
+// Device notifications (Web Push) work the same way without Telegram: the page's bell sends the browser's push
+// subscription and its decks to POST /push (public), kept in KV as push:<id>; the hourly check posts each alert
+// to POST /push/send (ALERTS_KEY), which encrypts and sends it to every device watching that deck (webpush.js).
+//
 // Secrets (wrangler secret put): TELEGRAM_TOKEN, WEBHOOK_SECRET (Telegram sends it back on every webhook call),
-// ALERTS_KEY, GITHUB_TOKEN (fine-grained, this repo only, Actions: read and write). Vars and the KV binding
-// (SUBS) are in wrangler.toml.
+// ALERTS_KEY, GITHUB_TOKEN (fine-grained, this repo only, Actions: read and write), VAPID_PRIVATE_KEY (a JWK; set
+// by the deploy workflow from the GitHub secret). Vars and the KV binding (SUBS) are in wrangler.toml.
+
+import { b64u, sendPush } from "./webpush.js";
 
 const DESCRIPTION = "Price alerts for MTG Commander decks in Polish shops and on CardTrader.\n\n" +
   "Tap the bell next to a deck on Commander Watch, then Start here. I'll message you when that deck " +
@@ -43,6 +49,17 @@ export default {
       }
       return new Response("ok");  // always 200, so Telegram doesn't resend an update that breaks us
     }
+    if (url.pathname === "/push" && (request.method === "POST" || request.method === "OPTIONS")) {
+      const cors = corsHeaders(request, env);
+      if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
+      let result;
+      try {
+        result = await handlePushSubscription(await request.json(), env);
+      } catch (e) {
+        result = { status: 400, body: { error: String(e.message || e) } };
+      }
+      return Response.json(result.body, { status: result.status || 200, headers: cors });
+    }
     if (!same(request.headers.get("Authorization"), `Bearer ${env.ALERTS_KEY}`)) {
       return new Response("not found", { status: 404 });
     }
@@ -55,6 +72,9 @@ export default {
       delete chats[String(chat)];
       await saveChats(env, chats);
       return Response.json({ ok: true });
+    }
+    if (request.method === "POST" && url.pathname === "/push/send") {
+      return Response.json(await sendDeckAlert(await request.json(), env));
     }
     if (request.method === "POST" && url.pathname === "/run-check") {  // to test the trigger by hand
       return Response.json(await startCheck(env));
@@ -123,6 +143,101 @@ async function saveChats(env, chats) {
 function byDeck(chats) {
   const out = {};
   for (const [chat, keys] of Object.entries(chats)) for (const key of keys) (out[key] ||= []).push(chat);
+  return out;
+}
+
+// ------------------------------------------------------------------ device notifications (Web Push)
+
+// Push services the big browsers use; subscriptions pointing anywhere else are refused, so this can't be used
+// to make the Worker post to arbitrary addresses.
+const PUSH_HOSTS = /(^|\.)(fcm\.googleapis\.com|push\.services\.mozilla\.com|push\.apple\.com|notify\.windows\.com)$/;
+const DECK_KEY = /^[a-z0-9-]{1,64}$/;
+const MAX_DECKS = 50;
+
+function corsHeaders(request, env) {
+  const origin = request.headers.get("Origin") || "";
+  const allowed = [new URL(env.PAGE_URL).origin, "http://localhost:8765"];  // the page, and its local preview
+  return {
+    "Access-Control-Allow-Origin": allowed.includes(origin) ? origin : allowed[0],
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Max-Age": "86400",
+    Vary: "Origin",
+  };
+}
+
+function checkSubscription(sub) {
+  const endpoint = new URL(sub?.endpoint || "");
+  if (endpoint.protocol !== "https:" || !PUSH_HOSTS.test(endpoint.hostname)) throw new Error("unsupported push service");
+  const p256dh = b64u.decode(sub.keys?.p256dh || ""), auth = b64u.decode(sub.keys?.auth || "");
+  if (p256dh.length !== 65 || p256dh[0] !== 4 || auth.length !== 16) throw new Error("bad subscription keys");
+  return { endpoint: endpoint.href, keys: { p256dh: sub.keys.p256dh, auth: sub.keys.auth } };
+}
+
+async function pushId(endpoint) {
+  const hash = new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(endpoint)));
+  return "push:" + [...hash.slice(0, 16)].map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+function pushOptions(env) {
+  return { privateJwk: JSON.parse(env.VAPID_PRIVATE_KEY), publicKey: env.VAPID_PUBLIC_KEY, subject: env.PAGE_URL };
+}
+
+// POST /push {subscription, decks?, added?}: with decks, this device now watches exactly those (none: forget it);
+// without, it just asks which decks it watches. "added" is the deck just turned on: it gets a confirmation push,
+// which also proves the whole way to the device works.
+async function handlePushSubscription(body, env) {
+  const sub = checkSubscription(body.subscription);
+  const id = await pushId(sub.endpoint);
+  if (!Array.isArray(body.decks)) {
+    const saved = await env.SUBS.get(id, "json");
+    return { body: { decks: saved?.decks || [] } };
+  }
+  const decks = await loadDecks(env);
+  const keys = [...new Set(body.decks.filter(k => typeof k === "string" && DECK_KEY.test(k) && decks[k]))].slice(0, MAX_DECKS);
+  if (!keys.length) {
+    await env.SUBS.delete(id);
+    return { body: { decks: [] } };
+  }
+  await env.SUBS.put(id, JSON.stringify({ sub, decks: keys, at: new Date().toISOString() }));
+  const added = keys.includes(body.added) ? decks[body.added] : null;
+  if (added) {
+    const r = await sendPush(sub, {
+      title: `Alerts on: ${added.name}`,
+      body: `Now ${statusLine(added)}. You'll get a notification here when it gets cheaper or can be ordered again.`,
+      url: deckPageUrl(env, body.added), tag: body.added,
+    }, pushOptions(env));
+    if (r.status === 404 || r.status === 410) {
+      await env.SUBS.delete(id);
+      return { status: 410, body: { error: "the browser's push subscription has expired", decks: [] } };
+    }
+    if (!r.ok) console.log("confirmation push failed:", r.status, (await r.text()).slice(0, 200));
+  }
+  return { body: { decks: keys } };
+}
+
+const deckPageUrl = (env, key) => `${env.PAGE_URL}#deck=${encodeURIComponent(key)}`;
+
+// POST /push/send {deck, title, body, shopUrl?, shopLabel?} from the hourly check: one alert to every device
+// watching that deck. Subscriptions the push service no longer knows are dropped.
+async function sendDeckAlert(alert, env) {
+  const out = { sent: 0, removed: 0, failed: 0 };
+  if (!DECK_KEY.test(alert.deck || "")) return { ...out, error: "bad deck" };
+  const message = { title: alert.title, body: alert.body, url: deckPageUrl(env, alert.deck), tag: alert.deck,
+                    shopUrl: alert.shopUrl, shopLabel: alert.shopLabel };
+  let cursor;
+  do {
+    const page = await env.SUBS.list({ prefix: "push:", cursor });
+    for (const { name } of page.keys) {
+      const saved = await env.SUBS.get(name, "json");
+      if (!saved?.decks?.includes(alert.deck)) continue;
+      const r = await sendPush(saved.sub, message, pushOptions(env));
+      if (r.status === 404 || r.status === 410) { await env.SUBS.delete(name); out.removed++; }
+      else if (r.ok) out.sent++;
+      else { out.failed++; console.log("push failed:", r.status, (await r.text()).slice(0, 200)); }
+    }
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
   return out;
 }
 

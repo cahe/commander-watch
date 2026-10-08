@@ -463,6 +463,16 @@ def test_telegram_alerts():
     assert ("POST", "/unsubscribe", {"json": {"chat": "666"}}) in calls
     calls.clear()
     assert a.send({}) == 0 and calls == []  # nothing to alert: the Worker isn't even asked
+    # Device notifications: one post per deck, with a notification's title and body; the Worker does the rest.
+    assert alerts["borg"]["title"] == "Star Trek – We Are The Borg"
+    assert alerts["borg"]["body"] == "Cheaper: ≈ 279,00 zł on CardTrader (was 299,00 zł)"
+    assert alerts["other"]["body"] == "Can be ordered again: 150,00 zł at XJoy"
+    a.worker = lambda method, path, **kw: calls.append((method, path, kw)) or {"sent": 2, "removed": 1}
+    assert a.push(alerts) == {"sent": 4, "removed": 2, "failed": 0}
+    assert ("POST", "/push/send", {"json": {"deck": "borg", "title": "Star Trek – We Are The Borg", "body": alerts["borg"]["body"],
+                                             "shopUrl": "https://ct/borg", "shopLabel": "Open on CardTrader"}}) in calls
+    # Without a Telegram token, device notifications still go out.
+    assert tb.Alerts("", "https://bot.example.workers.dev/", "key").send(alerts) == 0
 
 
 def test_cardtrader_new_lows():

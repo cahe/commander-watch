@@ -9,6 +9,8 @@ account_id = "dc06a3ed90727cc1e35f49615a9bf6f4"  # not a secret; lets the deploy
 PAGE_URL = "https://cahe.github.io/commander-watch/"
 DATA_URL = "https://cahe.github.io/commander-watch/data/bot.json"
 GITHUB_REPO = "cahe/commander-watch"
+# Public half of the key device notifications are signed with (the page subscribes with it too).
+VAPID_PUBLIC_KEY = "BOBRIqXSvDG1igB54C39MXlWbzP6cWSaIF1szOZDL5JuQOeYe91uOgLREou4qhk659o4HH4IauRjF3IxT81t0sE"
 
 # Starts the hourly check (check.yml) at :17, as cron-job.org did. Times are UTC; :17 is the same in Poland.
 [triggers]

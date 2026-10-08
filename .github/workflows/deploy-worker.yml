@@ -27,3 +27,8 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           workingDirectory: worker
           wranglerVersion: "4"
+          # Copied to the Worker's secrets on each deploy; the others were set by hand with wrangler secret put.
+          secrets: |
+            VAPID_PRIVATE_KEY
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
