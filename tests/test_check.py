@@ -146,10 +146,13 @@ def test_grouping():
         ("time4magic", "Commander Deck Lord of the Rings: Tales of Middle-earth - Elven Council"),
         ("cardstore", "Final Fantasy Commander Deck: Scions & Spellcraft"),  # same shop twice: only one joins
         ("wargamer", "Lorwyn Eclipsed Commander Deck: Dance of the Elements"),
+        ("wilczek", "Magic the Gathering - Commander Warhammer 40K - Tyranid Swarm"),
+        ("cardtrader", "Universes Beyond: Warhammer 40,000 | \"Tyranid Swarm\" Deck"),
     ]
     decks = [{"id": f"d{i}", "shop": s, "name": n} for i, (s, n) in enumerate(names)]
     check.assign_groups(decks)
     g = [d["group"] for d in decks]
+    assert g[10] == g[11]                        # "40,000" is "40K"
     assert g[0] == g[1] == g[9] != g[2]          # typo tolerated, different deck kept apart
     assert (g[3] == g[4]) != (g[3] == g[8])      # "and" vs "&"; only one Cardstore listing per group
     assert g[5] not in (g[3], g[6])              # collector's edition and display stay separate
