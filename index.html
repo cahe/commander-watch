@@ -67,7 +67,33 @@ h2 { font: 600 20px/1.2 var(--font-display); margin: 0; }
 .lastcheck { font: 13px/1.4 var(--font-mono); color: var(--muted); }
 
 section { display: grid; gap: 12px; }
-.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.sec-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+#st-h + .lastcheck { margin-left: auto; }
+
+/* Panels: each can be folded to its title line and moved; the layout is remembered per browser. */
+.panels { display: grid; gap: 28px; }
+.ptoggle { display: inline; padding: 0; border: 0; border-radius: 4px; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.ptoggle .chev { width: 14px; height: 14px; margin: 0 6px 0 -2px; vertical-align: 1px; color: var(--muted); transition: transform .2s; }
+.ptoggle:hover .chev { color: var(--fg); }
+.ptoggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.panel.closed .chev { transform: rotate(-90deg); }
+.panel.closed > :not(.phead) { display: none; }
+section.changes.closed .changes-head { padding-bottom: 12px; }
+.pctl { margin-left: auto; align-self: center; display: inline-flex; align-items: center; gap: 2px; position: relative; }
+.soundbtn + .pctl { margin-left: 0; }
+.iconbtn { display: inline-grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 6px; background: none; color: var(--muted); cursor: pointer; }
+.iconbtn svg { width: 16px; height: 16px; }
+.iconbtn:hover:not(:disabled), .iconbtn[aria-expanded="true"] { color: var(--fg); background: var(--off-soft); }
+.iconbtn:disabled { opacity: .3; cursor: default; }
+.iconbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.pmenu { position: absolute; top: calc(100% + 4px); right: 0; z-index: 20; min-width: 170px; padding: 4px; display: grid; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.18); }
+.pmenu[hidden] { display: none; }
+.pmenu button { padding: 7px 10px; border: 0; border-radius: 5px; background: none; color: var(--fg); font: 14px var(--font-body); text-align: left; cursor: pointer; }
+.pmenu button:hover:not(:disabled), .pmenu button:focus-visible { background: var(--accent-soft); outline: none; }
+.pmenu button:disabled { color: var(--muted); opacity: .6; cursor: default; }
+/* Phones: title and controls on the first line, the count under them. */
+@media (max-width: 640px) { .phead .count, .phead .sum { order: 5; flex-basis: 100%; margin-top: -6px; } }
+.panel.dragging .phead { border-color: var(--accent); box-shadow: 0 8px 24px rgba(0,0,0,.2); cursor: grabbing; position: relative; z-index: 2; }
 
 .newshelf { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--new); border-radius: 8px; overflow: hidden; }
 .newgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1px; background: var(--line); }
@@ -207,8 +233,9 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
     <h1>Commander Watch</h1>
   </header>
 
-  <section class="changes" aria-labelledby="changes-h">
-    <div class="changes-head"><h2 id="changes-h">Changes</h2><span class="sum" id="changes-sum">Loading…</span>
+  <div class="panels" id="panels">
+  <section class="changes panel" data-panel="changes" aria-labelledby="changes-h">
+    <div class="changes-head phead"><h2 id="changes-h">Changes</h2><span class="sum" id="changes-sum">Loading…</span>
       <button class="soundbtn" id="sound" type="button" aria-pressed="false" title="Play a sound when a deck is back in stock, new, or the new cheapest option">
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M3 6h2.5L9 3v10L5.5 10H3z"/><path class="wave" d="M11.5 5.5a3.5 3.5 0 0 1 0 5M13.5 3.5a6.5 6.5 0 0 1 0 9"/><path class="mute" d="M11.5 6l4 4M15.5 6l-4 4"/>
@@ -221,13 +248,13 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
     </div>
   </section>
 
-  <section aria-labelledby="new-h">
-    <div class="sec-head"><h2 id="new-h">New listings</h2><span class="count" id="newcount"></span></div>
+  <section class="panel" data-panel="new" aria-labelledby="new-h">
+    <div class="sec-head phead"><h2 id="new-h">New listings</h2><span class="count" id="newcount"></span></div>
     <div id="newshelf" class="newshelf"></div>
   </section>
 
-  <section aria-labelledby="cat-h">
-    <div class="sec-head"><h2 id="cat-h">All tracked decks</h2><span class="count" id="catcount"></span></div>
+  <section class="panel" data-panel="decks" aria-labelledby="cat-h">
+    <div class="sec-head phead"><h2 id="cat-h">All tracked decks</h2><span class="count" id="catcount"></span></div>
     <div class="controls" id="shopchips" role="group" aria-label="Filter by shop"></div>
     <div class="controls">
       <input type="search" id="q" placeholder="Search a deck, e.g. Multiverse Reforged" aria-label="Search decks">
@@ -244,6 +271,7 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
     </div>
     <div class="list" id="list" role="table" aria-label="Tracked decks"></div>
   </section>
+  </div>
 
   <section aria-labelledby="st-h">
     <div class="sec-head"><h2 id="st-h">Shops</h2><span class="lastcheck" id="lastcheck">Checked hourly</span></div>
@@ -777,6 +805,123 @@ async function toggleChanges() {
 }
 $("changes-more").addEventListener("click", toggleChanges);
 $("changes-fewer").addEventListener("click", toggleChanges);
+
+// Panels: each visitor can fold a panel down to its title line and change their order (remembered per browser).
+const PANELS = ["changes", "new", "decks"];
+const PANEL_NAME = { changes: "Changes", new: "New listings", decks: "All tracked decks" };
+const ICON = {
+  chev: '<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>',
+  more: '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><circle cx="3.5" cy="8" r="1.4"/><circle cx="8" cy="8" r="1.4"/><circle cx="12.5" cy="8" r="1.4"/></svg>'
+};
+let layout = { order: PANELS.slice(), closed: [] };
+try {
+  const saved = JSON.parse(localStorage.getItem("panels") || "null");
+  if (saved) {
+    const order = (saved.order || []).filter(p => PANELS.includes(p));
+    layout = { order: [...new Set([...order, ...PANELS])], closed: (saved.closed || []).filter(p => PANELS.includes(p)) };
+  }
+} catch {}
+const saveLayout = () => { try { localStorage.setItem("panels", JSON.stringify(layout)); } catch {} };
+const panelEl = (p) => document.querySelector(`.panel[data-panel="${p}"]`);
+const calmMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function applyLayout() {
+  $("panels").append(...layout.order.map(panelEl));
+  layout.order.forEach((p, i) => {
+    const sec = panelEl(p), closed = layout.closed.includes(p);
+    sec.classList.toggle("closed", closed);
+    sec.querySelector(".ptoggle").setAttribute("aria-expanded", String(!closed));
+    sec.querySelectorAll("[data-move='-1']").forEach(b => b.disabled = i === 0);
+    sec.querySelectorAll("[data-move='1']").forEach(b => b.disabled = i === layout.order.length - 1);
+    const t = sec.querySelector("[data-act='fold']");
+    if (t) t.textContent = closed ? "Expand" : "Collapse to one line";
+  });
+}
+
+// Moving a panel keeps it where it is on screen and slides the others around it.
+function movePanel(p, by, focus) {
+  const from = layout.order.indexOf(p), to = from + by;
+  if (to < 0 || to >= layout.order.length) return;
+  const els = layout.order.map(panelEl), top0 = new Map(els.map(x => [x, x.getBoundingClientRect().top]));
+  layout.order.splice(from, 1); layout.order.splice(to, 0, p);
+  saveLayout(); applyLayout();
+  const me = panelEl(p);
+  window.scrollBy(0, me.getBoundingClientRect().top - top0.get(me));
+  if (focus) focus.focus({ preventScroll: true });
+  if (calmMotion()) return;
+  for (const x of els) {
+    const dy = top0.get(x) - x.getBoundingClientRect().top;
+    if (dy) x.animate([{ transform: `translateY(${dy}px)` }, { transform: "none" }], { duration: 260, easing: "cubic-bezier(.2, .7, .3, 1)" });
+  }
+}
+
+async function togglePanel(p) {
+  const sec = panelEl(p), head = sec.querySelector(".phead");
+  const closing = !layout.closed.includes(p);
+  layout.closed = closing ? [...layout.closed, p] : layout.closed.filter(x => x !== p);
+  saveLayout();
+  const h0 = sec.offsetHeight;
+  // Very tall panels (the deck list) just snap; a long slide reads as the page jumping.
+  const animate = !calmMotion();
+  if (closing && animate && h0 < innerHeight * 1.5) {
+    sec.style.overflow = "hidden";
+    await sec.animate([{ height: h0 + "px" }, { height: head.offsetHeight + "px" }], { duration: 220, easing: "ease-in-out" }).finished.catch(() => {});
+    sec.style.overflow = "";
+  }
+  applyLayout();
+  if (!closing && animate && sec.offsetHeight < innerHeight * 1.5) {
+    sec.style.overflow = "hidden";
+    await sec.animate([{ height: head.offsetHeight + "px" }, { height: sec.offsetHeight + "px" }], { duration: 260, easing: "cubic-bezier(.2, .7, .3, 1)" }).finished.catch(() => {});
+    sec.style.overflow = "";
+  }
+}
+
+function closeMenus(except) {
+  document.querySelectorAll(".pmenu").forEach(m => { if (m !== except) { m.hidden = true; m.previousElementSibling.setAttribute("aria-expanded", "false"); } });
+}
+
+for (const p of PANELS) {
+  const sec = panelEl(p), head = sec.querySelector(".phead"), h2 = head.querySelector("h2");
+  const name = PANEL_NAME[p];
+  const toggle = el("button", { class: "ptoggle", type: "button", "aria-expanded": "true", title: "Collapse or expand" });
+  toggle.innerHTML = ICON.chev;
+  toggle.append(h2.textContent);
+  h2.replaceChildren(toggle);
+  toggle.addEventListener("click", () => togglePanel(p));
+
+  // A menu to move the panel up or down, or fold it.
+  const mb = el("button", { class: "iconbtn", type: "button", "aria-haspopup": "true", "aria-expanded": "false", title: "Panel options", "aria-label": `${name} panel options` });
+  mb.innerHTML = ICON.more;
+  const menu = el("div", { class: "pmenu", role: "menu", hidden: "" });
+  for (const [act, label, by] of [["up", "Move up", -1], ["down", "Move down", 1], ["fold", "Collapse to one line"]]) {
+    const b = el("button", { type: "button", role: "menuitem", text: label, "data-act": act });
+    if (by) b.dataset.move = String(by);
+    b.addEventListener("click", () => { closeMenus(); if (by) movePanel(p, by, mb); else togglePanel(p); });
+    menu.append(b);
+  }
+  mb.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const open = menu.hidden;
+    closeMenus(menu); menu.hidden = !open; mb.setAttribute("aria-expanded", String(open));
+    if (open) menu.querySelector("button:not(:disabled)")?.focus();
+  });
+  // Up and down arrows step through the menu.
+  menu.addEventListener("keydown", (e) => {
+    if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+    e.preventDefault();
+    const items = [...menu.querySelectorAll("button:not(:disabled)")];
+    const i = items.indexOf(document.activeElement) + (e.key === "ArrowDown" ? 1 : -1);
+    items[(i + items.length) % items.length]?.focus();
+  });
+  head.append(el("div", { class: "pctl" }, mb, menu));
+}
+document.addEventListener("click", (e) => { if (!e.target.closest(".pctl")) closeMenus(); });
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  const open = document.querySelector(".pmenu:not([hidden])");
+  if (open) { closeMenus(); open.previousElementSibling.focus(); }
+});
+applyLayout();
 renderChips(); renderAll();
 
 // Unseen changes: the tab icon's eye is open and the title says "(N)" while there's something you haven't seen;
