@@ -641,6 +641,7 @@ def deck_kind(name: str) -> str:
 def name_tokens(name: str) -> frozenset[str]:
     n = unicodedata.normalize("NFKD", name.lower()).encode("ascii", "ignore").decode()
     n = n.replace("&", " and ").replace("collector's", " ").replace("collector", " ")
+    n = re.sub(r"\b(\d+)[,.]?000\b", r"\1k", n)  # CardTrader's "Warhammer 40,000" is the shops' "40K"
     n = SET_LIKE.sub(" ", NAME_NOISE.sub(" ", n))
     return frozenset(t for t in re.findall(r"[a-z0-9]+", n) if len(t) > 1 and t not in NAME_STOP)
 
