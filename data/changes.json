@@ -2292,5 +2292,39 @@
   "shop": "xjoy",
   "status": "out_of_stock",
   "url": "https://www.xjoy.pl/mtg-commander/26813-mtg-foundations-starter-commander-deck-calling-all-angels.html"
+ },
+ {
+  "at": "2026-10-08T05:17:29Z",
+  "best": {
+   "price": 219.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Lorwyn Eclipsed – Blight Curse",
+  "group": "cardtrader-352408",
+  "id": "wargamer-16371",
+  "inStock": 3,
+  "kind": "restock",
+  "price": 215.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16371-mtg-le-cd-bc.html"
+ },
+ {
+  "at": "2026-10-08T05:17:29Z",
+  "best": {
+   "price": 180,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Lorwyn Eclipsed – Dance of the Elements",
+  "group": "cardtrader-352407",
+  "id": "wargamer-16370",
+  "inStock": 5,
+  "kind": "restock",
+  "price": 199.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16370-mtg-le-cd-dote.html"
  }
 ]

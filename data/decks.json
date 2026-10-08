@@ -7686,8 +7686,8 @@
  },
  {
   "baseline": true,
-  "change": "sold out",
-  "changedAt": "2026-10-01T17:17:15Z",
+  "change": "back in stock",
+  "changedAt": "2026-10-08T05:17:29Z",
   "deck": "lorwyn-eclipsed-dance-of-the-elements",
   "firstSeen": "2026-09-30T16:17:16Z",
   "group": "cardtrader-352407",
@@ -7697,11 +7697,13 @@
   "pid": 16370,
   "price": 199.0,
   "shop": "wargamer",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16370-mtg-le-cd-dote.html"
  },
  {
   "baseline": true,
+  "change": "back in stock",
+  "changedAt": "2026-10-08T05:17:29Z",
   "deck": "lorwyn-eclipsed-blight-curse",
   "firstSeen": "2026-09-30T16:17:16Z",
   "group": "cardtrader-352408",
@@ -7711,7 +7713,7 @@
   "pid": 16371,
   "price": 215.0,
   "shop": "wargamer",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16371-mtg-le-cd-bc.html"
  },
  {
