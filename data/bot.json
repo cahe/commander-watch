@@ -441,7 +441,7 @@
    "shopUrl": null
   },
   "final-fantasy-revival-trance": {
-   "ctPrice": 164.25,
+   "ctPrice": 152.91,
    "ctUrl": "https://www.cardtrader.com/en/cards/322101",
    "name": "Final Fantasy Revival Trance",
    "shopName": "Pan Mysza",
@@ -1145,7 +1145,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-set.html"
   },
   "star-trek-federation-fleet": {
-   "ctPrice": 316.42,
+   "ctPrice": 316.46,
    "ctUrl": "https://www.cardtrader.com/en/cards/400888",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Time4Magic",
@@ -1161,7 +1161,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
   },
   "star-trek-klingon-fury": {
-   "ctPrice": 316.42,
+   "ctPrice": 316.46,
    "ctUrl": "https://www.cardtrader.com/en/cards/400890",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Time4Magic",
@@ -1177,7 +1177,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-klingon-fury.html"
   },
   "star-trek-landing-party": {
-   "ctPrice": 316.42,
+   "ctPrice": 316.46,
    "ctUrl": "https://www.cardtrader.com/en/cards/400889",
    "name": "Star Trek – Landing Party",
    "shopName": "Time4Magic",
@@ -1201,7 +1201,7 @@
    "shopUrl": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
   },
   "star-trek-we-are-the-borg": {
-   "ctPrice": 316.42,
+   "ctPrice": 316.46,
    "ctUrl": "https://www.cardtrader.com/en/cards/400891",
    "name": "Star Trek – We Are the Borg",
    "shopName": "Time4Magic",
@@ -1225,7 +1225,7 @@
    "shopUrl": null
   },
   "streets-of-new-capenna-cabaretti-cacophony": {
-   "ctPrice": 647.9,
+   "ctPrice": 647.81,
    "ctUrl": "https://www.cardtrader.com/en/cards/208728",
    "name": "Streets of New Capenna Cabaretti Cacophony",
    "shopName": null,
@@ -1481,16 +1481,16 @@
    "shopUrl": null
   },
   "warhammer-40k-forces-of-the-imperium": {
-   "ctPrice": null,
-   "ctUrl": null,
+   "ctPrice": 1088.77,
+   "ctUrl": "https://www.cardtrader.com/en/cards/211578",
    "name": "Warhammer 40K Forces of the Imperium",
    "shopName": null,
    "shopPrice": null,
    "shopUrl": null
   },
   "warhammer-40k-necron-dynasties": {
-   "ctPrice": null,
-   "ctUrl": null,
+   "ctPrice": 1421.57,
+   "ctUrl": "https://www.cardtrader.com/en/cards/211580",
    "name": "Warhammer 40K Necron Dynasties",
    "shopName": null,
    "shopPrice": null,
@@ -1505,16 +1505,16 @@
    "shopUrl": null
   },
   "warhammer-40k-the-ruinous-powers": {
-   "ctPrice": null,
-   "ctUrl": null,
+   "ctPrice": 1049.36,
+   "ctUrl": "https://www.cardtrader.com/en/cards/211574",
    "name": "Warhammer 40K The Ruinous Powers",
    "shopName": null,
    "shopPrice": null,
    "shopUrl": null
   },
   "warhammer-40k-tyranid-swarm": {
-   "ctPrice": null,
-   "ctUrl": null,
+   "ctPrice": 1027.47,
+   "ctUrl": "https://www.cardtrader.com/en/cards/211576",
    "name": "Warhammer 40K Tyranid Swarm",
    "shopName": null,
    "shopPrice": null,
