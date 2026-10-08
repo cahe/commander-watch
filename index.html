@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -136,6 +136,9 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .pinned[hidden] { display: none; }
 .pincard { display: grid; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px 14px; }
 .pincard .offers { margin-top: 0; }
+.offer.more { border: 1px dashed var(--off); background: none; color: var(--muted); font: 500 12px/1 var(--font-body); cursor: pointer; }
+.offer.more:hover { color: var(--fg); border-color: var(--muted); }
+.offer.more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .pin-slim { display: flex; align-items: center; gap: 8px 18px; flex-wrap: wrap; }
 .pin-title { display: flex; align-items: center; gap: 4px 8px; }
 .pin-title h2 { font-size: 18px; }
@@ -473,7 +476,7 @@ function stockText(g) {
 // a 4th unpins the oldest. Remembered per browser by the decks' permanent keys, so regrouping doesn't lose them.
 const PIN_MAX = 3;
 const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17v5"/><path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z"/></svg>';
-state.pinned = [];
+state.pinned = []; state.pinAll = new Set();
 try { state.pinned = (JSON.parse(localStorage.getItem("pinnedDecks") || "[]") || []).filter(k => typeof k === "string").slice(-PIN_MAX); } catch {}
 const deckKey = (g) => g.offers.find(o => o.deck)?.deck || "";
 function setPinned(keys) {
@@ -520,8 +523,17 @@ function renderPinned() {
         "aria-label": `Price history for ${g.name}. ${historySummary(h)}` }, sparkline(h));
       spark.addEventListener("click", () => { state.pinChart = open ? null : key; renderPinned(); });
     }
-    box.append(el("div", { class: "pincard" },
-      el("div", { class: "pin-slim" }, title, price, spark), offerChips(g, best, "cheapest in stock"),
+    // Only the shops that have it; the "⋯" chip at the end shows the sold-out ones too.
+    const all = state.pinAll.has(key), sold = g.offers.filter(o => !orderable(o)).length;
+    const chips = offerChips(all ? g : { offers: g.offers.filter(orderable) }, best, "cheapest in stock");
+    if (sold) {
+      const more = el("button", { class: "offer more", type: "button", "aria-expanded": String(all),
+        text: all ? "Show fewer" : `⋯ ${sold} sold out`, title: all ? "Show only the shops that have it" : "Show all listings" });
+      more.addEventListener("click", () => { all ? state.pinAll.delete(key) : state.pinAll.add(key); renderPinned(); $("pinned").querySelector(`[data-key="${key}"] .offer.more`)?.focus(); });
+      chips.append(more);
+    }
+    box.append(el("div", { class: "pincard", "data-key": key },
+      el("div", { class: "pin-slim" }, title, price, spark), chips,
       h && open ? historyChart(h, g.name) : null));
   }
 }
