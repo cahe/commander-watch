@@ -2481,5 +2481,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265027"
+ },
+ {
+  "at": "2026-10-08T20:17:31Z",
+  "best": {
+   "price": 1099.0,
+   "shop": "time4magic"
+  },
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "id": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 1029,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
  }
 ]
