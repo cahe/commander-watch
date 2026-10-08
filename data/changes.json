@@ -2366,5 +2366,38 @@
   "shop": "magiccafe",
   "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/foundations-calling-all-angels-commander-deck/"
+ },
+ {
+  "at": "2026-10-08T11:17:29Z",
+  "best": {
+   "price": 234.9,
+   "shop": "dragoneye"
+  },
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "frostmagic-magic-the-gathering-reality-fracture-multiverse-reforged-commander-deck",
+  "inStock": 5,
+  "kind": "soldout",
+  "price": 190,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/magic-the-gathering-reality-fracture-multiverse-reforged-commander-deck"
+ },
+ {
+  "at": "2026-10-08T11:17:29Z",
+  "best": {
+   "price": 234.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": true,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "cardtrader-389403",
+  "inStock": 5,
+  "kind": "cheapest",
+  "price": 221.7,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389403"
  }
 ]
