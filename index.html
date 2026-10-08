@@ -126,6 +126,24 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .alertbell { display: inline-flex; vertical-align: -3px; margin-left: 6px; padding: 3px; border-radius: 50%; color: var(--accent); }
 .alertbell svg { width: 17px; height: 17px; stroke-width: 1.7; }
 .alertbell:hover { background: var(--accent-soft); }
+.pinbtn { display: inline-flex; vertical-align: -3px; margin-left: 2px; padding: 3px; border: 0; border-radius: 50%; background: none; color: var(--muted); cursor: pointer; }
+.pinbtn svg { width: 16px; height: 16px; }
+.pinbtn:hover { color: var(--accent); background: var(--accent-soft); }
+.pinbtn[aria-pressed="true"] { color: var(--accent); }
+.pinbtn[aria-pressed="true"] svg { fill: currentColor; }
+.pinbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pinned { display: grid; gap: 10px; }
+.pinned[hidden] { display: none; }
+.pincard { display: grid; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px 14px; }
+.pincard .offers { margin-top: 0; }
+.pin-slim { display: flex; align-items: center; gap: 8px 18px; flex-wrap: wrap; }
+.pin-title { display: flex; align-items: center; gap: 4px 8px; }
+.pin-title h2 { font-size: 18px; }
+.pin-title .alertbell { margin-left: 0; }
+.pin-price { display: flex; align-items: baseline; gap: 4px 10px; flex-wrap: wrap; }
+.pin-price b { font: 500 16px var(--font-mono); font-variant-numeric: tabular-nums; }
+.pin-slim .hbtn { margin-left: auto; }
+@media (min-width: 641px) { .pin-slim { flex-wrap: nowrap; } .pin-price { flex-wrap: nowrap; white-space: nowrap; } }
 .toast { position: fixed; left: 50%; bottom: 20px; transform: translate(-50%, 20px); max-width: min(520px, calc(100vw - 32px)); padding: 10px 14px; border-radius: 8px; background: var(--fg); color: var(--bg); font: 14px/1.4 var(--font-body); box-shadow: 0 6px 24px rgba(0,0,0,.25); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50; }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 .alertbtn { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font: 500 12px var(--font-body); text-decoration: none; }
@@ -232,6 +250,8 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
     <span class="label">Magic: The Gathering · Polish shops</span>
     <h1>Commander Watch</h1>
   </header>
+
+  <section class="pinned" id="pinned" aria-label="Pinned deck" hidden></section>
 
   <div class="panels" id="panels">
   <section class="changes panel" data-panel="changes" aria-labelledby="changes-h">
@@ -431,6 +451,81 @@ function groupDecks() {
   return [...groups.values()];
 }
 
+// A deck's shops, cheapest first. Colour and word both give the shop's stock status; "best" gets an outline.
+function offerChips(g, best, bestNote) {
+  const offers = el("div", { class: "offers" });
+  for (const o of g.offers) {
+    const status = shownStatus(o.status);
+    offers.append(el("a", { class: "offer " + status + (o === best ? " best" : ""), href: safeUrl(o.url), target: "_blank", rel: "noopener",
+        title: `${o.name} · ${STATUS_LABEL[status]}${o === best ? " · " + bestNote : ""}` },
+      el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: money(o.shop, o.price) }),
+      el("i", { text: OFFER_WORD[status] })));
+  }
+  return offers;
+}
+const orderable = (o) => o.status === "in_stock" || o.status === "preorder";
+function stockText(g) {
+  const n = g.offers.filter(orderable).length;
+  return n ? `In stock at ${n} of ${g.offers.length}` : `Out of stock (${g.offers.length})`;
+}
+
+// Pinned decks: up to 3 decks a visitor keeps at the top of the page, in the order they were pinned; pinning
+// a 4th unpins the oldest. Remembered per browser by the decks' permanent keys, so regrouping doesn't lose them.
+const PIN_MAX = 3;
+const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17v5"/><path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z"/></svg>';
+state.pinned = [];
+try { state.pinned = (JSON.parse(localStorage.getItem("pinnedDecks") || "[]") || []).filter(k => typeof k === "string").slice(-PIN_MAX); } catch {}
+const deckKey = (g) => g.offers.find(o => o.deck)?.deck || "";
+function setPinned(keys) {
+  state.pinned = keys;
+  try { localStorage.setItem("pinnedDecks", JSON.stringify(keys)); } catch {}
+  renderPinned(); renderList();
+}
+function pinButton(g, cls = "pinbtn") {
+  const key = deckKey(g);
+  if (!key) return null;
+  const on = state.pinned.includes(key);
+  const b = el("button", { class: cls, type: "button", "aria-pressed": String(on),
+    title: on ? "Unpin from the top of the page" : "Pin to the top of the page", "aria-label": `${on ? "Unpin" : "Pin"} ${g.name}` });
+  b.innerHTML = PIN;
+  b.addEventListener("click", () => {
+    if (on) { setPinned(state.pinned.filter(k => k !== key)); return; }
+    const keys = [...state.pinned, key], dropped = keys.length > PIN_MAX ? keys.shift() : null;
+    const droppedName = dropped && groupDecks().find(x => deckKey(x) === dropped)?.name;
+    setPinned(keys);
+    toast(`Pinned ${g.name} to the top of the page.` + (droppedName ? ` ${droppedName} was unpinned: up to ${PIN_MAX} decks can be pinned.` : ""));
+    $("pinned").scrollIntoView({ behavior: calmMotion() ? "auto" : "smooth", block: "nearest" });
+  });
+  return b;
+}
+// One card per pinned deck: name, cheapest price in stock and sparkline on one line, the shops under it.
+// The sparkline opens the price chart, as in the deck list.
+function renderPinned() {
+  const box = $("pinned");
+  const all = groupDecks();
+  const decks = state.pinned.map(k => all.find(x => deckKey(x) === k)).filter(Boolean);  // a deck no shop lists any more is skipped
+  box.hidden = !decks.length;
+  box.replaceChildren();
+  for (const g of decks) {
+    const best = g.offers.find(o => orderable(o) && typeof o.price === "number") || null;
+    const h = deckHistory(g), key = deckKey(g), open = state.pinChart === key;
+    const title = el("div", { class: "pin-title" },
+      el("h2", {}, g.name, g.kind ? el("span", { class: "kind", text: g.kind }) : null), alertLink(g, "alertbell"), pinButton(g));
+    const price = el("div", { class: "pin-price" },
+      el("b", { text: best ? money(best.shop, best.price) : "—" }),
+      el("span", { class: "avail", text: best ? `cheapest at ${shopName(best.shop)} · ${stockText(g)}` : stockText(g) }));
+    let spark = null;
+    if (h) {
+      spark = el("button", { class: "hbtn", type: "button", "aria-expanded": String(open), title: historySummary(h),
+        "aria-label": `Price history for ${g.name}. ${historySummary(h)}` }, sparkline(h));
+      spark.addEventListener("click", () => { state.pinChart = open ? null : key; renderPinned(); });
+    }
+    box.append(el("div", { class: "pincard" },
+      el("div", { class: "pin-slim" }, title, price, spark), offerChips(g, best, "cheapest in stock"),
+      h && open ? historyChart(h, g.name) : null));
+  }
+}
+
 function renderList() {
   const q = state.q.trim().toLowerCase();
   // A preorder counts as in stock: shops label the same release differently (one "available", another "pre-order").
@@ -454,21 +549,12 @@ function renderList() {
     list.append(el("div", { class: "item" }, el("span", { class: "deck", text: state.status === "in_stock" ? "No decks in stock match these filters. Set availability to “Any availability” to see all." : "No decks match these filters." })));
   }
   for (const g of rows) {
-    const offers = el("div", { class: "offers" });
-    for (const o of g.offers) {
-      // Colour and word both give the shop's stock status; the filters only pick rows and the outlined best price.
-      const status = shownStatus(o.status);
-      offers.append(el("a", { class: "offer " + status + (o === g.best ? " best" : ""), href: safeUrl(o.url), target: "_blank", rel: "noopener",
-          title: `${o.name} · ${STATUS_LABEL[status]}${o === g.best ? " · best price for these filters" : ""}` },
-        el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: typeof o.price === "number" ? (SHOPS[o.shop]?.approx ? "≈ " : "") + pln.format(o.price) : "—" }),
-        el("i", { text: OFFER_WORD[status] })));
-    }
-    const inStock = g.offers.filter(o => o.status === "in_stock" || o.status === "preorder").length;
-    const st = el("span", { class: "st avail", text: inStock ? `In stock at ${inStock} of ${g.offers.length}` : `Out of stock (${g.offers.length})` });
+    const offers = offerChips(g, g.best, "best price for these filters");
+    const st = el("span", { class: "st avail", text: stockText(g) });
     if (g.firstSeen) st.append(" ", el("span", { class: "pill new", text: "New" }));
     list.append(el("div", { class: "item", role: "row" },
       el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null,
-        alertLink(g, "alertbell")), offers),
+        alertLink(g, "alertbell"), pinButton(g)), offers),
       st,
       priceCell(g),
       el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
@@ -759,7 +845,7 @@ function renderChanges() {
   $("changes-more").textContent = `${rest} earlier ${rest === 1 ? "change" : "changes"} ▾`;
 }
 
-function renderAll() { renderShops(); renderChanges(); renderNew(); renderList(); }
+function renderAll() { renderShops(); renderPinned(); renderChanges(); renderNew(); renderList(); }
 
 $("q").addEventListener("input", (e) => { state.q = e.target.value; renderList(); });
 $("status").addEventListener("change", (e) => { state.status = e.target.value; renderList(); });
