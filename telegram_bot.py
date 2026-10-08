@@ -1,11 +1,14 @@
-"""Telegram alerts for single decks: the hourly check's side.
+"""Alerts for single decks (Telegram and device notifications): the hourly check's side.
 
 People subscribe through the bot (@commanderwatchbot), which runs as a Cloudflare Worker (worker/): it answers
 them instantly and keeps who watches which deck. After each scan, check.py works out which decks got cheaper or
 can be ordered again (deck_alerts), asks the Worker who watches them, and messages those people here. The Worker
 reads deck prices from data/bot.json, which check.py writes on every run.
 
-Needs TELEGRAM_TOKEN, BOT_API_URL (the Worker's address) and BOT_ALERTS_KEY (shared with the Worker).
+Device notifications (Web Push) are subscribed from the page's bell and kept by the Worker too; each alert is
+posted to the Worker once, and it sends it to every device watching that deck.
+
+Needs BOT_API_URL (the Worker's address) and BOT_ALERTS_KEY (shared with the Worker); Telegram also TELEGRAM_TOKEN.
 """
 
 from __future__ import annotations
@@ -32,7 +35,8 @@ def offer_text(price: float, shop: str, approx: bool) -> str:
 
 
 def deck_alerts(before: dict[str, dict], after: dict[str, dict]) -> dict[str, dict]:
-    """Alerts for decks that got cheaper, or that can be ordered again: deck key -> {"text", "url", "label"}.
+    """Alerts for decks that got cheaper, or that can be ordered again: deck key -> {"text", "url", "label"} for
+    Telegram, plus "title" and "body" for a device notification.
 
     before/after map deck key -> check.deck_prices' entry: "price" is the cheapest way to order the deck
     (CardTrader included; None if there's none), with its "shop", "url" and "approx" (True for CardTrader).
@@ -44,11 +48,12 @@ def deck_alerts(before: dict[str, dict], after: dict[str, dict]) -> dict[str, di
             continue  # a deck seen for the first time, or not orderable now
         approx = now.get("approx", False)
         offer = offer_text(now["price"], now["shop"], approx)
-        link = {"url": now["url"], "label": "Open on CardTrader" if approx else f"Open at {now['shop']}"}
+        link = {"url": now["url"], "label": "Open on CardTrader" if approx else f"Open at {now['shop']}", "title": now["name"]}
         if was["price"] is None:
-            alerts[key] = {"text": f"📦 {now['name']} can be ordered again: {offer}", **link}
+            alerts[key] = {"text": f"📦 {now['name']} can be ordered again: {offer}", "body": f"Can be ordered again: {offer}", **link}
         elif now["price"] <= was["price"] - max(PRICE_STEP, was["price"] * 0.02):
-            alerts[key] = {"text": f"📉 {now['name']}: {offer} (was {zl(was['price'])})", **link}
+            alerts[key] = {"text": f"📉 {now['name']}: {offer} (was {zl(was['price'])})",
+                           "body": f"Cheaper: {offer} (was {zl(was['price'])})", **link}
     return alerts
 
 
@@ -59,7 +64,7 @@ class Alerts:
     @classmethod
     def from_env(cls) -> Alerts | None:
         env = {k: os.environ.get(k, "").strip() for k in ("TELEGRAM_TOKEN", "BOT_API_URL", "BOT_ALERTS_KEY", "PAGE_URL")}
-        if not (env["TELEGRAM_TOKEN"] and env["BOT_API_URL"] and env["BOT_ALERTS_KEY"]):
+        if not (env["BOT_API_URL"] and env["BOT_ALERTS_KEY"]):
             return None
         return cls(env["TELEGRAM_TOKEN"], env["BOT_API_URL"], env["BOT_ALERTS_KEY"], env["PAGE_URL"])
 
@@ -80,8 +85,8 @@ class Alerts:
         return body["result"]
 
     def send(self, alerts: dict[str, dict]) -> int:
-        """Message each deck's watchers. Returns how many messages went out."""
-        if not alerts:
+        """Message each deck's watchers on Telegram. Returns how many messages went out."""
+        if not alerts or not self.token:
             return 0
         watchers = self.worker("GET", "/subscribers")
         sent = 0
@@ -100,3 +105,13 @@ class Alerts:
                     else:
                         print(f"Telegram: couldn't message a subscriber ({e})")
         return sent
+
+    def push(self, alerts: dict[str, dict]) -> dict[str, int]:
+        """Device notifications: the Worker sends each alert to the devices watching that deck."""
+        total = {"sent": 0, "removed": 0, "failed": 0}
+        for key, a in alerts.items():
+            r = self.worker("POST", "/push/send", json={"deck": key, "title": a["title"], "body": a["body"],
+                                                       "shopUrl": a["url"], "shopLabel": a["label"]})
+            for k in total:
+                total[k] += r.get(k, 0)
+        return total

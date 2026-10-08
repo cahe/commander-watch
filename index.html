@@ -7,6 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#1f5f8b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,7 +126,9 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .spark .spark-low, .hchart .dot-low { fill: var(--ok); }
 .alertbell { display: inline-flex; vertical-align: -3px; margin-left: 6px; padding: 3px; border-radius: 50%; color: var(--accent); }
 .alertbell svg { width: 17px; height: 17px; stroke-width: 1.7; }
+.alertbell { border: 0; background: none; cursor: pointer; }
 .alertbell:hover { background: var(--accent-soft); }
+.alertbell.on svg, .alertbtn.on svg { fill: currentColor; }
 .pinbtn { display: inline-flex; vertical-align: -3px; margin-left: 2px; padding: 3px; border: 0; border-radius: 50%; background: none; color: var(--muted); cursor: pointer; }
 .pinbtn svg { width: 16px; height: 16px; }
 .pinbtn:hover { color: var(--accent); background: var(--accent-soft); }
@@ -150,7 +153,22 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .toast { position: fixed; left: 50%; bottom: 20px; transform: translate(-50%, 20px); max-width: min(520px, calc(100vw - 32px)); padding: 10px 14px; border-radius: 8px; background: var(--fg); color: var(--bg); font: 14px/1.4 var(--font-body); box-shadow: 0 6px 24px rgba(0,0,0,.25); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50; }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 .alertbtn { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font: 500 12px var(--font-body); text-decoration: none; }
+.alertbtn { background: none; cursor: pointer; }
 .alertbtn:hover { border-color: var(--accent); background: var(--accent-soft); }
+.alertpop { position: absolute; z-index: 40; width: min(320px, calc(100vw - 32px)); display: grid; gap: 8px; padding: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+.alertpop p { margin: 0; }
+.alertpop .avail { margin-top: -4px; }
+.alertpop .hint { font-size: 13px; color: var(--muted); }
+.popbtn { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; background: none; color: var(--accent); font: 500 14px var(--font-body); text-align: left; text-decoration: none; cursor: pointer; }
+.popbtn:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-soft); }
+.popbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.popbtn svg { width: 16px; height: 16px; flex: none; }
+.popbtn.device { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.popbtn.device:hover:not(:disabled) { background: var(--accent); filter: brightness(1.08); }
+.popbtn.device.on { background: var(--ok-soft); border-color: var(--ok-soft); color: var(--ok); }
+.popbtn.device.on svg { fill: currentColor; }
+.popbtn.device .off { margin-left: auto; font-size: 12px; text-decoration: underline; }
+.popbtn:disabled { cursor: progress; opacity: .75; }
 .alertbell:focus-visible, .alertbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .hbtn { padding: 2px 0; border: 0; background: none; color: var(--accent); font: 500 12px var(--font-body); cursor: pointer; }
 .hbtn:hover .spark { color: var(--fg); }
@@ -317,18 +335,155 @@ const SHOPS = {
   // Marketplace: prices only (no pushes), converted to PLN, shown only next to decks a shop sells.
   cardtrader: { name: "CardTrader", home: "https://www.cardtrader.com/en/magic", approx: true, extra: true }
 };
-// Telegram bot for single-deck alerts (telegram_bot.py); its "start" link carries the deck's permanent key.
+// Alerts for single decks. The bell opens a small menu: notifications on this device (Web Push: sw.js shows them,
+// the Cloudflare Worker in worker/ keeps who watches what and sends them) or messages from the Telegram bot.
+// Both are keyed by the deck's permanent key; the alerts themselves come from the hourly check (telegram_bot.py).
 const TELEGRAM_BOT = "commanderwatchbot";
+const PUSH_API = "https://commander-watch-bot.maciej-janowski.workers.dev/push";
+const VAPID_PUBLIC_KEY = "BOBRIqXSvDG1igB54C39MXlWbzP6cWSaIF1szOZDL5JuQOeYe91uOgLREou4qhk659o4HH4IauRjF3IxT81t0sE";
 const BELL = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11V7a4 4 0 0 1 8 0v4l1.5 1.5h-11z"/><path d="M6.5 14a1.5 1.5 0 0 0 3 0"/></svg>';
+let pushDecks = [];  // the decks this device gets notifications for
+try { pushDecks = JSON.parse(localStorage.getItem("pushDecks") || "[]"); } catch {}
+function savePushDecks(decks) {
+  pushDecks = decks;
+  try { localStorage.setItem("pushDecks", JSON.stringify(decks)); } catch {}
+}
+// "ok", or why this browser can't: "ios" (Safari only allows it once the page is on the home screen), "denied", "none".
+function pushSupport() {
+  if (!("serviceWorker" in navigator) || !("PushManager" in window) || !("Notification" in window)) {
+    const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    return ios && !navigator.standalone ? "ios" : "none";
+  }
+  return Notification.permission === "denied" ? "denied" : "ok";
+}
+const PUSH_HINT = {
+  ios: "On iPhone and iPad, notifications work once Commander Watch is on your home screen: tap Share, then Add to Home Screen, open it from there and tap the bell again.",
+  denied: "Notifications are blocked for this site. Allow them in the browser's site settings, then try again.",
+  none: "This browser can't show notifications from websites."
+};
+let swRegistration = null;
+const serviceWorker = () => (swRegistration ||= navigator.serviceWorker.register("sw.js"));
+const keyBytes = (s) => Uint8Array.from(atob(s.replace(/-/g, "+").replace(/_/g, "/")), c => c.charCodeAt(0));
+async function pushSubscription(create) {
+  await serviceWorker();
+  const reg = await navigator.serviceWorker.ready;
+  return (await reg.pushManager.getSubscription())
+    || (create ? reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: keyBytes(VAPID_PUBLIC_KEY) }) : null);
+}
+async function pushApi(body) {
+  const r = await fetch(PUSH_API, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  const res = await r.json().catch(() => ({}));
+  if (!r.ok) throw Object.assign(new Error(res.error || `the alerts service answered ${r.status}`), { status: r.status });
+  return res;
+}
+// Turns one deck's notifications on or off for this device. The Worker sends a confirmation push when one goes on.
+async function setDevicePush(key, on, retried) {
+  if (on && (await Notification.requestPermission()) !== "granted") throw Object.assign(new Error("denied"), { denied: true });
+  const sub = await pushSubscription(on);
+  const decks = on ? [...new Set([...pushDecks, key])] : pushDecks.filter(k => k !== key);
+  if (!sub) { savePushDecks(decks); return; }
+  try {
+    const res = await pushApi({ subscription: sub.toJSON(), decks, added: on ? key : undefined });
+    savePushDecks(res.decks);
+    if (!res.decks.length) await sub.unsubscribe().catch(() => {});
+  } catch (e) {
+    if (e.status !== 410 || retried) throw e;
+    await sub.unsubscribe().catch(() => {});  // the push service forgot this subscription: start a new one
+    return setDevicePush(key, on, true);
+  }
+}
+// On load: which decks this device watches, as the Worker knows it (a subscription can expire on its own).
+async function syncPush() {
+  if (pushSupport() !== "ok") return;
+  serviceWorker().catch(() => {});
+  if (!pushDecks.length || Notification.permission !== "granted") return;
+  try {
+    const sub = await pushSubscription(false);
+    savePushDecks(sub ? (await pushApi({ subscription: sub.toJSON() })).decks : []);
+    renderPinned(); renderList();
+  } catch {}
+}
+
 function alertLink(g, cls, label) {
-  const key = g.offers.find(o => o.deck)?.deck;
-  if (!TELEGRAM_BOT || !key) return null;
-  const a = el("a", { class: cls, href: `https://t.me/${TELEGRAM_BOT}?start=${encodeURIComponent(key)}`, target: "_blank", rel: "noopener",
-    title: `Get a Telegram message when ${g.name} gets cheaper or is back in stock`, "aria-label": `Get alerts for ${g.name} on Telegram` });
-  a.innerHTML = BELL;
-  if (label) a.append(el("span", { text: label }));
-  a.addEventListener("click", () => toast(`Opening Telegram. Press Start there to get alerts for ${g.name}; the bot replies within a couple of minutes.`));
-  return a;
+  const key = deckKey(g);
+  if (!key) return null;
+  const on = pushDecks.includes(key);
+  const b = el("button", { class: cls + (on ? " on" : ""), type: "button", "aria-haspopup": "dialog",
+    title: on ? `Notifications are on for ${g.name}` : `Get alerts when ${g.name} gets cheaper or is back in stock`,
+    "aria-label": `Alerts for ${g.name}` });
+  b.innerHTML = BELL;
+  if (label) b.append(el("span", { text: label }));
+  b.addEventListener("click", (e) => { e.stopPropagation(); openAlerts(g, b); });
+  return b;
+}
+
+function closeAlerts(refocus) {
+  const pop = $("alertpop");
+  if (!pop) return;
+  pop.remove();
+  if (refocus && pop.anchor?.isConnected) pop.anchor.focus();
+}
+function openAlerts(g, anchor) {
+  if ($("alertpop")?.anchor === anchor) return closeAlerts(true);
+  closeAlerts();
+  const key = deckKey(g);
+  const pop = el("div", { class: "alertpop", id: "alertpop", role: "dialog", "aria-label": `Alerts for ${g.name}` });
+  pop.anchor = anchor;
+  pop.addEventListener("click", (e) => e.stopPropagation());
+  let busy = false, note = "";
+  const draw = () => {
+    const on = pushDecks.includes(key), support = pushSupport();
+    pop.replaceChildren(el("strong", { text: g.name }),
+      el("p", { class: "avail", text: "Get an alert when it gets cheaper or can be ordered again." }));
+    if (support === "ok") {
+      const b = el("button", { class: "popbtn device" + (on ? " on" : ""), type: "button", "aria-pressed": String(on) });
+      b.innerHTML = BELL;
+      b.append(el("span", { text: busy ? (on ? "Turning off…" : "Turning on…") : on ? "Notifications on for this device" : "Notify me on this device" }));
+      if (on && !busy) b.append(el("span", { class: "off", text: "Turn off" }));
+      b.disabled = busy;
+      b.addEventListener("click", async () => {
+        busy = true; note = ""; draw();
+        try {
+          await setDevicePush(key, !on);
+          note = on ? "Notifications for this deck are off." : "Done. A confirmation notification is on its way.";
+        } catch (e) {
+          note = e.denied || pushSupport() === "denied" ? PUSH_HINT.denied : `Couldn't change it: ${e.message}. Try again in a moment.`;
+        }
+        busy = false; draw(); renderPinned(); renderList();
+        pop.querySelector(".device")?.focus();
+      });
+      pop.append(b);
+    } else {
+      pop.append(el("p", { class: "hint", text: PUSH_HINT[support] }));
+    }
+    const tg = el("a", { class: "popbtn", href: `https://t.me/${TELEGRAM_BOT}?start=${encodeURIComponent(key)}`, target: "_blank", rel: "noopener",
+      text: "Message me on Telegram ↗" });
+    tg.addEventListener("click", () => { closeAlerts(); toast(`Opening Telegram. Press Start there to get alerts for ${g.name}.`); });
+    pop.append(tg);
+    if (note) pop.append(el("p", { class: "hint", role: "status", text: note }));
+  };
+  draw();
+  document.body.append(pop);
+  // Under the bell, kept on screen.
+  const r = anchor.getBoundingClientRect(), w = pop.offsetWidth;
+  pop.style.top = `${scrollY + r.bottom + 6}px`;
+  pop.style.left = `${scrollX + Math.max(16, Math.min(r.left - 12, document.documentElement.clientWidth - w - 16))}px`;
+  pop.querySelector("button, a")?.focus();
+}
+document.addEventListener("click", () => closeAlerts());
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeAlerts(true); });
+
+// A notification opens the page at its deck (#deck=<key>): the deck list shows just that deck, with its chart open.
+function showDeck(url) {
+  const m = /#deck=([a-z0-9-]+)/.exec(url || "");
+  const g = m && groupDecks().find(x => deckKey(x) === m[1]);
+  if (!g) return;
+  history.replaceState(null, "", location.pathname + location.search);
+  state.q = g.name; state.status = ""; state.shop = ""; state.openHistory = g.name;
+  $("q").value = g.name; $("status").value = "";
+  if (layout.closed.includes("decks")) { layout.closed = layout.closed.filter(p => p !== "decks"); saveLayout(); applyLayout(); }
+  renderChips(); renderList();
+  $("list").closest("section").scrollIntoView({ block: "start" });
 }
 let toastTimer = null;
 function toast(text) {
@@ -575,7 +730,7 @@ function renderList() {
       if (h) {
         const panel = historyChart(h, g.name);
         // People looking at a deck's prices are the likeliest to want alerts for it.
-        const a = alertLink(g, "alertbtn", "Message me on Telegram when it gets cheaper or is back in stock");
+        const a = alertLink(g, "alertbtn", "Get alerts when it gets cheaper or is back in stock");
         if (a) panel.append(a);
         list.append(el("div", { class: "item hrow" }, panel));
       }
@@ -1137,6 +1292,7 @@ async function load() {
       state.history = JSON.parse(history);
       dataKey = key;
       renderAll();
+      if (before === null) showDeck(location.hash);  // opened from a notification
       if (soundOn && before !== null && state.changes.some(e => e.at > before && chimes(e))) playSound();
     }
     updateBadge();
@@ -1171,6 +1327,9 @@ document.addEventListener("visibilitychange", () => {
 window.addEventListener("focus", lookedAt);
 // Another tab marked the changes seen.
 window.addEventListener("storage", (e) => { if (e.key === "seenChanges" && e.newValue) { seenAt = e.newValue; updateBadge(); } });
+// A notification tapped while this tab was already open (sw.js).
+navigator.serviceWorker?.addEventListener("message", (e) => { if (e.data?.open) showDeck(e.data.open); });
+syncPush();
 </script>
 </body>
 </html>

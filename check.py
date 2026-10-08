@@ -953,18 +953,23 @@ def bot_file() -> Path:
 
 
 def run_telegram(before: dict[str, dict], after: dict[str, dict]) -> None:
-    """Publish deck prices for the Telegram bot (the Cloudflare Worker reads data/bot.json), then message the
-    watchers of decks that got cheaper or can be ordered again. Never fails the check."""
+    """Publish deck prices for the Telegram bot (the Cloudflare Worker reads data/bot.json), then alert the
+    watchers of decks that got cheaper or can be ordered again, on Telegram and on their devices. Never fails the check."""
     save(bot_file(), {"decks": {k: {f: v[f] for f in ("name", "shopPrice", "shopName", "shopUrl", "ctPrice", "ctUrl")}
                                 for k, v in after.items()}})
     alerts = telegram_bot.Alerts.from_env()
     if not alerts:
         return
+    found = telegram_bot.deck_alerts(before, after)
+    # Each channel on its own: the bot or the Worker being down shouldn't stop the other, or the shop data being saved.
     try:
-        found = telegram_bot.deck_alerts(before, after)
         print(f"Telegram: {len(found)} decks to alert, {alerts.send(found)} messages sent")
-    except Exception as e:  # the bot being down shouldn't stop the shop data being saved
+    except Exception as e:
         print(f"Telegram: {type(e).__name__}: {e}")
+    try:
+        print(f"Device notifications: {alerts.push(found)}")
+    except Exception as e:
+        print(f"Device notifications: {type(e).__name__}: {e}")
 
 
 def history_file() -> Path:
