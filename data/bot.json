@@ -441,7 +441,7 @@
    "shopUrl": null
   },
   "final-fantasy-revival-trance": {
-   "ctPrice": 152.91,
+   "ctPrice": 164.25,
    "ctUrl": "https://www.cardtrader.com/en/cards/322101",
    "name": "Final Fantasy Revival Trance",
    "shopName": "Pan Mysza",
@@ -708,9 +708,9 @@
    "ctPrice": 172.7,
    "ctUrl": "https://www.cardtrader.com/en/cards/352408",
    "name": "Lorwyn Eclipsed – Blight Curse",
-   "shopName": "Wargamer",
-   "shopPrice": 215.0,
-   "shopUrl": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16371-mtg-le-cd-bc.html"
+   "shopName": "Magic Cafe",
+   "shopPrice": 219.99,
+   "shopUrl": "https://magiccafe.eu/product/lorwyn-eclipsed-commander-decks-blight-curse/"
   },
   "lorwyn-eclipsed-dance-of-the-elements": {
    "ctPrice": 199.81,
@@ -1145,7 +1145,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-set.html"
   },
   "star-trek-federation-fleet": {
-   "ctPrice": 316.46,
+   "ctPrice": 316.42,
    "ctUrl": "https://www.cardtrader.com/en/cards/400888",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Time4Magic",
@@ -1161,7 +1161,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
   },
   "star-trek-klingon-fury": {
-   "ctPrice": 316.46,
+   "ctPrice": 316.42,
    "ctUrl": "https://www.cardtrader.com/en/cards/400890",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Time4Magic",
@@ -1177,7 +1177,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-klingon-fury.html"
   },
   "star-trek-landing-party": {
-   "ctPrice": 316.46,
+   "ctPrice": 316.42,
    "ctUrl": "https://www.cardtrader.com/en/cards/400889",
    "name": "Star Trek – Landing Party",
    "shopName": "Time4Magic",
@@ -1201,7 +1201,7 @@
    "shopUrl": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
   },
   "star-trek-we-are-the-borg": {
-   "ctPrice": 316.46,
+   "ctPrice": 316.42,
    "ctUrl": "https://www.cardtrader.com/en/cards/400891",
    "name": "Star Trek – We Are the Borg",
    "shopName": "Time4Magic",
@@ -1225,7 +1225,7 @@
    "shopUrl": null
   },
   "streets-of-new-capenna-cabaretti-cacophony": {
-   "ctPrice": 647.81,
+   "ctPrice": 647.9,
    "ctUrl": "https://www.cardtrader.com/en/cards/208728",
    "name": "Streets of New Capenna Cabaretti Cacophony",
    "shopName": null,

@@ -2399,5 +2399,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389403"
+ },
+ {
+  "at": "2026-10-08T14:17:33Z",
+  "best": {
+   "price": 219.99,
+   "shop": "magiccafe"
+  },
+  "deck": "Lorwyn Eclipsed – Blight Curse",
+  "group": "cardtrader-352408",
+  "id": "wargamer-16371",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 215.0,
+  "shop": "wargamer",
+  "status": "out_of_stock",
+  "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16371-mtg-le-cd-bc.html"
  }
 ]
