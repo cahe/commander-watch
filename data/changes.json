@@ -2513,5 +2513,93 @@
   "shop": "frostmagic",
   "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/lorwyn-eclipsed-dance-of-the-elements-commander-deck"
+ },
+ {
+  "at": "2026-10-09T14:18:20Z",
+  "best": {
+   "price": 560.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31276",
+  "id": "wargamer-17426",
+  "inStock": 4,
+  "kind": "price",
+  "old": 659.0,
+  "price": 600.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/produkty-premium/17426-mtg-msh-ccd-aa.html"
+ },
+ {
+  "at": "2026-10-09T14:18:20Z",
+  "best": {
+   "price": 566.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31279",
+  "id": "wargamer-17425",
+  "inStock": 4,
+  "kind": "price",
+  "old": 659.0,
+  "price": 650.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/produkty-premium/17425-mtg-msh-ccd-dp.html"
+ },
+ {
+  "at": "2026-10-09T14:18:20Z",
+  "best": {
+   "price": 560.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31278",
+  "id": "wargamer-17424",
+  "inStock": 4,
+  "kind": "price",
+  "old": 669.0,
+  "price": 600.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/produkty-premium/17424-mtg-msh-ccd-ff.html"
+ },
+ {
+  "at": "2026-10-09T14:18:20Z",
+  "best": {
+   "price": 566.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31277",
+  "id": "wargamer-17423",
+  "inStock": 4,
+  "kind": "price",
+  "old": 669.0,
+  "price": 600.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/produkty-premium/17423-mtg-msh-ccd-wf.html"
+ },
+ {
+  "at": "2026-10-09T14:18:20Z",
+  "best": {
+   "price": 259.0,
+   "shop": "time4magic"
+  },
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31274",
+  "id": "frostmagic-mtg-marvel-super-heroes-the-fantastic-four-commander-deck",
+  "inStock": 7,
+  "kind": "soldout",
+  "price": 149,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-the-fantastic-four-commander-deck"
  }
 ]
