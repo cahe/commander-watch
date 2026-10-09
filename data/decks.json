@@ -1263,8 +1263,8 @@
  },
  {
   "baseline": true,
-  "change": "price 1111.50 → 1120.65 zł",
-  "changedAt": "2026-10-09T00:17:52Z",
+  "change": "price 1120.65 → 1111.50 zł",
+  "changedAt": "2026-10-09T01:17:48Z",
   "cheapest": false,
   "deck": "masters-planeswalker-party",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -1273,7 +1273,7 @@
   "id": "cardtrader-238393",
   "name": "Commander Masters | \"Planeswalker Party\" Commander Deck",
   "pid": 238393,
-  "price": 1120.65,
+  "price": 1111.5,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238393"
@@ -2315,8 +2315,8 @@
  },
  {
   "baseline": true,
-  "change": "price 174.81 → 177.17 zł",
-  "changedAt": "2026-10-09T00:17:52Z",
+  "change": "price 177.17 → 174.81 zł",
+  "changedAt": "2026-10-09T01:17:48Z",
   "cheapest": false,
   "deck": "edge-of-eternities-counter-intelligence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2325,7 +2325,7 @@
   "id": "cardtrader-322693",
   "name": "Edge of Eternities: \"Counter Intelligence\" Commander Deck",
   "pid": 322693,
-  "price": 177.17,
+  "price": 174.81,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322693"
