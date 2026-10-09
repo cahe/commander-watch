@@ -2497,5 +2497,21 @@
   "shop": "frostmagic",
   "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
+ },
+ {
+  "at": "2026-10-09T12:17:58Z",
+  "best": {
+   "price": 199.0,
+   "shop": "wargamer"
+  },
+  "deck": "Lorwyn Eclipsed – Dance of the Elements",
+  "group": "cardtrader-352407",
+  "id": "frostmagic-lorwyn-eclipsed-dance-of-the-elements-commander-deck",
+  "inStock": 4,
+  "kind": "soldout",
+  "price": 180,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/lorwyn-eclipsed-dance-of-the-elements-commander-deck"
  }
 ]

@@ -2315,8 +2315,8 @@
  },
  {
   "baseline": true,
-  "change": "price 177.17 → 177.11 zł",
-  "changedAt": "2026-10-09T10:18:05Z",
+  "change": "price 177.11 → 174.75 zł",
+  "changedAt": "2026-10-09T12:17:58Z",
   "cheapest": false,
   "deck": "edge-of-eternities-counter-intelligence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2325,7 +2325,7 @@
   "id": "cardtrader-322693",
   "name": "Edge of Eternities: \"Counter Intelligence\" Commander Deck",
   "pid": 322693,
-  "price": 177.11,
+  "price": 174.75,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322693"
@@ -3302,8 +3302,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-09T12:17:58Z",
   "deck": "lorwyn-eclipsed-dance-of-the-elements",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-352407",
@@ -3313,7 +3313,7 @@
   "pid": null,
   "price": 180,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/lorwyn-eclipsed-dance-of-the-elements-commander-deck"
  },
  {
