@@ -2629,5 +2629,19 @@
   "shop": "magiccafe",
   "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-food-and-fellowship/"
+ },
+ {
+  "at": "2026-10-09T21:14:04Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Eldrazi Incursion",
+  "group": "cardtrader-279379",
+  "id": "cardtrader-279379",
+  "inStock": 0,
+  "kind": "price",
+  "old": 654.16,
+  "price": 637.54,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279379"
  }
 ]
