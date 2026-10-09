@@ -773,8 +773,8 @@
  },
  {
   "baseline": true,
-  "change": "price 647.61 → 648.48 zł",
-  "changedAt": "2026-10-09T14:18:20Z",
+  "change": "price 648.48 → 647.61 zł",
+  "changedAt": "2026-10-09T16:18:19Z",
   "cheapest": true,
   "deck": "streets-of-new-capenna-cabaretti-cacophony",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -784,7 +784,7 @@
   "lowLogged": 445.5,
   "name": "Commander: Streets of New Capenna | \"Cabaretti Cacophony\" Deck",
   "pid": 208728,
-  "price": 648.48,
+  "price": 647.61,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/208728"
@@ -2315,8 +2315,8 @@
  },
  {
   "baseline": true,
-  "change": "price 177.11 → 174.75 zł",
-  "changedAt": "2026-10-09T14:18:20Z",
+  "change": "price 174.75 → 177.11 zł",
+  "changedAt": "2026-10-09T16:18:19Z",
   "cheapest": false,
   "deck": "edge-of-eternities-counter-intelligence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2325,7 +2325,7 @@
   "id": "cardtrader-322693",
   "name": "Edge of Eternities: \"Counter Intelligence\" Commander Deck",
   "pid": 322693,
-  "price": 174.75,
+  "price": 177.11,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322693"
