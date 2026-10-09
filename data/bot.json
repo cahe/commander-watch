@@ -1124,9 +1124,9 @@
    "ctPrice": 218.52,
    "ctUrl": "https://www.cardtrader.com/en/cards/370595",
    "name": "Secrets of Strixhaven Silverquill Influence",
-   "shopName": "Frost Magic",
-   "shopPrice": 240,
-   "shopUrl": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-silverquill-influence-commander-deck"
+   "shopName": "Magic Cafe",
+   "shopPrice": 262.99,
+   "shopUrl": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-silverquill-influence/"
   },
   "secrets-of-strixhaven-witherbloom-pestilence": {
    "ctPrice": 206.97,
@@ -1404,9 +1404,9 @@
    "ctPrice": 366.13,
    "ctUrl": "https://www.cardtrader.com/en/cards/246478",
    "name": "The Lord of the Rings Tales of Middle-earth Food and Fellowship",
-   "shopName": "Magic Cafe",
-   "shopPrice": 578.5,
-   "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-food-and-fellowship/"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "the-lord-of-the-rings-tales-of-middle-earth-riders-of-ro": {
    "ctPrice": 309.01,

@@ -3478,8 +3478,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-09T17:18:08Z",
   "deck": "secrets-of-strixhaven-silverquill-influence",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-370595",
@@ -3489,7 +3489,7 @@
   "pid": null,
   "price": 240,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-silverquill-influence-commander-deck"
  },
  {
@@ -3622,8 +3622,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-09T17:18:08Z",
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-food-and-fel",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-246478",
@@ -3633,7 +3633,7 @@
   "pid": 15262,
   "price": 578.5,
   "shop": "magiccafe",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-food-and-fellowship/"
  },
  {

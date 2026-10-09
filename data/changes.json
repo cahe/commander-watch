@@ -2601,5 +2601,33 @@
   "shop": "frostmagic",
   "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-the-fantastic-four-commander-deck"
+ },
+ {
+  "at": "2026-10-09T17:18:08Z",
+  "best": {
+   "price": 262.99,
+   "shop": "magiccafe"
+  },
+  "deck": "Secrets of Strixhaven Silverquill Influence",
+  "group": "cardtrader-370595",
+  "id": "frostmagic-mtg-secrets-of-strixhaven-silverquill-influence-commander-deck",
+  "inStock": 5,
+  "kind": "soldout",
+  "price": 240,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-silverquill-influence-commander-deck"
+ },
+ {
+  "at": "2026-10-09T17:18:08Z",
+  "deck": "The Lord of the Rings Tales of Middle-earth Food and Fellowship",
+  "group": "cardtrader-246478",
+  "id": "magiccafe-15262",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 578.5,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-food-and-fellowship/"
  }
 ]
