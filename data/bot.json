@@ -217,8 +217,8 @@
    "shopUrl": "https://magiccafe.eu/product/universes-beyond-doctor-who-commander-deck-set-4/"
   },
   "doctor-who-timey-wimey": {
-   "ctPrice": 484.24,
-   "ctUrl": "https://www.cardtrader.com/en/cards/246952",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "Doctor Who – Timey-Wimey",
    "shopName": null,
    "shopPrice": null,
@@ -289,7 +289,7 @@
    "shopUrl": null
   },
   "edge-of-eternities-counter-intelligence": {
-   "ctPrice": 177.11,
+   "ctPrice": 179.87,
    "ctUrl": "https://www.cardtrader.com/en/cards/322693",
    "name": "Edge of Eternities – Counter Intelligence",
    "shopName": "Cardstore",
@@ -441,7 +441,7 @@
    "shopUrl": null
   },
   "final-fantasy-revival-trance": {
-   "ctPrice": 152.86,
+   "ctPrice": 164.2,
    "ctUrl": "https://www.cardtrader.com/en/cards/322101",
    "name": "Final Fantasy Revival Trance",
    "shopName": "Pan Mysza",
@@ -481,7 +481,7 @@
    "shopUrl": "https://www.xjoy.pl/final-fantasy/23122-mtg-final-fantasy-commander-deck-display-4-decks.html"
   },
   "foundations-starter-calling-all-angels": {
-   "ctPrice": 198.83,
+   "ctPrice": 198.87,
    "ctUrl": "https://www.cardtrader.com/en/cards/389398",
    "name": "Foundations Starter – Calling All Angels",
    "shopName": null,
@@ -489,7 +489,7 @@
    "shopUrl": null
   },
   "foundations-starter-keen-engineering": {
-   "ctPrice": 119.02,
+   "ctPrice": 119.07,
    "ctUrl": "https://www.cardtrader.com/en/cards/389399",
    "name": "Foundations Starter – Keen Engineering",
    "shopName": "Time4Magic",
@@ -497,7 +497,7 @@
    "shopUrl": "https://time4magic.pl/pl/p/Foundations-Commander-Deck-Keen-Engineering/990"
   },
   "foundations-starter-reign-of-dragons": {
-   "ctPrice": 199.0,
+   "ctPrice": 199.04,
    "ctUrl": "https://www.cardtrader.com/en/cards/389401",
    "name": "Foundations Starter – Reign of Dragons",
    "shopName": null,
@@ -505,7 +505,7 @@
    "shopUrl": null
   },
   "foundations-starter-tramplesaurus-rex": {
-   "ctPrice": 194.84,
+   "ctPrice": 194.89,
    "ctUrl": "https://www.cardtrader.com/en/cards/389402",
    "name": "Foundations Starter – Tramplesaurus Rex",
    "shopName": null,
@@ -513,7 +513,7 @@
    "shopUrl": null
   },
   "foundations-starter-wretched-ranks": {
-   "ctPrice": 172.69,
+   "ctPrice": 172.74,
    "ctUrl": "https://www.cardtrader.com/en/cards/389400",
    "name": "Foundations Starter – Wretched Ranks",
    "shopName": null,
@@ -1361,7 +1361,7 @@
    "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-temur-roar/"
   },
   "teenage-mutant-ninja-turtles-turtle-power": {
-   "ctPrice": 168.18,
+   "ctPrice": 168.4,
    "ctUrl": "https://www.cardtrader.com/en/cards/354096",
    "name": "Teenage Mutant Ninja Turtles – Turtle Power!",
    "shopName": "Wargamer",
