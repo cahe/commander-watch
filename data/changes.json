@@ -2764,5 +2764,19 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389403"
+ },
+ {
+  "at": "2026-10-10T22:17:48Z",
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardtrader-265029",
+  "id": "cardtrader-265029",
+  "inStock": 0,
+  "kind": "price",
+  "old": 632.29,
+  "price": 593.72,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
  }
 ]
