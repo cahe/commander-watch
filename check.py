@@ -612,6 +612,22 @@ SHOPS = {
     "cardtrader": ("CardTrader", scan_cardtrader),
 }
 QUIET_SHOPS = {"cardtrader"}  # prices only: never announce new decks or restocks
+CT_WINDOW = 3  # checks (about 3 hours) over which a CardTrader deck's price is its lowest offer
+
+
+def rolling_low(p: dict, known: dict | None) -> dict:
+    """A marketplace deck's price as the lowest offer seen over the last CT_WINDOW checks, in stock if any was.
+
+    CardTrader's cheapest offer is one seller's copy: it can sit in someone's cart for an hour, or sell and leave
+    a much dearer one, then come back. Taken check by check, that logs cheapest / no longer cheapest and price
+    up / down every other hour, plays the sound and sends "back in stock" alerts. Over a short window it holds
+    steady, and it's always a price that was really on offer within the last few hours.
+    """
+    seen = p["price"] if p["status"] in ORDERABLE else None
+    recent = ((known or {}).get("recent") or [])[-(CT_WINDOW - 1):] + [seen]
+    prices = [x for x in recent if x is not None]
+    return {**p, "recent": recent, "price": min(prices) if prices else p["price"],
+            "status": "in_stock" if prices else "out_of_stock"}
 # Shops whose listings leave out sold-out decks instead of marking them: after a complete scan,
 # a known deck that isn't listed any more has sold out.
 VANISHING_SHOPS = {"frostmagic"}
@@ -1149,7 +1165,11 @@ def main() -> int:
             doc_id = f"{shop}-{p['pid']}" if p["pid"] else f"{shop}-{norm_url(p['url']).rsplit('/', 1)[-1][:120]}"
             known = by_id.get(doc_id) or by_url.get(norm_url(p["url"]))
             seen.add(known["id"] if known else doc_id)
+            if shop in QUIET_SHOPS:
+                p = rolling_low(p, known)
             if known:
+                if "recent" in p:
+                    known["recent"] = p["recent"]
                 was_orderable = known.get("status") in ORDERABLE
                 old_price, old_status = known.get("price"), known.get("status")
                 for k in ("price", "status", "name", "url"):
