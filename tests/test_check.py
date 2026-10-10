@@ -292,8 +292,9 @@ def test_changelog_events():
     assert events[("price", "xjoy")]["old"] == 139.99 and events[("price", "xjoy")]["price"] == 145.0
     assert events[("soldout", "time4magic")]["inStock"] == 0
     assert events[("cheapest", "cardtrader")]["best"] == {"shop": "time4magic", "price": 125.0}
-    shops["cardtrader"][0].update(price=130.0)                                 # small CardTrader move: one "notcheapest"
-    check.main()
+    shops["cardtrader"][0].update(price=130.0)  # small CardTrader move: one "notcheapest", once 120 has left the window
+    for _ in range(check.CT_WINDOW):
+        check.main()
     last = json.loads(check.changes_file().read_text(encoding="utf-8"))[-1]
     assert last["kind"] == "notcheapest" and len(json.loads(check.changes_file().read_text())) == 7
 
@@ -534,7 +535,7 @@ def test_vanished_listing_is_sold_out():
     assert kinds == ["soldout", "restock"]
 
 
-def test_cardtrader_blip_is_ignored():
+def test_cardtrader_rolling_low():
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()
     check.DECKS_FILE, check.STATE_FILE = tmp / "data" / "decks.json", tmp / "data" / "state.json"
@@ -542,16 +543,24 @@ def test_cardtrader_blip_is_ignored():
     shop = {"pid": 1, "name": "Doctor Who Commander Deck: Timey-Wimey", "price": None, "url": "https://wilczek.poznan.pl/1", "status": "out_of_stock"}
     ct = lambda price: {"pid": 246952, "name": "Doctor Who | \"Timey-Wimey\" Deck", "price": price,
                         "url": "https://www.cardtrader.com/en/cards/246952", "status": "in_stock" if price else "out_of_stock"}
-    statuses = []
-    # In stock, gone for one check (a blip), back, then gone for two checks in a row (really sold out).
-    for price in (484.24, None, 484.24, None, None):
-        check.SHOPS = {"wilczek": ("Wilczek", lambda s: ([dict(shop)], [])),
-                       "cardtrader": ("CardTrader", lambda s, price=price: ([ct(price)], []))}
-        check.main()
-        statuses.append(next(d["status"] for d in json.loads(check.DECKS_FILE.read_text()) if d["shop"] == "cardtrader"))
-    assert statuses == ["in_stock", "in_stock", "in_stock", "in_stock", "out_of_stock"]
+
+    def run(prices):
+        out = []
+        for price in prices:
+            check.SHOPS = {"wilczek": ("Wilczek", lambda s: ([dict(shop)], [])),
+                           "cardtrader": ("CardTrader", lambda s, price=price: ([ct(price)], []))}
+            check.main()
+            d = next(d for d in json.loads(check.DECKS_FILE.read_text()) if d["shop"] == "cardtrader")
+            out.append((d["price"], d["status"]))
+        return out
+
+    # The cheap copy blips out, a dear one shows instead for an hour, then it's really gone for three checks.
+    seen = run([484.24, None, 484.24, 666.89, 484.24, None, None, None])
+    assert seen == [(484.24, "in_stock")] * 7 + [(484.24, "out_of_stock")]
     kinds = [e["kind"] for e in json.loads(check.changes_file().read_text(encoding="utf-8")) if e["shop"] == "cardtrader"]
-    assert kinds == ["notcheapest"]  # one entry when it's really gone, none for the blip
+    assert kinds == ["notcheapest"]  # one entry when it's really gone, none for the blips
+    # A real rise shows once the cheaper offer has been gone for the whole window.
+    assert [p for p, _ in run([400.0, 450.0, 450.0, 450.0])] == [400.0, 400.0, 400.0, 450.0]
 
 
 if __name__ == "__main__":
