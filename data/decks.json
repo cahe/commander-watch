@@ -307,6 +307,9 @@
   "name": "Commander: Ikoria: \"Arcane Maelstrom\" Deck",
   "pid": 107979,
   "price": 656.58,
+  "recent": [
+   656.58
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/107979"
@@ -324,6 +327,9 @@
   "name": "Commander: Ikoria: \"Timeless Wisdom\" Deck",
   "pid": 107980,
   "price": 525.26,
+  "recent": [
+   525.26
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/107980"
@@ -341,6 +347,9 @@
   "name": "Commander: Ikoria: \"Enhanced Evolution\" Deck",
   "pid": 107981,
   "price": 393.93,
+  "recent": [
+   393.93
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/107981"
@@ -359,6 +368,9 @@
   "name": "Commander: Ikoria: \"Ruthless Regiment\" Deck",
   "pid": 107982,
   "price": 328.27,
+  "recent": [
+   328.27
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/107982"
@@ -377,6 +389,9 @@
   "name": "Commander: Ikoria: \"Symbiotic Swarm\" Deck",
   "pid": 107983,
   "price": 352.91,
+  "recent": [
+   352.91
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/107983"
@@ -395,6 +410,9 @@
   "name": "Commander: Zendikar Rising: \"Land's Wrath\" Deck",
   "pid": 146527,
   "price": 221.63,
+  "recent": [
+   221.63
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/146527"
@@ -412,6 +430,9 @@
   "name": "Commander: Zendikar Rising: \"Sneak Attack\" Deck",
   "pid": 146528,
   "price": 257.43,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/146528"
@@ -430,6 +451,9 @@
   "name": "Commander: Kaldheim: \"Elven Empire\" Deck",
   "pid": 151469,
   "price": 703.2,
+  "recent": [
+   703.2
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/151469"
@@ -447,6 +471,9 @@
   "name": "Commander: Kaldheim: Phantom Premonition\" Deck",
   "pid": 151470,
   "price": 243.13,
+  "recent": [
+   243.13
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/151470"
@@ -465,6 +492,9 @@
   "name": "Commander: Strixhaven: \"Lorehold Legacies\" Deck",
   "pid": 154975,
   "price": 437.71,
+  "recent": [
+   437.71
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/154975"
@@ -483,6 +513,9 @@
   "name": "Commander: Strixhaven: \"Quantum Quandrix\" Deck",
   "pid": 154976,
   "price": 437.71,
+  "recent": [
+   437.71
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/154976"
@@ -501,6 +534,9 @@
   "name": "Commander: Strixhaven: \"Witherbloom Witchcraft\" Deck",
   "pid": 154977,
   "price": 525.26,
+  "recent": [
+   525.26
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/154977"
@@ -519,6 +555,9 @@
   "name": "Commander: Strixhaven: \"Prismari Performance\" Deck",
   "pid": 154978,
   "price": 221.68,
+  "recent": [
+   221.68
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/154978"
@@ -537,6 +576,9 @@
   "name": "Commander: Strixhaven: \"Silverquill Statement\" Deck",
   "pid": 154979,
   "price": 569.03,
+  "recent": [
+   569.03
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/154979"
@@ -555,6 +597,9 @@
   "name": "Commander: Adventures in the Forgotten Realms | \"Aura of Courage\" Deck",
   "pid": 160506,
   "price": 437.71,
+  "recent": [
+   437.71
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/160506"
@@ -572,6 +617,9 @@
   "name": "Commander: Adventures in the Forgotten Realms | \"Draconic Rage\" Deck",
   "pid": 160507,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/160507"
@@ -590,6 +638,9 @@
   "name": "Commander: Adventures in the Forgotten Realms | \"Planar Portal\" Deck",
   "pid": 160508,
   "price": 549.99,
+  "recent": [
+   549.99
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/160508"
@@ -608,6 +659,9 @@
   "name": "Commander: Adventures in the Forgotten Realms | \"Dungeons of Death\" Deck",
   "pid": 160509,
   "price": 440.11,
+  "recent": [
+   440.11
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/160509"
@@ -626,6 +680,9 @@
   "name": "Commander: Innistrad Midnight Hunt | \"Undead Unleashed\" Deck",
   "pid": 164137,
   "price": 705.92,
+  "recent": [
+   705.92
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/164137"
@@ -643,6 +700,9 @@
   "name": "Commander: Innistrad Midnight Hunt | \"Coven Counters\" Deck",
   "pid": 164138,
   "price": 335.67,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/164138"
@@ -661,6 +721,9 @@
   "name": "Commander: Innistrad Crimson Vow | \"Vampiric Bloodline\"",
   "pid": 164140,
   "price": 462.35,
+  "recent": [
+   462.35
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/164140"
@@ -679,6 +742,9 @@
   "name": "Commander: Innistrad Crimson Vow | \"Spirit Squadron\"",
   "pid": 164141,
   "price": 352.91,
+  "recent": [
+   352.91
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/164141"
@@ -697,6 +763,9 @@
   "name": "Commander: Kamigawa Neon Dynasty | \"Buckle Up\" Deck",
   "pid": 202622,
   "price": 265.41,
+  "recent": [
+   265.41
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/202622"
@@ -715,6 +784,9 @@
   "name": "Commander: Kamigawa Neon Dynasty | \"Upgrades Unleashed\" Deck",
   "pid": 202623,
   "price": 221.63,
+  "recent": [
+   221.63
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/202623"
@@ -732,6 +804,9 @@
   "name": "Commander: Streets of New Capenna | \"Maestros Massacre\" Deck",
   "pid": 208725,
   "price": 440.55,
+  "recent": [
+   440.55
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/208725"
@@ -749,6 +824,9 @@
   "name": "Commander: Streets of New Capenna | \"Obscura Operation\" Deck",
   "pid": 208726,
   "price": 306.38,
+  "recent": [
+   306.38
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/208726"
@@ -767,6 +845,9 @@
   "name": "Commander: Streets of New Capenna | \"Riveteers Rampage\" Deck",
   "pid": 208727,
   "price": 659.43,
+  "recent": [
+   659.43
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/208727"
@@ -785,6 +866,9 @@
   "name": "Commander: Streets of New Capenna | \"Cabaretti Cacophony\" Deck",
   "pid": 208728,
   "price": 648.26,
+  "recent": [
+   648.26
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/208728"
@@ -803,6 +887,9 @@
   "name": "Commander: Streets of New Capenna | \"Bedecked Brokers\" Deck",
   "pid": 208729,
   "price": 326.74,
+  "recent": [
+   326.74
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/208729"
@@ -820,6 +907,9 @@
   "name": "Commander Legends: Battle for Baldur's Gate | \"Exit from Exile\" Deck",
   "pid": 208730,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/208730"
@@ -837,6 +927,9 @@
   "name": "Commander Legends: Battle for Baldur's Gate | \"Draconic Dissent\" Deck",
   "pid": 208731,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/208731"
@@ -854,6 +947,9 @@
   "name": "Commander Legends: Battle for Baldur's Gate | \"Mind Flayarrrs\" Deck",
   "pid": 208732,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/208732"
@@ -871,6 +967,9 @@
   "name": "Commander Legends: Battle for Baldur's Gate | \"Party Time\" Deck",
   "pid": 208733,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/208733"
@@ -889,6 +988,9 @@
   "name": "Universes Beyond: Warhammer 40,000 | \"The Ruinous Powers\" Deck",
   "pid": 211574,
   "price": 1049.02,
+  "recent": [
+   1049.02
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/211574"
@@ -907,6 +1009,9 @@
   "name": "Universes Beyond: Warhammer 40,000 | \"Tyranid Swarm\" Deck",
   "pid": 211576,
   "price": 1027.14,
+  "recent": [
+   1027.14
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/211576"
@@ -925,6 +1030,9 @@
   "name": "Universes Beyond: Warhammer 40,000 | \"Forces of the Imperium\" Deck",
   "pid": 211578,
   "price": 1088.42,
+  "recent": [
+   1088.42
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/211578"
@@ -943,6 +1051,9 @@
   "name": "Universes Beyond: Warhammer 40,000 | \"Necron Dynasties\" Deck",
   "pid": 211580,
   "price": 1421.11,
+  "recent": [
+   1421.11
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/211580"
@@ -960,6 +1071,9 @@
   "name": "Commander: Dominaria United | \"Legends' Legacy\" Deck",
   "pid": 219610,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/219610"
@@ -977,6 +1091,9 @@
   "name": "Commander: Dominaria United | \"Painbow\" Deck",
   "pid": 219611,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/219611"
@@ -995,6 +1112,9 @@
   "name": "Starter Commander Decks | \"First Flight\" Commander Deck",
   "pid": 224262,
   "price": 115.57,
+  "recent": [
+   115.57
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/224262"
@@ -1013,6 +1133,9 @@
   "name": "Starter Commander Decks | \"Grave Danger\" Commander Deck",
   "pid": 224263,
   "price": 165.73,
+  "recent": [
+   165.73
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/224263"
@@ -1030,6 +1153,9 @@
   "name": "Starter Commander Decks | \"Chaos Incarnate\" Commander Deck",
   "pid": 224264,
   "price": 217.3,
+  "recent": [
+   217.3
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/224264"
@@ -1048,6 +1174,9 @@
   "name": "Starter Commander Decks | \"Draconic Destruction\" Commander Deck",
   "pid": 224265,
   "price": 234.77,
+  "recent": [
+   234.77
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/224265"
@@ -1065,6 +1194,9 @@
   "name": "Starter Commander Decks | \"Token Triumph\" Commander Deck",
   "pid": 224266,
   "price": 153.12,
+  "recent": [
+   153.12
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/224266"
@@ -1082,6 +1214,9 @@
   "name": "Commander: The Brothers' War | \"Urza's Iron Alliance\" Commander Deck",
   "pid": 224491,
   "price": 835.0,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/224491"
@@ -1100,6 +1235,9 @@
   "name": "Commander: The Brothers' War | \"Mishra's Burnished Banner\" Commander Deck",
   "pid": 224492,
   "price": 348.62,
+  "recent": [
+   348.62
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/224492"
@@ -1117,6 +1255,9 @@
   "name": "Commander: Phyrexia All Will Be One | \"Corrupting Influence\" Commander Deck",
   "pid": 231930,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/231930"
@@ -1135,6 +1276,9 @@
   "name": "Commander: Phyrexia All Will Be One | \"Rebellion Rising\" Commander Deck",
   "pid": 231931,
   "price": 265.41,
+  "recent": [
+   265.41
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/231931"
@@ -1152,6 +1296,9 @@
   "name": "Commander: March of the Machine | \"Growing Threat\" Commander Deck",
   "pid": 238102,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/238102"
@@ -1169,6 +1316,9 @@
   "name": "Commander: March of the Machine | \"Cavalry Charge\" Commander Deck",
   "pid": 238103,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/238103"
@@ -1186,6 +1336,9 @@
   "name": "Commander: March of the Machine | \"Divine Convocation\" Commander Deck",
   "pid": 238104,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/238104"
@@ -1203,6 +1356,9 @@
   "name": "Commander: March of the Machine | \"Call for Backup\" Commander Deck",
   "pid": 238105,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/238105"
@@ -1221,6 +1377,9 @@
   "name": "Commander: March of the Machine | \"Tinker Time\" Commander Deck",
   "pid": 238106,
   "price": 193.14,
+  "recent": [
+   193.14
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238106"
@@ -1239,6 +1398,9 @@
   "name": "Commander Masters | \"Eldrazi Unbound\" Commander Deck",
   "pid": 238387,
   "price": 1359.83,
+  "recent": [
+   1359.83
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238387"
@@ -1257,6 +1419,9 @@
   "name": "Commander Masters | \"Enduring Enchantments\" Commander Deck",
   "pid": 238391,
   "price": 418.23,
+  "recent": [
+   418.23
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238391"
@@ -1274,6 +1439,9 @@
   "name": "Commander Masters | \"Planeswalker Party\" Commander Deck",
   "pid": 238393,
   "price": 1119.41,
+  "recent": [
+   1119.41
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238393"
@@ -1292,6 +1460,9 @@
   "name": "Commander Masters | \"Sliver Swarm\" Commander Deck",
   "pid": 238394,
   "price": 921.99,
+  "recent": [
+   921.99
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238394"
@@ -1310,6 +1481,9 @@
   "name": "Commander: The Lord of the Rings | \"Food And Fellowship\" Commander Deck",
   "pid": 246478,
   "price": 366.13,
+  "recent": [
+   366.13
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246478"
@@ -1328,6 +1502,9 @@
   "name": "Commander: The Lord of the Rings | \"Elven Council\" Commander Deck",
   "pid": 246480,
   "price": 252.32,
+  "recent": [
+   252.32
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246480"
@@ -1346,6 +1523,9 @@
   "name": "Commander: The Lord of the Rings | \"The Hosts Of Mordor\" Commander Deck",
   "pid": 246482,
   "price": 458.02,
+  "recent": [
+   458.02
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246482"
@@ -1364,6 +1544,9 @@
   "name": "Commander: The Lord of the Rings | \"Riders Of Rohan\" Commander Deck",
   "pid": 246483,
   "price": 309.01,
+  "recent": [
+   309.01
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246483"
@@ -1381,6 +1564,9 @@
   "name": "Universes Beyond: Doctor Who | \"Masters of Evil\" Commander Deck",
   "pid": 246950,
   "price": 374.85,
+  "recent": [
+   374.85
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246950"
@@ -1399,25 +1585,32 @@
   "name": "Universes Beyond: Doctor Who | \"Blast from the Past\" Commander Deck",
   "pid": 246951,
   "price": 149.97,
+  "recent": [
+   149.97
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246951"
  },
  {
   "baseline": true,
-  "change": "sold out",
-  "changedAt": "2026-10-10T10:17:50Z",
-  "cheapest": false,
+  "change": "back in stock",
+  "changedAt": "2026-10-10T11:17:49Z",
+  "cheapest": true,
   "deck": "doctor-who-timey-wimey",
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardtrader-246952",
   "groupName": "Doctor Who – Timey-Wimey",
   "id": "cardtrader-246952",
+  "lowLogged": 484.24,
   "name": "Universes Beyond: Doctor Who | \"Timey-Wimey\" Commander Deck",
   "pid": 246952,
   "price": 484.24,
+  "recent": [
+   484.24
+  ],
   "shop": "cardtrader",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246952"
  },
  {
@@ -1433,6 +1626,9 @@
   "name": "Universes Beyond: Doctor Who | \"Paradox Power\" Commander Deck",
   "pid": 246953,
   "price": 177.16,
+  "recent": [
+   177.16
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246953"
@@ -1451,6 +1647,9 @@
   "name": "Wilds of Eldraine \"Virtue and Valor\" Commander Deck",
   "pid": 246960,
   "price": 352.91,
+  "recent": [
+   352.91
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246960"
@@ -1469,6 +1668,9 @@
   "name": "Wilds of Eldraine \"Fae Dominion\" Commander Deck",
   "pid": 246961,
   "price": 965.76,
+  "recent": [
+   965.76
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246961"
@@ -1486,6 +1688,9 @@
   "name": "Commander: The Lost Caverns of Ixalan | \"Ahoy Mateys\" Commander Deck",
   "pid": 261730,
   "price": 389.55,
+  "recent": [
+   389.55
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/261730"
@@ -1504,6 +1709,9 @@
   "name": "Commander: The Lost Caverns of Ixalan | \"Veloci-Ramp-Tor\" Commander Deck",
   "pid": 261731,
   "price": 865.17,
+  "recent": [
+   865.17
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/261731"
@@ -1522,6 +1730,9 @@
   "name": "Commander: The Lost Caverns of Ixalan | \"Blood Rites\" Commander Deck",
   "pid": 261732,
   "price": 656.58,
+  "recent": [
+   656.58
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/261732"
@@ -1540,6 +1751,9 @@
   "name": "Commander: The Lost Caverns of Ixalan | \"Explorers of the Deep\" Commander Deck",
   "pid": 261733,
   "price": 746.93,
+  "recent": [
+   746.93
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/261733"
@@ -1558,6 +1772,9 @@
   "name": "Fallout | \"Scrappy Survivors\" Commander Deck",
   "pid": 265026,
   "price": 370.03,
+  "recent": [
+   370.03
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265026"
@@ -1576,6 +1793,9 @@
   "name": "Fallout | \"Hail Caesar\" Commander Deck",
   "pid": 265027,
   "price": 387.63,
+  "recent": [
+   387.63
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265027"
@@ -1594,6 +1814,9 @@
   "name": "Fallout | \"Science!\" Commander Deck",
   "pid": 265028,
   "price": 197.38,
+  "recent": [
+   197.38
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265028"
@@ -1612,6 +1835,9 @@
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
   "price": 624.41,
+  "recent": [
+   624.41
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265029"
@@ -1630,6 +1856,9 @@
   "name": "Commander: Murders at Karlov Manor | \"Deadly Disguise\" Commander Deck",
   "pid": 270487,
   "price": 393.93,
+  "recent": [
+   393.93
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/270487"
@@ -1648,6 +1877,9 @@
   "name": "Commander: Murders at Karlov Manor | \"Revenant Recon\" Commander Deck",
   "pid": 270489,
   "price": 352.91,
+  "recent": [
+   352.91
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/270489"
@@ -1666,6 +1898,9 @@
   "name": "Commander: Murders at Karlov Manor | \"Blame Game\" Commander Deck",
   "pid": 270490,
   "price": 388.02,
+  "recent": [
+   388.02
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/270490"
@@ -1684,6 +1919,9 @@
   "name": "Commander: Murders at Karlov Manor | \"Deep Clue Sea\" Commander Deck",
   "pid": 270492,
   "price": 221.63,
+  "recent": [
+   221.63
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/270492"
@@ -1702,6 +1940,9 @@
   "name": "Commander: Modern Horizons 3 |\"Eldrazi Incursion\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 279375,
   "price": 1316.05,
+  "recent": [
+   1316.05
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279375"
@@ -1720,6 +1961,9 @@
   "name": "Commander: Modern Horizons 3 |\"Creative Energy\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 279376,
   "price": 326.3,
+  "recent": [
+   326.3
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279376"
@@ -1738,6 +1982,9 @@
   "name": "Commander: Modern Horizons 3 |\"Tricky Terrain\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 279377,
   "price": 746.93,
+  "recent": [
+   746.93
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279377"
@@ -1756,6 +2003,9 @@
   "name": "Commander: Modern Horizons 3 |\"Graveyard Overdrive\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 279378,
   "price": 615.39,
+  "recent": [
+   615.39
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279378"
@@ -1774,6 +2024,9 @@
   "name": "Commander: Modern Horizons 3 |\"Eldrazi Incursion\" Commander Deck",
   "pid": 279379,
   "price": 637.54,
+  "recent": [
+   637.54
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279379"
@@ -1792,6 +2045,9 @@
   "name": "Commander: Modern Horizons 3 |\"Creative Energy\" Commander Deck",
   "pid": 279380,
   "price": 177.16,
+  "recent": [
+   177.16
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279380"
@@ -1809,6 +2065,9 @@
   "name": "Commander: Modern Horizons 3 |\"Tricky Terrain\" Commander Deck",
   "pid": 279381,
   "price": 282.96,
+  "recent": [
+   282.96
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279381"
@@ -1826,6 +2085,9 @@
   "name": "Commander: Modern Horizons 3 | \"Graveyard Overdrive\" Commander Deck",
   "pid": 279382,
   "price": 221.68,
+  "recent": [
+   221.68
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279382"
@@ -1843,6 +2105,9 @@
   "name": "Commander: Outlaws of Thunder Junction | \"Most Wanted\" Commander Deck",
   "pid": 279473,
   "price": 547.14,
+  "recent": [
+   547.14
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279473"
@@ -1861,6 +2126,9 @@
   "name": "Commander: Outlaws of Thunder Junction | \"Desert Bloom\" Commander Deck",
   "pid": 279476,
   "price": 737.56,
+  "recent": [
+   737.56
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279476"
@@ -1879,6 +2147,9 @@
   "name": "Commander: Outlaws of Thunder Junction | \"Grand Larceny\" Commander Deck",
   "pid": 279477,
   "price": 659.43,
+  "recent": [
+   659.43
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279477"
@@ -1897,6 +2168,9 @@
   "name": "Commander: Outlaws of Thunder Junction | \"Quick Draw\" Commander Deck",
   "pid": 279478,
   "price": 615.52,
+  "recent": [
+   615.52
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279478"
@@ -1915,6 +2189,9 @@
   "name": "Commander: Bloomburrow | \"Squirreled Away\" Commander Deck",
   "pid": 280701,
   "price": 396.69,
+  "recent": [
+   396.69
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/280701"
@@ -1933,6 +2210,9 @@
   "name": "Commander: Bloomburrow | \"Family Matters\" Commander Deck",
   "pid": 280702,
   "price": 192.04,
+  "recent": [
+   192.04
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/280702"
@@ -1951,6 +2231,9 @@
   "name": "Commander: Bloomburrow | \"Animated Army\" Commander Deck",
   "pid": 280703,
   "price": 392.31,
+  "recent": [
+   392.31
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/280703"
@@ -1969,6 +2252,9 @@
   "name": "Commander: Bloomburrow | \"Peace Offering\" Commander Deck",
   "pid": 280704,
   "price": 436.09,
+  "recent": [
+   436.09
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/280704"
@@ -1987,6 +2273,9 @@
   "name": "Commander: Duskmourn: House of Horror | \"Endless Punishment\" Commander Deck",
   "pid": 299806,
   "price": 1228.5,
+  "recent": [
+   1228.5
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/299806"
@@ -2005,6 +2294,9 @@
   "name": "Commander: Duskmourn: House of Horror | \"Miracle Worker\" Commander Deck",
   "pid": 299807,
   "price": 436.17,
+  "recent": [
+   436.17
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/299807"
@@ -2023,6 +2315,9 @@
   "name": "Commander: Duskmourn: House of Horror | \"Death Toll\" Commander Deck",
   "pid": 299808,
   "price": 309.1,
+  "recent": [
+   309.1
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/299808"
@@ -2041,6 +2336,9 @@
   "name": "Commander: Duskmourn: House of Horror | \"Jump Scare!\" Commander Deck",
   "pid": 299809,
   "price": 414.29,
+  "recent": [
+   414.29
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/299809"
@@ -2058,6 +2356,9 @@
   "name": "Commander: Aetherdrift | \"Living Energy\" Commander Deck",
   "pid": 314238,
   "price": 131.33,
+  "recent": [
+   131.33
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/314238"
@@ -2076,6 +2377,9 @@
   "name": "Commander: Aetherdrift | \"Eternal Might\" Commander Deck",
   "pid": 314239,
   "price": 177.16,
+  "recent": [
+   177.16
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/314239"
@@ -2094,6 +2398,9 @@
   "name": "FINAL FANTASY: \"Limit Break\" Commander Deck",
   "pid": 322095,
   "price": 223.21,
+  "recent": [
+   223.21
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322095"
@@ -2112,6 +2419,9 @@
   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck",
   "pid": 322098,
   "price": 221.46,
+  "recent": [
+   221.46
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322098"
@@ -2129,14 +2439,17 @@
   "name": "FINAL FANTASY: \"Scions & Spellcraft\" Commander Deck",
   "pid": 322100,
   "price": 243.35,
+  "recent": [
+   243.35
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322100"
  },
  {
   "baseline": true,
-  "change": "price 152.86 → 164.20 zł",
-  "changedAt": "2026-10-10T10:17:50Z",
+  "change": "price 164.20 → 152.86 zł",
+  "changedAt": "2026-10-10T11:17:49Z",
   "cheapest": true,
   "deck": "final-fantasy-revival-trance",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2146,7 +2459,10 @@
   "lowLogged": 152.76,
   "name": "FINAL FANTASY: \"Revival Trance\" Commander Deck",
   "pid": 322101,
-  "price": 164.2,
+  "price": 152.86,
+  "recent": [
+   152.86
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322101"
@@ -2165,6 +2481,9 @@
   "name": "FINAL FANTASY: \"Limit Break\" Commander Deck Collector's Edition",
   "pid": 322103,
   "price": 634.74,
+  "recent": [
+   634.74
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322103"
@@ -2183,6 +2502,9 @@
   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck Collector's Edition",
   "pid": 322104,
   "price": 526.53,
+  "recent": [
+   526.53
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322104"
@@ -2201,6 +2523,9 @@
   "name": "FINAL FANTASY: \"Scions & Spellcraft\" Commander Deck Collector's Edition",
   "pid": 322106,
   "price": 613.81,
+  "recent": [
+   613.81
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322106"
@@ -2219,6 +2544,9 @@
   "name": "FINAL FANTASY: \"Revival Trance\" Commander Deck Collector's Edition",
   "pid": 322107,
   "price": 368.89,
+  "recent": [
+   368.89
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322107"
@@ -2237,6 +2565,9 @@
   "name": "Commander: Tarkir Dragonstorm | \"Temur Roar\" Commander Deck",
   "pid": 322529,
   "price": 431.67,
+  "recent": [
+   431.67
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322529"
@@ -2255,6 +2586,9 @@
   "name": "Commander: Tarkir Dragonstorm | \"Mardu Surge\" Commander Deck",
   "pid": 322530,
   "price": 222.25,
+  "recent": [
+   222.25
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322530"
@@ -2273,6 +2607,9 @@
   "name": "Commander: Tarkir Dragonstorm | \"Abzan Armor\" Commander Deck",
   "pid": 322531,
   "price": 287.34,
+  "recent": [
+   287.34
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322531"
@@ -2291,6 +2628,9 @@
   "name": "Commander: Tarkir Dragonstorm | \"Jeskai Striker\" Commander Deck",
   "pid": 322532,
   "price": 190.99,
+  "recent": [
+   190.99
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322532"
@@ -2309,14 +2649,17 @@
   "name": "Commander: Tarkir Dragonstorm | \"Sultai Arisen\" Commander Deck",
   "pid": 322533,
   "price": 436.17,
+  "recent": [
+   436.17
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322533"
  },
  {
   "baseline": true,
-  "change": "price 177.11 → 179.87 zł",
-  "changedAt": "2026-10-10T10:17:50Z",
+  "change": "price 179.87 → 177.11 zł",
+  "changedAt": "2026-10-10T11:17:49Z",
   "cheapest": false,
   "deck": "edge-of-eternities-counter-intelligence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2325,7 +2668,10 @@
   "id": "cardtrader-322693",
   "name": "Edge of Eternities: \"Counter Intelligence\" Commander Deck",
   "pid": 322693,
-  "price": 179.87,
+  "price": 177.11,
+  "recent": [
+   177.11
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322693"
@@ -2344,6 +2690,9 @@
   "name": "Edge of Eternities: \"World Shaper\" Commander Deck",
   "pid": 322694,
   "price": 243.52,
+  "recent": [
+   243.52
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322694"
@@ -2361,6 +2710,9 @@
   "name": "Lorwyn Eclipsed: \"Dance of the Elements\" Commander Deck",
   "pid": 352407,
   "price": 199.75,
+  "recent": [
+   199.75
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/352407"
@@ -2379,14 +2731,17 @@
   "name": "Lorwyn Eclipsed: \"Blight Curse\" Commander Deck",
   "pid": 352408,
   "price": 183.59,
+  "recent": [
+   183.59
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/352408"
  },
  {
   "baseline": true,
-  "change": "price 168.18 → 168.40 zł",
-  "changedAt": "2026-10-10T10:17:50Z",
+  "change": "price 168.40 → 168.18 zł",
+  "changedAt": "2026-10-10T11:17:49Z",
   "cheapest": true,
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2396,7 +2751,10 @@
   "lowLogged": 168.29,
   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
   "pid": 354096,
-  "price": 168.4,
+  "price": 168.18,
+  "recent": [
+   168.18
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/354096"
@@ -2415,6 +2773,9 @@
   "name": "Commander: Secrets of Strixhaven | \"Silverquill Influence\" Commander Deck",
   "pid": 370595,
   "price": 218.52,
+  "recent": [
+   218.52
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370595"
@@ -2433,6 +2794,9 @@
   "name": "Commander: Secrets of Strixhaven | \"Prismari Artistry\" Commander Deck",
   "pid": 370596,
   "price": 163.81,
+  "recent": [
+   163.81
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370596"
@@ -2451,6 +2815,9 @@
   "name": "Commander: Secrets of Strixhaven | \"Witherbloom Pestilence\" Commander Deck",
   "pid": 370597,
   "price": 206.97,
+  "recent": [
+   206.97
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370597"
@@ -2469,6 +2836,9 @@
   "name": "Commander: Secrets of Strixhaven | \"Lorehold Spirit\" Commander Deck",
   "pid": 370598,
   "price": 164.02,
+  "recent": [
+   164.02
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370598"
@@ -2487,6 +2857,9 @@
   "name": "Commander: Secrets of Strixhaven | \"Quandrix Unlimited\" Commander Deck",
   "pid": 370599,
   "price": 153.34,
+  "recent": [
+   153.34
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370599"
@@ -2505,6 +2878,9 @@
   "name": "Marvel Super Heroes | \"Wakanda Forever\" Commander Deck",
   "pid": 370630,
   "price": 155.49,
+  "recent": [
+   155.49
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370630"
@@ -2523,6 +2899,9 @@
   "name": "Marvel Super Heroes | \"Avengers Assemble\" Commander Deck",
   "pid": 370631,
   "price": 177.38,
+  "recent": [
+   177.38
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370631"
@@ -2541,6 +2920,9 @@
   "name": "Marvel Super Heroes | \"The Fantastic Four\" Commander Deck",
   "pid": 370632,
   "price": 137.98,
+  "recent": [
+   137.98
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370632"
@@ -2559,6 +2941,9 @@
   "name": "Marvel Super Heroes | \"Doom Prevails\" Commander Deck",
   "pid": 370633,
   "price": 239.58,
+  "recent": [
+   239.58
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370633"
@@ -2577,6 +2962,9 @@
   "name": "Marvel Super Heroes | \"Wakanda Forever\" Commander Deck Collector's Edition",
   "pid": 370634,
   "price": 304.85,
+  "recent": [
+   304.85
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370634"
@@ -2595,6 +2983,9 @@
   "name": "Marvel Super Heroes | \"Avengers Assemble\" Commander Deck Collector's Edition",
   "pid": 370635,
   "price": 348.62,
+  "recent": [
+   348.62
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370635"
@@ -2613,6 +3004,9 @@
   "name": "Marvel Super Heroes | \"Doom Prevails\" Commander Deck Collector's Edition",
   "pid": 370636,
   "price": 418.58,
+  "recent": [
+   418.58
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370636"
@@ -2631,14 +3025,17 @@
   "name": "Marvel Super Heroes | \"The Fantastic Four\" Commander Deck Collector's Edition",
   "pid": 370637,
   "price": 335.45,
+  "recent": [
+   335.45
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370637"
  },
  {
   "baseline": true,
-  "change": "price 198.83 → 198.87 zł",
-  "changedAt": "2026-10-10T10:17:50Z",
+  "change": "price 198.87 → 198.83 zł",
+  "changedAt": "2026-10-10T11:17:49Z",
   "cheapest": true,
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2648,15 +3045,18 @@
   "lowLogged": 172.21,
   "name": "Foundations: \"Calling All Angels\" Commander Deck",
   "pid": 389398,
-  "price": 198.87,
+  "price": 198.83,
+  "recent": [
+   198.83
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389398"
  },
  {
   "baseline": true,
-  "change": "price 119.02 → 119.07 zł",
-  "changedAt": "2026-10-10T10:17:50Z",
+  "change": "price 119.07 → 119.02 zł",
+  "changedAt": "2026-10-10T11:17:49Z",
   "cheapest": true,
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2666,15 +3066,18 @@
   "lowLogged": 110.67,
   "name": "Foundations: \"Keen Engineering\" Commander Deck",
   "pid": 389399,
-  "price": 119.07,
+  "price": 119.02,
+  "recent": [
+   119.02
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389399"
  },
  {
   "baseline": true,
-  "change": "price 172.69 → 172.74 zł",
-  "changedAt": "2026-10-10T10:17:50Z",
+  "change": "price 172.74 → 172.69 zł",
+  "changedAt": "2026-10-10T11:17:49Z",
   "cheapest": true,
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2684,15 +3087,18 @@
   "lowLogged": 146.74,
   "name": "Foundations: \"Wretched Ranks\" Commander Deck",
   "pid": 389400,
-  "price": 172.74,
+  "price": 172.69,
+  "recent": [
+   172.69
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389400"
  },
  {
   "baseline": true,
-  "change": "price 199.00 → 199.04 zł",
-  "changedAt": "2026-10-10T10:17:50Z",
+  "change": "price 199.04 → 199.00 zł",
+  "changedAt": "2026-10-10T11:17:49Z",
   "cheapest": true,
   "deck": "foundations-starter-reign-of-dragons",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2702,15 +3108,18 @@
   "lowLogged": 190.73,
   "name": "Foundations: \"Reign of Dragons\" Commander Deck",
   "pid": 389401,
-  "price": 199.04,
+  "price": 199.0,
+  "recent": [
+   199.0
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389401"
  },
  {
   "baseline": true,
-  "change": "price 194.84 → 194.89 zł",
-  "changedAt": "2026-10-10T10:17:50Z",
+  "change": "price 194.89 → 194.84 zł",
+  "changedAt": "2026-10-10T11:17:49Z",
   "cheapest": true,
   "deck": "foundations-starter-tramplesaurus-rex",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2720,7 +3129,10 @@
   "lowLogged": 190.68,
   "name": "Foundations: \"Tramplesaurus Rex\" Commander Deck",
   "pid": 389402,
-  "price": 194.89,
+  "price": 194.84,
+  "recent": [
+   194.84
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389402"
@@ -2738,6 +3150,9 @@
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
   "price": 221.33,
+  "recent": [
+   221.33
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389403"
@@ -2755,6 +3170,9 @@
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
   "price": 315.09,
+  "recent": [
+   315.09
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400888"
@@ -2772,6 +3190,9 @@
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
   "price": 315.09,
+  "recent": [
+   315.09
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400889"
@@ -2789,6 +3210,9 @@
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
   "price": 315.09,
+  "recent": [
+   315.09
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400890"
@@ -2806,6 +3230,9 @@
   "name": "Star Trek | \"We Are the Borg\" Commander Deck",
   "pid": 400891,
   "price": 315.09,
+  "recent": [
+   315.09
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400891"
@@ -2823,6 +3250,9 @@
   "name": "Star Trek | \"Federation Fleet\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400892,
   "price": 702.94,
+  "recent": [
+   702.94
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400892"
@@ -2840,6 +3270,9 @@
   "name": "Star Trek | \"Landing Party\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400893,
   "price": 700.36,
+  "recent": [
+   700.36
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400893"
@@ -2857,6 +3290,9 @@
   "name": "Star Trek | \"Klingon Fury\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400894,
   "price": 700.36,
+  "recent": [
+   700.36
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400894"
@@ -2874,6 +3310,9 @@
   "name": "Star Trek | \"We Are the Borg\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400895,
   "price": 709.11,
+  "recent": [
+   709.11
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400895"
@@ -2892,6 +3331,9 @@
   "name": "Commander Anthology: \"Guided by Nature\" Deck",
   "pid": 48538,
   "price": 431.75,
+  "recent": [
+   431.75
+  ],
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/48538"
@@ -2909,6 +3351,9 @@
   "name": "Commander Anthology: \"Heavenly Inferno\" Deck",
   "pid": 48539,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/48539"
@@ -2926,6 +3371,9 @@
   "name": "Commander Anthology: \"Plunder the Graves\" Deck",
   "pid": 48540,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/48540"
@@ -2943,6 +3391,9 @@
   "name": "Commander Anthology II: \"Built from Scratch\" Deck",
   "pid": 48684,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/48684"
@@ -2960,6 +3411,9 @@
   "name": "Commander Anthology II: \"Breed Lethality\" Deck",
   "pid": 48685,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/48685"
@@ -2977,6 +3431,9 @@
   "name": "Commander Anthology II: \"Devour for Power\" Deck",
   "pid": 48686,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/48686"
@@ -2994,6 +3451,9 @@
   "name": "Commander Anthology II: \"Wade into Battle\" Deck",
   "pid": 48687,
   "price": null,
+  "recent": [
+   null
+  ],
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/48687"
