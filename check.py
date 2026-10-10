@@ -612,6 +612,7 @@ SHOPS = {
     "cardtrader": ("CardTrader", scan_cardtrader),
 }
 QUIET_SHOPS = {"cardtrader"}  # prices only: never announce new decks or restocks
+CT_GONE_CHECKS = 2  # checks in a row a CardTrader offer must be missing before its deck counts as sold out there
 # Shops whose listings leave out sold-out decks instead of marking them: after a complete scan,
 # a known deck that isn't listed any more has sold out.
 VANISHING_SHOPS = {"frostmagic"}
@@ -1150,6 +1151,14 @@ def main() -> int:
             known = by_id.get(doc_id) or by_url.get(norm_url(p["url"]))
             seen.add(known["id"] if known else doc_id)
             if known:
+                if shop in QUIET_SHOPS and known.get("status") in ORDERABLE and p["status"] not in ORDERABLE:
+                    # A CardTrader deck's only offer can vanish for an hour (in someone's cart, or the seller
+                    # pausing) and come back; that would log "cheapest" and send "back in stock" alerts every
+                    # other hour. It counts as sold out only once it's been gone for CT_GONE_CHECKS checks.
+                    known["goneChecks"] = known.get("goneChecks", 0) + 1
+                    if known["goneChecks"] < CT_GONE_CHECKS:
+                        continue
+                known.pop("goneChecks", None)
                 was_orderable = known.get("status") in ORDERABLE
                 old_price, old_status = known.get("price"), known.get("status")
                 for k in ("price", "status", "name", "url"):

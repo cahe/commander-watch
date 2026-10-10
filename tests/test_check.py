@@ -534,6 +534,26 @@ def test_vanished_listing_is_sold_out():
     assert kinds == ["soldout", "restock"]
 
 
+def test_cardtrader_blip_is_ignored():
+    tmp = Path(tempfile.mkdtemp())
+    (tmp / "data").mkdir()
+    check.DECKS_FILE, check.STATE_FILE = tmp / "data" / "decks.json", tmp / "data" / "state.json"
+    check.notify = lambda title, lines, tags="": None
+    shop = {"pid": 1, "name": "Doctor Who Commander Deck: Timey-Wimey", "price": None, "url": "https://wilczek.poznan.pl/1", "status": "out_of_stock"}
+    ct = lambda price: {"pid": 246952, "name": "Doctor Who | \"Timey-Wimey\" Deck", "price": price,
+                        "url": "https://www.cardtrader.com/en/cards/246952", "status": "in_stock" if price else "out_of_stock"}
+    statuses = []
+    # In stock, gone for one check (a blip), back, then gone for two checks in a row (really sold out).
+    for price in (484.24, None, 484.24, None, None):
+        check.SHOPS = {"wilczek": ("Wilczek", lambda s: ([dict(shop)], [])),
+                       "cardtrader": ("CardTrader", lambda s, price=price: ([ct(price)], []))}
+        check.main()
+        statuses.append(next(d["status"] for d in json.loads(check.DECKS_FILE.read_text()) if d["shop"] == "cardtrader"))
+    assert statuses == ["in_stock", "in_stock", "in_stock", "in_stock", "out_of_stock"]
+    kinds = [e["kind"] for e in json.loads(check.changes_file().read_text(encoding="utf-8")) if e["shop"] == "cardtrader"]
+    assert kinds == ["notcheapest"]  # one entry when it's really gone, none for the blip
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
