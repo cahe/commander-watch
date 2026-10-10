@@ -2693,5 +2693,18 @@
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/246952"
+ },
+ {
+  "at": "2026-10-10T08:17:54Z",
+  "cheapest": true,
+  "deck": "Doctor Who – Timey-Wimey",
+  "group": "cardtrader-246952",
+  "id": "cardtrader-246952",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 484.24,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246952"
  }
 ]
