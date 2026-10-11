@@ -2303,7 +2303,7 @@
   "pid": 279476,
   "price": 736.25,
   "recent": [
-   737.56,
+   736.25,
    736.25,
    736.25
   ],
@@ -2533,7 +2533,7 @@
   "pid": 299809,
   "price": 413.72,
   "recent": [
-   414.29,
+   413.72,
    413.72,
    413.72
   ],
@@ -3415,18 +3415,17 @@
   "baseline": true,
   "change": "price 221.33 → 221.28 zł",
   "changedAt": "2026-10-11T04:17:50Z",
-  "cheapest": true,
+  "cheapest": false,
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31606",
   "groupName": "Reality Fracture – Multiverse Reforged",
   "id": "cardtrader-389403",
-  "lowLogged": 221.33,
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
   "price": 221.28,
   "recent": [
-   221.33,
+   221.28,
    221.28,
    221.28
   ],
@@ -4085,8 +4084,8 @@
  },
  {
   "baseline": false,
-  "change": "sold out",
-  "changedAt": "2026-10-10T21:17:49Z",
+  "change": "back in stock",
+  "changedAt": "2026-10-11T22:17:52Z",
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-03T08:17:28Z",
   "group": "cardstore-31606",
@@ -4096,7 +4095,7 @@
   "pid": null,
   "price": 190,
   "shop": "frostmagic",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/magic-the-gathering-reality-fracture-multiverse-reforged-commander-deck"
  },
  {

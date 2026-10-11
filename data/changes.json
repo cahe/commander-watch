@@ -2792,5 +2792,39 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238387"
+ },
+ {
+  "at": "2026-10-11T22:17:52Z",
+  "best": {
+   "price": 234.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": true,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "frostmagic-magic-the-gathering-reality-fracture-multiverse-reforged-commander-deck",
+  "inStock": 6,
+  "kind": "restock",
+  "price": 190,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/magic-the-gathering-reality-fracture-multiverse-reforged-commander-deck"
+ },
+ {
+  "at": "2026-10-11T22:17:52Z",
+  "best": {
+   "price": 190,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "cardtrader-389403",
+  "inStock": 6,
+  "kind": "notcheapest",
+  "price": 221.28,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389403"
  }
 ]
