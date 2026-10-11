@@ -1735,7 +1735,7 @@
   "recent": [
    484.11,
    484.11,
-   484.11
+   484.24
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1917,7 +1917,7 @@
   "recent": [
    368.32,
    368.32,
-   368.32
+   370.03
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1940,7 +1940,7 @@
   "recent": [
    385.83,
    385.83,
-   385.83
+   387.63
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1986,7 +1986,7 @@
   "recent": [
    593.72,
    593.72,
-   593.72
+   624.41
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2260,7 +2260,7 @@
   "recent": [
    217.08,
    217.08,
-   217.08
+   221.68
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3045,8 +3045,8 @@
  },
  {
   "baseline": true,
-  "change": "price 206.97 → 219.62 zł",
-  "changedAt": "2026-10-11T00:17:50Z",
+  "change": "price 219.62 → 206.97 zł",
+  "changedAt": "2026-10-11T02:09:39Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-witherbloom-pestilence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3056,11 +3056,11 @@
   "lowLogged": 207.07,
   "name": "Commander: Secrets of Strixhaven | \"Witherbloom Pestilence\" Commander Deck",
   "pid": 370597,
-  "price": 219.62,
+  "price": 206.97,
   "recent": [
    219.62,
    219.62,
-   219.62
+   206.97
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3450,7 +3450,7 @@
   "recent": [
    315.0,
    315.0,
-   315.0
+   315.09
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3472,7 +3472,7 @@
   "recent": [
    315.0,
    315.0,
-   315.0
+   315.09
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3494,7 +3494,7 @@
   "recent": [
    315.0,
    315.0,
-   315.0
+   315.09
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3516,7 +3516,7 @@
   "recent": [
    315.0,
    315.0,
-   315.0
+   315.09
   ],
   "shop": "cardtrader",
   "status": "in_stock",
