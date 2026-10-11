@@ -2778,5 +2778,19 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-10-11T04:17:50Z",
+  "cheapest": true,
+  "deck": "Masters – Eldrazi Unbound",
+  "group": "cardtrader-238387",
+  "id": "cardtrader-238387",
+  "inStock": 0,
+  "kind": "price",
+  "old": 1358.89,
+  "price": 1316.05,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/238387"
  }
 ]

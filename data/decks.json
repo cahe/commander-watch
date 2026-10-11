@@ -923,7 +923,7 @@
   "recent": [
    648.26,
    648.26,
-   648.26
+   648.48
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1492,22 +1492,22 @@
  },
  {
   "baseline": true,
-  "change": "price 1360.26 → 1359.83 zł",
-  "changedAt": "2026-10-09T10:18:05Z",
+  "change": "price 1359.83 → 1316.05 zł",
+  "changedAt": "2026-10-11T04:17:50Z",
   "cheapest": true,
   "deck": "masters-eldrazi-unbound",
   "firstSeen": "2026-10-02T15:17:14Z",
   "group": "cardtrader-238387",
   "groupName": "Masters – Eldrazi Unbound",
   "id": "cardtrader-238387",
-  "lowLogged": 1358.89,
+  "lowLogged": 1316.05,
   "name": "Commander Masters | \"Eldrazi Unbound\" Commander Deck",
   "pid": 238387,
-  "price": 1359.83,
+  "price": 1316.05,
   "recent": [
    1359.83,
    1359.83,
-   1359.83
+   1316.05
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1538,8 +1538,8 @@
  },
  {
   "baseline": true,
-  "change": "price 1120.29 → 1119.41 zł",
-  "changedAt": "2026-10-10T03:17:51Z",
+  "change": "price 1119.41 → 1097.18 zł",
+  "changedAt": "2026-10-11T04:17:50Z",
   "cheapest": false,
   "deck": "masters-planeswalker-party",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -1548,11 +1548,11 @@
   "id": "cardtrader-238393",
   "name": "Commander Masters | \"Planeswalker Party\" Commander Deck",
   "pid": 238393,
-  "price": 1119.41,
+  "price": 1097.18,
   "recent": [
    1119.41,
    1119.41,
-   1119.41
+   1097.18
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1733,7 +1733,7 @@
   "pid": 246952,
   "price": 484.11,
   "recent": [
-   484.24,
+   484.11,
    484.11,
    484.11
   ],
@@ -1915,7 +1915,7 @@
   "pid": 265026,
   "price": 368.32,
   "recent": [
-   370.03,
+   368.32,
    368.32,
    368.32
   ],
@@ -1938,7 +1938,7 @@
   "pid": 265027,
   "price": 385.83,
   "recent": [
-   387.63,
+   385.83,
    385.83,
    385.83
   ],
@@ -1984,7 +1984,7 @@
   "pid": 265029,
   "price": 593.72,
   "recent": [
-   624.41,
+   593.72,
    593.72,
    593.72
   ],
@@ -2258,7 +2258,7 @@
   "pid": 279382,
   "price": 217.08,
   "recent": [
-   221.68,
+   217.08,
    217.08,
    217.08
   ],
@@ -2290,8 +2290,8 @@
  },
  {
   "baseline": true,
-  "change": "price 738.18 → 737.56 zł",
-  "changedAt": "2026-10-10T00:17:54Z",
+  "change": "price 737.56 → 736.25 zł",
+  "changedAt": "2026-10-11T04:17:50Z",
   "cheapest": true,
   "deck": "outlaws-of-thunder-junction-desert-bloom",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2301,11 +2301,11 @@
   "lowLogged": 445.5,
   "name": "Commander: Outlaws of Thunder Junction | \"Desert Bloom\" Commander Deck",
   "pid": 279476,
-  "price": 737.56,
+  "price": 736.25,
   "recent": [
    737.56,
    737.56,
-   737.56
+   736.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2520,8 +2520,8 @@
  },
  {
   "baseline": true,
-  "change": "price 414.42 → 414.29 zł",
-  "changedAt": "2026-10-09T10:18:05Z",
+  "change": "price 414.29 → 413.72 zł",
+  "changedAt": "2026-10-11T04:17:50Z",
   "cheapest": true,
   "deck": "duskmourn-house-of-horror-jump-scare",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2531,11 +2531,11 @@
   "lowLogged": 410.02,
   "name": "Commander: Duskmourn: House of Horror | \"Jump Scare!\" Commander Deck",
   "pid": 299809,
-  "price": 414.29,
+  "price": 413.72,
   "recent": [
    414.29,
    414.29,
-   414.29
+   413.72
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3045,8 +3045,8 @@
  },
  {
   "baseline": true,
-  "change": "price 219.62 → 206.97 zł",
-  "changedAt": "2026-10-11T02:09:39Z",
+  "change": "price 206.97 → 219.62 zł",
+  "changedAt": "2026-10-11T04:17:50Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-witherbloom-pestilence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3056,9 +3056,9 @@
   "lowLogged": 207.07,
   "name": "Commander: Secrets of Strixhaven | \"Witherbloom Pestilence\" Commander Deck",
   "pid": 370597,
-  "price": 206.97,
+  "price": 219.62,
   "recent": [
-   206.97,
+   219.62,
    219.62,
    219.62
   ],
@@ -3413,8 +3413,8 @@
  },
  {
   "baseline": true,
-  "change": "price 221.59 → 221.33 zł",
-  "changedAt": "2026-10-10T00:17:54Z",
+  "change": "price 221.33 → 221.28 zł",
+  "changedAt": "2026-10-11T04:17:50Z",
   "cheapest": true,
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3424,11 +3424,11 @@
   "lowLogged": 221.33,
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
-  "price": 221.33,
+  "price": 221.28,
   "recent": [
    221.33,
    221.33,
-   221.33
+   221.28
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3448,7 +3448,7 @@
   "pid": 400888,
   "price": 315.0,
   "recent": [
-   315.09,
+   315.0,
    315.0,
    315.0
   ],
@@ -3470,7 +3470,7 @@
   "pid": 400889,
   "price": 315.0,
   "recent": [
-   315.09,
+   315.0,
    315.0,
    315.0
   ],
@@ -3492,7 +3492,7 @@
   "pid": 400890,
   "price": 315.0,
   "recent": [
-   315.09,
+   315.0,
    315.0,
    315.0
   ],
@@ -3514,7 +3514,7 @@
   "pid": 400891,
   "price": 315.0,
   "recent": [
-   315.09,
+   315.0,
    315.0,
    315.0
   ],
