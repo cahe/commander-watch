@@ -2983,5 +2983,60 @@
   "shop": "frostmagic",
   "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-doom-prevails-commander-deck"
+ },
+ {
+  "at": "2026-10-12T12:18:17Z",
+  "cheapest": true,
+  "deck": "Masters – Planeswalker Party",
+  "group": "cardtrader-238393",
+  "id": "magiccafe-16164",
+  "inStock": 1,
+  "kind": "price",
+  "old": 349.99,
+  "price": 1075.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/commander-masters-commander-deck-planeswalker-party/"
+ },
+ {
+  "at": "2026-10-12T12:18:17Z",
+  "cheapest": true,
+  "deck": "Masters – Enduring Enchantments",
+  "group": "cardtrader-238391",
+  "id": "magiccafe-16162",
+  "inStock": 1,
+  "kind": "price",
+  "old": 525.99,
+  "price": 585.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/commander-masters-commander-deck-enduring-enchantments/"
+ },
+ {
+  "at": "2026-10-12T12:18:17Z",
+  "deck": "Masters – Eldrazi Unbound",
+  "group": "cardtrader-238387",
+  "id": "magiccafe-16160",
+  "inStock": 0,
+  "kind": "price",
+  "old": 599.99,
+  "price": 1199.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/commander-masters-commander-deck-eldrazi-unbound/"
+ },
+ {
+  "at": "2026-10-12T12:18:17Z",
+  "cheapest": true,
+  "deck": "Masters",
+  "group": "magiccafe-15942",
+  "id": "magiccafe-15942",
+  "inStock": 1,
+  "kind": "price",
+  "old": 3009.99,
+  "price": 4499.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/commander-masters-commander-deck-display-4/"
  }
 ]
