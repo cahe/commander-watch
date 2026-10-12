@@ -922,8 +922,8 @@
   "price": 648.48,
   "recent": [
    648.48,
-   648.48,
-   648.7
+   648.7,
+   648.48
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1697,8 +1697,8 @@
  },
  {
   "baseline": true,
-  "change": "price 150.02 → 149.97 zł",
-  "changedAt": "2026-10-09T10:18:05Z",
+  "change": "price 149.97 → 155.27 zł",
+  "changedAt": "2026-10-12T05:17:55Z",
   "cheapest": true,
   "deck": "doctor-who-blast-from-the-past",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -1708,9 +1708,9 @@
   "lowLogged": 150.25,
   "name": "Universes Beyond: Doctor Who | \"Blast from the Past\" Commander Deck",
   "pid": 246951,
-  "price": 149.97,
+  "price": 155.27,
   "recent": [
-   149.97,
+   155.27,
    155.27,
    155.27
   ],
@@ -1985,8 +1985,8 @@
   "price": 571.66,
   "recent": [
    593.72,
-   593.72,
-   571.66
+   571.66,
+   593.72
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2191,7 +2191,7 @@
   "pid": 279379,
   "price": 626.33,
   "recent": [
-   637.54,
+   626.33,
    626.33,
    626.33
   ],
@@ -2488,8 +2488,8 @@
   "price": 436.17,
   "recent": [
    436.17,
-   436.17,
-   437.71
+   437.71,
+   436.17
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2611,8 +2611,8 @@
  },
  {
   "baseline": true,
-  "change": "price 221.53 → 221.46 zł",
-  "changedAt": "2026-10-09T10:18:05Z",
+  "change": "price 221.46 → 222.25 zł",
+  "changedAt": "2026-10-12T05:17:55Z",
   "cheapest": true,
   "deck": "final-fantasy-counter-blitz",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2622,9 +2622,9 @@
   "lowLogged": 219.34,
   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck",
   "pid": 322098,
-  "price": 221.46,
+  "price": 222.25,
   "recent": [
-   221.46,
+   222.25,
    222.25,
    222.25
   ],
@@ -2794,8 +2794,8 @@
  },
  {
   "baseline": true,
-  "change": "price 222.32 → 222.25 zł",
-  "changedAt": "2026-10-09T10:18:05Z",
+  "change": "price 222.25 → 243.52 zł",
+  "changedAt": "2026-10-12T05:17:55Z",
   "cheapest": true,
   "deck": "tarkir-dragonstorm-mardu-surge",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2805,9 +2805,9 @@
   "lowLogged": 222.09,
   "name": "Commander: Tarkir Dragonstorm | \"Mardu Surge\" Commander Deck",
   "pid": 322530,
-  "price": 222.25,
+  "price": 243.52,
   "recent": [
-   222.25,
+   243.52,
    243.52,
    243.52
   ],
@@ -2840,8 +2840,8 @@
  },
  {
   "baseline": true,
-  "change": "price 191.05 → 190.99 zł",
-  "changedAt": "2026-10-09T10:18:05Z",
+  "change": "price 190.99 → 195.41 zł",
+  "changedAt": "2026-10-12T05:17:55Z",
   "cheapest": true,
   "deck": "tarkir-dragonstorm-jeskai-striker",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2851,9 +2851,9 @@
   "lowLogged": 190.86,
   "name": "Commander: Tarkir Dragonstorm | \"Jeskai Striker\" Commander Deck",
   "pid": 322532,
-  "price": 190.99,
+  "price": 195.41,
   "recent": [
-   190.99,
+   195.41,
    195.41,
    195.41
   ],
@@ -2898,7 +2898,7 @@
   "pid": 322693,
   "price": 168.36,
   "recent": [
-   177.11,
+   168.36,
    168.36,
    168.36
   ],
@@ -2999,8 +2999,8 @@
  },
  {
   "baseline": true,
-  "change": "price 218.59 → 218.52 zł",
-  "changedAt": "2026-10-09T10:18:05Z",
+  "change": "price 218.52 → 233.93 zł",
+  "changedAt": "2026-10-12T05:17:55Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-silverquill-influence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3010,9 +3010,9 @@
   "lowLogged": 218.38,
   "name": "Commander: Secrets of Strixhaven | \"Silverquill Influence\" Commander Deck",
   "pid": 370595,
-  "price": 218.52,
+  "price": 233.93,
   "recent": [
-   218.52,
+   233.93,
    233.93,
    233.93
   ],
@@ -3035,7 +3035,7 @@
   "pid": 370596,
   "price": 159.73,
   "recent": [
-   163.81,
+   159.73,
    159.73,
    159.73
   ],
@@ -3344,8 +3344,8 @@
  },
  {
   "baseline": true,
-  "change": "price 172.74 → 172.69 zł",
-  "changedAt": "2026-10-10T11:17:49Z",
+  "change": "price 172.69 → 172.74 zł",
+  "changedAt": "2026-10-12T05:17:55Z",
   "cheapest": true,
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3355,9 +3355,9 @@
   "lowLogged": 146.74,
   "name": "Foundations: \"Wretched Ranks\" Commander Deck",
   "pid": 389400,
-  "price": 172.69,
+  "price": 172.74,
   "recent": [
-   172.69,
+   172.74,
    172.74,
    172.74
   ],
@@ -3380,7 +3380,7 @@
   "pid": 389401,
   "price": 198.96,
   "recent": [
-   199.0,
+   198.96,
    198.96,
    198.96
   ],
@@ -3425,7 +3425,7 @@
   "pid": 389403,
   "price": 221.15,
   "recent": [
-   221.28,
+   221.15,
    221.15,
    221.15
   ],
@@ -3447,7 +3447,7 @@
   "pid": 400888,
   "price": 314.92,
   "recent": [
-   315.0,
+   314.92,
    314.92,
    314.92
   ],
@@ -3469,7 +3469,7 @@
   "pid": 400889,
   "price": 314.92,
   "recent": [
-   315.0,
+   314.92,
    314.92,
    314.92
   ],
@@ -3491,7 +3491,7 @@
   "pid": 400890,
   "price": 314.92,
   "recent": [
-   315.0,
+   314.92,
    314.92,
    314.92
   ],
@@ -3513,7 +3513,7 @@
   "pid": 400891,
   "price": 314.92,
   "recent": [
-   315.0,
+   314.92,
    314.92,
    314.92
   ],
