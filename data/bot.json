@@ -1236,9 +1236,9 @@
    "ctPrice": 441.7,
    "ctUrl": "https://www.cardtrader.com/en/cards/208725",
    "name": "Streets of New Capenna Maestros Massacre",
-   "shopName": "Magic Cafe",
-   "shopPrice": 301.99,
-   "shopUrl": "https://magiccafe.eu/product/streets-of-new-capenna-commander-deck-maestros-massacre/"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "streets-of-new-capenna-obscura-operation": {
    "ctPrice": 307.18,

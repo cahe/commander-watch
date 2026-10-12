@@ -843,12 +843,13 @@
   "baseline": true,
   "change": "price 440.55 → 441.70 zł",
   "changedAt": "2026-10-12T12:18:17Z",
-  "cheapest": false,
+  "cheapest": true,
   "deck": "streets-of-new-capenna-maestros-massacre",
   "firstSeen": "2026-10-02T15:17:14Z",
   "group": "cardtrader-208725",
   "groupName": "Streets of New Capenna Maestros Massacre",
   "id": "cardtrader-208725",
+  "lowLogged": 441.7,
   "name": "Commander: Streets of New Capenna | \"Maestros Massacre\" Deck",
   "pid": 208725,
   "price": 441.7,
@@ -1984,8 +1985,8 @@
   "pid": 265029,
   "price": 573.15,
   "recent": [
-   573.15,
    595.27,
+   573.15,
    573.15
   ],
   "shop": "cardtrader",
@@ -2487,8 +2488,8 @@
   "pid": 299807,
   "price": 437.31,
   "recent": [
-   438.85,
    437.31,
+   438.85,
    438.85
   ],
   "shop": "cardtrader",
@@ -4708,8 +4709,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-12T19:18:01Z",
   "deck": "streets-of-new-capenna-maestros-massacre",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-208725",
@@ -4719,7 +4720,7 @@
   "pid": 16095,
   "price": 301.99,
   "shop": "magiccafe",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/streets-of-new-capenna-commander-deck-maestros-massacre/"
  },
  {
@@ -6706,6 +6707,8 @@
  },
  {
   "baseline": true,
+  "change": "price 129.99 → 399.99 zł",
+  "changedAt": "2026-10-12T19:18:01Z",
   "deck": "foundations-starter-tramplesaurus-rex",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31684",
@@ -6713,7 +6716,7 @@
   "id": "mrpuggy-15662",
   "name": "Magic: The Gathering - Foundations Commander Decks - Tramplesaurus Rex",
   "pid": 15662,
-  "price": 129.99,
+  "price": 399.99,
   "shop": "mrpuggy",
   "status": "out_of_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Decks-Tramplesaurus-Rex/15662"
