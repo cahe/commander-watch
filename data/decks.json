@@ -1984,9 +1984,9 @@
   "pid": 265029,
   "price": 573.15,
   "recent": [
-   595.27,
    573.15,
-   573.15
+   573.15,
+   595.27
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2487,9 +2487,9 @@
   "pid": 299807,
   "price": 437.31,
   "recent": [
-   437.31,
    438.85,
-   438.85
+   438.85,
+   437.31
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -6676,8 +6676,8 @@
  },
  {
   "baseline": true,
-  "change": "back in stock, price 119.99 → 199.99 zł",
-  "changedAt": "2026-10-12T15:18:07Z",
+  "change": "sold out",
+  "changedAt": "2026-10-12T17:18:34Z",
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31682",
@@ -6687,7 +6687,7 @@
   "pid": 15660,
   "price": 199.99,
   "shop": "mrpuggy",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Deck-Wretched-Ranks/15660"
  },
  {

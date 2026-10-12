@@ -3139,5 +3139,17 @@
   "shop": "panmysza",
   "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Wretched-Ranks/12569"
+ },
+ {
+  "at": "2026-10-12T17:18:34Z",
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "mrpuggy-15660",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 199.99,
+  "shop": "mrpuggy",
+  "status": "out_of_stock",
+  "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Deck-Wretched-Ranks/15660"
  }
 ]
