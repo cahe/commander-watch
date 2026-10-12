@@ -1972,8 +1972,8 @@
  },
  {
   "baseline": true,
-  "change": "price 571.66 → 573.15 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 573.15 → 595.27 zł",
+  "changedAt": "2026-10-12T23:12:18Z",
   "cheapest": true,
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -1983,9 +1983,9 @@
   "lowLogged": 571.66,
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
-  "price": 573.15,
+  "price": 595.27,
   "recent": [
-   573.15,
+   595.27,
    595.27,
    595.27
   ],
@@ -2488,7 +2488,7 @@
   "pid": 299807,
   "price": 437.31,
   "recent": [
-   438.85,
+   437.31,
    437.31,
    437.31
   ],
