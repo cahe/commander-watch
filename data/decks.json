@@ -908,8 +908,8 @@
  },
  {
   "baseline": true,
-  "change": "price 648.26 → 648.48 zł",
-  "changedAt": "2026-10-11T06:17:49Z",
+  "change": "price 648.48 → 648.70 zł",
+  "changedAt": "2026-10-12T08:18:03Z",
   "cheapest": true,
   "deck": "streets-of-new-capenna-cabaretti-cacophony",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -919,9 +919,9 @@
   "lowLogged": 445.5,
   "name": "Commander: Streets of New Capenna | \"Cabaretti Cacophony\" Deck",
   "pid": 208728,
-  "price": 648.48,
+  "price": 648.7,
   "recent": [
-   648.48,
+   648.7,
    648.7,
    648.7
   ],
