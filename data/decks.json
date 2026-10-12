@@ -1712,7 +1712,7 @@
   "recent": [
    149.97,
    149.97,
-   149.97
+   155.27
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2178,8 +2178,8 @@
  },
  {
   "baseline": true,
-  "change": "price 659.16 → 637.54 zł",
-  "changedAt": "2026-10-09T23:17:51Z",
+  "change": "price 637.54 → 626.33 zł",
+  "changedAt": "2026-10-12T01:17:52Z",
   "cheapest": true,
   "deck": "modern-horizons-3-eldrazi-incursion",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2189,11 +2189,11 @@
   "lowLogged": 637.54,
   "name": "Commander: Modern Horizons 3 |\"Eldrazi Incursion\" Commander Deck",
   "pid": 279379,
-  "price": 637.54,
+  "price": 626.33,
   "recent": [
    637.54,
    637.54,
-   637.54
+   626.33
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2626,7 +2626,7 @@
   "recent": [
    221.46,
    221.46,
-   221.46
+   222.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2809,7 +2809,7 @@
   "recent": [
    222.25,
    222.25,
-   222.25
+   243.52
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2855,7 +2855,7 @@
   "recent": [
    190.99,
    190.99,
-   190.99
+   195.41
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2886,8 +2886,8 @@
  },
  {
   "baseline": true,
-  "change": "price 179.87 → 177.11 zł",
-  "changedAt": "2026-10-10T11:17:49Z",
+  "change": "price 177.11 → 168.36 zł",
+  "changedAt": "2026-10-12T01:17:52Z",
   "cheapest": false,
   "deck": "edge-of-eternities-counter-intelligence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2896,11 +2896,11 @@
   "id": "cardtrader-322693",
   "name": "Edge of Eternities: \"Counter Intelligence\" Commander Deck",
   "pid": 322693,
-  "price": 177.11,
+  "price": 168.36,
   "recent": [
    177.11,
    177.11,
-   177.11
+   168.36
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3014,7 +3014,7 @@
   "recent": [
    218.52,
    218.52,
-   218.52
+   233.93
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3022,22 +3022,22 @@
  },
  {
   "baseline": true,
-  "change": "price 163.86 → 163.81 zł",
-  "changedAt": "2026-10-09T10:18:05Z",
+  "change": "price 163.81 → 159.73 zł",
+  "changedAt": "2026-10-12T01:17:52Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-prismari-artistry",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardtrader-370596",
   "groupName": "Secrets of Strixhaven Prismari Artistry",
   "id": "cardtrader-370596",
-  "lowLogged": 163.69,
+  "lowLogged": 159.73,
   "name": "Commander: Secrets of Strixhaven | \"Prismari Artistry\" Commander Deck",
   "pid": 370596,
-  "price": 163.81,
+  "price": 159.73,
   "recent": [
    163.81,
    163.81,
-   163.81
+   159.73
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3359,7 +3359,7 @@
   "recent": [
    172.69,
    172.69,
-   172.69
+   172.74
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3367,8 +3367,8 @@
  },
  {
   "baseline": true,
-  "change": "price 199.04 → 199.00 zł",
-  "changedAt": "2026-10-10T11:17:49Z",
+  "change": "price 199.00 → 198.96 zł",
+  "changedAt": "2026-10-12T01:17:52Z",
   "cheapest": true,
   "deck": "foundations-starter-reign-of-dragons",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3378,11 +3378,11 @@
   "lowLogged": 190.73,
   "name": "Foundations: \"Reign of Dragons\" Commander Deck",
   "pid": 389401,
-  "price": 199.0,
+  "price": 198.96,
   "recent": [
    199.0,
    199.0,
-   199.0
+   198.96
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3413,8 +3413,8 @@
  },
  {
   "baseline": true,
-  "change": "price 221.33 → 221.28 zł",
-  "changedAt": "2026-10-11T04:17:50Z",
+  "change": "price 221.28 → 221.15 zł",
+  "changedAt": "2026-10-12T01:17:52Z",
   "cheapest": false,
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3423,11 +3423,11 @@
   "id": "cardtrader-389403",
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
-  "price": 221.28,
+  "price": 221.15,
   "recent": [
    221.28,
    221.28,
-   221.28
+   221.15
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3435,8 +3435,8 @@
  },
  {
   "baseline": true,
-  "change": "price 315.09 → 315.00 zł",
-  "changedAt": "2026-10-10T22:17:48Z",
+  "change": "price 315.00 → 314.92 zł",
+  "changedAt": "2026-10-12T01:17:52Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3445,11 +3445,11 @@
   "id": "cardtrader-400888",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 315.0,
+  "price": 314.92,
   "recent": [
    315.0,
    315.0,
-   315.0
+   314.92
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3457,8 +3457,8 @@
  },
  {
   "baseline": true,
-  "change": "price 315.09 → 315.00 zł",
-  "changedAt": "2026-10-10T22:17:48Z",
+  "change": "price 315.00 → 314.92 zł",
+  "changedAt": "2026-10-12T01:17:52Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3467,11 +3467,11 @@
   "id": "cardtrader-400889",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 315.0,
+  "price": 314.92,
   "recent": [
    315.0,
    315.0,
-   315.0
+   314.92
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3479,8 +3479,8 @@
  },
  {
   "baseline": true,
-  "change": "price 315.09 → 315.00 zł",
-  "changedAt": "2026-10-10T22:17:48Z",
+  "change": "price 315.00 → 314.92 zł",
+  "changedAt": "2026-10-12T01:17:52Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3489,11 +3489,11 @@
   "id": "cardtrader-400890",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 315.0,
+  "price": 314.92,
   "recent": [
    315.0,
    315.0,
-   315.0
+   314.92
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3501,8 +3501,8 @@
  },
  {
   "baseline": true,
-  "change": "price 315.09 → 315.00 zł",
-  "changedAt": "2026-10-10T22:17:48Z",
+  "change": "price 315.00 → 314.92 zł",
+  "changedAt": "2026-10-12T01:17:52Z",
   "cheapest": false,
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3511,11 +3511,11 @@
   "id": "cardtrader-400891",
   "name": "Star Trek | \"We Are the Borg\" Commander Deck",
   "pid": 400891,
-  "price": 315.0,
+  "price": 314.92,
   "recent": [
    315.0,
    315.0,
-   315.0
+   314.92
   ],
   "shop": "cardtrader",
   "status": "in_stock",

@@ -2880,5 +2880,23 @@
   "shop": "frostmagic",
   "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-doom-prevails-commander-deck"
+ },
+ {
+  "at": "2026-10-12T01:17:52Z",
+  "best": {
+   "price": 180,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Secrets of Strixhaven Prismari Artistry",
+  "group": "cardtrader-370596",
+  "id": "cardtrader-370596",
+  "inStock": 6,
+  "kind": "price",
+  "old": 163.69,
+  "price": 159.73,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370596"
  }
 ]
