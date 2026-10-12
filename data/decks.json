@@ -923,7 +923,7 @@
   "recent": [
    648.48,
    648.48,
-   648.48
+   648.7
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1710,8 +1710,8 @@
   "pid": 246951,
   "price": 149.97,
   "recent": [
-   155.27,
    149.97,
+   155.27,
    155.27
   ],
   "shop": "cardtrader",
@@ -1971,22 +1971,22 @@
  },
  {
   "baseline": true,
-  "change": "price 624.41 → 593.72 zł",
-  "changedAt": "2026-10-10T22:17:48Z",
+  "change": "price 593.72 → 571.66 zł",
+  "changedAt": "2026-10-12T04:17:54Z",
   "cheapest": true,
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardtrader-265029",
   "groupName": "Fallout Mutant Menace",
   "id": "cardtrader-265029",
-  "lowLogged": 593.72,
+  "lowLogged": 571.66,
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
-  "price": 593.72,
+  "price": 571.66,
   "recent": [
    593.72,
    593.72,
-   593.72
+   571.66
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2191,8 +2191,8 @@
   "pid": 279379,
   "price": 626.33,
   "recent": [
-   626.33,
    637.54,
+   626.33,
    626.33
   ],
   "shop": "cardtrader",
@@ -2489,7 +2489,7 @@
   "recent": [
    436.17,
    436.17,
-   436.17
+   437.71
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2624,8 +2624,8 @@
   "pid": 322098,
   "price": 221.46,
   "recent": [
-   222.25,
    221.46,
+   222.25,
    222.25
   ],
   "shop": "cardtrader",
@@ -2807,8 +2807,8 @@
   "pid": 322530,
   "price": 222.25,
   "recent": [
-   243.52,
    222.25,
+   243.52,
    243.52
   ],
   "shop": "cardtrader",
@@ -2853,8 +2853,8 @@
   "pid": 322532,
   "price": 190.99,
   "recent": [
-   195.41,
    190.99,
+   195.41,
    195.41
   ],
   "shop": "cardtrader",
@@ -2898,8 +2898,8 @@
   "pid": 322693,
   "price": 168.36,
   "recent": [
-   168.36,
    177.11,
+   168.36,
    168.36
   ],
   "shop": "cardtrader",
@@ -3012,8 +3012,8 @@
   "pid": 370595,
   "price": 218.52,
   "recent": [
-   233.93,
    218.52,
+   233.93,
    233.93
   ],
   "shop": "cardtrader",
@@ -3035,8 +3035,8 @@
   "pid": 370596,
   "price": 159.73,
   "recent": [
-   159.73,
    163.81,
+   159.73,
    159.73
   ],
   "shop": "cardtrader",
@@ -3357,8 +3357,8 @@
   "pid": 389400,
   "price": 172.69,
   "recent": [
-   172.74,
    172.69,
+   172.74,
    172.74
   ],
   "shop": "cardtrader",
@@ -3380,8 +3380,8 @@
   "pid": 389401,
   "price": 198.96,
   "recent": [
-   198.96,
    199.0,
+   198.96,
    198.96
   ],
   "shop": "cardtrader",
@@ -3425,8 +3425,8 @@
   "pid": 389403,
   "price": 221.15,
   "recent": [
-   221.15,
    221.28,
+   221.15,
    221.15
   ],
   "shop": "cardtrader",
@@ -3447,8 +3447,8 @@
   "pid": 400888,
   "price": 314.92,
   "recent": [
-   314.92,
    315.0,
+   314.92,
    314.92
   ],
   "shop": "cardtrader",
@@ -3469,8 +3469,8 @@
   "pid": 400889,
   "price": 314.92,
   "recent": [
-   314.92,
    315.0,
+   314.92,
    314.92
   ],
   "shop": "cardtrader",
@@ -3491,8 +3491,8 @@
   "pid": 400890,
   "price": 314.92,
   "recent": [
-   314.92,
    315.0,
+   314.92,
    314.92
   ],
   "shop": "cardtrader",
@@ -3513,8 +3513,8 @@
   "pid": 400891,
   "price": 314.92,
   "recent": [
-   314.92,
    315.0,
+   314.92,
    314.92
   ],
   "shop": "cardtrader",
