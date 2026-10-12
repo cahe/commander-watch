@@ -1984,9 +1984,9 @@
   "pid": 265029,
   "price": 573.15,
   "recent": [
-   595.27,
    573.15,
-   573.15
+   573.15,
+   595.27
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2487,9 +2487,9 @@
   "pid": 299807,
   "price": 437.31,
   "recent": [
-   437.31,
    438.85,
-   438.85
+   438.85,
+   437.31
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -6676,6 +6676,8 @@
  },
  {
   "baseline": true,
+  "change": "back in stock, price 119.99 → 199.99 zł",
+  "changedAt": "2026-10-12T15:18:07Z",
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31682",
@@ -6683,9 +6685,9 @@
   "id": "mrpuggy-15660",
   "name": "Magic: The Gathering - Foundations Commander Deck - Wretched Ranks",
   "pid": 15660,
-  "price": 119.99,
+  "price": 199.99,
   "shop": "mrpuggy",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Deck-Wretched-Ranks/15660"
  },
  {
@@ -7152,8 +7154,8 @@
  },
  {
   "baseline": false,
-  "change": "sold out",
-  "changedAt": "2026-10-05T21:17:39Z",
+  "change": "price 170.00 → 185.00 zł",
+  "changedAt": "2026-10-12T15:18:07Z",
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31679",
@@ -7161,15 +7163,15 @@
   "id": "panmysza-12567",
   "name": "MtG Foundations: Commander Deck - Calling All Angels",
   "pid": 12567,
-  "price": 170.0,
+  "price": 185.0,
   "shop": "panmysza",
   "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Calling-All-Angels/12567"
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-01T14:17:16Z",
+  "change": "price 130.00 → 145.00 zł",
+  "changedAt": "2026-10-12T15:18:07Z",
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31681",
@@ -7177,15 +7179,15 @@
   "id": "panmysza-12568",
   "name": "MtG Foundations: Commander Deck - Keen Enginering",
   "pid": 12568,
-  "price": 130.0,
+  "price": 145.0,
   "shop": "panmysza",
   "status": "in_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Keen-Enginering/12568"
  },
  {
   "baseline": false,
-  "change": "sold out",
-  "changedAt": "2026-10-05T12:18:03Z",
+  "change": "price 150.00 → 165.00 zł",
+  "changedAt": "2026-10-12T15:18:07Z",
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31682",
@@ -7193,15 +7195,15 @@
   "id": "panmysza-12569",
   "name": "MtG Foundations: Commander Deck - Wretched Ranks",
   "pid": 12569,
-  "price": 150.0,
+  "price": 165.0,
   "shop": "panmysza",
   "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Wretched-Ranks/12569"
  },
  {
   "baseline": false,
-  "change": "sold out",
-  "changedAt": "2026-10-05T17:17:34Z",
+  "change": "price 170.00 → 185.00 zł",
+  "changedAt": "2026-10-12T15:18:07Z",
   "deck": "foundations-starter-reign-of-dragons",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31683",
@@ -7209,15 +7211,15 @@
   "id": "panmysza-12570",
   "name": "MtG Foundations: Commander Deck - Reign of Dragons",
   "pid": 12570,
-  "price": 170.0,
+  "price": 185.0,
   "shop": "panmysza",
   "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Reign-of-Dragons/12570"
  },
  {
   "baseline": false,
-  "change": "sold out",
-  "changedAt": "2026-10-02T18:17:13Z",
+  "change": "price 170.00 → 185.00 zł",
+  "changedAt": "2026-10-12T15:18:07Z",
   "deck": "foundations-starter-tramplesaurus-rex",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31684",
@@ -7225,7 +7227,7 @@
   "id": "panmysza-12571",
   "name": "MtG Foundations: Commander Deck - Tramplesaurus Rex",
   "pid": 12571,
-  "price": 170.0,
+  "price": 185.0,
   "shop": "panmysza",
   "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Tramplesaurus-Rex/12571"
