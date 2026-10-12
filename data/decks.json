@@ -1985,7 +1985,7 @@
   "pid": 265029,
   "price": 573.15,
   "recent": [
-   595.27,
+   573.15,
    573.15,
    573.15
   ],
@@ -2475,8 +2475,8 @@
  },
  {
   "baseline": true,
-  "change": "price 436.17 → 437.31 zł",
-  "changedAt": "2026-10-12T11:17:54Z",
+  "change": "price 437.31 → 438.85 zł",
+  "changedAt": "2026-10-12T20:18:00Z",
   "cheapest": true,
   "deck": "duskmourn-house-of-horror-miracle-worker",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2486,9 +2486,9 @@
   "lowLogged": 435.88,
   "name": "Commander: Duskmourn: House of Horror | \"Miracle Worker\" Commander Deck",
   "pid": 299807,
-  "price": 437.31,
+  "price": 438.85,
   "recent": [
-   437.31,
+   438.85,
    438.85,
    438.85
   ],
