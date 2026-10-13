@@ -3249,5 +3249,19 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-10-13T05:17:51Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Graveyard Overdrive",
+  "group": "cardtrader-279378",
+  "id": "cardtrader-279378",
+  "inStock": 0,
+  "kind": "price",
+  "old": 614.97,
+  "price": 568.98,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279378"
  }
 ]

@@ -924,7 +924,7 @@
   "recent": [
    650.39,
    650.39,
-   650.39
+   661.14
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1597,9 +1597,9 @@
   "pid": 246478,
   "price": 367.09,
   "recent": [
-   371.78,
    367.09,
-   367.09
+   367.09,
+   371.78
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1916,9 +1916,9 @@
   "pid": 265026,
   "price": 322.28,
   "recent": [
-   322.28,
    369.28,
-   369.28
+   369.28,
+   322.28
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1939,9 +1939,9 @@
   "pid": 265027,
   "price": 322.28,
   "recent": [
-   322.28,
    386.84,
-   386.84
+   386.84,
+   322.28
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1962,9 +1962,9 @@
   "pid": 265028,
   "price": 179.59,
   "recent": [
-   179.59,
    197.9,
-   197.9
+   197.9,
+   179.59
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1985,9 +1985,9 @@
   "pid": 265029,
   "price": 519.78,
   "recent": [
-   519.78,
    573.15,
-   573.15
+   573.15,
+   519.78
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2087,8 +2087,8 @@
  },
  {
   "baseline": true,
-  "change": "price 1316.05 → 1319.48 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 1319.48 → 1315.09 zł",
+  "changedAt": "2026-10-13T05:17:51Z",
   "cheapest": true,
   "deck": "modern-horizons-3-eldrazi-incursion-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -2098,11 +2098,11 @@
   "lowLogged": 1315.15,
   "name": "Commander: Modern Horizons 3 |\"Eldrazi Incursion\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 279375,
-  "price": 1319.48,
+  "price": 1315.09,
   "recent": [
    1319.48,
    1319.48,
-   1319.48
+   1315.09
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2156,22 +2156,22 @@
  },
  {
   "baseline": true,
-  "change": "price 615.39 → 616.99 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 616.99 → 568.98 zł",
+  "changedAt": "2026-10-13T05:17:51Z",
   "cheapest": true,
   "deck": "modern-horizons-3-graveyard-overdrive-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
   "group": "cardtrader-279378",
   "groupName": "Modern Horizons 3 |\"Graveyard Overdrive",
   "id": "cardtrader-279378",
-  "lowLogged": 614.97,
+  "lowLogged": 568.98,
   "name": "Commander: Modern Horizons 3 |\"Graveyard Overdrive\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 279378,
-  "price": 616.99,
+  "price": 568.98,
   "recent": [
    616.99,
    616.99,
-   616.99
+   568.98
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2534,9 +2534,9 @@
   "pid": 299809,
   "price": 414.75,
   "recent": [
-   414.75,
    414.79,
-   414.79
+   414.79,
+   414.75
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3036,9 +3036,9 @@
   "pid": 370596,
   "price": 160.15,
   "recent": [
-   164.23,
    160.15,
-   160.15
+   160.15,
+   164.23
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3345,8 +3345,8 @@
  },
  {
   "baseline": true,
-  "change": "price 172.74 → 173.19 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 173.19 → 173.01 zł",
+  "changedAt": "2026-10-13T05:17:51Z",
   "cheapest": true,
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3356,11 +3356,11 @@
   "lowLogged": 146.74,
   "name": "Foundations: \"Wretched Ranks\" Commander Deck",
   "pid": 389400,
-  "price": 173.19,
+  "price": 173.01,
   "recent": [
-   173.41,
    173.19,
-   173.19
+   173.19,
+   173.01
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3381,9 +3381,9 @@
   "pid": 389401,
   "price": 199.48,
   "recent": [
-   199.52,
    199.48,
-   199.48
+   199.48,
+   199.52
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3404,9 +3404,9 @@
   "pid": 389402,
   "price": 195.35,
   "recent": [
-   195.88,
    195.35,
-   195.35
+   195.35,
+   195.79
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3426,9 +3426,9 @@
   "pid": 389403,
   "price": 217.82,
   "recent": [
-   217.82,
    221.73,
-   221.73
+   221.73,
+   217.82
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3448,9 +3448,9 @@
   "pid": 400888,
   "price": 315.65,
   "recent": [
-   315.65,
    315.74,
-   315.74
+   315.74,
+   315.65
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3470,9 +3470,9 @@
   "pid": 400889,
   "price": 315.65,
   "recent": [
-   315.65,
    315.74,
-   315.74
+   315.74,
+   315.65
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3492,9 +3492,9 @@
   "pid": 400890,
   "price": 315.65,
   "recent": [
-   315.65,
    315.74,
-   315.74
+   315.74,
+   315.65
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3514,9 +3514,9 @@
   "pid": 400891,
   "price": 315.74,
   "recent": [
-   315.91,
    315.74,
-   315.74
+   315.74,
+   315.91
   ],
   "shop": "cardtrader",
   "status": "in_stock",
