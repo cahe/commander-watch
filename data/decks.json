@@ -468,7 +468,7 @@
   "recent": [
    703.7,
    703.7,
-   703.7
+   867.4
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -490,7 +490,7 @@
   "recent": [
    243.3,
    243.3,
-   243.3
+   243.69
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -582,7 +582,7 @@
   "recent": [
    221.83,
    221.83,
-   221.83
+   424.87
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1622,7 +1622,7 @@
   "recent": [
    252.5,
    252.5,
-   252.5
+   254.16
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1668,7 +1668,7 @@
   "recent": [
    309.23,
    309.23,
-   309.23
+   330.03
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1926,22 +1926,22 @@
  },
  {
   "baseline": true,
-  "change": "price 322.28 → 321.67 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 321.67 → 307.17 zł",
+  "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": true,
   "deck": "fallout-hail-caesar",
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardtrader-265027",
   "groupName": "Fallout Hail Caesar",
   "id": "cardtrader-265027",
-  "lowLogged": 322.28,
+  "lowLogged": 307.17,
   "name": "Fallout | \"Hail Caesar\" Commander Deck",
   "pid": 265027,
-  "price": 321.67,
+  "price": 307.17,
   "recent": [
    321.67,
    321.67,
-   321.67
+   307.17
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1949,22 +1949,22 @@
  },
  {
   "baseline": true,
-  "change": "price 179.59 → 179.25 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 179.25 → 175.27 zł",
+  "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": true,
   "deck": "fallout-science",
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardtrader-265028",
   "groupName": "Fallout Science",
   "id": "cardtrader-265028",
-  "lowLogged": 179.59,
+  "lowLogged": 175.27,
   "name": "Fallout | \"Science!\" Commander Deck",
   "pid": 265028,
-  "price": 179.25,
+  "price": 175.27,
   "recent": [
    179.25,
    179.25,
-   179.25
+   175.27
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1972,22 +1972,22 @@
  },
  {
   "baseline": true,
-  "change": "price 519.78 → 518.79 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 518.79 → 497.77 zł",
+  "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": true,
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardtrader-265029",
   "groupName": "Fallout Mutant Menace",
   "id": "cardtrader-265029",
-  "lowLogged": 519.78,
+  "lowLogged": 497.77,
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
-  "price": 518.79,
+  "price": 497.77,
   "recent": [
    518.79,
    518.79,
-   518.79
+   497.77
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2360,8 +2360,8 @@
  },
  {
   "baseline": true,
-  "change": "price 397.72 → 396.97 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 396.97 → 396.53 zł",
+  "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": true,
   "deck": "bloomburrow-squirreled-away",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2371,11 +2371,11 @@
   "lowLogged": 396.42,
   "name": "Commander: Bloomburrow | \"Squirreled Away\" Commander Deck",
   "pid": 280701,
-  "price": 396.97,
+  "price": 396.53,
   "recent": [
    396.97,
    396.97,
-   396.97
+   396.53
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2901,7 +2901,7 @@
   "recent": [
    168.48,
    168.48,
-   168.48
+   180.0
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2992,7 +2992,7 @@
   "recent": [
    168.3,
    168.3,
-   168.3
+   168.52
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3015,7 +3015,7 @@
   "recent": [
    234.1,
    234.1,
-   234.1
+   238.92
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3153,7 +3153,7 @@
   "recent": [
    177.5,
    177.5,
-   177.5
+   188.98
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3176,7 +3176,7 @@
   "recent": [
    138.08,
    138.08,
-   138.08
+   142.41
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3436,8 +3436,8 @@
  },
  {
   "baseline": true,
-  "change": "price 315.65 → 315.05 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 315.05 → 315.01 zł",
+  "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3446,11 +3446,11 @@
   "id": "cardtrader-400888",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 315.05,
+  "price": 315.01,
   "recent": [
    315.05,
    315.05,
-   315.05
+   315.01
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3458,8 +3458,8 @@
  },
  {
   "baseline": true,
-  "change": "price 315.65 → 315.05 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 315.05 → 315.01 zł",
+  "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3468,11 +3468,11 @@
   "id": "cardtrader-400889",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 315.05,
+  "price": 315.01,
   "recent": [
    315.05,
    315.05,
-   315.05
+   315.01
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3480,8 +3480,8 @@
  },
  {
   "baseline": true,
-  "change": "price 315.65 → 315.05 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 315.05 → 315.01 zł",
+  "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3490,11 +3490,11 @@
   "id": "cardtrader-400890",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 315.05,
+  "price": 315.01,
   "recent": [
    315.05,
    315.05,
-   315.05
+   315.01
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3590,8 +3590,8 @@
  },
  {
   "baseline": true,
-  "change": "price 703.48 → 709.61 zł",
-  "changedAt": "2026-10-13T20:24:21Z",
+  "change": "price 709.61 → 703.48 zł",
+  "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": false,
   "deck": "star-trek-we-are-the-borg-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -3600,11 +3600,11 @@
   "id": "cardtrader-400895",
   "name": "Star Trek | \"We Are the Borg\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400895,
-  "price": 709.61,
+  "price": 703.48,
   "recent": [
    709.61,
    709.61,
-   709.61
+   703.48
   ],
   "shop": "cardtrader",
   "status": "in_stock",
