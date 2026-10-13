@@ -98,9 +98,11 @@ section.changes.closed .changes-head { padding-bottom: 12px; }
 
 .newshelf { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--new); border-radius: 8px; overflow: hidden; }
 .newgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1px; background: var(--line); }
-.newrow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: baseline; align-content: start; padding: 9px 14px; background: var(--surface); }
+.newrow { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px 12px; align-items: baseline; align-content: start; padding: 9px 14px; background: var(--surface); }
+.newrow > .box { grid-row: span 2; align-self: start; }
 .newrow strong { font-weight: 600; overflow-wrap: anywhere; }
-.newrow .offers { grid-column: 1 / -1; margin-top: 0; }
+.newrow .offers { grid-column: 2 / -1; margin-top: 0; }
+.newrow > .avail { grid-column: 1 / -1; }
 .newmore { display: block; width: 100%; padding: 9px 14px; border: 0; border-top: 1px solid var(--line); background: none; color: var(--accent); font: 500 13px var(--font-body); text-align: left; cursor: pointer; }
 .newmore:hover { text-decoration: underline; }
 .newmore:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
@@ -118,6 +120,24 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .item:first-child { border-top: 0; }
 .item.head { font: 500 11px/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); padding-block: 10px; }
 .deck { min-width: 0; display: grid; gap: 2px; }
+.deck.boxed { grid-template-columns: auto minmax(0, 1fr); column-gap: 12px; align-items: start; }
+.deck-main { min-width: 0; display: grid; gap: 2px; }
+/* The deck box: CardTrader's picture of it, or a plain tile where CardTrader has none. */
+.box { --size: 56px; width: var(--size); height: var(--size); flex: none; border-radius: 6px; border: 1px solid var(--line); background: #fff; object-fit: contain; }
+.box.none { display: grid; place-items: center; background: var(--off-soft); color: var(--off); }
+.box.none svg { width: 50%; height: 50%; }
+.pincard .box { --size: 72px; }
+/* Phones: the box beside the name, the shops under both. */
+@media (max-width: 640px) {
+  .box { --size: 48px; }
+  .deck.boxed { align-items: center; row-gap: 6px; }
+  .deck.boxed .deck-main { display: contents; }
+  .deck.boxed .offers { grid-column: 1 / -1; margin-top: 0; }
+  .newrow { align-items: center; row-gap: 6px; }
+  .newrow > .box { grid-row: auto; align-self: center; }
+  .newrow > .seen { grid-area: auto; text-align: right; }  /* not the deck list's "seen" area */
+  .newrow .offers { grid-column: 1 / -1; }
+}
 .deck a { color: var(--fg); text-decoration: none; overflow-wrap: anywhere; }
 .deck a:hover { color: var(--accent); text-decoration: underline; }
 .deck .shoptag { font-size: 12px; color: var(--muted); }
@@ -139,6 +159,8 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .pinned[hidden] { display: none; }
 .pincard { display: grid; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px 14px; }
 .pincard .offers { margin-top: 0; }
+.pin-top { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px; align-items: center; }
+.pin-body { min-width: 0; display: grid; gap: 10px; }
 .offer.more { border: 1px dashed var(--off); background: none; color: var(--muted); font: 500 12px/1 var(--font-body); cursor: pointer; }
 .offer.more:hover { color: var(--fg); border-color: var(--muted); }
 .offer.more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -536,7 +558,7 @@ function renderNew() {
   const decks = new Map();
   for (const d of state.decks.filter(d => !d.baseline)) {
     const key = d.group || d.id;
-    if (!decks.has(key)) decks.set(key, { name: d.groupName || d.name, items: [] });
+    if (!decks.has(key)) decks.set(key, { key, name: d.groupName || d.name, items: [] });
     decks.get(key).items.push(d);
   }
   const rows = [...decks.values()].map(g => ({ ...g, at: g.items.map(d => String(d.firstSeen)).sort().pop() }))
@@ -557,7 +579,7 @@ function renderNew() {
       offers.append(el("a", { class: "offer " + status, href: safeUrl(o.url), target: "_blank", rel: "noopener", title: `${o.name} · ${STATUS_LABEL[status]}` },
         el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: money(o.shop, o.price) }), el("i", { text: OFFER_WORD[status] })));
     }
-    grid.append(el("div", { class: "newrow" }, el("strong", { text: g.name }), el("span", { class: "seen", text: fmtDate(g.at) }), offers));
+    grid.append(el("div", { class: "newrow" }, deckBox(state.decks.filter(d => (d.group || d.id) === g.key)), el("strong", { text: g.name }), el("span", { class: "seen", text: fmtDate(g.at) }), offers));
   }
   if (rows.length > limit) {
     const more = el("button", { class: "newmore", type: "button", "aria-expanded": String(!!state.newAll),
@@ -627,6 +649,21 @@ function stockText(g) {
   return n ? `In stock at ${n} of ${g.offers.length}` : `Out of stock (${g.offers.length})`;
 }
 
+const BOX = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18H6z"/><path d="M6 7h12M9 3v4"/></svg>';
+function boxTile() {
+  const t = el("span", { class: "box none", "aria-hidden": "true" });
+  t.innerHTML = BOX;
+  return t;
+}
+function deckBox(offers) {
+  const src = offers.find(o => o.image)?.image;
+  if (!src) return boxTile();
+  // check.py keeps CardTrader's 500 px picture; its 180 px "preview_" copy is plenty for a thumbnail.
+  const img = el("img", { class: "box", src: safeUrl(src.replace("/show_", "/preview_")), alt: "", loading: "lazy", decoding: "async" });
+  img.addEventListener("error", () => img.replaceWith(boxTile()), { once: true });
+  return img;
+}
+
 // Pinned decks: up to 3 decks a visitor keeps at the top of the page, in the order they were pinned; pinning
 // a 4th unpins the oldest. Remembered per browser by the decks' permanent keys, so regrouping doesn't lose them.
 const PIN_MAX = 3;
@@ -688,7 +725,7 @@ function renderPinned() {
       chips.append(more);
     }
     box.append(el("div", { class: "pincard", "data-key": key },
-      el("div", { class: "pin-slim" }, title, price, spark), chips,
+      el("div", { class: "pin-top" }, deckBox(g.offers), el("div", { class: "pin-body" }, el("div", { class: "pin-slim" }, title, price, spark), chips)),
       h && open ? historyChart(h, g.name) : null));
   }
 }
@@ -720,8 +757,8 @@ function renderList() {
     const st = el("span", { class: "st avail", text: stockText(g) });
     if (g.firstSeen) st.append(" ", el("span", { class: "pill new", text: "New" }));
     list.append(el("div", { class: "item", role: "row" },
-      el("div", { class: "deck" }, el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null,
-        alertLink(g, "alertbell"), pinButton(g)), offers),
+      el("div", { class: "deck boxed" }, deckBox(g.offers), el("div", { class: "deck-main" }, el("span", {}, el("strong", { text: g.name }),
+        g.kind ? el("span", { class: "kind", text: g.kind }) : null, alertLink(g, "alertbell"), pinButton(g)), offers)),
       st,
       priceCell(g),
       el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));

@@ -490,7 +490,7 @@ def scan_cardtrader(s):
         limit.wait()
         offers = cardtrader_get("/marketplace/products", blueprint_id=bp["id"]).get(str(bp["id"]), [])
         best = cheapest_zero_offer(offers, rates)
-        return {"pid": bp["id"], "name": bp["name"], "price": best,
+        return {"pid": bp["id"], "name": bp["name"], "price": best, "image": bp.get("image"),
                 "url": f"https://www.cardtrader.com/en/cards/{bp['id']}",
                 "status": "in_stock" if best is not None else "out_of_stock"}
 
@@ -555,7 +555,8 @@ def cardtrader_blueprints() -> list[dict]:
     """
     cache = load(CARDTRADER_CACHE, {})
     today = date.today().isoformat()
-    if cache.get("refreshed") == today and cache.get("blueprints"):
+    # A cache from before images were kept is refreshed straight away.
+    if cache.get("refreshed") == today and cache.get("blueprints") and "image" in cache["blueprints"][0]:
         return cache["blueprints"]
     try:
         exps = [e for e in cardtrader_get("/expansions")
@@ -567,7 +568,7 @@ def cardtrader_blueprints() -> list[dict]:
             limit.wait()
             # The version tells otherwise identically named entries apart (e.g. a Collector's Edition).
             return [{"id": b["id"], "name": " ".join(f"{b['name']} {b.get('version') or ''}".split()),
-                     "version": b.get("version"), "expansion": e.get("code")}
+                     "version": b.get("version"), "expansion": e.get("code"), "image": blueprint_image(b)}
                     for b in cardtrader_get("/blueprints/export", expansion_id=e["id"])
                     if b.get("category_id") == CARDTRADER_PRECON_CATEGORY]
 
@@ -582,6 +583,18 @@ def cardtrader_blueprints() -> list[dict]:
           + (f"; same name twice: {dupes}" if dupes else ""))
     save(CARDTRADER_CACHE, {"refreshed": today, "blueprints": blueprints})
     return blueprints
+
+
+def blueprint_image(b: dict) -> str | None:
+    """The 500 px picture of the deck box, or None where CardTrader only shows its placeholder."""
+    image = b.get("image")
+    url = (image.get("show") or {}).get("url") if isinstance(image, dict) else None
+    if not url and b.get("image_url"):
+        # The full-size upload (960 px); its "show_" copy sits next to it.
+        url = re.sub(r"(/uploads/blueprints/image/\d+/)(?!show_)", r"\1show_", b["image_url"])
+    if not url or "fallback" in url:
+        return None
+    return urljoin("https://www.cardtrader.com/", url)
 
 
 def sold_by_shops(blueprints: list[dict]) -> list[dict]:
@@ -1177,6 +1190,8 @@ def main() -> int:
                         known[k] = p[k]
                 if p["pid"] and not known.get("pid"):
                     known["pid"] = p["pid"]
+                if p.get("image") and known.get("image") != p["image"]:
+                    known["image"] = p["image"]
                 change = describe_change(old_price, old_status, known)
                 if change:  # for the page's "Recently updated" sort
                     known["changedAt"], known["change"] = stamp, change
