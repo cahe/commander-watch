@@ -295,6 +295,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/107979.webp",
   "change": "price 658.29 → 657.05 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -319,6 +320,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/107980.webp",
   "change": "price 526.62 → 525.63 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -342,6 +344,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/107981.webp",
   "change": "price 394.96 → 394.21 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -365,6 +368,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/107982.webp",
   "change": "price 329.12 → 328.50 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -389,6 +393,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/107983.webp",
   "change": "price 353.83 → 353.16 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -413,6 +418,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/146527.webp",
   "change": "price 222.21 → 221.79 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -437,6 +443,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/146528.webp",
   "change": "sold out",
   "changedAt": "2026-10-05T17:17:34Z",
   "cheapest": false,
@@ -460,6 +467,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/151469.webp",
   "change": "price 705.03 → 703.70 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -474,9 +482,9 @@
   "pid": 151469,
   "price": 703.7,
   "recent": [
-   703.7,
    867.4,
-   867.4
+   867.4,
+   703.7
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -484,6 +492,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/151470.webp",
   "change": "price 243.76 → 243.30 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -497,9 +506,9 @@
   "pid": 151470,
   "price": 243.3,
   "recent": [
-   243.3,
    243.69,
-   243.69
+   243.69,
+   243.3
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -507,6 +516,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/154975.webp",
   "change": "price 438.85 → 438.02 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -531,6 +541,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/154976.webp",
   "change": "price 438.85 → 438.02 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -555,6 +566,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/154977.webp",
   "change": "price 526.62 → 525.63 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -579,6 +591,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/154978.webp",
   "change": "price 222.25 → 221.83 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -593,9 +606,9 @@
   "pid": 154978,
   "price": 221.83,
   "recent": [
-   221.83,
    424.87,
-   424.87
+   424.87,
+   221.83
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -603,6 +616,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/154979.webp",
   "change": "price 570.51 → 569.43 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -627,6 +641,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/160506.webp",
   "change": "price 438.85 → 438.02 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -651,6 +666,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/160507.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -674,6 +690,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/160508.webp",
   "change": "price 551.42 → 550.38 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -698,6 +715,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/160509.webp",
   "change": "price 441.26 → 440.43 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -722,6 +740,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/164137.webp",
   "change": "price 707.75 → 706.42 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -746,6 +765,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/164138.webp",
   "change": "sold out",
   "changedAt": "2026-10-05T17:17:34Z",
   "cheapest": false,
@@ -769,6 +789,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/164140.webp",
   "change": "price 463.56 → 462.68 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -793,6 +814,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/164141.webp",
   "change": "price 353.83 → 353.16 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -817,6 +839,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/202622.webp",
   "change": "price 266.10 → 265.60 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -841,6 +864,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/202623.webp",
   "change": "price 222.21 → 221.79 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -865,6 +889,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/208725.webp",
   "change": "price 441.70 → 440.86 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -889,6 +914,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/208726.webp",
   "change": "price 307.18 → 306.60 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -912,6 +938,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/208727.webp",
   "change": "price 661.14 → 659.89 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -936,6 +963,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/208728.webp",
   "change": "price 661.14 → 659.89 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -960,6 +988,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/208729.webp",
   "change": "price 327.59 → 326.97 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -984,6 +1013,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/208730.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -1007,6 +1037,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/208731.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -1030,6 +1061,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/208732.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -1053,6 +1085,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/208733.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -1076,6 +1109,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/211574.webp",
   "change": "price 1051.76 → 1049.77 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1100,6 +1134,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/211576.webp",
   "change": "price 1029.81 → 1027.86 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1124,6 +1159,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/211578.webp",
   "change": "price 1091.26 → 1089.19 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1148,6 +1184,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/211580.webp",
   "change": "price 1424.81 → 1422.12 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1172,6 +1209,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/219610.webp",
   "change": "listed",
   "changedAt": "2026-10-01T10:09:12Z",
   "cheapest": false,
@@ -1195,6 +1233,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/219611.webp",
   "change": "listed",
   "changedAt": "2026-10-01T10:09:12Z",
   "cheapest": false,
@@ -1218,6 +1257,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/224262.webp",
   "change": "price 115.87 → 115.65 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1242,6 +1282,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/224263.webp",
   "change": "price 166.16 → 165.85 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1266,6 +1307,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/224264.webp",
   "change": "price 217.86 → 217.45 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -1289,6 +1331,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/224265.webp",
   "change": "price 235.38 → 234.93 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1313,6 +1356,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/224266.webp",
   "change": "price 153.52 → 153.23 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -1336,6 +1380,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/224491.webp",
   "change": "sold out",
   "changedAt": "2026-10-05T17:17:34Z",
   "cheapest": false,
@@ -1359,6 +1404,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/224492.webp",
   "change": "price 349.53 → 348.87 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1383,6 +1429,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/231930.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -1406,6 +1453,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/231931.webp",
   "change": "price 266.10 → 265.60 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1430,6 +1478,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/238102.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -1453,6 +1502,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/238103.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -1476,6 +1526,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/238104.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -1499,6 +1550,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/238105.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -1522,6 +1574,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/238106.webp",
   "change": "price 193.64 → 193.27 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1546,6 +1599,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/238387.webp",
   "change": "price 1319.48 → 1316.98 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1570,6 +1624,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/238391.webp",
   "change": "price 419.32 → 418.52 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1594,6 +1649,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/238393.webp",
   "change": "price 1100.03 → 1097.95 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -1617,6 +1673,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/238394.webp",
   "change": "price 924.39 → 922.64 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1641,6 +1698,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246478.webp",
   "change": "price 371.78 → 371.08 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1665,6 +1723,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246480.webp",
   "change": "price 252.98 → 252.50 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1679,9 +1738,9 @@
   "pid": 246480,
   "price": 252.5,
   "recent": [
-   252.5,
    254.16,
-   254.16
+   254.16,
+   252.5
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1689,6 +1748,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246482.webp",
   "change": "price 459.21 → 458.34 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1713,6 +1773,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246483.webp",
   "change": "price 309.81 → 309.23 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1727,9 +1788,9 @@
   "pid": 246483,
   "price": 309.23,
   "recent": [
-   309.23,
    330.03,
-   330.03
+   330.03,
+   309.23
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1737,6 +1798,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246950.webp",
   "change": "price 397.59 → 396.84 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -1760,6 +1822,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246951.webp",
   "change": "price 155.67 → 155.38 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1784,6 +1847,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246952.webp",
   "change": "price 485.37 → 484.45 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1808,6 +1872,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246953.webp",
   "change": "price 177.62 → 177.28 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -1831,6 +1896,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246960.webp",
   "change": "price 353.83 → 353.16 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1855,6 +1921,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/246961.webp",
   "change": "price 968.28 → 966.45 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1879,6 +1946,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/261730.webp",
   "change": "price 390.57 → 389.83 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -1902,6 +1970,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/261731.webp",
   "change": "price 867.42 → 865.78 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1926,6 +1995,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/261732.webp",
   "change": "price 658.29 → 657.05 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1950,6 +2020,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/261733.webp",
   "change": "price 748.88 → 747.46 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1974,6 +2045,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/265026.webp",
   "change": "price 322.28 → 321.67 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -1998,6 +2070,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/265027.webp",
   "change": "price 321.67 → 307.17 zł",
   "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": true,
@@ -2012,9 +2085,9 @@
   "pid": 265027,
   "price": 307.17,
   "recent": [
-   321.67,
    307.17,
-   307.17
+   307.17,
+   321.67
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2022,6 +2095,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/265028.webp",
   "change": "price 179.25 → 175.27 zł",
   "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": true,
@@ -2036,9 +2110,9 @@
   "pid": 265028,
   "price": 175.27,
   "recent": [
-   179.25,
    175.27,
-   175.27
+   175.27,
+   179.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2046,6 +2120,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/265029.webp",
   "change": "price 518.79 → 497.77 zł",
   "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": true,
@@ -2060,9 +2135,9 @@
   "pid": 265029,
   "price": 497.77,
   "recent": [
-   518.79,
    497.77,
-   497.77
+   497.77,
+   518.79
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2070,6 +2145,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/270487.webp",
   "change": "price 394.96 → 394.21 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2094,6 +2170,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/270489.webp",
   "change": "price 353.83 → 353.16 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2118,6 +2195,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/270490.webp",
   "change": "price 389.03 → 388.30 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2142,6 +2220,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/270492.webp",
   "change": "price 222.21 → 221.79 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2166,6 +2245,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279375.webp",
   "change": "price 1315.09 → 1312.60 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2190,6 +2270,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279376.webp",
   "change": "price 327.15 → 326.53 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2214,6 +2295,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279377.webp",
   "change": "price 748.88 → 747.46 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2238,6 +2320,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279378.webp",
   "change": "price 568.98 → 567.90 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2262,6 +2345,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279379.webp",
   "change": "price 627.96 → 626.78 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2286,6 +2370,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279380.webp",
   "change": "price 177.62 → 177.28 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2310,6 +2395,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279381.webp",
   "change": "price 283.70 → 283.16 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -2333,6 +2419,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279382.webp",
   "change": "price 217.65 → 217.23 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -2356,6 +2443,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279473.webp",
   "change": "price 548.57 → 547.53 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -2379,6 +2467,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279476.webp",
   "change": "price 738.17 → 736.77 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2403,6 +2492,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279477.webp",
   "change": "price 661.14 → 659.89 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2427,6 +2517,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/279478.webp",
   "change": "price 617.12 → 615.96 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2451,6 +2542,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/280701.webp",
   "change": "price 396.97 → 396.53 zł",
   "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": true,
@@ -2465,9 +2557,9 @@
   "pid": 280701,
   "price": 396.53,
   "recent": [
-   396.97,
    396.53,
-   396.53
+   396.53,
+   396.97
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2475,6 +2567,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/280702.webp",
   "change": "price 192.54 → 192.18 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2499,6 +2592,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/280703.webp",
   "change": "price 393.33 → 392.59 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2523,6 +2617,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/280704.webp",
   "change": "price 437.22 → 436.40 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2547,6 +2642,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/299806.webp",
   "change": "price 1231.70 → 1229.37 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2571,6 +2667,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/299807.webp",
   "change": "price 438.85 → 438.02 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2595,6 +2692,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/299808.webp",
   "change": "price 309.90 → 309.31 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2619,6 +2717,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/299809.webp",
   "change": "price 414.75 → 413.97 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2643,6 +2742,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/314238.webp",
   "change": "price 131.67 → 131.42 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -2666,6 +2766,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/314239.webp",
   "change": "price 177.62 → 177.28 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2690,6 +2791,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322095.webp",
   "change": "price 223.79 → 223.37 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2714,6 +2816,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322098.webp",
   "change": "price 222.82 → 222.40 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2738,6 +2841,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322100.webp",
   "change": "price 243.98 → 243.52 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -2761,6 +2865,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322101.webp",
   "change": "price 153.26 → 152.97 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2785,6 +2890,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322103.webp",
   "change": "price 636.39 → 635.19 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2809,6 +2915,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322104.webp",
   "change": "price 527.90 → 526.90 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2833,6 +2940,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322106.webp",
   "change": "price 615.41 → 614.25 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2857,6 +2965,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322107.webp",
   "change": "price 369.85 → 369.15 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2881,6 +2990,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322529.webp",
   "change": "price 432.79 → 431.97 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2905,6 +3015,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322530.webp",
   "change": "price 244.15 → 243.69 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2929,6 +3040,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322531.webp",
   "change": "price 288.09 → 287.54 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2953,6 +3065,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322532.webp",
   "change": "price 195.92 → 195.55 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -2977,6 +3090,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322533.webp",
   "change": "price 437.31 → 436.48 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3001,6 +3115,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322693.webp",
   "change": "price 168.80 → 168.48 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -3014,9 +3129,9 @@
   "pid": 322693,
   "price": 168.48,
   "recent": [
-   168.48,
    180.0,
-   180.0
+   180.0,
+   168.48
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3024,6 +3139,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/322694.webp",
   "change": "price 244.15 → 243.69 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3048,6 +3164,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/352407.webp",
   "change": "price 200.27 → 199.89 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -3071,6 +3188,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/352408.webp",
   "change": "price 184.07 → 183.72 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3095,6 +3213,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/354096.webp",
   "change": "price 168.62 → 168.30 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3109,9 +3228,9 @@
   "pid": 354096,
   "price": 168.3,
   "recent": [
-   168.3,
    168.52,
-   168.52
+   168.52,
+   168.3
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3119,6 +3238,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370595.webp",
   "change": "price 234.54 → 234.10 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3133,9 +3253,9 @@
   "pid": 370595,
   "price": 234.1,
   "recent": [
-   234.1,
    238.92,
-   238.92
+   238.92,
+   234.1
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3143,6 +3263,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370596.webp",
   "change": "price 164.23 → 163.92 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3167,6 +3288,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370597.webp",
   "change": "price 220.19 → 219.77 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3191,6 +3313,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370598.webp",
   "change": "price 164.45 → 164.14 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3215,6 +3338,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370599.webp",
   "change": "price 153.74 → 153.45 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3239,6 +3363,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370630.webp",
   "change": "price 155.89 → 155.60 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3263,6 +3388,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370631.webp",
   "change": "price 177.84 → 177.50 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3277,9 +3403,9 @@
   "pid": 370631,
   "price": 177.5,
   "recent": [
-   177.5,
    188.98,
-   188.98
+   188.98,
+   177.5
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3287,6 +3413,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370632.webp",
   "change": "price 138.34 → 138.08 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3301,9 +3428,9 @@
   "pid": 370632,
   "price": 138.08,
   "recent": [
-   138.08,
    142.41,
-   142.41
+   142.41,
+   138.08
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3311,6 +3438,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370633.webp",
   "change": "price 240.20 → 239.75 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3335,6 +3463,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370634.webp",
   "change": "price 305.64 → 305.06 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3359,6 +3488,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370635.webp",
   "change": "price 349.53 → 348.87 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3383,6 +3513,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370636.webp",
   "change": "price 419.67 → 418.87 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3407,6 +3538,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/370637.webp",
   "change": "price 336.32 → 335.69 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3431,6 +3563,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/389398.webp",
   "change": "price 199.34 → 198.97 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3455,6 +3588,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/389399.webp",
   "change": "price 119.33 → 119.11 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3479,6 +3613,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/389400.webp",
   "change": "price 173.01 → 172.68 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3503,6 +3638,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/389401.webp",
   "change": "price 199.52 → 199.14 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3527,6 +3663,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/389402.webp",
   "change": "price 195.79 → 195.42 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3551,6 +3688,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/389403.webp",
   "change": "price 217.82 → 217.41 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -3574,6 +3712,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/400888.webp",
   "change": "price 315.05 → 315.01 zł",
   "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": false,
@@ -3587,9 +3726,9 @@
   "pid": 400888,
   "price": 315.01,
   "recent": [
-   315.05,
    315.01,
-   315.01
+   315.01,
+   315.05
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3597,6 +3736,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/400889.webp",
   "change": "price 315.05 → 315.01 zł",
   "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": false,
@@ -3610,9 +3750,9 @@
   "pid": 400889,
   "price": 315.01,
   "recent": [
-   315.05,
    315.01,
-   315.01
+   315.01,
+   315.05
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3620,6 +3760,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/400890.webp",
   "change": "price 315.05 → 315.01 zł",
   "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": false,
@@ -3633,9 +3774,9 @@
   "pid": 400890,
   "price": 315.01,
   "recent": [
-   315.05,
    315.01,
-   315.01
+   315.01,
+   315.05
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3643,6 +3784,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/400891.webp",
   "change": "price 315.91 → 315.32 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -3666,6 +3808,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/400892.webp",
   "change": "price 704.77 → 703.44 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -3689,6 +3832,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/400893.webp",
   "change": "price 702.18 → 700.85 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -3712,6 +3856,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/400894.webp",
   "change": "price 702.18 → 700.85 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": false,
@@ -3735,6 +3880,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/400895.webp",
   "change": "price 709.61 → 703.48 zł",
   "changedAt": "2026-10-13T22:18:08Z",
   "cheapest": false,
@@ -3748,9 +3894,9 @@
   "pid": 400895,
   "price": 703.48,
   "recent": [
-   709.61,
    703.48,
-   703.48
+   703.48,
+   709.61
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3758,6 +3904,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/48538.webp",
   "change": "price 432.88 → 432.06 zł",
   "changedAt": "2026-10-13T10:18:00Z",
   "cheapest": true,
@@ -3782,6 +3929,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/48539.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -3805,6 +3953,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/48540.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -3828,6 +3977,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/48684.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -3851,6 +4001,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/48685.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -3874,6 +4025,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/48686.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
@@ -3897,6 +4049,7 @@
  },
  {
   "baseline": true,
+  "box": "data/boxes/48687.webp",
   "change": "listed",
   "changedAt": "2026-10-02T15:17:14Z",
   "cheapest": false,
