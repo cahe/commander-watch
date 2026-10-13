@@ -1069,6 +1069,54 @@
    "version": "Collector's Edition"
   },
   {
+   "expansion": "msc",
+   "id": 417375,
+   "name": "Commander: Marvel Darkhold Destiny | \"Strange Academy\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "msc",
+   "id": 417376,
+   "name": "Commander: Marvel Darkhold Destiny | \"Gods of Asgard\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "msc",
+   "id": 417377,
+   "name": "Commander: Marvel Darkhold Destiny | \"Midnight Sons\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "msc",
+   "id": 417378,
+   "name": "Commander: Marvel Darkhold Destiny | \"Lords of Hel\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "msc",
+   "id": 417379,
+   "name": "Commander: Marvel Darkhold Destiny | \"Strange Academy\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "msc",
+   "id": 417380,
+   "name": "Commander: Marvel Darkhold Destiny | \"Gods of Asgard\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "msc",
+   "id": 417381,
+   "name": "Commander: Marvel Darkhold Destiny | \"Midnight Sons\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "msc",
+   "id": 417382,
+   "name": "Commander: Marvel Darkhold Destiny | \"Lords of Hel\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
    "expansion": "soc",
    "id": 370595,
    "name": "Commander: Secrets of Strixhaven | \"Silverquill Influence\" Commander Deck",
@@ -1183,5 +1231,5 @@
    "version": ""
   }
  ],
- "refreshed": "2026-10-12"
+ "refreshed": "2026-10-13"
 }
