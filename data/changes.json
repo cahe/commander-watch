@@ -3189,5 +3189,65 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/208725"
+ },
+ {
+  "at": "2026-10-13T02:17:49Z",
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardtrader-265026",
+  "id": "cardtrader-265026",
+  "inStock": 0,
+  "kind": "price",
+  "old": 372.44,
+  "price": 322.28,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-10-13T02:17:49Z",
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardtrader-265027",
+  "id": "cardtrader-265027",
+  "inStock": 0,
+  "kind": "price",
+  "old": 387.75,
+  "price": 322.28,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265027"
+ },
+ {
+  "at": "2026-10-13T02:17:49Z",
+  "best": {
+   "price": 224.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardtrader-265028",
+  "id": "cardtrader-265028",
+  "inStock": 1,
+  "kind": "price",
+  "old": 197.48,
+  "price": 179.59,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-13T02:17:49Z",
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardtrader-265029",
+  "id": "cardtrader-265029",
+  "inStock": 0,
+  "kind": "price",
+  "old": 571.66,
+  "price": 519.78,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
  }
 ]
