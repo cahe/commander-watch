@@ -568,3 +568,18 @@ if __name__ == "__main__":
         if name.startswith("test_"):
             fn()
             print("ok", name)
+
+
+
+def test_cutout():
+    """The white around the box goes, white on the box stays, and the picture is trimmed to the box."""
+    import io
+    from PIL import Image
+    im = Image.new("RGB", (200, 100), "white")
+    im.paste((30, 60, 90), (50, 10, 110, 90))      # a 60 x 80 box...
+    im.paste((255, 255, 255), (70, 30, 90, 70))    # ...with a white label on it
+    buf = io.BytesIO(); im.save(buf, "PNG")
+    out = check.cutout(buf.getvalue())
+    assert abs(out.width - 60) <= 2 and abs(out.height - 80) <= 2
+    assert out.getpixel((out.width // 2, out.height // 2))[3] == 255   # the label is still there
+    assert out.getpixel((0, 0))[3] < 255                                # the corner is softened
