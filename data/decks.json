@@ -1985,9 +1985,9 @@
   "pid": 265029,
   "price": 573.15,
   "recent": [
-   595.27,
    573.15,
-   573.15
+   573.15,
+   595.27
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2488,9 +2488,9 @@
   "pid": 299807,
   "price": 437.31,
   "recent": [
-   437.31,
    438.85,
-   438.85
+   438.85,
+   437.31
   ],
   "shop": "cardtrader",
   "status": "in_stock",
