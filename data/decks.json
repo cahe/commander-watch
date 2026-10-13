@@ -468,7 +468,7 @@
   "recent": [
    705.03,
    705.03,
-   705.03
+   869.05
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -490,7 +490,7 @@
   "recent": [
    243.76,
    243.76,
-   243.76
+   244.15
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3360,7 +3360,7 @@
   "recent": [
    173.01,
    173.01,
-   173.01
+   173.41
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3406,7 +3406,7 @@
   "recent": [
    195.79,
    195.79,
-   195.79
+   195.88
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3590,8 +3590,8 @@
  },
  {
   "baseline": true,
-  "change": "price 709.11 → 710.96 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 710.96 → 704.81 zł",
+  "changedAt": "2026-10-13T09:18:38Z",
   "cheapest": false,
   "deck": "star-trek-we-are-the-borg-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -3600,11 +3600,11 @@
   "id": "cardtrader-400895",
   "name": "Star Trek | \"We Are the Borg\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400895,
-  "price": 710.96,
+  "price": 704.81,
   "recent": [
    710.96,
    710.96,
-   710.96
+   704.81
   ],
   "shop": "cardtrader",
   "status": "in_stock",
