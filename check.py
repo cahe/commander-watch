@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import difflib
 import html as htmllib
+import io
 import json
 import math
 import os
@@ -26,6 +27,7 @@ from urllib.parse import urljoin, urlsplit, unquote
 
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 import telegram_bot
 
@@ -483,6 +485,7 @@ def scan_cardtrader(s):
         blueprints = sold_by_shops(cardtrader_blueprints())
     except Exception as e:
         return [], [str(e)]
+    boxes = box_pictures(s, blueprints)
     out, errors = [], []
     limit = RateLimit(8)  # the marketplace endpoint allows 10 requests per second
 
@@ -490,7 +493,8 @@ def scan_cardtrader(s):
         limit.wait()
         offers = cardtrader_get("/marketplace/products", blueprint_id=bp["id"]).get(str(bp["id"]), [])
         best = cheapest_zero_offer(offers, rates)
-        return {"pid": bp["id"], "name": bp["name"], "price": best, "image": bp.get("image"),
+        return {"pid": bp["id"], "name": bp["name"], "price": best,
+                "box": boxes.get(bp["id"]),
                 "url": f"https://www.cardtrader.com/en/cards/{bp['id']}",
                 "status": "in_stock" if best is not None else "out_of_stock"}
 
@@ -581,7 +585,7 @@ def cardtrader_blueprints() -> list[dict]:
     dupes = [n for n, c in Counter(b["name"] for b in blueprints).items() if c > 1]
     print(f"    CardTrader: {len(blueprints)} precons in {len(exps)} expansions"
           + (f"; same name twice: {dupes}" if dupes else ""))
-    save(CARDTRADER_CACHE, {"refreshed": today, "blueprints": blueprints})
+    save(CARDTRADER_CACHE, {**cache, "refreshed": today, "blueprints": blueprints})
     return blueprints
 
 
@@ -595,6 +599,52 @@ def blueprint_image(b: dict) -> str | None:
     if not url or "fallback" in url:
         return None
     return urljoin("https://www.cardtrader.com/", url)
+
+
+BOXES_DIR = ROOT / "data" / "boxes"
+
+
+def box_pictures(s, blueprints: list[dict]) -> dict[int, str]:
+    """The page's picture of each deck box: CardTrader's, cut out of its white background so it sits on the
+    page's own (data/boxes/<blueprint id>.webp, made once). A picture that fails now is tried again next time."""
+    BOXES_DIR.mkdir(exist_ok=True)
+    todo = [bp for bp in blueprints if bp.get("image") and not (BOXES_DIR / f"{bp['id']}.webp").exists()]
+
+    def one(bp):
+        try:
+            r = s.get(bp["image"], timeout=30)
+            r.raise_for_status()
+            cutout(r.content).save(BOXES_DIR / f"{bp['id']}.webp", "WEBP", quality=82, method=6)
+        except Exception as e:
+            print(f"    CardTrader picture for {bp['name']}: {e}")
+
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        list(pool.map(one, todo))
+    return {bp["id"]: f"data/boxes/{bp['id']}.webp" for bp in blueprints if (BOXES_DIR / f"{bp['id']}.webp").exists()}
+
+
+CUT = (255, 0, 255)  # marks the background while it's cut out; never in a picture's white
+
+
+def cutout(data: bytes) -> Image.Image:
+    """The deck box without the white around it, trimmed and at most 280 px tall (twice the page's largest box).
+
+    The white is filled in from the edges, so white on the box itself stays."""
+    im = Image.open(io.BytesIO(data)).convert("RGB")
+    w, h = im.size
+    edge = [(x, y) for x in range(0, w, 4) for y in (0, h - 1)] + [(x, y) for y in range(0, h, 4) for x in (0, w - 1)]
+    for xy in edge:
+        p = im.getpixel(xy)
+        if p != CUT and min(p) > 225:
+            ImageDraw.floodfill(im, xy, CUT, thresh=40)
+    alpha = ImageChops.difference(im, Image.new("RGB", im.size, CUT)).convert("L").point(lambda v: 255 if v else 0)
+    # Eat the light fringe JPEG leaves around the box, then soften the edge.
+    alpha = alpha.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(0.6))
+    out = im.convert("RGBA")
+    out.putalpha(alpha)
+    out = out.crop(alpha.point(lambda v: 255 if v > 8 else 0).getbbox() or (0, 0, w, h))
+    out.thumbnail((400, 280))
+    return out
 
 
 def sold_by_shops(blueprints: list[dict]) -> list[dict]:
@@ -1190,8 +1240,8 @@ def main() -> int:
                         known[k] = p[k]
                 if p["pid"] and not known.get("pid"):
                     known["pid"] = p["pid"]
-                if p.get("image") and known.get("image") != p["image"]:
-                    known["image"] = p["image"]
+                if p.get("box") and known.get("box") != p["box"]:
+                    known["box"] = p["box"]
                 change = describe_change(old_price, old_status, known)
                 if change:  # for the page's "Recently updated" sort
                     known["changedAt"], known["change"] = stamp, change

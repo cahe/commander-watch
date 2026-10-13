@@ -123,14 +123,18 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 .deck.boxed { grid-template-columns: auto minmax(0, 1fr); column-gap: 12px; align-items: start; }
 .deck-main { min-width: 0; display: grid; gap: 2px; }
 /* The deck box: CardTrader's picture of it, or a plain tile where CardTrader has none. */
-.box { --size: 56px; width: var(--size); height: var(--size); flex: none; border-radius: 6px; border: 1px solid var(--line); background: #fff; object-fit: contain; }
-.box.none { display: grid; place-items: center; background: var(--off-soft); color: var(--off); }
-.box.none svg { width: 50%; height: 50%; }
-.pincard .box { --size: 72px; }
+/* A slot as tall as an upright deck box. The picture is the box alone (check.py cuts it out of CardTrader's white),
+   scaled to fit, so angled and open boxes come out wider and shorter. */
+.box { --size: 72px; width: var(--size); height: calc(var(--size) * 1.4); flex: none; display: grid; place-items: start center; }
+.box img { max-width: 100%; max-height: 100%; filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .35)); }
+.tile { display: grid; place-items: center; width: calc(var(--size) * 1.4 * .68); aspect-ratio: .68; border-radius: 4px; background: var(--off-soft); color: var(--off); }
+.tile svg { width: 50%; height: 50%; }
+.pincard .box { --size: 88px; }
 /* Phones: the box beside the name, the shops under both. */
 @media (max-width: 640px) {
-  .box { --size: 48px; }
+  .box { --size: 56px; }
   .deck.boxed { align-items: center; row-gap: 6px; }
+  .deck.boxed .box, .newrow .box { place-items: center; }
   .deck.boxed .deck-main { display: contents; }
   .deck.boxed .offers { grid-column: 1 / -1; margin-top: 0; }
   .newrow { align-items: center; row-gap: 6px; }
@@ -651,17 +655,16 @@ function stockText(g) {
 
 const BOX = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18H6z"/><path d="M6 7h12M9 3v4"/></svg>';
 function boxTile() {
-  const t = el("span", { class: "box none", "aria-hidden": "true" });
+  const t = el("span", { class: "tile" });
   t.innerHTML = BOX;
-  return t;
+  return el("span", { class: "box", "aria-hidden": "true" }, t);
 }
 function deckBox(offers) {
-  const src = offers.find(o => o.image)?.image;
+  const src = offers.map(o => o.box).find(b => /^data\/boxes\/\d+\.webp$/.test(b || ""));
   if (!src) return boxTile();
-  // check.py keeps CardTrader's 500 px picture; its 180 px "preview_" copy is plenty for a thumbnail.
-  const img = el("img", { class: "box", src: safeUrl(src.replace("/show_", "/preview_")), alt: "", loading: "lazy", decoding: "async" });
-  img.addEventListener("error", () => img.replaceWith(boxTile()), { once: true });
-  return img;
+  const slot = el("span", { class: "box" }, el("img", { src, alt: "", loading: "lazy", decoding: "async" }));
+  slot.firstChild.addEventListener("error", () => slot.replaceWith(boxTile()), { once: true });
+  return slot;
 }
 
 // Pinned decks: up to 3 decks a visitor keeps at the top of the page, in the order they were pinned; pinning
