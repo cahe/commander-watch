@@ -466,9 +466,9 @@
   "pid": 151469,
   "price": 703.7,
   "recent": [
-   867.4,
    703.7,
-   703.7
+   703.7,
+   867.4
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -488,9 +488,9 @@
   "pid": 151470,
   "price": 243.3,
   "recent": [
-   243.69,
    243.3,
-   243.3
+   243.3,
+   243.69
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3358,9 +3358,9 @@
   "pid": 389400,
   "price": 172.68,
   "recent": [
-   173.08,
    172.68,
-   172.68
+   172.68,
+   173.08
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3404,9 +3404,9 @@
   "pid": 389402,
   "price": 195.42,
   "recent": [
-   195.51,
    195.42,
-   195.42
+   195.42,
+   195.51
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3602,9 +3602,9 @@
   "pid": 400895,
   "price": 703.48,
   "recent": [
-   703.48,
    709.61,
-   709.61
+   709.61,
+   703.48
   ],
   "shop": "cardtrader",
   "status": "in_stock",
