@@ -909,8 +909,8 @@
  },
  {
   "baseline": true,
-  "change": "price 648.70 → 650.39 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 650.39 → 661.14 zł",
+  "changedAt": "2026-10-13T07:17:55Z",
   "cheapest": true,
   "deck": "streets-of-new-capenna-cabaretti-cacophony",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -920,9 +920,9 @@
   "lowLogged": 445.5,
   "name": "Commander: Streets of New Capenna | \"Cabaretti Cacophony\" Deck",
   "pid": 208728,
-  "price": 650.39,
+  "price": 661.14,
   "recent": [
-   650.39,
+   661.14,
    661.14,
    661.14
   ],
@@ -1584,8 +1584,8 @@
  },
  {
   "baseline": true,
-  "change": "price 366.13 → 367.09 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 367.09 → 371.78 zł",
+  "changedAt": "2026-10-13T07:17:55Z",
   "cheapest": true,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-food-and-fel",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -1595,9 +1595,9 @@
   "lowLogged": 372.27,
   "name": "Commander: The Lord of the Rings | \"Food And Fellowship\" Commander Deck",
   "pid": 246478,
-  "price": 367.09,
+  "price": 371.78,
   "recent": [
-   367.09,
+   371.78,
    371.78,
    371.78
   ],
@@ -1916,7 +1916,7 @@
   "pid": 265026,
   "price": 322.28,
   "recent": [
-   369.28,
+   322.28,
    322.28,
    322.28
   ],
@@ -1939,7 +1939,7 @@
   "pid": 265027,
   "price": 322.28,
   "recent": [
-   386.84,
+   322.28,
    322.28,
    322.28
   ],
@@ -1962,7 +1962,7 @@
   "pid": 265028,
   "price": 179.59,
   "recent": [
-   197.9,
+   179.59,
    179.59,
    179.59
   ],
@@ -1985,7 +1985,7 @@
   "pid": 265029,
   "price": 519.78,
   "recent": [
-   573.15,
+   519.78,
    519.78,
    519.78
   ],
@@ -2100,7 +2100,7 @@
   "pid": 279375,
   "price": 1315.09,
   "recent": [
-   1319.48,
+   1315.09,
    1315.09,
    1315.09
   ],
@@ -2169,7 +2169,7 @@
   "pid": 279378,
   "price": 568.98,
   "recent": [
-   616.99,
+   568.98,
    568.98,
    568.98
   ],
@@ -2534,7 +2534,7 @@
   "pid": 299809,
   "price": 414.75,
   "recent": [
-   414.79,
+   414.75,
    414.75,
    414.75
   ],
@@ -3023,8 +3023,8 @@
  },
  {
   "baseline": true,
-  "change": "price 159.73 → 160.15 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 160.15 → 164.23 zł",
+  "changedAt": "2026-10-13T07:17:55Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-prismari-artistry",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3034,9 +3034,9 @@
   "lowLogged": 159.73,
   "name": "Commander: Secrets of Strixhaven | \"Prismari Artistry\" Commander Deck",
   "pid": 370596,
-  "price": 160.15,
+  "price": 164.23,
   "recent": [
-   160.15,
+   164.23,
    164.23,
    164.23
   ],
@@ -3358,7 +3358,7 @@
   "pid": 389400,
   "price": 173.01,
   "recent": [
-   173.19,
+   173.01,
    173.01,
    173.01
   ],
@@ -3368,8 +3368,8 @@
  },
  {
   "baseline": true,
-  "change": "price 198.96 → 199.48 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 199.48 → 199.52 zł",
+  "changedAt": "2026-10-13T07:17:55Z",
   "cheapest": true,
   "deck": "foundations-starter-reign-of-dragons",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3379,9 +3379,9 @@
   "lowLogged": 190.73,
   "name": "Foundations: \"Reign of Dragons\" Commander Deck",
   "pid": 389401,
-  "price": 199.48,
+  "price": 199.52,
   "recent": [
-   199.48,
+   199.52,
    199.52,
    199.52
   ],
@@ -3391,8 +3391,8 @@
  },
  {
   "baseline": true,
-  "change": "price 194.84 → 195.35 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 195.35 → 195.79 zł",
+  "changedAt": "2026-10-13T07:17:55Z",
   "cheapest": true,
   "deck": "foundations-starter-tramplesaurus-rex",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3402,9 +3402,9 @@
   "lowLogged": 190.68,
   "name": "Foundations: \"Tramplesaurus Rex\" Commander Deck",
   "pid": 389402,
-  "price": 195.35,
+  "price": 195.79,
   "recent": [
-   195.35,
+   195.79,
    195.79,
    195.79
   ],
@@ -3426,7 +3426,7 @@
   "pid": 389403,
   "price": 217.82,
   "recent": [
-   221.73,
+   217.82,
    217.82,
    217.82
   ],
@@ -3448,7 +3448,7 @@
   "pid": 400888,
   "price": 315.65,
   "recent": [
-   315.74,
+   315.65,
    315.65,
    315.65
   ],
@@ -3470,7 +3470,7 @@
   "pid": 400889,
   "price": 315.65,
   "recent": [
-   315.74,
+   315.65,
    315.65,
    315.65
   ],
@@ -3492,7 +3492,7 @@
   "pid": 400890,
   "price": 315.65,
   "recent": [
-   315.74,
+   315.65,
    315.65,
    315.65
   ],
@@ -3502,8 +3502,8 @@
  },
  {
   "baseline": true,
-  "change": "price 314.92 → 315.74 zł",
-  "changedAt": "2026-10-12T12:18:17Z",
+  "change": "price 315.74 → 315.91 zł",
+  "changedAt": "2026-10-13T07:17:55Z",
   "cheapest": false,
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3512,9 +3512,9 @@
   "id": "cardtrader-400891",
   "name": "Star Trek | \"We Are the Borg\" Commander Deck",
   "pid": 400891,
-  "price": 315.74,
+  "price": 315.91,
   "recent": [
-   315.74,
+   315.91,
    315.91,
    315.91
   ],
