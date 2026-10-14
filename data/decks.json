@@ -468,8 +468,8 @@
  {
   "baseline": true,
   "box": "data/boxes/151469.webp",
-  "change": "price 703.70 → 867.40 zł",
-  "changedAt": "2026-10-14T04:17:35Z",
+  "change": "price 867.40 → 703.70 zł",
+  "changedAt": "2026-10-14T07:17:34Z",
   "cheapest": true,
   "deck": "kaldheim-elven-empire",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -480,11 +480,11 @@
   "lowLogged": 702.72,
   "name": "Commander: Kaldheim: \"Elven Empire\" Deck",
   "pid": 151469,
-  "price": 867.4,
+  "price": 703.7,
   "recent": [
    867.4,
    867.4,
-   867.4
+   703.7
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -493,8 +493,8 @@
  {
   "baseline": true,
   "box": "data/boxes/151470.webp",
-  "change": "price 243.30 → 243.69 zł",
-  "changedAt": "2026-10-14T04:17:35Z",
+  "change": "price 243.69 → 243.30 zł",
+  "changedAt": "2026-10-14T07:17:34Z",
   "cheapest": false,
   "deck": "kaldheim-phantom-premonition",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -504,11 +504,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/151470/show_commander-kaldheim-phantom-premonition-deck-commander-kaldheim.jpg",
   "name": "Commander: Kaldheim: Phantom Premonition\" Deck",
   "pid": 151470,
-  "price": 243.69,
+  "price": 243.3,
   "recent": [
    243.69,
    243.69,
-   243.69
+   243.3
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2483,7 +2483,7 @@
   "recent": [
    736.77,
    736.77,
-   736.77
+   737.96
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2633,7 +2633,7 @@
   "recent": [
    436.4,
    436.4,
-   436.4
+   436.44
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2667,8 +2667,8 @@
  {
   "baseline": true,
   "box": "data/boxes/299807.webp",
-  "change": "price 438.85 → 438.02 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 438.02 → 436.48 zł",
+  "changedAt": "2026-10-14T07:17:34Z",
   "cheapest": true,
   "deck": "duskmourn-house-of-horror-miracle-worker",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2679,11 +2679,11 @@
   "lowLogged": 435.88,
   "name": "Commander: Duskmourn: House of Horror | \"Miracle Worker\" Commander Deck",
   "pid": 299807,
-  "price": 438.02,
+  "price": 436.48,
   "recent": [
    438.02,
    438.02,
-   438.02
+   436.48
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2733,7 +2733,7 @@
   "recent": [
    413.97,
    413.97,
-   413.97
+   414.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3712,8 +3712,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 315.05 → 315.01 zł",
-  "changedAt": "2026-10-13T22:18:08Z",
+  "change": "price 315.01 → 314.97 zł",
+  "changedAt": "2026-10-14T07:17:34Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3723,11 +3723,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 315.01,
+  "price": 314.97,
   "recent": [
    315.01,
    315.01,
-   315.01
+   314.97
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3736,8 +3736,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 315.05 → 315.01 zł",
-  "changedAt": "2026-10-13T22:18:08Z",
+  "change": "price 315.01 → 314.97 zł",
+  "changedAt": "2026-10-14T07:17:34Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3747,11 +3747,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 315.01,
+  "price": 314.97,
   "recent": [
    315.01,
    315.01,
-   315.01
+   314.97
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3760,8 +3760,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 315.05 → 315.01 zł",
-  "changedAt": "2026-10-13T22:18:08Z",
+  "change": "price 315.01 → 314.97 zł",
+  "changedAt": "2026-10-14T07:17:34Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3771,11 +3771,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 315.01,
+  "price": 314.97,
   "recent": [
    315.01,
    315.01,
-   315.01
+   314.97
   ],
   "shop": "cardtrader",
   "status": "in_stock",
