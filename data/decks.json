@@ -482,8 +482,8 @@
   "pid": 151469,
   "price": 702.09,
   "recent": [
-   702.09,
    865.42,
+   702.09,
    702.09
   ],
   "shop": "cardtrader",
@@ -506,8 +506,8 @@
   "pid": 151470,
   "price": 242.74,
   "recent": [
-   242.74,
    243.14,
+   242.74,
    242.74
   ],
   "shop": "cardtrader",
@@ -592,8 +592,8 @@
  {
   "baseline": true,
   "box": "data/boxes/154978.webp",
-  "change": "price 424.87 → 423.90 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 423.90 → 221.33 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": true,
   "deck": "strixhaven-school-of-mages-prismari-performance",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -604,11 +604,11 @@
   "lowLogged": 221.52,
   "name": "Commander: Strixhaven: \"Prismari Performance\" Deck",
   "pid": 154978,
-  "price": 423.9,
+  "price": 221.33,
   "recent": [
    423.9,
    423.9,
-   423.9
+   221.33
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1150,7 +1150,7 @@
   "price": 1025.52,
   "recent": [
    1025.52,
-   1025.52,
+   1029.84,
    1029.84
   ],
   "shop": "cardtrader",
@@ -1715,7 +1715,7 @@
   "recent": [
    370.23,
    370.23,
-   370.23
+   395.45
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1987,7 +1987,7 @@
   "recent": [
    863.81,
    863.81,
-   863.81
+   868.13
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2046,8 +2046,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265026.webp",
-  "change": "price 321.67 → 320.93 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 320.93 → 257.52 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": true,
   "deck": "fallout-scrappy-survivors",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2055,14 +2055,14 @@
   "groupName": "Fallout Scrappy Survivors",
   "id": "cardtrader-265026",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265026/show_fallout-scrappy-survivors-commander-deck-fallout.jpg",
-  "lowLogged": 322.28,
+  "lowLogged": 257.52,
   "name": "Fallout | \"Scrappy Survivors\" Commander Deck",
   "pid": 265026,
-  "price": 320.93,
+  "price": 257.52,
   "recent": [
    320.93,
    320.93,
-   320.93
+   257.52
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2071,8 +2071,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265027.webp",
-  "change": "price 307.17 → 306.47 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 306.47 → 256.29 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": true,
   "deck": "fallout-hail-caesar",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2080,14 +2080,14 @@
   "groupName": "Fallout Hail Caesar",
   "id": "cardtrader-265027",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265027/show_fallout-hail-caesar-commander-deck-fallout.jpg",
-  "lowLogged": 307.17,
+  "lowLogged": 256.29,
   "name": "Fallout | \"Hail Caesar\" Commander Deck",
   "pid": 265027,
-  "price": 306.47,
+  "price": 256.29,
   "recent": [
    306.47,
    306.47,
-   306.47
+   256.29
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2096,8 +2096,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265028.webp",
-  "change": "price 175.27 → 174.87 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 174.87 → 138.99 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": true,
   "deck": "fallout-science",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2105,14 +2105,14 @@
   "groupName": "Fallout Science",
   "id": "cardtrader-265028",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265028/show_fallout-science-commander-deck-fallout.jpg",
-  "lowLogged": 175.27,
+  "lowLogged": 138.99,
   "name": "Fallout | \"Science!\" Commander Deck",
   "pid": 265028,
-  "price": 174.87,
+  "price": 138.99,
   "recent": [
    174.87,
    174.87,
-   174.87
+   138.99
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2121,8 +2121,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265029.webp",
-  "change": "price 497.77 → 496.63 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 496.63 → 431.12 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": true,
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2130,14 +2130,14 @@
   "groupName": "Fallout Mutant Menace",
   "id": "cardtrader-265029",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265029/show_fallout-mutant-menace-commander-deck-fallout.jpg",
-  "lowLogged": 497.77,
+  "lowLogged": 431.12,
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
-  "price": 496.63,
+  "price": 431.12,
   "recent": [
    496.63,
    496.63,
-   496.63
+   431.12
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2482,8 +2482,8 @@
   "pid": 279476,
   "price": 735.09,
   "recent": [
-   736.27,
    735.09,
+   736.27,
    736.27
   ],
   "shop": "cardtrader",
@@ -2632,8 +2632,8 @@
   "pid": 280704,
   "price": 435.4,
   "recent": [
-   435.44,
    435.4,
+   435.44,
    435.44
   ],
   "shop": "cardtrader",
@@ -2668,8 +2668,8 @@
  {
   "baseline": true,
   "box": "data/boxes/299807.webp",
-  "change": "price 437.02 → 435.49 zł",
-  "changedAt": "2026-10-14T16:17:39Z",
+  "change": "price 435.49 → 417.92 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": true,
   "deck": "duskmourn-house-of-horror-miracle-worker",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2677,14 +2677,14 @@
   "groupName": "Duskmourn House of Horror Miracle Worker",
   "id": "cardtrader-299807",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/299807/show_commander-duskmourn-house-of-horror-miracle-worker-commander-deck-commander-duskmourn-house-of-horror.jpg",
-  "lowLogged": 435.88,
+  "lowLogged": 417.92,
   "name": "Commander: Duskmourn: House of Horror | \"Miracle Worker\" Commander Deck",
   "pid": 299807,
-  "price": 435.49,
+  "price": 417.92,
   "recent": [
-   435.49,
    437.02,
-   435.49
+   435.49,
+   417.92
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2718,8 +2718,8 @@
  {
   "baseline": true,
   "box": "data/boxes/299809.webp",
-  "change": "price 413.63 → 413.02 zł",
-  "changedAt": "2026-10-14T14:00:20Z",
+  "change": "price 413.02 → 396.06 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": true,
   "deck": "duskmourn-house-of-horror-jump-scare",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2727,14 +2727,14 @@
   "groupName": "Duskmourn House of Horror Jump Scare!",
   "id": "cardtrader-299809",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/299809/show_commander-duskmourn-house-of-horror-jump-scare-commander-deck-commander-duskmourn-house-of-horror.jpg",
-  "lowLogged": 410.02,
+  "lowLogged": 396.06,
   "name": "Commander: Duskmourn: House of Horror | \"Jump Scare!\" Commander Deck",
   "pid": 299809,
-  "price": 413.02,
+  "price": 396.06,
   "recent": [
-   413.63,
    413.02,
-   413.63
+   413.63,
+   396.06
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2808,7 +2808,7 @@
   "recent": [
    222.86,
    222.86,
-   222.86
+   224.04
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2833,7 +2833,7 @@
   "recent": [
    221.9,
    221.9,
-   221.9
+   222.2
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3280,7 +3280,7 @@
   "recent": [
    163.55,
    163.55,
-   163.55
+   163.68
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3689,8 +3689,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389403.webp",
-  "change": "price 217.41 → 216.91 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 216.91 → 214.12 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": false,
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3700,11 +3700,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/389403/show_reality-fracture-commander-deck-commander-reality-fracture.jpg",
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
-  "price": 216.91,
+  "price": 214.12,
   "recent": [
    216.91,
    216.91,
-   216.91
+   214.12
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3713,8 +3713,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 314.29 → 314.25 zł",
-  "changedAt": "2026-10-14T16:17:39Z",
+  "change": "price 314.25 → 314.16 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3724,11 +3724,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 314.25,
+  "price": 314.16,
   "recent": [
-   314.25,
    314.29,
-   314.25
+   314.25,
+   314.16
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3737,8 +3737,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 314.29 → 314.25 zł",
-  "changedAt": "2026-10-14T16:17:39Z",
+  "change": "price 314.25 → 314.16 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3748,11 +3748,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 314.25,
+  "price": 314.16,
   "recent": [
-   314.25,
    314.29,
-   314.25
+   314.25,
+   314.16
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3761,8 +3761,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 314.29 → 314.25 zł",
-  "changedAt": "2026-10-14T16:17:39Z",
+  "change": "price 314.25 → 314.16 zł",
+  "changedAt": "2026-10-14T23:17:42Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3772,11 +3772,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 314.25,
+  "price": 314.16,
   "recent": [
-   314.25,
    314.29,
-   314.25
+   314.25,
+   314.16
   ],
   "shop": "cardtrader",
   "status": "in_stock",

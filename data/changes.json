@@ -3420,5 +3420,93 @@
   "shop": "mrpuggy",
   "status": "in_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Decks-Tramplesaurus-Rex/15662"
+ },
+ {
+  "at": "2026-10-14T23:17:42Z",
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardtrader-265026",
+  "id": "cardtrader-265026",
+  "inStock": 0,
+  "kind": "price",
+  "old": 322.28,
+  "price": 257.52,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-10-14T23:17:42Z",
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardtrader-265027",
+  "id": "cardtrader-265027",
+  "inStock": 0,
+  "kind": "price",
+  "old": 307.17,
+  "price": 256.29,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265027"
+ },
+ {
+  "at": "2026-10-14T23:17:42Z",
+  "best": {
+   "price": 224.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardtrader-265028",
+  "id": "cardtrader-265028",
+  "inStock": 1,
+  "kind": "price",
+  "old": 175.27,
+  "price": 138.99,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-14T23:17:42Z",
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardtrader-265029",
+  "id": "cardtrader-265029",
+  "inStock": 0,
+  "kind": "price",
+  "old": 497.77,
+  "price": 431.12,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-10-14T23:17:42Z",
+  "cheapest": true,
+  "deck": "Duskmourn House of Horror Miracle Worker",
+  "group": "cardtrader-299807",
+  "id": "cardtrader-299807",
+  "inStock": 0,
+  "kind": "price",
+  "old": 435.88,
+  "price": 417.92,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/299807"
+ },
+ {
+  "at": "2026-10-14T23:17:42Z",
+  "cheapest": true,
+  "deck": "Duskmourn House of Horror Jump Scare!",
+  "group": "cardtrader-299809",
+  "id": "cardtrader-299809",
+  "inStock": 0,
+  "kind": "price",
+  "old": 410.02,
+  "price": 396.06,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/299809"
  }
 ]
