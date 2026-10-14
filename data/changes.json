@@ -3309,5 +3309,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-10-14T01:17:23Z",
+  "best": {
+   "price": 129.99,
+   "shop": "xjoy"
+  },
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "time4magic-990",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 129.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/pl/p/Foundations-Commander-Deck-Keen-Engineering/990"
  }
 ]
