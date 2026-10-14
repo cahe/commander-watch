@@ -483,7 +483,7 @@
   "price": 703.7,
   "recent": [
    867.4,
-   867.4,
+   703.7,
    703.7
   ],
   "shop": "cardtrader",
@@ -507,7 +507,7 @@
   "price": 243.3,
   "recent": [
    243.69,
-   243.69,
+   243.3,
    243.3
   ],
   "shop": "cardtrader",
@@ -2482,7 +2482,7 @@
   "price": 736.77,
   "recent": [
    736.77,
-   736.77,
+   737.96,
    737.96
   ],
   "shop": "cardtrader",
@@ -2632,7 +2632,7 @@
   "price": 436.4,
   "recent": [
    436.4,
-   436.4,
+   436.44,
    436.44
   ],
   "shop": "cardtrader",
@@ -2682,7 +2682,7 @@
   "price": 436.48,
   "recent": [
    438.02,
-   438.02,
+   436.48,
    436.48
   ],
   "shop": "cardtrader",
@@ -2732,7 +2732,7 @@
   "price": 413.97,
   "recent": [
    413.97,
-   413.97,
+   414.58,
    414.58
   ],
   "shop": "cardtrader",
@@ -3726,7 +3726,7 @@
   "price": 314.97,
   "recent": [
    315.01,
-   315.01,
+   314.97,
    314.97
   ],
   "shop": "cardtrader",
@@ -3750,7 +3750,7 @@
   "price": 314.97,
   "recent": [
    315.01,
-   315.01,
+   314.97,
    314.97
   ],
   "shop": "cardtrader",
@@ -3774,7 +3774,7 @@
   "price": 314.97,
   "recent": [
    315.01,
-   315.01,
+   314.97,
    314.97
   ],
   "shop": "cardtrader",
@@ -11861,6 +11861,70 @@
   "shop": "xjoy",
   "status": "in_stock",
   "url": "https://www.xjoy.pl/universes-beyond/19457-mtg-doctor-who-commander-deck-paradox-power.html"
+ },
+ {
+  "baseline": true,
+  "change": "listed",
+  "changedAt": "2026-10-14T07:59:57Z",
+  "deck": "fallout-science",
+  "firstSeen": "2026-10-14T07:59:57Z",
+  "group": "cardtrader-265028",
+  "groupName": "Fallout Science",
+  "id": "xjoy-19949",
+  "name": "MTG: Fallout Commander Deck Science!",
+  "pid": 19949,
+  "price": 219.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/universes-beyond/19949-mtg-fallout-commander-deck-science.html"
+ },
+ {
+  "baseline": true,
+  "change": "listed",
+  "changedAt": "2026-10-14T07:59:57Z",
+  "deck": "fallout-hail-ceasar",
+  "firstSeen": "2026-10-14T07:59:57Z",
+  "group": "xjoy-19950",
+  "groupName": "Fallout Hail, Ceasar",
+  "id": "xjoy-19950",
+  "name": "MTG: Fallout Commander Deck Hail, Ceasar",
+  "pid": 19950,
+  "price": 299.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/universes-beyond/19950-mtg-fallout-commander-deck-hail-ceasar.html"
+ },
+ {
+  "baseline": true,
+  "change": "listed",
+  "changedAt": "2026-10-14T07:59:57Z",
+  "deck": "fallout-scrappy-survivors",
+  "firstSeen": "2026-10-14T07:59:57Z",
+  "group": "cardtrader-265026",
+  "groupName": "Fallout Scrappy Survivors",
+  "id": "xjoy-19951",
+  "name": "MTG: Fallout Commander Deck Scrappy Survivors",
+  "pid": 19951,
+  "price": 299.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/universes-beyond/19951-mtg-fallout-commander-deck-scrappy-survivors.html"
+ },
+ {
+  "baseline": true,
+  "change": "listed",
+  "changedAt": "2026-10-14T07:59:57Z",
+  "deck": "fallout-mutant-menace",
+  "firstSeen": "2026-10-14T07:59:57Z",
+  "group": "cardtrader-265029",
+  "groupName": "Fallout Mutant Menace",
+  "id": "xjoy-19952",
+  "name": "MTG: Fallout Commander Deck Mutant Menace",
+  "pid": 19952,
+  "price": 529.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/universes-beyond/19952-mtg-fallout-commander-deck-mutant-menace.html"
  },
  {
   "baseline": true,
