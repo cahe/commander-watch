@@ -468,8 +468,8 @@
  {
   "baseline": true,
   "box": "data/boxes/151469.webp",
-  "change": "price 705.03 → 703.70 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 703.70 → 867.40 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
   "cheapest": true,
   "deck": "kaldheim-elven-empire",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -480,9 +480,9 @@
   "lowLogged": 702.72,
   "name": "Commander: Kaldheim: \"Elven Empire\" Deck",
   "pid": 151469,
-  "price": 703.7,
+  "price": 867.4,
   "recent": [
-   703.7,
+   867.4,
    867.4,
    867.4
   ],
@@ -493,8 +493,8 @@
  {
   "baseline": true,
   "box": "data/boxes/151470.webp",
-  "change": "price 243.76 → 243.30 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 243.30 → 243.69 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
   "cheapest": false,
   "deck": "kaldheim-phantom-premonition",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -504,9 +504,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/151470/show_commander-kaldheim-phantom-premonition-deck-commander-kaldheim.jpg",
   "name": "Commander: Kaldheim: Phantom Premonition\" Deck",
   "pid": 151470,
-  "price": 243.3,
+  "price": 243.69,
   "recent": [
-   243.3,
+   243.69,
    243.69,
    243.69
   ],
@@ -592,8 +592,8 @@
  {
   "baseline": true,
   "box": "data/boxes/154978.webp",
-  "change": "price 222.25 → 221.83 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 221.83 → 424.87 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
   "cheapest": true,
   "deck": "strixhaven-school-of-mages-prismari-performance",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -604,9 +604,9 @@
   "lowLogged": 221.52,
   "name": "Commander: Strixhaven: \"Prismari Performance\" Deck",
   "pid": 154978,
-  "price": 221.83,
+  "price": 424.87,
   "recent": [
-   221.83,
+   424.87,
    424.87,
    424.87
   ],
@@ -1724,8 +1724,8 @@
  {
   "baseline": true,
   "box": "data/boxes/246480.webp",
-  "change": "price 252.98 → 252.50 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 252.50 → 254.16 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
   "cheapest": true,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-elven-counci",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -1736,9 +1736,9 @@
   "lowLogged": 255.56,
   "name": "Commander: The Lord of the Rings | \"Elven Council\" Commander Deck",
   "pid": 246480,
-  "price": 252.5,
+  "price": 254.16,
   "recent": [
-   252.5,
+   254.16,
    254.16,
    254.16
   ],
@@ -1774,21 +1774,20 @@
  {
   "baseline": true,
   "box": "data/boxes/246483.webp",
-  "change": "price 309.81 → 309.23 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
-  "cheapest": true,
+  "change": "price 309.23 → 330.03 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
+  "cheapest": false,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-riders-of-ro",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardtrader-246483",
   "groupName": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
   "id": "cardtrader-246483",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/246483/show_commander-the-lord-of-the-rings-riders-of-rohan-commander-deck-commander-the-lord-of-the-rings-tales-of-middle-earth.jpg",
-  "lowLogged": 308.47,
   "name": "Commander: The Lord of the Rings | \"Riders Of Rohan\" Commander Deck",
   "pid": 246483,
-  "price": 309.23,
+  "price": 330.03,
   "recent": [
-   309.23,
+   330.03,
    330.03,
    330.03
   ],
@@ -2085,7 +2084,7 @@
   "pid": 265027,
   "price": 307.17,
   "recent": [
-   321.67,
+   307.17,
    307.17,
    307.17
   ],
@@ -2110,7 +2109,7 @@
   "pid": 265028,
   "price": 175.27,
   "recent": [
-   179.25,
+   175.27,
    175.27,
    175.27
   ],
@@ -2135,7 +2134,7 @@
   "pid": 265029,
   "price": 497.77,
   "recent": [
-   518.79,
+   497.77,
    497.77,
    497.77
   ],
@@ -2557,7 +2556,7 @@
   "pid": 280701,
   "price": 396.53,
   "recent": [
-   396.97,
+   396.53,
    396.53,
    396.53
   ],
@@ -3116,8 +3115,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322693.webp",
-  "change": "price 168.80 → 168.48 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 168.48 → 180.00 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
   "cheapest": false,
   "deck": "edge-of-eternities-counter-intelligence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3127,9 +3126,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/322693/show_edge-of-eternities-counter-intelligence-commander-deck-edge-of-eternities.jpg",
   "name": "Edge of Eternities: \"Counter Intelligence\" Commander Deck",
   "pid": 322693,
-  "price": 168.48,
+  "price": 180.0,
   "recent": [
-   168.48,
+   180.0,
    180.0,
    180.0
   ],
@@ -3214,8 +3213,8 @@
  {
   "baseline": true,
   "box": "data/boxes/354096.webp",
-  "change": "price 168.62 → 168.30 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 168.30 → 168.52 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
   "cheapest": true,
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3226,9 +3225,9 @@
   "lowLogged": 168.29,
   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
   "pid": 354096,
-  "price": 168.3,
+  "price": 168.52,
   "recent": [
-   168.3,
+   168.52,
    168.52,
    168.52
   ],
@@ -3239,8 +3238,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370595.webp",
-  "change": "price 234.54 → 234.10 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 234.10 → 238.92 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-silverquill-influence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3251,9 +3250,9 @@
   "lowLogged": 218.38,
   "name": "Commander: Secrets of Strixhaven | \"Silverquill Influence\" Commander Deck",
   "pid": 370595,
-  "price": 234.1,
+  "price": 238.92,
   "recent": [
-   234.1,
+   238.92,
    238.92,
    238.92
   ],
@@ -3389,8 +3388,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370631.webp",
-  "change": "price 177.84 → 177.50 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 177.50 → 188.98 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
   "cheapest": true,
   "deck": "marvel-super-heroes-avengers-assemble",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3401,9 +3400,9 @@
   "lowLogged": 177.25,
   "name": "Marvel Super Heroes | \"Avengers Assemble\" Commander Deck",
   "pid": 370631,
-  "price": 177.5,
+  "price": 188.98,
   "recent": [
-   177.5,
+   188.98,
    188.98,
    188.98
   ],
@@ -3414,8 +3413,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370632.webp",
-  "change": "price 138.34 → 138.08 zł",
-  "changedAt": "2026-10-13T10:18:00Z",
+  "change": "price 138.08 → 142.41 zł",
+  "changedAt": "2026-10-14T04:17:35Z",
   "cheapest": true,
   "deck": "marvel-super-heroes-fantastic-four",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3426,9 +3425,9 @@
   "lowLogged": 137.88,
   "name": "Marvel Super Heroes | \"The Fantastic Four\" Commander Deck",
   "pid": 370632,
-  "price": 138.08,
+  "price": 142.41,
   "recent": [
-   138.08,
+   142.41,
    142.41,
    142.41
   ],
@@ -3726,7 +3725,7 @@
   "pid": 400888,
   "price": 315.01,
   "recent": [
-   315.05,
+   315.01,
    315.01,
    315.01
   ],
@@ -3750,7 +3749,7 @@
   "pid": 400889,
   "price": 315.01,
   "recent": [
-   315.05,
+   315.01,
    315.01,
    315.01
   ],
@@ -3774,7 +3773,7 @@
   "pid": 400890,
   "price": 315.01,
   "recent": [
-   315.05,
+   315.01,
    315.01,
    315.01
   ],
@@ -3894,7 +3893,7 @@
   "pid": 400895,
   "price": 703.48,
   "recent": [
-   709.61,
+   703.48,
    703.48,
    703.48
   ],
