@@ -3342,5 +3342,56 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-10-14T10:17:39Z",
+  "best": {
+   "price": 329.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
+  "group": "cardtrader-246483",
+  "id": "cardtrader-246483",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 329.28,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-10-14T10:17:39Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardtrader-400893",
+  "id": "cardtrader-400893",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 699.25,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-10-14T10:17:39Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 699.25,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
  }
 ]
