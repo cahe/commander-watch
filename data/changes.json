@@ -3393,5 +3393,32 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-10-14T17:17:40Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Tramplesaurus Rex",
+  "group": "cardstore-31684",
+  "id": "mrpuggy-15662",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 249.99,
+  "shop": "mrpuggy",
+  "status": "in_stock",
+  "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Decks-Tramplesaurus-Rex/15662"
+ },
+ {
+  "at": "2026-10-14T17:17:40Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Tramplesaurus Rex",
+  "group": "cardstore-31684",
+  "id": "mrpuggy-15662",
+  "inStock": 1,
+  "kind": "price",
+  "old": 399.99,
+  "price": 249.99,
+  "shop": "mrpuggy",
+  "status": "in_stock",
+  "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Decks-Tramplesaurus-Rex/15662"
  }
 ]

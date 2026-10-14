@@ -483,8 +483,8 @@
   "price": 702.09,
   "recent": [
    865.42,
-   865.42,
-   702.09
+   702.09,
+   865.42
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -507,8 +507,8 @@
   "price": 242.74,
   "recent": [
    243.14,
-   243.14,
-   242.74
+   242.74,
+   243.14
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2483,8 +2483,8 @@
   "price": 735.09,
   "recent": [
    735.09,
-   735.09,
-   736.27
+   736.27,
+   735.09
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2633,8 +2633,8 @@
   "price": 435.4,
   "recent": [
    435.4,
-   435.4,
-   435.44
+   435.44,
+   435.4
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2683,8 +2683,8 @@
   "price": 435.49,
   "recent": [
    437.02,
-   437.02,
-   435.49
+   435.49,
+   437.02
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2733,8 +2733,8 @@
   "price": 413.02,
   "recent": [
    413.02,
-   413.02,
-   413.63
+   413.63,
+   413.02
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3727,8 +3727,8 @@
   "price": 314.25,
   "recent": [
    314.29,
-   314.29,
-   314.25
+   314.25,
+   314.29
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3751,8 +3751,8 @@
   "price": 314.25,
   "recent": [
    314.29,
-   314.29,
-   314.25
+   314.25,
+   314.29
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3775,8 +3775,8 @@
   "price": 314.25,
   "recent": [
    314.29,
-   314.29,
-   314.25
+   314.25,
+   314.29
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -7015,8 +7015,8 @@
  },
  {
   "baseline": true,
-  "change": "price 129.99 → 399.99 zł",
-  "changedAt": "2026-10-12T19:18:01Z",
+  "change": "back in stock, price 399.99 → 249.99 zł",
+  "changedAt": "2026-10-14T17:17:40Z",
   "deck": "foundations-starter-tramplesaurus-rex",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31684",
@@ -7024,9 +7024,9 @@
   "id": "mrpuggy-15662",
   "name": "Magic: The Gathering - Foundations Commander Decks - Tramplesaurus Rex",
   "pid": 15662,
-  "price": 399.99,
+  "price": 249.99,
   "shop": "mrpuggy",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Decks-Tramplesaurus-Rex/15662"
  },
  {
