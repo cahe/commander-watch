@@ -133,14 +133,13 @@ input[type="search"] { flex: 1 1 200px; min-width: 0; }
 /* Phones: the box beside the name, the shops under both. */
 @media (max-width: 640px) {
   .box { --size: 56px; }
-  .deck.boxed { align-items: center; row-gap: 6px; }
-  .deck.boxed .box, .newrow .box { place-items: center; }
-  .deck.boxed .deck-main { display: contents; }
-  .deck.boxed .offers { grid-column: 1 / -1; margin-top: 0; }
-  .newrow { align-items: center; row-gap: 6px; }
-  .newrow > .box { grid-row: auto; align-self: center; }
-  .newrow > .seen { grid-area: auto; text-align: right; }  /* not the deck list's "seen" area */
-  .newrow .offers { grid-column: 1 / -1; }
+  /* New listings: name, date and the shops (usually one to three) all beside the box. */
+  .newrow { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "box name" "box seen" "box offers"; grid-template-rows: auto auto 1fr;
+    column-gap: 12px; row-gap: 2px; align-items: start; padding-block: 12px; }
+  .newrow > .box { grid-area: box; }
+  .newrow > strong { grid-area: name; line-height: 1.3; }
+  .newrow > .seen { grid-area: seen; }  /* not the deck list's "seen" area */
+  .newrow .offers { grid-area: offers; margin-top: 6px; }
 }
 .deck a { color: var(--fg); text-decoration: none; overflow-wrap: anywhere; }
 .deck a:hover { color: var(--accent); text-decoration: underline; }
@@ -282,10 +281,51 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
   .change > span:nth-child(2) { grid-area: tag; } .change .when { grid-area: when; text-align: right; } .change .what { grid-area: what; }
 }
 
+/* Phones: the box beside the name, best price (with the alert and pin buttons at the end of its line) and
+   availability; under them the shops as a two-column price list. */
+.offer.fold { display: none; }
 @media (max-width: 640px) {
-  .item { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "deck deck" "status price" "seen seen"; row-gap: 6px; }
+  .item { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "box name name" "box price acts" "box status status" "offers offers offers" "seen seen seen";
+    column-gap: 12px; row-gap: 4px; align-items: center; padding-block: 14px; }
   .item.head { display: none; }
-  .deck { grid-area: deck; } .price { grid-area: price; } .st { grid-area: status; } .seen { grid-area: seen; text-align: right; }
+  .item > .deck:not(.boxed) { grid-column: 1 / -1; }
+  .deck.boxed, .deck.boxed .deck-main, .deck.boxed .deck-title { display: contents; }
+  .deck.boxed .box { grid-area: box; align-self: start; }
+  .deck-title > :first-child { grid-area: name; line-height: 1.3; }
+  .deck-title .acts { grid-area: acts; display: flex; }
+  .acts .alertbell, .acts .pinbtn { margin: -4px 0; padding: 7px; }
+  .price { grid-area: price; min-width: 0; grid-template-columns: auto minmax(0, 96px); align-items: center; gap: 10px; font-size: 15px; text-align: left; }
+  .price .hbtn { min-width: 0; }
+  .price .spark { width: 100%; height: auto; }  /* narrower screens: the sparkline shrinks rather than run under the buttons */
+  .st { grid-area: status; align-self: start; font-size: 12px; }
+  .seen { grid-area: seen; text-align: right; }
+  .seen.old { display: none; }
+  .deck.boxed .offers { grid-area: offers; margin-top: 8px; }
+
+  .item .offers, .newrow .offers { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+  :is(.item, .newrow) .offer { display: flex; justify-content: space-between; gap: 6px; padding: 7px 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0;
+    background: none; color: var(--fg); white-space: nowrap; }
+  :is(.item, .newrow) .offer i { display: none; }  /* green price or struck-through grey says it */
+  :is(.item, .newrow) .offer.in_stock b { color: var(--ok); }
+  :is(.item, .newrow) .offer.out_of_stock { color: var(--muted); }
+  :is(.item, .newrow) .offer.best { margin-inline: -8px; padding-inline: 8px; border-radius: 4px; border-bottom-color: transparent; background: var(--ok-soft); font-weight: 700; }
+  :is(.item, .newrow) .offer.best b { font-weight: 700; }
+  :is(.item, .newrow) .offers:not(.all) > .extra { display: none; }
+  :is(.item, .newrow) .offer.fold { grid-column: 1 / -1; display: flex; justify-content: flex-start; padding-top: 9px; border-bottom: 0; color: var(--accent); font-size: 12px; }
+
+  @media (max-width: 360px) { .item .offers { grid-template-columns: 1fr; } }  /* "CardTrader ≈ 216,91 zł" needs ~150px a column */
+  /* New listings: one short list beside the box, each price right after its shop, no rules between them. */
+  .newrow .offers { grid-template-columns: 1fr; }
+  .newrow > .seen { text-align: left; }
+  .newrow .offer { justify-content: flex-start; gap: 8px; padding: 2px 0; border-bottom: 0; }
+  .newrow .offer.fold { padding-top: 4px; }
+
+  /* Filters: shops scroll in one line, search full width, the two selects share a row. */
+  #shopchips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
+  #shopchips::-webkit-scrollbar { display: none; }
+  #shopchips .chip { flex: none; }
+  #q { flex: 1 1 100%; }
+  #status, #sort { flex: 1 1 0; min-width: 0; }
 }
 @media (prefers-reduced-motion: no-preference) { .chip { transition: background .15s, color .15s; } }
 </style>
@@ -577,12 +617,8 @@ function renderNew() {
   shelf.append(grid);
   const limit = NEW_SHOWN();
   for (const g of state.newAll ? rows : rows.slice(0, limit)) {
-    const offers = el("div", { class: "offers" });
-    for (const o of g.items.sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9))) {
-      const status = shownStatus(o.status);
-      offers.append(el("a", { class: "offer " + status, href: safeUrl(o.url), target: "_blank", rel: "noopener", title: `${o.name} · ${STATUS_LABEL[status]}` },
-        el("span", { text: SHOPS[o.shop]?.name || o.shop }), el("b", { text: money(o.shop, o.price) }), el("i", { text: OFFER_WORD[status] })));
-    }
+    const items = g.items.sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9));
+    const offers = foldOffers(offerChips({ offers: items }), items, null, "new:" + g.key, renderNew);
     grid.append(el("div", { class: "newrow" }, deckBox(state.decks.filter(d => (d.group || d.id) === g.key)), el("strong", { text: g.name }), el("span", { class: "seen", text: fmtDate(g.at) }), offers));
   }
   if (rows.length > limit) {
@@ -648,6 +684,30 @@ function offerChips(g, best, bestNote) {
   return offers;
 }
 const orderable = (o) => o.status === "in_stock" || o.status === "preorder";
+// Phones show a deck's 3 cheapest shops that have it (plus the best price for the filters); a "⋯" chip shows the rest.
+// Wide screens show every shop, so the chip and the folding only apply under 640px.
+const OFFERS_SHOWN = 3;
+state.offersOpen = new Set();
+function foldOffers(chips, offers, best, key, rerender) {
+  const avail = offers.filter(orderable), shown = new Set((avail.length ? avail : offers).slice(0, OFFERS_SHOWN));
+  if (best) shown.add(best);
+  const hidden = offers.filter(o => !shown.has(o));
+  if (!hidden.length) return chips;
+  [...chips.children].forEach((c, i) => c.classList.toggle("extra", !shown.has(offers[i])));
+  const open = state.offersOpen.has(key), sold = hidden.filter(o => !orderable(o)).length, more = hidden.length - sold;
+  chips.classList.toggle("all", open);
+  const b = el("button", { class: "offer more fold", type: "button", "aria-expanded": String(open),
+    text: open ? "Show fewer" : "⋯ " + [more && `${more} more in stock`, sold && `${sold} sold out`].filter(Boolean).join(" · ") });
+  b.addEventListener("click", () => {
+    open ? state.offersOpen.delete(key) : state.offersOpen.add(key);
+    const box = chips.closest("[id]");
+    rerender();
+    box?.querySelector(`.offer.fold[data-key="${CSS.escape(key)}"]`)?.focus();
+  });
+  b.dataset.key = key;
+  chips.append(b);
+  return chips;
+}
 function stockText(g) {
   const n = g.offers.filter(orderable).length;
   return n ? `In stock at ${n} of ${g.offers.length}` : `Out of stock (${g.offers.length})`;
@@ -756,15 +816,16 @@ function renderList() {
     list.append(el("div", { class: "item" }, el("span", { class: "deck", text: state.status === "in_stock" ? "No decks in stock match these filters. Set availability to “Any availability” to see all." : "No decks match these filters." })));
   }
   for (const g of rows) {
-    const offers = offerChips(g, g.best, "best price for these filters");
+    const offers = foldOffers(offerChips(g, g.best, "best price for these filters"), g.offers, g.best, deckKey(g) || g.name, renderList);
     const st = el("span", { class: "st avail", text: stockText(g) });
     if (g.firstSeen) st.append(" ", el("span", { class: "pill new", text: "New" }));
     list.append(el("div", { class: "item", role: "row" },
-      el("div", { class: "deck boxed" }, deckBox(g.offers), el("div", { class: "deck-main" }, el("span", {}, el("strong", { text: g.name }),
-        g.kind ? el("span", { class: "kind", text: g.kind }) : null, alertLink(g, "alertbell"), pinButton(g)), offers)),
+      el("div", { class: "deck boxed" }, deckBox(g.offers), el("div", { class: "deck-main" }, el("span", { class: "deck-title" },
+        el("span", {}, el("strong", { text: g.name }), g.kind ? el("span", { class: "kind", text: g.kind }) : null),
+        el("span", { class: "acts" }, alertLink(g, "alertbell"), pinButton(g))), offers)),
       st,
       priceCell(g),
-      el("span", { class: "seen", text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
+      el("span", { class: "seen" + (g.firstSeen ? "" : " old"), text: g.firstSeen ? fmtDate(g.firstSeen) : "Before tracking" })));
     if (state.openHistory === g.name) {
       const h = deckHistory(g);
       if (h) {
