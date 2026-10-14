@@ -281,6 +281,12 @@ section.changes { background: var(--surface); border: 1px solid var(--line); bor
   .change > span:nth-child(2) { grid-area: tag; } .change .when { grid-area: when; text-align: right; } .change .what { grid-area: what; }
 }
 
+/* Narrow windows: price, availability and first seen stack in one column beside the deck, so the deck keeps its room. */
+@media (min-width: 641px) and (max-width: 900px) {
+  .item { grid-template-columns: minmax(0, 1fr) 150px; grid-template-areas: "deck price" "deck status" "deck seen"; grid-template-rows: auto auto 1fr; align-items: start; row-gap: 4px; }
+  .item.head { display: none; }
+  .deck { grid-area: deck; } .price { grid-area: price; } .st { grid-area: status; text-align: right; } .seen { grid-area: seen; text-align: right; }
+}
 /* Phones: the box beside the name, best price (with the alert and pin buttons at the end of its line) and
    availability; under them the shops as a two-column price list. */
 .offer.fold { display: none; }
