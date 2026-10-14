@@ -484,7 +484,7 @@
   "recent": [
    702.09,
    702.09,
-   702.09
+   865.42
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -508,7 +508,7 @@
   "recent": [
    242.74,
    242.74,
-   242.74
+   243.14
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2468,8 +2468,8 @@
  {
   "baseline": true,
   "box": "data/boxes/279476.webp",
-  "change": "price 736.77 → 736.27 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 736.27 → 735.09 zł",
+  "changedAt": "2026-10-14T14:00:20Z",
   "cheapest": true,
   "deck": "outlaws-of-thunder-junction-desert-bloom",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2480,11 +2480,11 @@
   "lowLogged": 445.5,
   "name": "Commander: Outlaws of Thunder Junction | \"Desert Bloom\" Commander Deck",
   "pid": 279476,
-  "price": 736.27,
+  "price": 735.09,
   "recent": [
    736.27,
    736.27,
-   736.27
+   735.09
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2618,8 +2618,8 @@
  {
   "baseline": true,
   "box": "data/boxes/280704.webp",
-  "change": "price 436.40 → 435.44 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 435.44 → 435.40 zł",
+  "changedAt": "2026-10-14T14:00:20Z",
   "cheapest": true,
   "deck": "bloomburrow-peace-offering",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2630,11 +2630,11 @@
   "lowLogged": 435.79,
   "name": "Commander: Bloomburrow | \"Peace Offering\" Commander Deck",
   "pid": 280704,
-  "price": 435.44,
+  "price": 435.4,
   "recent": [
    435.44,
    435.44,
-   435.44
+   435.4
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2684,7 +2684,7 @@
   "recent": [
    435.49,
    435.49,
-   435.49
+   437.02
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2718,8 +2718,8 @@
  {
   "baseline": true,
   "box": "data/boxes/299809.webp",
-  "change": "price 413.97 → 413.63 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 413.63 → 413.02 zł",
+  "changedAt": "2026-10-14T14:00:20Z",
   "cheapest": true,
   "deck": "duskmourn-house-of-horror-jump-scare",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2730,11 +2730,11 @@
   "lowLogged": 410.02,
   "name": "Commander: Duskmourn: House of Horror | \"Jump Scare!\" Commander Deck",
   "pid": 299809,
-  "price": 413.63,
+  "price": 413.02,
   "recent": [
    413.63,
    413.63,
-   413.63
+   413.02
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3728,7 +3728,7 @@
   "recent": [
    314.25,
    314.25,
-   314.25
+   314.29
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3752,7 +3752,7 @@
   "recent": [
    314.25,
    314.25,
-   314.25
+   314.29
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3776,7 +3776,7 @@
   "recent": [
    314.25,
    314.25,
-   314.25
+   314.29
   ],
   "shop": "cardtrader",
   "status": "in_stock",
