@@ -468,8 +468,8 @@
  {
   "baseline": true,
   "box": "data/boxes/151469.webp",
-  "change": "price 703.70 → 702.09 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 702.09 → 865.42 zł",
+  "changedAt": "2026-10-14T15:17:41Z",
   "cheapest": true,
   "deck": "kaldheim-elven-empire",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -480,9 +480,9 @@
   "lowLogged": 702.72,
   "name": "Commander: Kaldheim: \"Elven Empire\" Deck",
   "pid": 151469,
-  "price": 702.09,
+  "price": 865.42,
   "recent": [
-   702.09,
+   865.42,
    865.42,
    865.42
   ],
@@ -493,8 +493,8 @@
  {
   "baseline": true,
   "box": "data/boxes/151470.webp",
-  "change": "price 243.30 → 242.74 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 242.74 → 243.14 zł",
+  "changedAt": "2026-10-14T15:17:41Z",
   "cheapest": false,
   "deck": "kaldheim-phantom-premonition",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -504,9 +504,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/151470/show_commander-kaldheim-phantom-premonition-deck-commander-kaldheim.jpg",
   "name": "Commander: Kaldheim: Phantom Premonition\" Deck",
   "pid": 151470,
-  "price": 242.74,
+  "price": 243.14,
   "recent": [
-   242.74,
+   243.14,
    243.14,
    243.14
   ],
@@ -2482,7 +2482,7 @@
   "pid": 279476,
   "price": 735.09,
   "recent": [
-   736.27,
+   735.09,
    735.09,
    735.09
   ],
@@ -2632,7 +2632,7 @@
   "pid": 280704,
   "price": 435.4,
   "recent": [
-   435.44,
+   435.4,
    435.4,
    435.4
   ],
@@ -2668,8 +2668,8 @@
  {
   "baseline": true,
   "box": "data/boxes/299807.webp",
-  "change": "price 436.48 → 435.49 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 435.49 → 437.02 zł",
+  "changedAt": "2026-10-14T15:17:41Z",
   "cheapest": true,
   "deck": "duskmourn-house-of-horror-miracle-worker",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2680,9 +2680,9 @@
   "lowLogged": 435.88,
   "name": "Commander: Duskmourn: House of Horror | \"Miracle Worker\" Commander Deck",
   "pid": 299807,
-  "price": 435.49,
+  "price": 437.02,
   "recent": [
-   435.49,
+   437.02,
    437.02,
    437.02
   ],
@@ -2732,7 +2732,7 @@
   "pid": 299809,
   "price": 413.02,
   "recent": [
-   413.63,
+   413.02,
    413.02,
    413.02
   ],
@@ -3713,8 +3713,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 314.97 → 314.25 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 314.25 → 314.29 zł",
+  "changedAt": "2026-10-14T15:17:41Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3724,9 +3724,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 314.25,
+  "price": 314.29,
   "recent": [
-   314.25,
+   314.29,
    314.29,
    314.29
   ],
@@ -3737,8 +3737,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 314.97 → 314.25 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 314.25 → 314.29 zł",
+  "changedAt": "2026-10-14T15:17:41Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3748,9 +3748,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 314.25,
+  "price": 314.29,
   "recent": [
-   314.25,
+   314.29,
    314.29,
    314.29
   ],
@@ -3761,8 +3761,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 314.97 → 314.25 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 314.25 → 314.29 zł",
+  "changedAt": "2026-10-14T15:17:41Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3772,9 +3772,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 314.25,
+  "price": 314.29,
   "recent": [
-   314.25,
+   314.29,
    314.29,
    314.29
   ],
