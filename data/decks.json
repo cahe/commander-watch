@@ -2869,7 +2869,7 @@
   "recent": [
    222.78,
    222.78,
-   222.78
+   223.96
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2894,7 +2894,7 @@
   "recent": [
    220.99,
    220.99,
-   220.99
+   222.13
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2927,8 +2927,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322101.webp",
-  "change": "price 152.57 → 155.80 zł",
-  "changedAt": "2026-10-15T18:17:57Z",
+  "change": "price 155.80 → 152.57 zł",
+  "changedAt": "2026-10-15T19:17:56Z",
   "cheapest": true,
   "deck": "final-fantasy-revival-trance",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2939,11 +2939,11 @@
   "lowLogged": 152.76,
   "name": "FINAL FANTASY: \"Revival Trance\" Commander Deck",
   "pid": 322101,
-  "price": 155.8,
+  "price": 152.57,
   "recent": [
    155.8,
    155.8,
-   155.8
+   152.57
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3093,7 +3093,7 @@
   "recent": [
    221.82,
    221.82,
-   221.82
+   243.05
   ],
   "shop": "cardtrader",
   "status": "in_stock",
