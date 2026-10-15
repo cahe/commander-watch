@@ -3520,5 +3520,48 @@
   "shop": "mrpuggy",
   "status": "out_of_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Decks-Tramplesaurus-Rex/15662"
+ },
+ {
+  "at": "2026-10-15T10:17:54Z",
+  "best": {
+   "price": 224.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "xjoy-19949",
+  "inStock": 2,
+  "kind": "restock",
+  "price": 219.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/universes-beyond/19949-mtg-fallout-commander-deck-science.html"
+ },
+ {
+  "at": "2026-10-15T10:17:54Z",
+  "cheapest": true,
+  "deck": "Fallout Hail, Ceasar",
+  "group": "xjoy-19950",
+  "id": "xjoy-19950",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 299.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/universes-beyond/19950-mtg-fallout-commander-deck-hail-ceasar.html"
+ },
+ {
+  "at": "2026-10-15T10:17:54Z",
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "xjoy-19951",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 299.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/universes-beyond/19951-mtg-fallout-commander-deck-scrappy-survivors.html"
  }
 ]
