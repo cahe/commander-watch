@@ -2856,8 +2856,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322095.webp",
-  "change": "price 222.86 → 222.78 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 222.78 → 223.96 zł",
+  "changedAt": "2026-10-15T13:17:54Z",
   "cheapest": true,
   "deck": "final-fantasy-limit-break",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2868,9 +2868,9 @@
   "lowLogged": 223.32,
   "name": "FINAL FANTASY: \"Limit Break\" Commander Deck",
   "pid": 322095,
-  "price": 222.78,
+  "price": 223.96,
   "recent": [
-   222.78,
+   223.96,
    223.96,
    223.96
   ],
@@ -2881,8 +2881,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322098.webp",
-  "change": "price 221.06 → 220.99 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 220.99 → 222.13 zł",
+  "changedAt": "2026-10-15T13:17:54Z",
   "cheapest": true,
   "deck": "final-fantasy-counter-blitz",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2893,9 +2893,9 @@
   "lowLogged": 219.34,
   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck",
   "pid": 322098,
-  "price": 220.99,
+  "price": 222.13,
   "recent": [
-   220.99,
+   222.13,
    222.13,
    222.13
   ],
@@ -2944,7 +2944,7 @@
   "pid": 322101,
   "price": 152.57,
   "recent": [
-   155.8,
+   152.57,
    152.57,
    152.57
   ],
@@ -3080,8 +3080,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322530.webp",
-  "change": "price 221.90 → 221.82 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 221.82 → 243.05 zł",
+  "changedAt": "2026-10-15T13:17:54Z",
   "cheapest": true,
   "deck": "tarkir-dragonstorm-mardu-surge",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3092,9 +3092,9 @@
   "lowLogged": 222.09,
   "name": "Commander: Tarkir Dragonstorm | \"Mardu Surge\" Commander Deck",
   "pid": 322530,
-  "price": 221.82,
+  "price": 243.05,
   "recent": [
-   221.82,
+   243.05,
    243.05,
    243.05
   ],
