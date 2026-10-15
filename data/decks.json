@@ -2250,7 +2250,7 @@
   "recent": [
    352.24,
    352.24,
-   352.24
+   393.18
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2531,8 +2531,8 @@
  {
   "baseline": true,
   "box": "data/boxes/279476.webp",
-  "change": "price 736.27 → 736.02 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 736.02 → 735.58 zł",
+  "changedAt": "2026-10-15T23:17:58Z",
   "cheapest": true,
   "deck": "outlaws-of-thunder-junction-desert-bloom",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2543,11 +2543,11 @@
   "lowLogged": 445.5,
   "name": "Commander: Outlaws of Thunder Junction | \"Desert Bloom\" Commander Deck",
   "pid": 279476,
-  "price": 736.02,
+  "price": 735.58,
   "recent": [
    736.02,
    736.02,
-   736.02
+   735.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2806,8 +2806,8 @@
  {
   "baseline": true,
   "box": "data/boxes/314238.webp",
-  "change": "price 131.12 → 131.07 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 131.07 → 131.03 zł",
+  "changedAt": "2026-10-15T23:17:58Z",
   "cheapest": false,
   "deck": "aetherdrift-living-energy",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2817,11 +2817,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/314238/show_commander-aetherdrift-living-energy-commander-deck-commander-duskmourn-house-of-horror.jpg",
   "name": "Commander: Aetherdrift | \"Living Energy\" Commander Deck",
   "pid": 314238,
-  "price": 131.07,
+  "price": 131.03,
   "recent": [
    131.07,
    131.07,
-   131.07
+   131.03
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2830,8 +2830,8 @@
  {
   "baseline": true,
   "box": "data/boxes/314239.webp",
-  "change": "price 176.88 → 176.82 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 176.82 → 176.77 zł",
+  "changedAt": "2026-10-15T23:17:58Z",
   "cheapest": true,
   "deck": "aetherdrift-eternal-might",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2842,11 +2842,11 @@
   "lowLogged": 171.35,
   "name": "Commander: Aetherdrift | \"Eternal Might\" Commander Deck",
   "pid": 314239,
-  "price": 176.82,
+  "price": 176.77,
   "recent": [
    176.82,
    176.82,
-   176.82
+   176.77
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2869,9 +2869,9 @@
   "pid": 322095,
   "price": 222.78,
   "recent": [
-   222.78,
    223.96,
-   223.96
+   223.96,
+   222.78
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2894,9 +2894,9 @@
   "pid": 322098,
   "price": 220.99,
   "recent": [
-   220.99,
    222.13,
-   222.13
+   222.13,
+   220.99
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2943,9 +2943,9 @@
   "pid": 322101,
   "price": 152.57,
   "recent": [
-   155.8,
    152.57,
-   152.57
+   152.57,
+   155.8
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3093,9 +3093,9 @@
   "pid": 322530,
   "price": 221.82,
   "recent": [
-   221.82,
    243.05,
-   243.05
+   243.05,
+   221.82
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3302,8 +3302,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370595.webp",
-  "change": "price 238.37 → 238.29 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 238.29 → 233.48 zł",
+  "changedAt": "2026-10-15T23:17:58Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-silverquill-influence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3314,11 +3314,11 @@
   "lowLogged": 218.38,
   "name": "Commander: Secrets of Strixhaven | \"Silverquill Influence\" Commander Deck",
   "pid": 370595,
-  "price": 238.29,
+  "price": 233.48,
   "recent": [
    238.29,
    238.29,
-   238.29
+   233.48
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3668,7 +3668,7 @@
   "recent": [
    118.8,
    118.8,
-   118.8
+   118.93
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3752,8 +3752,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389403.webp",
-  "change": "price 214.12 → 214.04 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 214.04 → 214.00 zł",
+  "changedAt": "2026-10-15T23:17:58Z",
   "cheapest": false,
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3763,11 +3763,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/389403/show_reality-fracture-commander-deck-commander-reality-fracture.jpg",
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
-  "price": 214.04,
+  "price": 214.0,
   "recent": [
    214.04,
    214.04,
-   214.04
+   214.0
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3776,8 +3776,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 314.16 → 314.05 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 314.05 → 313.96 zł",
+  "changedAt": "2026-10-15T23:17:58Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3787,11 +3787,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 314.05,
+  "price": 313.96,
   "recent": [
    314.05,
    314.05,
-   314.05
+   313.96
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3800,8 +3800,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 314.16 → 314.05 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 314.05 → 313.96 zł",
+  "changedAt": "2026-10-15T23:17:58Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3811,11 +3811,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 314.05,
+  "price": 313.96,
   "recent": [
    314.05,
    314.05,
-   314.05
+   313.96
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3824,8 +3824,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 314.16 → 314.05 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 314.05 → 313.96 zł",
+  "changedAt": "2026-10-15T23:17:58Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3835,11 +3835,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 314.05,
+  "price": 313.96,
   "recent": [
    314.05,
    314.05,
-   314.05
+   313.96
   ],
   "shop": "cardtrader",
   "status": "in_stock",
