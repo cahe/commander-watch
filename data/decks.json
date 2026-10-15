@@ -2867,9 +2867,9 @@
   "pid": 322095,
   "price": 222.78,
   "recent": [
-   222.78,
    223.96,
-   223.96
+   223.96,
+   222.78
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2892,9 +2892,9 @@
   "pid": 322098,
   "price": 220.99,
   "recent": [
-   220.99,
    222.13,
-   222.13
+   222.13,
+   220.99
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2941,9 +2941,9 @@
   "pid": 322101,
   "price": 152.57,
   "recent": [
-   155.8,
    152.57,
-   152.57
+   152.57,
+   155.8
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3091,9 +3091,9 @@
   "pid": 322530,
   "price": 221.82,
   "recent": [
-   221.82,
    243.05,
-   243.05
+   243.05,
+   221.82
   ],
   "shop": "cardtrader",
   "status": "in_stock",
