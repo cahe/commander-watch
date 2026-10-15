@@ -516,9 +516,9 @@
    "ctPrice": 194.97,
    "ctUrl": "https://www.cardtrader.com/en/cards/389402",
    "name": "Foundations Starter – Tramplesaurus Rex",
-   "shopName": "Mr. Puggy",
-   "shopPrice": 249.99,
-   "shopUrl": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Foundations-Commander-Decks-Tramplesaurus-Rex/15662"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "foundations-starter-wretched-ranks": {
    "ctPrice": 172.29,
@@ -1105,7 +1105,7 @@
    "shopUrl": "https://dragoneye.pl/magic-the-gathering-secrets-of-strixhaven-lorehold-spirit-p-12368.html"
   },
   "secrets-of-strixhaven-prismari-artistry": {
-   "ctPrice": 163.55,
+   "ctPrice": 163.68,
    "ctUrl": "https://www.cardtrader.com/en/cards/370596",
    "name": "Secrets of Strixhaven Prismari Artistry",
    "shopName": "Frost Magic",
@@ -1409,7 +1409,7 @@
    "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-elven-council/"
   },
   "the-lord-of-the-rings-tales-of-middle-earth-food-and-fel": {
-   "ctPrice": 370.23,
+   "ctPrice": 395.45,
    "ctUrl": "https://www.cardtrader.com/en/cards/246478",
    "name": "The Lord of the Rings Tales of Middle-earth Food and Fellowship",
    "shopName": null,
@@ -1473,7 +1473,7 @@
    "shopUrl": null
   },
   "the-lost-caverns-of-ixalan-veloci-ramp-tor": {
-   "ctPrice": 863.81,
+   "ctPrice": 868.13,
    "ctUrl": "https://www.cardtrader.com/en/cards/261731",
    "name": "The Lost Caverns of Ixalan Veloci-ramp-tor",
    "shopName": null,
