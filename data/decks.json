@@ -482,7 +482,7 @@
   "pid": 151469,
   "price": 702.09,
   "recent": [
-   865.42,
+   702.09,
    702.09,
    702.09
   ],
@@ -506,7 +506,7 @@
   "pid": 151470,
   "price": 242.74,
   "recent": [
-   243.14,
+   242.74,
    242.74,
    242.74
   ],
@@ -607,8 +607,8 @@
   "price": 221.33,
   "recent": [
    423.9,
-   423.9,
-   221.33
+   221.33,
+   423.9
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1135,8 +1135,8 @@
  {
   "baseline": true,
   "box": "data/boxes/211576.webp",
-  "change": "price 1027.86 → 1025.52 zł",
-  "changedAt": "2026-10-14T10:17:39Z",
+  "change": "price 1025.52 → 1029.84 zł",
+  "changedAt": "2026-10-15T00:17:36Z",
   "cheapest": true,
   "deck": "warhammer-40k-tyranid-swarm",
   "firstSeen": "2026-10-08T16:28:38Z",
@@ -1147,9 +1147,9 @@
   "lowLogged": 1027.47,
   "name": "Universes Beyond: Warhammer 40,000 | \"Tyranid Swarm\" Deck",
   "pid": 211576,
-  "price": 1025.52,
+  "price": 1029.84,
   "recent": [
-   1025.52,
+   1029.84,
    1029.84,
    1029.84
   ],
@@ -1714,8 +1714,8 @@
   "price": 370.23,
   "recent": [
    370.23,
-   370.23,
-   395.45
+   395.45,
+   370.23
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1986,8 +1986,8 @@
   "price": 863.81,
   "recent": [
    863.81,
-   863.81,
-   868.13
+   868.13,
+   863.81
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2061,8 +2061,8 @@
   "price": 257.52,
   "recent": [
    320.93,
-   320.93,
-   257.52
+   257.52,
+   320.93
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2086,8 +2086,8 @@
   "price": 256.29,
   "recent": [
    306.47,
-   306.47,
-   256.29
+   256.29,
+   306.47
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2111,8 +2111,8 @@
   "price": 138.99,
   "recent": [
    174.87,
-   174.87,
-   138.99
+   138.99,
+   174.87
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2136,8 +2136,8 @@
   "price": 431.12,
   "recent": [
    496.63,
-   496.63,
-   431.12
+   431.12,
+   496.63
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2468,8 +2468,8 @@
  {
   "baseline": true,
   "box": "data/boxes/279476.webp",
-  "change": "price 736.27 → 735.09 zł",
-  "changedAt": "2026-10-14T14:00:20Z",
+  "change": "price 735.09 → 736.27 zł",
+  "changedAt": "2026-10-15T00:17:36Z",
   "cheapest": true,
   "deck": "outlaws-of-thunder-junction-desert-bloom",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2480,9 +2480,9 @@
   "lowLogged": 445.5,
   "name": "Commander: Outlaws of Thunder Junction | \"Desert Bloom\" Commander Deck",
   "pid": 279476,
-  "price": 735.09,
+  "price": 736.27,
   "recent": [
-   735.09,
+   736.27,
    736.27,
    736.27
   ],
@@ -2618,8 +2618,8 @@
  {
   "baseline": true,
   "box": "data/boxes/280704.webp",
-  "change": "price 435.44 → 435.40 zł",
-  "changedAt": "2026-10-14T14:00:20Z",
+  "change": "price 435.40 → 435.44 zł",
+  "changedAt": "2026-10-15T00:17:36Z",
   "cheapest": true,
   "deck": "bloomburrow-peace-offering",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2630,9 +2630,9 @@
   "lowLogged": 435.79,
   "name": "Commander: Bloomburrow | \"Peace Offering\" Commander Deck",
   "pid": 280704,
-  "price": 435.4,
+  "price": 435.44,
   "recent": [
-   435.4,
+   435.44,
    435.44,
    435.44
   ],
@@ -2682,9 +2682,9 @@
   "pid": 299807,
   "price": 417.92,
   "recent": [
-   437.02,
    435.49,
-   417.92
+   417.92,
+   435.49
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2732,9 +2732,9 @@
   "pid": 299809,
   "price": 396.06,
   "recent": [
-   413.02,
    413.63,
-   396.06
+   396.06,
+   413.63
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2807,8 +2807,8 @@
   "price": 222.86,
   "recent": [
    222.86,
-   222.86,
-   224.04
+   224.04,
+   222.86
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2832,8 +2832,8 @@
   "price": 221.9,
   "recent": [
    221.9,
-   221.9,
-   222.2
+   222.2,
+   221.9
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3279,8 +3279,8 @@
   "price": 163.55,
   "recent": [
    163.55,
-   163.55,
-   163.68
+   163.68,
+   163.55
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3703,8 +3703,8 @@
   "price": 214.12,
   "recent": [
    216.91,
-   216.91,
-   214.12
+   214.12,
+   216.91
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3726,9 +3726,9 @@
   "pid": 400888,
   "price": 314.16,
   "recent": [
-   314.29,
    314.25,
-   314.16
+   314.16,
+   314.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3750,9 +3750,9 @@
   "pid": 400889,
   "price": 314.16,
   "recent": [
-   314.29,
    314.25,
-   314.16
+   314.16,
+   314.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3774,9 +3774,9 @@
   "pid": 400890,
   "price": 314.16,
   "recent": [
-   314.29,
    314.25,
-   314.16
+   314.16,
+   314.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
