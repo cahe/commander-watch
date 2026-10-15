@@ -364,9 +364,9 @@
    "ctPrice": 256.2,
    "ctUrl": "https://www.cardtrader.com/en/cards/265027",
    "name": "Fallout Hail Caesar",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Frost Magic",
+   "shopPrice": 240,
+   "shopUrl": "https://frostmagic.pl/pl/products/universes-beyond-fallout-hail-caesar"
   },
   "fallout-hail-ceasar": {
    "ctPrice": null,
@@ -380,25 +380,25 @@
    "ctPrice": 430.97,
    "ctUrl": "https://www.cardtrader.com/en/cards/265029",
    "name": "Fallout Mutant Menace",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Frost Magic",
+   "shopPrice": 350,
+   "shopUrl": "https://frostmagic.pl/pl/products/universes-beyond-fallout-mutant-menace"
   },
   "fallout-science": {
    "ctPrice": 138.94,
    "ctUrl": "https://www.cardtrader.com/en/cards/265028",
    "name": "Fallout Science",
-   "shopName": "XJoy",
-   "shopPrice": 219.99,
-   "shopUrl": "https://www.xjoy.pl/universes-beyond/19949-mtg-fallout-commander-deck-science.html"
+   "shopName": "Frost Magic",
+   "shopPrice": 140,
+   "shopUrl": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
   },
   "fallout-scrappy-survivors": {
    "ctPrice": 257.43,
    "ctUrl": "https://www.cardtrader.com/en/cards/265026",
    "name": "Fallout Scrappy Survivors",
-   "shopName": "XJoy",
-   "shopPrice": 299.99,
-   "shopUrl": "https://www.xjoy.pl/universes-beyond/19951-mtg-fallout-commander-deck-scrappy-survivors.html"
+   "shopName": "Frost Magic",
+   "shopPrice": 240,
+   "shopUrl": "https://frostmagic.pl/pl/products/universes-beyond-fallout-scrappy-survivors"
   },
   "fallout-set": {
    "ctPrice": null,
@@ -417,7 +417,7 @@
    "shopUrl": null
   },
   "final-fantasy-counter-blitz": {
-   "ctPrice": 222.13,
+   "ctPrice": 220.99,
    "ctUrl": "https://www.cardtrader.com/en/cards/322098",
    "name": "Final Fantasy Counter Blitz",
    "shopName": "Frost Magic",
@@ -433,7 +433,7 @@
    "shopUrl": null
   },
   "final-fantasy-limit-break": {
-   "ctPrice": 223.96,
+   "ctPrice": 222.78,
    "ctUrl": "https://www.cardtrader.com/en/cards/322095",
    "name": "Final Fantasy Limit Break",
    "shopName": "Pan Mysza",
@@ -492,41 +492,41 @@
    "ctPrice": 198.44,
    "ctUrl": "https://www.cardtrader.com/en/cards/389398",
    "name": "Foundations Starter – Calling All Angels",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Wilczek",
+   "shopPrice": 199.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-calling-all-angels.html"
   },
   "foundations-starter-keen-engineering": {
    "ctPrice": 118.8,
    "ctUrl": "https://www.cardtrader.com/en/cards/389399",
    "name": "Foundations Starter – Keen Engineering",
-   "shopName": "XJoy",
-   "shopPrice": 129.99,
-   "shopUrl": "https://www.xjoy.pl/mtg-commander/26814-mtg-foundations-starter-commander-deck-keen-engineering.html"
+   "shopName": "Wilczek",
+   "shopPrice": 119.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-keen-engineering.html"
   },
   "foundations-starter-reign-of-dragons": {
    "ctPrice": 198.62,
    "ctUrl": "https://www.cardtrader.com/en/cards/389401",
    "name": "Foundations Starter – Reign of Dragons",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Wilczek",
+   "shopPrice": 219.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-reign-of-dragons.html"
   },
   "foundations-starter-tramplesaurus-rex": {
    "ctPrice": 194.91,
    "ctUrl": "https://www.cardtrader.com/en/cards/389402",
    "name": "Foundations Starter – Tramplesaurus Rex",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Wilczek",
+   "shopPrice": 229.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-tramplesaurus-rex.html"
   },
   "foundations-starter-wretched-ranks": {
    "ctPrice": 172.23,
    "ctUrl": "https://www.cardtrader.com/en/cards/389400",
    "name": "Foundations Starter – Wretched Ranks",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Wilczek",
+   "shopPrice": 199.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-wretched-ranks.html"
   },
   "ikoria-lair-of-behemoths-arcane-maelstrom": {
    "ctPrice": 655.32,
@@ -1337,7 +1337,7 @@
    "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-jeskai-striker/"
   },
   "tarkir-dragonstorm-mardu-surge": {
-   "ctPrice": 243.05,
+   "ctPrice": 221.82,
    "ctUrl": "https://www.cardtrader.com/en/cards/322530",
    "name": "Tarkir – Dragonstorm Mardu Surge",
    "shopName": "Magic Cafe",

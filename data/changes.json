@@ -3563,5 +3563,185 @@
   "shop": "xjoy",
   "status": "in_stock",
   "url": "https://www.xjoy.pl/universes-beyond/19951-mtg-fallout-commander-deck-scrappy-survivors.html"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "frostmagic-universes-beyond-fallout-mutant-menace",
+  "inStock": 1,
+  "kind": "new",
+  "price": 350,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-mutant-menace"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "best": {
+   "price": 219.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "frostmagic-universes-beyond-fallout-science",
+  "inStock": 3,
+  "kind": "new",
+  "price": 140,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "best": {
+   "price": 299.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "frostmagic-universes-beyond-fallout-scrappy-survivors",
+  "inStock": 2,
+  "kind": "new",
+  "price": 240,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-scrappy-survivors"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "frostmagic-universes-beyond-fallout-hail-caesar",
+  "inStock": 1,
+  "kind": "new",
+  "price": 240,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-hail-caesar"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Tramplesaurus Rex",
+  "group": "cardstore-31684",
+  "id": "wilczek-15690",
+  "inStock": 1,
+  "kind": "new",
+  "price": 229.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-tramplesaurus-rex.html"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Reign of Dragons",
+  "group": "cardstore-31683",
+  "id": "wilczek-15689",
+  "inStock": 1,
+  "kind": "new",
+  "price": 219.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-reign-of-dragons.html"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "wilczek-15688",
+  "inStock": 1,
+  "kind": "new",
+  "price": 199.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-wretched-ranks.html"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "best": {
+   "price": 129.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "wilczek-15687",
+  "inStock": 3,
+  "kind": "new",
+  "price": 119.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-keen-engineering.html"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "wilczek-15686",
+  "inStock": 1,
+  "kind": "new",
+  "price": 199.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-calling-all-angels.html"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "best": {
+   "price": 350,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardtrader-265029",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 430.97,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "cardtrader-265027",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 256.2,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265027"
+ },
+ {
+  "at": "2026-10-15T14:17:59Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "cardtrader-265026",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 257.43,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265026"
  }
 ]
