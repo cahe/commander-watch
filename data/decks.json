@@ -608,7 +608,7 @@
   "recent": [
    221.33,
    221.33,
-   221.33
+   423.9
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1699,8 +1699,8 @@
  {
   "baseline": true,
   "box": "data/boxes/246478.webp",
-  "change": "price 370.23 → 395.45 zł",
-  "changedAt": "2026-10-15T03:17:33Z",
+  "change": "price 395.45 → 370.23 zł",
+  "changedAt": "2026-10-15T04:17:58Z",
   "cheapest": true,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-food-and-fel",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -1711,11 +1711,11 @@
   "lowLogged": 372.27,
   "name": "Commander: The Lord of the Rings | \"Food And Fellowship\" Commander Deck",
   "pid": 246478,
-  "price": 395.45,
+  "price": 370.23,
   "recent": [
    395.45,
    395.45,
-   395.45
+   370.23
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1971,8 +1971,8 @@
  {
   "baseline": true,
   "box": "data/boxes/261731.webp",
-  "change": "price 863.81 → 868.13 zł",
-  "changedAt": "2026-10-15T03:17:33Z",
+  "change": "price 868.13 → 863.81 zł",
+  "changedAt": "2026-10-15T04:17:58Z",
   "cheapest": true,
   "deck": "the-lost-caverns-of-ixalan-veloci-ramp-tor",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -1983,11 +1983,11 @@
   "lowLogged": 864.58,
   "name": "Commander: The Lost Caverns of Ixalan | \"Veloci-Ramp-Tor\" Commander Deck",
   "pid": 261731,
-  "price": 868.13,
+  "price": 863.81,
   "recent": [
    868.13,
    868.13,
-   868.13
+   863.81
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2062,7 +2062,7 @@
   "recent": [
    257.52,
    257.52,
-   257.52
+   320.93
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2087,7 +2087,7 @@
   "recent": [
    256.29,
    256.29,
-   256.29
+   306.47
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2112,7 +2112,7 @@
   "recent": [
    138.99,
    138.99,
-   138.99
+   174.87
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2137,7 +2137,7 @@
   "recent": [
    431.12,
    431.12,
-   431.12
+   496.63
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2684,7 +2684,7 @@
   "recent": [
    417.92,
    417.92,
-   417.92
+   435.49
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2734,7 +2734,7 @@
   "recent": [
    396.06,
    396.06,
-   396.06
+   413.63
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2792,8 +2792,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322095.webp",
-  "change": "price 222.86 → 224.04 zł",
-  "changedAt": "2026-10-15T03:17:33Z",
+  "change": "price 224.04 → 222.86 zł",
+  "changedAt": "2026-10-15T04:17:58Z",
   "cheapest": true,
   "deck": "final-fantasy-limit-break",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2804,11 +2804,11 @@
   "lowLogged": 223.32,
   "name": "FINAL FANTASY: \"Limit Break\" Commander Deck",
   "pid": 322095,
-  "price": 224.04,
+  "price": 222.86,
   "recent": [
    224.04,
    224.04,
-   224.04
+   222.86
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2817,8 +2817,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322098.webp",
-  "change": "price 221.90 → 222.20 zł",
-  "changedAt": "2026-10-15T03:17:33Z",
+  "change": "price 222.20 → 221.90 zł",
+  "changedAt": "2026-10-15T04:17:58Z",
   "cheapest": true,
   "deck": "final-fantasy-counter-blitz",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2829,11 +2829,11 @@
   "lowLogged": 219.34,
   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck",
   "pid": 322098,
-  "price": 222.2,
+  "price": 221.9,
   "recent": [
    222.2,
    222.2,
-   222.2
+   221.9
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3264,8 +3264,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370596.webp",
-  "change": "price 163.55 → 163.68 zł",
-  "changedAt": "2026-10-15T03:17:33Z",
+  "change": "price 163.68 → 163.55 zł",
+  "changedAt": "2026-10-15T04:17:58Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-prismari-artistry",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3276,11 +3276,11 @@
   "lowLogged": 159.73,
   "name": "Commander: Secrets of Strixhaven | \"Prismari Artistry\" Commander Deck",
   "pid": 370596,
-  "price": 163.68,
+  "price": 163.55,
   "recent": [
    163.68,
    163.68,
-   163.68
+   163.55
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3704,7 +3704,7 @@
   "recent": [
    214.12,
    214.12,
-   214.12
+   216.91
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3728,7 +3728,7 @@
   "recent": [
    314.16,
    314.16,
-   314.16
+   314.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3752,7 +3752,7 @@
   "recent": [
    314.16,
    314.16,
-   314.16
+   314.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3776,7 +3776,7 @@
   "recent": [
    314.16,
    314.16,
-   314.16
+   314.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
