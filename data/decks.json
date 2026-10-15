@@ -2136,13 +2136,14 @@
   "box": "data/boxes/265027.webp",
   "change": "price 256.29 → 256.20 zł",
   "changedAt": "2026-10-15T10:17:54Z",
-  "cheapest": false,
+  "cheapest": true,
   "deck": "fallout-hail-caesar",
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardstore-28766",
   "groupName": "Fallout Hail Caesar",
   "id": "cardtrader-265027",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265027/show_fallout-hail-caesar-commander-deck-fallout.jpg",
+  "lowLogged": 256.2,
   "name": "Fallout | \"Hail Caesar\" Commander Deck",
   "pid": 265027,
   "price": 256.2,
@@ -2185,13 +2186,14 @@
   "box": "data/boxes/265029.webp",
   "change": "price 431.12 → 430.97 zł",
   "changedAt": "2026-10-15T10:17:54Z",
-  "cheapest": false,
+  "cheapest": true,
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardstore-28765",
   "groupName": "Fallout Mutant Menace",
   "id": "cardtrader-265029",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265029/show_fallout-mutant-menace-commander-deck-fallout.jpg",
+  "lowLogged": 430.97,
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
   "price": 430.97,
@@ -2867,8 +2869,8 @@
   "pid": 322095,
   "price": 222.78,
   "recent": [
-   223.96,
    222.78,
+   223.96,
    223.96
   ],
   "shop": "cardtrader",
@@ -2892,8 +2894,8 @@
   "pid": 322098,
   "price": 220.99,
   "recent": [
-   222.13,
    220.99,
+   222.13,
    222.13
   ],
   "shop": "cardtrader",
@@ -2941,8 +2943,8 @@
   "pid": 322101,
   "price": 152.57,
   "recent": [
-   152.57,
    155.8,
+   152.57,
    152.57
   ],
   "shop": "cardtrader",
@@ -3091,8 +3093,8 @@
   "pid": 322530,
   "price": 221.82,
   "recent": [
-   243.05,
    221.82,
+   243.05,
    243.05
   ],
   "shop": "cardtrader",
@@ -4630,8 +4632,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-15T14:17:59Z",
+  "change": "sold out",
+  "changedAt": "2026-10-15T23:15:50Z",
   "deck": "fallout-hail-caesar",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-28766",
@@ -4641,13 +4643,13 @@
   "pid": null,
   "price": 240,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-hail-caesar"
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-15T14:17:59Z",
+  "change": "sold out",
+  "changedAt": "2026-10-15T23:15:50Z",
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-28765",
@@ -4657,13 +4659,13 @@
   "pid": null,
   "price": 350,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-mutant-menace"
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-15T14:17:59Z",
+  "change": "sold out",
+  "changedAt": "2026-10-15T23:15:50Z",
   "deck": "fallout-science",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-28768",
@@ -4673,7 +4675,7 @@
   "pid": null,
   "price": 140,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
  },
  {

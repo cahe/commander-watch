@@ -364,9 +364,9 @@
    "ctPrice": 256.2,
    "ctUrl": "https://www.cardtrader.com/en/cards/265027",
    "name": "Fallout Hail Caesar",
-   "shopName": "Frost Magic",
-   "shopPrice": 240,
-   "shopUrl": "https://frostmagic.pl/pl/products/universes-beyond-fallout-hail-caesar"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "fallout-hail-ceasar": {
    "ctPrice": null,
@@ -380,17 +380,17 @@
    "ctPrice": 430.97,
    "ctUrl": "https://www.cardtrader.com/en/cards/265029",
    "name": "Fallout Mutant Menace",
-   "shopName": "Frost Magic",
-   "shopPrice": 350,
-   "shopUrl": "https://frostmagic.pl/pl/products/universes-beyond-fallout-mutant-menace"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "fallout-science": {
    "ctPrice": 138.94,
    "ctUrl": "https://www.cardtrader.com/en/cards/265028",
    "name": "Fallout Science",
-   "shopName": "Frost Magic",
-   "shopPrice": 140,
-   "shopUrl": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
+   "shopName": "XJoy",
+   "shopPrice": 219.99,
+   "shopUrl": "https://www.xjoy.pl/universes-beyond/19949-mtg-fallout-commander-deck-science.html"
   },
   "fallout-scrappy-survivors": {
    "ctPrice": 257.43,

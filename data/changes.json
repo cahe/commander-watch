@@ -3743,5 +3743,71 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-10-15T23:15:50Z",
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "frostmagic-universes-beyond-fallout-hail-caesar",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 240,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-hail-caesar"
+ },
+ {
+  "at": "2026-10-15T23:15:50Z",
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "frostmagic-universes-beyond-fallout-mutant-menace",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 350,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-mutant-menace"
+ },
+ {
+  "at": "2026-10-15T23:15:50Z",
+  "best": {
+   "price": 219.99,
+   "shop": "xjoy"
+  },
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "frostmagic-universes-beyond-fallout-science",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 140,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
+ },
+ {
+  "at": "2026-10-15T23:15:50Z",
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardtrader-265029",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 430.97,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-10-15T23:15:50Z",
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "cardtrader-265027",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 256.2,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265027"
  }
 ]
