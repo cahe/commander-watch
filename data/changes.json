@@ -3852,5 +3852,128 @@
   "shop": "wilczek",
   "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-wretched-ranks.html"
+ },
+ {
+  "at": "2026-10-16T14:17:47Z",
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "cardstore-28766",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 259.0,
+  "shop": "cardstore",
+  "status": "in_stock",
+  "url": "https://cardstore.pl/commander/28766-commander-fallout-hail-caesar--195166228532.html"
+ },
+ {
+  "at": "2026-10-16T14:17:47Z",
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "cardstore-28766",
+  "inStock": 1,
+  "kind": "price",
+  "old": 199.0,
+  "price": 259.0,
+  "shop": "cardstore",
+  "status": "in_stock",
+  "url": "https://cardstore.pl/commander/28766-commander-fallout-hail-caesar--195166228532.html"
+ },
+ {
+  "at": "2026-10-16T14:17:47Z",
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardstore-28765",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 429.0,
+  "shop": "cardstore",
+  "status": "in_stock",
+  "url": "https://cardstore.pl/commander/28765-commander-fallout-mutant-menace--195166228532.html"
+ },
+ {
+  "at": "2026-10-16T14:17:47Z",
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardstore-28765",
+  "inStock": 1,
+  "kind": "price",
+  "old": 229.0,
+  "price": 429.0,
+  "shop": "cardstore",
+  "status": "in_stock",
+  "url": "https://cardstore.pl/commander/28765-commander-fallout-mutant-menace--195166228532.html"
+ },
+ {
+  "at": "2026-10-16T14:17:47Z",
+  "best": {
+   "price": 219.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardstore-28768",
+  "inStock": 3,
+  "kind": "restock",
+  "price": 199.0,
+  "shop": "cardstore",
+  "status": "in_stock",
+  "url": "https://cardstore.pl/commander/28768-commander-fallout-science--195166228532.html"
+ },
+ {
+  "at": "2026-10-16T14:17:47Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "cardstore-28767",
+  "inStock": 3,
+  "kind": "restock",
+  "price": 299.0,
+  "shop": "cardstore",
+  "status": "in_stock",
+  "url": "https://cardstore.pl/commander/28767-commander-fallout-scrappy-survivors--195166228532.html"
+ },
+ {
+  "at": "2026-10-16T14:17:47Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "cardstore-28767",
+  "inStock": 3,
+  "kind": "price",
+  "old": 199.0,
+  "price": 299.0,
+  "shop": "cardstore",
+  "status": "in_stock",
+  "url": "https://cardstore.pl/commander/28767-commander-fallout-scrappy-survivors--195166228532.html"
+ },
+ {
+  "at": "2026-10-16T14:17:47Z",
+  "best": {
+   "price": 429.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardtrader-265029",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 430.67,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
  }
 ]

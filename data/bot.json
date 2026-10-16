@@ -364,9 +364,9 @@
    "ctPrice": 256.03,
    "ctUrl": "https://www.cardtrader.com/en/cards/265027",
    "name": "Fallout Hail Caesar",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Cardstore",
+   "shopPrice": 259.0,
+   "shopUrl": "https://cardstore.pl/commander/28766-commander-fallout-hail-caesar--195166228532.html"
   },
   "fallout-hail-ceasar": {
    "ctPrice": null,
@@ -380,17 +380,17 @@
    "ctPrice": 430.67,
    "ctUrl": "https://www.cardtrader.com/en/cards/265029",
    "name": "Fallout Mutant Menace",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Cardstore",
+   "shopPrice": 429.0,
+   "shopUrl": "https://cardstore.pl/commander/28765-commander-fallout-mutant-menace--195166228532.html"
   },
   "fallout-science": {
    "ctPrice": 138.84,
    "ctUrl": "https://www.cardtrader.com/en/cards/265028",
    "name": "Fallout Science",
-   "shopName": "XJoy",
-   "shopPrice": 219.99,
-   "shopUrl": "https://www.xjoy.pl/universes-beyond/19949-mtg-fallout-commander-deck-science.html"
+   "shopName": "Cardstore",
+   "shopPrice": 199.0,
+   "shopUrl": "https://cardstore.pl/commander/28768-commander-fallout-science--195166228532.html"
   },
   "fallout-scrappy-survivors": {
    "ctPrice": 257.25,
