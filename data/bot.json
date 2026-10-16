@@ -524,9 +524,9 @@
    "ctPrice": 172.11,
    "ctUrl": "https://www.cardtrader.com/en/cards/389400",
    "name": "Foundations Starter – Wretched Ranks",
-   "shopName": "Wilczek",
-   "shopPrice": 199.99,
-   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-wretched-ranks.html"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "ikoria-lair-of-behemoths-arcane-maelstrom": {
    "ctPrice": 654.87,

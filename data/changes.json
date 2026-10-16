@@ -3840,5 +3840,17 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/279379"
+ },
+ {
+  "at": "2026-10-16T11:17:42Z",
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "wilczek-15688",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 199.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-wretched-ranks.html"
  }
 ]
