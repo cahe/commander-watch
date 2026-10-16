@@ -1763,8 +1763,8 @@
  {
   "baseline": true,
   "box": "data/boxes/246478.webp",
-  "change": "price 395.04 → 395.00 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 395.00 → 395.04 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": true,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-food-and-fel",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -1775,9 +1775,9 @@
   "lowLogged": 372.27,
   "name": "Commander: The Lord of the Rings | \"Food And Fellowship\" Commander Deck",
   "pid": 246478,
-  "price": 395.0,
+  "price": 395.04,
   "recent": [
-   395.0,
+   395.04,
    395.04,
    395.04
   ],
@@ -1852,7 +1852,7 @@
   "pid": 246483,
   "price": 328.94,
   "recent": [
-   330.16,
+   328.94,
    328.94,
    328.94
   ],
@@ -2110,21 +2110,20 @@
  {
   "baseline": true,
   "box": "data/boxes/265026.webp",
-  "change": "price 257.25 → 234.15 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
-  "cheapest": true,
+  "change": "price 234.15 → 257.25 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
+  "cheapest": false,
   "deck": "fallout-scrappy-survivors",
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardstore-28767",
   "groupName": "Fallout Scrappy Survivors",
   "id": "cardtrader-265026",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265026/show_fallout-scrappy-survivors-commander-deck-fallout.jpg",
-  "lowLogged": 234.15,
   "name": "Fallout | \"Scrappy Survivors\" Commander Deck",
   "pid": 265026,
-  "price": 234.15,
+  "price": 257.25,
   "recent": [
-   234.15,
+   257.25,
    257.25,
    257.25
   ],
@@ -2135,8 +2134,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265027.webp",
-  "change": "price 256.03 → 235.42 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 235.42 → 256.03 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": true,
   "deck": "fallout-hail-caesar",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2147,9 +2146,9 @@
   "lowLogged": 235.42,
   "name": "Fallout | \"Hail Caesar\" Commander Deck",
   "pid": 265027,
-  "price": 235.42,
+  "price": 256.03,
   "recent": [
-   235.42,
+   256.03,
    256.03,
    256.03
   ],
@@ -2174,7 +2173,7 @@
   "pid": 265028,
   "price": 138.84,
   "recent": [
-   174.69,
+   138.84,
    138.84,
    138.84
   ],
@@ -2531,8 +2530,8 @@
  {
   "baseline": true,
   "box": "data/boxes/279476.webp",
-  "change": "price 735.08 → 734.20 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 734.20 → 735.08 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": true,
   "deck": "outlaws-of-thunder-junction-desert-bloom",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2543,9 +2542,9 @@
   "lowLogged": 445.5,
   "name": "Commander: Outlaws of Thunder Junction | \"Desert Bloom\" Commander Deck",
   "pid": 279476,
-  "price": 734.2,
+  "price": 735.08,
   "recent": [
-   734.2,
+   735.08,
    735.08,
    735.08
   ],
@@ -2681,8 +2680,8 @@
  {
   "baseline": true,
   "box": "data/boxes/280704.webp",
-  "change": "price 434.99 → 434.95 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 434.95 → 434.99 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": true,
   "deck": "bloomburrow-peace-offering",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2693,9 +2692,9 @@
   "lowLogged": 435.79,
   "name": "Commander: Bloomburrow | \"Peace Offering\" Commander Deck",
   "pid": 280704,
-  "price": 434.95,
+  "price": 434.99,
   "recent": [
-   434.95,
+   434.99,
    434.99,
    434.99
   ],
@@ -2869,7 +2868,7 @@
   "pid": 322095,
   "price": 222.63,
   "recent": [
-   223.81,
+   222.63,
    222.63,
    222.63
   ],
@@ -3491,7 +3490,7 @@
   "pid": 370632,
   "price": 141.94,
   "recent": [
-   150.72,
+   141.94,
    141.94,
    141.94
   ],
@@ -3641,7 +3640,7 @@
   "pid": 389398,
   "price": 198.31,
   "recent": [
-   198.79,
+   198.31,
    198.31,
    198.31
   ],
@@ -3752,8 +3751,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389403.webp",
-  "change": "price 213.85 → 213.76 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 213.76 → 213.85 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": false,
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3763,9 +3762,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/389403/show_reality-fracture-commander-deck-commander-reality-fracture.jpg",
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
-  "price": 213.76,
+  "price": 213.85,
   "recent": [
-   213.76,
+   213.85,
    213.85,
    213.85
   ],
@@ -3776,8 +3775,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 313.75 → 313.57 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 313.57 → 313.75 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3787,9 +3786,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 313.57,
+  "price": 313.75,
   "recent": [
-   313.57,
+   313.75,
    313.75,
    313.75
   ],
@@ -3800,8 +3799,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 313.75 → 313.57 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 313.57 → 313.75 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3811,9 +3810,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 313.57,
+  "price": 313.75,
   "recent": [
-   313.57,
+   313.75,
    313.75,
    313.75
   ],
@@ -3824,8 +3823,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 313.75 → 313.57 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 313.57 → 313.75 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3835,9 +3834,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 313.57,
+  "price": 313.75,
   "recent": [
-   313.57,
+   313.75,
    313.75,
    313.75
   ],
@@ -3848,8 +3847,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400891.webp",
-  "change": "price 314.27 → 314.23 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 314.23 → 314.27 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": false,
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3859,9 +3858,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400891/show_400891-star-trek-we-are-the-borg-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"We Are the Borg\" Commander Deck",
   "pid": 400891,
-  "price": 314.23,
+  "price": 314.27,
   "recent": [
-   314.23,
+   314.27,
    314.27,
    314.27
   ],
@@ -3896,8 +3895,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400893.webp",
-  "change": "price 698.53 → 698.49 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 698.49 → 698.53 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": true,
   "deck": "star-trek-landing-party-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -3908,9 +3907,9 @@
   "lowLogged": 699.25,
   "name": "Star Trek | \"Landing Party\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400893,
-  "price": 698.49,
+  "price": 698.53,
   "recent": [
-   698.49,
+   698.53,
    698.53,
    698.53
   ],
@@ -3921,8 +3920,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400894.webp",
-  "change": "price 698.53 → 698.49 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 698.49 → 698.53 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": true,
   "deck": "star-trek-klingon-fury-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -3933,9 +3932,9 @@
   "lowLogged": 699.25,
   "name": "Star Trek | \"Klingon Fury\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400894,
-  "price": 698.49,
+  "price": 698.53,
   "recent": [
-   698.49,
+   698.53,
    698.53,
    698.53
   ],
@@ -3946,8 +3945,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400895.webp",
-  "change": "price 701.15 → 701.11 zł",
-  "changedAt": "2026-10-16T16:17:42Z",
+  "change": "price 701.11 → 701.15 zł",
+  "changedAt": "2026-10-16T21:17:42Z",
   "cheapest": false,
   "deck": "star-trek-we-are-the-borg-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -3957,9 +3956,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400895/show_400895-star-trek-we-are-the-borg-collector-s-edition-commander-deck-collector-s-edition-commander-star-trek.jpg",
   "name": "Star Trek | \"We Are the Borg\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400895,
-  "price": 701.11,
+  "price": 701.15,
   "recent": [
-   701.11,
+   701.15,
    701.15,
    701.15
   ],
