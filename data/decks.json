@@ -2234,8 +2234,8 @@
  {
   "baseline": true,
   "box": "data/boxes/270489.webp",
-  "change": "price 393.18 → 352.24 zł",
-  "changedAt": "2026-10-16T04:17:59Z",
+  "change": "price 352.24 → 393.18 zł",
+  "changedAt": "2026-10-16T09:17:43Z",
   "cheapest": true,
   "deck": "murders-at-karlov-manor-revenant-recon",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -2246,9 +2246,9 @@
   "lowLogged": 352.67,
   "name": "Commander: Murders at Karlov Manor | \"Revenant Recon\" Commander Deck",
   "pid": 270489,
-  "price": 352.24,
+  "price": 393.18,
   "recent": [
-   352.24,
+   393.18,
    393.18,
    393.18
   ],
@@ -2545,7 +2545,7 @@
   "pid": 279476,
   "price": 735.58,
   "recent": [
-   736.02,
+   735.58,
    735.58,
    735.58
   ],
@@ -2820,7 +2820,7 @@
   "price": 131.03,
   "recent": [
    131.07,
-   131.07,
+   131.03,
    131.03
   ],
   "shop": "cardtrader",
@@ -2844,7 +2844,7 @@
   "pid": 314239,
   "price": 176.77,
   "recent": [
-   176.82,
+   176.77,
    176.77,
    176.77
   ],
@@ -3291,9 +3291,9 @@
   "pid": 354096,
   "price": 167.86,
   "recent": [
-   168.08,
    167.86,
-   167.86
+   167.86,
+   168.08
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3652,8 +3652,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389399.webp",
-  "change": "price 118.93 → 118.80 zł",
-  "changedAt": "2026-10-16T04:17:59Z",
+  "change": "price 118.80 → 118.93 zł",
+  "changedAt": "2026-10-16T09:17:43Z",
   "cheapest": true,
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3664,9 +3664,9 @@
   "lowLogged": 110.67,
   "name": "Foundations: \"Keen Engineering\" Commander Deck",
   "pid": 389399,
-  "price": 118.8,
+  "price": 118.93,
   "recent": [
-   118.8,
+   118.93,
    118.93,
    118.93
   ],
@@ -3765,7 +3765,7 @@
   "pid": 389403,
   "price": 214.0,
   "recent": [
-   214.04,
+   214.0,
    214.0,
    214.0
   ],
@@ -3789,7 +3789,7 @@
   "pid": 400888,
   "price": 313.96,
   "recent": [
-   314.05,
+   313.96,
    313.96,
    313.96
   ],
@@ -3813,7 +3813,7 @@
   "pid": 400889,
   "price": 313.96,
   "recent": [
-   314.05,
+   313.96,
    313.96,
    313.96
   ],
@@ -3837,7 +3837,7 @@
   "pid": 400890,
   "price": 313.96,
   "recent": [
-   314.05,
+   313.96,
    313.96,
    313.96
   ],
