@@ -2234,8 +2234,8 @@
  {
   "baseline": true,
   "box": "data/boxes/270489.webp",
-  "change": "price 352.36 → 352.24 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 352.24 → 393.18 zł",
+  "changedAt": "2026-10-16T03:17:56Z",
   "cheapest": true,
   "deck": "murders-at-karlov-manor-revenant-recon",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -2246,9 +2246,9 @@
   "lowLogged": 352.67,
   "name": "Commander: Murders at Karlov Manor | \"Revenant Recon\" Commander Deck",
   "pid": 270489,
-  "price": 352.24,
+  "price": 393.18,
   "recent": [
-   352.24,
+   393.18,
    393.18,
    393.18
   ],
@@ -2545,7 +2545,7 @@
   "pid": 279476,
   "price": 735.58,
   "recent": [
-   736.02,
+   735.58,
    735.58,
    735.58
   ],
@@ -2819,7 +2819,7 @@
   "pid": 314238,
   "price": 131.03,
   "recent": [
-   131.07,
+   131.03,
    131.03,
    131.03
   ],
@@ -2844,7 +2844,7 @@
   "pid": 314239,
   "price": 176.77,
   "recent": [
-   176.82,
+   176.77,
    176.77,
    176.77
   ],
@@ -2869,7 +2869,7 @@
   "pid": 322095,
   "price": 222.78,
   "recent": [
-   223.96,
+   222.78,
    222.78,
    222.78
   ],
@@ -2894,7 +2894,7 @@
   "pid": 322098,
   "price": 220.99,
   "recent": [
-   222.13,
+   220.99,
    220.99,
    220.99
   ],
@@ -2929,8 +2929,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322101.webp",
-  "change": "price 155.80 → 152.57 zł",
-  "changedAt": "2026-10-15T19:17:56Z",
+  "change": "price 152.57 → 155.80 zł",
+  "changedAt": "2026-10-16T03:17:56Z",
   "cheapest": true,
   "deck": "final-fantasy-revival-trance",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2941,9 +2941,9 @@
   "lowLogged": 152.76,
   "name": "FINAL FANTASY: \"Revival Trance\" Commander Deck",
   "pid": 322101,
-  "price": 152.57,
+  "price": 155.8,
   "recent": [
-   152.57,
+   155.8,
    155.8,
    155.8
   ],
@@ -3093,7 +3093,7 @@
   "pid": 322530,
   "price": 221.82,
   "recent": [
-   243.05,
+   221.82,
    221.82,
    221.82
   ],
@@ -3316,8 +3316,8 @@
   "pid": 370595,
   "price": 233.48,
   "recent": [
-   238.29,
    233.48,
+   238.29,
    238.29
   ],
   "shop": "cardtrader",
@@ -3652,8 +3652,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389399.webp",
-  "change": "price 118.84 → 118.80 zł",
-  "changedAt": "2026-10-15T10:17:54Z",
+  "change": "price 118.80 → 118.93 zł",
+  "changedAt": "2026-10-16T03:17:56Z",
   "cheapest": true,
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3664,9 +3664,9 @@
   "lowLogged": 110.67,
   "name": "Foundations: \"Keen Engineering\" Commander Deck",
   "pid": 389399,
-  "price": 118.8,
+  "price": 118.93,
   "recent": [
-   118.8,
+   118.93,
    118.93,
    118.93
   ],
@@ -3765,7 +3765,7 @@
   "pid": 389403,
   "price": 214.0,
   "recent": [
-   214.04,
+   214.0,
    214.0,
    214.0
   ],
@@ -3789,7 +3789,7 @@
   "pid": 400888,
   "price": 313.96,
   "recent": [
-   314.05,
+   313.96,
    313.96,
    313.96
   ],
@@ -3813,7 +3813,7 @@
   "pid": 400889,
   "price": 313.96,
   "recent": [
-   314.05,
+   313.96,
    313.96,
    313.96
   ],
@@ -3837,7 +3837,7 @@
   "pid": 400890,
   "price": 313.96,
   "recent": [
-   314.05,
+   313.96,
    313.96,
    313.96
   ],
