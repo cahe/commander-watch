@@ -4022,5 +4022,21 @@
   "shop": "wilczek",
   "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-reign-of-dragons.html"
+ },
+ {
+  "at": "2026-10-16T19:17:45Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "deck": "Final Fantasy Scions & Spellcraft",
+  "group": "cardstore-29975",
+  "id": "time4magic-464",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 299.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Scions-Spellcraft/464"
  }
 ]

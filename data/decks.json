@@ -1778,8 +1778,8 @@
   "price": 395.0,
   "recent": [
    395.0,
-   395.0,
-   395.04
+   395.04,
+   395.0
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1853,8 +1853,8 @@
   "price": 328.94,
   "recent": [
    330.16,
-   330.16,
-   328.94
+   328.94,
+   330.16
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2125,8 +2125,8 @@
   "price": 234.15,
   "recent": [
    234.15,
-   234.15,
-   257.25
+   257.25,
+   234.15
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2150,8 +2150,8 @@
   "price": 235.42,
   "recent": [
    235.42,
-   235.42,
-   256.03
+   256.03,
+   235.42
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2175,8 +2175,8 @@
   "price": 138.84,
   "recent": [
    174.69,
-   174.69,
-   138.84
+   138.84,
+   174.69
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2546,8 +2546,8 @@
   "price": 734.2,
   "recent": [
    734.2,
-   734.2,
-   735.08
+   735.08,
+   734.2
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2696,8 +2696,8 @@
   "price": 434.95,
   "recent": [
    434.95,
-   434.95,
-   434.99
+   434.99,
+   434.95
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2870,8 +2870,8 @@
   "price": 222.63,
   "recent": [
    223.81,
-   223.81,
-   222.63
+   222.63,
+   223.81
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3492,8 +3492,8 @@
   "price": 141.94,
   "recent": [
    150.72,
-   150.72,
-   141.94
+   141.94,
+   150.72
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3642,8 +3642,8 @@
   "price": 198.31,
   "recent": [
    198.79,
-   198.79,
-   198.31
+   198.31,
+   198.79
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3766,8 +3766,8 @@
   "price": 213.76,
   "recent": [
    213.76,
-   213.76,
-   213.85
+   213.85,
+   213.76
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3790,8 +3790,8 @@
   "price": 313.57,
   "recent": [
    313.57,
-   313.57,
-   313.75
+   313.75,
+   313.57
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3814,8 +3814,8 @@
   "price": 313.57,
   "recent": [
    313.57,
-   313.57,
-   313.75
+   313.75,
+   313.57
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3838,8 +3838,8 @@
   "price": 313.57,
   "recent": [
    313.57,
-   313.57,
-   313.75
+   313.75,
+   313.57
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3862,8 +3862,8 @@
   "price": 314.23,
   "recent": [
    314.23,
-   314.23,
-   314.27
+   314.27,
+   314.23
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3911,8 +3911,8 @@
   "price": 698.49,
   "recent": [
    698.49,
-   698.49,
-   698.53
+   698.53,
+   698.49
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3936,8 +3936,8 @@
   "price": 698.49,
   "recent": [
    698.49,
-   698.49,
-   698.53
+   698.53,
+   698.49
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3960,8 +3960,8 @@
   "price": 701.11,
   "recent": [
    701.11,
-   701.11,
-   701.15
+   701.15,
+   701.11
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -8428,8 +8428,8 @@
  },
  {
   "baseline": true,
-  "change": "price 249.00 → 299.00 zł",
-  "changedAt": "2026-10-05T13:17:38Z",
+  "change": "sold out",
+  "changedAt": "2026-10-16T19:17:45Z",
   "deck": "final-fantasy-scions-spellcraft",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-29975",
@@ -8439,7 +8439,7 @@
   "pid": 464,
   "price": 299.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Scions-Spellcraft/464"
  },
  {
