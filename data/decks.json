@@ -2234,8 +2234,8 @@
  {
   "baseline": true,
   "box": "data/boxes/270489.webp",
-  "change": "price 352.24 → 393.18 zł",
-  "changedAt": "2026-10-16T03:17:56Z",
+  "change": "price 393.18 → 352.24 zł",
+  "changedAt": "2026-10-16T04:17:59Z",
   "cheapest": true,
   "deck": "murders-at-karlov-manor-revenant-recon",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -2246,11 +2246,11 @@
   "lowLogged": 352.67,
   "name": "Commander: Murders at Karlov Manor | \"Revenant Recon\" Commander Deck",
   "pid": 270489,
-  "price": 393.18,
+  "price": 352.24,
   "recent": [
    393.18,
    393.18,
-   393.18
+   352.24
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2547,7 +2547,7 @@
   "recent": [
    735.58,
    735.58,
-   735.58
+   736.02
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2821,7 +2821,7 @@
   "recent": [
    131.03,
    131.03,
-   131.03
+   131.07
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2846,7 +2846,7 @@
   "recent": [
    176.77,
    176.77,
-   176.77
+   176.82
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3302,8 +3302,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370595.webp",
-  "change": "price 238.29 → 233.48 zł",
-  "changedAt": "2026-10-15T23:17:58Z",
+  "change": "price 233.48 → 238.29 zł",
+  "changedAt": "2026-10-16T04:17:59Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-silverquill-influence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3314,9 +3314,9 @@
   "lowLogged": 218.38,
   "name": "Commander: Secrets of Strixhaven | \"Silverquill Influence\" Commander Deck",
   "pid": 370595,
-  "price": 233.48,
+  "price": 238.29,
   "recent": [
-   233.48,
+   238.29,
    238.29,
    238.29
   ],
@@ -3652,8 +3652,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389399.webp",
-  "change": "price 118.80 → 118.93 zł",
-  "changedAt": "2026-10-16T03:17:56Z",
+  "change": "price 118.93 → 118.80 zł",
+  "changedAt": "2026-10-16T04:17:59Z",
   "cheapest": true,
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3664,11 +3664,11 @@
   "lowLogged": 110.67,
   "name": "Foundations: \"Keen Engineering\" Commander Deck",
   "pid": 389399,
-  "price": 118.93,
+  "price": 118.8,
   "recent": [
    118.93,
    118.93,
-   118.93
+   118.8
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3767,7 +3767,7 @@
   "recent": [
    214.0,
    214.0,
-   214.0
+   214.04
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3791,7 +3791,7 @@
   "recent": [
    313.96,
    313.96,
-   313.96
+   314.05
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3815,7 +3815,7 @@
   "recent": [
    313.96,
    313.96,
-   313.96
+   314.05
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3839,7 +3839,7 @@
   "recent": [
    313.96,
    313.96,
-   313.96
+   314.05
   ],
   "shop": "cardtrader",
   "status": "in_stock",
