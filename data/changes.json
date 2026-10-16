@@ -3809,5 +3809,36 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265027"
+ },
+ {
+  "at": "2026-10-16T10:17:42Z",
+  "best": {
+   "price": 1099.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "id": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "inStock": 3,
+  "kind": "preorder",
+  "price": 1029,
+  "shop": "frostmagic",
+  "status": "preorder",
+  "url": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
+ },
+ {
+  "at": "2026-10-16T10:17:42Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Eldrazi Incursion",
+  "group": "cardtrader-279379",
+  "id": "cardtrader-279379",
+  "inStock": 0,
+  "kind": "price",
+  "old": 637.54,
+  "price": 624.7,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279379"
  }
 ]
