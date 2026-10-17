@@ -4157,5 +4157,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-10-17T06:08:29Z",
+  "best": {
+   "price": 1099.99,
+   "shop": "magiccafe"
+  },
+  "deck": "Modern Horizons 3",
+  "group": "magiccafe-20526",
+  "id": "mrpuggy-13862",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 999.99,
+  "shop": "mrpuggy",
+  "status": "out_of_stock",
+  "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Modern-Horizons-III-Commander-Decks-Display-4-decks/13862"
  }
 ]
