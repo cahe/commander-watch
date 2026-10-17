@@ -1777,7 +1777,7 @@
   "pid": 246478,
   "price": 395.0,
   "recent": [
-   395.04,
+   395.0,
    395.0,
    395.0
   ],
@@ -1838,21 +1838,20 @@
  {
   "baseline": true,
   "box": "data/boxes/246483.webp",
-  "change": "price 329.17 → 328.94 zł",
-  "changedAt": "2026-10-16T10:17:42Z",
-  "cheapest": true,
+  "change": "price 328.94 → 330.16 zł",
+  "changedAt": "2026-10-17T00:17:44Z",
+  "cheapest": false,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-riders-of-ro",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardtrader-246483",
   "groupName": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
   "id": "cardtrader-246483",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/246483/show_commander-the-lord-of-the-rings-riders-of-rohan-commander-deck-commander-the-lord-of-the-rings-tales-of-middle-earth.jpg",
-  "lowLogged": 329.28,
   "name": "Commander: The Lord of the Rings | \"Riders Of Rohan\" Commander Deck",
   "pid": 246483,
-  "price": 328.94,
+  "price": 330.16,
   "recent": [
-   328.94,
+   330.16,
    330.16,
    330.16
   ],
@@ -2124,7 +2123,7 @@
   "pid": 265026,
   "price": 234.15,
   "recent": [
-   257.25,
+   234.15,
    234.15,
    234.15
   ],
@@ -2149,7 +2148,7 @@
   "pid": 265027,
   "price": 235.42,
   "recent": [
-   256.03,
+   235.42,
    235.42,
    235.42
   ],
@@ -2160,8 +2159,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265028.webp",
-  "change": "price 138.94 → 138.84 zł",
-  "changedAt": "2026-10-16T10:17:42Z",
+  "change": "price 138.84 → 174.69 zł",
+  "changedAt": "2026-10-17T00:17:44Z",
   "cheapest": true,
   "deck": "fallout-science",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2172,9 +2171,9 @@
   "lowLogged": 138.99,
   "name": "Fallout | \"Science!\" Commander Deck",
   "pid": 265028,
-  "price": 138.84,
+  "price": 174.69,
   "recent": [
-   138.84,
+   174.69,
    174.69,
    174.69
   ],
@@ -2545,7 +2544,7 @@
   "pid": 279476,
   "price": 734.2,
   "recent": [
-   735.08,
+   734.2,
    734.2,
    734.2
   ],
@@ -2695,7 +2694,7 @@
   "pid": 280704,
   "price": 434.95,
   "recent": [
-   434.99,
+   434.95,
    434.95,
    434.95
   ],
@@ -2855,8 +2854,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322095.webp",
-  "change": "price 222.78 → 222.63 zł",
-  "changedAt": "2026-10-16T10:17:42Z",
+  "change": "price 222.63 → 223.81 zł",
+  "changedAt": "2026-10-17T00:17:44Z",
   "cheapest": true,
   "deck": "final-fantasy-limit-break",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2867,9 +2866,9 @@
   "lowLogged": 223.32,
   "name": "FINAL FANTASY: \"Limit Break\" Commander Deck",
   "pid": 322095,
-  "price": 222.63,
+  "price": 223.81,
   "recent": [
-   222.63,
+   223.81,
    223.81,
    223.81
   ],
@@ -3477,21 +3476,20 @@
  {
   "baseline": true,
   "box": "data/boxes/370632.webp",
-  "change": "price 142.04 → 141.94 zł",
-  "changedAt": "2026-10-16T10:17:42Z",
-  "cheapest": true,
+  "change": "price 141.94 → 150.72 zł",
+  "changedAt": "2026-10-17T00:17:44Z",
+  "cheapest": false,
   "deck": "marvel-super-heroes-fantastic-four",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31274",
   "groupName": "Marvel Super Heroes – Fantastic Four",
   "id": "cardtrader-370632",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/370632/show_marvel-super-heroes-the-fantastic-four-commander-deck-commander-marvel-super-heroes.jpg",
-  "lowLogged": 137.88,
   "name": "Marvel Super Heroes | \"The Fantastic Four\" Commander Deck",
   "pid": 370632,
-  "price": 141.94,
+  "price": 150.72,
   "recent": [
-   141.94,
+   150.72,
    150.72,
    150.72
   ],
@@ -3627,8 +3625,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389398.webp",
-  "change": "price 198.44 → 198.31 zł",
-  "changedAt": "2026-10-16T10:17:42Z",
+  "change": "price 198.31 → 198.79 zł",
+  "changedAt": "2026-10-17T00:17:44Z",
   "cheapest": true,
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3639,9 +3637,9 @@
   "lowLogged": 172.21,
   "name": "Foundations: \"Calling All Angels\" Commander Deck",
   "pid": 389398,
-  "price": 198.31,
+  "price": 198.79,
   "recent": [
-   198.31,
+   198.79,
    198.79,
    198.79
   ],
@@ -3765,7 +3763,7 @@
   "pid": 389403,
   "price": 213.76,
   "recent": [
-   213.85,
+   213.76,
    213.76,
    213.76
   ],
@@ -3789,7 +3787,7 @@
   "pid": 400888,
   "price": 313.57,
   "recent": [
-   313.75,
+   313.57,
    313.57,
    313.57
   ],
@@ -3813,7 +3811,7 @@
   "pid": 400889,
   "price": 313.57,
   "recent": [
-   313.75,
+   313.57,
    313.57,
    313.57
   ],
@@ -3837,7 +3835,7 @@
   "pid": 400890,
   "price": 313.57,
   "recent": [
-   313.75,
+   313.57,
    313.57,
    313.57
   ],
@@ -3861,7 +3859,7 @@
   "pid": 400891,
   "price": 314.23,
   "recent": [
-   314.27,
+   314.23,
    314.23,
    314.23
   ],
@@ -3910,7 +3908,7 @@
   "pid": 400893,
   "price": 698.49,
   "recent": [
-   698.53,
+   698.49,
    698.49,
    698.49
   ],
@@ -3935,7 +3933,7 @@
   "pid": 400894,
   "price": 698.49,
   "recent": [
-   698.53,
+   698.49,
    698.49,
    698.49
   ],
@@ -3959,7 +3957,7 @@
   "pid": 400895,
   "price": 701.11,
   "recent": [
-   701.15,
+   701.11,
    701.11,
    701.11
   ],
