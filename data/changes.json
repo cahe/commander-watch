@@ -4173,5 +4173,22 @@
   "shop": "mrpuggy",
   "status": "out_of_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Modern-Horizons-III-Commander-Decks-Display-4-decks/13862"
+ },
+ {
+  "at": "2026-10-17T07:17:43Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "cardtrader-265026",
+  "inStock": 3,
+  "kind": "cheapest",
+  "price": 234.15,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265026"
  }
 ]
