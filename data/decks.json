@@ -1779,7 +1779,7 @@
   "recent": [
    395.0,
    395.0,
-   395.0
+   395.04
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1838,22 +1838,23 @@
  {
   "baseline": true,
   "box": "data/boxes/246483.webp",
-  "change": "price 328.94 → 330.16 zł",
-  "changedAt": "2026-10-17T00:17:44Z",
-  "cheapest": false,
+  "change": "price 330.16 → 328.94 zł",
+  "changedAt": "2026-10-17T02:17:42Z",
+  "cheapest": true,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-riders-of-ro",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardtrader-246483",
   "groupName": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
   "id": "cardtrader-246483",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/246483/show_commander-the-lord-of-the-rings-riders-of-rohan-commander-deck-commander-the-lord-of-the-rings-tales-of-middle-earth.jpg",
+  "lowLogged": 328.94,
   "name": "Commander: The Lord of the Rings | \"Riders Of Rohan\" Commander Deck",
   "pid": 246483,
-  "price": 330.16,
+  "price": 328.94,
   "recent": [
    330.16,
    330.16,
-   330.16
+   328.94
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2125,7 +2126,7 @@
   "recent": [
    234.15,
    234.15,
-   234.15
+   257.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2150,7 +2151,7 @@
   "recent": [
    235.42,
    235.42,
-   235.42
+   256.03
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2159,8 +2160,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265028.webp",
-  "change": "price 138.84 → 174.69 zł",
-  "changedAt": "2026-10-17T00:17:44Z",
+  "change": "price 174.69 → 138.84 zł",
+  "changedAt": "2026-10-17T02:17:42Z",
   "cheapest": true,
   "deck": "fallout-science",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2171,11 +2172,11 @@
   "lowLogged": 138.99,
   "name": "Fallout | \"Science!\" Commander Deck",
   "pid": 265028,
-  "price": 174.69,
+  "price": 138.84,
   "recent": [
    174.69,
    174.69,
-   174.69
+   138.84
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2546,7 +2547,7 @@
   "recent": [
    734.2,
    734.2,
-   734.2
+   735.08
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2696,7 +2697,7 @@
   "recent": [
    434.95,
    434.95,
-   434.95
+   434.99
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2854,8 +2855,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322095.webp",
-  "change": "price 222.63 → 223.81 zł",
-  "changedAt": "2026-10-17T00:17:44Z",
+  "change": "price 223.81 → 222.63 zł",
+  "changedAt": "2026-10-17T02:17:42Z",
   "cheapest": true,
   "deck": "final-fantasy-limit-break",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2866,11 +2867,11 @@
   "lowLogged": 223.32,
   "name": "FINAL FANTASY: \"Limit Break\" Commander Deck",
   "pid": 322095,
-  "price": 223.81,
+  "price": 222.63,
   "recent": [
    223.81,
    223.81,
-   223.81
+   222.63
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3476,22 +3477,23 @@
  {
   "baseline": true,
   "box": "data/boxes/370632.webp",
-  "change": "price 141.94 → 150.72 zł",
-  "changedAt": "2026-10-17T00:17:44Z",
-  "cheapest": false,
+  "change": "price 150.72 → 141.94 zł",
+  "changedAt": "2026-10-17T02:17:42Z",
+  "cheapest": true,
   "deck": "marvel-super-heroes-fantastic-four",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31274",
   "groupName": "Marvel Super Heroes – Fantastic Four",
   "id": "cardtrader-370632",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/370632/show_marvel-super-heroes-the-fantastic-four-commander-deck-commander-marvel-super-heroes.jpg",
+  "lowLogged": 141.94,
   "name": "Marvel Super Heroes | \"The Fantastic Four\" Commander Deck",
   "pid": 370632,
-  "price": 150.72,
+  "price": 141.94,
   "recent": [
    150.72,
    150.72,
-   150.72
+   141.94
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3625,8 +3627,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389398.webp",
-  "change": "price 198.31 → 198.79 zł",
-  "changedAt": "2026-10-17T00:17:44Z",
+  "change": "price 198.79 → 198.31 zł",
+  "changedAt": "2026-10-17T02:17:42Z",
   "cheapest": true,
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3637,11 +3639,11 @@
   "lowLogged": 172.21,
   "name": "Foundations: \"Calling All Angels\" Commander Deck",
   "pid": 389398,
-  "price": 198.79,
+  "price": 198.31,
   "recent": [
    198.79,
    198.79,
-   198.79
+   198.31
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3765,7 +3767,7 @@
   "recent": [
    213.76,
    213.76,
-   213.76
+   213.85
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3789,7 +3791,7 @@
   "recent": [
    313.57,
    313.57,
-   313.57
+   313.75
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3813,7 +3815,7 @@
   "recent": [
    313.57,
    313.57,
-   313.57
+   313.75
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3837,7 +3839,7 @@
   "recent": [
    313.57,
    313.57,
-   313.57
+   313.75
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3861,7 +3863,7 @@
   "recent": [
    314.23,
    314.23,
-   314.23
+   314.27
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3910,7 +3912,7 @@
   "recent": [
    698.49,
    698.49,
-   698.49
+   698.53
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3935,7 +3937,7 @@
   "recent": [
    698.49,
    698.49,
-   698.49
+   698.53
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3959,7 +3961,7 @@
   "recent": [
    701.11,
    701.11,
-   701.11
+   701.15
   ],
   "shop": "cardtrader",
   "status": "in_stock",
