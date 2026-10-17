@@ -4190,5 +4190,23 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-10-17T08:17:42Z",
+  "best": {
+   "price": 168.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Final Fantasy Revival Trance",
+  "group": "cardstore-29972",
+  "id": "cardtrader-322101",
+  "inStock": 8,
+  "kind": "price",
+  "old": 152.76,
+  "price": 148.01,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322101"
  }
 ]
