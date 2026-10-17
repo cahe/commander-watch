@@ -1337,7 +1337,7 @@
   "price": 115.27,
   "recent": [
    115.27,
-   115.27,
+   132.21,
    132.21
   ],
   "shop": "cardtrader",
@@ -1484,7 +1484,7 @@
   "price": 347.72,
   "recent": [
    347.72,
-   347.72,
+   351.65,
    351.65
   ],
   "shop": "cardtrader",
@@ -1679,7 +1679,7 @@
   "price": 1312.62,
   "recent": [
    1312.62,
-   1312.62,
+   1356.29,
    1356.29
   ],
   "shop": "cardtrader",
@@ -1728,7 +1728,7 @@
   "price": 1094.32,
   "recent": [
    1094.32,
-   1094.32,
+   null,
    null
   ],
   "shop": "cardtrader",
@@ -1852,7 +1852,7 @@
   "price": 330.16,
   "recent": [
    330.16,
-   330.16,
+   342.91,
    342.91
   ],
   "shop": "cardtrader",
@@ -2124,7 +2124,7 @@
   "price": 234.15,
   "recent": [
    234.15,
-   234.15,
+   321.17,
    321.17
   ],
   "shop": "cardtrader",
@@ -2149,7 +2149,7 @@
   "price": 235.42,
   "recent": [
    235.42,
-   235.42,
+   256.03,
    256.03
   ],
   "shop": "cardtrader",
@@ -2174,7 +2174,7 @@
   "price": 174.69,
   "recent": [
    174.69,
-   174.69,
+   176.7,
    176.7
   ],
   "shop": "cardtrader",
@@ -2869,7 +2869,7 @@
   "price": 222.63,
   "recent": [
    223.81,
-   223.81,
+   222.63,
    222.63
   ],
   "shop": "cardtrader",
@@ -2918,7 +2918,7 @@
   "price": 239.17,
   "recent": [
    242.71,
-   242.71,
+   239.17,
    239.17
   ],
   "shop": "cardtrader",
@@ -2943,8 +2943,8 @@
   "price": 148.01,
   "recent": [
    155.7,
-   155.7,
-   148.01
+   148.01,
+   152.46
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2993,7 +2993,7 @@
   "price": 525.15,
   "recent": [
    525.15,
-   525.15,
+   545.41,
    545.41
   ],
   "shop": "cardtrader",
@@ -3018,7 +3018,7 @@
   "price": 612.21,
   "recent": [
    612.21,
-   612.21,
+   613.79,
    613.79
   ],
   "shop": "cardtrader",
@@ -3143,7 +3143,7 @@
   "price": 194.9,
   "recent": [
    194.9,
-   194.9,
+   199.23,
    199.23
   ],
   "shop": "cardtrader",
@@ -3241,7 +3241,7 @@
   "price": 199.23,
   "recent": [
    199.23,
-   199.23,
+   199.27,
    199.27
   ],
   "shop": "cardtrader",
@@ -3291,7 +3291,7 @@
   "price": 167.75,
   "recent": [
    167.75,
-   167.75,
+   167.96,
    167.96
   ],
   "shop": "cardtrader",
@@ -3625,8 +3625,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389398.webp",
-  "change": "price 198.31 → 198.79 zł",
-  "changedAt": "2026-10-17T09:17:45Z",
+  "change": "price 198.79 → 198.74 zł",
+  "changedAt": "2026-10-17T17:17:40Z",
   "cheapest": true,
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3637,11 +3637,11 @@
   "lowLogged": 172.21,
   "name": "Foundations: \"Calling All Angels\" Commander Deck",
   "pid": 389398,
-  "price": 198.79,
+  "price": 198.74,
   "recent": [
    198.79,
    198.79,
-   198.79
+   198.74
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3650,8 +3650,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389399.webp",
-  "change": "price 118.93 → 118.85 zł",
-  "changedAt": "2026-10-16T10:17:42Z",
+  "change": "price 118.85 → 118.76 zł",
+  "changedAt": "2026-10-17T17:17:40Z",
   "cheapest": true,
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3662,11 +3662,11 @@
   "lowLogged": 110.67,
   "name": "Foundations: \"Keen Engineering\" Commander Deck",
   "pid": 389399,
-  "price": 118.85,
+  "price": 118.76,
   "recent": [
    118.85,
    118.85,
-   118.85
+   118.76
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3774,8 +3774,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 313.57 → 313.49 zł",
-  "changedAt": "2026-10-17T16:17:40Z",
+  "change": "price 313.49 → 313.44 zł",
+  "changedAt": "2026-10-17T17:17:40Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3785,11 +3785,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 313.49,
+  "price": 313.44,
   "recent": [
    313.57,
-   313.57,
-   313.49
+   313.49,
+   313.44
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3798,8 +3798,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 313.57 → 313.49 zł",
-  "changedAt": "2026-10-17T16:17:40Z",
+  "change": "price 313.49 → 313.44 zł",
+  "changedAt": "2026-10-17T17:17:40Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3809,11 +3809,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 313.49,
+  "price": 313.44,
   "recent": [
    313.57,
-   313.57,
-   313.49
+   313.49,
+   313.44
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3822,8 +3822,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 313.57 → 313.49 zł",
-  "changedAt": "2026-10-17T16:17:40Z",
+  "change": "price 313.49 → 313.44 zł",
+  "changedAt": "2026-10-17T17:17:40Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3833,11 +3833,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 313.49,
+  "price": 313.44,
   "recent": [
    313.57,
-   313.57,
-   313.49
+   313.49,
+   313.44
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3860,7 +3860,7 @@
   "price": 314.18,
   "recent": [
    314.23,
-   314.23,
+   314.18,
    314.18
   ],
   "shop": "cardtrader",
