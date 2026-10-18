@@ -2175,7 +2175,7 @@
   "recent": [
    176.7,
    176.7,
-   176.7
+   196.87
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2184,8 +2184,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265029.webp",
-  "change": "price 430.97 → 430.67 zł",
-  "changedAt": "2026-10-16T10:17:42Z",
+  "change": "price 430.67 → 430.63 zł",
+  "changedAt": "2026-10-18T13:17:39Z",
   "cheapest": false,
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2195,11 +2195,11 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265029/show_fallout-mutant-menace-commander-deck-fallout.jpg",
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
-  "price": 430.67,
+  "price": 430.63,
   "recent": [
    430.67,
    430.67,
-   430.67
+   430.63
   ],
   "shop": "cardtrader",
   "status": "in_stock",
