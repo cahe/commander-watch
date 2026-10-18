@@ -492,9 +492,9 @@
    "ctPrice": 198.74,
    "ctUrl": "https://www.cardtrader.com/en/cards/389398",
    "name": "Foundations Starter – Calling All Angels",
-   "shopName": "Wilczek",
-   "shopPrice": 199.99,
-   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-calling-all-angels.html"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "foundations-starter-keen-engineering": {
    "ctPrice": 118.76,

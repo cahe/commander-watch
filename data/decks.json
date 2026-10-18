@@ -1728,9 +1728,9 @@
   "pid": 238393,
   "price": 1007.0,
   "recent": [
-   null,
    1007.0,
-   null
+   null,
+   1007.0
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2173,9 +2173,9 @@
   "pid": 265028,
   "price": 176.7,
   "recent": [
-   176.7,
    196.87,
-   176.7
+   176.7,
+   196.87
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2197,9 +2197,9 @@
   "pid": 265029,
   "price": 430.63,
   "recent": [
-   430.67,
    430.63,
-   430.67
+   430.67,
+   430.63
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2544,9 +2544,9 @@
   "pid": 279476,
   "price": 731.32,
   "recent": [
-   734.2,
    731.32,
-   734.2
+   734.2,
+   731.32
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3290,9 +3290,9 @@
   "pid": 354096,
   "price": 167.96,
   "recent": [
-   167.96,
    176.48,
-   167.96
+   167.96,
+   176.48
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3787,9 +3787,9 @@
   "pid": 400888,
   "price": 313.35,
   "recent": [
-   313.44,
    313.35,
-   313.44
+   313.44,
+   313.35
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3811,9 +3811,9 @@
   "pid": 400889,
   "price": 313.35,
   "recent": [
-   313.44,
    313.35,
-   313.44
+   313.44,
+   313.35
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3835,9 +3835,9 @@
   "pid": 400890,
   "price": 313.35,
   "recent": [
-   313.44,
    313.35,
-   313.44
+   313.44,
+   313.35
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3859,9 +3859,9 @@
   "pid": 400891,
   "price": 314.14,
   "recent": [
-   314.18,
    314.14,
-   314.18
+   314.18,
+   314.14
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -9662,8 +9662,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-15T14:17:59Z",
+  "change": "sold out",
+  "changedAt": "2026-10-18T16:17:42Z",
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-31679",
@@ -9673,7 +9673,7 @@
   "pid": 15686,
   "price": 199.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-calling-all-angels.html"
  },
  {
