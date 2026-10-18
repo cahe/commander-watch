@@ -1728,7 +1728,7 @@
   "pid": 238393,
   "price": 1007.0,
   "recent": [
-   null,
+   1007.0,
    1007.0,
    1007.0
   ],
@@ -2544,7 +2544,7 @@
   "pid": 279476,
   "price": 731.32,
   "recent": [
-   734.2,
+   731.32,
    731.32,
    731.32
   ],
@@ -2928,8 +2928,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322101.webp",
-  "change": "price 155.70 → 148.01 zł",
-  "changedAt": "2026-10-17T16:17:40Z",
+  "change": "price 148.01 → 152.46 zł",
+  "changedAt": "2026-10-18T11:17:39Z",
   "cheapest": true,
   "deck": "final-fantasy-revival-trance",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2940,9 +2940,9 @@
   "lowLogged": 148.01,
   "name": "FINAL FANTASY: \"Revival Trance\" Commander Deck",
   "pid": 322101,
-  "price": 148.01,
+  "price": 152.46,
   "recent": [
-   148.01,
+   152.46,
    152.46,
    152.46
   ],
@@ -3276,8 +3276,8 @@
  {
   "baseline": true,
   "box": "data/boxes/354096.webp",
-  "change": "price 167.75 → 167.96 zł",
-  "changedAt": "2026-10-17T18:17:42Z",
+  "change": "price 167.96 → 176.48 zł",
+  "changedAt": "2026-10-18T11:17:39Z",
   "cheapest": true,
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3288,9 +3288,9 @@
   "lowLogged": 168.29,
   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
   "pid": 354096,
-  "price": 167.96,
+  "price": 176.48,
   "recent": [
-   167.96,
+   176.48,
    176.48,
    176.48
   ],
@@ -3639,7 +3639,7 @@
   "pid": 389398,
   "price": 198.74,
   "recent": [
-   198.79,
+   198.74,
    198.74,
    198.74
   ],
@@ -3664,7 +3664,7 @@
   "pid": 389399,
   "price": 118.76,
   "recent": [
-   118.85,
+   118.76,
    118.76,
    118.76
   ],
@@ -3787,7 +3787,7 @@
   "pid": 400888,
   "price": 313.35,
   "recent": [
-   313.49,
+   313.35,
    313.35,
    313.35
   ],
@@ -3811,7 +3811,7 @@
   "pid": 400889,
   "price": 313.35,
   "recent": [
-   313.49,
+   313.35,
    313.35,
    313.35
   ],
@@ -3835,7 +3835,7 @@
   "pid": 400890,
   "price": 313.35,
   "recent": [
-   313.49,
+   313.35,
    313.35,
    313.35
   ],
@@ -3859,7 +3859,7 @@
   "pid": 400891,
   "price": 314.14,
   "recent": [
-   314.18,
+   314.14,
    314.14,
    314.14
   ],
