@@ -1730,7 +1730,7 @@
   "recent": [
    1007.0,
    1007.0,
-   1007.0
+   null
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2174,8 +2174,8 @@
   "price": 176.7,
   "recent": [
    176.7,
-   176.7,
-   196.87
+   196.87,
+   176.7
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2198,8 +2198,8 @@
   "price": 430.63,
   "recent": [
    430.67,
-   430.67,
-   430.63
+   430.63,
+   430.67
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2546,7 +2546,7 @@
   "recent": [
    731.32,
    731.32,
-   731.32
+   734.2
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3276,8 +3276,8 @@
  {
   "baseline": true,
   "box": "data/boxes/354096.webp",
-  "change": "price 167.96 → 176.48 zł",
-  "changedAt": "2026-10-18T11:17:39Z",
+  "change": "price 176.48 → 167.96 zł",
+  "changedAt": "2026-10-18T14:08:45Z",
   "cheapest": true,
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3288,11 +3288,11 @@
   "lowLogged": 168.29,
   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
   "pid": 354096,
-  "price": 176.48,
+  "price": 167.96,
   "recent": [
    176.48,
    176.48,
-   176.48
+   167.96
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3789,7 +3789,7 @@
   "recent": [
    313.35,
    313.35,
-   313.35
+   313.44
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3813,7 +3813,7 @@
   "recent": [
    313.35,
    313.35,
-   313.35
+   313.44
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3837,7 +3837,7 @@
   "recent": [
    313.35,
    313.35,
-   313.35
+   313.44
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3861,7 +3861,7 @@
   "recent": [
    314.14,
    314.14,
-   314.14
+   314.18
   ],
   "shop": "cardtrader",
   "status": "in_stock",
