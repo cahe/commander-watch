@@ -1704,8 +1704,8 @@
   "price": 417.14,
   "recent": [
    417.14,
-   417.14,
-   439.19
+   439.19,
+   417.14
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1728,7 +1728,7 @@
   "pid": 238393,
   "price": 1007.0,
   "recent": [
-   null,
+   1007.0,
    1007.0,
    1007.0
   ],
@@ -2159,8 +2159,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265028.webp",
-  "change": "price 174.69 → 176.70 zł",
-  "changedAt": "2026-10-17T18:17:42Z",
+  "change": "price 176.70 → 196.87 zł",
+  "changedAt": "2026-10-18T18:17:42Z",
   "cheapest": true,
   "deck": "fallout-science",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2171,9 +2171,9 @@
   "lowLogged": 138.99,
   "name": "Fallout | \"Science!\" Commander Deck",
   "pid": 265028,
-  "price": 176.7,
+  "price": 196.87,
   "recent": [
-   176.7,
+   196.87,
    196.87,
    196.87
   ],
@@ -2197,7 +2197,7 @@
   "pid": 265029,
   "price": 430.63,
   "recent": [
-   430.67,
+   430.63,
    430.63,
    430.63
   ],
@@ -2248,8 +2248,8 @@
   "price": 351.99,
   "recent": [
    392.91,
-   392.91,
-   351.99
+   351.99,
+   392.91
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2544,7 +2544,7 @@
   "pid": 279476,
   "price": 731.32,
   "recent": [
-   734.2,
+   731.32,
    731.32,
    731.32
   ],
@@ -3241,8 +3241,8 @@
   "price": 199.23,
   "recent": [
    199.27,
-   199.27,
-   199.23
+   199.23,
+   199.27
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3276,8 +3276,8 @@
  {
   "baseline": true,
   "box": "data/boxes/354096.webp",
-  "change": "price 176.48 → 167.96 zł",
-  "changedAt": "2026-10-18T14:08:45Z",
+  "change": "price 167.96 → 176.48 zł",
+  "changedAt": "2026-10-18T18:17:42Z",
   "cheapest": true,
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3288,9 +3288,9 @@
   "lowLogged": 168.29,
   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
   "pid": 354096,
-  "price": 167.96,
+  "price": 176.48,
   "recent": [
-   167.96,
+   176.48,
    176.48,
    176.48
   ],
@@ -3690,8 +3690,8 @@
   "price": 172.07,
   "recent": [
    172.11,
-   172.11,
-   172.07
+   172.07,
+   172.11
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3764,8 +3764,8 @@
   "price": 213.72,
   "recent": [
    213.76,
-   213.76,
-   213.72
+   213.72,
+   213.76
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3787,9 +3787,9 @@
   "pid": 400888,
   "price": 305.58,
   "recent": [
-   313.44,
    313.35,
-   305.58
+   305.58,
+   313.35
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3811,9 +3811,9 @@
   "pid": 400889,
   "price": 305.58,
   "recent": [
-   313.44,
    313.35,
-   305.58
+   305.58,
+   313.35
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3835,9 +3835,9 @@
   "pid": 400890,
   "price": 305.58,
   "recent": [
-   313.44,
    313.35,
-   305.58
+   305.58,
+   313.35
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3859,9 +3859,9 @@
   "pid": 400891,
   "price": 305.58,
   "recent": [
-   314.18,
    314.14,
-   305.58
+   305.58,
+   314.14
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3885,8 +3885,8 @@
   "price": 698.53,
   "recent": [
    701.11,
-   701.11,
-   698.53
+   698.53,
+   701.11
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3910,8 +3910,8 @@
   "price": 698.1,
   "recent": [
    698.49,
-   698.49,
-   698.1
+   698.1,
+   698.49
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3935,8 +3935,8 @@
   "price": 698.1,
   "recent": [
    698.49,
-   698.49,
-   698.1
+   698.1,
+   698.49
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3960,8 +3960,8 @@
   "price": 698.53,
   "recent": [
    701.11,
-   701.11,
-   698.53
+   698.53,
+   701.11
   ],
   "shop": "cardtrader",
   "status": "in_stock",
