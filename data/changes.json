@@ -4338,5 +4338,39 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400895"
+ },
+ {
+  "at": "2026-10-18T20:17:39Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 701.11,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
+ },
+ {
+  "at": "2026-10-18T20:17:39Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – We Are The Borg",
+  "group": "cardtrader-400895",
+  "id": "cardtrader-400895",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 701.11,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400895"
  }
 ]
