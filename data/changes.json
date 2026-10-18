@@ -4275,5 +4275,22 @@
   "shop": "frostmagic",
   "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-scrappy-survivors"
+ },
+ {
+  "at": "2026-10-18T09:17:42Z",
+  "best": {
+   "price": 1075.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Masters – Planeswalker Party",
+  "group": "cardtrader-238393",
+  "id": "cardtrader-238393",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 1007.0,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/238393"
  }
 ]

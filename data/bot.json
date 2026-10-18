@@ -881,8 +881,8 @@
    "shopUrl": "https://magiccafe.eu/product/commander-masters-commander-deck-enduring-enchantments/"
   },
   "masters-planeswalker-party": {
-   "ctPrice": null,
-   "ctUrl": null,
+   "ctPrice": 1007.0,
+   "ctUrl": "https://www.cardtrader.com/en/cards/238393",
    "name": "Masters – Planeswalker Party",
    "shopName": "Magic Cafe",
    "shopPrice": 1075.99,
@@ -1025,7 +1025,7 @@
    "shopUrl": null
   },
   "outlaws-of-thunder-junction-desert-bloom": {
-   "ctPrice": 734.2,
+   "ctPrice": 731.32,
    "ctUrl": "https://www.cardtrader.com/en/cards/279476",
    "name": "Outlaws of Thunder Junction – Desert Bloom",
    "shopName": null,
@@ -1153,7 +1153,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-set.html"
   },
   "star-trek-federation-fleet": {
-   "ctPrice": 313.44,
+   "ctPrice": 313.35,
    "ctUrl": "https://www.cardtrader.com/en/cards/400888",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Time4Magic",
@@ -1169,7 +1169,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
   },
   "star-trek-klingon-fury": {
-   "ctPrice": 313.44,
+   "ctPrice": 313.35,
    "ctUrl": "https://www.cardtrader.com/en/cards/400890",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Time4Magic",
@@ -1185,7 +1185,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-klingon-fury.html"
   },
   "star-trek-landing-party": {
-   "ctPrice": 313.44,
+   "ctPrice": 313.35,
    "ctUrl": "https://www.cardtrader.com/en/cards/400889",
    "name": "Star Trek – Landing Party",
    "shopName": "Time4Magic",
@@ -1209,7 +1209,7 @@
    "shopUrl": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
   },
   "star-trek-we-are-the-borg": {
-   "ctPrice": 314.18,
+   "ctPrice": 314.14,
    "ctUrl": "https://www.cardtrader.com/en/cards/400891",
    "name": "Star Trek – We Are the Borg",
    "shopName": "Time4Magic",
