@@ -1703,9 +1703,9 @@
   "pid": 238391,
   "price": 417.14,
   "recent": [
-   439.19,
    417.14,
-   417.14
+   417.14,
+   439.19
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2247,9 +2247,9 @@
   "pid": 270489,
   "price": 351.99,
   "recent": [
-   351.99,
    392.91,
-   392.91
+   392.91,
+   351.99
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3240,9 +3240,9 @@
   "pid": 352407,
   "price": 199.23,
   "recent": [
-   199.23,
    199.27,
-   199.27
+   199.27,
+   199.23
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3478,13 +3478,14 @@
   "box": "data/boxes/370632.webp",
   "change": "price 141.94 → 150.72 zł",
   "changedAt": "2026-10-17T09:17:45Z",
-  "cheapest": false,
+  "cheapest": true,
   "deck": "marvel-super-heroes-fantastic-four",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31274",
   "groupName": "Marvel Super Heroes – Fantastic Four",
   "id": "cardtrader-370632",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/370632/show_marvel-super-heroes-the-fantastic-four-commander-deck-commander-marvel-super-heroes.jpg",
+  "lowLogged": 150.72,
   "name": "Marvel Super Heroes | \"The Fantastic Four\" Commander Deck",
   "pid": 370632,
   "price": 150.72,
@@ -3689,9 +3690,9 @@
   "pid": 389400,
   "price": 172.07,
   "recent": [
-   172.07,
    172.11,
-   172.11
+   172.11,
+   172.07
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3763,9 +3764,9 @@
   "pid": 389403,
   "price": 213.72,
   "recent": [
-   213.72,
    213.76,
-   213.76
+   213.76,
+   213.72
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3787,9 +3788,9 @@
   "pid": 400888,
   "price": 305.58,
   "recent": [
-   305.58,
    313.35,
-   313.35
+   313.35,
+   305.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3811,9 +3812,9 @@
   "pid": 400889,
   "price": 305.58,
   "recent": [
-   305.58,
    313.35,
-   313.35
+   313.35,
+   305.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3835,9 +3836,9 @@
   "pid": 400890,
   "price": 305.58,
   "recent": [
-   305.58,
    313.35,
-   313.35
+   313.35,
+   305.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3859,9 +3860,9 @@
   "pid": 400891,
   "price": 305.58,
   "recent": [
-   305.58,
    314.14,
-   314.14
+   314.14,
+   305.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3884,9 +3885,9 @@
   "pid": 400892,
   "price": 698.53,
   "recent": [
-   698.53,
    701.11,
-   701.11
+   701.11,
+   698.53
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3909,9 +3910,9 @@
   "pid": 400893,
   "price": 698.1,
   "recent": [
-   698.1,
    698.49,
-   698.49
+   698.49,
+   698.1
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3934,9 +3935,9 @@
   "pid": 400894,
   "price": 698.1,
   "recent": [
-   698.1,
    698.49,
-   698.49
+   698.49,
+   698.1
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3959,9 +3960,9 @@
   "pid": 400895,
   "price": 698.53,
   "recent": [
-   698.53,
    701.11,
-   701.11
+   701.11,
+   698.53
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -4504,8 +4505,8 @@
  },
  {
   "baseline": true,
-  "change": "price 240.00 → 199.00 zł",
-  "changedAt": "2026-10-12T09:18:00Z",
+  "change": "price 199.00 → 240.00 zł",
+  "changedAt": "2026-10-19T00:17:39Z",
   "deck": "marvel-super-heroes-avengers-assemble",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31272",
@@ -4513,7 +4514,7 @@
   "id": "frostmagic-mtg-marvel-super-heroes-avengers-assemble-commander-deck",
   "name": "MtG - Marvel Super Heroes - Avengers Assemble Commander Deck",
   "pid": null,
-  "price": 199,
+  "price": 240,
   "shop": "frostmagic",
   "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-avengers-assemble-commander-deck"
@@ -4536,8 +4537,8 @@
  },
  {
   "baseline": true,
-  "change": "price 290.00 → 249.00 zł",
-  "changedAt": "2026-10-12T09:18:00Z",
+  "change": "price 249.00 → 290.00 zł",
+  "changedAt": "2026-10-19T00:17:39Z",
   "deck": "marvel-super-heroes-doom-prevails",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31275",
@@ -4545,15 +4546,15 @@
   "id": "frostmagic-mtg-marvel-super-heroes-doom-prevails-commander-deck",
   "name": "MtG - Marvel Super Heroes - Doom Prevails Commander Deck",
   "pid": null,
-  "price": 249,
+  "price": 290,
   "shop": "frostmagic",
   "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-doom-prevails-commander-deck"
  },
  {
   "baseline": true,
-  "change": "back in stock",
-  "changedAt": "2026-10-12T09:18:00Z",
+  "change": "price 149.00 → 220.00 zł",
+  "changedAt": "2026-10-19T00:17:39Z",
   "deck": "marvel-super-heroes-fantastic-four",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31274",
@@ -4561,15 +4562,15 @@
   "id": "frostmagic-mtg-marvel-super-heroes-the-fantastic-four-commander-deck",
   "name": "MtG - Marvel Super Heroes - The Fantastic Four Commander Deck",
   "pid": null,
-  "price": 149,
+  "price": 220,
   "shop": "frostmagic",
   "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-the-fantastic-four-commander-deck"
  },
  {
   "baseline": true,
-  "change": "price 230.00 → 169.00 zł",
-  "changedAt": "2026-10-12T09:18:00Z",
+  "change": "price 169.00 → 230.00 zł",
+  "changedAt": "2026-10-19T00:17:39Z",
   "deck": "marvel-super-heroes-wakanda-forever",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31273",
@@ -4577,7 +4578,7 @@
   "id": "frostmagic-mtg-marvel-super-heroes-wakanda-forever-commander-deck",
   "name": "MtG - Marvel Super Heroes - Wakanda Forever Commander Deck",
   "pid": null,
-  "price": 169,
+  "price": 230,
   "shop": "frostmagic",
   "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-wakanda-forever-commander-deck"
