@@ -4563,5 +4563,21 @@
   "shop": "wargamer",
   "status": "preorder",
   "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18317-mtg-st-cd-ff.html"
+ },
+ {
+  "at": "2026-10-19T18:18:07Z",
+  "best": {
+   "price": 190,
+   "shop": "frostmagic"
+  },
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "time4magic-978",
+  "inStock": 5,
+  "kind": "soldout",
+  "price": 239.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/mtg-reality-fracture-multiverse-reforged-commander-deck"
  }
 ]

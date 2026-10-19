@@ -8801,6 +8801,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-10-19T18:18:07Z",
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31606",
@@ -8810,7 +8812,7 @@
   "pid": 978,
   "price": 239.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-reality-fracture-multiverse-reforged-commander-deck"
  },
  {
