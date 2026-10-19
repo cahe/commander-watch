@@ -4495,5 +4495,73 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370632"
+ },
+ {
+  "at": "2026-10-19T08:17:45Z",
+  "best": {
+   "price": 299.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardtrader-400891",
+  "id": "wargamer-18320",
+  "inStock": 3,
+  "kind": "new",
+  "price": 299.0,
+  "shop": "wargamer",
+  "status": "preorder",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18320-mtg-st-cd-watb.html"
+ },
+ {
+  "at": "2026-10-19T08:17:45Z",
+  "best": {
+   "price": 299.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardtrader-400890",
+  "id": "wargamer-18319",
+  "inStock": 3,
+  "kind": "new",
+  "price": 299.0,
+  "shop": "wargamer",
+  "status": "preorder",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18319-mtg-st-cd-kf.html"
+ },
+ {
+  "at": "2026-10-19T08:17:45Z",
+  "best": {
+   "price": 299.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardtrader-400889",
+  "id": "wargamer-18318",
+  "inStock": 3,
+  "kind": "new",
+  "price": 299.0,
+  "shop": "wargamer",
+  "status": "preorder",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18318-mtg-st-cd-lp.html"
+ },
+ {
+  "at": "2026-10-19T08:17:45Z",
+  "best": {
+   "price": 299.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400888",
+  "id": "wargamer-18317",
+  "inStock": 3,
+  "kind": "new",
+  "price": 299.0,
+  "shop": "wargamer",
+  "status": "preorder",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18317-mtg-st-cd-ff.html"
  }
 ]

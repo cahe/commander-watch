@@ -1703,9 +1703,9 @@
   "pid": 238391,
   "price": 417.14,
   "recent": [
-   439.19,
    417.14,
-   417.14
+   417.14,
+   439.19
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2247,9 +2247,9 @@
   "pid": 270489,
   "price": 351.99,
   "recent": [
-   351.99,
    392.91,
-   392.91
+   392.91,
+   351.99
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3240,9 +3240,9 @@
   "pid": 352407,
   "price": 199.23,
   "recent": [
-   199.23,
    199.27,
-   199.27
+   199.27,
+   199.23
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3690,9 +3690,9 @@
   "pid": 389400,
   "price": 172.07,
   "recent": [
-   172.07,
    172.11,
-   172.11
+   172.11,
+   172.07
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3764,9 +3764,9 @@
   "pid": 389403,
   "price": 213.72,
   "recent": [
-   213.72,
    213.76,
-   213.76
+   213.76,
+   213.72
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3788,9 +3788,9 @@
   "pid": 400888,
   "price": 305.58,
   "recent": [
-   305.58,
    313.35,
-   313.35
+   313.35,
+   305.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3812,9 +3812,9 @@
   "pid": 400889,
   "price": 305.58,
   "recent": [
-   305.58,
    313.35,
-   313.35
+   313.35,
+   305.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3836,9 +3836,9 @@
   "pid": 400890,
   "price": 305.58,
   "recent": [
-   305.58,
    313.35,
-   313.35
+   313.35,
+   305.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3860,9 +3860,9 @@
   "pid": 400891,
   "price": 305.58,
   "recent": [
-   305.58,
    314.14,
-   314.14
+   314.14,
+   305.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3885,9 +3885,9 @@
   "pid": 400892,
   "price": 698.53,
   "recent": [
-   698.53,
    701.11,
-   701.11
+   701.11,
+   698.53
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3910,9 +3910,9 @@
   "pid": 400893,
   "price": 698.1,
   "recent": [
-   698.1,
    698.49,
-   698.49
+   698.49,
+   698.1
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3935,9 +3935,9 @@
   "pid": 400894,
   "price": 698.1,
   "recent": [
-   698.1,
    698.49,
-   698.49
+   698.49,
+   698.1
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3960,9 +3960,9 @@
   "pid": 400895,
   "price": 698.53,
   "recent": [
-   698.53,
    701.11,
-   701.11
+   701.11,
+   698.53
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -9134,6 +9134,70 @@
   "shop": "wargamer",
   "status": "in_stock",
   "url": "https://sklep.wargamer.pl/pl/produkty-premium/17426-mtg-msh-ccd-aa.html"
+ },
+ {
+  "baseline": false,
+  "change": "listed",
+  "changedAt": "2026-10-19T08:17:45Z",
+  "deck": "star-trek-federation-fleet",
+  "firstSeen": "2026-10-19T08:17:45Z",
+  "group": "cardtrader-400888",
+  "groupName": "Star Trek – Federation Fleet",
+  "id": "wargamer-18317",
+  "name": "Star Trek: Commander Deck - Federation Fleet",
+  "pid": 18317,
+  "price": 299.0,
+  "shop": "wargamer",
+  "status": "preorder",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18317-mtg-st-cd-ff.html"
+ },
+ {
+  "baseline": false,
+  "change": "listed",
+  "changedAt": "2026-10-19T08:17:45Z",
+  "deck": "star-trek-landing-party",
+  "firstSeen": "2026-10-19T08:17:45Z",
+  "group": "cardtrader-400889",
+  "groupName": "Star Trek – Landing Party",
+  "id": "wargamer-18318",
+  "name": "Star Trek: Commander Deck - Landing Party",
+  "pid": 18318,
+  "price": 299.0,
+  "shop": "wargamer",
+  "status": "preorder",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18318-mtg-st-cd-lp.html"
+ },
+ {
+  "baseline": false,
+  "change": "listed",
+  "changedAt": "2026-10-19T08:17:45Z",
+  "deck": "star-trek-klingon-fury",
+  "firstSeen": "2026-10-19T08:17:45Z",
+  "group": "cardtrader-400890",
+  "groupName": "Star Trek – Klingon Fury",
+  "id": "wargamer-18319",
+  "name": "Star Trek: Commander Deck - Klingon Fury",
+  "pid": 18319,
+  "price": 299.0,
+  "shop": "wargamer",
+  "status": "preorder",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18319-mtg-st-cd-kf.html"
+ },
+ {
+  "baseline": false,
+  "change": "listed",
+  "changedAt": "2026-10-19T08:17:45Z",
+  "deck": "star-trek-we-are-the-borg",
+  "firstSeen": "2026-10-19T08:17:45Z",
+  "group": "cardtrader-400891",
+  "groupName": "Star Trek – We Are the Borg",
+  "id": "wargamer-18320",
+  "name": "Star Trek: Commander Deck - We Are the Borg",
+  "pid": 18320,
+  "price": 299.0,
+  "shop": "wargamer",
+  "status": "preorder",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18320-mtg-st-cd-watb.html"
  },
  {
   "baseline": true,
