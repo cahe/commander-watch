@@ -3896,8 +3896,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400893.webp",
-  "change": "price 698.10 → 699.14 zł",
-  "changedAt": "2026-10-19T11:17:59Z",
+  "change": "price 699.14 → 698.75 zł",
+  "changedAt": "2026-10-19T13:18:00Z",
   "cheapest": true,
   "deck": "star-trek-landing-party-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -3908,11 +3908,11 @@
   "lowLogged": 699.25,
   "name": "Star Trek | \"Landing Party\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400893,
-  "price": 699.14,
+  "price": 698.75,
   "recent": [
    699.14,
    699.14,
-   699.14
+   698.75
   ],
   "shop": "cardtrader",
   "status": "in_stock",
