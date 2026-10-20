@@ -487,23 +487,20 @@ def scan_cardtrader(s):
         return [], [str(e)]
     boxes = box_pictures(s, blueprints)
     out, errors = [], []
-    limit = RateLimit(8)  # the marketplace endpoint allows 10 requests per second
-
-    def one(bp):
-        limit.wait()
-        offers = cardtrader_get("/marketplace/products", blueprint_id=bp["id"]).get(str(bp["id"]), [])
+    for bp in blueprints:  # one at a time: cardtrader_get keeps to one call per second
+        try:
+            offers = cardtrader_get("/marketplace/products", blueprint_id=bp["id"]).get(str(bp["id"]), [])
+        except CardTraderRefused as e:
+            errors.append(f"{e}; stopped after it")
+            break
+        except Exception as e:
+            errors.append(str(e))
+            continue
         best = cheapest_zero_offer(offers, rates)
-        return {"pid": bp["id"], "name": bp["name"], "price": best,
-                "box": boxes.get(bp["id"]),
-                "url": f"https://www.cardtrader.com/en/cards/{bp['id']}",
-                "status": "in_stock" if best is not None else "out_of_stock"}
-
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        for fut in [pool.submit(one, bp) for bp in blueprints]:
-            try:
-                out.append(fut.result())
-            except Exception as e:
-                errors.append(str(e))
+        out.append({"pid": bp["id"], "name": bp["name"], "price": best,
+                    "box": boxes.get(bp["id"]),
+                    "url": f"https://www.cardtrader.com/en/cards/{bp['id']}",
+                    "status": "in_stock" if best is not None else "out_of_stock"})
     return out, errors
 
 
@@ -566,18 +563,13 @@ def cardtrader_blueprints() -> list[dict]:
         exps = [e for e in cardtrader_get("/expansions")
                 if e.get("game_id") == 1 and CARDTRADER_EXPANSION.search(str(e.get("name", "")))
                 and "promo" not in str(e.get("name", "")).lower()]
-        limit = RateLimit(10)  # well inside the 200 requests per 10 seconds global limit
-
-        def precons(e):
-            limit.wait()
-            # The version tells otherwise identically named entries apart (e.g. a Collector's Edition).
-            return [{"id": b["id"], "name": " ".join(f"{b['name']} {b.get('version') or ''}".split()),
-                     "version": b.get("version"), "expansion": e.get("code"), "image": blueprint_image(b)}
-                    for b in cardtrader_get("/blueprints/export", expansion_id=e["id"])
-                    if b.get("category_id") == CARDTRADER_PRECON_CATEGORY]
-
-        with ThreadPoolExecutor(max_workers=6) as pool:
-            blueprints = [b for found in pool.map(precons, exps) for b in found]
+        # One expansion at a time: cardtrader_get keeps to one call per second.
+        # The version tells otherwise identically named entries apart (e.g. a Collector's Edition).
+        blueprints = [{"id": b["id"], "name": " ".join(f"{b['name']} {b.get('version') or ''}".split()),
+                       "version": b.get("version"), "expansion": e.get("code"), "image": blueprint_image(b)}
+                      for e in exps
+                      for b in cardtrader_get("/blueprints/export", expansion_id=e["id"])
+                      if b.get("category_id") == CARDTRADER_PRECON_CATEGORY]
     except Exception:
         if cache.get("blueprints"):
             return cache["blueprints"]
@@ -878,16 +870,25 @@ def save(path: Path, data) -> None:
 # --------------------------------------------------------------------- CardTrader
 
 CARDTRADER_API = "https://api.cardtrader.com/api/v2"
+CARDTRADER_LIMIT = RateLimit(1)  # CardTrader's API allows one call per second, every endpoint together
+
+
+class CardTraderRefused(RuntimeError):
+    """401/403: the token is refused, so every further call would be too."""
 
 
 def cardtrader_get(path: str, **params):
     token = os.environ.get("CARDTRADER_TOKEN", "").strip()
     if not token:
         raise RuntimeError("CARDTRADER_TOKEN is not set")
+    CARDTRADER_LIMIT.wait()
     r = requests.get(f"{CARDTRADER_API}{path}", params=params, timeout=60,
-                     headers={"Authorization": f"Bearer {token}", "Accept": "application/json"})
+                     headers={"Authorization": f"Bearer {token}", "Accept": "application/json",
+                              "User-Agent": "commander-watch (+https://github.com/cahe/commander-watch)"})
+    if r.status_code in (401, 403):
+        raise CardTraderRefused(f"HTTP {r.status_code} for {path}")  # never echo the request headers
     if r.status_code != 200:
-        raise RuntimeError(f"HTTP {r.status_code} for {path}")  # never echo the request headers
+        raise RuntimeError(f"HTTP {r.status_code} for {path}")
     return r.json()
 
 
