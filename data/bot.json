@@ -492,41 +492,41 @@
    "ctPrice": 198.93,
    "ctUrl": "https://www.cardtrader.com/en/cards/389398",
    "name": "Foundations Starter – Calling All Angels",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Wilczek",
+   "shopPrice": 249.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-calling-all-angels.html"
   },
   "foundations-starter-keen-engineering": {
    "ctPrice": 118.87,
    "ctUrl": "https://www.cardtrader.com/en/cards/389399",
    "name": "Foundations Starter – Keen Engineering",
-   "shopName": "XJoy",
+   "shopName": "Wilczek",
    "shopPrice": 129.99,
-   "shopUrl": "https://www.xjoy.pl/mtg-commander/26814-mtg-foundations-starter-commander-deck-keen-engineering.html"
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-keen-engineering.html"
   },
   "foundations-starter-reign-of-dragons": {
    "ctPrice": 198.67,
    "ctUrl": "https://www.cardtrader.com/en/cards/389401",
    "name": "Foundations Starter – Reign of Dragons",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Wilczek",
+   "shopPrice": 229.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-reign-of-dragons.html"
   },
   "foundations-starter-tramplesaurus-rex": {
    "ctPrice": 194.95,
    "ctUrl": "https://www.cardtrader.com/en/cards/389402",
    "name": "Foundations Starter – Tramplesaurus Rex",
    "shopName": "Wilczek",
-   "shopPrice": 229.99,
+   "shopPrice": 269.99,
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-tramplesaurus-rex.html"
   },
   "foundations-starter-wretched-ranks": {
    "ctPrice": 172.23,
    "ctUrl": "https://www.cardtrader.com/en/cards/389400",
    "name": "Foundations Starter – Wretched Ranks",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Wilczek",
+   "shopPrice": 209.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-wretched-ranks.html"
   },
   "ikoria-lair-of-behemoths-arcane-maelstrom": {
    "ctPrice": 655.49,
