@@ -4741,5 +4741,22 @@
   "shop": "wilczek",
   "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-calling-all-angels.html"
+ },
+ {
+  "at": "2026-10-20T12:17:58Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardtrader-265028",
+  "inStock": 4,
+  "kind": "notcheapest",
+  "price": 197.05,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
  }
 ]
