@@ -886,7 +886,10 @@ def cardtrader_get(path: str, **params):
                      headers={"Authorization": f"Bearer {token}", "Accept": "application/json",
                               "User-Agent": "commander-watch (+https://github.com/cahe/commander-watch)"})
     if r.status_code in (401, 403):
-        raise CardTraderRefused(f"HTTP {r.status_code} for {path}")  # never echo the request headers
+        # What refused it: CardTrader's own JSON error or a firewall page. Never echo the request headers.
+        title = re.search(r"<title>(.*?)</title>", r.text, re.I | re.S)
+        said = " ".join((title.group(1) if title else r.text).split())[:300]
+        raise CardTraderRefused(f"HTTP {r.status_code} for {path} (server: {r.headers.get('server', '?')}): {said}")
     if r.status_code != 200:
         raise RuntimeError(f"HTTP {r.status_code} for {path}")
     return r.json()
