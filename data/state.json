@@ -6,7 +6,7 @@
    "maxId": 31684
   },
   "cardtrader": {
-   "failStreak": 14,
+   "failStreak": 15,
    "maxId": 400895
   },
   "dragoneye": {
@@ -14,7 +14,7 @@
    "maxId": 12585
   },
   "frostmagic": {
-   "failStreak": 0,
+   "failStreak": 1,
    "maxId": 0
   },
   "magiccafe": {
@@ -42,7 +42,7 @@
    "maxId": 15690
   },
   "xjoy": {
-   "failStreak": 0,
+   "failStreak": 1,
    "maxId": 26817
   }
  }
