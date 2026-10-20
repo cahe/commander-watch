@@ -9747,8 +9747,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-15T14:17:59Z",
+  "change": "sold out",
+  "changedAt": "2026-10-20T10:18:00Z",
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-31681",
@@ -9758,7 +9758,7 @@
   "pid": 15687,
   "price": 119.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-keen-engineering.html"
  },
  {
