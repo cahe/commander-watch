@@ -536,6 +536,7 @@ def test_vanished_listing_is_sold_out():
 
 
 def test_cardtrader_rolling_low():
+    check.CT_WINDOW = 3  # the smoothing itself, as with hourly scans
     tmp = Path(tempfile.mkdtemp())
     (tmp / "data").mkdir()
     check.DECKS_FILE, check.STATE_FILE = tmp / "data" / "decks.json", tmp / "data" / "state.json"
@@ -561,6 +562,8 @@ def test_cardtrader_rolling_low():
     assert kinds == ["notcheapest"]  # one entry when it's really gone, none for the blips
     # A real rise shows once the cheaper offer has been gone for the whole window.
     assert [p for p, _ in run([400.0, 450.0, 450.0, 450.0])] == [400.0, 400.0, 400.0, 450.0]
+    check.CT_WINDOW = 1  # daily scans: each scan's own offer
+    assert run([400.0, 450.0, None]) == [(400.0, "in_stock"), (450.0, "in_stock"), (450.0, "out_of_stock")]
 
 
 if __name__ == "__main__":
