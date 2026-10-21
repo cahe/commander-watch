@@ -21,6 +21,7 @@ import unicodedata
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
 from functools import lru_cache
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, unquote
@@ -480,11 +481,11 @@ def scan_cardtrader(s):
     """
     if not os.environ.get("CARDTRADER_TOKEN", "").strip():
         return None  # skipped, not failed
-    # At most once a day: CardTrader's Cloudflare challenges GitHub's runners, and less traffic may lift it.
+    # Three times a day (CARDTRADER_HOURS), to keep our traffic low after Cloudflare once blocked GitHub's runners.
     # Failed attempts count too. Skipped checks keep the last prices.
     cache = load(CARDTRADER_CACHE, {})
     now = datetime.now(timezone.utc)
-    if cache.get("scanned") and now - datetime.fromisoformat(cache["scanned"]) < CARDTRADER_EVERY:
+    if not cardtrader_due(cache.get("scanned"), now):
         return None
     save(CARDTRADER_CACHE, {**cache, "scanned": now.isoformat(timespec="seconds")})
     try:
@@ -550,7 +551,16 @@ def pln_rates(s) -> dict[str, float]:
 
 
 CARDTRADER_CACHE = ROOT / "data" / "cardtrader.json"
-CARDTRADER_EVERY = timedelta(hours=23, minutes=30)  # once a day; the slack lets the hourly :17 run keep its slot
+CARDTRADER_HOURS = (10, 15, 20)  # Polish time; the first hourly check from each of these hours scans
+WARSAW = ZoneInfo("Europe/Warsaw")
+
+
+def cardtrader_due(scanned: str | None, now: datetime) -> bool:
+    """Whether a scan hour has come round since the last scan (an ISO time, or None if never)."""
+    local = now.astimezone(WARSAW)
+    slots = [local.replace(hour=h, minute=0, second=0, microsecond=0) for h in CARDTRADER_HOURS]
+    past = [t for t in slots if t <= local] or [slots[-1] - timedelta(days=1)]
+    return scanned is None or datetime.fromisoformat(scanned) < max(past)
 # Commander precons sit in "Commander: …" expansions, but Universes Beyond decks live in the set
 # itself ("Universes Beyond: Doctor Who"), so both kinds of expansion are read.
 CARDTRADER_EXPANSION = re.compile(r"commander|^universes beyond", re.I)
@@ -675,7 +685,7 @@ SHOPS = {
     "cardtrader": ("CardTrader", scan_cardtrader),
 }
 QUIET_SHOPS = {"cardtrader"}  # prices only: never announce new decks or restocks
-CT_WINDOW = 1  # scans over which a CardTrader deck's price is its lowest offer; 1 since scans are a day apart
+CT_WINDOW = 1  # scans over which a CardTrader deck's price is its lowest offer; 1 since scans are hours apart
 
 
 def rolling_low(p: dict, known: dict | None) -> dict:
@@ -879,7 +889,7 @@ def save(path: Path, data) -> None:
 # --------------------------------------------------------------------- CardTrader
 
 CARDTRADER_API = "https://api.cardtrader.com/api/v2"
-CARDTRADER_LIMIT = RateLimit(1)  # CardTrader's API allows one call per second, every endpoint together
+CARDTRADER_LIMIT = RateLimit(1 / 1.5)  # CardTrader allows one call per second, every endpoint together; we leave room
 
 
 class CardTraderRefused(RuntimeError):
