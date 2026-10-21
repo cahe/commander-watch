@@ -3,6 +3,7 @@
 Run: python -m pytest -q   (or: python tests/test_check.py)
 """
 import json
+from datetime import datetime
 import re
 import shutil
 import sys
@@ -564,6 +565,19 @@ def test_cardtrader_rolling_low():
     assert [p for p, _ in run([400.0, 450.0, 450.0, 450.0])] == [400.0, 400.0, 400.0, 450.0]
     check.CT_WINDOW = 1  # daily scans: each scan's own offer
     assert run([400.0, 450.0, None]) == [(400.0, "in_stock"), (450.0, "in_stock"), (450.0, "out_of_stock")]
+
+
+def test_cardtrader_due_three_times_a_day():
+    utc = lambda s: datetime.fromisoformat(s)  # Warsaw is UTC+2 in summer time, UTC+1 in winter
+    due = check.cardtrader_due
+    assert due(None, utc("2026-10-21T05:17:00+00:00"))
+    assert not due("2026-10-21T08:17:00+00:00", utc("2026-10-21T09:17:00+00:00"))  # 10:17 and 11:17 Warsaw
+    assert due("2026-10-21T08:17:00+00:00", utc("2026-10-21T13:17:00+00:00"))      # 15:17
+    assert not due("2026-10-21T18:17:00+00:00", utc("2026-10-22T07:17:00+00:00"))  # 20:17 to 9:17 next day
+    assert due("2026-10-21T18:17:00+00:00", utc("2026-10-22T08:17:00+00:00"))      # 10:17 next day
+    assert due("2026-10-21T13:17:00+00:00", utc("2026-10-22T03:17:00+00:00"))      # missed 20:00, caught up
+    assert due("2026-10-26T08:17:00+00:00", utc("2026-10-26T14:17:00+00:00"))      # winter time: 15:17 is 14:17 UTC
+    assert not due("2026-10-26T09:17:00+00:00", utc("2026-10-26T13:17:00+00:00"))  # 14:17 Warsaw
 
 
 if __name__ == "__main__":
