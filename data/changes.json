@@ -4832,5 +4832,137 @@
   "shop": "wilczek",
   "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-reign-of-dragons.html"
+ },
+ {
+  "at": "2026-10-21T15:17:54Z",
+  "best": {
+   "price": 184.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": true,
+  "deck": "Secrets of Strixhaven Lorehold Spirit",
+  "group": "cardtrader-370598",
+  "id": "frostmagic-mtg-secrets-of-strixhaven-lorehold-spirit-commander-deck",
+  "inStock": 5,
+  "kind": "new",
+  "price": 180,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-lorehold-spirit-commander-deck"
+ },
+ {
+  "at": "2026-10-21T15:17:54Z",
+  "best": {
+   "price": 499.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Bloomburrow Peace Offering",
+  "group": "cardtrader-280704",
+  "id": "frostmagic-bloomburrow-peace-offering-commander-deck",
+  "inStock": 2,
+  "kind": "new",
+  "price": 410,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/bloomburrow-peace-offering-commander-deck"
+ },
+ {
+  "at": "2026-10-21T15:17:54Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Final Fantasy Limit Break",
+  "group": "cardstore-29973",
+  "id": "frostmagic-final-fantasy-limit-break-commander-deck",
+  "inStock": 6,
+  "kind": "new",
+  "price": 234.99,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/final-fantasy-limit-break-commander-deck"
+ },
+ {
+  "at": "2026-10-21T15:17:54Z",
+  "best": {
+   "price": 168.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Revival Trance",
+  "group": "cardstore-29972",
+  "id": "frostmagic-final-fantasy-revival-trance-commander-deck",
+  "inStock": 9,
+  "kind": "new",
+  "price": 168,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/final-fantasy-revival-trance-commander-deck"
+ },
+ {
+  "at": "2026-10-21T15:17:54Z",
+  "best": {
+   "price": 269.99,
+   "shop": "xjoy"
+  },
+  "cheapest": false,
+  "deck": "Modern Horizons 3 |\"Tricky Terrain",
+  "group": "cardtrader-279381",
+  "id": "frostmagic-modern-horizons-3-tricky-terrain",
+  "inStock": 3,
+  "kind": "new",
+  "price": 289,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/modern-horizons-3-tricky-terrain"
+ },
+ {
+  "at": "2026-10-21T15:17:54Z",
+  "best": {
+   "price": 215.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Modern Horizons 3 – Graveyard Overdrive",
+  "group": "cardtrader-279382",
+  "id": "frostmagic-modern-horizons-3-graveyard-overdrive",
+  "inStock": 2,
+  "kind": "new",
+  "price": 220,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/modern-horizons-3-graveyard-overdrive"
+ },
+ {
+  "at": "2026-10-21T15:17:54Z",
+  "cheapest": true,
+  "deck": "Murders at Karlov Manor Blame Game",
+  "group": "cardtrader-270490",
+  "id": "frostmagic-murders-at-karlov-manor-commander-deck-blame-game",
+  "inStock": 1,
+  "kind": "new",
+  "price": 399.99,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/murders-at-karlov-manor-commander-deck-blame-game"
+ },
+ {
+  "at": "2026-10-21T15:17:54Z",
+  "best": {
+   "price": 410,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Bloomburrow Peace Offering",
+  "group": "cardtrader-280704",
+  "id": "cardtrader-280704",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 434.71,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/280704"
  }
 ]
