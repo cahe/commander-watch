@@ -38,11 +38,11 @@
    "maxId": 18320
   },
   "wilczek": {
-   "failStreak": 0,
+   "failStreak": 1,
    "maxId": 15690
   },
   "xjoy": {
-   "failStreak": 1,
+   "failStreak": 0,
    "maxId": 26817
   }
  }
