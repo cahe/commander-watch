@@ -4758,5 +4758,67 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-21T11:17:54Z",
+  "best": {
+   "price": 255.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "cardtrader-265026",
+  "inStock": 3,
+  "kind": "cheapest",
+  "price": 229.73,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-10-21T11:17:54Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardtrader-265028",
+  "inStock": 4,
+  "kind": "cheapest",
+  "price": 137.56,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-21T11:17:54Z",
+  "cheapest": true,
+  "deck": "Ikoria Lair of Behemoths – Symbiotic Swarm",
+  "group": "cardtrader-107983",
+  "id": "cardtrader-107983",
+  "inStock": 0,
+  "kind": "price",
+  "old": 352.67,
+  "price": 330.01,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/107983"
+ },
+ {
+  "at": "2026-10-21T11:17:54Z",
+  "cheapest": true,
+  "deck": "Wilds of Eldraine \"Fae Dominion",
+  "group": "cardtrader-246961",
+  "id": "cardtrader-246961",
+  "inStock": 0,
+  "kind": "price",
+  "old": 965.1,
+  "price": 872.78,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246961"
  }
 ]
