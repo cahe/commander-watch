@@ -4820,5 +4820,17 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246961"
+ },
+ {
+  "at": "2026-10-21T13:17:54Z",
+  "deck": "Foundations Starter – Reign of Dragons",
+  "group": "cardstore-31683",
+  "id": "wilczek-15689",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 229.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-reign-of-dragons.html"
  }
 ]

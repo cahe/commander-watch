@@ -9540,8 +9540,8 @@
  },
  {
   "baseline": false,
-  "change": "back in stock, price 219.99 → 229.99 zł",
-  "changedAt": "2026-10-20T11:17:56Z",
+  "change": "sold out",
+  "changedAt": "2026-10-21T13:17:54Z",
   "deck": "foundations-starter-reign-of-dragons",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-31683",
@@ -9551,7 +9551,7 @@
   "pid": 15689,
   "price": 229.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-reign-of-dragons.html"
  },
  {
