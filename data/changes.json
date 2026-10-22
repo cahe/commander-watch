@@ -5014,5 +5014,21 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
+ },
+ {
+  "at": "2026-10-22T13:17:33Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31272",
+  "id": "magiccafe-28538",
+  "inStock": 7,
+  "kind": "soldout",
+  "price": 269.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/magic-the-gathering-marvel-super-heroes-avengers-assemble-commander-deck/"
  }
 ]
