@@ -4998,5 +4998,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-22T11:17:31Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardtrader-400891",
+  "id": "time4magic-996",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 299.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
  }
 ]

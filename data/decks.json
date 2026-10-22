@@ -8787,6 +8787,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-10-22T11:17:31Z",
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardtrader-400891",
@@ -8796,7 +8798,7 @@
   "pid": 996,
   "price": 299.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
  },
  {
