@@ -5144,5 +5144,23 @@
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
+ },
+ {
+  "at": "2026-10-23T14:17:33Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400888",
+  "id": "time4magic-998",
+  "inStock": 3,
+  "kind": "price",
+  "old": 299.0,
+  "price": 289.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
  }
 ]

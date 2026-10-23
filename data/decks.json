@@ -8824,6 +8824,8 @@
  },
  {
   "baseline": true,
+  "change": "price 299.00 → 289.00 zł",
+  "changedAt": "2026-10-23T14:17:33Z",
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardtrader-400888",
@@ -8831,7 +8833,7 @@
   "id": "time4magic-998",
   "name": "Magic: the Gathering - Star Trek - Federation Fleet Commander Deck",
   "pid": 998,
-  "price": 299.0,
+  "price": 289.0,
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
