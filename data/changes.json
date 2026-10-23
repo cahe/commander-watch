@@ -5030,5 +5030,36 @@
   "shop": "magiccafe",
   "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/magic-the-gathering-marvel-super-heroes-avengers-assemble-commander-deck/"
+ },
+ {
+  "at": "2026-10-23T08:17:33Z",
+  "cheapest": true,
+  "deck": "Streets of New Capenna Obscura Operation",
+  "group": "cardtrader-208726",
+  "id": "magiccafe-16099",
+  "inStock": 1,
+  "kind": "price",
+  "old": 248.99,
+  "price": 349.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/streets-of-new-capenna-commander-deck-obscura-operation/"
+ },
+ {
+  "at": "2026-10-23T08:17:33Z",
+  "best": {
+   "price": 349.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Streets of New Capenna Obscura Operation",
+  "group": "cardtrader-208726",
+  "id": "cardtrader-208726",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 305.75,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/208726"
  }
 ]
