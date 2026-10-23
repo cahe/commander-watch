@@ -9670,8 +9670,8 @@
  },
  {
   "baseline": false,
-  "change": "price 229.99 → 269.99 zł",
-  "changedAt": "2026-10-20T11:17:56Z",
+  "change": "sold out",
+  "changedAt": "2026-10-23T11:17:33Z",
   "deck": "foundations-starter-tramplesaurus-rex",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-31684",
@@ -9681,7 +9681,7 @@
   "pid": 15690,
   "price": 269.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-tramplesaurus-rex.html"
  },
  {
