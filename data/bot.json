@@ -361,7 +361,7 @@
    "shopUrl": "https://magiccafe.eu/product/starter-commander-deck-token-triumph/"
   },
   "fallout-hail-caesar": {
-   "ctPrice": 231.09,
+   "ctPrice": 231.0,
    "ctUrl": "https://www.cardtrader.com/en/cards/265027",
    "name": "Fallout Hail Caesar",
    "shopName": "Cardstore",
@@ -377,7 +377,7 @@
    "shopUrl": "https://panmysza.pl/pl/p/Universes-Beyond-Fallout-Commander-Deck-Hail%2C-Ceasar-ENG/4385"
   },
   "fallout-mutant-menace": {
-   "ctPrice": 402.37,
+   "ctPrice": 398.02,
    "ctUrl": "https://www.cardtrader.com/en/cards/265029",
    "name": "Fallout Mutant Menace",
    "shopName": "Pan Mysza",
@@ -385,7 +385,7 @@
    "shopUrl": "https://panmysza.pl/pl/p/Universes-Beyond-Fallout-Commander-Deck-Mutant-Menace/4387"
   },
   "fallout-science": {
-   "ctPrice": 160.3,
+   "ctPrice": 155.95,
    "ctUrl": "https://www.cardtrader.com/en/cards/265028",
    "name": "Fallout Science",
    "shopName": "Pan Mysza",
@@ -393,7 +393,7 @@
    "shopUrl": "https://panmysza.pl/pl/p/Universes-Beyond-Fallout-Commander-Deck-Science/4386"
   },
   "fallout-scrappy-survivors": {
-   "ctPrice": 231.09,
+   "ctPrice": 226.74,
    "ctUrl": "https://www.cardtrader.com/en/cards/265026",
    "name": "Fallout Scrappy Survivors",
    "shopName": "Pan Mysza",
@@ -1497,7 +1497,7 @@
    "shopUrl": null
   },
   "warhammer-40k-necron-dynasties": {
-   "ctPrice": 1425.72,
+   "ctPrice": 1277.72,
    "ctUrl": "https://www.cardtrader.com/en/cards/211580",
    "name": "Warhammer 40K Necron Dynasties",
    "shopName": null,
@@ -1521,7 +1521,7 @@
    "shopUrl": null
   },
   "warhammer-40k-tyranid-swarm": {
-   "ctPrice": 1034.82,
+   "ctPrice": 881.15,
    "ctUrl": "https://www.cardtrader.com/en/cards/211576",
    "name": "Warhammer 40K Tyranid Swarm",
    "shopName": null,

@@ -5162,5 +5162,33 @@
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
+ },
+ {
+  "at": "2026-10-23T18:17:34Z",
+  "cheapest": true,
+  "deck": "Warhammer 40K Tyranid Swarm",
+  "group": "cardtrader-211576",
+  "id": "cardtrader-211576",
+  "inStock": 0,
+  "kind": "price",
+  "old": 1027.47,
+  "price": 881.15,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/211576"
+ },
+ {
+  "at": "2026-10-23T18:17:34Z",
+  "cheapest": true,
+  "deck": "Warhammer 40K Necron Dynasties",
+  "group": "cardtrader-211580",
+  "id": "cardtrader-211580",
+  "inStock": 0,
+  "kind": "price",
+  "old": 1421.57,
+  "price": 1277.72,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/211580"
  }
 ]

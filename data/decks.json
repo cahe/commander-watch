@@ -1132,8 +1132,8 @@
  {
   "baseline": true,
   "box": "data/boxes/211576.webp",
-  "change": "price 1029.35 → 1034.82 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 1034.82 → 881.15 zł",
+  "changedAt": "2026-10-23T18:17:34Z",
   "cheapest": true,
   "deck": "warhammer-40k-tyranid-swarm",
   "firstSeen": "2026-10-08T16:28:38Z",
@@ -1141,12 +1141,12 @@
   "groupName": "Warhammer 40K Tyranid Swarm",
   "id": "cardtrader-211576",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/211576/show_universes-beyond-warhammer-40-000-tyranid-swarm-deck-universes-beyond-warhammer-40-000.jpg",
-  "lowLogged": 1027.47,
+  "lowLogged": 881.15,
   "name": "Universes Beyond: Warhammer 40,000 | \"Tyranid Swarm\" Deck",
   "pid": 211576,
-  "price": 1034.82,
+  "price": 881.15,
   "recent": [
-   1034.82
+   881.15
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1178,8 +1178,8 @@
  {
   "baseline": true,
   "box": "data/boxes/211580.webp",
-  "change": "price 1418.19 → 1425.72 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 1425.72 → 1277.72 zł",
+  "changedAt": "2026-10-23T18:17:34Z",
   "cheapest": true,
   "deck": "warhammer-40k-necron-dynasties",
   "firstSeen": "2026-10-08T16:28:38Z",
@@ -1187,12 +1187,12 @@
   "groupName": "Warhammer 40K Necron Dynasties",
   "id": "cardtrader-211580",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/211580/show_universes-beyond-warhammer-40-000-necron-dynasties-deck-universes-beyond-warhammer-40-000.jpg",
-  "lowLogged": 1421.57,
+  "lowLogged": 1277.72,
   "name": "Universes Beyond: Warhammer 40,000 | \"Necron Dynasties\" Deck",
   "pid": 211580,
-  "price": 1425.72,
+  "price": 1277.72,
   "recent": [
-   1425.72
+   1277.72
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1969,8 +1969,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265026.webp",
-  "change": "price 238.61 → 231.09 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 231.09 → 226.74 zł",
+  "changedAt": "2026-10-23T18:17:34Z",
   "cheapest": true,
   "deck": "fallout-scrappy-survivors",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -1981,9 +1981,9 @@
   "lowLogged": 229.73,
   "name": "Fallout | \"Scrappy Survivors\" Commander Deck",
   "pid": 265026,
-  "price": 231.09,
+  "price": 226.74,
   "recent": [
-   231.09
+   226.74
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1992,8 +1992,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265027.webp",
-  "change": "price 238.61 → 231.09 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 231.09 → 231.00 zł",
+  "changedAt": "2026-10-23T18:17:34Z",
   "cheapest": true,
   "deck": "fallout-hail-caesar",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2004,9 +2004,9 @@
   "lowLogged": 235.42,
   "name": "Fallout | \"Hail Caesar\" Commander Deck",
   "pid": 265027,
-  "price": 231.09,
+  "price": 231.0,
   "recent": [
-   231.09
+   231.0
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2015,8 +2015,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265028.webp",
-  "change": "price 168.19 → 160.30 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 160.30 → 155.95 zł",
+  "changedAt": "2026-10-23T18:17:34Z",
   "cheapest": false,
   "deck": "fallout-science",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2026,9 +2026,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265028/show_fallout-science-commander-deck-fallout.jpg",
   "name": "Fallout | \"Science!\" Commander Deck",
   "pid": 265028,
-  "price": 160.3,
+  "price": 155.95,
   "recent": [
-   160.3
+   155.95
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2037,8 +2037,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265029.webp",
-  "change": "price 404.65 → 402.37 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 402.37 → 398.02 zł",
+  "changedAt": "2026-10-23T18:17:34Z",
   "cheapest": true,
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2049,9 +2049,9 @@
   "lowLogged": 404.29,
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
-  "price": 402.37,
+  "price": 398.02,
   "recent": [
-   402.37
+   398.02
   ],
   "shop": "cardtrader",
   "status": "in_stock",
