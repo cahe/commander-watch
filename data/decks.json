@@ -2037,8 +2037,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265029.webp",
-  "change": "price 402.37 → 398.02 zł",
-  "changedAt": "2026-10-23T18:17:34Z",
+  "change": "price 398.02 → 397.98 zł",
+  "changedAt": "2026-10-24T08:17:59Z",
   "cheapest": true,
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2049,9 +2049,9 @@
   "lowLogged": 404.29,
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
-  "price": 398.02,
+  "price": 397.98,
   "recent": [
-   398.02
+   397.98
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2928,8 +2928,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322533.webp",
-  "change": "price 435.28 → 437.59 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 437.59 → 481.46 zł",
+  "changedAt": "2026-10-24T08:17:59Z",
   "cheapest": true,
   "deck": "tarkir-dragonstorm-sultai-arisen",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2940,9 +2940,9 @@
   "lowLogged": 435.79,
   "name": "Commander: Tarkir Dragonstorm | \"Sultai Arisen\" Commander Deck",
   "pid": 322533,
-  "price": 437.59,
+  "price": 481.46,
   "recent": [
-   437.59
+   481.46
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3041,8 +3041,8 @@
  {
   "baseline": true,
   "box": "data/boxes/354096.webp",
-  "change": "price 168.06 → 168.95 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 168.95 → 171.01 zł",
+  "changedAt": "2026-10-24T08:17:59Z",
   "cheapest": true,
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3053,9 +3053,9 @@
   "lowLogged": 168.29,
   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
   "pid": 354096,
-  "price": 168.95,
+  "price": 171.01,
   "recent": [
-   168.95
+   171.01
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3386,8 +3386,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389399.webp",
-  "change": "price 119.17 → 119.81 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 119.81 → 119.85 zł",
+  "changedAt": "2026-10-24T08:17:59Z",
   "cheapest": true,
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3398,9 +3398,9 @@
   "lowLogged": 110.67,
   "name": "Foundations: \"Keen Engineering\" Commander Deck",
   "pid": 389399,
-  "price": 119.81,
+  "price": 119.85,
   "recent": [
-   119.81
+   119.85
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3409,8 +3409,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389400.webp",
-  "change": "price 172.12 → 173.03 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 173.03 → 172.99 zł",
+  "changedAt": "2026-10-24T08:17:59Z",
   "cheapest": true,
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3421,9 +3421,9 @@
   "lowLogged": 146.74,
   "name": "Foundations: \"Wretched Ranks\" Commander Deck",
   "pid": 389400,
-  "price": 173.03,
+  "price": 172.99,
   "recent": [
-   173.03
+   172.99
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3478,8 +3478,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389403.webp",
-  "change": "price 213.79 → 214.93 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 214.93 → 214.89 zł",
+  "changedAt": "2026-10-24T08:17:59Z",
   "cheapest": false,
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3489,9 +3489,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/389403/show_reality-fracture-commander-deck-commander-reality-fracture.jpg",
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
-  "price": 214.93,
+  "price": 214.89,
   "recent": [
-   214.93
+   214.89
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3500,8 +3500,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 299.29 → 300.61 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 300.61 → 300.52 zł",
+  "changedAt": "2026-10-24T08:17:59Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3511,9 +3511,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 300.61,
+  "price": 300.52,
   "recent": [
-   300.61
+   300.52
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3522,8 +3522,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 299.29 → 300.61 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 300.61 → 300.52 zł",
+  "changedAt": "2026-10-24T08:17:59Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3533,9 +3533,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 300.61,
+  "price": 300.52,
   "recent": [
-   300.61
+   300.52
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3544,8 +3544,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 299.29 → 300.61 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 300.61 → 300.52 zł",
+  "changedAt": "2026-10-24T08:17:59Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3555,9 +3555,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 300.61,
+  "price": 300.52,
   "recent": [
-   300.61
+   300.52
   ],
   "shop": "cardtrader",
   "status": "in_stock",
