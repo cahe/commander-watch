@@ -5208,5 +5208,38 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-10-25T13:17:56Z",
+  "best": {
+   "price": 499.99,
+   "shop": "magiccafe"
+  },
+  "deck": "Bloomburrow Peace Offering",
+  "group": "cardtrader-280704",
+  "id": "frostmagic-bloomburrow-peace-offering-commander-deck",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 410,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/bloomburrow-peace-offering-commander-deck"
+ },
+ {
+  "at": "2026-10-25T13:17:56Z",
+  "best": {
+   "price": 499.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Bloomburrow Peace Offering",
+  "group": "cardtrader-280704",
+  "id": "cardtrader-280704",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 437.46,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/280704"
  }
 ]
