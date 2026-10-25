@@ -1992,8 +1992,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265027.webp",
-  "change": "price 231.00 → 230.96 zł",
-  "changedAt": "2026-10-25T09:17:57Z",
+  "change": "price 230.96 → 228.54 zł",
+  "changedAt": "2026-10-25T19:18:01Z",
   "cheapest": true,
   "deck": "fallout-hail-caesar",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2001,12 +2001,12 @@
   "groupName": "Fallout Hail Caesar",
   "id": "cardtrader-265027",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265027/show_fallout-hail-caesar-commander-deck-fallout.jpg",
-  "lowLogged": 235.42,
+  "lowLogged": 228.54,
   "name": "Fallout | \"Hail Caesar\" Commander Deck",
   "pid": 265027,
-  "price": 230.96,
+  "price": 228.54,
   "recent": [
-   230.96
+   228.54
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2037,8 +2037,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265029.webp",
-  "change": "price 397.98 → 397.89 zł",
-  "changedAt": "2026-10-25T09:17:57Z",
+  "change": "price 397.89 → 389.28 zł",
+  "changedAt": "2026-10-25T19:18:01Z",
   "cheapest": true,
   "deck": "fallout-mutant-menace",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2046,12 +2046,12 @@
   "groupName": "Fallout Mutant Menace",
   "id": "cardtrader-265029",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265029/show_fallout-mutant-menace-commander-deck-fallout.jpg",
-  "lowLogged": 404.29,
+  "lowLogged": 389.28,
   "name": "Fallout | \"Mutant Menace\" Commander Deck",
   "pid": 265029,
-  "price": 397.89,
+  "price": 389.28,
   "recent": [
-   397.89
+   389.28
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2267,8 +2267,8 @@
  {
   "baseline": true,
   "box": "data/boxes/279380.webp",
-  "change": "price 176.79 → 177.73 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "price 177.73 → 177.91 zł",
+  "changedAt": "2026-10-25T19:18:01Z",
   "cheapest": true,
   "deck": "modern-horizons-3-creative-energy",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2279,9 +2279,9 @@
   "lowLogged": 177.04,
   "name": "Commander: Modern Horizons 3 |\"Creative Energy\" Commander Deck",
   "pid": 279380,
-  "price": 177.73,
+  "price": 177.91,
   "recent": [
-   177.73
+   177.91
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3410,8 +3410,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389400.webp",
-  "change": "price 172.99 → 173.30 zł",
-  "changedAt": "2026-10-25T09:17:57Z",
+  "change": "price 173.30 → 173.52 zł",
+  "changedAt": "2026-10-25T19:18:01Z",
   "cheapest": true,
   "deck": "foundations-starter-wretched-ranks",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3422,9 +3422,9 @@
   "lowLogged": 146.74,
   "name": "Foundations: \"Wretched Ranks\" Commander Deck",
   "pid": 389400,
-  "price": 173.3,
+  "price": 173.52,
   "recent": [
-   173.3
+   173.52
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3501,8 +3501,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 300.52 → 298.50 zł",
-  "changedAt": "2026-10-25T09:17:57Z",
+  "change": "price 298.50 → 298.46 zł",
+  "changedAt": "2026-10-25T19:18:01Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3512,9 +3512,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 298.5,
+  "price": 298.46,
   "recent": [
-   298.5
+   298.46
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3523,8 +3523,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 300.52 → 298.50 zł",
-  "changedAt": "2026-10-25T09:17:57Z",
+  "change": "price 298.50 → 298.46 zł",
+  "changedAt": "2026-10-25T19:18:01Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3534,9 +3534,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 298.5,
+  "price": 298.46,
   "recent": [
-   298.5
+   298.46
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3545,8 +3545,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 300.52 → 298.50 zł",
-  "changedAt": "2026-10-25T09:17:57Z",
+  "change": "price 298.50 → 298.46 zł",
+  "changedAt": "2026-10-25T19:18:01Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3556,9 +3556,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 298.5,
+  "price": 298.46,
   "recent": [
-   298.5
+   298.46
   ],
   "shop": "cardtrader",
   "status": "in_stock",

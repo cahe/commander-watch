@@ -5241,5 +5241,41 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/280704"
+ },
+ {
+  "at": "2026-10-25T19:18:01Z",
+  "best": {
+   "price": 259.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "cardtrader-265027",
+  "inStock": 1,
+  "kind": "price",
+  "old": 235.42,
+  "price": 228.54,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265027"
+ },
+ {
+  "at": "2026-10-25T19:18:01Z",
+  "best": {
+   "price": 410.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardtrader-265029",
+  "inStock": 2,
+  "kind": "price",
+  "old": 404.29,
+  "price": 389.28,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
  }
 ]
