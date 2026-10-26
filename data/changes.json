@@ -5277,5 +5277,23 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-10-26T09:18:02Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Scions & Spellcraft",
+  "group": "cardstore-29975",
+  "id": "magiccafe-26034",
+  "inStock": 3,
+  "kind": "price",
+  "old": 278.99,
+  "price": 288.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/magic-the-gathering-final-fantasy-commander-deck-scions-spellcraft/"
  }
 ]

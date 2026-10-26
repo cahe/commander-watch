@@ -6313,8 +6313,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "price 278.99 → 288.99 zł",
+  "changedAt": "2026-10-26T09:18:02Z",
   "deck": "final-fantasy-scions-spellcraft",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-29975",
@@ -6322,7 +6322,7 @@
   "id": "magiccafe-26034",
   "name": "Magic the Gathering: Final Fantasy Commander Deck Scions & Spellcraft",
   "pid": 26034,
-  "price": 278.99,
+  "price": 288.99,
   "shop": "magiccafe",
   "status": "in_stock",
   "url": "https://magiccafe.eu/product/magic-the-gathering-final-fantasy-commander-deck-scions-spellcraft/"
