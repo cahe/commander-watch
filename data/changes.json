@@ -5295,5 +5295,34 @@
   "shop": "magiccafe",
   "status": "in_stock",
   "url": "https://magiccafe.eu/product/magic-the-gathering-final-fantasy-commander-deck-scions-spellcraft/"
+ },
+ {
+  "at": "2026-10-26T14:18:06Z",
+  "best": {
+   "price": 329.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
+  "group": "cardtrader-246483",
+  "id": "cardtrader-246483",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 296.12,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-10-26T14:18:06Z",
+  "deck": "Modern Horizons 3 |\"Tricky Terrain",
+  "group": "cardtrader-279377",
+  "id": "cardtrader-279377",
+  "inStock": 0,
+  "kind": "notcheapest",
+  "price": 749.36,
+  "shop": "cardtrader",
+  "status": "out_of_stock",
+  "url": "https://www.cardtrader.com/en/cards/279377"
  }
 ]
