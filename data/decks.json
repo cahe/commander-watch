@@ -9617,8 +9617,8 @@
  },
  {
   "baseline": false,
-  "change": "back in stock, price 199.99 → 249.99 zł",
-  "changedAt": "2026-10-20T11:17:56Z",
+  "change": "sold out",
+  "changedAt": "2026-10-26T20:07:59Z",
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-31679",
@@ -9628,7 +9628,7 @@
   "pid": 15686,
   "price": 249.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-calling-all-angels.html"
  },
  {
