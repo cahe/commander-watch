@@ -8531,6 +8531,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-10-26T15:18:02Z",
   "deck": "secrets-of-strixhaven-lorehold-spirit",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardtrader-370598",
@@ -8540,7 +8542,7 @@
   "pid": 766,
   "price": 199.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/secrets-of-strixhaven-lorehold-spirit-commander-deck"
  },
  {

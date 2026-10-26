@@ -5324,5 +5324,21 @@
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/279377"
+ },
+ {
+  "at": "2026-10-26T15:18:02Z",
+  "best": {
+   "price": 180,
+   "shop": "frostmagic"
+  },
+  "deck": "Secrets of Strixhaven Lorehold Spirit",
+  "group": "cardtrader-370598",
+  "id": "time4magic-766",
+  "inStock": 4,
+  "kind": "soldout",
+  "price": 199.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/secrets-of-strixhaven-lorehold-spirit-commander-deck"
  }
 ]
