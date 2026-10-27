@@ -5386,5 +5386,75 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
+ },
+ {
+  "at": "2026-10-27T09:17:41Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardtrader-265028",
+  "inStock": 4,
+  "kind": "cheapest",
+  "price": 133.84,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-27T09:17:41Z",
+  "best": {
+   "price": 199.99,
+   "shop": "wilczek"
+  },
+  "cheapest": false,
+  "deck": "Modern Horizons 3 – Creative Energy",
+  "group": "cardstore-28942",
+  "id": "cardtrader-279380",
+  "inStock": 4,
+  "kind": "notcheapest",
+  "price": 200.49,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279380"
+ },
+ {
+  "at": "2026-10-27T09:17:41Z",
+  "best": {
+   "price": 255.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "cardtrader-265026",
+  "inStock": 3,
+  "kind": "price",
+  "old": 229.73,
+  "price": 222.95,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-10-27T09:17:41Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 1,
+  "kind": "price",
+  "old": 699.25,
+  "price": 685.18,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
  }
 ]
