@@ -5527,5 +5527,35 @@
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/mtg-star-trek-commander-deck-set-4"
+ },
+ {
+  "at": "2026-10-27T14:17:39Z",
+  "cheapest": true,
+  "deck": "The Lord of the Rings Tales of Middle-earth Food and Fellowship",
+  "group": "cardtrader-246478",
+  "id": "magiccafe-15262",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 578.5,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-food-and-fellowship/"
+ },
+ {
+  "at": "2026-10-27T14:17:39Z",
+  "best": {
+   "price": 279.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Edge of Eternities “World Shaper”",
+  "group": "cardtrader-322694",
+  "id": "cardtrader-322694",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 308.35,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322694"
  }
 ]
