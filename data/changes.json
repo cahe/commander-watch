@@ -5509,5 +5509,23 @@
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
+ },
+ {
+  "at": "2026-10-27T11:17:40Z",
+  "best": {
+   "price": 1029,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "id": "time4magic-994",
+  "inStock": 3,
+  "kind": "price",
+  "old": 999.0,
+  "price": 1029.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-commander-deck-set-4"
  }
 ]
