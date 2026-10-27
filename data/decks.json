@@ -8763,8 +8763,8 @@
  },
  {
   "baseline": true,
-  "change": "price 999.00 → 1029.00 zł",
-  "changedAt": "2026-10-26T22:18:06Z",
+  "change": "price 1029.00 → 999.00 zł",
+  "changedAt": "2026-10-27T10:17:42Z",
   "deck": "star-trek-set",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
@@ -8772,7 +8772,7 @@
   "id": "time4magic-994",
   "name": "Magic: the Gathering - Star Trek - Commander Deck Set (4)",
   "pid": 994,
-  "price": 1029.0,
+  "price": 999.0,
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/mtg-star-trek-commander-deck-set-4"
@@ -8795,8 +8795,8 @@
  },
  {
   "baseline": true,
-  "change": "sold out",
-  "changedAt": "2026-10-27T05:17:57Z",
+  "change": "back in stock, price 299.00 → 319.00 zł",
+  "changedAt": "2026-10-27T10:17:42Z",
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardtrader-400891",
@@ -8804,9 +8804,9 @@
   "id": "time4magic-996",
   "name": "Magic: the Gathering - Star Trek - We Are the Borg Commander Deck",
   "pid": 996,
-  "price": 299.0,
+  "price": 319.0,
   "shop": "time4magic",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
  },
  {

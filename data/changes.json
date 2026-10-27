@@ -5456,5 +5456,58 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-10-27T10:17:42Z",
+  "best": {
+   "price": 1029,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "id": "time4magic-994",
+  "inStock": 3,
+  "kind": "price",
+  "old": 1029.0,
+  "price": 999.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-commander-deck-set-4"
+ },
+ {
+  "at": "2026-10-27T10:17:42Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardtrader-400891",
+  "id": "time4magic-996",
+  "inStock": 3,
+  "kind": "restock",
+  "price": 319.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
+ },
+ {
+  "at": "2026-10-27T10:17:42Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardtrader-400891",
+  "id": "time4magic-996",
+  "inStock": 3,
+  "kind": "price",
+  "old": 299.0,
+  "price": 319.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
  }
 ]
