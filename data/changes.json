@@ -5557,5 +5557,141 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322694"
+ },
+ {
+  "at": "2026-10-27T15:17:42Z",
+  "cheapest": true,
+  "deck": "The Lord of the Rings Tales of Middle-earth Food and Fellowship",
+  "group": "cardtrader-246478",
+  "id": "magiccafe-15262",
+  "inStock": 1,
+  "kind": "price",
+  "old": 578.5,
+  "price": 639.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-food-and-fellowship/"
+ },
+ {
+  "at": "2026-10-27T15:17:42Z",
+  "best": {
+   "price": 255.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "wilczek-8887",
+  "inStock": 4,
+  "kind": "restock",
+  "price": 249.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-scrappy-survivors.html"
+ },
+ {
+  "at": "2026-10-27T15:17:42Z",
+  "best": {
+   "price": 255.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "wilczek-8887",
+  "inStock": 4,
+  "kind": "price",
+  "old": 199.99,
+  "price": 249.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-scrappy-survivors.html"
+ },
+ {
+  "at": "2026-10-27T15:17:42Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "wilczek-8886",
+  "inStock": 5,
+  "kind": "restock",
+  "price": 199.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-science.html"
+ },
+ {
+  "at": "2026-10-27T15:17:42Z",
+  "best": {
+   "price": 410.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "wilczek-8885",
+  "inStock": 3,
+  "kind": "restock",
+  "price": 469.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-mutant-menace.html"
+ },
+ {
+  "at": "2026-10-27T15:17:42Z",
+  "best": {
+   "price": 410.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "wilczek-8885",
+  "inStock": 3,
+  "kind": "price",
+  "old": 439.99,
+  "price": 469.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-mutant-menace.html"
+ },
+ {
+  "at": "2026-10-27T15:17:42Z",
+  "best": {
+   "price": 259.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "wilczek-8884",
+  "inStock": 2,
+  "kind": "restock",
+  "price": 259.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-hail-caesar.html"
+ },
+ {
+  "at": "2026-10-27T15:17:42Z",
+  "best": {
+   "price": 259.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "wilczek-8884",
+  "inStock": 2,
+  "kind": "price",
+  "old": 229.99,
+  "price": 259.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-hail-caesar.html"
  }
 ]
