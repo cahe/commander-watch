@@ -5693,5 +5693,22 @@
   "shop": "wilczek",
   "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-hail-caesar.html"
+ },
+ {
+  "at": "2026-10-27T19:17:41Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardtrader-265028",
+  "inStock": 5,
+  "kind": "notcheapest",
+  "price": 156.0,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
  }
 ]
