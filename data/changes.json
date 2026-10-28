@@ -5794,5 +5794,126 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-28T15:17:38Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "frostmagic-universes-beyond-fallout-science",
+  "inStock": 6,
+  "kind": "restock",
+  "price": 150,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
+ },
+ {
+  "at": "2026-10-28T15:17:38Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "frostmagic-universes-beyond-fallout-science",
+  "inStock": 6,
+  "kind": "price",
+  "old": 140,
+  "price": 150,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
+ },
+ {
+  "at": "2026-10-28T15:17:38Z",
+  "best": {
+   "price": 249.99,
+   "shop": "wilczek"
+  },
+  "cheapest": false,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "frostmagic-universes-beyond-fallout-scrappy-survivors",
+  "inStock": 5,
+  "kind": "restock",
+  "price": 255,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-scrappy-survivors"
+ },
+ {
+  "at": "2026-10-28T15:17:38Z",
+  "best": {
+   "price": 249.99,
+   "shop": "wilczek"
+  },
+  "cheapest": false,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "frostmagic-universes-beyond-fallout-scrappy-survivors",
+  "inStock": 5,
+  "kind": "price",
+  "old": 240,
+  "price": 255,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-scrappy-survivors"
+ },
+ {
+  "at": "2026-10-28T15:17:38Z",
+  "best": {
+   "price": 259.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "frostmagic-universes-beyond-fallout-hail-caesar",
+  "inStock": 3,
+  "kind": "restock",
+  "price": 255,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-hail-caesar"
+ },
+ {
+  "at": "2026-10-28T15:17:38Z",
+  "best": {
+   "price": 259.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "frostmagic-universes-beyond-fallout-hail-caesar",
+  "inStock": 3,
+  "kind": "price",
+  "old": 240,
+  "price": 255,
+  "shop": "frostmagic",
+  "status": "in_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-hail-caesar"
+ },
+ {
+  "at": "2026-10-28T15:17:38Z",
+  "best": {
+   "price": 254.5,
+   "shop": "magiccafe"
+  },
+  "deck": "Secrets of Strixhaven Witherbloom Pestilence",
+  "group": "cardtrader-370597",
+  "id": "wilczek-13711",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 279.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-secrets-of-strixhaven-commander-witherbloom-pestilence.html"
  }
 ]

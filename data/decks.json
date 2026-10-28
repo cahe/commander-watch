@@ -4439,8 +4439,8 @@
  },
  {
   "baseline": false,
-  "change": "sold out",
-  "changedAt": "2026-10-15T23:15:50Z",
+  "change": "back in stock, price 240.00 → 255.00 zł",
+  "changedAt": "2026-10-28T15:17:38Z",
   "deck": "fallout-hail-caesar",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-28766",
@@ -4448,9 +4448,9 @@
   "id": "frostmagic-universes-beyond-fallout-hail-caesar",
   "name": "Universes Beyond: Fallout: Hail, Caesar",
   "pid": null,
-  "price": 240,
+  "price": 255,
   "shop": "frostmagic",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-hail-caesar"
  },
  {
@@ -4471,8 +4471,8 @@
  },
  {
   "baseline": false,
-  "change": "sold out",
-  "changedAt": "2026-10-15T23:15:50Z",
+  "change": "back in stock, price 140.00 → 150.00 zł",
+  "changedAt": "2026-10-28T15:17:38Z",
   "deck": "fallout-science",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-28768",
@@ -4480,15 +4480,15 @@
   "id": "frostmagic-universes-beyond-fallout-science",
   "name": "Universes Beyond: Fallout: Science!",
   "pid": null,
-  "price": 140,
+  "price": 150,
   "shop": "frostmagic",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
  },
  {
   "baseline": false,
-  "change": "sold out",
-  "changedAt": "2026-10-18T07:17:40Z",
+  "change": "back in stock, price 240.00 → 255.00 zł",
+  "changedAt": "2026-10-28T15:17:38Z",
   "deck": "fallout-scrappy-survivors",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-28767",
@@ -4496,9 +4496,9 @@
   "id": "frostmagic-universes-beyond-fallout-scrappy-survivors",
   "name": "Universes Beyond: Fallout: Scrappy Survivors",
   "pid": null,
-  "price": 240,
+  "price": 255,
   "shop": "frostmagic",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-scrappy-survivors"
  },
  {
@@ -9249,8 +9249,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-28T15:17:38Z",
   "deck": "secrets-of-strixhaven-witherbloom-pestilence",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-370597",
@@ -9260,7 +9260,7 @@
   "pid": 13711,
   "price": 279.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-secrets-of-strixhaven-commander-witherbloom-pestilence.html"
  },
  {
