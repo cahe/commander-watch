@@ -5726,5 +5726,22 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
+ },
+ {
+  "at": "2026-10-28T09:17:46Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardtrader-265028",
+  "inStock": 5,
+  "kind": "cheapest",
+  "price": 133.93,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
  }
 ]

@@ -2016,20 +2016,21 @@
  {
   "baseline": true,
   "box": "data/boxes/265028.webp",
-  "change": "price 133.93 → 156.00 zł",
-  "changedAt": "2026-10-27T19:17:41Z",
-  "cheapest": false,
+  "change": "price 156.00 → 133.93 zł",
+  "changedAt": "2026-10-28T09:17:46Z",
+  "cheapest": true,
   "deck": "fallout-science",
   "firstSeen": "2026-10-01T10:09:12Z",
   "group": "cardstore-28768",
   "groupName": "Fallout Science",
   "id": "cardtrader-265028",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265028/show_fallout-science-commander-deck-fallout.jpg",
+  "lowLogged": 133.93,
   "name": "Fallout | \"Science!\" Commander Deck",
   "pid": 265028,
-  "price": 156.0,
+  "price": 133.93,
   "recent": [
-   156.0
+   133.93
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2767,8 +2768,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322104.webp",
-  "change": "price 550.70 → 550.35 zł",
-  "changedAt": "2026-10-27T19:17:41Z",
+  "change": "price 550.35 → 550.70 zł",
+  "changedAt": "2026-10-28T09:17:46Z",
   "cheapest": true,
   "deck": "final-fantasy-counter-blitz-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -2779,9 +2780,9 @@
   "lowLogged": 526.16,
   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck Collector's Edition",
   "pid": 322104,
-  "price": 550.35,
+  "price": 550.7,
   "recent": [
-   550.35
+   550.7
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2951,8 +2952,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322693.webp",
-  "change": "price 190.06 → 201.03 zł",
-  "changedAt": "2026-10-27T19:17:41Z",
+  "change": "price 201.03 → 190.06 zł",
+  "changedAt": "2026-10-28T09:17:46Z",
   "cheapest": false,
   "deck": "edge-of-eternities-counter-intelligence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2962,9 +2963,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/322693/show_edge-of-eternities-counter-intelligence-commander-deck-edge-of-eternities.jpg",
   "name": "Edge of Eternities: \"Counter Intelligence\" Commander Deck",
   "pid": 322693,
-  "price": 201.03,
+  "price": 190.06,
   "recent": [
-   201.03
+   190.06
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3499,8 +3500,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 297.42 → 297.33 zł",
-  "changedAt": "2026-10-27T19:17:41Z",
+  "change": "price 297.33 → 297.42 zł",
+  "changedAt": "2026-10-28T09:17:46Z",
   "cheapest": false,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3510,9 +3511,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 297.33,
+  "price": 297.42,
   "recent": [
-   297.33
+   297.42
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3521,8 +3522,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 297.42 → 297.33 zł",
-  "changedAt": "2026-10-27T19:17:41Z",
+  "change": "price 297.33 → 297.42 zł",
+  "changedAt": "2026-10-28T09:17:46Z",
   "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3532,9 +3533,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 297.33,
+  "price": 297.42,
   "recent": [
-   297.33
+   297.42
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3543,8 +3544,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 297.42 → 297.33 zł",
-  "changedAt": "2026-10-27T19:17:41Z",
+  "change": "price 297.33 → 297.42 zł",
+  "changedAt": "2026-10-28T09:17:46Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3554,9 +3555,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 297.33,
+  "price": 297.42,
   "recent": [
-   297.33
+   297.42
   ],
   "shop": "cardtrader",
   "status": "in_stock",
