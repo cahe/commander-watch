@@ -5915,5 +5915,55 @@
   "shop": "wilczek",
   "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-secrets-of-strixhaven-commander-witherbloom-pestilence.html"
+ },
+ {
+  "at": "2026-10-28T19:17:46Z",
+  "deck": "Foundations Starter – Wretched Ranks",
+  "group": "cardstore-31682",
+  "id": "wilczek-15688",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 209.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-wretched-ranks.html"
+ },
+ {
+  "at": "2026-10-28T19:17:46Z",
+  "deck": "Zendikar Rising – Land's Wrath",
+  "group": "cardtrader-146527",
+  "id": "cardtrader-146527",
+  "inStock": 0,
+  "kind": "notcheapest",
+  "price": 223.23,
+  "shop": "cardtrader",
+  "status": "out_of_stock",
+  "url": "https://www.cardtrader.com/en/cards/146527"
+ },
+ {
+  "at": "2026-10-28T19:17:46Z",
+  "deck": "Phyrexia All Will Be One | \"Rebellion Rising",
+  "group": "cardtrader-231931",
+  "id": "cardtrader-231931",
+  "inStock": 0,
+  "kind": "notcheapest",
+  "price": 267.32,
+  "shop": "cardtrader",
+  "status": "out_of_stock",
+  "url": "https://www.cardtrader.com/en/cards/231931"
+ },
+ {
+  "at": "2026-10-28T19:17:46Z",
+  "cheapest": true,
+  "deck": "Kaldheim Elven Empire",
+  "group": "cardtrader-151469",
+  "id": "cardtrader-151469",
+  "inStock": 0,
+  "kind": "price",
+  "old": 702.72,
+  "price": 664.17,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/151469"
  }
 ]

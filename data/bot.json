@@ -25,7 +25,7 @@
    "shopUrl": null
   },
   "adventures-in-the-forgotten-realms-dungeons-of-death": {
-   "ctPrice": 624.36,
+   "ctPrice": 626.52,
    "ctUrl": "https://www.cardtrader.com/en/cards/160509",
    "name": "Adventures in the Forgotten Realms Dungeons of Death",
    "shopName": null,
@@ -41,7 +41,7 @@
    "shopUrl": null
   },
   "aetherdrift-eternal-might": {
-   "ctPrice": 178.39,
+   "ctPrice": 178.43,
    "ctUrl": "https://www.cardtrader.com/en/cards/314239",
    "name": "Aetherdrift – Eternal Might",
    "shopName": "Frost Magic",
@@ -153,7 +153,7 @@
    "shopUrl": "https://magiccafe.eu/product/bloomburrow-commander-deck-set-4/"
   },
   "bloomburrow-squirreled-away": {
-   "ctPrice": 399.1,
+   "ctPrice": 434.82,
    "ctUrl": "https://www.cardtrader.com/en/cards/280701",
    "name": "Bloomburrow Squirreled Away",
    "shopName": "Magic Cafe",
@@ -361,7 +361,7 @@
    "shopUrl": "https://magiccafe.eu/product/starter-commander-deck-token-triumph/"
   },
   "fallout-hail-caesar": {
-   "ctPrice": 227.64,
+   "ctPrice": 227.55,
    "ctUrl": "https://www.cardtrader.com/en/cards/265027",
    "name": "Fallout Hail Caesar",
    "shopName": "Frost Magic",
@@ -417,7 +417,7 @@
    "shopUrl": null
   },
   "final-fantasy-counter-blitz": {
-   "ctPrice": 225.56,
+   "ctPrice": 224.15,
    "ctUrl": "https://www.cardtrader.com/en/cards/322098",
    "name": "Final Fantasy Counter Blitz",
    "shopName": "Frost Magic",
@@ -513,7 +513,7 @@
    "shopUrl": null
   },
   "foundations-starter-tramplesaurus-rex": {
-   "ctPrice": 196.77,
+   "ctPrice": 311.19,
    "ctUrl": "https://www.cardtrader.com/en/cards/389402",
    "name": "Foundations Starter – Tramplesaurus Rex",
    "shopName": null,
@@ -524,9 +524,9 @@
    "ctPrice": 174.2,
    "ctUrl": "https://www.cardtrader.com/en/cards/389400",
    "name": "Foundations Starter – Wretched Ranks",
-   "shopName": "Wilczek",
-   "shopPrice": 209.99,
-   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-wretched-ranks.html"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "ikoria-lair-of-behemoths-arcane-maelstrom": {
    "ctPrice": 661.31,
@@ -617,7 +617,7 @@
    "shopUrl": null
   },
   "kaldheim-elven-empire": {
-   "ctPrice": 708.26,
+   "ctPrice": 664.17,
    "ctUrl": "https://www.cardtrader.com/en/cards/151469",
    "name": "Kaldheim Elven Empire",
    "shopName": null,
@@ -785,7 +785,7 @@
    "shopUrl": null
   },
   "marvel-super-heroes-avengers-assemble": {
-   "ctPrice": 191.92,
+   "ctPrice": 191.79,
    "ctUrl": "https://www.cardtrader.com/en/cards/370631",
    "name": "Marvel Super Heroes – Avengers Assemble",
    "shopName": "Frost Magic",
@@ -849,7 +849,7 @@
    "shopUrl": "https://time4magic.pl/marvel-super-heroes-commander-deck-set"
   },
   "marvel-super-heroes-wakanda-forever": {
-   "ctPrice": 156.61,
+   "ctPrice": 164.1,
    "ctUrl": "https://www.cardtrader.com/en/cards/370630",
    "name": "Marvel Super Heroes – Wakanda Forever",
    "shopName": "Frost Magic",
@@ -873,7 +873,7 @@
    "shopUrl": null
   },
   "masters-enduring-enchantments": {
-   "ctPrice": 443.68,
+   "ctPrice": 443.5,
    "ctUrl": "https://www.cardtrader.com/en/cards/238391",
    "name": "Masters – Enduring Enchantments",
    "shopName": "Magic Cafe",
@@ -1025,7 +1025,7 @@
    "shopUrl": null
   },
   "outlaws-of-thunder-junction-desert-bloom": {
-   "ctPrice": 742.7,
+   "ctPrice": 745.25,
    "ctUrl": "https://www.cardtrader.com/en/cards/279476",
    "name": "Outlaws of Thunder Junction – Desert Bloom",
    "shopName": null,
@@ -1073,8 +1073,8 @@
    "shopUrl": null
   },
   "phyrexia-all-will-be-one-rebellion-rising": {
-   "ctPrice": 267.32,
-   "ctUrl": "https://www.cardtrader.com/en/cards/231931",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "Phyrexia All Will Be One | \"Rebellion Rising",
    "shopName": null,
    "shopPrice": null,
@@ -1153,7 +1153,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-set.html"
   },
   "star-trek-federation-fleet": {
-   "ctPrice": 297.56,
+   "ctPrice": 297.21,
    "ctUrl": "https://www.cardtrader.com/en/cards/400888",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Time4Magic",
@@ -1169,7 +1169,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
   },
   "star-trek-klingon-fury": {
-   "ctPrice": 297.56,
+   "ctPrice": 297.21,
    "ctUrl": "https://www.cardtrader.com/en/cards/400890",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Time4Magic",
@@ -1185,7 +1185,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-klingon-fury.html"
   },
   "star-trek-landing-party": {
-   "ctPrice": 297.56,
+   "ctPrice": 297.21,
    "ctUrl": "https://www.cardtrader.com/en/cards/400889",
    "name": "Star Trek – Landing Party",
    "shopName": "Time4Magic",
@@ -1209,7 +1209,7 @@
    "shopUrl": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
   },
   "star-trek-we-are-the-borg": {
-   "ctPrice": 300.43,
+   "ctPrice": 300.65,
    "ctUrl": "https://www.cardtrader.com/en/cards/400891",
    "name": "Star Trek – We Are the Borg",
    "shopName": "Wargamer",
@@ -1561,8 +1561,8 @@
    "shopUrl": null
   },
   "zendikar-rising-land-s-wrath": {
-   "ctPrice": 223.23,
-   "ctUrl": "https://www.cardtrader.com/en/cards/146527",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "Zendikar Rising – Land's Wrath",
    "shopName": null,
    "shopPrice": null,
