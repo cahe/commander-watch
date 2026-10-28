@@ -5743,5 +5743,56 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-28T14:17:39Z",
+  "best": {
+   "price": 260.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31275",
+  "id": "wargamer-17058",
+  "inStock": 8,
+  "kind": "restock",
+  "price": 330.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/marvel-super-heroes/17058-mtg-msh-cd-dp.html"
+ },
+ {
+  "at": "2026-10-28T14:17:39Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31272",
+  "id": "wargamer-17057",
+  "inStock": 8,
+  "kind": "restock",
+  "price": 287.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/marvel-super-heroes/17057-mtg-msh-cd-aa.html"
+ },
+ {
+  "at": "2026-10-28T14:17:39Z",
+  "best": {
+   "price": 150.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardtrader-265028",
+  "inStock": 5,
+  "kind": "notcheapest",
+  "price": 156.12,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
  }
 ]
