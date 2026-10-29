@@ -6014,5 +6014,57 @@
   "shop": "mrpuggy",
   "status": "out_of_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Lorwyn-Eclipsed-Dance-of-the-Elements-Commander-Deck/7925"
+ },
+ {
+  "at": "2026-10-29T19:13:28Z",
+  "best": {
+   "price": 150,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardtrader-265028",
+  "inStock": 6,
+  "kind": "cheapest",
+  "price": 137.22,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-29T19:13:28Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardtrader-400891",
+  "id": "cardtrader-400891",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 298.56,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400891"
+ },
+ {
+  "at": "2026-10-29T19:13:28Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 1,
+  "kind": "price",
+  "old": 698.53,
+  "price": 680.93,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
  }
 ]
