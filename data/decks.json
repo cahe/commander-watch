@@ -7190,6 +7190,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-10-29T15:17:28Z",
   "deck": "lorwyn-eclipsed-dance-of-the-elements",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardtrader-352407",
@@ -7199,7 +7201,7 @@
   "pid": 7925,
   "price": 229.99,
   "shop": "mrpuggy",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Lorwyn-Eclipsed-Dance-of-the-Elements-Commander-Deck/7925"
  },
  {

@@ -5998,5 +5998,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389403"
+ },
+ {
+  "at": "2026-10-29T15:17:28Z",
+  "best": {
+   "price": 199.0,
+   "shop": "wargamer"
+  },
+  "deck": "Lorwyn Eclipsed – Dance of the Elements",
+  "group": "cardtrader-352407",
+  "id": "mrpuggy-7925",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 229.99,
+  "shop": "mrpuggy",
+  "status": "out_of_stock",
+  "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Lorwyn-Eclipsed-Dance-of-the-Elements-Commander-Deck/7925"
  }
 ]
