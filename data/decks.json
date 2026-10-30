@@ -3521,13 +3521,14 @@
   "box": "data/boxes/400889.webp",
   "change": "price 294.12 → 293.99 zł",
   "changedAt": "2026-10-30T09:17:24Z",
-  "cheapest": false,
+  "cheapest": true,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardtrader-400889",
   "groupName": "Star Trek – Landing Party",
   "id": "cardtrader-400889",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
+  "lowLogged": 293.99,
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
   "price": 293.99,
@@ -3902,6 +3903,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-10-30T11:17:26Z",
   "deck": "secrets-of-strixhaven-quandrix-unlimited",
   "firstSeen": "2026-10-01T00:06:59Z",
   "group": "cardtrader-370599",
@@ -3911,7 +3914,7 @@
   "pid": 12370,
   "price": 184.9,
   "shop": "dragoneye",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://dragoneye.pl/magic-the-gathering-secrets-of-strixhaven-quandrix-unlimited-p-12370.html"
  },
  {
@@ -8810,8 +8813,8 @@
  },
  {
   "baseline": true,
-  "change": "price 299.00 → 279.00 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "sold out",
+  "changedAt": "2026-10-30T11:17:26Z",
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardtrader-400889",
@@ -8821,7 +8824,7 @@
   "pid": 997,
   "price": 279.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-landing-party-commander-deck"
  },
  {

@@ -6199,5 +6199,54 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/389403"
+ },
+ {
+  "at": "2026-10-30T11:17:26Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "deck": "Star Trek – Landing Party",
+  "group": "cardtrader-400889",
+  "id": "time4magic-997",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 279.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-landing-party-commander-deck"
+ },
+ {
+  "at": "2026-10-30T11:17:26Z",
+  "best": {
+   "price": 180,
+   "shop": "frostmagic"
+  },
+  "deck": "Secrets of Strixhaven Quandrix Unlimited",
+  "group": "cardtrader-370599",
+  "id": "dragoneye-12370",
+  "inStock": 4,
+  "kind": "soldout",
+  "price": 184.9,
+  "shop": "dragoneye",
+  "status": "out_of_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-secrets-of-strixhaven-quandrix-unlimited-p-12370.html"
+ },
+ {
+  "at": "2026-10-30T11:17:26Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardtrader-400889",
+  "id": "cardtrader-400889",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 293.99,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400889"
  }
 ]
