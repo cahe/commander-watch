@@ -6248,5 +6248,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400889"
+ },
+ {
+  "at": "2026-10-30T13:17:59Z",
+  "best": {
+   "price": 429.0,
+   "shop": "cardstore"
+  },
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "panmysza-4387",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 410.0,
+  "shop": "panmysza",
+  "status": "out_of_stock",
+  "url": "https://panmysza.pl/pl/p/Universes-Beyond-Fallout-Commander-Deck-Mutant-Menace/4387"
  }
 ]
