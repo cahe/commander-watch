@@ -9076,8 +9076,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-19T08:17:45Z",
+  "change": "sold out",
+  "changedAt": "2026-10-30T08:17:23Z",
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-10-19T08:17:45Z",
   "group": "cardtrader-400891",
@@ -9087,7 +9087,7 @@
   "pid": 18320,
   "price": 299.0,
   "shop": "wargamer",
-  "status": "preorder",
+  "status": "out_of_stock",
   "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18320-mtg-st-cd-watb.html"
  },
  {

@@ -6098,5 +6098,21 @@
   "shop": "panmysza",
   "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/Universes-Beyond-Fallout-Commander-Deck-Hail%2C-Ceasar-ENG/4385"
+ },
+ {
+  "at": "2026-10-30T08:17:23Z",
+  "best": {
+   "price": 379.99,
+   "shop": "wilczek"
+  },
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardtrader-400891",
+  "id": "wargamer-18320",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 299.0,
+  "shop": "wargamer",
+  "status": "out_of_stock",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18320-mtg-st-cd-watb.html"
  }
 ]
