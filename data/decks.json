@@ -8764,8 +8764,8 @@
  },
  {
   "baseline": true,
-  "change": "price 999.00 → 1029.00 zł",
-  "changedAt": "2026-10-27T11:17:40Z",
+  "change": "sold out",
+  "changedAt": "2026-10-30T06:17:22Z",
   "deck": "star-trek-set",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
@@ -8775,7 +8775,7 @@
   "pid": 994,
   "price": 1029.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-commander-deck-set-4"
  },
  {
