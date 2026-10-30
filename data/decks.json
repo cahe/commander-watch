@@ -7570,8 +7570,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-20T12:17:58Z",
+  "change": "sold out",
+  "changedAt": "2026-10-30T07:17:26Z",
   "deck": "fallout-hail-ceasar",
   "firstSeen": "2026-10-20T12:17:58Z",
   "group": "panmysza-4385",
@@ -7581,7 +7581,7 @@
   "pid": 4385,
   "price": 255.0,
   "shop": "panmysza",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/Universes-Beyond-Fallout-Commander-Deck-Hail%2C-Ceasar-ENG/4385"
  },
  {

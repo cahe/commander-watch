@@ -6082,5 +6082,21 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-commander-deck-set-4"
+ },
+ {
+  "at": "2026-10-30T07:17:26Z",
+  "best": {
+   "price": 299.99,
+   "shop": "xjoy"
+  },
+  "deck": "Fallout Hail, Ceasar",
+  "group": "panmysza-4385",
+  "id": "panmysza-4385",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 255.0,
+  "shop": "panmysza",
+  "status": "out_of_stock",
+  "url": "https://panmysza.pl/pl/p/Universes-Beyond-Fallout-Commander-Deck-Hail%2C-Ceasar-ENG/4385"
  }
 ]
