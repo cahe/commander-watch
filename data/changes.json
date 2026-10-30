@@ -6114,5 +6114,90 @@
   "shop": "wargamer",
   "status": "out_of_stock",
   "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18320-mtg-st-cd-watb.html"
+ },
+ {
+  "at": "2026-10-30T09:17:24Z",
+  "best": {
+   "price": 379.99,
+   "shop": "wilczek"
+  },
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardtrader-400891",
+  "id": "wargamer-18320",
+  "inStock": 1,
+  "kind": "price",
+  "old": 299.0,
+  "price": 319.0,
+  "shop": "wargamer",
+  "status": "out_of_stock",
+  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18320-mtg-st-cd-watb.html"
+ },
+ {
+  "at": "2026-10-30T09:17:24Z",
+  "best": {
+   "price": 129.99,
+   "shop": "wilczek"
+  },
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "xjoy-26814",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 129.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/26814-mtg-foundations-starter-commander-deck-keen-engineering.html"
+ },
+ {
+  "at": "2026-10-30T09:17:24Z",
+  "best": {
+   "price": 150,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardtrader-265028",
+  "inStock": 6,
+  "kind": "notcheapest",
+  "price": 155.63,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-10-30T09:17:24Z",
+  "best": {
+   "price": 329.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
+  "group": "cardtrader-246483",
+  "id": "cardtrader-246483",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 342.77,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-10-30T09:17:24Z",
+  "best": {
+   "price": 234.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": true,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "cardtrader-389403",
+  "inStock": 4,
+  "kind": "price",
+  "old": 215.64,
+  "price": 204.99,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389403"
  }
 ]
