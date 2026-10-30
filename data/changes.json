@@ -1,17 +1,5 @@
 [
  {
-  "at": "2026-09-30T18:17:43Z",
-  "deck": "Foundations Starter – Tramplesaurus Rex",
-  "group": "cardstore-31684",
-  "id": "xjoy-26817",
-  "inStock": 0,
-  "kind": "soldout",
-  "price": 179.99,
-  "shop": "xjoy",
-  "status": "out_of_stock",
-  "url": "https://www.xjoy.pl/mtg-commander/26817-mtg-foundations-starter-commander-deck-tramplesaurus-rex.html"
- },
- {
   "at": "2026-10-01T10:09:37Z",
   "best": {
    "price": 566.0,
@@ -6234,5 +6222,38 @@
   "shop": "panmysza",
   "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/Universes-Beyond-Fallout-Commander-Deck-Mutant-Menace/4387"
+ },
+ {
+  "at": "2026-10-30T18:17:58Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400888",
+  "id": "time4magic-998",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 289.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
+ },
+ {
+  "at": "2026-10-30T18:17:58Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400888",
+  "id": "cardtrader-400888",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 293.93,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400888"
  }
 ]
