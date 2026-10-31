@@ -6166,5 +6166,53 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322694"
+ },
+ {
+  "at": "2026-10-31T20:17:54Z",
+  "best": {
+   "price": 215.99,
+   "shop": "magiccafe"
+  },
+  "deck": "Modern Horizons 3 – Graveyard Overdrive",
+  "group": "cardtrader-279382",
+  "id": "frostmagic-modern-horizons-3-graveyard-overdrive",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 220,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/modern-horizons-3-graveyard-overdrive"
+ },
+ {
+  "at": "2026-10-31T20:17:54Z",
+  "best": {
+   "price": 269.99,
+   "shop": "xjoy"
+  },
+  "deck": "Modern Horizons 3 |\"Tricky Terrain",
+  "group": "cardtrader-279381",
+  "id": "frostmagic-modern-horizons-3-tricky-terrain",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 289,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/modern-horizons-3-tricky-terrain"
+ },
+ {
+  "at": "2026-10-31T20:17:54Z",
+  "best": {
+   "price": 184.9,
+   "shop": "dragoneye"
+  },
+  "deck": "Secrets of Strixhaven Lorehold Spirit",
+  "group": "cardtrader-370598",
+  "id": "frostmagic-mtg-secrets-of-strixhaven-lorehold-spirit-commander-deck",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 180,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-lorehold-spirit-commander-deck"
  }
 ]

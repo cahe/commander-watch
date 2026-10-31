@@ -4250,8 +4250,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-21T15:17:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-31T20:17:54Z",
   "deck": "modern-horizons-3-graveyard-overdrive",
   "firstSeen": "2026-10-21T15:17:54Z",
   "group": "cardtrader-279382",
@@ -4261,13 +4261,13 @@
   "pid": null,
   "price": 220,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/modern-horizons-3-graveyard-overdrive"
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-21T15:17:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-31T20:17:54Z",
   "deck": "modern-horizons-3-tricky-terrain",
   "firstSeen": "2026-10-21T15:17:54Z",
   "group": "cardtrader-279381",
@@ -4277,7 +4277,7 @@
   "pid": null,
   "price": 289,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/modern-horizons-3-tricky-terrain"
  },
  {
@@ -4362,8 +4362,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-10-21T15:17:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-31T20:17:54Z",
   "deck": "secrets-of-strixhaven-lorehold-spirit",
   "firstSeen": "2026-10-21T15:17:54Z",
   "group": "cardtrader-370598",
@@ -4373,7 +4373,7 @@
   "pid": null,
   "price": 180,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-lorehold-spirit-commander-deck"
  },
  {
