@@ -1,22 +1,5 @@
 [
  {
-  "at": "2026-10-01T13:17:40Z",
-  "best": {
-   "price": 239.0,
-   "shop": "time4magic"
-  },
-  "cheapest": true,
-  "deck": "Reality Fracture – Multiverse Reforged",
-  "group": "cardstore-31606",
-  "id": "dragoneye-12585",
-  "inStock": 4,
-  "kind": "restock",
-  "price": 234.9,
-  "shop": "dragoneye",
-  "status": "in_stock",
-  "url": "https://dragoneye.pl/magic-the-gathering-reality-fracture-commander-deck-multiverse-reforged-p-12585.html"
- },
- {
   "at": "2026-10-01T14:17:30Z",
   "best": {
    "price": 150.0,
