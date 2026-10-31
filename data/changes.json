@@ -1,21 +1,5 @@
 [
  {
-  "at": "2026-10-01T21:17:30Z",
-  "best": {
-   "price": 235.0,
-   "shop": "panmysza"
-  },
-  "deck": "Final Fantasy – Limit Break",
-  "group": "cardstore-29973",
-  "id": "time4magic-465",
-  "inStock": 3,
-  "kind": "soldout",
-  "price": 249.0,
-  "shop": "time4magic",
-  "status": "out_of_stock",
-  "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Limit-Break/465"
- },
- {
   "at": "2026-10-02T10:17:12Z",
   "best": {
    "price": 150.0,
@@ -6214,5 +6198,21 @@
   "shop": "frostmagic",
   "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-lorehold-spirit-commander-deck"
+ },
+ {
+  "at": "2026-10-31T21:17:56Z",
+  "best": {
+   "price": 1199.99,
+   "shop": "wilczek"
+  },
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "id": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 1029,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
  }
 ]
