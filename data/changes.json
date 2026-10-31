@@ -6167,5 +6167,54 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322694"
+ },
+ {
+  "at": "2026-10-31T15:17:56Z",
+  "best": {
+   "price": 145.0,
+   "shop": "panmysza"
+  },
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "wilczek-15687",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 129.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-keen-engineering.html"
+ },
+ {
+  "at": "2026-10-31T15:17:56Z",
+  "best": {
+   "price": 199.99,
+   "shop": "xjoy"
+  },
+  "deck": "Modern Horizons 3 – Creative Energy",
+  "group": "cardstore-28942",
+  "id": "wilczek-9015",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 199.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-modern-horizons-3-creative-energy.html"
+ },
+ {
+  "at": "2026-10-31T15:17:56Z",
+  "best": {
+   "price": 145.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "cardtrader-389399",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 133.4,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389399"
  }
 ]

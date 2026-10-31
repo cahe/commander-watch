@@ -3385,13 +3385,14 @@
   "box": "data/boxes/389399.webp",
   "change": "price 119.95 → 133.40 zł",
   "changedAt": "2026-10-31T09:17:53Z",
-  "cheapest": false,
+  "cheapest": true,
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31681",
   "groupName": "Foundations Starter – Keen Engineering",
   "id": "cardtrader-389399",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/389399/show_foundations-keen-engineering-commander-deck-foundations.jpg",
+  "lowLogged": 133.4,
   "name": "Foundations: \"Keen Engineering\" Commander Deck",
   "pid": 389399,
   "price": 133.4,
@@ -9638,8 +9639,8 @@
  },
  {
   "baseline": false,
-  "change": "back in stock, price 119.99 → 129.99 zł",
-  "changedAt": "2026-10-20T11:17:56Z",
+  "change": "sold out",
+  "changedAt": "2026-10-31T15:17:56Z",
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-31681",
@@ -9649,7 +9650,7 @@
   "pid": 15687,
   "price": 129.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-keen-engineering.html"
  },
  {
@@ -11462,8 +11463,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-10-31T15:17:56Z",
   "deck": "modern-horizons-3-creative-energy",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-28942",
@@ -11473,7 +11474,7 @@
   "pid": 9015,
   "price": 199.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-modern-horizons-3-creative-energy.html"
  },
  {
