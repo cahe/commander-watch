@@ -1,38 +1,5 @@
 [
  {
-  "at": "2026-10-01T17:17:29Z",
-  "best": {
-   "price": 229.99,
-   "shop": "mrpuggy"
-  },
-  "cheapest": true,
-  "deck": "Lorwyn Eclipsed – Dance of the Elements",
-  "group": "cardtrader-352407",
-  "id": "cardtrader-352407",
-  "inStock": 1,
-  "kind": "cheapest",
-  "price": 199.72,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/352407"
- },
- {
-  "at": "2026-10-01T17:17:29Z",
-  "best": {
-   "price": 229.99,
-   "shop": "mrpuggy"
-  },
-  "deck": "Lorwyn Eclipsed – Dance of the Elements",
-  "group": "cardtrader-352407",
-  "id": "wargamer-16370",
-  "inStock": 1,
-  "kind": "soldout",
-  "price": 199.0,
-  "shop": "wargamer",
-  "status": "out_of_stock",
-  "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16370-mtg-le-cd-dote.html"
- },
- {
   "at": "2026-10-01T19:17:25Z",
   "best": {
    "price": 199.99,
