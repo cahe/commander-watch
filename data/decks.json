@@ -1267,8 +1267,8 @@
  {
   "baseline": true,
   "box": "data/boxes/224263.webp",
-  "change": "price 166.92 → 166.40 zł",
-  "changedAt": "2026-10-29T14:17:23Z",
+  "change": "price 166.41 → 166.81 zł",
+  "changedAt": "2026-10-31T14:17:57Z",
   "cheapest": true,
   "deck": "evergreen-starter-commadner-grave-danger",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -1279,9 +1279,9 @@
   "lowLogged": 165.62,
   "name": "Starter Commander Decks | \"Grave Danger\" Commander Deck",
   "pid": 224263,
-  "price": 166.41,
+  "price": 166.81,
   "recent": [
-   166.41
+   166.81
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1290,8 +1290,8 @@
  {
   "baseline": true,
   "box": "data/boxes/224264.webp",
-  "change": "price 218.17 → 218.19 zł",
-  "changedAt": "2026-10-30T15:17:57Z",
+  "change": "price 218.19 → 202.15 zł",
+  "changedAt": "2026-10-31T14:17:57Z",
   "cheapest": false,
   "deck": "evergreen-starter-commadner-chaos-incarnate",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -1301,9 +1301,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/224264/show_starter-commander-decks-chaos-incarnate-commander-deck-starter-commander-decks.jpg",
   "name": "Starter Commander Decks | \"Chaos Incarnate\" Commander Deck",
   "pid": 224264,
-  "price": 218.19,
+  "price": 202.15,
   "recent": [
-   218.19
+   202.15
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1967,8 +1967,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265026.webp",
-  "change": "price 222.59 → 213.75 zł",
-  "changedAt": "2026-10-31T09:17:53Z",
+  "change": "price 213.75 → 222.59 zł",
+  "changedAt": "2026-10-31T14:17:57Z",
   "cheapest": true,
   "deck": "fallout-scrappy-survivors",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -1979,9 +1979,9 @@
   "lowLogged": 213.75,
   "name": "Fallout | \"Scrappy Survivors\" Commander Deck",
   "pid": 265026,
-  "price": 213.75,
+  "price": 222.59,
   "recent": [
-   213.75
+   222.59
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2970,20 +2970,21 @@
  {
   "baseline": true,
   "box": "data/boxes/322694.webp",
-  "change": "price 307.61 → 307.64 zł",
-  "changedAt": "2026-10-30T15:17:57Z",
-  "cheapest": false,
+  "change": "price 307.64 → 266.50 zł",
+  "changedAt": "2026-10-31T14:17:57Z",
+  "cheapest": true,
   "deck": "edge-of-eternities-world-shaper",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardtrader-322694",
   "groupName": "Edge of Eternities “World Shaper”",
   "id": "cardtrader-322694",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/322694/show_edge-of-eternities-world-shaper-commander-deck-commander-edge-of-eternities.jpg",
+  "lowLogged": 266.5,
   "name": "Edge of Eternities: \"World Shaper\" Commander Deck",
   "pid": 322694,
-  "price": 307.64,
+  "price": 266.5,
   "recent": [
-   307.64
+   266.5
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3037,8 +3038,8 @@
  {
   "baseline": true,
   "box": "data/boxes/354096.webp",
-  "change": "price 167.10 → 167.12 zł",
-  "changedAt": "2026-10-30T15:17:57Z",
+  "change": "price 167.12 → 169.09 zł",
+  "changedAt": "2026-10-31T14:17:57Z",
   "cheapest": true,
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3049,9 +3050,9 @@
   "lowLogged": 168.29,
   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
   "pid": 354096,
-  "price": 167.12,
+  "price": 169.09,
   "recent": [
-   167.12
+   169.09
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3060,8 +3061,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370595.webp",
-  "change": "price 244.10 → 244.13 zł",
-  "changedAt": "2026-10-30T15:17:57Z",
+  "change": "price 244.13 → 227.20 zł",
+  "changedAt": "2026-10-31T14:17:57Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-silverquill-influence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3072,9 +3073,9 @@
   "lowLogged": 218.38,
   "name": "Commander: Secrets of Strixhaven | \"Silverquill Influence\" Commander Deck",
   "pid": 370595,
-  "price": 244.13,
+  "price": 227.2,
   "recent": [
-   244.13
+   227.2
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3496,8 +3497,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 293.93 → 292.65 zł",
-  "changedAt": "2026-10-31T09:17:53Z",
+  "change": "price 292.65 → 292.61 zł",
+  "changedAt": "2026-10-31T14:17:57Z",
   "cheapest": true,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3508,9 +3509,9 @@
   "lowLogged": 293.93,
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 292.65,
+  "price": 292.61,
   "recent": [
-   292.65
+   292.61
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3542,8 +3543,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 293.93 → 293.62 zł",
-  "changedAt": "2026-10-31T09:17:53Z",
+  "change": "price 293.62 → 293.58 zł",
+  "changedAt": "2026-10-31T14:17:57Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3553,9 +3554,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 293.62,
+  "price": 293.58,
   "recent": [
-   293.62
+   293.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -7555,8 +7556,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-20T12:17:58Z",
+  "change": "sold out",
+  "changedAt": "2026-10-31T14:17:57Z",
   "deck": "fallout-scrappy-survivors",
   "firstSeen": "2026-10-20T12:17:58Z",
   "group": "cardstore-28767",
@@ -7566,7 +7567,7 @@
   "pid": 4384,
   "price": 255.0,
   "shop": "panmysza",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/Universes-Beyond-Fallout-Commander-Deck-Scrappy-Survivors-ENG/4384"
  },
  {
