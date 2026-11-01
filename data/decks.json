@@ -1718,20 +1718,21 @@
  {
   "baseline": true,
   "box": "data/boxes/246483.webp",
-  "change": "price 342.81 → 345.57 zł",
-  "changedAt": "2026-11-01T09:17:54Z",
-  "cheapest": false,
+  "change": "price 345.57 → 310.41 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
+  "cheapest": true,
   "deck": "the-lord-of-the-rings-tales-of-middle-earth-riders-of-ro",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardtrader-246483",
   "groupName": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
   "id": "cardtrader-246483",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/246483/show_commander-the-lord-of-the-rings-riders-of-rohan-commander-deck-commander-the-lord-of-the-rings-tales-of-middle-earth.jpg",
+  "lowLogged": 310.41,
   "name": "Commander: The Lord of the Rings | \"Riders Of Rohan\" Commander Deck",
   "pid": 246483,
-  "price": 345.57,
+  "price": 310.41,
   "recent": [
-   345.57
+   310.41
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2013,8 +2014,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265028.webp",
-  "change": "price 137.22 → 155.63 zł",
-  "changedAt": "2026-10-30T09:17:24Z",
+  "change": "price 155.64 → 155.91 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
   "cheapest": false,
   "deck": "fallout-science",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2024,9 +2025,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/265028/show_fallout-science-commander-deck-fallout.jpg",
   "name": "Fallout | \"Science!\" Commander Deck",
   "pid": 265028,
-  "price": 155.64,
+  "price": 155.91,
   "recent": [
-   155.64
+   155.91
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2241,8 +2242,8 @@
  {
   "baseline": true,
   "box": "data/boxes/279379.webp",
-  "change": "price 613.73 → 613.79 zł",
-  "changedAt": "2026-10-30T15:17:57Z",
+  "change": "price 613.79 → 613.74 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
   "cheapest": true,
   "deck": "modern-horizons-3-eldrazi-incursion",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2253,9 +2254,9 @@
   "lowLogged": 624.7,
   "name": "Commander: Modern Horizons 3 |\"Eldrazi Incursion\" Commander Deck",
   "pid": 279379,
-  "price": 613.79,
+  "price": 613.74,
   "recent": [
-   613.79
+   613.74
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2264,20 +2265,21 @@
  {
   "baseline": true,
   "box": "data/boxes/279380.webp",
-  "change": "price 200.15 → 200.17 zł",
-  "changedAt": "2026-10-30T15:17:57Z",
-  "cheapest": false,
+  "change": "price 200.17 → 189.49 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
+  "cheapest": true,
   "deck": "modern-horizons-3-creative-energy",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-28942",
   "groupName": "Modern Horizons 3 – Creative Energy",
   "id": "cardtrader-279380",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/279380/show_commander-modern-horizons-3-creative-energy-commander-deck-commander-modern-horizons-3.jpg",
+  "lowLogged": 189.49,
   "name": "Commander: Modern Horizons 3 |\"Creative Energy\" Commander Deck",
   "pid": 279380,
-  "price": 200.17,
+  "price": 189.49,
   "recent": [
-   200.17
+   189.49
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2286,8 +2288,8 @@
  {
   "baseline": true,
   "box": "data/boxes/279381.webp",
-  "change": "price 332.36 → 332.39 zł",
-  "changedAt": "2026-10-30T15:17:57Z",
+  "change": "price 332.39 → 299.42 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
   "cheapest": false,
   "deck": "modern-horizons-3-tricky-terrain",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2297,9 +2299,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/279381/show_commander-modern-horizons-3-tricky-terrain-commander-deck-commander-modern-horizons-3.jpg",
   "name": "Commander: Modern Horizons 3 |\"Tricky Terrain\" Commander Deck",
   "pid": 279381,
-  "price": 332.39,
+  "price": 299.42,
   "recent": [
-   332.39
+   299.42
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2650,8 +2652,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322095.webp",
-  "change": "price 224.85 → 224.87 zł",
-  "changedAt": "2026-10-30T15:17:57Z",
+  "change": "price 224.87 → 225.31 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
   "cheapest": true,
   "deck": "final-fantasy-limit-break",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2662,9 +2664,9 @@
   "lowLogged": 223.32,
   "name": "FINAL FANTASY: \"Limit Break\" Commander Deck",
   "pid": 322095,
-  "price": 224.87,
+  "price": 225.31,
   "recent": [
-   224.87
+   225.31
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2673,20 +2675,21 @@
  {
   "baseline": true,
   "box": "data/boxes/322098.webp",
-  "change": "price 224.87 → 244.57 zł",
-  "changedAt": "2026-11-01T09:17:54Z",
-  "cheapest": false,
+  "change": "price 244.57 → 222.50 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
+  "cheapest": true,
   "deck": "final-fantasy-counter-blitz",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-29974",
   "groupName": "Final Fantasy Counter Blitz",
   "id": "cardtrader-322098",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/322098/show_magic-the-gathering-final-fantasy-d20-counter-blitz-commander-deck-commander-magic-the-gathering-final-fantasy.jpg",
+  "lowLogged": 222.5,
   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck",
   "pid": 322098,
-  "price": 244.57,
+  "price": 222.5,
   "recent": [
-   244.57
+   222.5
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2695,8 +2698,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322100.webp",
-  "change": "price 240.76 → 240.79 zł",
-  "changedAt": "2026-10-30T15:17:57Z",
+  "change": "price 240.79 → 244.35 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
   "cheapest": false,
   "deck": "final-fantasy-scions-spellcraft",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2706,9 +2709,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/322100/show_magic-the-gathering-final-fantasy-d20-scions-spellcraft-commander-deck-commander-magic-the-gathering-final-fantasy.jpg",
   "name": "FINAL FANTASY: \"Scions & Spellcraft\" Commander Deck",
   "pid": 322100,
-  "price": 240.79,
+  "price": 244.35,
   "recent": [
-   240.79
+   244.35
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3496,8 +3499,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 292.65 → 290.06 zł",
-  "changedAt": "2026-11-01T09:17:54Z",
+  "change": "price 290.06 → 289.97 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
   "cheapest": true,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3508,9 +3511,9 @@
   "lowLogged": 293.93,
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 290.06,
+  "price": 289.97,
   "recent": [
-   290.06
+   289.97
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3519,8 +3522,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 293.88 → 290.06 zł",
-  "changedAt": "2026-11-01T09:17:54Z",
+  "change": "price 290.06 → 290.02 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
   "cheapest": true,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3531,9 +3534,9 @@
   "lowLogged": 293.99,
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 290.06,
+  "price": 290.02,
   "recent": [
-   290.06
+   290.02
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3542,8 +3545,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 293.62 → 285.66 zł",
-  "changedAt": "2026-11-01T09:17:54Z",
+  "change": "price 285.66 → 285.58 zł",
+  "changedAt": "2026-11-01T14:17:56Z",
   "cheapest": false,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3553,9 +3556,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 285.66,
+  "price": 285.58,
   "recent": [
-   285.66
+   285.58
   ],
   "shop": "cardtrader",
   "status": "in_stock",
