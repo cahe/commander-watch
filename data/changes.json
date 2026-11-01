@@ -6214,5 +6214,17 @@
   "shop": "frostmagic",
   "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
+ },
+ {
+  "at": "2026-11-01T08:17:54Z",
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "panmysza-12568",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 145.0,
+  "shop": "panmysza",
+  "status": "out_of_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Keen-Enginering/12568"
  }
 ]

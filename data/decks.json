@@ -7422,8 +7422,8 @@
  },
  {
   "baseline": false,
-  "change": "price 130.00 → 145.00 zł",
-  "changedAt": "2026-10-12T15:18:07Z",
+  "change": "sold out",
+  "changedAt": "2026-11-01T08:17:54Z",
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-10-01T14:17:16Z",
   "group": "cardstore-31681",
@@ -7433,7 +7433,7 @@
   "pid": 12568,
   "price": 145.0,
   "shop": "panmysza",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Keen-Enginering/12568"
  },
  {

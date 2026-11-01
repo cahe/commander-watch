@@ -500,9 +500,9 @@
    "ctPrice": 133.4,
    "ctUrl": "https://www.cardtrader.com/en/cards/389399",
    "name": "Foundations Starter – Keen Engineering",
-   "shopName": "Pan Mysza",
-   "shopPrice": 145.0,
-   "shopUrl": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Keen-Enginering/12568"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "foundations-starter-reign-of-dragons": {
    "ctPrice": 262.15,
