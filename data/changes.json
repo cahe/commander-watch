@@ -6226,5 +6226,141 @@
   "shop": "panmysza",
   "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Keen-Enginering/12568"
+ },
+ {
+  "at": "2026-11-01T09:17:54Z",
+  "best": {
+   "price": 279.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Edge of Eternities “World Shaper”",
+  "group": "cardtrader-322694",
+  "id": "cardtrader-322694",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 266.5,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322694"
+ },
+ {
+  "at": "2026-11-01T09:17:54Z",
+  "cheapest": true,
+  "deck": "Anthology 2 – Breed Lethality",
+  "group": "cardtrader-48685",
+  "id": "cardtrader-48685",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 881.91,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/48685"
+ },
+ {
+  "at": "2026-11-01T09:17:54Z",
+  "best": {
+   "price": 168,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Revival Trance",
+  "group": "cardstore-29972",
+  "id": "cardtrader-322101",
+  "inStock": 9,
+  "kind": "notcheapest",
+  "price": 169.18,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322101"
+ },
+ {
+  "at": "2026-11-01T09:17:54Z",
+  "best": {
+   "price": 230,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Counter Blitz",
+  "group": "cardstore-29974",
+  "id": "cardtrader-322098",
+  "inStock": 6,
+  "kind": "notcheapest",
+  "price": 244.57,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322098"
+ },
+ {
+  "at": "2026-11-01T09:17:54Z",
+  "best": {
+   "price": 1075.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Masters – Planeswalker Party",
+  "group": "cardtrader-238393",
+  "id": "cardtrader-238393",
+  "inStock": 1,
+  "kind": "price",
+  "old": 1007.0,
+  "price": 908.07,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/238393"
+ },
+ {
+  "at": "2026-11-01T09:17:54Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 1,
+  "kind": "price",
+  "old": 680.93,
+  "price": 659.28,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
+ },
+ {
+  "at": "2026-11-01T09:17:54Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardtrader-400893",
+  "id": "cardtrader-400893",
+  "inStock": 1,
+  "kind": "price",
+  "old": 680.67,
+  "price": 659.28,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-11-01T09:17:54Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 1,
+  "kind": "price",
+  "old": 685.18,
+  "price": 659.28,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
  }
 ]
