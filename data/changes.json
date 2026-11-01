@@ -6100,5 +6100,23 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-11-01T17:17:57Z",
+  "best": {
+   "price": 234.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": false,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "xjoy-26763",
+  "inStock": 4,
+  "kind": "price",
+  "old": 249.99,
+  "price": 239.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/reality-fracture/26763-mtg-reality-fracture-commander-deck-multiverse-reforged.html"
  }
 ]
