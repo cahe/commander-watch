@@ -5685,5 +5685,22 @@
   "shop": "xjoy",
   "status": "in_stock",
   "url": "https://www.xjoy.pl/reality-fracture/26763-mtg-reality-fracture-commander-deck-multiverse-reforged.html"
+ },
+ {
+  "at": "2026-11-02T21:17:59Z",
+  "best": {
+   "price": 1199.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "id": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "inStock": 2,
+  "kind": "preorder",
+  "price": 1029,
+  "shop": "frostmagic",
+  "status": "preorder",
+  "url": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
  }
 ]

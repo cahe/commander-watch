@@ -4221,8 +4221,8 @@
  },
  {
   "baseline": true,
-  "change": "sold out",
-  "changedAt": "2026-10-31T21:17:56Z",
+  "change": "back in stock",
+  "changedAt": "2026-11-02T21:17:59Z",
   "deck": "star-trek-set",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
@@ -4232,7 +4232,7 @@
   "pid": null,
   "price": 1029,
   "shop": "frostmagic",
-  "status": "out_of_stock",
+  "status": "preorder",
   "url": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
  },
  {
