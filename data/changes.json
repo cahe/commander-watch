@@ -1,22 +1,5 @@
 [
  {
-  "at": "2026-10-04T14:17:28Z",
-  "best": {
-   "price": 248.99,
-   "shop": "magiccafe"
-  },
-  "cheapest": true,
-  "deck": "Streets of New Capenna Obscura Operation",
-  "group": "cardtrader-208726",
-  "id": "cardtrader-208726",
-  "inStock": 1,
-  "kind": "cheapest",
-  "price": 247.73,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/208726"
- },
- {
   "at": "2026-10-04T15:17:25Z",
   "best": {
    "price": 248.99,
@@ -5542,5 +5525,171 @@
   "shop": "frostmagic",
   "status": "preorder",
   "url": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "best": {
+   "price": 150,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "cardtrader-265028",
+  "inStock": 5,
+  "kind": "cheapest",
+  "price": 139.42,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265028"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "best": {
+   "price": 168,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Final Fantasy Revival Trance",
+  "group": "cardstore-29972",
+  "id": "cardtrader-322101",
+  "inStock": 9,
+  "kind": "cheapest",
+  "price": 154.46,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322101"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "best": {
+   "price": 429.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardtrader-265029",
+  "inStock": 2,
+  "kind": "price",
+  "old": 389.28,
+  "price": 374.39,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Eldrazi Incursion",
+  "group": "cardtrader-279375",
+  "id": "cardtrader-279375",
+  "inStock": 0,
+  "kind": "price",
+  "old": 1315.15,
+  "price": 1281.16,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279375"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Graveyard Overdrive",
+  "group": "cardtrader-279378",
+  "id": "cardtrader-279378",
+  "inStock": 0,
+  "kind": "price",
+  "old": 568.98,
+  "price": 555.74,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279378"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Eldrazi Incursion",
+  "group": "cardtrader-279379",
+  "id": "cardtrader-279379",
+  "inStock": 0,
+  "kind": "price",
+  "old": 624.7,
+  "price": 610.99,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279379"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 1,
+  "kind": "price",
+  "old": 659.28,
+  "price": 644.21,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardtrader-400893",
+  "id": "cardtrader-400893",
+  "inStock": 1,
+  "kind": "price",
+  "old": 659.28,
+  "price": 644.21,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 1,
+  "kind": "price",
+  "old": 659.28,
+  "price": 644.21,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-11-03T14:17:53Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – We Are The Borg",
+  "group": "cardtrader-400895",
+  "id": "cardtrader-400895",
+  "inStock": 1,
+  "kind": "price",
+  "old": 683.54,
+  "price": 666.33,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400895"
  }
 ]
