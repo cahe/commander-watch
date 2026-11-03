@@ -1,22 +1,5 @@
 [
  {
-  "at": "2026-10-04T15:17:25Z",
-  "best": {
-   "price": 248.99,
-   "shop": "magiccafe"
-  },
-  "cheapest": false,
-  "deck": "Streets of New Capenna Obscura Operation",
-  "group": "cardtrader-208726",
-  "id": "cardtrader-208726",
-  "inStock": 1,
-  "kind": "notcheapest",
-  "price": 306.17,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/208726"
- },
- {
   "at": "2026-10-05T09:17:26Z",
   "best": {
    "price": 179.99,
@@ -5691,5 +5674,73 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400895"
+ },
+ {
+  "at": "2026-11-03T15:17:58Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400888",
+  "id": "time4magic-998",
+  "inStock": 3,
+  "kind": "restock",
+  "price": 289.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
+ },
+ {
+  "at": "2026-11-03T15:17:58Z",
+  "best": {
+   "price": 299.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardtrader-400889",
+  "id": "time4magic-997",
+  "inStock": 3,
+  "kind": "restock",
+  "price": 279.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-landing-party-commander-deck"
+ },
+ {
+  "at": "2026-11-03T15:17:58Z",
+  "best": {
+   "price": 289.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400888",
+  "id": "cardtrader-400888",
+  "inStock": 3,
+  "kind": "notcheapest",
+  "price": 291.19,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400888"
+ },
+ {
+  "at": "2026-11-03T15:17:58Z",
+  "best": {
+   "price": 279.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardtrader-400889",
+  "id": "cardtrader-400889",
+  "inStock": 3,
+  "kind": "notcheapest",
+  "price": 291.45,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400889"
  }
 ]
