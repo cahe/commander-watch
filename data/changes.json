@@ -1,57 +1,5 @@
 [
  {
-  "at": "2026-10-05T17:17:34Z",
-  "best": {
-   "price": 179.99,
-   "shop": "xjoy"
-  },
-  "deck": "Foundations Starter – Reign of Dragons",
-  "group": "cardstore-31683",
-  "id": "panmysza-12570",
-  "inStock": 2,
-  "kind": "soldout",
-  "price": 170.0,
-  "shop": "panmysza",
-  "status": "out_of_stock",
-  "url": "https://panmysza.pl/pl/p/MtG-Foundations-Commander-Deck-Reign-of-Dragons/12570"
- },
- {
-  "at": "2026-10-05T17:17:34Z",
-  "deck": "Zendikar Rising – Sneak Attack",
-  "group": "cardtrader-146528",
-  "id": "cardtrader-146528",
-  "inStock": 0,
-  "kind": "notcheapest",
-  "price": 257.43,
-  "shop": "cardtrader",
-  "status": "out_of_stock",
-  "url": "https://www.cardtrader.com/en/cards/146528"
- },
- {
-  "at": "2026-10-05T17:17:34Z",
-  "deck": "Innistrad Midnight Hunt | \"Coven Counters",
-  "group": "cardtrader-164138",
-  "id": "cardtrader-164138",
-  "inStock": 0,
-  "kind": "notcheapest",
-  "price": 335.67,
-  "shop": "cardtrader",
-  "status": "out_of_stock",
-  "url": "https://www.cardtrader.com/en/cards/164138"
- },
- {
-  "at": "2026-10-05T17:17:34Z",
-  "deck": "The Brothers' War | \"Urza's Iron Alliance",
-  "group": "cardtrader-224491",
-  "id": "cardtrader-224491",
-  "inStock": 0,
-  "kind": "notcheapest",
-  "price": 835.0,
-  "shop": "cardtrader",
-  "status": "out_of_stock",
-  "url": "https://www.cardtrader.com/en/cards/224491"
- },
- {
   "at": "2026-10-05T19:23:10Z",
   "best": {
    "price": 329.99,
@@ -5576,5 +5524,90 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-11-04T17:17:48Z",
+  "best": {
+   "price": 289.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "cardstore-31902",
+  "inStock": 4,
+  "kind": "new",
+  "price": 259.0,
+  "shop": "cardstore",
+  "status": "preorder",
+  "url": "https://cardstore.pl/commander/31902-star-trek-commander-deck-federation-fleet-przedsprzedaz-.html"
+ },
+ {
+  "at": "2026-11-04T17:17:48Z",
+  "best": {
+   "price": 279.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "cardstore-31904",
+  "inStock": 4,
+  "kind": "new",
+  "price": 259.0,
+  "shop": "cardstore",
+  "status": "preorder",
+  "url": "https://cardstore.pl/commander/31904-star-trek-commander-deck-klingon-fury-przedsprzedaz-.html"
+ },
+ {
+  "at": "2026-11-04T17:17:48Z",
+  "best": {
+   "price": 279.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "cardstore-31903",
+  "inStock": 4,
+  "kind": "new",
+  "price": 259.0,
+  "shop": "cardstore",
+  "status": "preorder",
+  "url": "https://cardstore.pl/commander/31903-star-trek-commander-deck-landing-party-przedsprzedaz-.html"
+ },
+ {
+  "at": "2026-11-04T17:17:48Z",
+  "best": {
+   "price": 379.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardstore-31905",
+  "id": "cardstore-31905",
+  "inStock": 2,
+  "kind": "new",
+  "price": 259.0,
+  "shop": "cardstore",
+  "status": "preorder",
+  "url": "https://cardstore.pl/commander/31905-star-trek-commander-deck-we-are-the-borg-przedsprzedaz-.html"
+ },
+ {
+  "at": "2026-11-04T17:17:48Z",
+  "best": {
+   "price": 259.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardstore-31905",
+  "id": "cardtrader-400891",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 301.45,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400891"
  }
 ]
