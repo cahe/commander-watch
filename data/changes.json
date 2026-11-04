@@ -5609,5 +5609,72 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400891"
+ },
+ {
+  "at": "2026-11-04T19:17:43Z",
+  "best": {
+   "price": 279.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Edge of Eternities “World Shaper”",
+  "group": "cardtrader-322694",
+  "id": "cardtrader-322694",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 310.78,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322694"
+ },
+ {
+  "at": "2026-11-04T19:17:43Z",
+  "best": {
+   "price": 255,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "cardtrader-265027",
+  "inStock": 3,
+  "kind": "price",
+  "old": 204.96,
+  "price": 200.66,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265027"
+ },
+ {
+  "at": "2026-11-04T19:17:43Z",
+  "best": {
+   "price": 429.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardtrader-265029",
+  "inStock": 2,
+  "kind": "price",
+  "old": 374.39,
+  "price": 366.37,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-11-04T19:17:43Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Eldrazi Incursion",
+  "group": "cardtrader-279379",
+  "id": "cardtrader-279379",
+  "inStock": 0,
+  "kind": "price",
+  "old": 610.99,
+  "price": 596.96,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279379"
  }
 ]
