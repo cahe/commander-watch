@@ -5558,5 +5558,23 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400889"
+ },
+ {
+  "at": "2026-11-04T14:17:44Z",
+  "best": {
+   "price": 249.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "cardtrader-265026",
+  "inStock": 4,
+  "kind": "price",
+  "old": 213.75,
+  "price": 208.8,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265026"
  }
 ]
