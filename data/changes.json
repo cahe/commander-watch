@@ -1,22 +1,5 @@
 [
  {
-  "at": "2026-10-05T22:17:32Z",
-  "best": {
-   "price": 329.99,
-   "shop": "magiccafe"
-  },
-  "cheapest": false,
-  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
-  "group": "cardtrader-246483",
-  "id": "cardtrader-246483",
-  "inStock": 1,
-  "kind": "notcheapest",
-  "price": 331.63,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/246483"
- },
- {
   "at": "2026-10-05T23:17:35Z",
   "best": {
    "price": 329.99,
