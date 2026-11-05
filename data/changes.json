@@ -1,22 +1,5 @@
 [
  {
-  "at": "2026-10-06T09:17:30Z",
-  "best": {
-   "price": 329.99,
-   "shop": "magiccafe"
-  },
-  "cheapest": false,
-  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
-  "group": "cardtrader-246483",
-  "id": "cardtrader-246483",
-  "inStock": 1,
-  "kind": "notcheapest",
-  "price": 331.63,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/246483"
- },
- {
   "at": "2026-10-06T10:17:32Z",
   "best": {
    "price": 329.99,
@@ -5523,5 +5506,223 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400891"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "best": {
+   "price": 190.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Teenage Mutant Ninja Turtles – Turtle Power!",
+  "group": "cardstore-30911",
+  "id": "panmysza-9933",
+  "inStock": 6,
+  "kind": "price",
+  "old": 240.0,
+  "price": 165.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/Teenage-Mutant-Ninja-Turtles-Commander-Deck/9933"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "cheapest": true,
+  "deck": "Zendikar Rising – Land's Wrath",
+  "group": "cardtrader-146527",
+  "id": "cardtrader-146527",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 200.88,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/146527"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "cheapest": true,
+  "deck": "Zendikar Rising – Sneak Attack",
+  "group": "cardtrader-146528",
+  "id": "cardtrader-146528",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 244.89,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/146528"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Tricky Terrain",
+  "group": "cardtrader-279377",
+  "id": "cardtrader-279377",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 750.57,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279377"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "best": {
+   "price": 429.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Outlaws of Thunder Junction Most Wanted",
+  "group": "cardtrader-279473",
+  "id": "cardtrader-279473",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 398.9,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279473"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "best": {
+   "price": 165.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Teenage Mutant Ninja Turtles – Turtle Power!",
+  "group": "cardstore-30911",
+  "id": "cardtrader-354096",
+  "inStock": 6,
+  "kind": "notcheapest",
+  "price": 177.9,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/354096"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "best": {
+   "price": 399.99,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Murders at Karlov Manor Blame Game",
+  "group": "cardtrader-270490",
+  "id": "cardtrader-270490",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 486.84,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/270490"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "best": {
+   "price": 249.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "cardtrader-265026",
+  "inStock": 4,
+  "kind": "price",
+  "old": 208.8,
+  "price": 200.88,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "best": {
+   "price": 429.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardtrader-265029",
+  "inStock": 2,
+  "kind": "price",
+  "old": 366.37,
+  "price": 350.53,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Eldrazi Incursion",
+  "group": "cardtrader-279375",
+  "id": "cardtrader-279375",
+  "inStock": 0,
+  "kind": "price",
+  "old": 1281.16,
+  "price": 1235.16,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279375"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Eldrazi Incursion",
+  "group": "cardtrader-279379",
+  "id": "cardtrader-279379",
+  "inStock": 0,
+  "kind": "price",
+  "old": 596.96,
+  "price": 575.0,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279379"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "cheapest": true,
+  "deck": "Outlaws of Thunder Junction – Desert Bloom",
+  "group": "cardtrader-279476",
+  "id": "cardtrader-279476",
+  "inStock": 0,
+  "kind": "price",
+  "old": 445.5,
+  "price": 398.9,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279476"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "cheapest": true,
+  "deck": "Outlaws of Thunder Junction Quick Draw",
+  "group": "cardtrader-279478",
+  "id": "cardtrader-279478",
+  "inStock": 0,
+  "kind": "price",
+  "old": 615.1,
+  "price": 596.96,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279478"
+ },
+ {
+  "at": "2026-11-05T09:17:46Z",
+  "best": {
+   "price": 499.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Bloomburrow Squirreled Away",
+  "group": "cardtrader-280701",
+  "id": "cardtrader-280701",
+  "inStock": 1,
+  "kind": "price",
+  "old": 396.42,
+  "price": 376.89,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/280701"
  }
 ]
