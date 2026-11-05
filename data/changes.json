@@ -1,22 +1,5 @@
 [
  {
-  "at": "2026-10-06T14:17:33Z",
-  "best": {
-   "price": 329.99,
-   "shop": "magiccafe"
-  },
-  "cheapest": true,
-  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
-  "group": "cardtrader-246483",
-  "id": "cardtrader-246483",
-  "inStock": 1,
-  "kind": "cheapest",
-  "price": 308.47,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/246483"
- },
- {
   "at": "2026-10-06T15:17:36Z",
   "best": {
    "price": 259.0,
@@ -5656,5 +5639,105 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/280701"
+ },
+ {
+  "at": "2026-11-05T14:17:42Z",
+  "deck": "Secrets of Strixhaven Witherbloom Pestilence",
+  "group": "cardtrader-370597",
+  "id": "magiccafe-28227",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 254.5,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-witherbloom-pestilence/"
+ },
+ {
+  "at": "2026-11-05T14:17:42Z",
+  "best": {
+   "price": 184.9,
+   "shop": "dragoneye"
+  },
+  "deck": "Secrets of Strixhaven Lorehold Spirit",
+  "group": "cardtrader-370598",
+  "id": "magiccafe-28223",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 193.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-lorehold-spirit/"
+ },
+ {
+  "at": "2026-11-05T14:17:42Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 1,
+  "kind": "price",
+  "old": 644.21,
+  "price": 617.63,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
+ },
+ {
+  "at": "2026-11-05T14:17:42Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardtrader-400893",
+  "id": "cardtrader-400893",
+  "inStock": 1,
+  "kind": "price",
+  "old": 644.21,
+  "price": 617.63,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-11-05T14:17:42Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 1,
+  "kind": "price",
+  "old": 644.21,
+  "price": 617.63,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-11-05T14:17:42Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – We Are The Borg",
+  "group": "cardtrader-400895",
+  "id": "cardtrader-400895",
+  "inStock": 1,
+  "kind": "price",
+  "old": 666.33,
+  "price": 639.59,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400895"
  }
 ]
