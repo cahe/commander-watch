@@ -5565,5 +5565,37 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400895"
+ },
+ {
+  "at": "2026-11-06T08:17:48Z",
+  "best": {
+   "price": 199.0,
+   "shop": "cardstore"
+  },
+  "deck": "Fallout Science",
+  "group": "cardstore-28768",
+  "id": "frostmagic-universes-beyond-fallout-science",
+  "inStock": 4,
+  "kind": "soldout",
+  "price": 150,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
+ },
+ {
+  "at": "2026-11-06T08:17:48Z",
+  "best": {
+   "price": 249.99,
+   "shop": "wilczek"
+  },
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "frostmagic-universes-beyond-fallout-scrappy-survivors",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 255,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-scrappy-survivors"
  }
 ]

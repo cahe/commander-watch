@@ -4542,8 +4542,8 @@
  },
  {
   "baseline": false,
-  "change": "back in stock, price 140.00 → 150.00 zł",
-  "changedAt": "2026-10-28T15:17:38Z",
+  "change": "sold out",
+  "changedAt": "2026-11-06T08:17:48Z",
   "deck": "fallout-science",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-28768",
@@ -4553,13 +4553,13 @@
   "pid": null,
   "price": 150,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-science"
  },
  {
   "baseline": false,
-  "change": "back in stock, price 240.00 → 255.00 zł",
-  "changedAt": "2026-10-28T15:17:38Z",
+  "change": "sold out",
+  "changedAt": "2026-11-06T08:17:48Z",
   "deck": "fallout-scrappy-survivors",
   "firstSeen": "2026-10-15T14:17:59Z",
   "group": "cardstore-28767",
@@ -4569,7 +4569,7 @@
   "pid": null,
   "price": 255,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-scrappy-survivors"
  },
  {
