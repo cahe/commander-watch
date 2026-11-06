@@ -1148,9 +1148,9 @@
    "ctPrice": null,
    "ctUrl": null,
    "name": "Star Trek",
-   "shopName": "Wilczek",
-   "shopPrice": 2299.99,
-   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-set.html"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "star-trek-federation-fleet": {
    "ctPrice": 279.26,

@@ -5529,5 +5529,17 @@
   "shop": "frostmagic",
   "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/universes-beyond-fallout-scrappy-survivors"
+ },
+ {
+  "at": "2026-11-06T12:17:49Z",
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-display-collector-s-edition",
+  "id": "wilczek-15233",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 2299.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-set.html"
  }
 ]

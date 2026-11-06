@@ -9548,8 +9548,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-11-06T12:17:49Z",
   "deck": "star-trek-collector-set",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "frostmagic-magic-the-gathering-star-trek-commander-display-collector-s-edition",
@@ -9559,7 +9559,7 @@
   "pid": 15233,
   "price": 2299.99,
   "shop": "wilczek",
-  "status": "preorder",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-set.html"
  },
  {
