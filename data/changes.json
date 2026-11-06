@@ -5507,5 +5507,37 @@
   "shop": "wilczek",
   "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-set.html"
+ },
+ {
+  "at": "2026-11-06T14:17:51Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "cardtrader-389399",
+  "inStock": 0,
+  "kind": "price",
+  "old": 133.4,
+  "price": 129.14,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389399"
+ },
+ {
+  "at": "2026-11-06T14:17:51Z",
+  "best": {
+   "price": 234.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": true,
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "cardtrader-389403",
+  "inStock": 4,
+  "kind": "price",
+  "old": 204.99,
+  "price": 200.47,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/389403"
  }
 ]
