@@ -5361,5 +5361,23 @@
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/231931"
+ },
+ {
+  "at": "2026-11-07T17:17:43Z",
+  "best": {
+   "price": 235.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Scions & Spellcraft",
+  "group": "cardstore-29975",
+  "id": "xjoy-23118",
+  "inStock": 3,
+  "kind": "price",
+  "old": 319.99,
+  "price": 279.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/final-fantasy/23118-mtg-final-fantasy-commander-deck-scions-spellcraft.html"
  }
 ]

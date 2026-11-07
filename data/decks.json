@@ -12280,6 +12280,8 @@
  },
  {
   "baseline": true,
+  "change": "price 319.99 → 279.99 zł",
+  "changedAt": "2026-11-07T17:17:43Z",
   "deck": "final-fantasy-scions-spellcraft",
   "firstSeen": "2026-09-30T16:17:16Z",
   "group": "cardstore-29975",
@@ -12287,7 +12289,7 @@
   "id": "xjoy-23118",
   "name": "MTG - Final Fantasy Commander Deck - Scions & Spellcraft",
   "pid": 23118,
-  "price": 319.99,
+  "price": 279.99,
   "shop": "xjoy",
   "status": "in_stock",
   "url": "https://www.xjoy.pl/final-fantasy/23118-mtg-final-fantasy-commander-deck-scions-spellcraft.html"
