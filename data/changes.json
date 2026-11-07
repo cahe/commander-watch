@@ -5261,5 +5261,54 @@
   "shop": "wargamer",
   "status": "preorder",
   "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18320-mtg-st-cd-watb.html"
+ },
+ {
+  "at": "2026-11-07T09:17:46Z",
+  "cheapest": true,
+  "deck": "Phyrexia All Will Be One | \"Rebellion Rising",
+  "group": "cardtrader-231931",
+  "id": "cardtrader-231931",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 310.2,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/231931"
+ },
+ {
+  "at": "2026-11-07T09:17:46Z",
+  "best": {
+   "price": 566.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31277",
+  "id": "cardtrader-370634",
+  "inStock": 4,
+  "kind": "price",
+  "old": 304.64,
+  "price": 286.74,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370634"
+ },
+ {
+  "at": "2026-11-07T09:17:46Z",
+  "best": {
+   "price": 560.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31276",
+  "id": "cardtrader-370635",
+  "inStock": 4,
+  "kind": "price",
+  "old": 348.39,
+  "price": 330.23,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370635"
  }
 ]
