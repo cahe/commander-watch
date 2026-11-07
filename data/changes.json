@@ -5349,5 +5349,21 @@
   "shop": "wargamer",
   "status": "preorder",
   "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18317-mtg-st-cd-ff.html"
+ },
+ {
+  "at": "2026-11-07T12:17:50Z",
+  "best": {
+   "price": 262.99,
+   "shop": "magiccafe"
+  },
+  "deck": "Secrets of Strixhaven Silverquill Influence",
+  "group": "cardtrader-370595",
+  "id": "xjoy-25762",
+  "inStock": 4,
+  "kind": "soldout",
+  "price": 329.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/secrets-of-strixhaven/25762-mtg-secrets-of-strixhaven-commander-deck-silverquill-influence.html"
  }
 ]

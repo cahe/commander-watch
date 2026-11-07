@@ -12393,6 +12393,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-11-07T12:17:50Z",
   "deck": "secrets-of-strixhaven-silverquill-influence",
   "firstSeen": "2026-09-30T16:17:16Z",
   "group": "cardtrader-370595",
@@ -12402,7 +12404,7 @@
   "pid": 25762,
   "price": 329.99,
   "shop": "xjoy",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://www.xjoy.pl/secrets-of-strixhaven/25762-mtg-secrets-of-strixhaven-commander-deck-silverquill-influence.html"
  },
  {
