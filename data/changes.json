@@ -1,71 +1,5 @@
 [
  {
-  "at": "2026-10-08T19:17:34Z",
-  "best": {
-   "price": 240,
-   "shop": "frostmagic"
-  },
-  "cheapest": false,
-  "deck": "Secrets of Strixhaven Silverquill Influence",
-  "group": "cardtrader-370595",
-  "id": "time4magic-770",
-  "inStock": 6,
-  "kind": "price",
-  "old": 299.0,
-  "price": 279.0,
-  "shop": "time4magic",
-  "status": "in_stock",
-  "url": "https://time4magic.pl/secrets-of-strixhaven-silverquill-influence-commander-deck"
- },
- {
-  "at": "2026-10-08T19:17:34Z",
-  "best": {
-   "price": 234.9,
-   "shop": "dragoneye"
-  },
-  "cheapest": true,
-  "deck": "Reality Fracture – Multiverse Reforged",
-  "group": "cardstore-31606",
-  "id": "frostmagic-magic-the-gathering-reality-fracture-multiverse-reforged-commander-deck",
-  "inStock": 6,
-  "kind": "restock",
-  "price": 190,
-  "shop": "frostmagic",
-  "status": "in_stock",
-  "url": "https://frostmagic.pl/pl/products/magic-the-gathering-reality-fracture-multiverse-reforged-commander-deck"
- },
- {
-  "at": "2026-10-08T19:17:34Z",
-  "best": {
-   "price": 190,
-   "shop": "frostmagic"
-  },
-  "cheapest": false,
-  "deck": "Reality Fracture – Multiverse Reforged",
-  "group": "cardstore-31606",
-  "id": "cardtrader-389403",
-  "inStock": 6,
-  "kind": "notcheapest",
-  "price": 221.66,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/389403"
- },
- {
-  "at": "2026-10-08T19:17:34Z",
-  "cheapest": true,
-  "deck": "Fallout Hail Caesar",
-  "group": "cardtrader-265027",
-  "id": "cardtrader-265027",
-  "inStock": 0,
-  "kind": "price",
-  "old": 418.33,
-  "price": 387.75,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/265027"
- },
- {
   "at": "2026-10-08T20:17:31Z",
   "best": {
    "price": 1099.0,
@@ -5379,5 +5313,52 @@
   "shop": "xjoy",
   "status": "in_stock",
   "url": "https://www.xjoy.pl/final-fantasy/23118-mtg-final-fantasy-commander-deck-scions-spellcraft.html"
+ },
+ {
+  "at": "2026-11-07T19:17:46Z",
+  "cheapest": true,
+  "deck": "Phyrexia All Will Be One | \"Rebellion Rising",
+  "group": "cardtrader-231931",
+  "id": "cardtrader-231931",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 310.2,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/231931"
+ },
+ {
+  "at": "2026-11-07T19:17:46Z",
+  "best": {
+   "price": 168,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Revival Trance",
+  "group": "cardstore-29972",
+  "id": "cardtrader-322101",
+  "inStock": 9,
+  "kind": "notcheapest",
+  "price": 173.55,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322101"
+ },
+ {
+  "at": "2026-11-07T19:17:46Z",
+  "best": {
+   "price": 234.99,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Limit Break",
+  "group": "cardstore-29973",
+  "id": "cardtrader-322095",
+  "inStock": 6,
+  "kind": "notcheapest",
+  "price": 243.96,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322095"
  }
 ]
