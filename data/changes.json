@@ -1,21 +1,5 @@
 [
  {
-  "at": "2026-10-08T14:17:33Z",
-  "best": {
-   "price": 219.99,
-   "shop": "magiccafe"
-  },
-  "deck": "Lorwyn Eclipsed – Blight Curse",
-  "group": "cardtrader-352408",
-  "id": "wargamer-16371",
-  "inStock": 2,
-  "kind": "soldout",
-  "price": 215.0,
-  "shop": "wargamer",
-  "status": "out_of_stock",
-  "url": "https://sklep.wargamer.pl/pl/lorwyn-eclipsed/16371-mtg-le-cd-bc.html"
- },
- {
   "at": "2026-10-08T19:17:34Z",
   "best": {
    "price": 240,
@@ -5365,5 +5349,17 @@
   "shop": "xjoy",
   "status": "out_of_stock",
   "url": "https://www.xjoy.pl/secrets-of-strixhaven/25762-mtg-secrets-of-strixhaven-commander-deck-silverquill-influence.html"
+ },
+ {
+  "at": "2026-11-07T14:17:43Z",
+  "deck": "Phyrexia All Will Be One | \"Rebellion Rising",
+  "group": "cardtrader-231931",
+  "id": "cardtrader-231931",
+  "inStock": 0,
+  "kind": "notcheapest",
+  "price": 310.2,
+  "shop": "cardtrader",
+  "status": "out_of_stock",
+  "url": "https://www.cardtrader.com/en/cards/231931"
  }
 ]

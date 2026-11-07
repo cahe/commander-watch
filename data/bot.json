@@ -377,7 +377,7 @@
    "shopUrl": "https://www.xjoy.pl/19950-mtg-fallout-commander-deck-hail-ceasar.html"
   },
   "fallout-mutant-menace": {
-   "ctPrice": 371.78,
+   "ctPrice": 365.63,
    "ctUrl": "https://www.cardtrader.com/en/cards/265029",
    "name": "Fallout Mutant Menace",
    "shopName": "Cardstore",
@@ -393,7 +393,7 @@
    "shopUrl": "https://cardstore.pl/commander/28768-commander-fallout-science--195166228532.html"
   },
   "fallout-scrappy-survivors": {
-   "ctPrice": 213.43,
+   "ctPrice": 200.43,
    "ctUrl": "https://www.cardtrader.com/en/cards/265026",
    "name": "Fallout Scrappy Survivors",
    "shopName": "Wilczek",
@@ -497,7 +497,7 @@
    "shopUrl": null
   },
   "foundations-starter-keen-engineering": {
-   "ctPrice": 133.31,
+   "ctPrice": 129.14,
    "ctUrl": "https://www.cardtrader.com/en/cards/389399",
    "name": "Foundations Starter – Keen Engineering",
    "shopName": null,
@@ -513,7 +513,7 @@
    "shopUrl": null
   },
   "foundations-starter-tramplesaurus-rex": {
-   "ctPrice": 275.06,
+   "ctPrice": 275.1,
    "ctUrl": "https://www.cardtrader.com/en/cards/389402",
    "name": "Foundations Starter – Tramplesaurus Rex",
    "shopName": null,
@@ -521,7 +521,7 @@
    "shopUrl": null
   },
   "foundations-starter-wretched-ranks": {
-   "ctPrice": 240.01,
+   "ctPrice": 235.61,
    "ctUrl": "https://www.cardtrader.com/en/cards/389400",
    "name": "Foundations Starter – Wretched Ranks",
    "shopName": null,
@@ -793,7 +793,7 @@
    "shopUrl": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-avengers-assemble-commander-deck"
   },
   "marvel-super-heroes-avengers-assemble-collector-deck": {
-   "ctPrice": 330.23,
+   "ctPrice": 346.96,
    "ctUrl": "https://www.cardtrader.com/en/cards/370635",
    "name": "Marvel Super Heroes – Avengers Assemble",
    "shopName": "Pan Mysza",
@@ -833,7 +833,7 @@
    "shopUrl": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-the-fantastic-four-commander-deck"
   },
   "marvel-super-heroes-fantastic-four-collector-deck": {
-   "ctPrice": 330.67,
+   "ctPrice": 333.79,
    "ctUrl": "https://www.cardtrader.com/en/cards/370637",
    "name": "Marvel Super Heroes – Fantastic Four",
    "shopName": "Pan Mysza",
@@ -857,7 +857,7 @@
    "shopUrl": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-wakanda-forever-commander-deck"
   },
   "marvel-super-heroes-wakanda-forever-collector-deck": {
-   "ctPrice": 286.74,
+   "ctPrice": 303.04,
    "ctUrl": "https://www.cardtrader.com/en/cards/370634",
    "name": "Marvel Super Heroes – Wakanda Forever",
    "shopName": "Cardstore",
@@ -1073,8 +1073,8 @@
    "shopUrl": null
   },
   "phyrexia-all-will-be-one-rebellion-rising": {
-   "ctPrice": 310.2,
-   "ctUrl": "https://www.cardtrader.com/en/cards/231931",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "Phyrexia All Will Be One | \"Rebellion Rising",
    "shopName": null,
    "shopPrice": null,
@@ -1137,7 +1137,7 @@
    "shopUrl": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-silverquill-influence/"
   },
   "secrets-of-strixhaven-witherbloom-pestilence": {
-   "ctPrice": 240.01,
+   "ctPrice": 220.37,
    "ctUrl": "https://www.cardtrader.com/en/cards/370597",
    "name": "Secrets of Strixhaven Witherbloom Pestilence",
    "shopName": null,
@@ -1153,7 +1153,7 @@
    "shopUrl": null
   },
   "star-trek-federation-fleet": {
-   "ctPrice": 278.48,
+   "ctPrice": 278.75,
    "ctUrl": "https://www.cardtrader.com/en/cards/400888",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Cardstore",
@@ -1161,7 +1161,7 @@
    "shopUrl": "https://cardstore.pl/commander/31902-star-trek-commander-deck-federation-fleet-przedsprzedaz-.html"
   },
   "star-trek-federation-fleet-collector-deck": {
-   "ctPrice": 614.86,
+   "ctPrice": 616.75,
    "ctUrl": "https://www.cardtrader.com/en/cards/400892",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Wilczek",
@@ -1169,7 +1169,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
   },
   "star-trek-klingon-fury": {
-   "ctPrice": 274.09,
+   "ctPrice": 274.36,
    "ctUrl": "https://www.cardtrader.com/en/cards/400890",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Cardstore",
@@ -1177,7 +1177,7 @@
    "shopUrl": "https://cardstore.pl/commander/31904-star-trek-commander-deck-klingon-fury-przedsprzedaz-.html"
   },
   "star-trek-klingon-fury-collector-deck": {
-   "ctPrice": 614.82,
+   "ctPrice": 616.88,
    "ctUrl": "https://www.cardtrader.com/en/cards/400894",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Wilczek",
@@ -1185,7 +1185,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-klingon-fury.html"
   },
   "star-trek-landing-party": {
-   "ctPrice": 283.71,
+   "ctPrice": 283.8,
    "ctUrl": "https://www.cardtrader.com/en/cards/400889",
    "name": "Star Trek – Landing Party",
    "shopName": "Cardstore",
@@ -1193,7 +1193,7 @@
    "shopUrl": "https://cardstore.pl/commander/31903-star-trek-commander-deck-landing-party-przedsprzedaz-.html"
   },
   "star-trek-landing-party-collector-deck": {
-   "ctPrice": 614.82,
+   "ctPrice": 616.36,
    "ctUrl": "https://www.cardtrader.com/en/cards/400893",
    "name": "Star Trek – Landing Party",
    "shopName": "Wilczek",
