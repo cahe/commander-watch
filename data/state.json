@@ -1,5 +1,5 @@
 {
- "heartbeat": "2026-10-31",
+ "heartbeat": "2026-11-08",
  "shops": {
   "cardstore": {
    "failStreak": 0,
@@ -42,7 +42,7 @@
    "maxId": 15690
   },
   "xjoy": {
-   "failStreak": 1,
+   "failStreak": 0,
    "maxId": 26817
   }
  }
