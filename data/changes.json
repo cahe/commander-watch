@@ -5240,5 +5240,18 @@
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/279377"
+ },
+ {
+  "at": "2026-11-08T19:05:27Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Tricky Terrain",
+  "group": "cardtrader-279377",
+  "id": "cardtrader-279377",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 749.05,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279377"
  }
 ]
