@@ -8883,8 +8883,8 @@
  },
  {
   "baseline": true,
-  "change": "back in stock",
-  "changedAt": "2026-11-03T15:17:58Z",
+  "change": "sold out",
+  "changedAt": "2026-11-08T13:17:44Z",
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31903",
@@ -8894,7 +8894,7 @@
   "pid": 997,
   "price": 279.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-landing-party-commander-deck"
  },
  {
