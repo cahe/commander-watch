@@ -5344,5 +5344,17 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-landing-party-commander-deck"
+ },
+ {
+  "at": "2026-11-08T14:17:46Z",
+  "deck": "Modern Horizons 3 |\"Tricky Terrain",
+  "group": "cardtrader-279377",
+  "id": "cardtrader-279377",
+  "inStock": 0,
+  "kind": "notcheapest",
+  "price": 749.05,
+  "shop": "cardtrader",
+  "status": "out_of_stock",
+  "url": "https://www.cardtrader.com/en/cards/279377"
  }
 ]

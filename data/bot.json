@@ -25,7 +25,7 @@
    "shopUrl": null
   },
   "adventures-in-the-forgotten-realms-dungeons-of-death": {
-   "ctPrice": 620.0,
+   "ctPrice": 623.38,
    "ctUrl": "https://www.cardtrader.com/en/cards/160509",
    "name": "Adventures in the Forgotten Realms Dungeons of Death",
    "shopName": null,
@@ -617,7 +617,7 @@
    "shopUrl": null
   },
   "kaldheim-elven-empire": {
-   "ctPrice": 882.72,
+   "ctPrice": 882.32,
    "ctUrl": "https://www.cardtrader.com/en/cards/151469",
    "name": "Kaldheim Elven Empire",
    "shopName": null,
@@ -713,7 +713,7 @@
    "shopUrl": "https://magiccafe.eu/product/lorwyn-eclipsed-commander-decks/"
   },
   "lorwyn-eclipsed-blight-curse": {
-   "ctPrice": 188.39,
+   "ctPrice": 197.53,
    "ctUrl": "https://www.cardtrader.com/en/cards/352408",
    "name": "Lorwyn Eclipsed – Blight Curse",
    "shopName": "Magic Cafe",
@@ -785,7 +785,7 @@
    "shopUrl": null
   },
   "marvel-super-heroes-avengers-assemble": {
-   "ctPrice": 187.25,
+   "ctPrice": 187.3,
    "ctUrl": "https://www.cardtrader.com/en/cards/370631",
    "name": "Marvel Super Heroes – Avengers Assemble",
    "shopName": "Frost Magic",
@@ -945,7 +945,7 @@
    "shopUrl": null
   },
   "modern-horizons-3-graveyard-overdrive": {
-   "ctPrice": 217.82,
+   "ctPrice": 222.44,
    "ctUrl": "https://www.cardtrader.com/en/cards/279382",
    "name": "Modern Horizons 3 – Graveyard Overdrive",
    "shopName": "Magic Cafe",
@@ -977,8 +977,8 @@
    "shopUrl": "https://www.xjoy.pl/mtg-commander/21144-mtg-modern-horizons-3-commander-deck-tricky-terrain.html"
   },
   "modern-horizons-3-tricky-terrain-collector-deck": {
-   "ctPrice": 749.05,
-   "ctUrl": "https://www.cardtrader.com/en/cards/279377",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "Modern Horizons 3 |\"Tricky Terrain",
    "shopName": null,
    "shopPrice": null,
@@ -1153,7 +1153,7 @@
    "shopUrl": null
   },
   "star-trek-federation-fleet": {
-   "ctPrice": 278.35,
+   "ctPrice": 278.0,
    "ctUrl": "https://www.cardtrader.com/en/cards/400888",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Cardstore",
@@ -1161,7 +1161,7 @@
    "shopUrl": "https://cardstore.pl/commander/31902-star-trek-commander-deck-federation-fleet-przedsprzedaz-.html"
   },
   "star-trek-federation-fleet-collector-deck": {
-   "ctPrice": 612.36,
+   "ctPrice": 611.92,
    "ctUrl": "https://www.cardtrader.com/en/cards/400892",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Wilczek",
@@ -1169,7 +1169,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
   },
   "star-trek-klingon-fury": {
-   "ctPrice": 273.92,
+   "ctPrice": 273.21,
    "ctUrl": "https://www.cardtrader.com/en/cards/400890",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Cardstore",
@@ -1177,7 +1177,7 @@
    "shopUrl": "https://cardstore.pl/commander/31904-star-trek-commander-deck-klingon-fury-przedsprzedaz-.html"
   },
   "star-trek-klingon-fury-collector-deck": {
-   "ctPrice": 612.49,
+   "ctPrice": 612.05,
    "ctUrl": "https://www.cardtrader.com/en/cards/400894",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Wilczek",
@@ -1185,7 +1185,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-klingon-fury.html"
   },
   "star-trek-landing-party": {
-   "ctPrice": 283.67,
+   "ctPrice": 283.32,
    "ctUrl": "https://www.cardtrader.com/en/cards/400889",
    "name": "Star Trek – Landing Party",
    "shopName": "Cardstore",
@@ -1193,7 +1193,7 @@
    "shopUrl": "https://cardstore.pl/commander/31903-star-trek-commander-deck-landing-party-przedsprzedaz-.html"
   },
   "star-trek-landing-party-collector-deck": {
-   "ctPrice": 611.96,
+   "ctPrice": 611.83,
    "ctUrl": "https://www.cardtrader.com/en/cards/400893",
    "name": "Star Trek – Landing Party",
    "shopName": "Wilczek",
@@ -1209,7 +1209,7 @@
    "shopUrl": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
   },
   "star-trek-we-are-the-borg": {
-   "ctPrice": 300.62,
+   "ctPrice": 300.4,
    "ctUrl": "https://www.cardtrader.com/en/cards/400891",
    "name": "Star Trek – We Are the Borg",
    "shopName": "Wilczek",
@@ -1217,7 +1217,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-we-are-the-borg.html"
   },
   "star-trek-we-are-the-borg-collector-deck": {
-   "ctPrice": 638.85,
+   "ctPrice": 638.41,
    "ctUrl": "https://www.cardtrader.com/en/cards/400895",
    "name": "Star Trek – We Are The Borg",
    "shopName": "Wilczek",
@@ -1369,7 +1369,7 @@
    "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-temur-roar/"
   },
   "teenage-mutant-ninja-turtles-turtle-power": {
-   "ctPrice": 168.98,
+   "ctPrice": 177.54,
    "ctUrl": "https://www.cardtrader.com/en/cards/354096",
    "name": "Teenage Mutant Ninja Turtles – Turtle Power!",
    "shopName": "Pan Mysza",
@@ -1409,7 +1409,7 @@
    "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-elven-council/"
   },
   "the-lord-of-the-rings-tales-of-middle-earth-food-and-fel": {
-   "ctPrice": 389.31,
+   "ctPrice": 397.35,
    "ctUrl": "https://www.cardtrader.com/en/cards/246478",
    "name": "The Lord of the Rings Tales of Middle-earth Food and Fellowship",
    "shopName": "Magic Cafe",
