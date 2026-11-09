@@ -1,18 +1,5 @@
 [
  {
-  "at": "2026-10-10T11:17:49Z",
-  "cheapest": true,
-  "deck": "Doctor Who – Timey-Wimey",
-  "group": "cardtrader-246952",
-  "id": "cardtrader-246952",
-  "inStock": 0,
-  "kind": "cheapest",
-  "price": 484.24,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/246952"
- },
- {
   "at": "2026-10-10T21:17:49Z",
   "best": {
    "price": 234.9,
@@ -5180,5 +5167,56 @@
   "shop": "frostmagic",
   "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/magic-the-gathering-star-trek-commander-deck-display"
+ },
+ {
+  "at": "2026-11-09T12:04:48Z",
+  "best": {
+   "price": 260.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31275",
+  "id": "wilczek-14019",
+  "inStock": 9,
+  "kind": "restock",
+  "price": 349.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-doom-prevails.html"
+ },
+ {
+  "at": "2026-11-09T12:04:48Z",
+  "best": {
+   "price": 260.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31275",
+  "id": "wilczek-14019",
+  "inStock": 9,
+  "kind": "price",
+  "old": 329.99,
+  "price": 349.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-doom-prevails.html"
+ },
+ {
+  "at": "2026-11-09T12:04:48Z",
+  "best": {
+   "price": 1850,
+   "shop": "frostmagic"
+  },
+  "deck": "Marvel Super Heroes",
+  "group": "frostmagic-mtg-marvel-super-heroes-commander-deck-collector-s-edition-set",
+  "id": "wilczek-14016",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 1849.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-commander-deck-set.html"
  }
 ]

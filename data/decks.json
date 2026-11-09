@@ -9387,8 +9387,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-11-09T12:04:48Z",
   "deck": "marvel-super-heroes-collector-set",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "frostmagic-mtg-marvel-super-heroes-commander-deck-collector-s-edition-set",
@@ -9398,7 +9398,7 @@
   "pid": 14016,
   "price": 1849.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-commander-deck-set.html"
  },
  {
@@ -9435,8 +9435,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "back in stock, price 329.99 → 349.99 zł",
+  "changedAt": "2026-11-09T12:04:48Z",
   "deck": "marvel-super-heroes-doom-prevails",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31275",
@@ -9444,9 +9444,9 @@
   "id": "wilczek-14019",
   "name": "Magic: the Gathering - Marvel Super Heroes - Commander - Doom Prevails",
   "pid": 14019,
-  "price": 329.99,
+  "price": 349.99,
   "shop": "wilczek",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-doom-prevails.html"
  },
  {
