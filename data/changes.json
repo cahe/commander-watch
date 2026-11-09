@@ -5474,5 +5474,95 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400895"
+ },
+ {
+  "at": "2026-11-09T19:17:53Z",
+  "cheapest": true,
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-display-collector-s-edition",
+  "id": "mrpuggy-14255",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 2499.99,
+  "shop": "mrpuggy",
+  "status": "in_stock",
+  "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Star-Trek-Commander-Decks-Set-Collectors-Editions/14255"
+ },
+ {
+  "at": "2026-11-09T19:17:53Z",
+  "cheapest": true,
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-display-collector-s-edition",
+  "id": "mrpuggy-14255",
+  "inStock": 1,
+  "kind": "price",
+  "old": 1.0,
+  "price": 2499.99,
+  "shop": "mrpuggy",
+  "status": "in_stock",
+  "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Star-Trek-Commander-Decks-Set-Collectors-Editions/14255"
+ },
+ {
+  "at": "2026-11-09T19:17:53Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 593.65,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
+ },
+ {
+  "at": "2026-11-09T19:17:53Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Landing Party",
+  "group": "cardtrader-400893",
+  "id": "cardtrader-400893",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 593.56,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-11-09T19:17:53Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 593.78,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-11-09T19:17:53Z",
+  "deck": "Modern Horizons 3 |\"Tricky Terrain",
+  "group": "cardtrader-279377",
+  "id": "cardtrader-279377",
+  "inStock": 0,
+  "kind": "notcheapest",
+  "price": 748.17,
+  "shop": "cardtrader",
+  "status": "out_of_stock",
+  "url": "https://www.cardtrader.com/en/cards/279377"
  }
 ]

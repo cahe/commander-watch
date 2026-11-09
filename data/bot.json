@@ -49,7 +49,7 @@
    "shopUrl": "https://frostmagic.pl/pl/products/aetherdrift-commander-deck-eternal-might"
   },
   "aetherdrift-living-energy": {
-   "ctPrice": 131.58,
+   "ctPrice": 131.62,
    "ctUrl": "https://www.cardtrader.com/en/cards/314238",
    "name": "Aetherdrift Living Energy",
    "shopName": "Frost Magic",
@@ -121,7 +121,7 @@
    "shopUrl": null
   },
   "bloomburrow-animated-army": {
-   "ctPrice": 393.1,
+   "ctPrice": 393.15,
    "ctUrl": "https://www.cardtrader.com/en/cards/280703",
    "name": "Bloomburrow Animated Army",
    "shopName": "Magic Cafe",
@@ -137,7 +137,7 @@
    "shopUrl": "https://magiccafe.eu/product/commander-deck-bloomburrow-family-matters/"
   },
   "bloomburrow-peace-offering": {
-   "ctPrice": 436.98,
+   "ctPrice": 437.02,
    "ctUrl": "https://www.cardtrader.com/en/cards/280704",
    "name": "Bloomburrow Peace Offering",
    "shopName": "Magic Cafe",
@@ -385,7 +385,7 @@
    "shopUrl": "https://cardstore.pl/commander/28765-commander-fallout-mutant-menace--195166228532.html"
   },
   "fallout-science": {
-   "ctPrice": 138.24,
+   "ctPrice": 138.29,
    "ctUrl": "https://www.cardtrader.com/en/cards/265028",
    "name": "Fallout Science",
    "shopName": "Cardstore",
@@ -433,7 +433,7 @@
    "shopUrl": null
   },
   "final-fantasy-limit-break": {
-   "ctPrice": 243.67,
+   "ctPrice": 248.41,
    "ctUrl": "https://www.cardtrader.com/en/cards/322095",
    "name": "Final Fantasy Limit Break",
    "shopName": "Frost Magic",
@@ -489,7 +489,7 @@
    "shopUrl": "https://www.xjoy.pl/final-fantasy/23122-mtg-final-fantasy-commander-deck-display-4-decks.html"
   },
   "foundations-starter-calling-all-angels": {
-   "ctPrice": 287.1,
+   "ctPrice": 287.46,
    "ctUrl": "https://www.cardtrader.com/en/cards/389398",
    "name": "Foundations Starter – Calling All Angels",
    "shopName": null,
@@ -617,7 +617,7 @@
    "shopUrl": null
   },
   "kaldheim-elven-empire": {
-   "ctPrice": 881.28,
+   "ctPrice": 881.41,
    "ctUrl": "https://www.cardtrader.com/en/cards/151469",
    "name": "Kaldheim Elven Empire",
    "shopName": null,
@@ -817,7 +817,7 @@
    "shopUrl": "https://cardstore.pl/commander/31275-commander-marvel-super-heroes-doom-prevails.html"
   },
   "marvel-super-heroes-doom-prevails-collector-deck": {
-   "ctPrice": 416.75,
+   "ctPrice": 415.21,
    "ctUrl": "https://www.cardtrader.com/en/cards/370636",
    "name": "Marvel Super Heroes – Doom Prevails",
    "shopName": "Cardstore",
@@ -953,7 +953,7 @@
    "shopUrl": "https://magiccafe.eu/product/modern-horizons-3-commander-deck-graveyard-overdrive/"
   },
   "modern-horizons-3-graveyard-overdrive-collector-deck": {
-   "ctPrice": 551.22,
+   "ctPrice": 616.77,
    "ctUrl": "https://www.cardtrader.com/en/cards/279378",
    "name": "Modern Horizons 3 |\"Graveyard Overdrive",
    "shopName": null,
@@ -977,8 +977,8 @@
    "shopUrl": "https://www.xjoy.pl/mtg-commander/21144-mtg-modern-horizons-3-commander-deck-tricky-terrain.html"
   },
   "modern-horizons-3-tricky-terrain-collector-deck": {
-   "ctPrice": 748.17,
-   "ctUrl": "https://www.cardtrader.com/en/cards/279377",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "Modern Horizons 3 |\"Tricky Terrain",
    "shopName": null,
    "shopPrice": null,
@@ -1025,7 +1025,7 @@
    "shopUrl": null
   },
   "outlaws-of-thunder-junction-desert-bloom": {
-   "ctPrice": 397.62,
+   "ctPrice": 740.58,
    "ctUrl": "https://www.cardtrader.com/en/cards/279476",
    "name": "Outlaws of Thunder Junction – Desert Bloom",
    "shopName": null,
@@ -1089,7 +1089,7 @@
    "shopUrl": null
   },
   "reality-fracture-multiverse-reforged": {
-   "ctPrice": 200.24,
+   "ctPrice": 203.75,
    "ctUrl": "https://www.cardtrader.com/en/cards/389403",
    "name": "Reality Fracture – Multiverse Reforged",
    "shopName": "Dragoneye",
@@ -1137,7 +1137,7 @@
    "shopUrl": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-silverquill-influence/"
   },
   "secrets-of-strixhaven-witherbloom-pestilence": {
-   "ctPrice": 239.72,
+   "ctPrice": 243.85,
    "ctUrl": "https://www.cardtrader.com/en/cards/370597",
    "name": "Secrets of Strixhaven Witherbloom Pestilence",
    "shopName": null,
@@ -1148,12 +1148,12 @@
    "ctPrice": null,
    "ctUrl": null,
    "name": "Star Trek",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Mr. Puggy",
+   "shopPrice": 2499.99,
+   "shopUrl": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Star-Trek-Commander-Decks-Set-Collectors-Editions/14255"
   },
   "star-trek-federation-fleet": {
-   "ctPrice": 277.63,
+   "ctPrice": 277.54,
    "ctUrl": "https://www.cardtrader.com/en/cards/400888",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Cardstore",
@@ -1161,7 +1161,7 @@
    "shopUrl": "https://cardstore.pl/commander/31902-star-trek-commander-deck-federation-fleet-przedsprzedaz-.html"
   },
   "star-trek-federation-fleet-collector-deck": {
-   "ctPrice": 611.19,
+   "ctPrice": 593.65,
    "ctUrl": "https://www.cardtrader.com/en/cards/400892",
    "name": "Star Trek Federation Fleet",
    "shopName": "Pan Mysza",
@@ -1169,7 +1169,7 @@
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Federation-Fleet-Collectors-Edition-Commander-Deck/13001"
   },
   "star-trek-klingon-fury": {
-   "ctPrice": 272.63,
+   "ctPrice": 272.14,
    "ctUrl": "https://www.cardtrader.com/en/cards/400890",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Cardstore",
@@ -1177,7 +1177,7 @@
    "shopUrl": "https://cardstore.pl/commander/31904-star-trek-commander-deck-klingon-fury-przedsprzedaz-.html"
   },
   "star-trek-klingon-fury-collector-deck": {
-   "ctPrice": 611.33,
+   "ctPrice": 593.78,
    "ctUrl": "https://www.cardtrader.com/en/cards/400894",
    "name": "Star Trek Klingon Fury",
    "shopName": "Pan Mysza",
@@ -1185,7 +1185,7 @@
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Klingon-Fury-Collectors-Edition-Commander-Deck/13003"
   },
   "star-trek-landing-party": {
-   "ctPrice": 282.98,
+   "ctPrice": 282.85,
    "ctUrl": "https://www.cardtrader.com/en/cards/400889",
    "name": "Star Trek – Landing Party",
    "shopName": "Cardstore",
@@ -1193,7 +1193,7 @@
    "shopUrl": "https://cardstore.pl/commander/31903-star-trek-commander-deck-landing-party-przedsprzedaz-.html"
   },
   "star-trek-landing-party-collector-deck": {
-   "ctPrice": 611.06,
+   "ctPrice": 593.56,
    "ctUrl": "https://www.cardtrader.com/en/cards/400893",
    "name": "Star Trek Landing Party",
    "shopName": "Pan Mysza",
@@ -1209,7 +1209,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-set.html"
   },
   "star-trek-we-are-the-borg": {
-   "ctPrice": 300.05,
+   "ctPrice": 299.96,
    "ctUrl": "https://www.cardtrader.com/en/cards/400891",
    "name": "Star Trek – We Are the Borg",
    "shopName": "Wilczek",
@@ -1217,7 +1217,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-we-are-the-borg.html"
   },
   "star-trek-we-are-the-borg-collector-deck": {
-   "ctPrice": 637.65,
+   "ctPrice": 615.71,
    "ctUrl": "https://www.cardtrader.com/en/cards/400895",
    "name": "Star Trek We Are The Borg",
    "shopName": "Pan Mysza",
@@ -1361,7 +1361,7 @@
    "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-sultai-arisen/"
   },
   "tarkir-dragonstorm-temur-roar": {
-   "ctPrice": 432.54,
+   "ctPrice": 432.59,
    "ctUrl": "https://www.cardtrader.com/en/cards/322529",
    "name": "Tarkir – Dragonstorm Temur Roar",
    "shopName": "Magic Cafe",
@@ -1433,7 +1433,7 @@
    "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-set-4/"
   },
   "the-lord-of-the-rings-tales-of-middle-earth-the-hosts-of": {
-   "ctPrice": 458.65,
+   "ctPrice": 459.0,
    "ctUrl": "https://www.cardtrader.com/en/cards/246482",
    "name": "The Lord of the Rings Tales of Middle-earth The Hosts of Mordor",
    "shopName": "Magic Cafe",
@@ -1441,7 +1441,7 @@
    "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-the-hosts-of-mordor/"
   },
   "the-lost-caverns-of-ixalan-ahoy-mateys": {
-   "ctPrice": 390.38,
+   "ctPrice": 331.77,
    "ctUrl": "https://www.cardtrader.com/en/cards/261730",
    "name": "The Lost Caverns of Ixalan Ahoy Mateys",
    "shopName": "Magic Cafe",
@@ -1449,7 +1449,7 @@
    "shopUrl": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
   },
   "the-lost-caverns-of-ixalan-blood-rites": {
-   "ctPrice": 658.01,
+   "ctPrice": 658.05,
    "ctUrl": "https://www.cardtrader.com/en/cards/261732",
    "name": "The Lost Caverns of Ixalan Blood Rites",
    "shopName": null,
@@ -1457,7 +1457,7 @@
    "shopUrl": null
   },
   "the-lost-caverns-of-ixalan-explorers-of-the-deep": {
-   "ctPrice": 748.56,
+   "ctPrice": 748.6,
    "ctUrl": "https://www.cardtrader.com/en/cards/261733",
    "name": "The Lost Caverns of Ixalan Explorers of the Deep",
    "shopName": null,
@@ -1473,7 +1473,7 @@
    "shopUrl": null
   },
   "the-lost-caverns-of-ixalan-veloci-ramp-tor": {
-   "ctPrice": 871.36,
+   "ctPrice": 871.41,
    "ctUrl": "https://www.cardtrader.com/en/cards/261731",
    "name": "The Lost Caverns of Ixalan Veloci-ramp-tor",
    "shopName": null,
