@@ -5406,5 +5406,73 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-11-09T16:17:47Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "panmysza-13003",
+  "inStock": 2,
+  "kind": "new",
+  "price": 600.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Star-Trek-Klingon-Fury-Collectors-Edition-Commander-Deck/13003"
+ },
+ {
+  "at": "2026-11-09T16:17:47Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek We Are The Borg",
+  "group": "cardtrader-400895",
+  "id": "panmysza-13004",
+  "inStock": 2,
+  "kind": "new",
+  "price": 600.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Star-Trek-We-Are-The-Borg-Collectors-Edition-Commander-Deck/13004"
+ },
+ {
+  "at": "2026-11-09T16:17:47Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Star Trek Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 611.33,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-11-09T16:17:47Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Star Trek We Are The Borg",
+  "group": "cardtrader-400895",
+  "id": "cardtrader-400895",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 637.65,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400895"
  }
 ]
