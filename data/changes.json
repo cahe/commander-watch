@@ -5320,5 +5320,91 @@
   "shop": "wilczek",
   "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-avengers-assemble.html"
+ },
+ {
+  "at": "2026-11-09T15:17:52Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "panmysza-13001",
+  "inStock": 2,
+  "kind": "new",
+  "price": 600.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Star-Trek-Federation-Fleet-Collectors-Edition-Commander-Deck/13001"
+ },
+ {
+  "at": "2026-11-09T15:17:52Z",
+  "best": {
+   "price": 699.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Landing Party",
+  "group": "cardtrader-400893",
+  "id": "panmysza-13002",
+  "inStock": 2,
+  "kind": "new",
+  "price": 600.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Star-Trek-Landing-Party-Collectors-Edition-Commander-Deck/13002"
+ },
+ {
+  "at": "2026-11-09T15:17:52Z",
+  "best": {
+   "price": 1049.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes",
+  "group": "magiccafe-28534",
+  "id": "wilczek-14015",
+  "inStock": 3,
+  "kind": "price",
+  "old": 1299.99,
+  "price": 999.99,
+  "shop": "wilczek",
+  "status": "in_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-commander-deck-set.html"
+ },
+ {
+  "at": "2026-11-09T15:17:52Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Star Trek Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 611.19,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
+ },
+ {
+  "at": "2026-11-09T15:17:52Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Star Trek Landing Party",
+  "group": "cardtrader-400893",
+  "id": "cardtrader-400893",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 611.06,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400893"
  }
 ]

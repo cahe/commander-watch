@@ -844,9 +844,9 @@
    "ctPrice": null,
    "ctUrl": null,
    "name": "Marvel Super Heroes",
-   "shopName": "Time4Magic",
-   "shopPrice": 1049.0,
-   "shopUrl": "https://time4magic.pl/marvel-super-heroes-commander-deck-set"
+   "shopName": "Wilczek",
+   "shopPrice": 999.99,
+   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-commander-deck-set.html"
   },
   "marvel-super-heroes-wakanda-forever": {
    "ctPrice": 155.75,
@@ -1163,10 +1163,10 @@
   "star-trek-federation-fleet-collector-deck": {
    "ctPrice": 611.19,
    "ctUrl": "https://www.cardtrader.com/en/cards/400892",
-   "name": "Star Trek – Federation Fleet",
-   "shopName": "Wilczek",
-   "shopPrice": 699.99,
-   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
+   "name": "Star Trek Federation Fleet",
+   "shopName": "Pan Mysza",
+   "shopPrice": 600.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Federation-Fleet-Collectors-Edition-Commander-Deck/13001"
   },
   "star-trek-klingon-fury": {
    "ctPrice": 272.63,
@@ -1195,10 +1195,10 @@
   "star-trek-landing-party-collector-deck": {
    "ctPrice": 611.06,
    "ctUrl": "https://www.cardtrader.com/en/cards/400893",
-   "name": "Star Trek – Landing Party",
-   "shopName": "Wilczek",
-   "shopPrice": 699.99,
-   "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-landing-party.html"
+   "name": "Star Trek Landing Party",
+   "shopName": "Pan Mysza",
+   "shopPrice": 600.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Landing-Party-Collectors-Edition-Commander-Deck/13002"
   },
   "star-trek-set": {
    "ctPrice": null,
