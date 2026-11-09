@@ -9419,8 +9419,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out, price 599.99 → 499.99 zł",
+  "changedAt": "2026-11-09T13:17:46Z",
   "deck": "marvel-super-heroes-avengers-assemble-collector-deck",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31276",
@@ -9428,9 +9428,9 @@
   "id": "wilczek-14018",
   "name": "Magic: the Gathering - Marvel Super Heroes - Collector's Edition Commander - Avengers Assemble",
   "pid": 14018,
-  "price": 599.99,
+  "price": 499.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-avengers-assemble.html"
  },
  {
@@ -9483,8 +9483,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "price 599.99 → 429.99 zł",
+  "changedAt": "2026-11-09T13:17:46Z",
   "deck": "marvel-super-heroes-fantastic-four-collector-deck",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31278",
@@ -9492,15 +9492,15 @@
   "id": "wilczek-14022",
   "name": "Magic: the Gathering - Marvel Super Heroes - Collector's Edition Commander - The Fantastic Four",
   "pid": 14022,
-  "price": 599.99,
+  "price": 429.99,
   "shop": "wilczek",
   "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-the-fantastic-four.html"
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "price 599.99 → 429.99 zł",
+  "changedAt": "2026-11-09T13:17:46Z",
   "deck": "marvel-super-heroes-wakanda-forever-collector-deck",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31277",
@@ -9508,7 +9508,7 @@
   "id": "wilczek-14023",
   "name": "Magic: the Gathering - Marvel Super Heroes - Collector's Edition Commander - Wakanda Forever",
   "pid": 14023,
-  "price": 599.99,
+  "price": 429.99,
   "shop": "wilczek",
   "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-wakanda-forever.html"
