@@ -9451,8 +9451,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out, price 649.99 → 499.99 zł",
+  "changedAt": "2026-11-09T12:17:53Z",
   "deck": "marvel-super-heroes-doom-prevails-collector-deck",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31279",
@@ -9460,9 +9460,9 @@
   "id": "wilczek-14020",
   "name": "Magic: the Gathering - Marvel Super Heroes - Collector's Edition Commander - Doom Prevails",
   "pid": 14020,
-  "price": 649.99,
+  "price": 499.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-doom-prevails.html"
  },
  {
