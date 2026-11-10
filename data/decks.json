@@ -8919,8 +8919,8 @@
  },
  {
   "baseline": true,
-  "change": "price 299.00 → 279.00 zł",
-  "changedAt": "2026-10-23T13:17:31Z",
+  "change": "sold out",
+  "changedAt": "2026-11-10T19:17:51Z",
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31904",
@@ -8930,7 +8930,7 @@
   "pid": 995,
   "price": 279.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
  },
  {
@@ -8967,8 +8967,8 @@
  },
  {
   "baseline": true,
-  "change": "back in stock",
-  "changedAt": "2026-11-03T15:17:58Z",
+  "change": "sold out",
+  "changedAt": "2026-11-10T19:17:51Z",
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31902",
@@ -8978,7 +8978,7 @@
   "pid": 998,
   "price": 289.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
  },
  {

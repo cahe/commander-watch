@@ -5613,5 +5613,37 @@
   "shop": "frostmagic",
   "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-doom-prevails-commander-deck"
+ },
+ {
+  "at": "2026-11-10T19:17:51Z",
+  "best": {
+   "price": 259.0,
+   "shop": "cardstore"
+  },
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "time4magic-998",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 289.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
+ },
+ {
+  "at": "2026-11-10T19:17:51Z",
+  "best": {
+   "price": 259.0,
+   "shop": "cardstore"
+  },
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "time4magic-995",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 279.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
  }
 ]
