@@ -5536,5 +5536,66 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400889"
+ },
+ {
+  "at": "2026-11-10T14:17:53Z",
+  "cheapest": true,
+  "deck": "Innistrad Midnight Hunt | \"Coven Counters",
+  "group": "cardtrader-164138",
+  "id": "cardtrader-164138",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 335.97,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/164138"
+ },
+ {
+  "at": "2026-11-10T14:17:53Z",
+  "best": {
+   "price": 399.99,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Murders at Karlov Manor Blame Game",
+  "group": "cardtrader-270490",
+  "id": "cardtrader-270490",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 389.09,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/270490"
+ },
+ {
+  "at": "2026-11-10T14:17:53Z",
+  "cheapest": true,
+  "deck": "Modern Horizons 3 |\"Tricky Terrain",
+  "group": "cardtrader-279377",
+  "id": "cardtrader-279377",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 946.86,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/279377"
+ },
+ {
+  "at": "2026-11-10T14:17:53Z",
+  "best": {
+   "price": 1075.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Masters – Planeswalker Party",
+  "group": "cardtrader-238393",
+  "id": "cardtrader-238393",
+  "inStock": 1,
+  "kind": "price",
+  "old": 908.07,
+  "price": 835.76,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/238393"
  }
 ]
