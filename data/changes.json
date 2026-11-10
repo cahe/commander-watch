@@ -5517,5 +5517,38 @@
   "shop": "cardtrader",
   "status": "out_of_stock",
   "url": "https://www.cardtrader.com/en/cards/279377"
+ },
+ {
+  "at": "2026-11-10T02:17:47Z",
+  "best": {
+   "price": 349.99,
+   "shop": "wilczek"
+  },
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "cardstore-31903",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 259.0,
+  "shop": "cardstore",
+  "status": "out_of_stock",
+  "url": "https://cardstore.pl/commander/31903-star-trek-commander-deck-landing-party-przedsprzedaz-.html"
+ },
+ {
+  "at": "2026-11-10T02:17:47Z",
+  "best": {
+   "price": 349.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "cardtrader-400889",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 282.85,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400889"
  }
 ]
