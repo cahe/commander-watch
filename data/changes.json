@@ -5597,5 +5597,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/238393"
+ },
+ {
+  "at": "2026-11-10T16:17:49Z",
+  "best": {
+   "price": 260.0,
+   "shop": "cardstore"
+  },
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31275",
+  "id": "frostmagic-mtg-marvel-super-heroes-doom-prevails-commander-deck",
+  "inStock": 8,
+  "kind": "soldout",
+  "price": 290,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-doom-prevails-commander-deck"
  }
 ]

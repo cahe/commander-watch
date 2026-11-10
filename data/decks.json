@@ -4383,8 +4383,8 @@
  },
  {
   "baseline": true,
-  "change": "price 249.00 → 290.00 zł",
-  "changedAt": "2026-10-19T00:17:39Z",
+  "change": "sold out",
+  "changedAt": "2026-11-10T16:17:49Z",
   "deck": "marvel-super-heroes-doom-prevails",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31275",
@@ -4394,7 +4394,7 @@
   "pid": null,
   "price": 290,
   "shop": "frostmagic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-doom-prevails-commander-deck"
  },
  {
