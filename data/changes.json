@@ -5611,5 +5611,38 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
+ },
+ {
+  "at": "2026-11-11T00:17:49Z",
+  "best": {
+   "price": 389.99,
+   "shop": "wilczek"
+  },
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "cardstore-31902",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 259.0,
+  "shop": "cardstore",
+  "status": "out_of_stock",
+  "url": "https://cardstore.pl/commander/31902-star-trek-commander-deck-federation-fleet-przedsprzedaz-.html"
+ },
+ {
+  "at": "2026-11-11T00:17:49Z",
+  "best": {
+   "price": 389.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "cardtrader-400888",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 277.55,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400888"
  }
 ]
