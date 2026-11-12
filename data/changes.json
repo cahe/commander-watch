@@ -5567,5 +5567,248 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Foundations-Commander-Deck-Keen-Engineering/990"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 184.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": false,
+  "deck": "Secrets of Strixhaven Prismari Artistry",
+  "group": "cardtrader-370596",
+  "id": "magiccafe-28231",
+  "inStock": 5,
+  "kind": "price",
+  "old": 196.99,
+  "price": 219.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-prismari-artistry/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 180,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Secrets of Strixhaven Quandrix Unlimited",
+  "group": "cardtrader-370599",
+  "id": "magiccafe-28229",
+  "inStock": 4,
+  "kind": "price",
+  "old": 196.99,
+  "price": 219.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-quandrix-unlimited/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "deck": "Secrets of Strixhaven Witherbloom Pestilence",
+  "group": "cardtrader-370597",
+  "id": "magiccafe-28227",
+  "inStock": 0,
+  "kind": "price",
+  "old": 254.5,
+  "price": 319.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-witherbloom-pestilence/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 279.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Secrets of Strixhaven Silverquill Influence",
+  "group": "cardtrader-370595",
+  "id": "magiccafe-28225",
+  "inStock": 4,
+  "kind": "price",
+  "old": 262.99,
+  "price": 292.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-silverquill-influence/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 184.9,
+   "shop": "dragoneye"
+  },
+  "deck": "Secrets of Strixhaven Lorehold Spirit",
+  "group": "cardtrader-370598",
+  "id": "magiccafe-28223",
+  "inStock": 2,
+  "kind": "price",
+  "old": 193.99,
+  "price": 229.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-deck-lorehold-spirit/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 1099.99,
+   "shop": "wilczek"
+  },
+  "cheapest": false,
+  "deck": "Secrets of Strixhaven",
+  "group": "magiccafe-28221",
+  "id": "magiccafe-28221",
+  "inStock": 2,
+  "kind": "price",
+  "old": 999.99,
+  "price": 1399.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/secrets-of-strixhaven-commander-decks-set-5/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "cheapest": true,
+  "deck": "Tarkir – Dragonstorm Jeskai Striker",
+  "group": "cardtrader-322532",
+  "id": "magiccafe-25539",
+  "inStock": 1,
+  "kind": "price",
+  "old": 249.99,
+  "price": 299.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-jeskai-striker/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "cheapest": true,
+  "deck": "Tarkir – Dragonstorm",
+  "group": "magiccafe-25461",
+  "id": "magiccafe-25461",
+  "inStock": 1,
+  "kind": "price",
+  "old": 1699.99,
+  "price": 1799.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-decks-set-5/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "cheapest": true,
+  "deck": "Bloomburrow",
+  "group": "magiccafe-21214",
+  "id": "magiccafe-21214",
+  "inStock": 1,
+  "kind": "price",
+  "old": 1399.99,
+  "price": 1599.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/bloomburrow-commander-deck-set-4/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "cheapest": true,
+  "deck": "Fallout",
+  "group": "magiccafe-19068",
+  "id": "magiccafe-19068",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 999.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/magic-the-gathering-fallout-commander-deck-deck-set-4/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 429.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "magiccafe-19066",
+  "inStock": 3,
+  "kind": "restock",
+  "price": 387.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/magic-the-gathering-fallout-commander-deck-mutant-menace/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 249.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "magiccafe-19058",
+  "inStock": 4,
+  "kind": "restock",
+  "price": 236.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/magic-the-gathering-fallout-commander-deck-scrappy-survivors/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 255,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "magiccafe-19054",
+  "inStock": 4,
+  "kind": "restock",
+  "price": 215.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/magic-the-gathering-fallout-commander-deck-hail-caesar/"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek We Are The Borg",
+  "group": "cardtrader-400895",
+  "id": "cardtrader-400895",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 596.93,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400895"
+ },
+ {
+  "at": "2026-11-12T20:17:15Z",
+  "best": {
+   "price": 220,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31274",
+  "id": "cardtrader-370632",
+  "inStock": 8,
+  "kind": "price",
+  "old": 150.72,
+  "price": 147.55,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370632"
  }
 ]
