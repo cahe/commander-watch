@@ -9471,8 +9471,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-11-12T16:17:16Z",
   "deck": "marvel-super-heroes-avengers-assemble",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31272",
@@ -9482,7 +9482,7 @@
   "pid": 14017,
   "price": 319.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-avengers-assemble.html"
  },
  {
@@ -9503,8 +9503,8 @@
  },
  {
   "baseline": true,
-  "change": "back in stock, price 329.99 → 349.99 zł",
-  "changedAt": "2026-11-09T12:04:48Z",
+  "change": "sold out",
+  "changedAt": "2026-11-12T16:17:16Z",
   "deck": "marvel-super-heroes-doom-prevails",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31275",
@@ -9514,7 +9514,7 @@
   "pid": 14019,
   "price": 349.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-doom-prevails.html"
  },
  {
@@ -9551,8 +9551,8 @@
  },
  {
   "baseline": true,
-  "change": "price 599.99 → 429.99 zł",
-  "changedAt": "2026-11-09T13:17:46Z",
+  "change": "sold out",
+  "changedAt": "2026-11-12T16:17:16Z",
   "deck": "marvel-super-heroes-fantastic-four-collector-deck",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31278",
@@ -9562,7 +9562,7 @@
   "pid": 14022,
   "price": 429.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-the-fantastic-four.html"
  },
  {
