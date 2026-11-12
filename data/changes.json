@@ -5342,5 +5342,69 @@
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/pl/p/Foundations-Commander-Deck-Keen-Engineering/990"
+ },
+ {
+  "at": "2026-11-12T10:17:16Z",
+  "best": {
+   "price": 349.99,
+   "shop": "wilczek"
+  },
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "xjoy-27106",
+  "inStock": 2,
+  "kind": "new",
+  "price": 289.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/27106-mtg-star-trek-commander-deck-landing-party.html"
+ },
+ {
+  "at": "2026-11-12T10:17:16Z",
+  "best": {
+   "price": 379.99,
+   "shop": "wilczek"
+  },
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardstore-31905",
+  "id": "xjoy-27107",
+  "inStock": 2,
+  "kind": "new",
+  "price": 409.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/27107-mtg-star-trek-commander-deck-we-are-the-borg.html"
+ },
+ {
+  "at": "2026-11-12T10:17:16Z",
+  "best": {
+   "price": 389.99,
+   "shop": "wilczek"
+  },
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "xjoy-27108",
+  "inStock": 2,
+  "kind": "new",
+  "price": 249.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/27108-mtg-star-trek-commander-deck-federation-fleet.html"
+ },
+ {
+  "at": "2026-11-12T10:17:16Z",
+  "best": {
+   "price": 259.0,
+   "shop": "cardstore"
+  },
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "xjoy-27109",
+  "inStock": 3,
+  "kind": "new",
+  "price": 229.99,
+  "shop": "xjoy",
+  "status": "out_of_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/27109-mtg-star-trek-commander-deck-klingon-fury.html"
  }
 ]
