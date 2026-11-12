@@ -9599,8 +9599,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "now in stock",
+  "changedAt": "2026-11-12T15:17:19Z",
   "deck": "star-trek-set",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
@@ -9610,7 +9610,7 @@
   "pid": 15232,
   "price": 1199.99,
   "shop": "wilczek",
-  "status": "preorder",
+  "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-set.html"
  },
  {
