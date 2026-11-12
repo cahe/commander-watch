@@ -5555,5 +5555,17 @@
   "shop": "wilczek",
   "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-avengers-assemble.html"
+ },
+ {
+  "at": "2026-11-12T17:17:16Z",
+  "deck": "Foundations Starter – Keen Engineering",
+  "group": "cardstore-31681",
+  "id": "time4magic-990",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 129.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/pl/p/Foundations-Commander-Deck-Keen-Engineering/990"
  }
 ]

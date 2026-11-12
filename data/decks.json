@@ -8845,8 +8845,8 @@
  },
  {
   "baseline": true,
-  "change": "back in stock",
-  "changedAt": "2026-11-12T03:17:37Z",
+  "change": "sold out",
+  "changedAt": "2026-11-12T17:17:16Z",
   "deck": "foundations-starter-keen-engineering",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31681",
@@ -8856,7 +8856,7 @@
   "pid": 990,
   "price": 129.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Foundations-Commander-Deck-Keen-Engineering/990"
  },
  {
