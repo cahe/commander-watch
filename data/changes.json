@@ -5491,5 +5491,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400888"
+ },
+ {
+  "at": "2026-11-12T14:17:19Z",
+  "best": {
+   "price": 184.9,
+   "shop": "dragoneye"
+  },
+  "deck": "Secrets of Strixhaven Prismari Artistry",
+  "group": "cardtrader-370596",
+  "id": "frostmagic-mtg-secrets-of-strixhaven-prismari-artistry-commander-deck",
+  "inStock": 5,
+  "kind": "soldout",
+  "price": 180,
+  "shop": "frostmagic",
+  "status": "out_of_stock",
+  "url": "https://frostmagic.pl/pl/products/mtg-secrets-of-strixhaven-prismari-artistry-commander-deck"
  }
 ]
