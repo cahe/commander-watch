@@ -1247,62 +1247,6 @@
    "version": "Collector's Edition"
   },
   {
-   "expansion": "msc",
-   "id": 417375,
-   "image": "https://www.cardtrader.com/uploads/blueprints/image/417375/show_417375-commander-marvel-darkhold-destiny-strange-academy-commander-deck-commander-marvel-super-heroes.jpg",
-   "name": "Commander: Marvel Darkhold Destiny | \"Strange Academy\" Commander Deck",
-   "version": ""
-  },
-  {
-   "expansion": "msc",
-   "id": 417376,
-   "image": "https://www.cardtrader.com/uploads/blueprints/image/417376/show_417376-commander-marvel-darkhold-destiny-gods-of-asgard-commander-deck-commander-marvel-super-heroes.jpg",
-   "name": "Commander: Marvel Darkhold Destiny | \"Gods of Asgard\" Commander Deck",
-   "version": ""
-  },
-  {
-   "expansion": "msc",
-   "id": 417377,
-   "image": "https://www.cardtrader.com/uploads/blueprints/image/417377/show_417377-commander-marvel-darkhold-destiny-midnight-sons-commander-deck-commander-marvel-super-heroes.jpg",
-   "name": "Commander: Marvel Darkhold Destiny | \"Midnight Sons\" Commander Deck",
-   "version": ""
-  },
-  {
-   "expansion": "msc",
-   "id": 417378,
-   "image": "https://www.cardtrader.com/uploads/blueprints/image/417378/show_417378-commander-marvel-darkhold-destiny-lords-of-hel-commander-deck-commander-marvel-super-heroes.jpg",
-   "name": "Commander: Marvel Darkhold Destiny | \"Lords of Hel\" Commander Deck",
-   "version": ""
-  },
-  {
-   "expansion": "msc",
-   "id": 417379,
-   "image": "https://www.cardtrader.com/uploads/blueprints/image/417379/show_417379-commander-marvel-darkhold-destiny-strange-academy-commander-deck-collector-s-edition-commander-marvel-super-heroes.jpg",
-   "name": "Commander: Marvel Darkhold Destiny | \"Strange Academy\" Commander Deck Collector's Edition",
-   "version": "Collector's Edition"
-  },
-  {
-   "expansion": "msc",
-   "id": 417380,
-   "image": "https://www.cardtrader.com/uploads/blueprints/image/417380/show_417380-commander-marvel-darkhold-destiny-gods-of-asgard-commander-deck-collector-s-edition-commander-marvel-super-heroes.jpg",
-   "name": "Commander: Marvel Darkhold Destiny | \"Gods of Asgard\" Commander Deck Collector's Edition",
-   "version": "Collector's Edition"
-  },
-  {
-   "expansion": "msc",
-   "id": 417381,
-   "image": "https://www.cardtrader.com/uploads/blueprints/image/417381/show_417381-commander-marvel-darkhold-destiny-midnight-sons-commander-deck-collector-s-edition-commander-marvel-super-heroes.jpg",
-   "name": "Commander: Marvel Darkhold Destiny | \"Midnight Sons\" Commander Deck Collector's Edition",
-   "version": "Collector's Edition"
-  },
-  {
-   "expansion": "msc",
-   "id": 417382,
-   "image": "https://www.cardtrader.com/uploads/blueprints/image/417382/show_417382-commander-marvel-darkhold-destiny-lords-of-hel-commander-deck-collector-s-edition-commander-marvel-super-heroes.jpg",
-   "name": "Commander: Marvel Darkhold Destiny | \"Lords of Hel\" Commander Deck Collector's Edition",
-   "version": "Collector's Edition"
-  },
-  {
    "expansion": "soc",
    "id": 370595,
    "image": "https://www.cardtrader.com/uploads/blueprints/image/370595/show_commander-secrets-of-strixhaven-silverquill-influence-commander-deck-commander-secrets-of-strixhaven.jpg",
@@ -1434,8 +1378,64 @@
    "image": "https://www.cardtrader.com/uploads/blueprints/image/389402/show_foundations-tramplesaurus-rex-commander-deck-foundations.jpg",
    "name": "Foundations: \"Tramplesaurus Rex\" Commander Deck",
    "version": ""
+  },
+  {
+   "expansion": "mdc",
+   "id": 417375,
+   "image": "https://www.cardtrader.com/uploads/blueprints/image/417375/show_417375-commander-marvel-darkhold-destiny-strange-academy-commander-deck-commander-marvel-super-heroes.jpg",
+   "name": "Commander: Marvel Darkhold Destiny | \"Strange Academy\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "mdc",
+   "id": 417376,
+   "image": "https://www.cardtrader.com/uploads/blueprints/image/417376/show_417376-commander-marvel-darkhold-destiny-gods-of-asgard-commander-deck-commander-marvel-super-heroes.jpg",
+   "name": "Commander: Marvel Darkhold Destiny | \"Gods of Asgard\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "mdc",
+   "id": 417377,
+   "image": "https://www.cardtrader.com/uploads/blueprints/image/417377/show_417377-commander-marvel-darkhold-destiny-midnight-sons-commander-deck-commander-marvel-super-heroes.jpg",
+   "name": "Commander: Marvel Darkhold Destiny | \"Midnight Sons\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "mdc",
+   "id": 417378,
+   "image": "https://www.cardtrader.com/uploads/blueprints/image/417378/show_417378-commander-marvel-darkhold-destiny-lords-of-hel-commander-deck-commander-marvel-super-heroes.jpg",
+   "name": "Commander: Marvel Darkhold Destiny | \"Lords of Hel\" Commander Deck",
+   "version": ""
+  },
+  {
+   "expansion": "mdc",
+   "id": 417379,
+   "image": "https://www.cardtrader.com/uploads/blueprints/image/417379/show_417379-commander-marvel-darkhold-destiny-strange-academy-commander-deck-collector-s-edition-commander-marvel-super-heroes.jpg",
+   "name": "Commander: Marvel Darkhold Destiny | \"Strange Academy\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "mdc",
+   "id": 417380,
+   "image": "https://www.cardtrader.com/uploads/blueprints/image/417380/show_417380-commander-marvel-darkhold-destiny-gods-of-asgard-commander-deck-collector-s-edition-commander-marvel-super-heroes.jpg",
+   "name": "Commander: Marvel Darkhold Destiny | \"Gods of Asgard\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "mdc",
+   "id": 417381,
+   "image": "https://www.cardtrader.com/uploads/blueprints/image/417381/show_417381-commander-marvel-darkhold-destiny-midnight-sons-commander-deck-collector-s-edition-commander-marvel-super-heroes.jpg",
+   "name": "Commander: Marvel Darkhold Destiny | \"Midnight Sons\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
+  },
+  {
+   "expansion": "mdc",
+   "id": 417382,
+   "image": "https://www.cardtrader.com/uploads/blueprints/image/417382/show_417382-commander-marvel-darkhold-destiny-lords-of-hel-commander-deck-collector-s-edition-commander-marvel-super-heroes.jpg",
+   "name": "Commander: Marvel Darkhold Destiny | \"Lords of Hel\" Commander Deck Collector's Edition",
+   "version": "Collector's Edition"
   }
  ],
- "refreshed": "2026-11-12",
- "scanned": "2026-11-12T20:17:15+00:00"
+ "refreshed": "2026-11-13",
+ "scanned": "2026-11-13T09:17:17+00:00"
 }
