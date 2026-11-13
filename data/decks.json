@@ -382,28 +382,28 @@
   "group": "cardstore-31903",
   "groupName": "Star Trek – Landing Party",
   "id": "cardstore-31903",
-  "name": "Star Trek Commander Deck - Landing Party [PRZEDSPRZEDAŻ]",
+  "name": "Star Trek Commander Deck - Landing Party",
   "pid": 31903,
   "price": 259.0,
   "shop": "cardstore",
   "status": "out_of_stock",
-  "url": "https://cardstore.pl/commander/31903-star-trek-commander-deck-landing-party-przedsprzedaz-.html"
+  "url": "https://cardstore.pl/commander/31903-star-trek-commander-deck-landing-party.html"
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-11-04T17:17:48Z",
+  "change": "now in stock",
+  "changedAt": "2026-11-13T08:17:17Z",
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-11-04T17:17:48Z",
   "group": "cardstore-31904",
   "groupName": "Star Trek – Klingon Fury",
   "id": "cardstore-31904",
-  "name": "Star Trek Commander Deck - Klingon Fury [PRZEDSPRZEDAŻ]",
+  "name": "Star Trek Commander Deck - Klingon Fury",
   "pid": 31904,
   "price": 259.0,
   "shop": "cardstore",
-  "status": "preorder",
-  "url": "https://cardstore.pl/commander/31904-star-trek-commander-deck-klingon-fury-przedsprzedaz-.html"
+  "status": "in_stock",
+  "url": "https://cardstore.pl/commander/31904-star-trek-commander-deck-klingon-fury.html"
  },
  {
   "baseline": false,
@@ -414,12 +414,12 @@
   "group": "cardstore-31905",
   "groupName": "Star Trek – We Are the Borg",
   "id": "cardstore-31905",
-  "name": "Star Trek Commander Deck - We Are the Borg [PRZEDSPRZEDAŻ]",
+  "name": "Star Trek Commander Deck - We Are the Borg",
   "pid": 31905,
   "price": 259.0,
   "shop": "cardstore",
   "status": "out_of_stock",
-  "url": "https://cardstore.pl/commander/31905-star-trek-commander-deck-we-are-the-borg-przedsprzedaz-.html"
+  "url": "https://cardstore.pl/commander/31905-star-trek-commander-deck-we-are-the-borg.html"
  },
  {
   "baseline": true,
