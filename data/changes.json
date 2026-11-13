@@ -5752,5 +5752,112 @@
   "shop": "wargamer",
   "status": "preorder",
   "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18317-mtg-st-cd-ff.html"
+ },
+ {
+  "at": "2026-11-13T14:17:52Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31272",
+  "id": "time4magic-850",
+  "inStock": 7,
+  "kind": "price",
+  "old": 279.0,
+  "price": 259.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/marvel-super-heroes-commander-deck-avengers-assemble"
+ },
+ {
+  "at": "2026-11-13T14:17:52Z",
+  "best": {
+   "price": 999.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes",
+  "group": "magiccafe-28534",
+  "id": "time4magic-846",
+  "inStock": 3,
+  "kind": "price",
+  "old": 1049.0,
+  "price": 999.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/marvel-super-heroes-commander-deck-set"
+ },
+ {
+  "at": "2026-11-13T14:17:52Z",
+  "best": {
+   "price": 230,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31273",
+  "id": "time4magic-848",
+  "inStock": 9,
+  "kind": "restock",
+  "price": 239.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/marvel-super-heroes-wakanda-forever-commander-deck"
+ },
+ {
+  "at": "2026-11-13T14:17:52Z",
+  "best": {
+   "price": 230,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31273",
+  "id": "time4magic-848",
+  "inStock": 9,
+  "kind": "price",
+  "old": 249.0,
+  "price": 239.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/marvel-super-heroes-wakanda-forever-commander-deck"
+ },
+ {
+  "at": "2026-11-13T14:17:52Z",
+  "best": {
+   "price": 215.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "cardtrader-265027",
+  "inStock": 4,
+  "kind": "price",
+  "old": 200.66,
+  "price": 187.87,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265027"
+ },
+ {
+  "at": "2026-11-13T14:17:52Z",
+  "best": {
+   "price": 599.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Tarkir – Dragonstorm Sultai Arisen",
+  "group": "cardtrader-322533",
+  "id": "cardtrader-322533",
+  "inStock": 1,
+  "kind": "price",
+  "old": 435.79,
+  "price": 401.17,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322533"
  }
 ]
