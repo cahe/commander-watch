@@ -5832,5 +5832,73 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322533"
+ },
+ {
+  "at": "2026-11-13T19:17:50Z",
+  "cheapest": true,
+  "deck": "Strixhaven – School of Mages – Whiterbloom Witchcraft",
+  "group": "cardtrader-154977",
+  "id": "cardtrader-154977",
+  "inStock": 0,
+  "kind": "price",
+  "old": 524.9,
+  "price": 355.29,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/154977"
+ },
+ {
+  "at": "2026-11-13T19:17:50Z",
+  "best": {
+   "price": 560.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31276",
+  "id": "cardtrader-370635",
+  "inStock": 3,
+  "kind": "price",
+  "old": 309.81,
+  "price": 302.5,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370635"
+ },
+ {
+  "at": "2026-11-13T19:17:50Z",
+  "best": {
+   "price": 566.0,
+   "shop": "cardstore"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31279",
+  "id": "cardtrader-370636",
+  "inStock": 3,
+  "kind": "price",
+  "old": 418.29,
+  "price": 377.42,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370636"
+ },
+ {
+  "at": "2026-11-13T19:17:50Z",
+  "best": {
+   "price": 560.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31278",
+  "id": "cardtrader-370637",
+  "inStock": 3,
+  "kind": "price",
+  "old": 335.22,
+  "price": 311.31,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370637"
  }
 ]
