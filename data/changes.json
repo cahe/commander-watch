@@ -5577,5 +5577,22 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370637"
+ },
+ {
+  "at": "2026-11-14T19:17:51Z",
+  "best": {
+   "price": 399.99,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Murders at Karlov Manor Blame Game",
+  "group": "cardtrader-270490",
+  "id": "cardtrader-270490",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 487.46,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/270490"
  }
 ]
