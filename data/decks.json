@@ -8232,6 +8232,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-11-15T21:17:52Z",
   "deck": "doctor-who-paradox-power",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardtrader-246953",
@@ -8241,7 +8243,7 @@
   "pid": 377,
   "price": 179.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Doctor-Who-Commander-Deck-Paradox-Power/377"
  },
  {
