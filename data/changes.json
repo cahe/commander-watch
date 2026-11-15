@@ -1,21 +1,5 @@
 [
  {
-  "at": "2026-10-16T19:17:45Z",
-  "best": {
-   "price": 235.0,
-   "shop": "panmysza"
-  },
-  "deck": "Final Fantasy Scions & Spellcraft",
-  "group": "cardstore-29975",
-  "id": "time4magic-464",
-  "inStock": 3,
-  "kind": "soldout",
-  "price": 299.0,
-  "shop": "time4magic",
-  "status": "out_of_stock",
-  "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Scions-Spellcraft/464"
- },
- {
   "at": "2026-10-16T21:17:42Z",
   "best": {
    "price": 240,
@@ -5315,5 +5299,22 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/270490"
+ },
+ {
+  "at": "2026-11-15T19:17:49Z",
+  "best": {
+   "price": 585.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Masters – Enduring Enchantments",
+  "group": "cardtrader-238391",
+  "id": "cardtrader-238391",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 671.85,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/238391"
  }
 ]
