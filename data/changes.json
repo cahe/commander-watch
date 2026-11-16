@@ -5128,5 +5128,21 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Doctor-Who-Commander-Deck-Paradox-Power/377"
+ },
+ {
+  "at": "2026-11-16T10:36:24Z",
+  "best": {
+   "price": 168,
+   "shop": "frostmagic"
+  },
+  "deck": "Final Fantasy Revival Trance",
+  "group": "cardstore-29972",
+  "id": "time4magic-466",
+  "inStock": 8,
+  "kind": "soldout",
+  "price": 199.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Revival-Trance/466"
  }
 ]

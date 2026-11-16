@@ -8476,6 +8476,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-11-16T10:36:24Z",
   "deck": "final-fantasy-revival-trance",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-29972",
@@ -8485,7 +8487,7 @@
   "pid": 466,
   "price": 199.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Revival-Trance/466"
  },
  {
