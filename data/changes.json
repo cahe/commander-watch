@@ -5144,5 +5144,75 @@
   "shop": "time4magic",
   "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Magic-The-Gathering-Final-Fantasy-Commander-Deck-Revival-Trance/466"
+ },
+ {
+  "at": "2026-11-16T15:17:40Z",
+  "best": {
+   "price": 249.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "time4magic-998",
+  "inStock": 4,
+  "kind": "restock",
+  "price": 239.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
+ },
+ {
+  "at": "2026-11-16T15:17:40Z",
+  "best": {
+   "price": 249.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "time4magic-998",
+  "inStock": 4,
+  "kind": "price",
+  "old": 289.0,
+  "price": 239.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
+ },
+ {
+  "at": "2026-11-16T15:17:40Z",
+  "best": {
+   "price": 200.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "time4magic-995",
+  "inStock": 5,
+  "kind": "restock",
+  "price": 199.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
+ },
+ {
+  "at": "2026-11-16T15:17:40Z",
+  "best": {
+   "price": 200.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "time4magic-995",
+  "inStock": 5,
+  "kind": "price",
+  "old": 279.0,
+  "price": 199.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
  }
 ]
