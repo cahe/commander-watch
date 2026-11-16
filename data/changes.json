@@ -5214,5 +5214,57 @@
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
+ },
+ {
+  "at": "2026-11-16T16:17:37Z",
+  "best": {
+   "price": 200.0,
+   "shop": "wargamer"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "time4magic-995",
+  "inStock": 5,
+  "kind": "price",
+  "old": 199.0,
+  "price": 219.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
+ },
+ {
+  "at": "2026-11-16T16:17:37Z",
+  "best": {
+   "price": 289.99,
+   "shop": "xjoy"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "time4magic-997",
+  "inStock": 4,
+  "kind": "restock",
+  "price": 279.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-landing-party-commander-deck"
+ },
+ {
+  "at": "2026-11-16T16:17:37Z",
+  "best": {
+   "price": 279.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "cardtrader-400889",
+  "inStock": 4,
+  "kind": "notcheapest",
+  "price": 281.55,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400889"
  }
 ]
