@@ -5249,5 +5249,77 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400889"
+ },
+ {
+  "at": "2026-11-16T19:17:38Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31272",
+  "id": "time4magic-850",
+  "inStock": 7,
+  "kind": "price",
+  "old": 259.0,
+  "price": 249.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/marvel-super-heroes-commander-deck-avengers-assemble"
+ },
+ {
+  "at": "2026-11-16T19:17:38Z",
+  "best": {
+   "price": 260.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31275",
+  "id": "time4magic-847",
+  "inStock": 7,
+  "kind": "price",
+  "old": 349.0,
+  "price": 299.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/marvel-super-heroes-doom-prevails-commander-deck"
+ },
+ {
+  "at": "2026-11-16T19:17:38Z",
+  "best": {
+   "price": 220,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31274",
+  "id": "time4magic-849",
+  "inStock": 8,
+  "kind": "price",
+  "old": 259.0,
+  "price": 239.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/marvel-super-heroes-the-fantastic-four-commander-deck"
+ },
+ {
+  "at": "2026-11-16T19:17:38Z",
+  "best": {
+   "price": 230,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31273",
+  "id": "time4magic-848",
+  "inStock": 9,
+  "kind": "price",
+  "old": 239.0,
+  "price": 209.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/marvel-super-heroes-wakanda-forever-commander-deck"
  }
 ]
