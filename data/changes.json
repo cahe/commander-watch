@@ -5373,5 +5373,40 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-11-17T14:17:27Z",
+  "best": {
+   "price": 585.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Masters – Enduring Enchantments",
+  "group": "cardtrader-238391",
+  "id": "cardtrader-238391",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 443.09,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/238391"
+ },
+ {
+  "at": "2026-11-17T14:17:27Z",
+  "best": {
+   "price": 220,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31274",
+  "id": "cardtrader-370632",
+  "inStock": 8,
+  "kind": "price",
+  "old": 147.55,
+  "price": 138.79,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370632"
  }
 ]
