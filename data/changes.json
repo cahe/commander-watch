@@ -5408,5 +5408,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370632"
+ },
+ {
+  "at": "2026-11-17T15:17:31Z",
+  "best": {
+   "price": 400.0,
+   "shop": "wargamer"
+  },
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardstore-31905",
+  "id": "wilczek-15240",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 379.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-we-are-the-borg.html"
  }
 ]
