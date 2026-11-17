@@ -1,22 +1,5 @@
 [
  {
-  "at": "2026-10-18T09:17:42Z",
-  "best": {
-   "price": 1075.99,
-   "shop": "magiccafe"
-  },
-  "cheapest": true,
-  "deck": "Masters – Planeswalker Party",
-  "group": "cardtrader-238393",
-  "id": "cardtrader-238393",
-  "inStock": 1,
-  "kind": "cheapest",
-  "price": 1007.0,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/238393"
- },
- {
   "at": "2026-10-18T16:17:42Z",
   "deck": "Foundations Starter – Calling All Angels",
   "group": "cardstore-31679",
@@ -5305,5 +5288,90 @@
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/marvel-super-heroes-wakanda-forever-commander-deck"
+ },
+ {
+  "at": "2026-11-17T09:17:54Z",
+  "cheapest": true,
+  "deck": "Phyrexia – All Will Be One Corrupting Influence",
+  "group": "cardtrader-231930",
+  "id": "cardtrader-231930",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 663.45,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/231930"
+ },
+ {
+  "at": "2026-11-17T09:17:54Z",
+  "best": {
+   "price": 236.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Fallout Scrappy Survivors",
+  "group": "cardstore-28767",
+  "id": "cardtrader-265026",
+  "inStock": 4,
+  "kind": "price",
+  "old": 200.88,
+  "price": 196.59,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265026"
+ },
+ {
+  "at": "2026-11-17T09:17:54Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 2,
+  "kind": "price",
+  "old": 569.05,
+  "price": 526.99,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
+ },
+ {
+  "at": "2026-11-17T09:17:54Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Landing Party",
+  "group": "cardtrader-400893",
+  "id": "cardtrader-400893",
+  "inStock": 2,
+  "kind": "price",
+  "old": 593.56,
+  "price": 577.65,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-11-17T09:17:54Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 2,
+  "kind": "price",
+  "old": 569.05,
+  "price": 438.89,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
  }
 ]
