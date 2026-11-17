@@ -9180,8 +9180,8 @@
  },
  {
   "baseline": false,
-  "change": "price 620.00 → 275.00 zł",
-  "changedAt": "2026-11-13T10:17:15Z",
+  "change": "now in stock",
+  "changedAt": "2026-11-17T10:17:47Z",
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-19T08:17:45Z",
   "group": "cardstore-31902",
@@ -9191,13 +9191,13 @@
   "pid": 18317,
   "price": 275.0,
   "shop": "wargamer",
-  "status": "preorder",
-  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18317-mtg-st-cd-ff.html"
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/gotowe-talie/18317-mtg-st-cd-ff.html"
  },
  {
   "baseline": false,
-  "change": "price 620.00 → 320.00 zł",
-  "changedAt": "2026-11-13T10:17:15Z",
+  "change": "now in stock",
+  "changedAt": "2026-11-17T10:17:47Z",
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-19T08:17:45Z",
   "group": "cardstore-31903",
@@ -9207,13 +9207,13 @@
   "pid": 18318,
   "price": 320.0,
   "shop": "wargamer",
-  "status": "preorder",
-  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18318-mtg-st-cd-lp.html"
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/gotowe-talie/18318-mtg-st-cd-lp.html"
  },
  {
   "baseline": false,
-  "change": "price 620.00 → 200.00 zł",
-  "changedAt": "2026-11-13T10:17:15Z",
+  "change": "now in stock",
+  "changedAt": "2026-11-17T10:17:47Z",
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-19T08:17:45Z",
   "group": "cardstore-31904",
@@ -9223,13 +9223,13 @@
   "pid": 18319,
   "price": 200.0,
   "shop": "wargamer",
-  "status": "preorder",
-  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18319-mtg-st-cd-kf.html"
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/gotowe-talie/18319-mtg-st-cd-kf.html"
  },
  {
   "baseline": false,
-  "change": "price 620.00 → 400.00 zł",
-  "changedAt": "2026-11-13T10:17:15Z",
+  "change": "now in stock",
+  "changedAt": "2026-11-17T10:17:47Z",
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-10-19T08:17:45Z",
   "group": "cardstore-31905",
@@ -9239,8 +9239,8 @@
   "pid": 18320,
   "price": 400.0,
   "shop": "wargamer",
-  "status": "preorder",
-  "url": "https://sklep.wargamer.pl/pl/przedsprzedaz/18320-mtg-st-cd-watb.html"
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/gotowe-talie/18320-mtg-st-cd-watb.html"
  },
  {
   "baseline": true,
