@@ -9612,8 +9612,8 @@
  },
  {
   "baseline": true,
-  "change": "now in stock",
-  "changedAt": "2026-11-12T15:17:19Z",
+  "change": "sold out",
+  "changedAt": "2026-11-18T11:17:26Z",
   "deck": "star-trek-set",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
@@ -9623,7 +9623,7 @@
   "pid": 15232,
   "price": 1199.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-set.html"
  },
  {
@@ -9644,8 +9644,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "now in stock",
+  "changedAt": "2026-11-18T11:17:26Z",
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31903",
@@ -9655,13 +9655,13 @@
   "pid": 15237,
   "price": 349.99,
   "shop": "wilczek",
-  "status": "preorder",
+  "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-landing-party.html"
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "now in stock",
+  "changedAt": "2026-11-18T11:17:26Z",
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31904",
@@ -9671,7 +9671,7 @@
   "pid": 15239,
   "price": 349.99,
   "shop": "wilczek",
-  "status": "preorder",
+  "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-klingon-fury.html"
  },
  {
@@ -9692,8 +9692,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "now in stock",
+  "changedAt": "2026-11-18T11:17:26Z",
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31902",
@@ -9703,13 +9703,13 @@
   "pid": 15241,
   "price": 389.99,
   "shop": "wilczek",
-  "status": "preorder",
+  "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-federation-fleet.html"
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-11-18T11:17:26Z",
   "deck": "star-trek-federation-fleet-collector-deck",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-400892",
@@ -9719,7 +9719,7 @@
   "pid": 15242,
   "price": 699.99,
   "shop": "wilczek",
-  "status": "preorder",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
  },
  {
@@ -9740,8 +9740,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-11-18T11:17:26Z",
   "deck": "star-trek-klingon-fury-collector-deck",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-400894",
@@ -9751,13 +9751,13 @@
   "pid": 15244,
   "price": 699.99,
   "shop": "wilczek",
-  "status": "preorder",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-klingon-fury.html"
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-11-18T11:17:26Z",
   "deck": "star-trek-landing-party-collector-deck",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-400893",
@@ -9767,7 +9767,7 @@
   "pid": 15245,
   "price": 699.99,
   "shop": "wilczek",
-  "status": "preorder",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-landing-party.html"
  },
  {

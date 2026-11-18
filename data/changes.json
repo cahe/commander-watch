@@ -5256,5 +5256,65 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400895"
+ },
+ {
+  "at": "2026-11-18T11:17:26Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "deck": "Star Trek Landing Party",
+  "group": "cardtrader-400893",
+  "id": "wilczek-15245",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 699.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-landing-party.html"
+ },
+ {
+  "at": "2026-11-18T11:17:26Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "deck": "Star Trek Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "wilczek-15244",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 699.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-klingon-fury.html"
+ },
+ {
+  "at": "2026-11-18T11:17:26Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "deck": "Star Trek Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "wilczek-15242",
+  "inStock": 1,
+  "kind": "soldout",
+  "price": 699.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-collector-s-edition-commander-deck-federation-fleet.html"
+ },
+ {
+  "at": "2026-11-18T11:17:26Z",
+  "deck": "Star Trek",
+  "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
+  "id": "wilczek-15232",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 1199.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-set.html"
  }
 ]
