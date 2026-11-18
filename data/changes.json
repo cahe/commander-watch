@@ -5472,5 +5472,23 @@
   "shop": "wilczek",
   "status": "in_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-hail-caesar.html"
+ },
+ {
+  "at": "2026-11-18T16:17:27Z",
+  "best": {
+   "price": 200.0,
+   "shop": "wargamer"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "time4magic-995",
+  "inStock": 5,
+  "kind": "price",
+  "old": 219.0,
+  "price": 199.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
  }
 ]

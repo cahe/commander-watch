@@ -8932,8 +8932,8 @@
  },
  {
   "baseline": true,
-  "change": "price 199.00 → 219.00 zł",
-  "changedAt": "2026-11-16T16:17:37Z",
+  "change": "price 219.00 → 199.00 zł",
+  "changedAt": "2026-11-18T16:17:27Z",
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "cardstore-31904",
@@ -8941,7 +8941,7 @@
   "id": "time4magic-995",
   "name": "Magic: the Gathering - Star Trek - Klingon Fury Commander Deck",
   "pid": 995,
-  "price": 219.0,
+  "price": 199.0,
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
