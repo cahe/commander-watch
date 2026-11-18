@@ -1,21 +1,5 @@
 [
  {
-  "at": "2026-10-19T18:18:07Z",
-  "best": {
-   "price": 190,
-   "shop": "frostmagic"
-  },
-  "deck": "Reality Fracture – Multiverse Reforged",
-  "group": "cardstore-31606",
-  "id": "time4magic-978",
-  "inStock": 5,
-  "kind": "soldout",
-  "price": 239.0,
-  "shop": "time4magic",
-  "status": "out_of_stock",
-  "url": "https://time4magic.pl/mtg-reality-fracture-multiverse-reforged-commander-deck"
- },
- {
   "at": "2026-10-20T10:18:00Z",
   "best": {
    "price": 129.99,
