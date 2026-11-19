@@ -5512,5 +5512,136 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400888"
+ },
+ {
+  "at": "2026-11-19T15:18:13Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31272",
+  "id": "panmysza-11771",
+  "inStock": 8,
+  "kind": "price",
+  "old": 280.0,
+  "price": 200.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Avengers-Assemble/11771"
+ },
+ {
+  "at": "2026-11-19T15:18:13Z",
+  "best": {
+   "price": 260.0,
+   "shop": "cardstore"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31275",
+  "id": "panmysza-11769",
+  "inStock": 7,
+  "kind": "price",
+  "old": 350.0,
+  "price": 265.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Doom-Prevails/11769"
+ },
+ {
+  "at": "2026-11-19T15:18:13Z",
+  "best": {
+   "price": 220,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31274",
+  "id": "panmysza-11768",
+  "inStock": 8,
+  "kind": "price",
+  "old": 280.0,
+  "price": 160.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Fantastic-Four/11768"
+ },
+ {
+  "at": "2026-11-19T15:18:13Z",
+  "best": {
+   "price": 209.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31273",
+  "id": "panmysza-11770",
+  "inStock": 9,
+  "kind": "price",
+  "old": 250.0,
+  "price": 180.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Wakanda-Forever/11770"
+ },
+ {
+  "at": "2026-11-19T15:18:13Z",
+  "cheapest": true,
+  "deck": "Star Trek Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "panmysza-13001",
+  "inStock": 1,
+  "kind": "price",
+  "old": 600.0,
+  "price": 485.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Star-Trek-Federation-Fleet-Collectors-Edition-Commander-Deck/13001"
+ },
+ {
+  "at": "2026-11-19T15:18:13Z",
+  "cheapest": true,
+  "deck": "Star Trek Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "panmysza-13003",
+  "inStock": 1,
+  "kind": "price",
+  "old": 600.0,
+  "price": 420.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Star-Trek-Klingon-Fury-Collectors-Edition-Commander-Deck/13003"
+ },
+ {
+  "at": "2026-11-19T15:18:13Z",
+  "cheapest": true,
+  "deck": "Star Trek Landing Party",
+  "group": "cardtrader-400893",
+  "id": "panmysza-13002",
+  "inStock": 1,
+  "kind": "price",
+  "old": 600.0,
+  "price": 485.0,
+  "shop": "panmysza",
+  "status": "in_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Star-Trek-Landing-Party-Collectors-Edition-Commander-Deck/13002"
+ },
+ {
+  "at": "2026-11-19T15:18:13Z",
+  "best": {
+   "price": 485.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Star Trek Landing Party",
+  "group": "cardtrader-400893",
+  "id": "cardtrader-400893",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 506.31,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400893"
  }
 ]

@@ -788,9 +788,9 @@
    "ctPrice": 178.96,
    "ctUrl": "https://www.cardtrader.com/en/cards/370631",
    "name": "Marvel Super Heroes – Avengers Assemble",
-   "shopName": "Frost Magic",
-   "shopPrice": 240,
-   "shopUrl": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-avengers-assemble-commander-deck"
+   "shopName": "Pan Mysza",
+   "shopPrice": 200.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Avengers-Assemble/11771"
   },
   "marvel-super-heroes-avengers-assemble-collector-deck": {
    "ctPrice": 303.15,
@@ -828,9 +828,9 @@
    "ctPrice": 152.37,
    "ctUrl": "https://www.cardtrader.com/en/cards/370632",
    "name": "Marvel Super Heroes – Fantastic Four",
-   "shopName": "Frost Magic",
-   "shopPrice": 220,
-   "shopUrl": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-the-fantastic-four-commander-deck"
+   "shopName": "Pan Mysza",
+   "shopPrice": 160.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Fantastic-Four/11768"
   },
   "marvel-super-heroes-fantastic-four-collector-deck": {
    "ctPrice": 311.89,
@@ -852,9 +852,9 @@
    "ctPrice": 148.04,
    "ctUrl": "https://www.cardtrader.com/en/cards/370630",
    "name": "Marvel Super Heroes – Wakanda Forever",
-   "shopName": "Time4Magic",
-   "shopPrice": 209.0,
-   "shopUrl": "https://time4magic.pl/marvel-super-heroes-wakanda-forever-commander-deck"
+   "shopName": "Pan Mysza",
+   "shopPrice": 180.0,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Wakanda-Forever/11770"
   },
   "marvel-super-heroes-wakanda-forever-collector-deck": {
    "ctPrice": 288.31,
@@ -1165,7 +1165,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/400892",
    "name": "Star Trek Federation Fleet",
    "shopName": "Pan Mysza",
-   "shopPrice": 600.0,
+   "shopPrice": 485.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Federation-Fleet-Collectors-Edition-Commander-Deck/13001"
   },
   "star-trek-klingon-fury": {
@@ -1181,7 +1181,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/400894",
    "name": "Star Trek Klingon Fury",
    "shopName": "Pan Mysza",
-   "shopPrice": 600.0,
+   "shopPrice": 420.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Klingon-Fury-Collectors-Edition-Commander-Deck/13003"
   },
   "star-trek-landing-party": {
@@ -1197,7 +1197,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/400893",
    "name": "Star Trek Landing Party",
    "shopName": "Pan Mysza",
-   "shopPrice": 600.0,
+   "shopPrice": 485.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Landing-Party-Collectors-Edition-Commander-Deck/13002"
   },
   "star-trek-set": {
