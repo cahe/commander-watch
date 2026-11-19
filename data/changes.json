@@ -5494,5 +5494,23 @@
   "shop": "wargamer",
   "status": "in_stock",
   "url": "https://sklep.wargamer.pl/pl/star-trek/18317-mtg-st-cd-ff.html"
+ },
+ {
+  "at": "2026-11-19T14:18:11Z",
+  "best": {
+   "price": 239.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "cardtrader-400888",
+  "inStock": 4,
+  "kind": "price",
+  "old": 222.78,
+  "price": 201.48,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400888"
  }
 ]
