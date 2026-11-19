@@ -1204,9 +1204,9 @@
    "ctPrice": null,
    "ctUrl": null,
    "name": "Star Trek",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Mr. Puggy",
+   "shopPrice": 1099.99,
+   "shopUrl": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Star-Trek-Commander-Decks-Set/14254"
   },
   "star-trek-we-are-the-borg": {
    "ctPrice": 300.81,

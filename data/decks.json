@@ -6936,6 +6936,8 @@
  },
  {
   "baseline": true,
+  "change": "back in stock, price 1.00 → 1099.99 zł",
+  "changedAt": "2026-11-19T22:18:11Z",
   "deck": "star-trek-set",
   "firstSeen": "2026-09-29T21:30:00Z",
   "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
@@ -6943,9 +6945,9 @@
   "id": "mrpuggy-14254",
   "name": "Magic: The Gathering - Star Trek - Commander Decks Set",
   "pid": 14254,
-  "price": 1.0,
+  "price": 1099.99,
   "shop": "mrpuggy",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Star-Trek-Commander-Decks-Set/14254"
  },
  {
