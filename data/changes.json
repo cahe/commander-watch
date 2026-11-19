@@ -1,21 +1,5 @@
 [
  {
-  "at": "2026-10-20T10:18:00Z",
-  "best": {
-   "price": 129.99,
-   "shop": "xjoy"
-  },
-  "deck": "Foundations Starter – Keen Engineering",
-  "group": "cardstore-31681",
-  "id": "wilczek-15687",
-  "inStock": 2,
-  "kind": "soldout",
-  "price": 119.99,
-  "shop": "wilczek",
-  "status": "out_of_stock",
-  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-keen-engineering.html"
- },
- {
   "at": "2026-10-20T11:17:56Z",
   "best": {
    "price": 240,
@@ -5561,5 +5545,63 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370630"
+ },
+ {
+  "at": "2026-11-19T10:18:10Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "magiccafe-29300",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 449.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/foundations-calling-all-angels-commander-deck/"
+ },
+ {
+  "at": "2026-11-19T10:18:10Z",
+  "cheapest": true,
+  "deck": "Foundations Starter – Calling All Angels",
+  "group": "cardstore-31679",
+  "id": "magiccafe-29300",
+  "inStock": 1,
+  "kind": "price",
+  "old": 209.99,
+  "price": 449.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/foundations-calling-all-angels-commander-deck/"
+ },
+ {
+  "at": "2026-11-19T10:18:10Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31272",
+  "id": "magiccafe-28538",
+  "inStock": 8,
+  "kind": "restock",
+  "price": 269.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/magic-the-gathering-marvel-super-heroes-avengers-assemble-commander-deck/"
+ },
+ {
+  "at": "2026-11-19T10:18:10Z",
+  "cheapest": true,
+  "deck": "The Lost Caverns of Ixalan Ahoy Mateys",
+  "group": "cardtrader-261730",
+  "id": "magiccafe-18024",
+  "inStock": 1,
+  "kind": "price",
+  "old": 219.99,
+  "price": 322.99,
+  "shop": "magiccafe",
+  "status": "in_stock",
+  "url": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
  }
 ]

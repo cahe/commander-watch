@@ -492,9 +492,9 @@
    "ctPrice": 351.12,
    "ctUrl": "https://www.cardtrader.com/en/cards/389398",
    "name": "Foundations Starter – Calling All Angels",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Magic Cafe",
+   "shopPrice": 449.99,
+   "shopUrl": "https://magiccafe.eu/product/foundations-calling-all-angels-commander-deck/"
   },
   "foundations-starter-keen-engineering": {
    "ctPrice": 129.62,
@@ -1445,7 +1445,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/261730",
    "name": "The Lost Caverns of Ixalan Ahoy Mateys",
    "shopName": "Magic Cafe",
-   "shopPrice": 219.99,
+   "shopPrice": 322.99,
    "shopUrl": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
   },
   "the-lost-caverns-of-ixalan-blood-rites": {

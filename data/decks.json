@@ -5567,8 +5567,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "price 219.99 → 322.99 zł",
+  "changedAt": "2026-11-19T10:18:10Z",
   "deck": "the-lost-caverns-of-ixalan-ahoy-mateys",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-261730",
@@ -5576,7 +5576,7 @@
   "id": "magiccafe-18024",
   "name": "The Lost Caverns of Ixalan Commander Deck Ahoy Mateys",
   "pid": 18024,
-  "price": 219.99,
+  "price": 322.99,
   "shop": "magiccafe",
   "status": "in_stock",
   "url": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
@@ -6735,8 +6735,8 @@
  },
  {
   "baseline": true,
-  "change": "sold out",
-  "changedAt": "2026-10-22T13:17:33Z",
+  "change": "back in stock",
+  "changedAt": "2026-11-19T10:18:10Z",
   "deck": "marvel-super-heroes-avengers-assemble",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31272",
@@ -6746,7 +6746,7 @@
   "pid": 28538,
   "price": 269.99,
   "shop": "magiccafe",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://magiccafe.eu/product/magic-the-gathering-marvel-super-heroes-avengers-assemble-commander-deck/"
  },
  {
@@ -6783,8 +6783,8 @@
  },
  {
   "baseline": true,
-  "change": "sold out",
-  "changedAt": "2026-10-08T06:17:36Z",
+  "change": "back in stock, price 209.99 → 449.99 zł",
+  "changedAt": "2026-11-19T10:18:10Z",
   "deck": "foundations-starter-calling-all-angels",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31679",
@@ -6792,9 +6792,9 @@
   "id": "magiccafe-29300",
   "name": "Foundations: “Calling All Angels” Commander Deck",
   "pid": 29300,
-  "price": 209.99,
+  "price": 449.99,
   "shop": "magiccafe",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://magiccafe.eu/product/foundations-calling-all-angels-commander-deck/"
  },
  {
