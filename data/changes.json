@@ -1,22 +1,5 @@
 [
  {
-  "at": "2026-10-20T12:17:58Z",
-  "best": {
-   "price": 150.0,
-   "shop": "panmysza"
-  },
-  "cheapest": false,
-  "deck": "Fallout Science",
-  "group": "cardstore-28768",
-  "id": "cardtrader-265028",
-  "inStock": 4,
-  "kind": "notcheapest",
-  "price": 197.05,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/265028"
- },
- {
   "at": "2026-10-21T11:17:54Z",
   "best": {
    "price": 255.0,
@@ -5457,5 +5440,59 @@
   "shop": "magiccafe",
   "status": "in_stock",
   "url": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
+ },
+ {
+  "at": "2026-11-19T12:18:14Z",
+  "best": {
+   "price": 199.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "wargamer-18319",
+  "inStock": 5,
+  "kind": "price",
+  "old": 200.0,
+  "price": 325.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/star-trek/18319-mtg-st-cd-kf.html"
+ },
+ {
+  "at": "2026-11-19T12:18:14Z",
+  "best": {
+   "price": 239.99,
+   "shop": "wilczek"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "wargamer-18318",
+  "inStock": 4,
+  "kind": "price",
+  "old": 320.0,
+  "price": 325.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/star-trek/18318-mtg-st-cd-lp.html"
+ },
+ {
+  "at": "2026-11-19T12:18:14Z",
+  "best": {
+   "price": 239.0,
+   "shop": "time4magic"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "wargamer-18317",
+  "inStock": 4,
+  "kind": "price",
+  "old": 275.0,
+  "price": 350.0,
+  "shop": "wargamer",
+  "status": "in_stock",
+  "url": "https://sklep.wargamer.pl/pl/star-trek/18317-mtg-st-cd-ff.html"
  }
 ]

@@ -9181,8 +9181,8 @@
  },
  {
   "baseline": false,
-  "change": "now in stock",
-  "changedAt": "2026-11-17T10:17:47Z",
+  "change": "price 275.00 → 350.00 zł",
+  "changedAt": "2026-11-19T12:18:14Z",
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-19T08:17:45Z",
   "group": "cardstore-31902",
@@ -9190,15 +9190,15 @@
   "id": "wargamer-18317",
   "name": "Star Trek: Commander Deck - Federation Fleet",
   "pid": 18317,
-  "price": 275.0,
+  "price": 350.0,
   "shop": "wargamer",
   "status": "in_stock",
-  "url": "https://sklep.wargamer.pl/pl/gotowe-talie/18317-mtg-st-cd-ff.html"
+  "url": "https://sklep.wargamer.pl/pl/star-trek/18317-mtg-st-cd-ff.html"
  },
  {
   "baseline": false,
-  "change": "now in stock",
-  "changedAt": "2026-11-17T10:17:47Z",
+  "change": "price 320.00 → 325.00 zł",
+  "changedAt": "2026-11-19T12:18:14Z",
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-19T08:17:45Z",
   "group": "cardstore-31903",
@@ -9206,15 +9206,15 @@
   "id": "wargamer-18318",
   "name": "Star Trek: Commander Deck - Landing Party",
   "pid": 18318,
-  "price": 320.0,
+  "price": 325.0,
   "shop": "wargamer",
   "status": "in_stock",
-  "url": "https://sklep.wargamer.pl/pl/gotowe-talie/18318-mtg-st-cd-lp.html"
+  "url": "https://sklep.wargamer.pl/pl/star-trek/18318-mtg-st-cd-lp.html"
  },
  {
   "baseline": false,
-  "change": "now in stock",
-  "changedAt": "2026-11-17T10:17:47Z",
+  "change": "price 200.00 → 325.00 zł",
+  "changedAt": "2026-11-19T12:18:14Z",
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-19T08:17:45Z",
   "group": "cardstore-31904",
@@ -9222,10 +9222,10 @@
   "id": "wargamer-18319",
   "name": "Star Trek: Commander Deck - Klingon Fury",
   "pid": 18319,
-  "price": 200.0,
+  "price": 325.0,
   "shop": "wargamer",
   "status": "in_stock",
-  "url": "https://sklep.wargamer.pl/pl/gotowe-talie/18319-mtg-st-cd-kf.html"
+  "url": "https://sklep.wargamer.pl/pl/star-trek/18319-mtg-st-cd-kf.html"
  },
  {
   "baseline": false,
