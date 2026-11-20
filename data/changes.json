@@ -5515,5 +5515,22 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-11-20T19:17:33Z",
+  "best": {
+   "price": 234.99,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Final Fantasy Limit Break",
+  "group": "cardstore-29973",
+  "id": "cardtrader-322095",
+  "inStock": 6,
+  "kind": "cheapest",
+  "price": 229.61,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322095"
  }
 ]
