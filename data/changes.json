@@ -1,21 +1,5 @@
 [
  {
-  "at": "2026-10-22T13:17:33Z",
-  "best": {
-   "price": 240,
-   "shop": "frostmagic"
-  },
-  "deck": "Marvel Super Heroes – Avengers Assemble",
-  "group": "cardstore-31272",
-  "id": "magiccafe-28538",
-  "inStock": 7,
-  "kind": "soldout",
-  "price": 269.99,
-  "shop": "magiccafe",
-  "status": "out_of_stock",
-  "url": "https://magiccafe.eu/product/magic-the-gathering-marvel-super-heroes-avengers-assemble-commander-deck/"
- },
- {
   "at": "2026-10-23T08:17:33Z",
   "cheapest": true,
   "deck": "Streets of New Capenna Obscura Operation",
@@ -5599,5 +5583,41 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400895"
+ },
+ {
+  "at": "2026-11-21T14:17:40Z",
+  "best": {
+   "price": 214.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Fallout Hail Caesar",
+  "group": "cardstore-28766",
+  "id": "cardtrader-265027",
+  "inStock": 4,
+  "kind": "price",
+  "old": 187.87,
+  "price": 180.51,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265027"
+ },
+ {
+  "at": "2026-11-21T14:17:40Z",
+  "best": {
+   "price": 199.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "cardtrader-400890",
+  "inStock": 5,
+  "kind": "price",
+  "old": 178.12,
+  "price": 171.64,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400890"
  }
 ]
