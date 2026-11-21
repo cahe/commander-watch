@@ -5498,5 +5498,122 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/322095"
+ },
+ {
+  "at": "2026-11-21T09:17:31Z",
+  "best": {
+   "price": 485.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Landing Party",
+  "group": "cardtrader-400893",
+  "id": "cardtrader-400893",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 448.44,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-11-21T09:17:31Z",
+  "best": {
+   "price": 420.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 359.28,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-11-21T09:17:31Z",
+  "deck": "Phyrexia – All Will Be One Corrupting Influence",
+  "group": "cardtrader-231930",
+  "id": "cardtrader-231930",
+  "inStock": 0,
+  "kind": "notcheapest",
+  "price": 671.15,
+  "shop": "cardtrader",
+  "status": "out_of_stock",
+  "url": "https://www.cardtrader.com/en/cards/231930"
+ },
+ {
+  "at": "2026-11-21T09:17:31Z",
+  "best": {
+   "price": 180,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Secrets of Strixhaven Quandrix Unlimited",
+  "group": "cardtrader-370599",
+  "id": "cardtrader-370599",
+  "inStock": 4,
+  "kind": "notcheapest",
+  "price": 180.02,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370599"
+ },
+ {
+  "at": "2026-11-21T09:17:31Z",
+  "best": {
+   "price": 239.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "cardtrader-400888",
+  "inStock": 4,
+  "kind": "price",
+  "old": 201.48,
+  "price": 194.41,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400888"
+ },
+ {
+  "at": "2026-11-21T09:17:31Z",
+  "best": {
+   "price": 485.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 1,
+  "kind": "price",
+  "old": 443.09,
+  "price": 381.56,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
+ },
+ {
+  "at": "2026-11-21T09:17:31Z",
+  "best": {
+   "price": 600.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek We Are The Borg",
+  "group": "cardtrader-400895",
+  "id": "cardtrader-400895",
+  "inStock": 1,
+  "kind": "price",
+  "old": 575.19,
+  "price": 559.84,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400895"
  }
 ]

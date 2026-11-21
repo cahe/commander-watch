@@ -129,7 +129,7 @@
    "shopUrl": "https://magiccafe.eu/product/commander-deck-bloomburrow-animated-army/"
   },
   "bloomburrow-family-matters": {
-   "ctPrice": 225.56,
+   "ctPrice": 216.73,
    "ctUrl": "https://www.cardtrader.com/en/cards/280702",
    "name": "Bloomburrow Family Matters",
    "shopName": "Magic Cafe",
@@ -377,7 +377,7 @@
    "shopUrl": "https://www.xjoy.pl/19950-mtg-fallout-commander-deck-hail-ceasar.html"
   },
   "fallout-mutant-menace": {
-   "ctPrice": 368.24,
+   "ctPrice": 372.25,
    "ctUrl": "https://www.cardtrader.com/en/cards/265029",
    "name": "Fallout Mutant Menace",
    "shopName": "Wilczek",
@@ -385,7 +385,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-fallout-commander-deck-mutant-menace.html"
   },
   "fallout-science": {
-   "ctPrice": 135.01,
+   "ctPrice": 140.41,
    "ctUrl": "https://www.cardtrader.com/en/cards/265028",
    "name": "Fallout Science",
    "shopName": "Wilczek",
@@ -617,7 +617,7 @@
    "shopUrl": null
   },
   "kaldheim-elven-empire": {
-   "ctPrice": 895.5,
+   "ctPrice": 892.07,
    "ctUrl": "https://www.cardtrader.com/en/cards/151469",
    "name": "Kaldheim Elven Empire",
    "shopName": null,
@@ -713,7 +713,7 @@
    "shopUrl": "https://magiccafe.eu/product/lorwyn-eclipsed-commander-decks/"
   },
   "lorwyn-eclipsed-blight-curse": {
-   "ctPrice": 200.38,
+   "ctPrice": 203.37,
    "ctUrl": "https://www.cardtrader.com/en/cards/352408",
    "name": "Lorwyn Eclipsed – Blight Curse",
    "shopName": "Magic Cafe",
@@ -865,7 +865,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-collector-s-edition-wakanda-forever.html"
   },
   "masters-eldrazi-unbound": {
-   "ctPrice": 1384.18,
+   "ctPrice": 1451.02,
    "ctUrl": "https://www.cardtrader.com/en/cards/238387",
    "name": "Masters – Eldrazi Unbound",
    "shopName": null,
@@ -929,7 +929,7 @@
    "shopUrl": null
   },
   "modern-horizons-3-eldrazi-incursion": {
-   "ctPrice": 530.61,
+   "ctPrice": 582.07,
    "ctUrl": "https://www.cardtrader.com/en/cards/279379",
    "name": "Modern Horizons 3 |\"Eldrazi Incursion",
    "shopName": null,
@@ -1009,7 +1009,7 @@
    "shopUrl": null
   },
   "murders-at-karlov-manor-revenant-recon": {
-   "ctPrice": 448.31,
+   "ctPrice": 359.23,
    "ctUrl": "https://www.cardtrader.com/en/cards/270489",
    "name": "Murders at Karlov Manor Revenant Recon",
    "shopName": null,
@@ -1065,8 +1065,8 @@
    "shopUrl": null
   },
   "phyrexia-all-will-be-one-corrupting-influence": {
-   "ctPrice": 671.15,
-   "ctUrl": "https://www.cardtrader.com/en/cards/231930",
+   "ctPrice": null,
+   "ctUrl": null,
    "name": "Phyrexia – All Will Be One Corrupting Influence",
    "shopName": null,
    "shopPrice": null,
@@ -1113,7 +1113,7 @@
    "shopUrl": "https://dragoneye.pl/magic-the-gathering-secrets-of-strixhaven-prismari-artistry-p-12369.html"
   },
   "secrets-of-strixhaven-quandrix-unlimited": {
-   "ctPrice": 179.66,
+   "ctPrice": 180.02,
    "ctUrl": "https://www.cardtrader.com/en/cards/370599",
    "name": "Secrets of Strixhaven Quandrix Unlimited",
    "shopName": "Frost Magic",
@@ -1153,7 +1153,7 @@
    "shopUrl": "https://mrpuggy.pl/pl/p/Magic-The-Gathering-Star-Trek-Commander-Decks-Set-Collectors-Editions/14255"
   },
   "star-trek-federation-fleet": {
-   "ctPrice": 203.1,
+   "ctPrice": 194.41,
    "ctUrl": "https://www.cardtrader.com/en/cards/400888",
    "name": "Star Trek – Federation Fleet",
    "shopName": "Time4Magic",
@@ -1161,7 +1161,7 @@
    "shopUrl": "https://time4magic.pl/mtg-star-trek-federation-fleet-commander-deck"
   },
   "star-trek-federation-fleet-collector-deck": {
-   "ctPrice": 443.99,
+   "ctPrice": 381.56,
    "ctUrl": "https://www.cardtrader.com/en/cards/400892",
    "name": "Star Trek Federation Fleet",
    "shopName": "Pan Mysza",
@@ -1169,7 +1169,7 @@
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Federation-Fleet-Collectors-Edition-Commander-Deck/13001"
   },
   "star-trek-klingon-fury": {
-   "ctPrice": 179.93,
+   "ctPrice": 175.61,
    "ctUrl": "https://www.cardtrader.com/en/cards/400890",
    "name": "Star Trek – Klingon Fury",
    "shopName": "Time4Magic",
@@ -1177,7 +1177,7 @@
    "shopUrl": "https://time4magic.pl/mtg-star-trek-klingon-fury-commander-deck"
   },
   "star-trek-klingon-fury-collector-deck": {
-   "ctPrice": 421.71,
+   "ctPrice": 359.28,
    "ctUrl": "https://www.cardtrader.com/en/cards/400894",
    "name": "Star Trek Klingon Fury",
    "shopName": "Pan Mysza",
@@ -1185,7 +1185,7 @@
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Klingon-Fury-Collectors-Edition-Commander-Deck/13003"
   },
   "star-trek-landing-party": {
-   "ctPrice": 247.48,
+   "ctPrice": 243.47,
    "ctUrl": "https://www.cardtrader.com/en/cards/400889",
    "name": "Star Trek – Landing Party",
    "shopName": "Wilczek",
@@ -1193,7 +1193,7 @@
    "shopUrl": "https://wilczek.poznan.pl/magic-the-gathering-star-trek-commander-deck-landing-party.html"
   },
   "star-trek-landing-party-collector-deck": {
-   "ctPrice": 510.82,
+   "ctPrice": 448.44,
    "ctUrl": "https://www.cardtrader.com/en/cards/400893",
    "name": "Star Trek Landing Party",
    "shopName": "Pan Mysza",
@@ -1217,7 +1217,7 @@
    "shopUrl": "https://sklep.wargamer.pl/pl/star-trek/18320-mtg-st-cd-watb.html"
   },
   "star-trek-we-are-the-borg-collector-deck": {
-   "ctPrice": 577.66,
+   "ctPrice": 559.84,
    "ctUrl": "https://www.cardtrader.com/en/cards/400895",
    "name": "Star Trek We Are The Borg",
    "shopName": "Pan Mysza",
@@ -1337,7 +1337,7 @@
    "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-jeskai-striker/"
   },
   "tarkir-dragonstorm-mardu-surge": {
-   "ctPrice": 265.75,
+   "ctPrice": 264.9,
    "ctUrl": "https://www.cardtrader.com/en/cards/322530",
    "name": "Tarkir – Dragonstorm Mardu Surge",
    "shopName": "Magic Cafe",
@@ -1353,7 +1353,7 @@
    "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-decks-set-5/"
   },
   "tarkir-dragonstorm-sultai-arisen": {
-   "ctPrice": 409.81,
+   "ctPrice": 408.96,
    "ctUrl": "https://www.cardtrader.com/en/cards/322533",
    "name": "Tarkir – Dragonstorm Sultai Arisen",
    "shopName": "Magic Cafe",
@@ -1361,7 +1361,7 @@
    "shopUrl": "https://magiccafe.eu/product/tarkir-dragonstorm-commander-deck-sultai-arisen/"
   },
   "tarkir-dragonstorm-temur-roar": {
-   "ctPrice": 439.35,
+   "ctPrice": 429.19,
    "ctUrl": "https://www.cardtrader.com/en/cards/322529",
    "name": "Tarkir – Dragonstorm Temur Roar",
    "shopName": "Magic Cafe",
