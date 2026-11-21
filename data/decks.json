@@ -2057,8 +2057,8 @@
  {
   "baseline": true,
   "box": "data/boxes/265027.webp",
-  "change": "price 189.96 → 180.51 zł",
-  "changedAt": "2026-11-21T14:17:40Z",
+  "change": "price 180.51 → 189.96 zł",
+  "changedAt": "2026-11-21T19:17:24Z",
   "cheapest": true,
   "deck": "fallout-hail-caesar",
   "firstSeen": "2026-10-01T10:09:12Z",
@@ -2069,9 +2069,9 @@
   "lowLogged": 180.51,
   "name": "Fallout | \"Hail Caesar\" Commander Deck",
   "pid": 265027,
-  "price": 180.51,
+  "price": 189.96,
   "recent": [
-   180.51
+   189.96
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3311,8 +3311,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370633.webp",
-  "change": "price 246.10 → 243.47 zł",
-  "changedAt": "2026-11-21T14:17:40Z",
+  "change": "price 243.47 → 246.10 zł",
+  "changedAt": "2026-11-21T19:17:24Z",
   "cheapest": true,
   "deck": "marvel-super-heroes-doom-prevails",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3323,9 +3323,9 @@
   "lowLogged": 239.42,
   "name": "Marvel Super Heroes | \"Doom Prevails\" Commander Deck",
   "pid": 370633,
-  "price": 243.47,
+  "price": 246.1,
   "recent": [
-   243.47
+   246.1
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3564,8 +3564,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 194.41 → 194.37 zł",
-  "changedAt": "2026-11-21T14:17:40Z",
+  "change": "price 194.37 → 194.41 zł",
+  "changedAt": "2026-11-21T19:17:24Z",
   "cheapest": true,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3576,9 +3576,9 @@
   "lowLogged": 194.41,
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 194.37,
+  "price": 194.41,
   "recent": [
-   194.37
+   194.41
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3609,8 +3609,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 175.61 → 171.64 zł",
-  "changedAt": "2026-11-21T14:17:40Z",
+  "change": "price 171.64 → 175.61 zł",
+  "changedAt": "2026-11-21T19:17:24Z",
   "cheapest": true,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3621,9 +3621,9 @@
   "lowLogged": 171.64,
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 171.64,
+  "price": 175.61,
   "recent": [
-   171.64
+   175.61
   ],
   "shop": "cardtrader",
   "status": "in_stock",
