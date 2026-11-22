@@ -7836,6 +7836,22 @@
   "url": "https://panmysza.pl/pl/p/Teenage-Mutant-Ninja-Turtles-Commander-Deck/9933"
  },
  {
+  "baseline": false,
+  "change": "listed",
+  "changedAt": "2026-11-22T17:17:25Z",
+  "deck": "nauctis-the-sunken-realm-set",
+  "firstSeen": "2026-11-22T17:17:25Z",
+  "group": "time4magic-1049",
+  "groupName": "Nauctis – The Sunken Realm",
+  "id": "time4magic-1049",
+  "name": "Nauctis: The Sunken Realm Commander Deck Set (4)",
+  "pid": 1049,
+  "price": 899.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/pl/p/Nauctis-The-Sunken-Realm-Commander-Deck-Set-4/1049"
+ },
+ {
   "baseline": true,
   "deck": "murders-at-karlov-manor-deadly-disguise",
   "firstSeen": "2026-09-29T21:30:00Z",

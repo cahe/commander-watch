@@ -5540,5 +5540,18 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400893"
+ },
+ {
+  "at": "2026-11-22T17:17:25Z",
+  "cheapest": true,
+  "deck": "Nauctis – The Sunken Realm",
+  "group": "time4magic-1049",
+  "id": "time4magic-1049",
+  "inStock": 1,
+  "kind": "new",
+  "price": 899.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/pl/p/Nauctis-The-Sunken-Realm-Commander-Deck-Set-4/1049"
  }
 ]
