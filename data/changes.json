@@ -5612,5 +5612,21 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400890"
+ },
+ {
+  "at": "2026-11-23T15:17:30Z",
+  "best": {
+   "price": 180.0,
+   "shop": "panmysza"
+  },
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31273",
+  "id": "wilczek-14021",
+  "inStock": 8,
+  "kind": "soldout",
+  "price": 299.99,
+  "shop": "wilczek",
+  "status": "out_of_stock",
+  "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-the-fantastic-four.html"
  }
 ]

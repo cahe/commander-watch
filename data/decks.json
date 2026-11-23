@@ -9578,8 +9578,8 @@
  },
  {
   "baseline": true,
-  "change": "listed",
-  "changedAt": "2026-10-02T14:29:54Z",
+  "change": "sold out",
+  "changedAt": "2026-11-23T15:17:30Z",
   "deck": "marvel-super-heroes-wakanda-forever",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardstore-31273",
@@ -9589,7 +9589,7 @@
   "pid": 14021,
   "price": 299.99,
   "shop": "wilczek",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://wilczek.poznan.pl/magic-the-gathering-marvel-super-heroes-the-fantastic-four.html"
  },
  {
