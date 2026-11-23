@@ -1198,8 +1198,8 @@
  {
   "baseline": true,
   "box": "data/boxes/211576.webp",
-  "change": "price 893.94 → 893.88 zł",
-  "changedAt": "2026-11-23T14:17:32Z",
+  "change": "price 893.88 → 1049.87 zł",
+  "changedAt": "2026-11-23T19:17:26Z",
   "cheapest": true,
   "deck": "warhammer-40k-tyranid-swarm",
   "firstSeen": "2026-10-08T16:28:38Z",
@@ -1210,9 +1210,9 @@
   "lowLogged": 881.15,
   "name": "Universes Beyond: Warhammer 40,000 | \"Tyranid Swarm\" Deck",
   "pid": 211576,
-  "price": 893.88,
+  "price": 1049.87,
   "recent": [
-   893.88
+   1049.87
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2834,8 +2834,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322104.webp",
-  "change": "price 553.11 → 553.07 zł",
-  "changedAt": "2026-11-23T14:17:32Z",
+  "change": "price 553.07 → 556.95 zł",
+  "changedAt": "2026-11-23T19:17:26Z",
   "cheapest": true,
   "deck": "final-fantasy-counter-blitz-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -2846,9 +2846,9 @@
   "lowLogged": 526.16,
   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck Collector's Edition",
   "pid": 322104,
-  "price": 553.07,
+  "price": 556.95,
   "recent": [
-   553.07
+   556.95
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3107,8 +3107,8 @@
  {
   "baseline": true,
   "box": "data/boxes/354096.webp",
-  "change": "price 189.96 → 189.94 zł",
-  "changedAt": "2026-11-23T14:17:32Z",
+  "change": "price 189.94 → 189.99 zł",
+  "changedAt": "2026-11-23T19:17:26Z",
   "cheapest": false,
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3118,9 +3118,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/354096/show_teenage-mutant-ninja-turtles-turtle-power-commander-deck-commander-teenage-mutant-ninja-turtles.jpg",
   "name": "Teenage Mutant Ninja Turtles: \"Turtle Power!\" Commander Deck",
   "pid": 354096,
-  "price": 189.94,
+  "price": 189.99,
   "recent": [
-   189.94
+   189.99
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3175,8 +3175,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370597.webp",
-  "change": "price 252.16 → 265.30 zł",
-  "changedAt": "2026-11-22T14:17:31Z",
+  "change": "price 265.29 → 265.73 zł",
+  "changedAt": "2026-11-23T19:17:26Z",
   "cheapest": true,
   "deck": "secrets-of-strixhaven-witherbloom-pestilence",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3187,9 +3187,9 @@
   "lowLogged": 207.07,
   "name": "Commander: Secrets of Strixhaven | \"Witherbloom Pestilence\" Commander Deck",
   "pid": 370597,
-  "price": 265.29,
+  "price": 265.73,
   "recent": [
-   265.29
+   265.73
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3519,8 +3519,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389402.webp",
-  "change": "price 314.50 → 314.70 zł",
-  "changedAt": "2026-11-23T14:17:32Z",
+  "change": "price 314.70 → 314.74 zł",
+  "changedAt": "2026-11-23T19:17:26Z",
   "cheapest": true,
   "deck": "foundations-starter-tramplesaurus-rex",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3531,9 +3531,9 @@
   "lowLogged": 190.68,
   "name": "Foundations: \"Tramplesaurus Rex\" Commander Deck",
   "pid": 389402,
-  "price": 314.7,
+  "price": 314.74,
   "recent": [
-   314.7
+   314.74
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3565,8 +3565,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 194.28 → 185.53 zł",
-  "changedAt": "2026-11-23T14:17:32Z",
+  "change": "price 185.53 → 185.40 zł",
+  "changedAt": "2026-11-23T19:17:26Z",
   "cheapest": true,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3577,9 +3577,9 @@
   "lowLogged": 185.53,
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 185.53,
+  "price": 185.4,
   "recent": [
-   185.53
+   185.4
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3588,21 +3588,20 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 243.43 → 239.00 zł",
-  "changedAt": "2026-11-23T14:17:32Z",
-  "cheapest": true,
+  "change": "price 239.00 → 243.36 zł",
+  "changedAt": "2026-11-23T19:17:26Z",
+  "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31903",
   "groupName": "Star Trek – Landing Party",
   "id": "cardtrader-400889",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
-  "lowLogged": 239.0,
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 239.0,
+  "price": 243.36,
   "recent": [
-   239.0
+   243.36
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3634,8 +3633,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400891.webp",
-  "change": "price 336.73 → 301.38 zł",
-  "changedAt": "2026-11-23T14:17:32Z",
+  "change": "price 301.38 → 336.67 zł",
+  "changedAt": "2026-11-23T19:17:26Z",
   "cheapest": true,
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3646,9 +3645,9 @@
   "lowLogged": 280.11,
   "name": "Star Trek | \"We Are the Borg\" Commander Deck",
   "pid": 400891,
-  "price": 301.38,
+  "price": 336.67,
   "recent": [
-   301.38
+   336.67
   ],
   "shop": "cardtrader",
   "status": "in_stock",
