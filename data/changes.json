@@ -5525,5 +5525,21 @@
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/pl/p/Nauctis-The-Sunken-Realm-Commander-Deck-Set-4/1049"
+ },
+ {
+  "at": "2026-11-23T13:17:27Z",
+  "best": {
+   "price": 234.9,
+   "shop": "dragoneye"
+  },
+  "deck": "Reality Fracture – Multiverse Reforged",
+  "group": "cardstore-31606",
+  "id": "panmysza-12455",
+  "inStock": 3,
+  "kind": "soldout",
+  "price": 240.0,
+  "shop": "panmysza",
+  "status": "out_of_stock",
+  "url": "https://panmysza.pl/pl/p/MtG-Reality-Fracture-Commander-Deck-Multiverse-Reforged/12455"
  }
 ]

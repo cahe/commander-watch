@@ -7473,6 +7473,8 @@
  },
  {
   "baseline": true,
+  "change": "sold out",
+  "changedAt": "2026-11-23T13:17:27Z",
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T00:39:10Z",
   "group": "cardstore-31606",
@@ -7482,7 +7484,7 @@
   "pid": 12455,
   "price": 240.0,
   "shop": "panmysza",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Reality-Fracture-Commander-Deck-Multiverse-Reforged/12455"
  },
  {
