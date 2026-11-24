@@ -1,38 +1,5 @@
 [
  {
-  "at": "2026-10-25T13:17:56Z",
-  "best": {
-   "price": 499.99,
-   "shop": "magiccafe"
-  },
-  "deck": "Bloomburrow Peace Offering",
-  "group": "cardtrader-280704",
-  "id": "frostmagic-bloomburrow-peace-offering-commander-deck",
-  "inStock": 1,
-  "kind": "soldout",
-  "price": 410,
-  "shop": "frostmagic",
-  "status": "out_of_stock",
-  "url": "https://frostmagic.pl/pl/products/bloomburrow-peace-offering-commander-deck"
- },
- {
-  "at": "2026-10-25T13:17:56Z",
-  "best": {
-   "price": 499.99,
-   "shop": "magiccafe"
-  },
-  "cheapest": true,
-  "deck": "Bloomburrow Peace Offering",
-  "group": "cardtrader-280704",
-  "id": "cardtrader-280704",
-  "inStock": 1,
-  "kind": "cheapest",
-  "price": 437.46,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/280704"
- },
- {
   "at": "2026-10-25T19:18:01Z",
   "best": {
    "price": 259.0,
@@ -5641,6 +5608,40 @@
   "inStock": 4,
   "kind": "cheapest",
   "price": 179.96,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370599"
+ },
+ {
+  "at": "2026-11-24T14:17:32Z",
+  "best": {
+   "price": 239.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "cardtrader-400889",
+  "inStock": 4,
+  "kind": "cheapest",
+  "price": 239.41,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400889"
+ },
+ {
+  "at": "2026-11-24T14:17:32Z",
+  "best": {
+   "price": 180,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Secrets of Strixhaven Quandrix Unlimited",
+  "group": "cardtrader-370599",
+  "id": "cardtrader-370599",
+  "inStock": 4,
+  "kind": "notcheapest",
+  "price": 180.32,
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370599"
