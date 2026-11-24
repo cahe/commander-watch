@@ -5645,5 +5645,58 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370599"
+ },
+ {
+  "at": "2026-11-24T19:04:38Z",
+  "best": {
+   "price": 239.99,
+   "shop": "wilczek"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "cardtrader-400889",
+  "inStock": 4,
+  "kind": "notcheapest",
+  "price": 243.79,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400889"
+ },
+ {
+  "at": "2026-11-24T19:04:38Z",
+  "best": {
+   "price": 239.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "cardtrader-400888",
+  "inStock": 4,
+  "kind": "price",
+  "old": 185.53,
+  "price": 176.39,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400888"
+ },
+ {
+  "at": "2026-11-24T19:04:38Z",
+  "best": {
+   "price": 199.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "cardtrader-400890",
+  "inStock": 5,
+  "kind": "price",
+  "old": 149.35,
+  "price": 145.15,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400890"
  }
 ]

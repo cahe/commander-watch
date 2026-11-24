@@ -583,8 +583,8 @@
  {
   "baseline": true,
   "box": "data/boxes/151469.webp",
-  "change": "price 891.12 → 892.66 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 892.66 → 893.87 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "kaldheim-elven-empire",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -595,9 +595,9 @@
   "lowLogged": 664.17,
   "name": "Commander: Kaldheim: \"Elven Empire\" Deck",
   "pid": 151469,
-  "price": 892.66,
+  "price": 893.87,
   "recent": [
-   892.66
+   893.87
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -788,8 +788,8 @@
  {
   "baseline": true,
   "box": "data/boxes/160508.webp",
-  "change": "price 885.73 → 887.26 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 887.26 → 891.45 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "adventures-in-the-forgotten-realms-planar-portal",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -800,9 +800,9 @@
   "lowLogged": 549.61,
   "name": "Commander: Adventures in the Forgotten Realms | \"Planar Portal\" Deck",
   "pid": 160508,
-  "price": 887.26,
+  "price": 891.45,
   "recent": [
-   887.26
+   891.45
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1198,8 +1198,8 @@
  {
   "baseline": true,
   "box": "data/boxes/211576.webp",
-  "change": "price 1049.87 → 895.43 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 895.43 → 1051.69 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "warhammer-40k-tyranid-swarm",
   "firstSeen": "2026-10-08T16:28:38Z",
@@ -1210,9 +1210,9 @@
   "lowLogged": 881.15,
   "name": "Universes Beyond: Warhammer 40,000 | \"Tyranid Swarm\" Deck",
   "pid": 211576,
-  "price": 895.43,
+  "price": 1051.69,
   "recent": [
-   895.43
+   1051.69
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1624,8 +1624,8 @@
  {
   "baseline": true,
   "box": "data/boxes/238387.webp",
-  "change": "price 1450.92 → 1453.43 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 1453.43 → 1386.48 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "masters-eldrazi-unbound",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -1636,9 +1636,9 @@
   "lowLogged": 1316.05,
   "name": "Commander Masters | \"Eldrazi Unbound\" Commander Deck",
   "pid": 238387,
-  "price": 1453.43,
+  "price": 1386.48,
   "recent": [
-   1453.43
+   1386.48
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -1693,8 +1693,8 @@
  {
   "baseline": true,
   "box": "data/boxes/238394.webp",
-  "change": "price 1116.53 → 2167.33 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 2167.33 → 1118.46 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "masters-sliver-swarm",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -1705,9 +1705,9 @@
   "lowLogged": 921.44,
   "name": "Commander Masters | \"Sliver Swarm\" Commander Deck",
   "pid": 238394,
-  "price": 2167.33,
+  "price": 1118.46,
   "recent": [
-   2167.33
+   1118.46
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2217,8 +2217,8 @@
  {
   "baseline": true,
   "box": "data/boxes/279375.webp",
-  "change": "price 1250.38 → 1252.54 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 1252.54 → 1292.75 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "modern-horizons-3-eldrazi-incursion-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -2229,9 +2229,9 @@
   "lowLogged": 1235.16,
   "name": "Commander: Modern Horizons 3 |\"Eldrazi Incursion\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 279375,
-  "price": 1252.54,
+  "price": 1292.75,
   "recent": [
-   1252.54
+   1292.75
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2514,8 +2514,8 @@
  {
   "baseline": true,
   "box": "data/boxes/280702.webp",
-  "change": "price 216.72 → 217.09 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 217.09 → 225.98 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "bloomburrow-family-matters",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2526,9 +2526,9 @@
   "lowLogged": 191.91,
   "name": "Commander: Bloomburrow | \"Family Matters\" Commander Deck",
   "pid": 280702,
-  "price": 217.09,
+  "price": 225.98,
   "recent": [
-   217.09
+   225.98
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2834,8 +2834,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322104.webp",
-  "change": "price 556.95 → 554.03 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 554.03 → 557.91 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "final-fantasy-counter-blitz-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -2846,9 +2846,9 @@
   "lowLogged": 526.16,
   "name": "FINAL FANTASY: \"Counter Blitz\" Commander Deck Collector's Edition",
   "pid": 322104,
-  "price": 554.03,
+  "price": 557.91,
   "recent": [
-   554.03
+   557.91
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2903,8 +2903,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322529.webp",
-  "change": "price 439.32 → 429.95 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 429.95 → 440.08 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "tarkir-dragonstorm-temur-roar",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2915,9 +2915,9 @@
   "lowLogged": 427.08,
   "name": "Commander: Tarkir Dragonstorm | \"Temur Roar\" Commander Deck",
   "pid": 322529,
-  "price": 429.95,
+  "price": 440.08,
   "recent": [
-   429.95
+   440.08
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2926,8 +2926,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322530.webp",
-  "change": "price 264.93 → 265.39 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 265.39 → 266.19 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "tarkir-dragonstorm-mardu-surge",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -2938,9 +2938,9 @@
   "lowLogged": 222.09,
   "name": "Commander: Tarkir Dragonstorm | \"Mardu Surge\" Commander Deck",
   "pid": 322530,
-  "price": 265.39,
+  "price": 266.19,
   "recent": [
-   265.39
+   266.19
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -2995,8 +2995,8 @@
  {
   "baseline": true,
   "box": "data/boxes/322533.webp",
-  "change": "price 408.98 → 409.69 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 409.69 → 411.61 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "tarkir-dragonstorm-sultai-arisen",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3007,9 +3007,9 @@
   "lowLogged": 401.17,
   "name": "Commander: Tarkir Dragonstorm | \"Sultai Arisen\" Commander Deck",
   "pid": 322533,
-  "price": 409.69,
+  "price": 411.61,
   "recent": [
-   409.69
+   411.61
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3084,8 +3084,8 @@
  {
   "baseline": true,
   "box": "data/boxes/352408.webp",
-  "change": "price 205.40 → 205.76 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 205.76 → 205.71 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "lorwyn-eclipsed-blight-curse",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3096,9 +3096,9 @@
   "lowLogged": 172.53,
   "name": "Lorwyn Eclipsed: \"Blight Curse\" Commander Deck",
   "pid": 352408,
-  "price": 205.76,
+  "price": 205.71,
   "recent": [
-   205.76
+   205.71
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3221,8 +3221,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370599.webp",
-  "change": "price 179.96 → 180.32 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 180.32 → 180.27 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": false,
   "deck": "secrets-of-strixhaven-quandrix-unlimited",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3232,9 +3232,9 @@
   "image": "https://www.cardtrader.com/uploads/blueprints/image/370599/show_commander-secrets-of-strixhaven-quandrix-unlimited-commander-deck-commander-secrets-of-strixhaven.jpg",
   "name": "Commander: Secrets of Strixhaven | \"Quandrix Unlimited\" Commander Deck",
   "pid": 370599,
-  "price": 180.32,
+  "price": 180.27,
   "recent": [
-   180.32
+   180.27
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3335,8 +3335,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370634.webp",
-  "change": "price 290.86 → 291.36 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 291.36 → 288.51 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "marvel-super-heroes-wakanda-forever-collector-deck",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3347,9 +3347,9 @@
   "lowLogged": 286.74,
   "name": "Marvel Super Heroes | \"Wakanda Forever\" Commander Deck Collector's Edition",
   "pid": 370634,
-  "price": 291.36,
+  "price": 288.51,
   "recent": [
-   291.36
+   288.51
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3358,8 +3358,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370635.webp",
-  "change": "price 351.95 → 306.36 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 306.36 → 352.56 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "marvel-super-heroes-avengers-assemble-collector-deck",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3370,9 +3370,9 @@
   "lowLogged": 302.5,
   "name": "Marvel Super Heroes | \"Avengers Assemble\" Commander Deck Collector's Edition",
   "pid": 370635,
-  "price": 306.36,
+  "price": 352.56,
   "recent": [
-   306.36
+   352.56
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3381,8 +3381,8 @@
  {
   "baseline": true,
   "box": "data/boxes/370636.webp",
-  "change": "price 421.68 → 382.24 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 382.24 → 422.41 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "marvel-super-heroes-doom-prevails-collector-deck",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3393,9 +3393,9 @@
   "lowLogged": 377.42,
   "name": "Marvel Super Heroes | \"Doom Prevails\" Commander Deck Collector's Edition",
   "pid": 370636,
-  "price": 382.24,
+  "price": 422.41,
   "recent": [
-   382.24
+   422.41
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3496,8 +3496,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389401.webp",
-  "change": "price 287.97 → 288.51 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 288.51 → 288.46 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "foundations-starter-reign-of-dragons",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3508,9 +3508,9 @@
   "lowLogged": 190.73,
   "name": "Foundations: \"Reign of Dragons\" Commander Deck",
   "pid": 389401,
-  "price": 288.51,
+  "price": 288.46,
   "recent": [
-   288.51
+   288.46
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3519,8 +3519,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389402.webp",
-  "change": "price 314.74 → 315.24 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 315.24 → 315.29 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "foundations-starter-tramplesaurus-rex",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3531,9 +3531,9 @@
   "lowLogged": 190.68,
   "name": "Foundations: \"Tramplesaurus Rex\" Commander Deck",
   "pid": 389402,
-  "price": 315.24,
+  "price": 315.29,
   "recent": [
-   315.24
+   315.29
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3542,8 +3542,8 @@
  {
   "baseline": true,
   "box": "data/boxes/389403.webp",
-  "change": "price 207.27 → 207.68 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 207.68 → 207.63 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "reality-fracture-multiverse-reforged",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3554,9 +3554,9 @@
   "lowLogged": 200.47,
   "name": "Reality Fracture Commander Deck",
   "pid": 389403,
-  "price": 207.68,
+  "price": 207.63,
   "recent": [
-   207.68
+   207.63
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3565,8 +3565,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400888.webp",
-  "change": "price 185.40 → 185.85 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 185.85 → 176.39 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "star-trek-federation-fleet",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3574,12 +3574,12 @@
   "groupName": "Star Trek – Federation Fleet",
   "id": "cardtrader-400888",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400888/show_400888-star-trek-federation-fleet-commander-deck-commander-star-trek(2).jpg",
-  "lowLogged": 185.53,
+  "lowLogged": 176.39,
   "name": "Star Trek | \"Federation Fleet\" Commander Deck",
   "pid": 400888,
-  "price": 185.85,
+  "price": 176.39,
   "recent": [
-   185.85
+   176.39
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3588,21 +3588,20 @@
  {
   "baseline": true,
   "box": "data/boxes/400889.webp",
-  "change": "price 243.36 → 239.41 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
-  "cheapest": true,
+  "change": "price 239.41 → 243.79 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
+  "cheapest": false,
   "deck": "star-trek-landing-party",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31903",
   "groupName": "Star Trek – Landing Party",
   "id": "cardtrader-400889",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400889/show_400889-star-trek-landing-party-commander-deck-commander-star-trek(2).jpg",
-  "lowLogged": 239.41,
   "name": "Star Trek | \"Landing Party\" Commander Deck",
   "pid": 400889,
-  "price": 239.41,
+  "price": 243.79,
   "recent": [
-   239.41
+   243.79
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3611,8 +3610,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400890.webp",
-  "change": "price 149.35 → 149.61 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 149.61 → 145.15 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "star-trek-klingon-fury",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3620,12 +3619,12 @@
   "groupName": "Star Trek – Klingon Fury",
   "id": "cardtrader-400890",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400890/show_400890-star-trek-klingon-fury-commander-deck-commander-star-trek.jpg",
-  "lowLogged": 149.35,
+  "lowLogged": 145.15,
   "name": "Star Trek | \"Klingon Fury\" Commander Deck",
   "pid": 400890,
-  "price": 149.61,
+  "price": 145.15,
   "recent": [
-   149.61
+   145.15
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3634,8 +3633,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400891.webp",
-  "change": "price 336.67 → 301.90 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 301.90 → 337.25 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-10-01T09:47:49Z",
@@ -3646,9 +3645,9 @@
   "lowLogged": 280.11,
   "name": "Star Trek | \"We Are the Borg\" Commander Deck",
   "pid": 400891,
-  "price": 301.9,
+  "price": 337.25,
   "recent": [
-   301.9
+   337.25
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3657,8 +3656,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400892.webp",
-  "change": "price 447.97 → 444.72 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 444.72 → 382.19 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "star-trek-federation-fleet-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -3669,9 +3668,9 @@
   "lowLogged": 381.56,
   "name": "Star Trek | \"Federation Fleet\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400892,
-  "price": 444.72,
+  "price": 382.19,
   "recent": [
-   444.72
+   382.19
   ],
   "shop": "cardtrader",
   "status": "in_stock",
@@ -3680,8 +3679,8 @@
  {
   "baseline": true,
   "box": "data/boxes/400893.webp",
-  "change": "price 426.09 → 426.83 zł",
-  "changedAt": "2026-11-24T14:17:32Z",
+  "change": "price 426.83 → 449.19 zł",
+  "changedAt": "2026-11-24T19:04:38Z",
   "cheapest": true,
   "deck": "star-trek-landing-party-collector-deck",
   "firstSeen": "2026-10-02T15:17:14Z",
@@ -3692,9 +3691,9 @@
   "lowLogged": 426.12,
   "name": "Star Trek | \"Landing Party\" Collector's Edition Commander Deck Collector's Edition",
   "pid": 400893,
-  "price": 426.83,
+  "price": 449.19,
   "recent": [
-   426.83
+   449.19
   ],
   "shop": "cardtrader",
   "status": "in_stock",
