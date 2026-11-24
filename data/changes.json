@@ -5645,5 +5645,22 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400889"
+ },
+ {
+  "at": "2026-11-24T09:17:30Z",
+  "best": {
+   "price": 180,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Secrets of Strixhaven Quandrix Unlimited",
+  "group": "cardtrader-370599",
+  "id": "cardtrader-370599",
+  "inStock": 4,
+  "kind": "cheapest",
+  "price": 179.96,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370599"
  }
 ]
