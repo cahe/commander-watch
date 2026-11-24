@@ -420,9 +420,9 @@
    "ctPrice": 225.93,
    "ctUrl": "https://www.cardtrader.com/en/cards/322098",
    "name": "Final Fantasy Counter Blitz",
-   "shopName": "Frost Magic",
-   "shopPrice": 230,
-   "shopUrl": "https://frostmagic.pl/pl/products/final-fantasy-counter-blitz-commander-deck"
+   "shopName": "Pan Mysza",
+   "shopPrice": 223.25,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Final-Fantasy-Commander-Deck-Counter-Blitz/8234"
   },
   "final-fantasy-counter-blitz-collector-deck": {
    "ctPrice": 557.91,
@@ -436,9 +436,9 @@
    "ctPrice": 229.99,
    "ctUrl": "https://www.cardtrader.com/en/cards/322095",
    "name": "Final Fantasy Limit Break",
-   "shopName": "Frost Magic",
-   "shopPrice": 234.99,
-   "shopUrl": "https://frostmagic.pl/pl/products/final-fantasy-limit-break-commander-deck"
+   "shopName": "Pan Mysza",
+   "shopPrice": 223.25,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Final-Fantasy-Commander-Deck-Limit-Break/8237"
   },
   "final-fantasy-limit-break-collector-deck": {
    "ctPrice": 667.89,
@@ -452,9 +452,9 @@
    "ctPrice": 180.63,
    "ctUrl": "https://www.cardtrader.com/en/cards/322101",
    "name": "Final Fantasy Revival Trance",
-   "shopName": "Frost Magic",
-   "shopPrice": 168,
-   "shopUrl": "https://frostmagic.pl/pl/products/final-fantasy-revival-trance-commander-deck"
+   "shopName": "Pan Mysza",
+   "shopPrice": 159.6,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Final-Fantasy-Commander-Deck-Revival-Trance/8236"
   },
   "final-fantasy-revival-trance-collector-deck": {
    "ctPrice": 382.19,
@@ -469,7 +469,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/322100",
    "name": "Final Fantasy Scions & Spellcraft",
    "shopName": "Pan Mysza",
-   "shopPrice": 235.0,
+   "shopPrice": 223.25,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Final-Fantasy-Commander-Deck-Scions-and-Spellcraft/8238"
   },
   "final-fantasy-scions-spellcraft-collector-deck": {
@@ -789,7 +789,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/370631",
    "name": "Marvel Super Heroes – Avengers Assemble",
    "shopName": "Pan Mysza",
-   "shopPrice": 200.0,
+   "shopPrice": 190.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Avengers-Assemble/11771"
   },
   "marvel-super-heroes-avengers-assemble-collector-deck": {
@@ -797,24 +797,24 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/370635",
    "name": "Marvel Super Heroes – Avengers Assemble",
    "shopName": "Pan Mysza",
-   "shopPrice": 560.0,
+   "shopPrice": 532.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Collectors-Edition-Avengers-Assemble/11767"
   },
   "marvel-super-heroes-collector-set": {
    "ctPrice": null,
    "ctUrl": null,
    "name": "Marvel Super Heroes",
-   "shopName": "Frost Magic",
-   "shopPrice": 1850,
-   "shopUrl": "https://frostmagic.pl/pl/products/mtg-marvel-super-heroes-commander-deck-collector-s-edition-set"
+   "shopName": "Pan Mysza",
+   "shopPrice": 1757.5,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Collectors-Edition-Display-4/11635"
   },
   "marvel-super-heroes-doom-prevails": {
    "ctPrice": 243.87,
    "ctUrl": "https://www.cardtrader.com/en/cards/370633",
    "name": "Marvel Super Heroes – Doom Prevails",
-   "shopName": "Cardstore",
-   "shopPrice": 260.0,
-   "shopUrl": "https://cardstore.pl/commander/31275-commander-marvel-super-heroes-doom-prevails.html"
+   "shopName": "Pan Mysza",
+   "shopPrice": 251.75,
+   "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Doom-Prevails/11769"
   },
   "marvel-super-heroes-doom-prevails-collector-deck": {
    "ctPrice": 422.41,
@@ -829,7 +829,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/370632",
    "name": "Marvel Super Heroes – Fantastic Four",
    "shopName": "Pan Mysza",
-   "shopPrice": 160.0,
+   "shopPrice": 152.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Fantastic-Four/11768"
   },
   "marvel-super-heroes-fantastic-four-collector-deck": {
@@ -837,7 +837,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/370637",
    "name": "Marvel Super Heroes – Fantastic Four",
    "shopName": "Pan Mysza",
-   "shopPrice": 560.0,
+   "shopPrice": 532.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Collectors-Edition-Fantastic-Four/11764"
   },
   "marvel-super-heroes-set": {
@@ -853,7 +853,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/370630",
    "name": "Marvel Super Heroes – Wakanda Forever",
    "shopName": "Pan Mysza",
-   "shopPrice": 180.0,
+   "shopPrice": 171.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Wakanda-Forever/11770"
   },
   "marvel-super-heroes-wakanda-forever-collector-deck": {
@@ -1173,7 +1173,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/400892",
    "name": "Star Trek Federation Fleet",
    "shopName": "Pan Mysza",
-   "shopPrice": 485.0,
+   "shopPrice": 460.75,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Federation-Fleet-Collectors-Edition-Commander-Deck/13001"
   },
   "star-trek-klingon-fury": {
@@ -1189,7 +1189,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/400894",
    "name": "Star Trek Klingon Fury",
    "shopName": "Pan Mysza",
-   "shopPrice": 420.0,
+   "shopPrice": 399.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Klingon-Fury-Collectors-Edition-Commander-Deck/13003"
   },
   "star-trek-landing-party": {
@@ -1205,7 +1205,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/400893",
    "name": "Star Trek Landing Party",
    "shopName": "Pan Mysza",
-   "shopPrice": 485.0,
+   "shopPrice": 460.75,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-Landing-Party-Collectors-Edition-Commander-Deck/13002"
   },
   "star-trek-set": {
@@ -1229,7 +1229,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/400895",
    "name": "Star Trek We Are The Borg",
    "shopName": "Pan Mysza",
-   "shopPrice": 600.0,
+   "shopPrice": 570.0,
    "shopUrl": "https://panmysza.pl/pl/p/MtG-Star-Trek-We-Are-The-Borg-Collectors-Edition-Commander-Deck/13004"
   },
   "streets-of-new-capenna-bedecked-brokers": {
@@ -1381,7 +1381,7 @@
    "ctUrl": "https://www.cardtrader.com/en/cards/354096",
    "name": "Teenage Mutant Ninja Turtles – Turtle Power!",
    "shopName": "Pan Mysza",
-   "shopPrice": 165.0,
+   "shopPrice": 156.75,
    "shopUrl": "https://panmysza.pl/pl/p/Teenage-Mutant-Ninja-Turtles-Commander-Deck/9933"
   },
   "the-brother-s-war-set": {
