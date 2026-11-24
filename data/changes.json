@@ -1,41 +1,5 @@
 [
  {
-  "at": "2026-10-25T19:18:01Z",
-  "best": {
-   "price": 259.0,
-   "shop": "cardstore"
-  },
-  "cheapest": true,
-  "deck": "Fallout Hail Caesar",
-  "group": "cardstore-28766",
-  "id": "cardtrader-265027",
-  "inStock": 1,
-  "kind": "price",
-  "old": 235.42,
-  "price": 228.54,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/265027"
- },
- {
-  "at": "2026-10-25T19:18:01Z",
-  "best": {
-   "price": 410.0,
-   "shop": "panmysza"
-  },
-  "cheapest": true,
-  "deck": "Fallout Mutant Menace",
-  "group": "cardstore-28765",
-  "id": "cardtrader-265029",
-  "inStock": 2,
-  "kind": "price",
-  "old": 404.29,
-  "price": 389.28,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/265029"
- },
- {
   "at": "2026-10-26T09:18:02Z",
   "best": {
    "price": 235.0,
@@ -5698,5 +5662,30 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400890"
+ },
+ {
+  "at": "2026-11-24T20:17:36Z",
+  "deck": "The Lost Caverns of Ixalan Ahoy Mateys",
+  "group": "cardtrader-261730",
+  "id": "magiccafe-18024",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 322.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
+ },
+ {
+  "at": "2026-11-24T20:17:36Z",
+  "cheapest": true,
+  "deck": "The Lost Caverns of Ixalan Ahoy Mateys",
+  "group": "cardtrader-261730",
+  "id": "cardtrader-261730",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 337.51,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/261730"
  }
 ]

@@ -1452,9 +1452,9 @@
    "ctPrice": 337.51,
    "ctUrl": "https://www.cardtrader.com/en/cards/261730",
    "name": "The Lost Caverns of Ixalan Ahoy Mateys",
-   "shopName": "Magic Cafe",
-   "shopPrice": 322.99,
-   "shopUrl": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "the-lost-caverns-of-ixalan-blood-rites": {
    "ctPrice": 669.41,
