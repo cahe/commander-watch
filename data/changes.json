@@ -6339,5 +6339,18 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/370632"
+ },
+ {
+  "at": "2026-11-25T09:17:36Z",
+  "deck": "The Lost Caverns of Ixalan Ahoy Mateys",
+  "group": "cardtrader-261730",
+  "id": "magiccafe-18024",
+  "inStock": 0,
+  "kind": "price",
+  "old": 322.99,
+  "price": 342.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
  }
 ]

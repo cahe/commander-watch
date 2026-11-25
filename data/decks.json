@@ -5565,8 +5565,8 @@
  },
  {
   "baseline": true,
-  "change": "sold out",
-  "changedAt": "2026-11-24T20:17:36Z",
+  "change": "price 322.99 → 342.99 zł",
+  "changedAt": "2026-11-25T09:17:36Z",
   "deck": "the-lost-caverns-of-ixalan-ahoy-mateys",
   "firstSeen": "2026-10-02T14:29:54Z",
   "group": "cardtrader-261730",
@@ -5574,7 +5574,7 @@
   "id": "magiccafe-18024",
   "name": "The Lost Caverns of Ixalan Commander Deck Ahoy Mateys",
   "pid": 18024,
-  "price": 322.99,
+  "price": 342.99,
   "shop": "magiccafe",
   "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
