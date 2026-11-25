@@ -6334,5 +6334,22 @@
   "shop": "magiccafe",
   "status": "out_of_stock",
   "url": "https://magiccafe.eu/product/the-lost-caverns-of-ixalan-commander-deck-ahoy-mateys/"
+ },
+ {
+  "at": "2026-11-25T14:17:32Z",
+  "best": {
+   "price": 359.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": false,
+  "deck": "Innistrad Crimson Vow Spirit Squadron",
+  "group": "cardtrader-164141",
+  "id": "cardtrader-164141",
+  "inStock": 1,
+  "kind": "notcheapest",
+  "price": 361.25,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/164141"
  }
 ]
