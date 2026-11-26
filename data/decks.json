@@ -3631,13 +3631,14 @@
   "box": "data/boxes/400891.webp",
   "change": "price 334.41 → 334.36 zł",
   "changedAt": "2026-11-26T14:18:07Z",
-  "cheapest": false,
+  "cheapest": true,
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-10-01T09:47:49Z",
   "group": "cardstore-31905",
   "groupName": "Star Trek – We Are the Borg",
   "id": "cardtrader-400891",
   "image": "https://www.cardtrader.com/uploads/blueprints/image/400891/show_400891-star-trek-we-are-the-borg-commander-deck-commander-star-trek.jpg",
+  "lowLogged": 334.36,
   "name": "Star Trek | \"We Are the Borg\" Commander Deck",
   "pid": 400891,
   "price": 334.36,
@@ -4118,8 +4119,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-11-25T17:17:34Z",
+  "change": "sold out",
+  "changedAt": "2026-11-26T17:18:06Z",
   "deck": "star-trek-we-are-the-borg",
   "firstSeen": "2026-11-25T17:17:34Z",
   "group": "cardstore-31905",
@@ -4129,7 +4130,7 @@
   "pid": 13580,
   "price": 259.9,
   "shop": "dragoneye",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://dragoneye.pl/magic-the-gathering-star-trek-commander-deck-we-are-the-borg-p-13580.html"
  },
  {
@@ -7996,8 +7997,8 @@
  },
  {
   "baseline": false,
-  "change": "listed",
-  "changedAt": "2026-11-22T17:17:25Z",
+  "change": "sold out",
+  "changedAt": "2026-11-26T17:18:06Z",
   "deck": "nauctis-the-sunken-realm-set",
   "firstSeen": "2026-11-22T17:17:25Z",
   "group": "time4magic-1049",
@@ -8007,7 +8008,7 @@
   "pid": 1049,
   "price": 899.0,
   "shop": "time4magic",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://time4magic.pl/pl/p/Nauctis-The-Sunken-Realm-Commander-Deck-Set-4/1049"
  },
  {

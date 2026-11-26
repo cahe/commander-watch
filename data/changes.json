@@ -6348,5 +6348,50 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400894"
+ },
+ {
+  "at": "2026-11-26T17:18:06Z",
+  "deck": "Nauctis – The Sunken Realm",
+  "group": "time4magic-1049",
+  "id": "time4magic-1049",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 899.0,
+  "shop": "time4magic",
+  "status": "out_of_stock",
+  "url": "https://time4magic.pl/pl/p/Nauctis-The-Sunken-Realm-Commander-Deck-Set-4/1049"
+ },
+ {
+  "at": "2026-11-26T17:18:06Z",
+  "best": {
+   "price": 339,
+   "shop": "frostmagic"
+  },
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardstore-31905",
+  "id": "dragoneye-13580",
+  "inStock": 2,
+  "kind": "soldout",
+  "price": 259.9,
+  "shop": "dragoneye",
+  "status": "out_of_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-star-trek-commander-deck-we-are-the-borg-p-13580.html"
+ },
+ {
+  "at": "2026-11-26T17:18:06Z",
+  "best": {
+   "price": 339,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardstore-31905",
+  "id": "cardtrader-400891",
+  "inStock": 2,
+  "kind": "cheapest",
+  "price": 334.36,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400891"
  }
 ]
