@@ -7597,8 +7597,8 @@
  },
  {
   "baseline": true,
-  "change": "price 200.00 → 190.00 zł",
-  "changedAt": "2026-11-24T21:17:41Z",
+  "change": "sold out",
+  "changedAt": "2026-11-26T19:18:06Z",
   "deck": "marvel-super-heroes-avengers-assemble",
   "firstSeen": "2026-10-01T00:39:10Z",
   "group": "cardstore-31272",
@@ -7608,7 +7608,7 @@
   "pid": 11771,
   "price": 190.0,
   "shop": "panmysza",
-  "status": "in_stock",
+  "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Avengers-Assemble/11771"
  },
  {
