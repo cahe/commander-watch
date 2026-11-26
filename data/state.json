@@ -22,15 +22,15 @@
    "maxId": 29308
   },
   "mrpuggy": {
-   "failStreak": 1,
+   "failStreak": 0,
    "maxId": 15662
   },
   "panmysza": {
-   "failStreak": 1,
+   "failStreak": 0,
    "maxId": 13004
   },
   "time4magic": {
-   "failStreak": 1,
+   "failStreak": 0,
    "maxId": 1049
   },
   "wargamer": {
@@ -38,7 +38,7 @@
    "maxId": 18320
   },
   "wilczek": {
-   "failStreak": 39,
+   "failStreak": 40,
    "maxId": 15690
   },
   "xjoy": {
