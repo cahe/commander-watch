@@ -1,35 +1,5 @@
 [
  {
-  "at": "2026-10-27T14:17:39Z",
-  "cheapest": true,
-  "deck": "The Lord of the Rings Tales of Middle-earth Food and Fellowship",
-  "group": "cardtrader-246478",
-  "id": "magiccafe-15262",
-  "inStock": 1,
-  "kind": "restock",
-  "price": 578.5,
-  "shop": "magiccafe",
-  "status": "in_stock",
-  "url": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-food-and-fellowship/"
- },
- {
-  "at": "2026-10-27T14:17:39Z",
-  "best": {
-   "price": 279.99,
-   "shop": "magiccafe"
-  },
-  "cheapest": false,
-  "deck": "Edge of Eternities “World Shaper”",
-  "group": "cardtrader-322694",
-  "id": "cardtrader-322694",
-  "inStock": 1,
-  "kind": "notcheapest",
-  "price": 308.35,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/322694"
- },
- {
   "at": "2026-10-27T15:17:42Z",
   "cheapest": true,
   "deck": "The Lord of the Rings Tales of Middle-earth Food and Fellowship",
@@ -6413,5 +6383,106 @@
   "shop": "xjoy",
   "status": "in_stock",
   "url": "https://www.xjoy.pl/mtg-commander/27107-mtg-star-trek-commander-deck-we-are-the-borg.html"
+ },
+ {
+  "at": "2026-11-26T14:18:07Z",
+  "best": {
+   "price": 239.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "cardtrader-400889",
+  "inStock": 6,
+  "kind": "cheapest",
+  "price": 235.84,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400889"
+ },
+ {
+  "at": "2026-11-26T14:18:07Z",
+  "deck": "Zendikar Rising – Land's Wrath",
+  "group": "cardtrader-146527",
+  "id": "cardtrader-146527",
+  "inStock": 0,
+  "kind": "notcheapest",
+  "price": 204.51,
+  "shop": "cardtrader",
+  "status": "out_of_stock",
+  "url": "https://www.cardtrader.com/en/cards/146527"
+ },
+ {
+  "at": "2026-11-26T14:18:07Z",
+  "best": {
+   "price": 239,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "cardtrader-400888",
+  "inStock": 6,
+  "kind": "price",
+  "old": 176.39,
+  "price": 172.58,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400888"
+ },
+ {
+  "at": "2026-11-26T14:18:07Z",
+  "best": {
+   "price": 195,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "cardtrader-400890",
+  "inStock": 7,
+  "kind": "price",
+  "old": 145.15,
+  "price": 141.22,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400890"
+ },
+ {
+  "at": "2026-11-26T14:18:07Z",
+  "best": {
+   "price": 460.75,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Federation Fleet",
+  "group": "cardtrader-400892",
+  "id": "cardtrader-400892",
+  "inStock": 1,
+  "kind": "price",
+  "old": 381.56,
+  "price": 361.24,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400892"
+ },
+ {
+  "at": "2026-11-26T14:18:07Z",
+  "best": {
+   "price": 399.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Star Trek Klingon Fury",
+  "group": "cardtrader-400894",
+  "id": "cardtrader-400894",
+  "inStock": 1,
+  "kind": "price",
+  "old": 359.28,
+  "price": 338.84,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400894"
  }
 ]
