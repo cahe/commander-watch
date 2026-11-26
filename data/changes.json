@@ -1,58 +1,5 @@
 [
  {
-  "at": "2026-10-27T10:17:42Z",
-  "best": {
-   "price": 1029,
-   "shop": "frostmagic"
-  },
-  "cheapest": true,
-  "deck": "Star Trek",
-  "group": "frostmagic-magic-the-gathering-star-trek-commander-deck-display",
-  "id": "time4magic-994",
-  "inStock": 3,
-  "kind": "price",
-  "old": 1029.0,
-  "price": 999.0,
-  "shop": "time4magic",
-  "status": "in_stock",
-  "url": "https://time4magic.pl/mtg-star-trek-commander-deck-set-4"
- },
- {
-  "at": "2026-10-27T10:17:42Z",
-  "best": {
-   "price": 299.0,
-   "shop": "wargamer"
-  },
-  "cheapest": false,
-  "deck": "Star Trek – We Are the Borg",
-  "group": "cardtrader-400891",
-  "id": "time4magic-996",
-  "inStock": 3,
-  "kind": "restock",
-  "price": 319.0,
-  "shop": "time4magic",
-  "status": "in_stock",
-  "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
- },
- {
-  "at": "2026-10-27T10:17:42Z",
-  "best": {
-   "price": 299.0,
-   "shop": "wargamer"
-  },
-  "cheapest": false,
-  "deck": "Star Trek – We Are the Borg",
-  "group": "cardtrader-400891",
-  "id": "time4magic-996",
-  "inStock": 3,
-  "kind": "price",
-  "old": 299.0,
-  "price": 319.0,
-  "shop": "time4magic",
-  "status": "in_stock",
-  "url": "https://time4magic.pl/mtg-star-trek-we-are-the-borg-commander-deck"
- },
- {
   "at": "2026-10-27T11:17:40Z",
   "best": {
    "price": 1029,
@@ -6376,5 +6323,113 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-11-26T10:18:08Z",
+  "best": {
+   "price": 223.25,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Counter Blitz",
+  "group": "cardstore-29974",
+  "id": "xjoy-23120",
+  "inStock": 6,
+  "kind": "price",
+  "old": 249.99,
+  "price": 229.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/final-fantasy/23120-mtg-final-fantasy-commander-deck-counter-blitz.html"
+ },
+ {
+  "at": "2026-11-26T10:18:08Z",
+  "best": {
+   "price": 223.25,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Final Fantasy Limit Break",
+  "group": "cardstore-29973",
+  "id": "xjoy-23119",
+  "inStock": 6,
+  "kind": "price",
+  "old": 249.99,
+  "price": 219.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/final-fantasy/23119-mtg-final-fantasy-commander-deck-limit-break.html"
+ },
+ {
+  "at": "2026-11-26T10:18:08Z",
+  "best": {
+   "price": 223.25,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Final Fantasy Scions & Spellcraft",
+  "group": "cardstore-29975",
+  "id": "xjoy-23118",
+  "inStock": 3,
+  "kind": "price",
+  "old": 279.99,
+  "price": 249.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/final-fantasy/23118-mtg-final-fantasy-commander-deck-scions-spellcraft.html"
+ },
+ {
+  "at": "2026-11-26T10:18:08Z",
+  "best": {
+   "price": 999.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Final Fantasy",
+  "group": "magiccafe-25784",
+  "id": "xjoy-23122",
+  "inStock": 2,
+  "kind": "price",
+  "old": 949.99,
+  "price": 879.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/final-fantasy/23122-mtg-final-fantasy-commander-deck-display-4-decks.html"
+ },
+ {
+  "at": "2026-11-26T10:18:08Z",
+  "best": {
+   "price": 239.99,
+   "shop": "wilczek"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – Landing Party",
+  "group": "cardstore-31903",
+  "id": "xjoy-27106",
+  "inStock": 6,
+  "kind": "price",
+  "old": 289.99,
+  "price": 269.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/27106-mtg-star-trek-commander-deck-landing-party.html"
+ },
+ {
+  "at": "2026-11-26T10:18:08Z",
+  "best": {
+   "price": 259.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": false,
+  "deck": "Star Trek – We Are the Borg",
+  "group": "cardstore-31905",
+  "id": "xjoy-27107",
+  "inStock": 3,
+  "kind": "price",
+  "old": 409.99,
+  "price": 379.99,
+  "shop": "xjoy",
+  "status": "in_stock",
+  "url": "https://www.xjoy.pl/mtg-commander/27107-mtg-star-trek-commander-deck-we-are-the-borg.html"
  }
 ]
