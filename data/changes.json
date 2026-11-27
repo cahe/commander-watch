@@ -6376,5 +6376,31 @@
   "shop": "dragoneye",
   "status": "in_stock",
   "url": "https://dragoneye.pl/magic-the-gathering-teenage-mutant-ninja-turtles-commander-deck-turtle-power-p-12044.html"
+ },
+ {
+  "at": "2026-11-27T13:18:05Z",
+  "cheapest": true,
+  "deck": "Nauctis – The Sunken Realm – Premium",
+  "group": "time4magic-1057",
+  "id": "time4magic-1057",
+  "inStock": 1,
+  "kind": "new",
+  "price": 1399.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/pl/p/Nauctis-The-Sunken-Realm-Commander-Deck-Set-Premium-Edition-4/1057"
+ },
+ {
+  "at": "2026-11-27T13:18:05Z",
+  "cheapest": true,
+  "deck": "Nauctis – The Sunken Realm",
+  "group": "time4magic-1049",
+  "id": "time4magic-1049",
+  "inStock": 1,
+  "kind": "restock",
+  "price": 899.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-nauctis-the-sunken-realm-commander-deck-set-4"
  }
 ]

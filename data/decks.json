@@ -7999,8 +7999,8 @@
  },
  {
   "baseline": false,
-  "change": "sold out",
-  "changedAt": "2026-11-26T17:18:06Z",
+  "change": "back in stock",
+  "changedAt": "2026-11-27T13:18:05Z",
   "deck": "nauctis-the-sunken-realm-set",
   "firstSeen": "2026-11-22T17:17:25Z",
   "group": "time4magic-1049",
@@ -8010,8 +8010,24 @@
   "pid": 1049,
   "price": 899.0,
   "shop": "time4magic",
-  "status": "out_of_stock",
-  "url": "https://time4magic.pl/pl/p/Nauctis-The-Sunken-Realm-Commander-Deck-Set-4/1049"
+  "status": "in_stock",
+  "url": "https://time4magic.pl/mtg-nauctis-the-sunken-realm-commander-deck-set-4"
+ },
+ {
+  "baseline": false,
+  "change": "listed",
+  "changedAt": "2026-11-27T13:18:05Z",
+  "deck": "nauctis-the-sunken-realm-premium-set",
+  "firstSeen": "2026-11-27T13:18:05Z",
+  "group": "time4magic-1057",
+  "groupName": "Nauctis – The Sunken Realm – Premium",
+  "id": "time4magic-1057",
+  "name": "Nauctis: The Sunken Realm Commander Deck Set - Premium Edition (4)",
+  "pid": 1057,
+  "price": 1399.0,
+  "shop": "time4magic",
+  "status": "in_stock",
+  "url": "https://time4magic.pl/pl/p/Nauctis-The-Sunken-Realm-Commander-Deck-Set-Premium-Edition-4/1057"
  },
  {
   "baseline": true,

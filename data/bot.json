@@ -1024,13 +1024,21 @@
    "shopPrice": null,
    "shopUrl": null
   },
+  "nauctis-the-sunken-realm-premium-set": {
+   "ctPrice": null,
+   "ctUrl": null,
+   "name": "Nauctis – The Sunken Realm – Premium",
+   "shopName": "Time4Magic",
+   "shopPrice": 1399.0,
+   "shopUrl": "https://time4magic.pl/pl/p/Nauctis-The-Sunken-Realm-Commander-Deck-Set-Premium-Edition-4/1057"
+  },
   "nauctis-the-sunken-realm-set": {
    "ctPrice": null,
    "ctUrl": null,
    "name": "Nauctis – The Sunken Realm",
-   "shopName": null,
-   "shopPrice": null,
-   "shopUrl": null
+   "shopName": "Time4Magic",
+   "shopPrice": 899.0,
+   "shopUrl": "https://time4magic.pl/mtg-nauctis-the-sunken-realm-commander-deck-set-4"
   },
   "outlaws-of-thunder-junction-desert-bloom": {
    "ctPrice": 569.66,

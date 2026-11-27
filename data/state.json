@@ -31,18 +31,18 @@
   },
   "time4magic": {
    "failStreak": 0,
-   "maxId": 1049
+   "maxId": 1057
   },
   "wargamer": {
    "failStreak": 0,
    "maxId": 18320
   },
   "wilczek": {
-   "failStreak": 62,
+   "failStreak": 63,
    "maxId": 15690
   },
   "xjoy": {
-   "failStreak": 2,
+   "failStreak": 0,
    "maxId": 27109
   }
  }
