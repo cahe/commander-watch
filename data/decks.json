@@ -3927,6 +3927,8 @@
  },
  {
   "baseline": true,
+  "change": "back in stock",
+  "changedAt": "2026-11-27T11:18:07Z",
   "deck": "teenage-mutant-ninja-turtles-turtle-power",
   "firstSeen": "2026-10-01T00:06:59Z",
   "group": "cardstore-30911",
@@ -3936,7 +3938,7 @@
   "pid": 12044,
   "price": 259.9,
   "shop": "dragoneye",
-  "status": "out_of_stock",
+  "status": "in_stock",
   "url": "https://dragoneye.pl/magic-the-gathering-teenage-mutant-ninja-turtles-commander-deck-turtle-power-p-12044.html"
  },
  {

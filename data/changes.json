@@ -6359,5 +6359,22 @@
   "shop": "panmysza",
   "status": "out_of_stock",
   "url": "https://panmysza.pl/pl/p/MtG-Marvel-Super-Heroes-Commander-Deck-Avengers-Assemble/11771"
+ },
+ {
+  "at": "2026-11-27T11:18:07Z",
+  "best": {
+   "price": 156.75,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Teenage Mutant Ninja Turtles – Turtle Power!",
+  "group": "cardstore-30911",
+  "id": "dragoneye-12044",
+  "inStock": 7,
+  "kind": "restock",
+  "price": 259.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-teenage-mutant-ninja-turtles-commander-deck-turtle-power-p-12044.html"
  }
 ]
