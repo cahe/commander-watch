@@ -34,15 +34,15 @@
    "maxId": 1057
   },
   "wargamer": {
-   "failStreak": 1,
+   "failStreak": 0,
    "maxId": 18320
   },
   "wilczek": {
-   "failStreak": 70,
+   "failStreak": 71,
    "maxId": 15690
   },
   "xjoy": {
-   "failStreak": 0,
+   "failStreak": 1,
    "maxId": 27109
   }
  }
