@@ -14,7 +14,7 @@
    "maxId": 13580
   },
   "frostmagic": {
-   "failStreak": 0,
+   "failStreak": 1,
    "maxId": 0
   },
   "magiccafe": {
@@ -38,11 +38,11 @@
    "maxId": 18320
   },
   "wilczek": {
-   "failStreak": 68,
+   "failStreak": 69,
    "maxId": 15690
   },
   "xjoy": {
-   "failStreak": 2,
+   "failStreak": 3,
    "maxId": 27109
   }
  }

@@ -1,55 +1,5 @@
 [
  {
-  "at": "2026-10-28T19:17:46Z",
-  "deck": "Foundations Starter – Wretched Ranks",
-  "group": "cardstore-31682",
-  "id": "wilczek-15688",
-  "inStock": 0,
-  "kind": "soldout",
-  "price": 209.99,
-  "shop": "wilczek",
-  "status": "out_of_stock",
-  "url": "https://wilczek.poznan.pl/magic-the-gathering-foundations-commander-deck-wretched-ranks.html"
- },
- {
-  "at": "2026-10-28T19:17:46Z",
-  "deck": "Zendikar Rising – Land's Wrath",
-  "group": "cardtrader-146527",
-  "id": "cardtrader-146527",
-  "inStock": 0,
-  "kind": "notcheapest",
-  "price": 223.23,
-  "shop": "cardtrader",
-  "status": "out_of_stock",
-  "url": "https://www.cardtrader.com/en/cards/146527"
- },
- {
-  "at": "2026-10-28T19:17:46Z",
-  "deck": "Phyrexia All Will Be One | \"Rebellion Rising",
-  "group": "cardtrader-231931",
-  "id": "cardtrader-231931",
-  "inStock": 0,
-  "kind": "notcheapest",
-  "price": 267.32,
-  "shop": "cardtrader",
-  "status": "out_of_stock",
-  "url": "https://www.cardtrader.com/en/cards/231931"
- },
- {
-  "at": "2026-10-28T19:17:46Z",
-  "cheapest": true,
-  "deck": "Kaldheim Elven Empire",
-  "group": "cardtrader-151469",
-  "id": "cardtrader-151469",
-  "inStock": 0,
-  "kind": "price",
-  "old": 702.72,
-  "price": 664.17,
-  "shop": "cardtrader",
-  "status": "in_stock",
-  "url": "https://www.cardtrader.com/en/cards/151469"
- },
- {
   "at": "2026-10-28T23:17:48Z",
   "best": {
    "price": 234.9,
@@ -6230,5 +6180,139 @@
   "shop": "time4magic",
   "status": "in_stock",
   "url": "https://time4magic.pl/mtg-nauctis-the-sunken-realm-commander-deck-set-4"
+ },
+ {
+  "at": "2026-11-27T19:18:05Z",
+  "best": {
+   "price": 379.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Fallout Mutant Menace",
+  "group": "cardstore-28765",
+  "id": "cardtrader-265029",
+  "inStock": 3,
+  "kind": "cheapest",
+  "price": 346.84,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/265029"
+ },
+ {
+  "at": "2026-11-27T19:18:05Z",
+  "best": {
+   "price": 279.99,
+   "shop": "magiccafe"
+  },
+  "cheapest": true,
+  "deck": "Edge of Eternities “World Shaper”",
+  "group": "cardtrader-322694",
+  "id": "cardtrader-322694",
+  "inStock": 1,
+  "kind": "cheapest",
+  "price": 270.67,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/322694"
+ },
+ {
+  "at": "2026-11-27T19:18:05Z",
+  "cheapest": true,
+  "deck": "Warhammer 40K The Ruinous Powers",
+  "group": "cardtrader-211574",
+  "id": "cardtrader-211574",
+  "inStock": 0,
+  "kind": "price",
+  "old": 1049.36,
+  "price": 893.42,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/211574"
+ },
+ {
+  "at": "2026-11-27T19:18:05Z",
+  "cheapest": true,
+  "deck": "Warhammer 40K Forces of the Imperium",
+  "group": "cardtrader-211578",
+  "id": "cardtrader-211578",
+  "inStock": 0,
+  "kind": "price",
+  "old": 1088.77,
+  "price": 982.76,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/211578"
+ },
+ {
+  "at": "2026-11-27T19:18:05Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31272",
+  "id": "cardtrader-370631",
+  "inStock": 7,
+  "kind": "price",
+  "old": 177.25,
+  "price": 158.63,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370631"
+ },
+ {
+  "at": "2026-11-27T19:18:05Z",
+  "best": {
+   "price": 532.0,
+   "shop": "panmysza"
+  },
+  "cheapest": true,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31276",
+  "id": "cardtrader-370635",
+  "inStock": 3,
+  "kind": "price",
+  "old": 302.5,
+  "price": 266.43,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370635"
+ },
+ {
+  "at": "2026-11-27T19:18:05Z",
+  "best": {
+   "price": 239,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Federation Fleet",
+  "group": "cardstore-31902",
+  "id": "cardtrader-400888",
+  "inStock": 6,
+  "kind": "price",
+  "old": 172.58,
+  "price": 158.68,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400888"
+ },
+ {
+  "at": "2026-11-27T19:18:05Z",
+  "best": {
+   "price": 195,
+   "shop": "frostmagic"
+  },
+  "cheapest": true,
+  "deck": "Star Trek – Klingon Fury",
+  "group": "cardstore-31904",
+  "id": "cardtrader-400890",
+  "inStock": 7,
+  "kind": "price",
+  "old": 141.22,
+  "price": 135.81,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/400890"
  }
 ]
