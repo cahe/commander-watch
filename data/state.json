@@ -14,7 +14,7 @@
    "maxId": 13580
   },
   "frostmagic": {
-   "failStreak": 1,
+   "failStreak": 0,
    "maxId": 0
   },
   "magiccafe": {
@@ -34,15 +34,15 @@
    "maxId": 1057
   },
   "wargamer": {
-   "failStreak": 0,
+   "failStreak": 1,
    "maxId": 18320
   },
   "wilczek": {
-   "failStreak": 69,
+   "failStreak": 70,
    "maxId": 15690
   },
   "xjoy": {
-   "failStreak": 3,
+   "failStreak": 0,
    "maxId": 27109
   }
  }
