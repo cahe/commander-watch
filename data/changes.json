@@ -6306,5 +6306,183 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/246483"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 130,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Aetherdrift Living Energy",
+  "group": "cardtrader-314238",
+  "id": "dragoneye-9549",
+  "inStock": 5,
+  "kind": "price",
+  "old": 199.9,
+  "price": 149.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-aetherdrift-commander-deck-living-energy-p-9549.html"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 156.75,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Teenage Mutant Ninja Turtles – Turtle Power!",
+  "group": "cardstore-30911",
+  "id": "dragoneye-12044",
+  "inStock": 7,
+  "kind": "price",
+  "old": 259.9,
+  "price": 239.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-teenage-mutant-ninja-turtles-commander-deck-turtle-power-p-12044.html"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 240,
+   "shop": "frostmagic"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Avengers Assemble",
+  "group": "cardstore-31272",
+  "id": "dragoneye-12544",
+  "inStock": 7,
+  "kind": "price",
+  "old": 329.9,
+  "price": 279.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-marvel-super-heroes-commander-deck-avengers-assemble-p-12544.html"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 251.75,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Doom Prevails",
+  "group": "cardstore-31275",
+  "id": "dragoneye-12545",
+  "inStock": 7,
+  "kind": "price",
+  "old": 329.9,
+  "price": 279.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-marvel-super-heroes-commander-deck-doom-prevails-p-12545.html"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 152.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Fantastic Four",
+  "group": "cardstore-31274",
+  "id": "dragoneye-12546",
+  "inStock": 8,
+  "kind": "price",
+  "old": 329.9,
+  "price": 279.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-marvel-super-heroes-commander-deck-the-fantastic-four-p-12546.html"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 171.0,
+   "shop": "panmysza"
+  },
+  "cheapest": false,
+  "deck": "Marvel Super Heroes – Wakanda Forever",
+  "group": "cardstore-31273",
+  "id": "dragoneye-12547",
+  "inStock": 8,
+  "kind": "price",
+  "old": 329.9,
+  "price": 279.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-marvel-super-heroes-commander-deck-wakanda-forever-p-12547.html"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 209.99,
+   "shop": "wilczek"
+  },
+  "cheapest": true,
+  "deck": "Secrets of Strixhaven Lorehold Spirit",
+  "group": "cardtrader-370598",
+  "id": "dragoneye-12368",
+  "inStock": 2,
+  "kind": "price",
+  "old": 184.9,
+  "price": 124.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-secrets-of-strixhaven-lorehold-spirit-p-12368.html"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 189.0,
+   "shop": "time4magic"
+  },
+  "cheapest": true,
+  "deck": "Secrets of Strixhaven Prismari Artistry",
+  "group": "cardtrader-370596",
+  "id": "dragoneye-12369",
+  "inStock": 5,
+  "kind": "price",
+  "old": 184.9,
+  "price": 144.9,
+  "shop": "dragoneye",
+  "status": "in_stock",
+  "url": "https://dragoneye.pl/magic-the-gathering-secrets-of-strixhaven-prismari-artistry-p-12369.html"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 144.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": false,
+  "deck": "Secrets of Strixhaven Prismari Artistry",
+  "group": "cardtrader-370596",
+  "id": "cardtrader-370596",
+  "inStock": 5,
+  "kind": "notcheapest",
+  "price": 167.3,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370596"
+ },
+ {
+  "at": "2026-11-28T09:18:04Z",
+  "best": {
+   "price": 124.9,
+   "shop": "dragoneye"
+  },
+  "cheapest": false,
+  "deck": "Secrets of Strixhaven Lorehold Spirit",
+  "group": "cardtrader-370598",
+  "id": "cardtrader-370598",
+  "inStock": 2,
+  "kind": "notcheapest",
+  "price": 167.35,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/370598"
  }
 ]
