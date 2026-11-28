@@ -1436,9 +1436,9 @@
    "ctPrice": 351.17,
    "ctUrl": "https://www.cardtrader.com/en/cards/246483",
    "name": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
-   "shopName": "Magic Cafe",
-   "shopPrice": 329.99,
-   "shopUrl": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-riders-of-rohan/"
+   "shopName": null,
+   "shopPrice": null,
+   "shopUrl": null
   },
   "the-lord-of-the-rings-tales-of-middle-earth-set": {
    "ctPrice": null,

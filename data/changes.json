@@ -6281,5 +6281,30 @@
   "shop": "cardtrader",
   "status": "in_stock",
   "url": "https://www.cardtrader.com/en/cards/400890"
+ },
+ {
+  "at": "2026-11-28T00:18:17Z",
+  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
+  "group": "cardtrader-246483",
+  "id": "magiccafe-15260",
+  "inStock": 0,
+  "kind": "soldout",
+  "price": 329.99,
+  "shop": "magiccafe",
+  "status": "out_of_stock",
+  "url": "https://magiccafe.eu/product/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-riders-of-rohan/"
+ },
+ {
+  "at": "2026-11-28T00:18:17Z",
+  "cheapest": true,
+  "deck": "The Lord of the Rings Tales of Middle-earth Riders of Rohan",
+  "group": "cardtrader-246483",
+  "id": "cardtrader-246483",
+  "inStock": 0,
+  "kind": "cheapest",
+  "price": 351.17,
+  "shop": "cardtrader",
+  "status": "in_stock",
+  "url": "https://www.cardtrader.com/en/cards/246483"
  }
 ]
